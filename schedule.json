@@ -9,7 +9,8 @@
         {
           "date": "2026-08-23",
           "time": "15:00",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -18,7 +19,8 @@
         {
           "date": "2026-08-23",
           "time": "17:15",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -27,7 +29,8 @@
         {
           "date": "2026-08-22",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -36,7 +39,8 @@
         {
           "date": "2026-08-22",
           "time": "17:15",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -45,7 +49,8 @@
         {
           "date": "2026-08-21",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -54,7 +59,8 @@
         {
           "date": "2026-08-22",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -72,7 +78,8 @@
         {
           "date": "2026-08-22",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -81,7 +88,8 @@
         {
           "date": "2026-08-22",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ]
     ]
@@ -96,7 +104,8 @@
         {
           "date": "2026-08-29",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -105,7 +114,8 @@
         {
           "date": "2026-08-29",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -114,7 +124,8 @@
         {
           "date": "2026-08-28",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -123,7 +134,8 @@
         {
           "date": "2026-08-29",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -132,7 +144,8 @@
         {
           "date": "2026-08-29",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -141,7 +154,8 @@
         {
           "date": "2026-08-30",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -150,7 +164,8 @@
         {
           "date": "2026-08-30",
           "time": "15:00",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ],
       [
@@ -168,7 +183,8 @@
         {
           "date": "2026-08-29",
           "time": "17:15",
-          "official": true
+          "official": true,
+          "source": "ESPN public scoreboard"
         }
       ]
     ]
@@ -183,35 +199,83 @@
       ],
       [
         "LE HAVRE",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2026-09-05",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2026-09-05",
+          "time": "17:15",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2026-09-04",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2026-09-06",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2026-09-05",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2026-09-04",
+          "time": "21:05",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "TOULOUSE FC",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2026-09-03",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2026-09-06",
+          "time": "15:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -221,31 +285,73 @@
     "matches": [
       [
         "AJ AUXERRE",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2026-09-12",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2026-09-13",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2026-09-12",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2026-09-13",
+          "time": "17:15",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2026-09-13",
+          "time": "15:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2026-09-12",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2026-09-12",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -253,7 +359,13 @@
       ],
       [
         "RC STRASBOURG ALSACE",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2026-09-12",
+          "time": "17:15",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -263,15 +375,33 @@
     "matches": [
       [
         "ANGERS SCO",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2026-09-19",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AJ AUXERRE",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2026-09-19",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2026-09-19",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
@@ -279,23 +409,53 @@
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2026-09-20",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2026-09-19",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2026-09-19",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2026-09-19",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "TOULOUSE FC",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2026-09-19",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -305,31 +465,73 @@
     "matches": [
       [
         "STADE BRESTOIS 29",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2026-10-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2026-10-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2026-10-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2026-10-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2026-10-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2026-10-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2026-10-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -337,7 +539,13 @@
       ],
       [
         "ESTAC TROYES",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2026-10-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -347,27 +555,63 @@
     "matches": [
       [
         "ANGERS SCO",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
@@ -375,11 +619,23 @@
       ],
       [
         "RC STRASBOURG ALSACE",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -389,31 +645,73 @@
     "matches": [
       [
         "ANGERS SCO",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2026-10-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AJ AUXERRE",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2026-10-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2026-10-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2026-10-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2026-10-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2026-10-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2026-10-25",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -421,7 +719,13 @@
       ],
       [
         "TOULOUSE FC",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2026-10-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -431,23 +735,53 @@
     "matches": [
       [
         "LE HAVRE",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2026-10-31",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2026-10-31",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2026-10-31",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2026-10-31",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2026-10-31",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
@@ -455,15 +789,33 @@
       ],
       [
         "PARIS FC",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2026-10-31",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC STRASBOURG ALSACE",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2026-10-31",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2026-10-31",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -473,31 +825,73 @@
     "matches": [
       [
         "ANGERS SCO",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2026-11-07",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AJ AUXERRE",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2026-11-07",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2026-11-07",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2026-11-07",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2026-11-07",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2026-11-07",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2026-11-07",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -505,7 +899,13 @@
       ],
       [
         "TOULOUSE FC",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2026-11-07",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -515,11 +915,23 @@
     "matches": [
       [
         "RC LENS",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2026-11-21",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2026-11-21",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
@@ -527,27 +939,63 @@
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2026-11-21",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2026-11-21",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2026-11-21",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2026-11-21",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC STRASBOURG ALSACE",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2026-11-21",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2026-11-21",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -557,35 +1005,83 @@
     "matches": [
       [
         "ANGERS SCO",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2026-11-28",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AJ AUXERRE",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2026-11-28",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2026-11-28",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2026-11-28",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2026-11-28",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2026-11-28",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2026-11-28",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2026-11-28",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "TOULOUSE FC",
@@ -599,23 +1095,53 @@
     "matches": [
       [
         "RC LENS",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2026-12-05",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2026-12-05",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2026-12-05",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2026-12-05",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2026-12-05",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -623,15 +1149,33 @@
       ],
       [
         "RC STRASBOURG ALSACE",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2026-12-05",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "TOULOUSE FC",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2026-12-05",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2026-12-05",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -641,35 +1185,83 @@
     "matches": [
       [
         "ANGERS SCO",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2026-12-12",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AJ AUXERRE",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2026-12-12",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2026-12-12",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2026-12-12",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2026-12-12",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2026-12-13",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2026-12-12",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2026-12-12",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -683,35 +1275,83 @@
     "matches": [
       [
         "STADE BRESTOIS 29",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2027-01-02",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2027-01-02",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2027-01-03",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2027-01-02",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2027-01-02",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2027-01-02",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2027-01-02",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "TOULOUSE FC",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2027-01-02",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
@@ -725,31 +1365,73 @@
     "matches": [
       [
         "ANGERS SCO",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2027-01-16",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AJ AUXERRE",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2027-01-16",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2027-01-16",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2027-01-16",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2027-01-16",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2027-01-16",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2027-01-16",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -757,7 +1439,13 @@
       ],
       [
         "RC STRASBOURG ALSACE",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2027-01-16",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -771,35 +1459,83 @@
       ],
       [
         "LE MANS FC",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2027-01-23",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2027-01-23",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2027-01-23",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2027-01-23",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2027-01-23",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC STRASBOURG ALSACE",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2027-01-23",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "TOULOUSE FC",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2027-01-23",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2027-01-23",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -809,31 +1545,73 @@
     "matches": [
       [
         "ANGERS SCO",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2027-01-30",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2027-01-30",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2027-01-30",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2027-01-30",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2027-01-30",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2027-01-30",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2027-01-30",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -841,7 +1619,13 @@
       ],
       [
         "TOULOUSE FC",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2027-01-30",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -851,27 +1635,63 @@
     "matches": [
       [
         "AJ AUXERRE",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2027-02-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2027-02-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2027-02-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2027-02-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2027-02-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2027-02-07",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -879,11 +1699,23 @@
       ],
       [
         "RC STRASBOURG ALSACE",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2027-02-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2027-02-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -893,7 +1725,13 @@
     "matches": [
       [
         "AJ AUXERRE",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2027-02-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
@@ -901,31 +1739,73 @@
       ],
       [
         "LE MANS FC",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2027-02-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2027-02-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2027-02-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2027-02-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2027-02-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2027-02-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "TOULOUSE FC",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2027-02-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -935,31 +1815,73 @@
     "matches": [
       [
         "ANGERS SCO",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2027-02-20",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2027-02-20",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2027-02-20",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2027-02-20",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2027-02-20",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2027-02-20",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2027-02-20",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -967,7 +1889,13 @@
       ],
       [
         "RC STRASBOURG ALSACE",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2027-02-20",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -977,23 +1905,53 @@
     "matches": [
       [
         "AJ AUXERRE",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2027-02-27",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2027-02-27",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2027-02-27",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2027-02-27",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2027-02-27",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
@@ -1001,15 +1959,33 @@
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2027-02-28",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC STRASBOURG ALSACE",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2027-02-27",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2027-02-27",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1019,27 +1995,63 @@
     "matches": [
       [
         "ANGERS SCO",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2027-03-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2027-03-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2027-03-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2027-03-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2027-03-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2027-03-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -1047,11 +2059,23 @@
       ],
       [
         "TOULOUSE FC",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2027-03-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2027-03-06",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1061,15 +2085,33 @@
     "matches": [
       [
         "AJ AUXERRE",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2027-03-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2027-03-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2027-03-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
@@ -1077,23 +2119,53 @@
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2027-03-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2027-03-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2027-03-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2027-03-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC STRASBOURG ALSACE",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2027-03-13",
+          "time": "21:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1103,27 +2175,63 @@
     "matches": [
       [
         "ANGERS SCO",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2027-03-20",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2027-03-20",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2027-03-20",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2027-03-21",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2027-03-20",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2027-03-20",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -1131,11 +2239,23 @@
       ],
       [
         "TOULOUSE FC",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2027-03-20",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2027-03-20",
+          "time": "19:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1145,23 +2265,53 @@
     "matches": [
       [
         "ANGERS SCO",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2027-04-03",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AJ AUXERRE",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2027-04-03",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2027-04-03",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2027-04-03",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2027-04-03",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
@@ -1169,15 +2319,33 @@
       ],
       [
         "OGC NICE",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2027-04-03",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2027-04-03",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC STRASBOURG ALSACE",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2027-04-03",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1187,23 +2355,53 @@
     "matches": [
       [
         "LE MANS FC",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2027-04-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2027-04-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2027-04-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2027-04-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2027-04-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
@@ -1211,15 +2409,33 @@
       ],
       [
         "OGC NICE",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2027-04-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2027-04-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2027-04-10",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1229,31 +2445,73 @@
     "matches": [
       [
         "ANGERS SCO",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2027-04-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AJ AUXERRE",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2027-04-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2027-04-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2027-04-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2027-04-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2027-04-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2027-04-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -1261,7 +2519,13 @@
       ],
       [
         "TOULOUSE FC",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2027-04-17",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1271,31 +2535,73 @@
     "matches": [
       [
         "LE MANS FC",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2027-04-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2027-04-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2027-04-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2027-04-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2027-04-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2027-04-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2027-04-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC STRASBOURG ALSACE",
@@ -1303,7 +2609,13 @@
       ],
       [
         "ESTAC TROYES",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2027-04-24",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1313,23 +2625,53 @@
     "matches": [
       [
         "AJ AUXERRE",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2027-05-01",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2027-05-01",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2027-05-01",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2027-05-01",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2027-05-01",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -1337,15 +2679,33 @@
       ],
       [
         "RC STRASBOURG ALSACE",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2027-05-01",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "TOULOUSE FC",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2027-05-01",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2027-05-01",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1355,35 +2715,83 @@
     "matches": [
       [
         "ANGERS SCO",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2027-05-08",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2027-05-08",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2027-05-08",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2027-05-08",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "FC LORIENT",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2027-05-08",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2027-05-09",
+          "time": "20:45",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2027-05-08",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2027-05-08",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -1401,35 +2809,83 @@
       ],
       [
         "STADE BRESTOIS 29",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2027-05-16",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2027-05-16",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2027-05-16",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2027-05-16",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2027-05-16",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2027-05-16",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC STRASBOURG ALSACE",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2027-05-16",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "TOULOUSE FC",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2027-05-16",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1439,15 +2895,33 @@
     "matches": [
       [
         "ANGERS SCO",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2027-05-22",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE HAVRE",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2027-05-22",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LE MANS FC",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2027-05-22",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "RC LENS",
@@ -1455,23 +2929,53 @@
       ],
       [
         "FC LORIENT",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2027-05-22",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OGC NICE",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2027-05-22",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS FC",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2027-05-22",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "TOULOUSE FC",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2027-05-22",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "ESTAC TROYES",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2027-05-22",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   },
@@ -1481,31 +2985,73 @@
     "matches": [
       [
         "AJ AUXERRE",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2027-05-29",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2027-05-29",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "LOSC",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2027-05-29",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2027-05-29",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2027-05-29",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "AS MONACO",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2027-05-29",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2027-05-29",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ],
       [
         "STADE RENNAIS FC",
@@ -1513,7 +3059,13 @@
       ],
       [
         "RC STRASBOURG ALSACE",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2027-05-29",
+          "time": "20:00",
+          "official": true,
+          "source": "ESPN public scoreboard"
+        }
       ]
     ]
   }
