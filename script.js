@@ -72,9 +72,9 @@ function splitValues(value=''){
   return String(value).split(/\n|,|;|\|/).map(v=>v.trim()).filter(Boolean);
 }
 
-function multiValue(value, placeholder){
+function multiValue(value){
   const items=splitValues(value);
-  if(!items.length) return `<span class="placeholder">${placeholder}</span>`;
+  if(!items.length) return `<span class="empty-slot" aria-label="Non renseigné"></span>`;
   return `<div class="value-chips">${items.map(x=>`<span>${escapeHtml(x)}</span>`).join('')}</div>`;
 }
 
@@ -94,7 +94,7 @@ function renderDay(n){
     const p = dayPronos[matchKey(home,away)] || {};
     const homeLogo=clubLogo(home), awayLogo=clubLogo(away);
     const score=p.score || '—';
-    return `<article class="match-card" style="--home:${clubColor(home)};--away:${clubColor(away)}">
+    return `<article class="match-card" style="--home:${clubColor(home)};--away:${clubColor(away)};--delay:${idx*55}ms">
       <div class="match-card-top"><span class="match-card-no">MATCH ${String(idx+1).padStart(2,'0')}</span><span class="match-status">${fixtureDateLabel(fixture) || 'Date à confirmer'}</span></div>
       <div class="match-teams">
         <div class="match-team home"><div class="team-logo-shell">${homeLogo?`<img src="${homeLogo}" alt="Logo ${escapeHtml(home)}" loading="lazy">`:`<b>${escapeHtml(initials(home))}</b>`}</div><strong>${escapeHtml(home)}</strong></div>
@@ -102,10 +102,10 @@ function renderDay(n){
         <div class="match-team away"><div class="team-logo-shell">${awayLogo?`<img src="${awayLogo}" alt="Logo ${escapeHtml(away)}" loading="lazy">`:`<b>${escapeHtml(initials(away))}</b>`}</div><strong>${escapeHtml(away)}</strong></div>
       </div>
       <div class="match-meta">
-        <div><span>🎯 Pronostic</span>${multiValue(p.prono||p.cote,'À renseigner')}</div>
-        <div><span>⚽ Buteurs</span>${multiValue(p.buteurs||p.buteur,'À analyser')}</div>
+        <div><span>🎯 Pronostic</span>${multiValue(p.prono||p.cote)}</div>
+        <div><span>⚽ Buteurs</span>${multiValue(p.buteurs||p.buteur)}</div>
       </div>
-      <div class="match-analysis"><span>ANALYSE FOOTIX</span><p>${p.analyse?escapeHtml(p.analyse):'Analyse à publier avant la rencontre depuis l’espace Admin.'}</p></div>
+      <div class="match-analysis"><span>ANALYSE FOOTIX</span><p class="${p.analyse?'':'empty-analysis'}">${p.analyse?escapeHtml(p.analyse):''}</p></div>
       <div class="card-glow"></div>
     </article>`;
   }).join('');
@@ -204,3 +204,9 @@ if(hero3d && window.matchMedia('(pointer:fine)').matches && !window.matchMedia('
   });
   hero3d.addEventListener('pointerleave',()=>{hero3d.style.setProperty('--rx','0deg');hero3d.style.setProperty('--ry','0deg');});
 }
+
+
+// V7.2 — liens sociaux neutres tant que les comptes ne sont pas publiés
+document.querySelectorAll('.social-link.is-placeholder').forEach(link=>{
+  link.addEventListener('click',e=>e.preventDefault());
+});

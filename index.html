@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7.1" />
+  <link rel="stylesheet" href="styles.css?v=7.2" />
 </head>
 <body>
   <header class="site-header">
@@ -19,7 +19,6 @@
     <nav class="main-nav" aria-label="Navigation principale">
       <button class="nav-link active" data-view="pronos">Pronostics</button>
       <button class="nav-link" data-view="mercato">Mercato <span class="live-dot"></span></button>
-      <a class="nav-link admin-link" href="admin.html">Admin</a>
       <a class="nav-link external" href="https://www.ligue1.com" target="_blank" rel="noopener">Ligue 1 ↗</a>
     </nav>
   </header>
@@ -34,7 +33,7 @@
           <p>Analyses, scores probables, buteurs et tendances : une lecture claire et visuelle de chaque journée de Ligue 1.</p>
           <div class="hero-actions"><a class="btn primary" href="#journees">Explorer la journée</a><span class="hero-chip">⚡ Mise à jour automatique</span></div>
         </div>
-        <div class="hero-logo" id="hero-3d"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="stadium-lights"></div><div class="glow"></div><img src="logo-footix-prono.png" alt="Mascotte Footix Prono" /><div class="floating-tag tag-one"><b>34</b><span>journées</span></div><div class="floating-tag tag-two"><b>9</b><span>matchs / J</span></div><div class="floating-ball" aria-hidden="true">⚽</div></div>
+        <div class="hero-logo" id="hero-3d"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="stadium-lights"></div><div class="glow"></div><img src="logo-footix-prono.png" alt="Mascotte Footix Prono" /><div class="floating-tag tag-one"><b>34</b><span>journées</span></div><div class="floating-ball" aria-hidden="true">⚽</div></div>
       </section>
 
       <section class="season-bar">
@@ -62,7 +61,6 @@
             <h2 id="matchday-title">Les 9 matchs</h2>
             <p id="matchday-date" class="subtle"></p>
           </div>
-          <div class="editorial-note">Les pronostics se publient depuis <a href="admin.html">l’espace Admin</a>, sans modifier le code du site.</div>
         </div>
         <div id="matches-grid" class="matches-grid" aria-live="polite"></div>
       </section>
@@ -120,8 +118,16 @@
   <footer>
     <div class="brand mini"><img src="logo-footix-prono.png" alt="" /><strong>Footix Prono</strong></div>
     <p>Prévisions sportives à titre informatif. Aucun résultat n'est garanti.</p>
+    <div class="footer-socials" aria-label="Réseaux sociaux">
+      <a class="social-link is-placeholder" href="#" aria-label="Instagram — lien à venir" title="Instagram — bientôt">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.7" r="1"></circle></svg>
+      </a>
+      <a class="social-link is-placeholder" href="#" aria-label="X (Twitter) — lien à venir" title="X / Twitter — bientôt">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4l14 16M19 4L5 20"></path></svg>
+      </a>
+    </div>
     <p>© 2026 Footix Prono</p>
   </footer>
-  <script src="script.js?v=7.1"></script>
+  <script src="script.js?v=7.2"></script>
 </body>
 </html>

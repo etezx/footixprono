@@ -64,3 +64,12 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Plusieurs pronostics et plusieurs buteurs peuvent être saisis, séparés par virgule, point-virgule ou retour à la ligne.
 - Compatibilité conservée avec les anciens champs `cote` et `buteur`.
 - Correction de l'alignement de la colonne `Pts` du classement.
+
+
+## V7.2
+- Retrait du bouton/lien Admin de l’interface publique.
+- Retrait du badge « 9 matchs / J » autour de la mascotte.
+- Suppression du texte public expliquant la publication depuis l’Admin.
+- Zones Pronostic, Buteurs et Analyse laissées visuellement vides tant qu’aucune donnée n’est publiée.
+- Icônes Instagram et X/Twitter ajoutées au footer, sans redirection pour le moment.
+- Micro-animations supplémentaires (header, cartes, boutons journée, ambiance hero).
