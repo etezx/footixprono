@@ -81,3 +81,9 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Suppression du rectangle/surlignage décoratif derrière le titre.
 - Largeur générale et bandeaux réduits pour un rendu moins étiré.
 - Conservation des cartes, animations, logos, classement, mercato et pronostics de la V7.2.
+
+
+## V7.3.1
+- Suppression définitive du carré bleu / overlay derrière le titre du hero.
+- Conservation du dégradé texte du slogan.
+- Nouveau cache-busting CSS/JS pour forcer GitHub Pages à charger la correction.
