@@ -66,10 +66,18 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Correction de l'alignement de la colonne `Pts` du classement.
 
 
-## V7.2
+## V7.3
 - Retrait du bouton/lien Admin de l’interface publique.
 - Retrait du badge « 9 matchs / J » autour de la mascotte.
 - Suppression du texte public expliquant la publication depuis l’Admin.
 - Zones Pronostic, Buteurs et Analyse laissées visuellement vides tant qu’aucune donnée n’est publiée.
 - Icônes Instagram et X/Twitter ajoutées au footer, sans redirection pour le moment.
 - Micro-animations supplémentaires (header, cartes, boutons journée, ambiance hero).
+
+
+## V7.3
+- Nouveau slogan : « On est tous le Footix de quelqu’un. »
+- Hero resserré et plus éditorial.
+- Suppression du rectangle/surlignage décoratif derrière le titre.
+- Largeur générale et bandeaux réduits pour un rendu moins étiré.
+- Conservation des cartes, animations, logos, classement, mercato et pronostics de la V7.2.
