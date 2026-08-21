@@ -1,25 +1,33 @@
 let schedule = [];
 let pronos = {days:{}};
 let activeDay = 1;
-let clubAssets = {league_logo:'', clubs:{}};
+let clubAssets = {league_logo:'', clubs:{}, colors:{}};
+let standingsLogoMap = {};
 
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => document.querySelectorAll(s);
 
 function escapeHtml(s=''){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function matchKey(home, away){ return `${home}|||${away}`; }
-function clubLogo(name){ return clubAssets.clubs?.[name] || ''; }
-function clubWithLogo(name){ const logo=clubLogo(name); return `<span class="club-inline">${logo?`<img class="club-logo" src="${logo}" alt="" loading="lazy">`:''}<span>${escapeHtml(name)}</span></span>`; }
+function clubLogo(name){ return standingsLogoMap[name] || clubAssets.clubs?.[name] || ''; }
+function clubColor(name){ return clubAssets.colors?.[name] || '#3982ff'; }
+function initials(name){ return String(name).split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join('').toUpperCase(); }
+function clubWithLogo(name){
+  const logo=clubLogo(name), color=clubColor(name);
+  return `<span class="club-inline" style="--club:${color}"><span class="club-badge"><span class="club-fallback">${escapeHtml(initials(name))}</span>${logo?`<img class="club-logo" src="${logo}" alt="Logo ${escapeHtml(name)}" loading="lazy">`:''}</span><span>${escapeHtml(name)}</span></span>`;
+}
 
 async function loadSchedule(){
-  const [scheduleRes, pronosRes, assetsRes] = await Promise.all([
+  const [scheduleRes, pronosRes, assetsRes, standingsRes] = await Promise.all([
     fetch('schedule.json', {cache:'no-store'}),
     fetch(`pronos.json?t=${Date.now()}`, {cache:'no-store'}).catch(()=>null),
-    fetch(`clubs.json?t=${Date.now()}`, {cache:'no-store'}).catch(()=>null)
+    fetch(`clubs.json?t=${Date.now()}`, {cache:'no-store'}).catch(()=>null),
+    fetch(`standings.json?t=${Date.now()}`, {cache:'no-store'}).catch(()=>null)
   ]);
   schedule = await scheduleRes.json();
   if(assetsRes?.ok) clubAssets = await assetsRes.json();
   if(pronosRes?.ok) pronos = await pronosRes.json();
+  if(standingsRes?.ok){ const sd=await standingsRes.json(); (sd.teams||[]).forEach(t=>{ if(t.club && t.logo) standingsLogoMap[t.club]=t.logo; }); }
   pronos.days ||= {};
   buildDayNavigation();
   renderDay(1);
@@ -53,10 +61,10 @@ function renderDay(n){
   $('#matchday-title').textContent='Les 9 matchs';
   $('#matchday-date').textContent=cleanDate(day.date);
   const dayPronos = pronos.days?.[String(n)] || {};
-  $('#matches-body').innerHTML=day.matches.map(([home,away])=>{
+  $('#matches-body').innerHTML=day.matches.map(([home,away],idx)=>{
     const p = dayPronos[matchKey(home,away)] || {};
-    return `<tr>
-      <td><div class="club-pair">${clubWithLogo(home)}<span class="versus">–</span>${clubWithLogo(away)}</div></td>
+    return `<tr class="match-row" style="--home:${clubColor(home)};--away:${clubColor(away)}">
+      <td><div class="match-number">${String(idx+1).padStart(2,'0')}</div><div class="club-pair">${clubWithLogo(home)}<span class="versus">–</span>${clubWithLogo(away)}</div></td>
       <td>${valueOrPlaceholder(p.score,'À définir')}</td>
       <td>${valueOrPlaceholder(p.cote,'À renseigner')}</td>
       <td>${valueOrPlaceholder(p.buteur,'À analyser')}</td>
@@ -108,6 +116,7 @@ async function loadStandings(){
     const r=await fetch(`standings.json?t=${Date.now()}`,{cache:'no-store'});
     if(!r.ok) throw new Error('classement indisponible');
     const data=await r.json();
+    (data.teams||[]).forEach(t=>{ if(t.club && t.logo) standingsLogoMap[t.club]=t.logo; });
     const teams=[...(data.teams||[])].sort((a,b)=>
       (b.pts-a.pts)||((b.gf-b.ga)-(a.gf-a.ga))||(b.gf-a.gf)||a.club.localeCompare(b.club,'fr')
     );
@@ -130,6 +139,7 @@ async function loadStandings(){
         <td class="form-cell"><div class="form-row">${badges}</div></td>
       </tr>`;
     }).join('');
+    if(schedule.length) renderDay(activeDay);
     const updated=$('#standings-updated');
     if(updated){
       const source=data.source?' • source : flux public ESPN':'';

@@ -14,7 +14,7 @@ from pathlib import Path
 
 LEAGUE = "fra.1"
 SEASON = 2026  # saison ESPN 2026 = exercice 2026/2027
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "standings.json"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; FootixProno/1.0; +https://etezx.github.io/footixprono/)",
@@ -131,8 +131,13 @@ def main() -> None:
         club = team.get("displayName") or team.get("shortDisplayName") or team.get("name")
         if not club:
             continue
+        logo = ""
+        logos = team.get("logos") or []
+        if logos and isinstance(logos[0], dict):
+            logo = logos[0].get("href") or ""
         teams.append({
             "club": club,
+            "logo": logo,
             "p": n(stats, "gamesPlayed"),
             "w": n(stats, "wins"),
             "d": n(stats, "ties"),

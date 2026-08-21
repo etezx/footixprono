@@ -36,3 +36,10 @@ Tous les chemins du site et des scripts ont été adaptés à cette structure pl
 Remplace les anciens fichiers à la racine par ceux de cette archive. Ensuite crée le dossier `.github/workflows/` dans le dépôt et place les deux fichiers YAML dedans.
 
 Le site reste accessible via GitHub Pages et l'administration via `admin.html`. Les pronostics sont enregistrés dans `pronos.json`, tandis que le classement et le mercato sont mis à jour automatiquement par GitHub Actions.
+
+
+## V6 — logos et identité visuelle
+- Les logos ESPN récupérés automatiquement par `update_standings.py` deviennent la source prioritaire.
+- `clubs.json` reste utilisé en secours et contient aussi les couleurs d’accent des clubs.
+- Nouveau design plus coloré : hero, cartes de matchs, classement, navigation et page mercato.
+- Les fichiers restent à la racine, sauf `.github/workflows/`.
