@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Footix Prono — Analyses & Prévisions Ligue 1</title>
+  <meta name="description" content="Footix Prono : analyses, prévisions de scores, buteurs probables et cotes pour chaque journée de Ligue 1." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Footix Prono accueil">
+      <img src="assets/logo-footix-prono.png" alt="Logo Footix Prono" />
+      <div><strong>Footix Prono</strong><span>Analyses Ligue 1</span></div>
+    </a>
+    <nav>
+      <a href="#journee">La journée</a>
+      <a href="#methodo">Méthodologie</a>
+      <a href="#newsletter" class="nav-cta">Recevoir les pronos</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">LIGUE 1 • PRONOSTICS • STATS</div>
+        <h1>Les 9 matchs. <span>Un seul tableau.</span> Toutes les infos utiles.</h1>
+        <p>Prévisions de score, buteurs potentiels, cotes indicatives et analyse synthétique de chaque rencontre de Ligue 1.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#journee">Voir les pronostics</a>
+          <a class="btn ghost" href="#methodo">Notre méthode</a>
+        </div>
+        <div class="disclaimer">Les cotes sont illustratives dans cette maquette. Jeu responsable : ne pariez que ce que vous pouvez vous permettre de perdre.</div>
+      </div>
+      <div class="hero-visual">
+        <div class="glow"></div>
+        <img src="assets/logo-footix-prono.png" alt="Mascotte Footix Prono 3D" />
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Résumé de la journée">
+      <div><strong>9</strong><span>matchs analysés</span></div>
+      <div><strong>27</strong><span>indicateurs suivis</span></div>
+      <div><strong>9</strong><span>buteurs à surveiller</span></div>
+      <div><strong>100%</strong><span>Ligue 1</span></div>
+    </section>
+
+    <section id="journee" class="section matches-section">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Journée 1 • Exemple de maquette</span>
+          <h2>Pronostics des 9 matchs</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filtres">
+          <button class="filter active" data-filter="all">Tous</button>
+          <button class="filter" data-filter="fort">Confiance forte</button>
+          <button class="filter" data-filter="moyen">Confiance moyenne</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="matches-table">
+          <thead>
+            <tr>
+              <th>Match</th>
+              <th>Prévision</th>
+              <th>Côtes</th>
+              <th>Buteur</th>
+              <th>Analyse</th>
+              <th>Confiance</th>
+            </tr>
+          </thead>
+          <tbody id="matches-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="methodo" class="section method-section">
+      <div class="method-copy">
+        <span class="kicker">Notre approche</span>
+        <h2>Une lecture simple, construite à partir de signaux concrets.</h2>
+        <p>Forme récente, production offensive, solidité défensive, absences, avantage domicile, volume de tirs et profil des buteurs sont synthétisés pour produire un avis lisible rapidement.</p>
+      </div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Forme</h3><p>Résultats et dynamique sur les dernières rencontres.</p></article>
+        <article><span>02</span><h3>Stats</h3><p>Buts, xG, tirs, occasions concédées et efficacité.</p></article>
+        <article><span>03</span><h3>Contexte</h3><p>Domicile, calendrier, absences, enjeu et rotation.</p></article>
+        <article><span>04</span><h3>Buteurs</h3><p>Volume de tirs, penalties, temps de jeu et opposition.</p></article>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section newsletter">
+      <div>
+        <span class="kicker">Footix Prono</span>
+        <h2>Reçois le récap avant chaque journée.</h2>
+        <p>Une synthèse des 9 matchs, des buteurs à suivre et des rencontres à plus forte confiance.</p>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Démo : formulaire non connecté');">
+        <input type="email" placeholder="ton@email.fr" aria-label="Adresse email" required />
+        <button class="btn primary" type="submit">S'inscrire</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand mini"><img src="assets/logo-footix-prono.png" alt="" /><strong>Footix Prono</strong></div>
+    <p>Site éditorial de prévisions sportives. Aucun résultat n'est garanti.</p>
+    <p>© 2026 Footix Prono</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
