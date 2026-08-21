@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Footix Prono — Ligue 1 2026/2027</title>
+  <meta name="description" content="Analyses, prévisions de scores, buteurs, cotes et actualités mercato Ligue 1." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" data-view-link="pronos" aria-label="Footix Prono accueil">
+      <img src="logo-footix-prono.png" alt="Logo Footix Prono" />
+      <div><strong>Footix Prono</strong><span>Ligue 1 • 2026/2027</span></div>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <button class="nav-link active" data-view="pronos">Pronostics</button>
+      <button class="nav-link" data-view="mercato">Mercato <span class="live-dot"></span></button>
+      <a class="nav-link admin-link" href="admin.html">Admin</a>
+      <a class="nav-link external" href="https://www.ligue1.com" target="_blank" rel="noopener">Ligue 1 ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="pronos-view" class="view active">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">LIGUE 1 • 34 JOURNÉES • 306 MATCHS</span>
+          <h1>Toute la saison.<br><span>Match par match.</span></h1>
+          <p>Choisis une journée pour afficher ses 9 rencontres et préparer les prévisions de score, cotes, buteurs et analyses.</p>
+          <a class="btn primary" href="#journees">Voir les journées</a>
+        </div>
+        <div class="hero-logo"><div class="glow"></div><img src="logo-footix-prono.png" alt="Mascotte Footix Prono" /></div>
+      </section>
+
+      <section class="season-bar">
+        <div><span>Saison</span><strong>2026 / 2027</strong></div>
+        <div><span>Format</span><strong>34 journées</strong></div>
+        <div><span>Par journée</span><strong>9 matchs</strong></div>
+        <div class="competition-cell"><img id="league-logo" class="league-logo" src="" alt="Logo Ligue 1" hidden><div><span>Compétition</span><strong>Ligue 1</strong></div></div>
+      </section>
+
+      <section id="journees" class="section">
+        <div class="section-head">
+          <div><span class="kicker">Calendrier officiel 2026/2027</span><h2>Choisir une journée</h2></div>
+          <div class="day-select-wrap">
+            <label for="day-select">Accès rapide</label>
+            <select id="day-select" aria-label="Choisir une journée"></select>
+          </div>
+        </div>
+        <div id="day-menu" class="day-menu" aria-label="Journées de Ligue 1"></div>
+      </section>
+
+      <section class="section matches-section">
+        <div class="section-head match-head">
+          <div>
+            <span id="matchday-kicker" class="kicker">Journée 1</span>
+            <h2 id="matchday-title">Les 9 matchs</h2>
+            <p id="matchday-date" class="subtle"></p>
+          </div>
+          <div class="editorial-note">Les pronostics se publient depuis <a href="admin.html">l’espace Admin</a>, sans modifier le code du site.</div>
+        </div>
+        <div class="table-wrap">
+          <table class="matches-table">
+            <thead><tr><th>Match</th><th>Score prévu</th><th>Côtes</th><th>Buteur</th><th>Analyse</th></tr></thead>
+            <tbody id="matches-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section id="mercato-view" class="view">
+      <section class="mercato-hero">
+        <div>
+          <span class="eyebrow">FIL MERCATO • LIGUE 1</span>
+          <h1>Les dernières infos <span>mercato.</span></h1>
+          <p>Un flux automatiquement mis à jour par GitHub Actions à partir d'actualités publiques liées au mercato de Ligue 1.</p>
+        </div>
+        <div class="mercato-status"><span class="pulse"></span><div><small>Dernière actualisation</small><strong id="mercato-updated">Chargement…</strong></div></div>
+      </section>
+
+      <section class="section mercato-section">
+        <div class="mercato-toolbar">
+          <div><span class="kicker">Actualités récentes</span><h2>Mercato Ligue 1</h2></div>
+          <button id="refresh-mercato" class="btn ghost" type="button">Actualiser l'affichage</button>
+        </div>
+        <div id="mercato-grid" class="mercato-grid"><div class="loading-card">Chargement des dernières infos…</div></div>
+        <p class="source-note">Les titres et liens appartiennent à leurs éditeurs respectifs. Footix Prono agrège uniquement des liens vers les sources.</p>
+      </section>
+    </section>
+
+
+    <section id="standings-section" class="section standings-section">
+      <div class="section-head standings-head">
+        <div>
+          <span class="kicker league-kicker"><img id="league-logo-mini" class="league-logo-mini" src="https://sachawd.github.io/wc26-assets/league-logos/league_ligue-1.png" alt="Logo Ligue 1"> Classement • Ligue 1 2026/2027</span>
+          <h2>Classement</h2>
+          <p class="subtle">Le classement est trié par points, différence de buts puis buts marqués.</p>
+        </div>
+        <div class="form-legend" aria-label="Légende des cinq derniers matchs">
+          <span><b class="form-badge win">V</b> Victoire</span>
+          <span><b class="form-badge draw">N</b> Nul</span>
+          <span><b class="form-badge loss">D</b> Défaite</span>
+        </div>
+      </div>
+      <div class="table-wrap standings-wrap">
+        <table class="standings-table">
+          <thead>
+            <tr>
+              <th>#</th><th>Club</th><th>J</th><th>V</th><th>N</th><th>D</th><th>BP</th><th>BC</th><th>Diff.</th><th>Pts</th><th>5 derniers</th>
+            </tr>
+          </thead>
+          <tbody id="standings-body"></tbody>
+        </table>
+      </div>
+      <p id="standings-updated" class="source-note">Chargement de la dernière mise à jour automatique…</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="brand mini"><img src="logo-footix-prono.png" alt="" /><strong>Footix Prono</strong></div>
+    <p>Prévisions sportives à titre informatif. Aucun résultat n'est garanti.</p>
+    <p>© 2026 Footix Prono</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
