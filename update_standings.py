@@ -15,7 +15,7 @@ from pathlib import Path
 LEAGUE = "fra.1"
 SEASON = 2026  # saison ESPN 2026 = exercice 2026/2027
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "data" / "standings.json"
+OUTPUT = ROOT / "standings.json"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; FootixProno/1.0; +https://etezx.github.io/footixprono/)",
     "Accept": "application/json,text/plain,*/*",
