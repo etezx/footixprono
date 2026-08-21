@@ -60,6 +60,24 @@ function valueOrPlaceholder(value, text, cls='placeholder'){
   return value ? `<span class="published-value">${escapeHtml(value)}</span>` : `<span class="${cls}">${text}</span>`;
 }
 
+function fixtureDateLabel(fixture={}){
+  if(!fixture?.official || !fixture.date || !fixture.time) return '';
+  try{
+    const date=new Intl.DateTimeFormat('fr-FR',{weekday:'short',day:'2-digit',month:'short'}).format(new Date(`${fixture.date}T12:00:00`));
+    return `${date.replace('.', '')} • ${fixture.time}`;
+  }catch{return `${fixture.date} • ${fixture.time}`;}
+}
+
+function splitValues(value=''){
+  return String(value).split(/\n|,|;|\|/).map(v=>v.trim()).filter(Boolean);
+}
+
+function multiValue(value, placeholder){
+  const items=splitValues(value);
+  if(!items.length) return `<span class="placeholder">${placeholder}</span>`;
+  return `<div class="value-chips">${items.map(x=>`<span>${escapeHtml(x)}</span>`).join('')}</div>`;
+}
+
 function renderDay(n){
   const day = schedule.find(d=>d.journee===n); if(!day) return;
   activeDay=n;
@@ -71,20 +89,21 @@ function renderDay(n){
   const dayPronos = pronos.days?.[String(n)] || {};
   const grid=$('#matches-grid');
   if(!grid) return;
-  grid.innerHTML=day.matches.map(([home,away],idx)=>{
+  grid.innerHTML=day.matches.map((match,idx)=>{
+    const [home,away,fixture={}] = match;
     const p = dayPronos[matchKey(home,away)] || {};
     const homeLogo=clubLogo(home), awayLogo=clubLogo(away);
     const score=p.score || '—';
     return `<article class="match-card" style="--home:${clubColor(home)};--away:${clubColor(away)}">
-      <div class="match-card-top"><span class="match-card-no">MATCH ${String(idx+1).padStart(2,'0')}</span><span class="match-status">À venir</span></div>
+      <div class="match-card-top"><span class="match-card-no">MATCH ${String(idx+1).padStart(2,'0')}</span><span class="match-status">${fixtureDateLabel(fixture) || 'Date à confirmer'}</span></div>
       <div class="match-teams">
         <div class="match-team home"><div class="team-logo-shell">${homeLogo?`<img src="${homeLogo}" alt="Logo ${escapeHtml(home)}" loading="lazy">`:`<b>${escapeHtml(initials(home))}</b>`}</div><strong>${escapeHtml(home)}</strong></div>
         <div class="score-core"><span>PRONO</span><b>${escapeHtml(score)}</b><i>VS</i></div>
         <div class="match-team away"><div class="team-logo-shell">${awayLogo?`<img src="${awayLogo}" alt="Logo ${escapeHtml(away)}" loading="lazy">`:`<b>${escapeHtml(initials(away))}</b>`}</div><strong>${escapeHtml(away)}</strong></div>
       </div>
       <div class="match-meta">
-        <div><span>📈 Cote</span>${valueOrPlaceholder(p.cote,'À renseigner')}</div>
-        <div><span>⚽ Buteur</span>${valueOrPlaceholder(p.buteur,'À analyser')}</div>
+        <div><span>🎯 Pronostic</span>${multiValue(p.prono||p.cote,'À renseigner')}</div>
+        <div><span>⚽ Buteurs</span>${multiValue(p.buteurs||p.buteur,'À analyser')}</div>
       </div>
       <div class="match-analysis"><span>ANALYSE FOOTIX</span><p>${p.analyse?escapeHtml(p.analyse):'Analyse à publier avant la rencontre depuis l’espace Admin.'}</p></div>
       <div class="card-glow"></div>
@@ -155,7 +174,7 @@ async function loadStandings(){
         <td class="standing-club">${clubWithLogo(t.club)}</td>
         <td>${t.p||0}</td><td>${t.w||0}</td><td>${t.d||0}</td><td>${t.l||0}</td>
         <td>${t.gf||0}</td><td>${t.ga||0}</td><td class="standing-diff ${diffClass}">${diffText}</td>
-        <td class="standing-points">${t.pts||0}</td>
+        <td class="standing-points"><span class="points-pill">${t.pts||0}</span></td>
         <td class="form-cell"><div class="form-row">${badges}</div></td>
       </tr>`;
     }).join('');

@@ -65,3 +65,14 @@ body{background:
 @media(max-width:1050px){.matches-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr .8fr}.hero-logo{min-height:300px}}
 @media(max-width:720px){.live-strip{height:25px}.hero{grid-template-columns:1fr;padding-top:28px}.hero-logo{order:-1;min-height:270px}.hero-logo img{width:260px}.orbit-one{width:250px;height:250px}.orbit-two{width:300px;height:300px}.floating-ball{right:15%;font-size:31px}.matches-grid{grid-template-columns:1fr}.match-card{min-height:285px}.team-logo-shell{width:64px;height:64px}.team-logo-shell img{width:51px;height:51px}.match-head{align-items:flex-start}.editorial-note{display:none}}
 @media(prefers-reduced-motion:reduce){.live-strip-track,.hero-logo img,.hero-orbit,.stadium-lights,.floating-ball{animation:none!important}.match-card,.hero-logo{transition:none!important}}
+
+
+/* V7.1 — horaires officiels, pronostics multiples et alignement classement */
+.match-status{white-space:nowrap;color:#d9e8ff;background:linear-gradient(135deg,rgba(57,130,255,.12),rgba(139,92,246,.10));border-color:rgba(105,157,235,.25)}
+.value-chips{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.value-chips>span{display:inline-flex;align-items:center;min-height:24px;padding:4px 7px;border-radius:8px;background:linear-gradient(135deg,rgba(57,130,255,.12),rgba(139,92,246,.09));border:1px solid rgba(103,151,224,.18);color:#eaf3ff;font-size:10px;line-height:1.25}
+.standings-table th:nth-child(10),.standings-table td:nth-child(10){width:70px;min-width:70px;text-align:center!important}
+.standing-points{display:table-cell!important;margin:0!important;padding:13px 10px!important;vertical-align:middle!important;text-align:center!important;font-size:13px!important;background:none!important;border-radius:0!important;height:auto!important;min-width:70px!important}
+.points-pill{display:inline-flex;align-items:center;justify-content:center;width:38px;height:29px;border-radius:9px;background:linear-gradient(135deg,rgba(57,130,255,.18),rgba(112,80,255,.12));border:1px solid rgba(92,147,230,.2);font-size:16px;font-weight:900;color:#fff;line-height:1}
+.admin-fields textarea[data-field="prono"],.admin-fields textarea[data-field="buteurs"]{min-height:72px;resize:vertical}
+@media(max-width:600px){.match-status{font-size:8px}.value-chips>span{font-size:9px}.standings-table th:nth-child(10),.standings-table td:nth-child(10){min-width:62px;width:62px}}

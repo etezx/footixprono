@@ -55,3 +55,12 @@ Les workflows écrivent directement `standings.json` et `mercato.json` à la rac
 ## Logos
 
 Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques et logos restent la propriété de leurs ayants droit ; vérifiez leurs conditions d'utilisation avant un usage commercial/public à grande échelle.
+
+
+## V7.1
+- Affichage de la date et de l'heure officielles directement sur chaque carte lorsque disponibles dans `schedule.json`.
+- J1 et J2 renseignées avec la programmation officielle publiée par la Ligue 1 le 6 juillet 2026.
+- `Cote` devient `Pronostic` dans l'Admin et sur le site.
+- Plusieurs pronostics et plusieurs buteurs peuvent être saisis, séparés par virgule, point-virgule ou retour à la ligne.
+- Compatibilité conservée avec les anciens champs `cote` et `buteur`.
+- Correction de l'alignement de la colonne `Pts` du classement.

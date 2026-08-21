@@ -10,6 +10,7 @@ function adminNorm(name=''){return String(name).normalize('NFD').replace(/[\u030
 function adminClubLogo(name){ const clubs=adminClubAssets.clubs||{}; if(clubs[name]) return clubs[name]; const key=Object.keys(clubs).find(k=>adminNorm(k)===adminNorm(name)); return key?clubs[key]:''; }
 function adminClub(name){ const logo=adminClubLogo(name); return `<span class="club-inline">${logo?`<img class="club-logo" src="${logo}" alt="" loading="lazy">`:''}<span>${esc(name)}</span></span>`; }
 function esc(s=''){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+function formatFixtureDate(value){ try{return new Intl.DateTimeFormat('fr-FR',{weekday:'short',day:'2-digit',month:'2-digit'}).format(new Date(`${value}T12:00:00`));}catch{return value||'';} }
 
 async function loadAdmin(){
   const [scheduleRes, pronosRes, assetsRes] = await Promise.all([
@@ -31,15 +32,16 @@ function renderAdminDay(dayNo){
   $a('#admin-day-select').value = String(dayNo);
   const day = adminSchedule.find(d=>d.journee===dayNo);
   const dayData = pronosData.days[String(dayNo)] || {};
-  $a('#admin-matches').innerHTML = day.matches.map(([home,away], index)=>{
+  $a('#admin-matches').innerHTML = day.matches.map((match, index)=>{
+    const [home,away,fixture={}] = match;
     const key = matchKey(home,away);
     const p = dayData[key] || {};
     return `<article class="admin-match" data-key="${esc(key)}">
-      <div class="admin-match-title"><span>Match ${index+1}</span><strong>${adminClub(home)} <i>–</i> ${adminClub(away)}</strong></div>
+      <div class="admin-match-title"><span>Match ${index+1}${fixture.official && fixture.date && fixture.time ? ` • ${formatFixtureDate(fixture.date)} à ${esc(fixture.time)}` : ''}</span><strong>${adminClub(home)} <i>–</i> ${adminClub(away)}</strong></div>
       <div class="admin-fields">
         <label>Score prévu<input data-field="score" value="${esc(p.score||'')}" placeholder="2 - 1"></label>
-        <label>Cote<input data-field="cote" value="${esc(p.cote||'')}" placeholder="1.85"></label>
-        <label>Buteur<input data-field="buteur" value="${esc(p.buteur||'')}" placeholder="Nom du joueur"></label>
+        <label>Pronostic<textarea data-field="prono" rows="2" placeholder="Victoire PSG, +2,5 buts…">${esc(p.prono||p.cote||'')}</textarea></label>
+        <label>Buteurs potentiels<textarea data-field="buteurs" rows="2" placeholder="Dembélé, Barcola, Ramos…">${esc(p.buteurs||p.buteur||'')}</textarea></label>
         <label class="analysis-field">Analyse<textarea data-field="analyse" rows="4" placeholder="Ton analyse du match…">${esc(p.analyse||'')}</textarea></label>
       </div>
     </article>`;

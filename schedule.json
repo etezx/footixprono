@@ -5,39 +5,84 @@
     "matches": [
       [
         "ANGERS SCO",
-        "LOSC"
+        "LOSC",
+        {
+          "date": "2026-08-23",
+          "time": "15:00",
+          "official": true
+        }
       ],
       [
         "LE HAVRE",
-        "AS MONACO"
+        "AS MONACO",
+        {
+          "date": "2026-08-23",
+          "time": "17:15",
+          "official": true
+        }
       ],
       [
         "LE MANS FC",
-        "STADE BRESTOIS 29"
+        "STADE BRESTOIS 29",
+        {
+          "date": "2026-08-22",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "RC LENS",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "date": "2026-08-22",
+          "time": "17:15",
+          "official": true
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
-        "RC STRASBOURG ALSACE"
+        "RC STRASBOURG ALSACE",
+        {
+          "date": "2026-08-21",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "OGC NICE",
-        "FC LORIENT"
+        "FC LORIENT",
+        {
+          "date": "2026-08-22",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "PARIS SAINT-GERMAIN",
-        "STADE RENNAIS FC"
+        "STADE RENNAIS FC",
+        {
+          "date": "2026-08-23",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "TOULOUSE FC",
-        "OLYMPIQUE LYONNAIS"
+        "OLYMPIQUE LYONNAIS",
+        {
+          "date": "2026-08-22",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "ESTAC TROYES",
-        "PARIS FC"
+        "PARIS FC",
+        {
+          "date": "2026-08-22",
+          "time": "20:45",
+          "official": true
+        }
       ]
     ]
   },
@@ -47,39 +92,84 @@
     "matches": [
       [
         "AJ AUXERRE",
-        "ANGERS SCO"
+        "ANGERS SCO",
+        {
+          "date": "2026-08-29",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "STADE BRESTOIS 29",
-        "TOULOUSE FC"
+        "TOULOUSE FC",
+        {
+          "date": "2026-08-29",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "LOSC",
-        "PARIS SAINT-GERMAIN"
+        "PARIS SAINT-GERMAIN",
+        {
+          "date": "2026-08-28",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "FC LORIENT",
-        "ESTAC TROYES"
+        "ESTAC TROYES",
+        {
+          "date": "2026-08-29",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "LE HAVRE"
+        "LE HAVRE",
+        {
+          "date": "2026-08-29",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "AS MONACO",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "date": "2026-08-30",
+          "time": "20:45",
+          "official": true
+        }
       ],
       [
         "PARIS FC",
-        "OGC NICE"
+        "OGC NICE",
+        {
+          "date": "2026-08-30",
+          "time": "15:00",
+          "official": true
+        }
       ],
       [
         "STADE RENNAIS FC",
-        "LE MANS FC"
+        "LE MANS FC",
+        {
+          "date": "2026-08-30",
+          "time": "17:15",
+          "official": true
+        }
       ],
       [
         "RC STRASBOURG ALSACE",
-        "RC LENS"
+        "RC LENS",
+        {
+          "date": "2026-08-29",
+          "time": "17:15",
+          "official": true
+        }
       ]
     ]
   },
