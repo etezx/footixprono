@@ -1,0 +1,40 @@
+name: Mettre à jour le classement
+
+on:
+  schedule:
+    - cron: '12 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: footix-data-updates
+  cancel-in-progress: false
+
+jobs:
+  standings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Mettre à jour le classement
+        run: python update_standings.py
+
+      - name: Enregistrer le nouveau classement
+        run: |
+          git config user.name "footix-prono-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add standings.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Mise à jour automatique du classement"
+          git pull --rebase origin main
+          git push origin main
