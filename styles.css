@@ -253,3 +253,34 @@ body{background:
   background: rgba(255,255,255,.12);
   color: inherit;
 }
+
+
+/* === V7.4 — interaction curseur plus douce, sans flash blanc === */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a,
+button,
+.day-btn,
+.match-card,
+.nav-link,
+.social-link {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Pas de flash clair au clic/focus souris ; focus clavier reste visible */
+a:active,
+button:active,
+.day-btn:active,
+.nav-link:active,
+.social-link:active {
+  filter: none !important;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid rgba(94, 166, 255, .8);
+  outline-offset: 3px;
+}

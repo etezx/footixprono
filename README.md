@@ -87,3 +87,17 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Suppression définitive du carré bleu / overlay derrière le titre du hero.
 - Conservation du dégradé texte du slogan.
 - Nouveau cache-busting CSS/JS pour forcer GitHub Pages à charger la correction.
+
+
+## V7.3.2
+- Les matchs de chaque journée sont triés automatiquement par date puis heure officielle.
+- Les rencontres sans horaire officiel restent à la fin de la journée.
+- Le tri est automatique dès que `schedule.json` reçoit une date/heure officielle.
+
+
+## V7.4
+- Nouveau workflow `Mettre à jour le calendrier`, exécuté automatiquement chaque matin et lançable manuellement.
+- `update_schedule.py` rapproche les affiches du calendrier Footix avec le flux public ESPN Ligue 1 2026/2027 et met uniquement à jour date/heure/source dans `schedule.json`.
+- Les pronostics et analyses ne sont jamais modifiés par ce workflow.
+- Le tri chronologique de la V7.3.2 s'applique automatiquement après chaque actualisation.
+- Suppression des effets de flash blanc / surbrillance agressive liés au curseur.

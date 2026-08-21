@@ -1,3 +1,45 @@
+
+function matchDateTimeValue(match) {
+  // Match format: [home, away, fixture]
+  const fixture = Array.isArray(match) ? (match[2] || {}) : (match || {});
+
+  const raw =
+    fixture.datetime ||
+    fixture.dateTime ||
+    fixture.kickoff ||
+    fixture.start ||
+    fixture.date_time ||
+    null;
+
+  if (raw) {
+    const t = Date.parse(raw);
+    if (!Number.isNaN(t)) return t;
+  }
+
+  const date = fixture.date || fixture.matchDate || fixture.day || "";
+  const time = fixture.time || fixture.hour || fixture.heure || "";
+
+  if (date) {
+    const isoCandidate = `${date}${time ? "T" + time : "T23:59"}`;
+    const t = Date.parse(isoCandidate);
+    if (!Number.isNaN(t)) return t;
+  }
+
+  return Number.POSITIVE_INFINITY;
+}
+
+function sortMatchesChronologically(matches) {
+  return matches
+    .map((match, index) => ({ match, index }))
+    .sort((a, b) => {
+      const av = matchDateTimeValue(a.match);
+      const bv = matchDateTimeValue(b.match);
+      if (av !== bv) return av - bv;
+      return a.index - b.index;
+    })
+    .map(item => item.match);
+}
+
 let schedule = [];
 let pronos = {days:{}};
 let activeDay = 1;
@@ -89,7 +131,8 @@ function renderDay(n){
   const dayPronos = pronos.days?.[String(n)] || {};
   const grid=$('#matches-grid');
   if(!grid) return;
-  grid.innerHTML=day.matches.map((match,idx)=>{
+  const orderedMatches = sortMatchesChronologically(day.matches);
+  grid.innerHTML=orderedMatches.map((match,idx)=>{
     const [home,away,fixture={}] = match;
     const p = dayPronos[matchKey(home,away)] || {};
     const homeLogo=clubLogo(home), awayLogo=clubLogo(away);
