@@ -1,45 +1,57 @@
-# Footix Prono V5.1 — version simplifiée pour GitHub
+# Footix Prono — V7
 
-Cette version est prévue pour que presque tous les fichiers restent **à la racine du dépôt**, exactement comme sur ta capture GitHub.
+V7 apporte une refonte visuelle et corrige définitivement les écussons.
 
-## Fichiers à la racine
+## Nouveautés
 
-- `index.html`
-- `admin.html`
-- `admin.js`
-- `script.js`
-- `styles.css`
-- `logo-footix-prono.png`
-- `clubs.json`
-- `mercato.json`
-- `pronos.json`
-- `schedule.json`
-- `standings.json`
-- `update_mercato.py`
-- `update_standings.py`
+- 18 écussons de clubs stockés localement dans `assets/clubs/` : le site ne dépend plus d'une correspondance de noms distante pour les afficher.
+- recherche des clubs insensible aux majuscules/minuscules et aux accents ; le calendrier peut donc rester en capitales.
+- 9 rencontres présentées en cartes 3 × 3 sur ordinateur, 2 colonnes sur tablette et 1 colonne sur mobile.
+- couleurs propres aux clubs dans chaque carte.
+- mascotte animée avec flottement, orbites, ballon et léger effet 3D au passage de la souris.
+- bandeau animé Footix Prono et arrière-plan plus coloré.
+- cache-busting `?v=7` sur CSS/JS pour que GitHub Pages affiche immédiatement la nouvelle version.
+- classement et mercato automatiques conservés.
+- espace Admin conservé.
 
-## Seul dossier obligatoire
+## Structure
 
-GitHub Actions impose que les workflows soient placés ici :
+Les fichiers principaux restent à la racine. La V7 ajoute seulement un dossier `assets/clubs/` pour les logos et le dossier obligatoire `.github/workflows/` pour les automatisations.
 
 ```text
-.github/
-└── workflows/
-    ├── update-mercato.yml
-    └── update-standings.yml
+footixprono/
+├── .github/
+│   └── workflows/
+│       ├── update-mercato.yml
+│       └── update-standings.yml
+├── assets/
+│   └── clubs/
+│       └── 18 fichiers PNG
+├── index.html
+├── admin.html
+├── admin.js
+├── script.js
+├── styles.css
+├── logo-footix-prono.png
+├── clubs.json
+├── schedule.json
+├── pronos.json
+├── standings.json
+├── mercato.json
+├── update_standings.py
+└── update_mercato.py
 ```
 
-Tous les chemins du site et des scripts ont été adaptés à cette structure plate.
+## Mise à jour GitHub
 
-## Mise à jour
+Le plus simple est de décompresser le ZIP puis de glisser tout le contenu dans GitHub en conservant les dossiers `assets` et `.github`.
 
-Remplace les anciens fichiers à la racine par ceux de cette archive. Ensuite crée le dossier `.github/workflows/` dans le dépôt et place les deux fichiers YAML dedans.
+Si GitHub Pages affiche encore l'ancienne version après le commit, recharge avec `Ctrl + F5`. Les URLs CSS/JS utilisent aussi `?v=7` pour limiter ce problème.
 
-Le site reste accessible via GitHub Pages et l'administration via `admin.html`. Les pronostics sont enregistrés dans `pronos.json`, tandis que le classement et le mercato sont mis à jour automatiquement par GitHub Actions.
+## Données automatiques
 
+Les workflows écrivent directement `standings.json` et `mercato.json` à la racine. Ils nécessitent `Settings > Actions > General > Workflow permissions > Read and write permissions`.
 
-## V6 — logos et identité visuelle
-- Les logos ESPN récupérés automatiquement par `update_standings.py` deviennent la source prioritaire.
-- `clubs.json` reste utilisé en secours et contient aussi les couleurs d’accent des clubs.
-- Nouveau design plus coloré : hero, cartes de matchs, classement, navigation et page mercato.
-- Les fichiers restent à la racine, sauf `.github/workflows/`.
+## Logos
+
+Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques et logos restent la propriété de leurs ayants droit ; vérifiez leurs conditions d'utilisation avant un usage commercial/public à grande échelle.

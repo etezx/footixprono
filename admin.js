@@ -6,7 +6,8 @@ let adminClubAssets = {clubs:{}};
 const $a = (s) => document.querySelector(s);
 
 function matchKey(home, away){ return `${home}|||${away}`; }
-function adminClubLogo(name){ return adminClubAssets.clubs?.[name] || ''; }
+function adminNorm(name=''){return String(name).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/gi,' ').trim().toLowerCase();}
+function adminClubLogo(name){ const clubs=adminClubAssets.clubs||{}; if(clubs[name]) return clubs[name]; const key=Object.keys(clubs).find(k=>adminNorm(k)===adminNorm(name)); return key?clubs[key]:''; }
 function adminClub(name){ const logo=adminClubLogo(name); return `<span class="club-inline">${logo?`<img class="club-logo" src="${logo}" alt="" loading="lazy">`:''}<span>${esc(name)}</span></span>`; }
 function esc(s=''){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
 

@@ -9,8 +9,16 @@ const $$ = (s) => document.querySelectorAll(s);
 
 function escapeHtml(s=''){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function matchKey(home, away){ return `${home}|||${away}`; }
-function clubLogo(name){ return standingsLogoMap[name] || clubAssets.clubs?.[name] || ''; }
-function clubColor(name){ return clubAssets.colors?.[name] || '#3982ff'; }
+function normName(name=''){return String(name).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/gi,' ').trim().toLowerCase();}
+function lookup(map,name){
+  if(!map) return '';
+  if(map[name]) return map[name];
+  const target=normName(name);
+  const hit=Object.keys(map).find(k=>normName(k)===target);
+  return hit ? map[hit] : '';
+}
+function clubLogo(name){ return lookup(clubAssets.clubs,name) || lookup(standingsLogoMap,name) || ''; }
+function clubColor(name){ return lookup(clubAssets.colors,name) || '#3982ff'; }
 function initials(name){ return String(name).split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join('').toUpperCase(); }
 function clubWithLogo(name){
   const logo=clubLogo(name), color=clubColor(name);
@@ -61,17 +69,29 @@ function renderDay(n){
   $('#matchday-title').textContent='Les 9 matchs';
   $('#matchday-date').textContent=cleanDate(day.date);
   const dayPronos = pronos.days?.[String(n)] || {};
-  $('#matches-body').innerHTML=day.matches.map(([home,away],idx)=>{
+  const grid=$('#matches-grid');
+  if(!grid) return;
+  grid.innerHTML=day.matches.map(([home,away],idx)=>{
     const p = dayPronos[matchKey(home,away)] || {};
-    return `<tr class="match-row" style="--home:${clubColor(home)};--away:${clubColor(away)}">
-      <td><div class="match-number">${String(idx+1).padStart(2,'0')}</div><div class="club-pair">${clubWithLogo(home)}<span class="versus">–</span>${clubWithLogo(away)}</div></td>
-      <td>${valueOrPlaceholder(p.score,'À définir')}</td>
-      <td>${valueOrPlaceholder(p.cote,'À renseigner')}</td>
-      <td>${valueOrPlaceholder(p.buteur,'À analyser')}</td>
-      <td>${p.analyse ? `<div class="analysis-published">${escapeHtml(p.analyse)}</div>` : '<div class="analysis-placeholder">Analyse Footix Prono à publier avant la rencontre.</div>'}</td>
-    </tr>`;
+    const homeLogo=clubLogo(home), awayLogo=clubLogo(away);
+    const score=p.score || '—';
+    return `<article class="match-card" style="--home:${clubColor(home)};--away:${clubColor(away)}">
+      <div class="match-card-top"><span class="match-card-no">MATCH ${String(idx+1).padStart(2,'0')}</span><span class="match-status">À venir</span></div>
+      <div class="match-teams">
+        <div class="match-team home"><div class="team-logo-shell">${homeLogo?`<img src="${homeLogo}" alt="Logo ${escapeHtml(home)}" loading="lazy">`:`<b>${escapeHtml(initials(home))}</b>`}</div><strong>${escapeHtml(home)}</strong></div>
+        <div class="score-core"><span>PRONO</span><b>${escapeHtml(score)}</b><i>VS</i></div>
+        <div class="match-team away"><div class="team-logo-shell">${awayLogo?`<img src="${awayLogo}" alt="Logo ${escapeHtml(away)}" loading="lazy">`:`<b>${escapeHtml(initials(away))}</b>`}</div><strong>${escapeHtml(away)}</strong></div>
+      </div>
+      <div class="match-meta">
+        <div><span>📈 Cote</span>${valueOrPlaceholder(p.cote,'À renseigner')}</div>
+        <div><span>⚽ Buteur</span>${valueOrPlaceholder(p.buteur,'À analyser')}</div>
+      </div>
+      <div class="match-analysis"><span>ANALYSE FOOTIX</span><p>${p.analyse?escapeHtml(p.analyse):'Analyse à publier avant la rencontre depuis l’espace Admin.'}</p></div>
+      <div class="card-glow"></div>
+    </article>`;
   }).join('');
 }
+
 
 function showView(name){
   $$('.view').forEach(v=>v.classList.remove('active'));
@@ -107,7 +127,7 @@ async function loadMercato(){
   }
 }
 $('#refresh-mercato').addEventListener('click',loadMercato);
-loadSchedule().catch(()=>{$('#matches-body').innerHTML='<tr><td colspan="5">Impossible de charger le calendrier.</td></tr>'});
+loadSchedule().catch(()=>{const g=$('#matches-grid'); if(g) g.innerHTML='<div class="loading-card">Impossible de charger le calendrier.</div>';});
 
 async function loadStandings(){
   const body=$('#standings-body');
@@ -151,3 +171,17 @@ async function loadStandings(){
 }
 
 loadStandings();
+
+
+// V7 — léger effet 3D sur la mascotte, sans dépendance externe.
+const hero3d=document.querySelector('#hero-3d');
+if(hero3d && window.matchMedia('(pointer:fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  hero3d.addEventListener('pointermove',e=>{
+    const r=hero3d.getBoundingClientRect();
+    const x=(e.clientX-r.left)/r.width-.5;
+    const y=(e.clientY-r.top)/r.height-.5;
+    hero3d.style.setProperty('--rx',`${(-y*8).toFixed(2)}deg`);
+    hero3d.style.setProperty('--ry',`${(x*10).toFixed(2)}deg`);
+  });
+  hero3d.addEventListener('pointerleave',()=>{hero3d.style.setProperty('--rx','0deg');hero3d.style.setProperty('--ry','0deg');});
+}
