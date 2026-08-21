@@ -101,3 +101,9 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Les pronostics et analyses ne sont jamais modifiés par ce workflow.
 - Le tri chronologique de la V7.3.2 s'applique automatiquement après chaque actualisation.
 - Suppression des effets de flash blanc / surbrillance agressive liés au curseur.
+
+## V7.4.1
+- Correction du workflow calendrier : abandon du calendrier par équipe ESPN qui renvoyait 0 match.
+- Récupération désormais via le scoreboard Ligue 1, mois par mois.
+- Si la source ne fournit temporairement aucune rencontre, le workflow reste valide et conserve schedule.json.
+- Mise à jour partielle autorisée : seules les rencontres réellement reconnues sont modifiées.
