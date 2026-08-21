@@ -28,7 +28,7 @@ for node in root.findall('./channel/item')[:18]:
         items.append({'title': title, 'link': link, 'published': published, 'source': source})
 
 out = {'updated_at': datetime.now(timezone.utc).isoformat(), 'query': QUERY, 'items': items[:12]}
-path = Path(__file__).resolve().parents[1] / 'data' / 'mercato.json'
+path = Path(__file__).resolve().parent / 'mercato.json'
 path.parent.mkdir(parents=True, exist_ok=True)
 path.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding='utf-8')
 print(f'{len(out["items"])} actualités enregistrées dans {path}')
