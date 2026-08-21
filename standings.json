@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-08-21T20:36:47.274383+00:00",
+  "updated_at": "2026-08-21T21:35:34.655109+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
+    {
+      "club": "Marseille",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+      "p": 1,
+      "w": 1,
+      "d": 0,
+      "l": 0,
+      "gf": 4,
+      "ga": 0,
+      "pts": 3,
+      "last5": []
+    },
     {
       "club": "Angers",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
@@ -111,18 +123,6 @@
       "last5": []
     },
     {
-      "club": "Marseille",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
-      "p": 0,
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "pts": 0,
-      "last5": []
-    },
-    {
       "club": "AS Monaco",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
       "p": 0,
@@ -183,18 +183,6 @@
       "last5": []
     },
     {
-      "club": "Strasbourg",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
-      "p": 0,
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "pts": 0,
-      "last5": []
-    },
-    {
       "club": "Toulouse",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
       "p": 0,
@@ -215,6 +203,18 @@
       "l": 0,
       "gf": 0,
       "ga": 0,
+      "pts": 0,
+      "last5": []
+    },
+    {
+      "club": "Strasbourg",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
+      "p": 1,
+      "w": 0,
+      "d": 0,
+      "l": 1,
+      "gf": 0,
+      "ga": 4,
       "pts": 0,
       "last5": []
     }
