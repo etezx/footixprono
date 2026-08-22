@@ -1,4 +1,13 @@
 {
-  "updated_at": null,
-  "days": {}
+  "updated_at": "2026-08-22T07:20:59.841Z",
+  "days": {
+    "1": {
+      "OLYMPIQUE DE MARSEILLE|||RC STRASBOURG ALSACE": {
+        "score": "3-1",
+        "prono": "Victoire OM, But des 2 équipes",
+        "buteurs": "Gouiri / Paixao",
+        "analyse": ""
+      }
+    }
+  }
 }
