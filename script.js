@@ -262,3 +262,24 @@ if(hero3d && window.matchMedia('(pointer:fine)').matches && !window.matchMedia('
 document.querySelectorAll('.social-link.is-placeholder').forEach(link=>{
   link.addEventListener('click',e=>e.preventDefault());
 });
+
+
+async function initVisitorCounter(){
+  const el = document.getElementById('visitor-count');
+  if(!el) return;
+
+  // Compteur public simple : une visite = un chargement de la page d'accueil.
+  // Ce n'est pas un compteur de visiteurs uniques.
+  const endpoint = 'https://countapi.mileshilliard.com/api/v1/hit/footixprono-etezx-home-2026';
+
+  try{
+    const response = await fetch(endpoint, {cache:'no-store'});
+    if(!response.ok) throw new Error('counter unavailable');
+    const data = await response.json();
+    const value = Number(data.value);
+    el.textContent = Number.isFinite(value) ? value.toLocaleString('fr-FR') : '—';
+  }catch(error){
+    el.textContent = '—';
+  }
+}
+initVisitorCounter();

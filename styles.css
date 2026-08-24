@@ -386,3 +386,31 @@ main,
 
 /* === V7.5 : bilan éditorial & analyses plus longues === */
 .day-review{margin-top:28px;padding:24px;border-radius:20px;border:1px solid rgba(255,255,255,.09);background:linear-gradient(145deg,rgba(19,34,69,.88),rgba(10,19,41,.95))}.day-review-head{align-items:center}.review-scores{display:flex;gap:12px;flex-wrap:wrap}.review-score{min-width:170px;padding:15px 17px;border-radius:15px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04)}.review-score strong{display:block;font-size:1.8rem;line-height:1;color:#fff}.review-score span{display:block;margin-top:7px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.68}.review-summary{margin-top:18px;padding:18px;border-radius:15px;min-height:105px;border:1px solid rgba(255,255,255,.06);background:rgba(3,10,27,.38)}.review-summary>span{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;opacity:.58}.review-summary p{margin:10px 0 0;min-height:58px;line-height:1.7;white-space:pre-wrap}.match-analysis{min-height:178px!important}.match-analysis p{min-height:128px!important;line-height:1.65!important;white-space:pre-wrap}.admin-review-block{margin:26px 0 8px;padding:20px;border-radius:18px;border:1px solid rgba(255,255,255,.1);background:rgba(10,22,48,.72)}.admin-review-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.admin-review-block label{display:block}.admin-review-block input,.admin-review-block textarea{width:100%;box-sizing:border-box;margin-top:8px;padding:12px 13px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#09142c;color:#fff}.admin-summary-label{margin-top:16px!important}.admin-review-block textarea{min-height:180px;resize:vertical}.admin-match .analysis-field textarea{min-height:220px!important;resize:vertical!important}@media(max-width:720px){.day-review-head{align-items:flex-start;flex-direction:column}.review-scores{width:100%}.review-score{flex:1;min-width:135px}.admin-review-grid{grid-template-columns:1fr}}
+
+
+/* === V7.6 : compteur visites === */
+.visitor-counter{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:12px;
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:999px;
+  background:rgba(255,255,255,.035);
+  color:rgba(255,255,255,.72);
+  font-size:.82rem;
+  letter-spacing:.02em;
+}
+.visitor-counter strong{
+  color:#fff;
+  font-weight:700;
+}
+.visitor-eye{
+  display:inline-grid;
+  place-items:center;
+  width:18px;
+  height:18px;
+  color:#79a9ff;
+  font-size:.8rem;
+}
