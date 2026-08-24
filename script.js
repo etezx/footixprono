@@ -120,9 +120,18 @@ function multiValue(value){
   return `<div class="value-chips">${items.map(x=>`<span>${escapeHtml(x)}</span>`).join('')}</div>`;
 }
 
+function renderDayReview(n){
+  const dayData = pronos.days?.[String(n)] || {}; const review = dayData.review || {};
+  const gp=$('#good-pronos'), gs=$('#good-scorers'), summary=$('#day-summary');
+  if(gp) gp.textContent=review.goodPronos===''||review.goodPronos==null?'—':String(review.goodPronos);
+  if(gs) gs.textContent=review.goodScorers===''||review.goodScorers==null?'—':String(review.goodScorers);
+  if(summary) summary.textContent=review.summary||'';
+}
+
 function renderDay(n){
   const day = schedule.find(d=>d.journee===n); if(!day) return;
   activeDay=n;
+  renderDayReview(n);
   $$('.day-btn').forEach(b=>b.classList.toggle('active',Number(b.dataset.day)===n));
   $('#day-select').value=String(n);
   $('#matchday-kicker').textContent=`Journée ${n} • Ligue 1 2026/2027`;

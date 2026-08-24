@@ -46,6 +46,11 @@
         <div class="day-select-wrap"><label for="admin-day-select">Journée</label><select id="admin-day-select"></select></div>
       </div>
       <div id="admin-matches" class="admin-matches"><div class="loading-card">Chargement du calendrier…</div></div>
+      <section class="admin-review-block"><div class="section-head"><div><span class="kicker">Après les matchs</span><h2>Bilan de la journée</h2></div></div>
+        <div class="admin-review-grid"><label>Bons pronostics / 9<input id="admin-good-pronos" type="number" min="0" max="9" placeholder="Ex. 6"></label><label>Bons buteurs / 9<input id="admin-good-scorers" type="number" min="0" max="9" placeholder="Ex. 3"></label></div>
+        <label class="admin-summary-label">Résumé de la journée<textarea id="admin-day-summary" rows="8" placeholder="Ton résumé global : ce qui a fonctionné, les surprises, les pronostics à retenir…"></textarea></label>
+      </section>
+
       <div class="admin-actions">
         <span id="admin-status" class="admin-status" aria-live="polite">Les modifications restent locales tant que tu ne publies pas.</span>
         <button id="publish-pronos" class="btn primary" type="button">Publier les pronostics</button>
@@ -57,6 +62,6 @@
     <div class="brand mini"><img src="logo-footix-prono.png" alt=""><strong>Footix Prono</strong></div>
     <p>Administration statique sécurisée par ton jeton GitHub.</p>
   </footer>
-  <script src="admin.js?v=7.1"></script>
+  <script src="admin.js?v=7.5"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7.4.3" />
+  <link rel="stylesheet" href="styles.css?v=7.5" />
 </head>
 <body>
   <header class="site-header">
@@ -63,6 +63,11 @@
           </div>
         </div>
         <div id="matches-grid" class="matches-grid" aria-live="polite"></div>
+      </section>
+      <section class="section day-review" id="day-review">
+        <div class="section-head day-review-head"><div><span class="kicker">Bilan Footix</span><h2>Le bilan de la journée</h2></div>
+          <div class="review-scores"><div class="review-score"><strong id="good-pronos">—</strong><span>Bons pronostics / 9</span></div><div class="review-score"><strong id="good-scorers">—</strong><span>Bons buteurs / 9</span></div></div></div>
+        <div class="review-summary"><span>Résumé de la journée</span><p id="day-summary"></p></div>
       </section>
     </section>
 
@@ -128,6 +133,7 @@
     </div>
     <p>© 2026 Footix Prono</p>
   </footer>
-  <script src="script.js?v=7.4.3"></script>
+  <script src="script.js?v=7.5"></script>
+  <!-- CLOUDFLARE_WEB_ANALYTICS : emplacement prêt pour le beacon Cloudflare. -->
 </body>
 </html>

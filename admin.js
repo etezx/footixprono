@@ -32,6 +32,9 @@ function renderAdminDay(dayNo){
   $a('#admin-day-select').value = String(dayNo);
   const day = adminSchedule.find(d=>d.journee===dayNo);
   const dayData = pronosData.days[String(dayNo)] || {};
+  const review = dayData.review || {};
+  const gp=$a('#admin-good-pronos'), gs=$a('#admin-good-scorers'), sm=$a('#admin-day-summary');
+  if(gp) gp.value=review.goodPronos ?? ''; if(gs) gs.value=review.goodScorers ?? ''; if(sm) sm.value=review.summary ?? '';
   $a('#admin-matches').innerHTML = day.matches.map((match, index)=>{
     const [home,away,fixture={}] = match;
     const key = matchKey(home,away);
@@ -42,7 +45,7 @@ function renderAdminDay(dayNo){
         <label>Score prévu<input data-field="score" value="${esc(p.score||'')}" placeholder="2 - 1"></label>
         <label>Pronostic<textarea data-field="prono" rows="2" placeholder="Victoire PSG, +2,5 buts…">${esc(p.prono||p.cote||'')}</textarea></label>
         <label>Buteurs potentiels<textarea data-field="buteurs" rows="2" placeholder="Dembélé, Barcola, Ramos…">${esc(p.buteurs||p.buteur||'')}</textarea></label>
-        <label class="analysis-field">Analyse<textarea data-field="analyse" rows="4" placeholder="Ton analyse du match…">${esc(p.analyse||'')}</textarea></label>
+        <label class="analysis-field">Analyse<textarea data-field="analyse" rows="8" placeholder="Ton analyse du match…">${esc(p.analyse||'')}</textarea></label>
       </div>
     </article>`;
   }).join('');
@@ -51,6 +54,8 @@ function renderAdminDay(dayNo){
 
 function saveVisibleInputs(){
   pronosData.days[String(adminDay)] ||= {};
+  const reviewData={goodPronos:$a('#admin-good-pronos')?.value===''?'':Number($a('#admin-good-pronos')?.value),goodScorers:$a('#admin-good-scorers')?.value===''?'':Number($a('#admin-good-scorers')?.value),summary:$a('#admin-day-summary')?.value.trim()||''};
+  if(Object.values(reviewData).some(v=>v!=='')) pronosData.days[String(adminDay)].review=reviewData; else delete pronosData.days[String(adminDay)].review;
   document.querySelectorAll('.admin-match').forEach(card=>{
     const key = card.dataset.key;
     const item = {};
