@@ -1,13 +1,7 @@
 {
-  "updated_at": "2026-08-25T22:58:07.972836+00:00",
+  "updated_at": "2026-08-26T02:11:18.014786+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
-    {
-      "title": "Mercato : Strasbourg, Toulouse, Rennes, les clubs de Ligue 1 qui ont battu leur record de vente cet été - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNT3haSUZRRE1NT24zRm9DNEVIRFhwdjU4U3d3WHRjTEhORWJJT1B1NG1tbmpyT1FzaXlFeHB5emNzeHlmTGdfVjVZS05IQkozYXNZR3NEUWRWU0p1OWVLWFlNTzl1bFFuNExFb04xQ3FLQWJkY045REJDVXhtWndaSkJfUWc4bUNMRncyeXAyc0tjNkZRcjYwc1pwMmt2eDEtejJOd2I0bkMyN2RvSGtmOHVURTI3Sy1yTXFUbExPQQ?oc=5",
-      "published": "2026-08-21T07:30:00+00:00",
-      "source": "L'Équipe"
-    },
     {
       "title": "Mercato. Quelles étaient les 10 plus grosses ventes de Ligue 1 vers l’étranger avant les 100 millions d’Ayyoub Bouaddi ? - Ouest-France",
       "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPRXZ4SXlWMmw4Nmo0Uk5aYXU0VkVDRmdBdW0yaHU3OVBNZFpqUEVtek00dVl4N0RjMEpYNU41YkRyZFg5TkdVWF9GbnE3QzFGa0VVcWFXVy1IM2RrOVFlRWFIX2hzUGZzcVFUWEtyVF9xRFowUUhZbTk3VE5ObnE0S2t1Qk80TzNlOWkxeVBPNjFGNzJwVEZxVlM1WUVzblJ3czE3SmlBbF9Xa2QxMmJnYmYwLXBVZmpvYXJaNzRhLW0zUWgtVkhaMnQ0QmxnYmM3N2RSRUpQUVExcWxjeUhuLVVHVkNNRXUzS0dlUDVYcWxkbWZDX083SVZXTS10bnY4aDVWTkVhU1ZGQThPbE53WTg0LVJyMnV1QWNvMkpQV1NHMERxMEpxZnE5RHpXQQ?oc=5",
@@ -15,10 +9,16 @@
       "source": "Ouest-France"
     },
     {
-      "title": "Mercato : Akim Abdallah à Pau - ligue1.com",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdC1ZeGtqWktDdEtUSklqZmdFMUtqdFdTNHBlUDRMcmZxYk9xYXQwTHNCbXp6OHNQenh2QWRKdUpycHdTa01nNG1RYjcxRHNnZ01fZ09udm80UVh5bGhob3ZSLWdETjBuREdsNnRIYTFONGxfNmt5R3U4NVNMVEhDaVhubjBVMVdjdksyLVkyc0hzdw?oc=5",
-      "published": "2026-08-21T07:00:00+00:00",
-      "source": "ligue1.com"
+      "title": "Mercato : après les renforts, Rennes passe au dégraissage | Foot - Ligue 1 - Transferts - L'Équipe",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQM09wRU53QW1WOE1BeFdyY1IxYUN4QmI4YkdJOWN1Zl80VFQ5MHhyVjh0NVNRamljVEpBcFFZX0p2aHlzY0otZlRTZnhqVS1oNDN3UW80YzAydlBTTmZob0RzOEVKaU1uVmdUMVRhdzZ5Zk9jOTBIVUpnVG5uMGdJeHZITFU5V083Uno1aTZLV3U0YjVZU1hnVV81TWE2RkYxbWRBMW95aEZjUncwWG1FYUNnVGtLal9HSFJ4NA?oc=5",
+      "published": "2026-08-19T07:48:01+00:00",
+      "source": "L'Équipe"
+    },
+    {
+      "title": "Mercato: Le deuxième plus gros transfert de la Ligue 1 est acté - Sports.fr",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdmMzbVZoN3ZVWFkySVZ3STlvQ3ZWbUlyNGV3QUZOamxaM1V6NlJXSHgtMzZ6TUl3eUJvdUNPWXFkOEwzUXkzMWJRZElOT1o2NkwyREVNRU9FZ1VkMFRQd1J3eWxzYXhDNjFTUjFsWnJjRjk3aDY4dTlwNjFmZm1Mc25uNnctUnFsbEJrMTlzOGFYWS00QUo2YXJ0b04tcjgwbVBCTUVCMzZzTmpLd1k0ZWRMa0w?oc=5",
+      "published": "2026-08-23T14:48:18+00:00",
+      "source": "Sports.fr"
     },
     {
       "title": "PSG : Luis Campos lâche une info mercato sur Ligue 1+ - Foot01",
@@ -33,34 +33,28 @@
       "source": "Le Petit Lillois"
     },
     {
-      "title": "Beaucoup de transferts, peu de repères : le Racing Club de Strasbourg est encore en chantier avant de défier Marseille - dna.fr",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNcUlyY1lwUjR2SVVzSzJubDZQVjBWZDFLNWhBdHJ0bFVfTl8zb3JETXRHLVc2eEZLN2hxc055VkxXckxUMVo2dkJZQ1plbE9tRlJvM2dMeW82MzJaUnd3RWRlWVpvdVc0ci1DdWh1cHVKS3ZzRXcxX3FIYzJEVTFlc19HNi00UGtUYzJQWlp5b3FtRGloY0N2STlxWTV6SV9QTE5JUEh2MmN4MXVrYXg4ZWNZTjVQRmVrRVlkUjdqdTZ6WXBJZzQ5VDVLd0FLNThPTEw3T1dkb0JRMGhuSS01UlRrX2p0UQ?oc=5",
-      "published": "2026-08-19T18:35:00+00:00",
-      "source": "dna.fr"
-    },
-    {
       "title": "Mercato 2026 en Arkema Première Ligue : retrouvez le bilan club par club - Footeuses",
       "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQm1zWUExYW5QN3JjU01TaDM2d3hnNlpabWpaU1ZYQVY3WmVRM1YwZGFKZXU3VU52U0s3X0xhdnVVRjBrTmxGNlZvbkljNFhoMG02d1dJTFpUZWl2UTF3YklyaGFoZGtVUDZETThmcWl6T0wzTjBIdnUzM01kdDZ2cVMxUlpKUXBPZ2t6QXRPSXhqcC1Wa2tGTQ?oc=5",
       "published": "2026-08-21T17:47:47+00:00",
       "source": "Footeuses"
     },
     {
-      "title": "Mercato : après les renforts, Rennes passe au dégraissage | Foot - Ligue 1 - Transferts - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQM09wRU53QW1WOE1BeFdyY1IxYUN4QmI4YkdJOWN1Zl80VFQ5MHhyVjh0NVNRamljVEpBcFFZX0p2aHlzY0otZlRTZnhqVS1oNDN3UW80YzAydlBTTmZob0RzOEVKaU1uVmdUMVRhdzZ5Zk9jOTBIVUpnVG5uMGdJeHZITFU5V083Uno1aTZLV3U0YjVZU1hnVV81TWE2RkYxbWRBMW95aEZjUncwWG1FYUNnVGtLal9HSFJ4NA?oc=5",
-      "published": "2026-08-19T07:48:01+00:00",
-      "source": "L'Équipe"
-    },
-    {
-      "title": "Mercato Ligue 1. Un an après son arrivée, Paul Pogba officiellement libéré par l’AS Monaco - Ouest-France",
-      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxORVg5Vkx3aDNnUXdhM281WkdXM3NMWkNQTTYwMkZfMlFDTkhJRW5YZEE5aWp3U2dsUkRfdFFqYi1oU19TYUdPRlY1em1GblI3dk9qUll6ZFc0YnNabGRXYXhTZ0NwZmI0cjdJNlFpbVFrQmQ4MjRVT2ZMUHctNTItaUt1UUNDb2hZVVZkVERudHVLNXRzM2l4MmZBWE5iMGZDWHR4eDZQdjFZRXhVbG5maEw0bWVpOVRNa1gxSmhmcHlsR3diN0lpblFrV201WGIzbURwSXJzUFVKWk9EZE9TR0NrYzR6UGZwMmNhaVh1VVFYWC1lVThvalppaUQyME5ZeElRb2dsXzFMdw?oc=5",
-      "published": "2026-08-19T08:26:00+00:00",
-      "source": "Ouest-France"
-    },
-    {
-      "title": "Les 10 joueurs sans club sur lesquels les clubs de Ligue 1 doivent foncer ! - Foot Mercato",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb3hFRFlOblV4M3hJRm50SXdReWVNd1RnelJheWNzX1d2NGpua1JsM0Voc2xWck1KOXZTS290QXVSRDh1bjctOUZNamNiamJqV3JWc04wVkl3NjBoaEY2eTNobEFFTmhkZEpwanRCSW5FWXFWNFlhdTJJNU1rbXdoLTcxT1ZHdGhGVXFrQ29ObnQ4dUpBNGxsSUtsU2N5UE1mWXRpcFVXMG0ycW83eENXVFVB?oc=5",
-      "published": "2026-08-21T11:58:02+00:00",
+      "title": "L’offre magique de Ligue1+ pour suivre 100 % de la Ligue 1 - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaTkwUDg5N1Bkd09YMFJxc0ZtYlhXaWcxengxdE1iaTh0R2txbGtWaEtqejFxQlJlVVI3UVlBLV9CYmcyR1QtMFpzdkp4eWtCdHpaRlZ1SjBONlpIZ0F1WlZYRFVnQlBBMzlPb3FpOXRvVXFoY1FnX2JUREI3VzBDakNhclY4eldsU3FDbVE3cG42aVIyZXpVRlU1eUxDVDFrOTVxQ1lR?oc=5",
+      "published": "2026-08-22T10:00:00+00:00",
       "source": "Foot Mercato"
+    },
+    {
+      "title": "Journal du mercato : un buteur de Ligue 1 courtisé par le Barça, le PSG gourmand pour Mbaye et Chelsea sécurise une de ses stars - Le Figaro",
+      "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNTXp3T2psM3lxTXJKZWdYTDNOMTNTQ1g4WFVtaXZybVp0UkFfX1JjNUpXVkFpN1p0VVdWeF9DZVB3cGtnLXdZOVNZOWRkcHlvVzBwT3RUNldYX05vOWt2NWc2MlkxdTg2SkxuTEF5cm1vbWZsUXNiUVNzZlVJWll5eUk1eDNBY0tTZUcwUnF6aGttaEMyZFBwVXlXU19obHRIYWwxY1dlZVdPOS1wZUdFT2h4Nlk3OUhNbDBNcWI5N2VtNkRVTXRHOHUxWmYzbG9mYWNpeXNHZGxOaUxzUmNhS1FFZmVmZXFReGI0WTZILTdhbHRuU1M0LUd0aFNualJGYXdlYll1MEFjS2w0VUdyc1Jyaw?oc=5",
+      "published": "2026-08-22T11:23:07+00:00",
+      "source": "Le Figaro"
+    },
+    {
+      "title": "VIDÉO. FC Lorient. Mercato, effectif, ambitions : encore des incertitudes à l'heure de la reprise de la Ligue 1 - Ouest-France",
+      "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQb2QwUkU1TXVfUi1RU0pwZjY0Z2V0d211NWRFWThaTGFzbzNwOGo5YmRhOWVXTG9pOEpvYmhsUjdhRVQ1YTk0VU1oZkVQVThyWlM0UFBtUkxteFVwZmVuTERfY2FzTWhxNkpMbjFvOXowVzFseXJzZHRPOVF2eS01VUI4V19hT1NPaEpyOXNQTkVxU1RmYnRKcE9kNks5WlRmZXZnR3ZMZHZiSzQ3ODJkMGl2UWFSa2hMbTR1T2VwdmhlRktQTmhLV1pJT2NiWDhoNXB1QUdUWENJSk9iWkg3bjhVdHA0SmNNSWx4ak9fLV8yR1ctMDJZb2hKTU8wMG9jR21TR2o0Tzd4ZzNfY3I3MWtEZmhwSUFWRk1aYVB5ZkRDQQ?oc=5",
+      "published": "2026-08-21T11:11:06+00:00",
+      "source": "Ouest-France"
     },
     {
       "title": "\"Merci Paul\" : Pogba et l'AS Monaco, c'est terminé - Eurosport",
@@ -69,10 +63,16 @@
       "source": "Eurosport"
     },
     {
-      "title": "VIDÉO. FC Lorient. Mercato, effectif, ambitions : encore des incertitudes à l'heure de la reprise de la Ligue 1 - Ouest-France",
-      "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQb2QwUkU1TXVfUi1RU0pwZjY0Z2V0d211NWRFWThaTGFzbzNwOGo5YmRhOWVXTG9pOEpvYmhsUjdhRVQ1YTk0VU1oZkVQVThyWlM0UFBtUkxteFVwZmVuTERfY2FzTWhxNkpMbjFvOXowVzFseXJzZHRPOVF2eS01VUI4V19hT1NPaEpyOXNQTkVxU1RmYnRKcE9kNks5WlRmZXZnR3ZMZHZiSzQ3ODJkMGl2UWFSa2hMbTR1T2VwdmhlRktQTmhLV1pJT2NiWDhoNXB1QUdUWENJSk9iWkg3bjhVdHA0SmNNSWx4ak9fLV8yR1ctMDJZb2hKTU8wMG9jR21TR2o0Tzd4ZzNfY3I3MWtEZmhwSUFWRk1aYVB5ZkRDQQ?oc=5",
-      "published": "2026-08-21T11:11:06+00:00",
-      "source": "Ouest-France"
+      "title": "Ligue 1 : Ferran Torres arrache un nul héroïque pour le PSG contre Rennes - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNOFE2RlFNLUJXWEZ3ZVBHZVlBYXlTa09KRHZKemRnVEJLMUxSNTk0ejRVaUVSWmJwakduVndvTTI1SzVVUjB5ZjBtLXlsQnhISlE2YV9TMmtBTk5YX2tPN1B3bnQyOVUwd211VmExbEpZZ0lXV1JRemdUMEF4eHFGT2JWWDJQNUstSjFIbFo4NFlEMkJTS3lINU9lNW94dzN5Yjk5ODVoNEF0bnZvdm1CbHpidGVKQXBPNXM0ZA?oc=5",
+      "published": "2026-08-23T20:37:39+00:00",
+      "source": "Foot Mercato"
+    },
+    {
+      "title": "Mercato - Les six clubs de Ligue 1 qui ont déjà battu leur record de vente sur ce mercato ! - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQkJZMGhoRmpaaTRWZXVhZ0ZGT2JFV2h5eHpKcEx6WHQ2UUpkOWtUVHRwQjdDemdKOTZqZllzenNCcnk2Z1BRVGhxaXRMV3hwOXE0bWhVVGZQd041ckhZTDk3T044OWswWENrSHVaVFRCMnZYN3BPall3SDNEeWpJMzFDb2MxMWY4VHFTQllVYnJUR2taVnNJc08zaUs4enhWSnBGYUMtOXJrWlZNMjJ6NjFrVFlJX2E1TV9pQ180OENNVG1oOGRUU21VSFFFNjMzT21BREtKYl9oYldaVnd0TkpR?oc=5",
+      "published": "2026-08-21T09:20:00+00:00",
+      "source": "MadeInFOOT"
     }
   ]
 }
