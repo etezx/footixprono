@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T07:28:56.221102+00:00",
+  "updated_at": "2026-08-26T09:21:44.343446+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -9,22 +9,10 @@
       "source": "Ouest-France"
     },
     {
-      "title": "Mercato : après les renforts, Rennes passe au dégraissage | Foot - Ligue 1 - Transferts - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQM09wRU53QW1WOE1BeFdyY1IxYUN4QmI4YkdJOWN1Zl80VFQ5MHhyVjh0NVNRamljVEpBcFFZX0p2aHlzY0otZlRTZnhqVS1oNDN3UW80YzAydlBTTmZob0RzOEVKaU1uVmdUMVRhdzZ5Zk9jOTBIVUpnVG5uMGdJeHZITFU5V083Uno1aTZLV3U0YjVZU1hnVV81TWE2RkYxbWRBMW95aEZjUncwWG1FYUNnVGtLal9HSFJ4NA?oc=5",
-      "published": "2026-08-19T07:48:01+00:00",
-      "source": "L'Équipe"
-    },
-    {
       "title": "Mercato : Wahi de retour à Nice, Lorient se renforce devant - ligue1.com",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYWhfTzFQckxFLVhQazI4alBrVWx3bmtQWWlRbGp1UHB1WlR6Qjl6YmhpQklDM0g1dE9xbmVkc3NVTEpVaUJVTl9iYldtMzExQWFsVlZuMGlwR1dhZTFLc3hENWpXc1lXOUw0N0tLa0tFYUIwNGNqaDRUZDc2b09LYnRtYVl5dkJoTnVpUF9RYjFWQQ?oc=5",
       "published": "2026-08-25T04:00:00+00:00",
       "source": "ligue1.com"
-    },
-    {
-      "title": "PSG : Luis Campos lâche une info mercato sur Ligue 1+ - Foot01",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUjhkV2t2MTBrY002WUUyVWVkSEE2MndUZnNpdVVjNHAtYW1aMnNTek04VDR2T3c5LVYxRkQ5OHlST1NkNzdBdUI5WjR0WmFNOUNIUFA5bTZFNGdUSmZqTS1lNjZZVkZaS1UtX01nTWdKYTYtVHBHb05OYnVaQWRBYmhwbGJLdw?oc=5",
-      "published": "2026-08-23T21:00:00+00:00",
-      "source": "Foot01"
     },
     {
       "title": "Mercato: Le deuxième plus gros transfert de la Ligue 1 est acté - Sports.fr",
@@ -63,15 +51,27 @@
       "source": "Ouest-France"
     },
     {
-      "title": "\"Merci Paul\" : Pogba et l'AS Monaco, c'est terminé - Eurosport",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNbGJVMW9FNDNHU2U2N08wYVowQzZfTFp4eFBRRGNyX2hpVURKQURuVEpBTHNwUmxBS19SSjhTNFFjbndtcE1JVTdIUnRZaTNKR1NKQmlvcUNFQWZMY3lzU1JuN3FhU1lZZHBBOVVpaV9JM1VCR1Z0bjR0R0ZWblpfa211YWc0aDRZdzhyRlJXNWU3TG5iUkI1N1VWU0N2Sm0xakFLSXVzaUtJMm5SQUFHMEFhNTJYMDN0a2tfMVlCc1hHb3A4dXBmTFh5Q0pwUERHR0pGMnAxWTBHWnoyb2FJQ2o3ejRXMEVUZ0V5MVBVdDZYamlBd3lCamJPdmI?oc=5",
-      "published": "2026-08-19T08:20:00+00:00",
-      "source": "Eurosport"
-    },
-    {
       "title": "Ligue 1 : Ferran Torres arrache un nul héroïque pour le PSG contre Rennes - Foot Mercato",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNOFE2RlFNLUJXWEZ3ZVBHZVlBYXlTa09KRHZKemRnVEJLMUxSNTk0ejRVaUVSWmJwakduVndvTTI1SzVVUjB5ZjBtLXlsQnhISlE2YV9TMmtBTk5YX2tPN1B3bnQyOVUwd211VmExbEpZZ0lXV1JRemdUMEF4eHFGT2JWWDJQNUstSjFIbFo4NFlEMkJTS3lINU9lNW94dzN5Yjk5ODVoNEF0bnZvdm1CbHpidGVKQXBPNXM0ZA?oc=5",
       "published": "2026-08-23T20:37:39+00:00",
+      "source": "Foot Mercato"
+    },
+    {
+      "title": "Mercato - Les six clubs de Ligue 1 qui ont déjà battu leur record de vente sur ce mercato ! - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQkJZMGhoRmpaaTRWZXVhZ0ZGT2JFV2h5eHpKcEx6WHQ2UUpkOWtUVHRwQjdDemdKOTZqZllzenNCcnk2Z1BRVGhxaXRMV3hwOXE0bWhVVGZQd041ckhZTDk3T044OWswWENrSHVaVFRCMnZYN3BPall3SDNEeWpJMzFDb2MxMWY4VHFTQllVYnJUR2taVnNJc08zaUs4enhWSnBGYUMtOXJrWlZNMjJ6NjFrVFlJX2E1TV9pQ180OENNVG1oOGRUU21VSFFFNjMzT21BREtKYl9oYldaVnd0TkpR?oc=5",
+      "published": "2026-08-21T09:20:00+00:00",
+      "source": "MadeInFOOT"
+    },
+    {
+      "title": "Mercato : avant le premier match de la saison contre l'OM, l'impressionnant chamboule-tout habituel de l'effectif de Strasbourg n'est pas terminé - L'Équipe",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTVZiak9WdG5UZGhxUWpXeU1pRVdpa1kwSHJHd0JNMDNDWHF5d05KWC1GUUhMc1Y4bzI5UDRWdFRUdU91Wk5EMTFjdm1vS0pGUGFpWnRUczBfY1B4VzJyTHVoOThaQzM1eFEyaXFFNXNaZjlhbTA5Z2FtZVVOeGtRM0hXaUhzS0F0c0dyanYzTnBJWkU0V2NNa2dkbGc5N3Rsd0pHZkZ2LWxyRUt0eW5RRkcyS3d4Z2dOYm5GeGJGUGZOSWVIcFlkT1VRUFB5MS0zU3I2UzJB?oc=5",
+      "published": "2026-08-21T03:57:00+00:00",
+      "source": "L'Équipe"
+    },
+    {
+      "title": "Mercato PSG : ça va bouger pour Renato Sanches - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMWpmWDBaOEEzaVJybHN1VzNGNjJ6OHVxSk1zc3lIaUNtNEJmVEowcFlGYlMzR3pMRGhaWWVxT2stT01uazhvYzU5cDVaV3Q3YUZtbnp0V2xlMS1qVFNrcEFVSnhDX0ozTEQxMUZaTUdNUm9FUlNIajBCSVl1SHB0SHZKaWswbXhQRURtY3VJNFYtbTVXNS1iaQ?oc=5",
+      "published": "2026-08-24T19:00:00+00:00",
       "source": "Foot Mercato"
     }
   ]
