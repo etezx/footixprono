@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T16:03:07.244389+00:00",
+  "updated_at": "2026-08-26T18:20:59.700823+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -9,16 +9,16 @@
       "source": "Ouest-France"
     },
     {
-      "title": "Mercato : Wahi de retour à Nice, Lorient se renforce devant - ligue1.com",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYWhfTzFQckxFLVhQazI4alBrVWx3bmtQWWlRbGp1UHB1WlR6Qjl6YmhpQklDM0g1dE9xbmVkc3NVTEpVaUJVTl9iYldtMzExQWFsVlZuMGlwR1dhZTFLc3hENWpXc1lXOUw0N0tLa0tFYUIwNGNqaDRUZDc2b09LYnRtYVl5dkJoTnVpUF9RYjFWQQ?oc=5",
-      "published": "2026-08-25T04:00:00+00:00",
-      "source": "ligue1.com"
-    },
-    {
       "title": "Mercato: Le deuxième plus gros transfert de la Ligue 1 est acté - Sports.fr",
       "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdmMzbVZoN3ZVWFkySVZ3STlvQ3ZWbUlyNGV3QUZOamxaM1V6NlJXSHgtMzZ6TUl3eUJvdUNPWXFkOEwzUXkzMWJRZElOT1o2NkwyREVNRU9FZ1VkMFRQd1J3eWxzYXhDNjFTUjFsWnJjRjk3aDY4dTlwNjFmZm1Mc25uNnctUnFsbEJrMTlzOGFYWS00QUo2YXJ0b04tcjgwbVBCTUVCMzZzTmpLd1k0ZWRMa0w?oc=5",
       "published": "2026-08-23T14:48:18+00:00",
       "source": "Sports.fr"
+    },
+    {
+      "title": "Mercato : Wahi de retour à Nice, Lorient se renforce devant - ligue1.com",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYWhfTzFQckxFLVhQazI4alBrVWx3bmtQWWlRbGp1UHB1WlR6Qjl6YmhpQklDM0g1dE9xbmVkc3NVTEpVaUJVTl9iYldtMzExQWFsVlZuMGlwR1dhZTFLc3hENWpXc1lXOUw0N0tLa0tFYUIwNGNqaDRUZDc2b09LYnRtYVl5dkJoTnVpUF9RYjFWQQ?oc=5",
+      "published": "2026-08-25T04:00:00+00:00",
+      "source": "ligue1.com"
     },
     {
       "title": "Mercato Ligue 1 : Une semaine marquée par des départs conséquents - Le Petit Lillois",
@@ -51,12 +51,6 @@
       "source": "Ouest-France"
     },
     {
-      "title": "Mercato : avant le premier match de la saison contre l'OM, l'impressionnant chamboule-tout habituel de l'effectif de Strasbourg n'est pas terminé - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTVZiak9WdG5UZGhxUWpXeU1pRVdpa1kwSHJHd0JNMDNDWHF5d05KWC1GUUhMc1Y4bzI5UDRWdFRUdU91Wk5EMTFjdm1vS0pGUGFpWnRUczBfY1B4VzJyTHVoOThaQzM1eFEyaXFFNXNaZjlhbTA5Z2FtZVVOeGtRM0hXaUhzS0F0c0dyanYzTnBJWkU0V2NNa2dkbGc5N3Rsd0pHZkZ2LWxyRUt0eW5RRkcyS3d4Z2dOYm5GeGJGUGZOSWVIcFlkT1VRUFB5MS0zU3I2UzJB?oc=5",
-      "published": "2026-08-21T03:57:00+00:00",
-      "source": "L'Équipe"
-    },
-    {
       "title": "Mercato: Le pire scénario se confirme pour l’OM - Sports.fr",
       "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOb0JvNE5Yb0Q1V3l5RXdzZ2NSNVBoaUljYWhXdmdxdnlBZ0JzSmY3S1k5anVPZWNkSGRGWHAwdzNIeXZxZDhOVTFFaGVybXo4UkVWc2ptWHN2LUtpcWJ5WHhXZGptQWxYcGFubkpPQXdITm1LRzhobWFRNjlEWkpfM2YzM1BkS2tlUUEwMnNhS0Z4ejBxZHgwenNwNlJEUQ?oc=5",
       "published": "2026-08-26T14:31:27+00:00",
@@ -73,6 +67,12 @@
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQkJZMGhoRmpaaTRWZXVhZ0ZGT2JFV2h5eHpKcEx6WHQ2UUpkOWtUVHRwQjdDemdKOTZqZllzenNCcnk2Z1BRVGhxaXRMV3hwOXE0bWhVVGZQd041ckhZTDk3T044OWswWENrSHVaVFRCMnZYN3BPall3SDNEeWpJMzFDb2MxMWY4VHFTQllVYnJUR2taVnNJc08zaUs4enhWSnBGYUMtOXJrWlZNMjJ6NjFrVFlJX2E1TV9pQ180OENNVG1oOGRUU21VSFFFNjMzT21BREtKYl9oYldaVnd0TkpR?oc=5",
       "published": "2026-08-21T09:20:00+00:00",
       "source": "MadeInFOOT"
+    },
+    {
+      "title": "Mercato : accord oral de toutes les parties pour le retour d'Elye Wahi à Nice - L'Équipe",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORTVuNG55WVJWWU1zSlYwcEE5Rmh1bjNkRTUyN2tCVzhXNDNleGNfU2lQOFNSTVJ5R05KblRVZG1sRkF5dGtndUZUYzRIZWg5VHhCdmVEelpiZkYweGc1SjFzQXlNbmViTDZCd0pGYjU5eWxpck1vRkNqWlo4VWZuc1A1eEt3akRLOERKRUJHQ3lxX3FoRTJ3VEJUMkt6TkljZWJYeEtBdDhyeE1oM3lpRjBSbzYyT3RyU0p3V2tkR3F5VUVo?oc=5",
+      "published": "2026-08-22T10:50:38+00:00",
+      "source": "L'Équipe"
     }
   ]
 }
