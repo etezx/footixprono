@@ -156,9 +156,23 @@
           "date": "2026-08-28",
           "time": "20:45",
           "official": true,
-          "completed": false,
+          "completed": true,
           "eventId": "401876476",
-          "source": "ESPN public scoreboard"
+          "source": "ESPN public scoreboard",
+          "homeScore": 2,
+          "awayScore": 2,
+          "actualScorers": [
+            "Hákon Haraldsson",
+            "Olivier Giroud",
+            "Dilane Bakwa",
+            "Vitinha",
+            "Mika Godts",
+            "Marquinhos",
+            "Ethan Mbappé",
+            "Tiago Santos",
+            "Fabián Ruiz",
+            "Désiré Doué"
+          ]
         }
       ],
       [
