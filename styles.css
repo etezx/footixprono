@@ -577,3 +577,133 @@ body.prono-panel-open{overflow:hidden}
     font-size:9px;
   }
 }
+
+
+/* === V8.3.4 — Plus de place aux matchs, classement compact === */
+
+/* Le classement reste visible mais occupe moins de largeur sur ordinateur. */
+@media(min-width:1181px){
+  .dashboard-grid{
+    grid-template-columns:minmax(0,1fr) 300px;
+    gap:10px;
+  }
+  .standings-panel{
+    min-width:0;
+  }
+  .standings-table{
+    padding-left:8px;
+    padding-right:8px;
+  }
+  .stand-head,.stand-row{
+    grid-template-columns:25px minmax(0,1fr) 23px 35px 27px;
+    min-height:33px;
+  }
+  .stand-row{
+    font-size:9px;
+  }
+  .stand-row strong{
+    font-size:11px;
+  }
+  .stand-team{
+    gap:5px;
+    font-size:9px;
+  }
+  .stand-team .crest{
+    width:18px;
+    height:18px;
+  }
+}
+
+/* Rééquilibrage de chaque ligne pour garantir la visibilité d'Analyse. */
+@media(min-width:1181px){
+  .match-row-v831{
+    grid-template-columns:
+      92px
+      minmax(135px,.92fr)
+      76px
+      minmax(135px,.92fr)
+      minmax(335px,1.35fr);
+  }
+
+  .match-row-v831 .team{
+    font-size:10px;
+    gap:6px;
+  }
+
+  .match-row-v831 .team .crest,
+  .match-row-v831 .team .fake-crest{
+    width:25px;
+    height:25px;
+  }
+
+  .match-row-v831 .match-extra{
+    min-width:0;
+    grid-template-columns:102px minmax(160px,1fr) 118px;
+    gap:6px;
+    padding:0 6px;
+  }
+
+  .pick-line{
+    gap:4px;
+  }
+
+  .pick-value{
+    min-width:29px;
+    height:28px;
+    font-size:16px;
+    padding:0 6px;
+  }
+
+  .final-verdict{
+    padding:3px 5px;
+    font-size:7px;
+  }
+
+  .scorers-zone{
+    min-width:0;
+    padding:5px 6px;
+  }
+
+  .scorers-zone .scorer-verdict-list em{
+    min-height:22px;
+    padding:4px 6px;
+    font-size:8px;
+  }
+
+  .prono-open-btn{
+    width:112px;
+    min-width:112px;
+    min-height:38px;
+    padding:6px 7px;
+    gap:5px;
+  }
+
+  .prono-btn-icon{
+    flex-basis:21px;
+    width:21px;
+    height:21px;
+    font-size:10px;
+  }
+
+  .prono-btn-label{
+    font-size:7px;
+    line-height:1.08;
+  }
+}
+
+/* Sur écran un peu plus large, on peut redonner légèrement d'air au bouton. */
+@media(min-width:1450px){
+  .dashboard-grid{
+    grid-template-columns:minmax(0,1fr) 315px;
+  }
+  .match-row-v831 .match-extra{
+    grid-template-columns:108px minmax(175px,1fr) 126px;
+  }
+  .prono-open-btn{
+    width:120px;
+    min-width:120px;
+  }
+  .prono-btn-label{
+    font-size:7.5px;
+  }
+}
