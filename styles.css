@@ -927,3 +927,7 @@ body.prono-panel-open{overflow:hidden}
 @media(max-width:620px){
   .admin-must-watch-list{grid-template-columns:1fr}
 }
+
+
+/* V8.5.2 — mentions légales et avertissement */
+.site-footer{max-width:980px;margin:0 auto;text-align:center;color:#667c9d;padding:18px 18px 26px;line-height:1.45}.site-footer p{margin:5px 0}.site-footer .legal-disclaimer{font-size:10px;color:#7f92ad}.site-footer a{color:#7aa7d8;text-decoration:none}.site-footer a:hover{text-decoration:underline}.legal-page{max-width:920px;margin:0 auto;padding:26px 18px 60px}.legal-card{border:1px solid #10365e;background:linear-gradient(180deg,#07182f,#06152a);border-radius:12px;padding:24px;margin:14px 0}.legal-card h1,.legal-card h2{margin-top:0}.legal-card h2{font-size:18px}.legal-card p,.legal-card li{color:#b8c6d9;line-height:1.65}.legal-card strong{color:#fff}.legal-card a{color:#68b6ff}.legal-notice{border-left:3px solid #78e811;padding-left:14px}.legal-back{display:inline-flex;margin-bottom:8px;color:#86f31b;text-decoration:none;font-weight:800}
