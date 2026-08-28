@@ -233,6 +233,40 @@ function renderMustWatch(day,pronos){
 }
 
 
+function deriveStandingsFromSchedule(schedule){
+  const table=new Map();
+  const ensure=name=>{
+    if(!table.has(name)) table.set(name,{club:name,p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0,last5:[]});
+    return table.get(name);
+  };
+  (schedule||[]).forEach(day=>{
+    (day.matches||[]).forEach(m=>{
+      const home=m[0], away=m[1], f=m[2]||{};
+      if(!f.completed) return;
+      const hs=Number(f.homeScore), as=Number(f.awayScore);
+      if(!Number.isFinite(hs)||!Number.isFinite(as)) return;
+      const h=ensure(home), a=ensure(away);
+      h.p++; a.p++; h.gf+=hs; h.ga+=as; a.gf+=as; a.ga+=hs;
+      if(hs>as){ h.w++; h.pts+=3; a.l++; }
+      else if(hs<as){ a.w++; a.pts+=3; h.l++; }
+      else { h.d++; a.d++; h.pts++; a.pts++; }
+    });
+  });
+  return [...table.values()];
+}
+
+function safeLigue1Standings(standing,schedule){
+  const apiTeams=Array.isArray(standing?.teams)?standing.teams:[];
+  const apiPlayed=apiTeams.reduce((sum,t)=>sum+(Number(t.p)||0),0);
+  const derived=deriveStandingsFromSchedule(schedule);
+  const derivedPlayed=derived.reduce((sum,t)=>sum+(Number(t.p)||0),0);
+
+  // Si le fichier classement régresse brutalement à 0 alors que des matchs sont terminés,
+  // on reconstruit le classement depuis schedule.json au lieu d'afficher des zéros.
+  if(apiPlayed===0 && derivedPlayed>0) return derived;
+  return apiTeams.length ? apiTeams : derived;
+}
+
 async function initLigue1(){
   if(!$("#l1-day-tabs")) return;
   const [schedule,standing,pronos,clubmap,mercato] = await Promise.all([
@@ -321,7 +355,7 @@ async function initLigue1(){
   }
   render();
 
-  const teams=(standing.teams||[]).slice().sort((a,b)=>(b.pts-a.pts)||((b.gf-b.ga)-(a.gf-a.ga))||(b.gf-a.gf));
+  const teams=safeLigue1Standings(standing,schedule).slice().sort((a,b)=>(b.pts-a.pts)||((b.gf-b.ga)-(a.gf-a.ga))||(b.gf-a.gf));
   $("#l1-standings").innerHTML=`<div class="stand-head"><span>#</span><span>ÉQUIPE</span><span>J</span><span>DIFF</span><span>PTS</span></div>`+
   teams.map((t,i)=>`<div class="stand-row"><span>${i+1}</span><span class="stand-team">${clubLogo(t.club,clubmap)}${t.club}</span><span>${t.p}</span><span>${(t.gf-t.ga)>0?"+":""}${t.gf-t.ga}</span><strong>${t.pts}</strong></div>`).join("");
 

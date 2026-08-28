@@ -152,6 +152,25 @@ def main() -> None:
     if len(teams) < 10:
         raise RuntimeError(f"Classement incomplet ({len(teams)} équipes), fichier non remplacé")
 
+    # Protection anti-régression : ESPN peut parfois renvoyer temporairement un
+    # classement complet mais avec toutes les statistiques à zéro. Une fois la
+    # saison commencée, on refuse de remplacer un classement plus avancé par un
+    # état plus ancien ou vide.
+    previous_teams = []
+    if OUTPUT.exists():
+        try:
+            previous = json.loads(OUTPUT.read_text(encoding="utf-8"))
+            previous_teams = previous.get("teams", []) if isinstance(previous, dict) else []
+        except Exception:
+            previous_teams = []
+
+    previous_played = sum(int(t.get("p", 0) or 0) for t in previous_teams if isinstance(t, dict))
+    new_played = sum(int(t.get("p", 0) or 0) for t in teams if isinstance(t, dict))
+    if previous_played > 0 and new_played < previous_played:
+        raise RuntimeError(
+            f"Classement ESPN en régression ({new_played} matchs-équipe contre {previous_played} auparavant) : fichier conservé"
+        )
+
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "source": "ESPN public soccer feed",
