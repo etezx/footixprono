@@ -478,3 +478,102 @@ body.prono-panel-open{overflow:hidden}
     font-size:10px;
   }
 }
+
+
+/* === V8.3.3 — Rééquilibrage horizontal des cartes === */
+.match-row-v831{
+  grid-template-columns:104px minmax(160px,1fr) 82px minmax(160px,1fr) minmax(390px,1.12fr);
+}
+.match-row-v831 .team{
+  font-size:11px;
+  min-width:0;
+}
+.match-row-v831 .team span{
+  line-height:1.12;
+  overflow-wrap:anywhere;
+}
+.match-row-v831 .team .crest,
+.match-row-v831 .team .fake-crest{
+  flex:0 0 auto;
+}
+.match-row-v831 .match-extra{
+  grid-template-columns:112px minmax(190px,1fr) 138px;
+  gap:8px;
+  padding:0 7px;
+}
+.scorers-zone{
+  padding:5px 7px;
+  border-radius:8px;
+}
+.scorers-zone>small{
+  font-size:7px;
+  margin-bottom:5px;
+}
+.scorers-zone .scorer-verdict-list{
+  gap:4px;
+}
+.scorers-zone .scorer-verdict-list em{
+  min-height:23px;
+  padding:4px 7px;
+  font-size:9px;
+}
+.prono-open-btn{
+  width:132px;
+  min-width:132px;
+  min-height:40px;
+  padding:7px 9px;
+  gap:7px;
+}
+.prono-btn-icon{
+  flex:0 0 23px;
+  width:23px;
+  height:23px;
+  font-size:11px;
+}
+.prono-btn-label{
+  font-size:8px;
+  line-height:1.08;
+}
+.pick-zone>small,.scorers-zone>small{
+  white-space:nowrap;
+}
+
+@media(max-width:1260px){
+  .match-row-v831{
+    grid-template-columns:92px minmax(145px,1fr) 76px minmax(145px,1fr);
+  }
+  .match-row-v831 .match-extra{
+    grid-column:1/-1;
+    grid-template-columns:120px minmax(220px,1fr) 138px;
+    gap:8px;
+    min-height:50px;
+    padding:7px 9px;
+  }
+}
+@media(max-width:900px){
+  .match-row-v831 .team{
+    font-size:10px;
+  }
+}
+@media(max-width:760px){
+  .match-row-v831{
+    grid-template-columns:1fr 70px 1fr;
+  }
+  .match-row-v831 .team{
+    font-size:9px;
+  }
+  .match-row-v831 .match-extra{
+    grid-template-columns:1fr;
+  }
+  .scorers-zone .scorer-verdict-list em{
+    font-size:10px;
+  }
+  .prono-open-btn{
+    width:100%;
+    min-width:0;
+    min-height:44px;
+  }
+  .prono-btn-label{
+    font-size:9px;
+  }
+}
