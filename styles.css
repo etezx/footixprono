@@ -707,3 +707,104 @@ body.prono-panel-open{overflow:hidden}
     font-size:7.5px;
   }
 }
+
+
+/* === V8.3.5 — Après-match public === */
+#l1-after-match{margin-top:10px}
+.after-match-public{
+  border:1px solid #1b527f;
+  border-radius:11px;
+  background:linear-gradient(180deg,#081d36,#06172c);
+  overflow:hidden;
+}
+.after-match-public-head{
+  min-height:54px;
+  padding:10px 14px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  border-bottom:1px solid #153b60;
+  background:#09213d;
+}
+.after-match-public-head small{
+  display:block;
+  font-size:7px;
+  letter-spacing:.14em;
+  font-weight:900;
+  color:#74baff;
+}
+.after-match-public-head h3{
+  margin:3px 0 0;
+  font-size:14px;
+  text-transform:uppercase;
+  color:#fff;
+}
+.after-match-public-head>span{
+  flex:0 0 auto;
+  padding:5px 8px;
+  border-radius:999px;
+  border:1px solid rgba(105,231,82,.4);
+  background:rgba(47,145,38,.15);
+  color:#8cf26b;
+  font-size:8px;
+  font-weight:900;
+}
+.after-match-public-body{
+  display:grid;
+  grid-template-columns:210px minmax(0,1fr);
+  gap:12px;
+  padding:12px;
+}
+.after-match-public-stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+}
+.after-match-public-stats>div{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  min-height:82px;
+  padding:10px;
+  text-align:center;
+  border:1px solid #19456d;
+  border-radius:8px;
+  background:#071a30;
+}
+.after-match-public-stats small{
+  font-size:7px;
+  color:#8299b6;
+  font-weight:900;
+}
+.after-match-public-stats strong{
+  margin-top:7px;
+  font-size:22px;
+  color:#91f66c;
+}
+.after-match-public-analysis{
+  border:1px solid #19456d;
+  border-radius:8px;
+  background:#071a30;
+  padding:12px 14px;
+}
+.after-match-public-analysis small{
+  display:block;
+  margin-bottom:7px;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.08em;
+  color:#86a6c8;
+}
+.after-match-public-analysis p{
+  margin:0;
+  color:#c0cede;
+  font-size:10px;
+  line-height:1.6;
+  white-space:pre-line;
+}
+@media(max-width:700px){
+  .after-match-public-body{grid-template-columns:1fr}
+  .after-match-public-head{align-items:flex-start}
+  .after-match-public-head h3{font-size:12px}
+}

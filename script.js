@@ -176,6 +176,33 @@ function openPronoPanel(data){
   $(".prono-detail-close",panel)?.focus();
 }
 
+
+function dayAfterMatchHTML(pronos,dayNo){
+  const day=(pronos.days||{})[String(dayNo)]||{};
+  const review=day.review||{};
+  const hasSummary=String(review.summary||"").trim();
+  const hasGoodPronos=review.goodPronos!==undefined && review.goodPronos!==null && String(review.goodPronos)!=="";
+  const hasGoodScorers=review.goodScorers!==undefined && review.goodScorers!==null && String(review.goodScorers)!=="";
+  if(!hasSummary && !hasGoodPronos && !hasGoodScorers) return "";
+
+  return `<section class="after-match-public">
+    <div class="after-match-public-head">
+      <div><small>BILAN FOOTIX</small><h3>Après-match · Journée ${String(dayNo).padStart(2,"0")}</h3></div>
+      <span>✓ DÉBRIEF</span>
+    </div>
+    <div class="after-match-public-body">
+      <div class="after-match-public-stats">
+        <div><small>BONS PRONOS</small><strong>${hasGoodPronos?escapeHTML(review.goodPronos)+(review.judgedPronos?` / ${escapeHTML(review.judgedPronos)}`:""):"—"}</strong></div>
+        <div><small>BONS BUTEURS</small><strong>${hasGoodScorers?escapeHTML(review.goodScorers)+(review.scorerPredictions?` / ${escapeHTML(review.scorerPredictions)}`:""):"—"}</strong></div>
+      </div>
+      <div class="after-match-public-analysis">
+        <small>ANALYSE DE LA JOURNÉE</small>
+        <p>${hasSummary?escapeHTML(review.summary):"Aucune analyse après-match renseignée."}</p>
+      </div>
+    </div>
+  </section>`;
+}
+
 async function initLigue1(){
   if(!$("#l1-day-tabs")) return;
   const [schedule,standing,pronos,clubmap,mercato] = await Promise.all([
@@ -235,6 +262,14 @@ async function initLigue1(){
         </div>
       </article>`;
     }).join("") || `<div class="empty-state">Aucun match disponible.</div>`;
+
+    let after=$("#l1-after-match");
+    if(!after){
+      after=document.createElement("div");
+      after.id="l1-after-match";
+      $("#l1-match-list").insertAdjacentElement("afterend",after);
+    }
+    after.innerHTML=dayAfterMatchHTML(pronos,current);
 
     $$("#l1-match-list .prono-open-btn").forEach(btn=>btn.addEventListener("click",()=>{
       const idx=Number(btn.dataset.pronoIndex);

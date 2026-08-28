@@ -194,3 +194,57 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Sur la page publique : ✓ pour un buteur trouvé, ✕ pour un buteur qui n'a pas marqué.
 - La statistique « bons buteurs » se calcule automatiquement à partir des joueurs réellement buteurs lorsque la donnée ESPN est disponible.
 - Compatibilité conservée avec les anciens champs texte `buteurs`.
+
+## V8.3.1
+- Refonte visuelle des cartes Ligue 1 terminées.
+- Score prévu recentré entre les deux équipes.
+- Score final déplacé dans un bloc compact à gauche.
+- Choix 1/N/2 fortement mis en avant.
+- Bouton `PRONO` à la place du petit bouton circulaire.
+- Clic sur `PRONO` : panneau latéral avec analyse, score prévu/final, verdict 1/N/2, buteurs et statistiques du match.
+- Buteurs : vert s'ils ont réellement marqué, rouge s'ils n'ont pas marqué, neutre si la vérification ESPN n'est pas encore disponible.
+- Statistique des bons buteurs calculée automatiquement lorsque les buteurs réels ont été récupérés.
+
+## V8.3.2
+- Buteurs beaucoup plus visibles sur chaque carte.
+- Badges buteurs agrandis avec états vert/rouge renforcés après match.
+- Bloc BUTEURS mieux séparé visuellement du reste de la carte.
+- Bouton `PRONO` remplacé par un bouton plus large `ANALYSE DU MATCH`.
+- Bouton d'analyse plus contrasté, plus lisible et plus facile à cliquer sur mobile.
+
+## V8.3.3
+- Bloc BUTEURS resserré pour libérer de la place.
+- Noms d'équipes légèrement réduits.
+- Largeur du bouton ANALYSE DU MATCH réservée pour éviter qu'il sorte de l'écran.
+- Cartes rééquilibrées sur desktop et tablette.
+
+## V8.3.4
+- Classement Ligue 1 réduit à environ 300 px sur ordinateur.
+- Plus de largeur réservée à la zone des matchs.
+- Colonnes équipes/prono/buteurs rééquilibrées.
+- Bouton ANALYSE DU MATCH compacté et largeur garantie pour éviter toute coupure.
+- Noms des équipes très légèrement réduits uniquement sur desktop.
+
+## V8.3.5
+- Le bloc `Après match` saisi dans l'Admin est désormais affiché sur la page Ligue 1 publique.
+- Affichage des `Bons pronos`, `Bons buteurs` et de l'analyse/résumé de la journée.
+- Le bilan suit automatiquement la journée sélectionnée.
+- Si aucun bilan n'est renseigné dans l'Admin, le bloc reste masqué.
+
+## V8.4 — Bilan automatique + IA Footix
+- Nouveau `generate_review.py`.
+- Dès que tous les matchs d'une journée sont terminés, calcul automatique des bons 1/N/2.
+- Calcul automatique des buteurs trouvés lorsque les données buteurs ESPN sont disponibles.
+- Le résumé est généré via l'API OpenAI avec la voix Footix : naturelle, drôle, professionnelle, légèrement parisienne, autodérision et 3 à 6 emojis maximum.
+- Aucune donnée sportive n'est inventée : l'IA reçoit uniquement les résultats/pronos/buteurs présents dans les JSON.
+- Un bilan IA déjà généré n'est pas regénéré à chaque passage du workflow.
+- Si l'API IA échoue, les statistiques sont tout de même écrites et le workflow réessaiera ultérieurement.
+- Secret GitHub requis : `OPENAI_API_KEY`.
+- Modèle par défaut : `gpt-5-mini` (modifiable avec `OPENAI_MODEL`).
+
+## V8.4.1 — Débrief Footix 100 % gratuit
+- Suppression de la dépendance à l'API OpenAI et du secret `OPENAI_API_KEY`.
+- Résumé automatique généré directement dans GitHub Actions, gratuitement.
+- Ton Footix : naturel, un peu drôle, autodérision, légère fibre parisienne et emojis modérés.
+- Le texte s'appuie uniquement sur les scores, pronostics et buteurs présents dans les JSON.
+- Les formulations varient selon la journée afin d'éviter un texte identique à chaque fois.
