@@ -50,3 +50,43 @@
   .draw-head select{width:100%;min-width:0}
   .stats-four{grid-template-columns:repeat(2,1fr)}
 }
+
+
+/* === V8.1.1 HOTFIX — bandeau compétition LDC/Ligue 1 === */
+.competition-banner{
+  height:205px !important;
+  min-height:205px;
+  max-height:205px;
+  grid-template-columns:minmax(0,1fr) 260px minmax(0,1fr);
+  contain:layout paint;
+}
+.competition-banner > img{
+  display:block;
+  width:220px !important;
+  height:180px !important;
+  max-width:220px !important;
+  max-height:180px !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  object-fit:contain !important;
+  justify-self:center;
+  align-self:end;
+}
+.competition-banner .banner-copy,
+.competition-banner .banner-side{
+  min-width:0;
+}
+@media(max-width:760px){
+  .competition-banner{
+    height:170px !important;
+    min-height:170px;
+    max-height:170px;
+    grid-template-columns:minmax(0,1fr) 120px;
+  }
+  .competition-banner > img{
+    width:125px !important;
+    height:140px !important;
+    max-width:125px !important;
+    max-height:140px !important;
+  }
+}
