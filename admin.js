@@ -62,6 +62,10 @@ async function loadAdmin(){
   datasets.ligue1.days ||= {};
   datasets.ucl.days ||= {};
 
+  if (!Array.isArray(l1Schedule) || !l1Schedule.length) {
+    $a('#admin-status').textContent = 'Impossible de charger schedule.json. Vérifie que le fichier est bien à la racine du dépôt.';
+  }
+
   $$a('.admin-comp-btn').forEach(btn=>btn.addEventListener('click',()=>switchCompetition(btn.dataset.comp)));
   $a('#admin-day-select').addEventListener('change',()=>{saveVisible(); renderDay(Number($a('#admin-day-select').value));});
   $a('#add-ucl-match').addEventListener('click',()=>{saveVisible(); addUclMatch();});
@@ -184,14 +188,14 @@ function saveVisible(){
   if(Object.values(review).some(v=>v!=='')) day.review=review; else delete day.review;
 
   if(currentCompetition==='ligue1'){
-    $$('.admin-match-v8').forEach(card=>{
+    $$a('.admin-match-v8').forEach(card=>{
       const key=card.dataset.key, item={};
       card.querySelectorAll('[data-field]').forEach(input=>item[input.dataset.field]=input.value.trim());
       if(Object.values(item).some(Boolean)) day[key]=item; else delete day[key];
     });
   }else{
     day.matches=[];
-    $$('.admin-match-v8').forEach(card=>{
+    $$a('.admin-match-v8').forEach(card=>{
       const item={};
       card.querySelectorAll('[data-field]').forEach(input=>item[input.dataset.field]=input.value.trim());
       if(item.home||item.away||item.score||item.pick||item.buteurs||item.analyse||item.date||item.time) day.matches.push(item);
