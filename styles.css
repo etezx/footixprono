@@ -345,3 +345,136 @@ body.prono-panel-open{overflow:hidden}
   .prono-detail-match{grid-template-columns:1fr 62px 1fr}
   .prono-detail-stats{grid-template-columns:1fr}
 }
+
+
+/* === V8.3.2 — Buteurs et bouton Analyse renforcés === */
+.match-row-v831 .match-extra{
+  grid-template-columns:minmax(118px,.72fr) minmax(235px,1.55fr) 158px;
+  gap:10px;
+  align-items:center;
+}
+.scorers-zone{
+  min-width:0;
+  padding:7px 9px;
+  border:1px solid rgba(73,123,170,.32);
+  border-radius:9px;
+  background:linear-gradient(180deg,rgba(11,34,59,.86),rgba(6,24,43,.78));
+}
+.scorers-zone>small{
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.10em;
+  color:#8da9c6;
+  margin-bottom:7px;
+}
+.scorers-zone .scorer-verdict-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+.scorers-zone .scorer-verdict-list em{
+  display:inline-flex;
+  align-items:center;
+  min-height:26px;
+  padding:5px 9px;
+  border-radius:999px;
+  font-size:10px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:.01em;
+  border-width:1px;
+  border-style:solid;
+}
+.scorers-zone .scorer-verdict-list em.ok{
+  color:#a5ff7a;
+  background:linear-gradient(180deg,rgba(39,130,38,.28),rgba(22,75,27,.30));
+  border-color:rgba(111,239,82,.58);
+  box-shadow:inset 0 0 0 1px rgba(111,239,82,.08);
+}
+.scorers-zone .scorer-verdict-list em.ko{
+  color:#ff8998;
+  background:linear-gradient(180deg,rgba(160,42,59,.27),rgba(86,26,37,.29));
+  border-color:rgba(255,94,113,.54);
+  box-shadow:inset 0 0 0 1px rgba(255,94,113,.07);
+}
+.scorers-zone .scorer-verdict-list em.waiting,
+.scorers-zone .scorer-verdict-list em.pending{
+  color:#d2deeb;
+  background:linear-gradient(180deg,rgba(39,70,99,.30),rgba(23,46,69,.32));
+  border-color:rgba(120,155,190,.38);
+}
+
+.prono-open-btn{
+  width:148px;
+  min-height:46px;
+  height:auto;
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid #2c8eff;
+  background:linear-gradient(180deg,#0d3b69,#09284b);
+  color:#fff;
+  font-size:9px;
+  font-weight:950;
+  line-height:1.15;
+  letter-spacing:.055em;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  text-align:left;
+  box-shadow:inset 0 0 0 1px rgba(115,187,255,.08),0 5px 14px rgba(0,0,0,.18);
+  transition:border-color .18s ease,background .18s ease,transform .18s ease;
+}
+.prono-open-btn:hover{
+  background:linear-gradient(180deg,#14518e,#0b345f);
+  border-color:#65b4ff;
+  transform:translateY(-1px);
+}
+.prono-open-btn:active{transform:translateY(0)}
+.prono-btn-icon{
+  display:grid;
+  place-items:center;
+  flex:0 0 26px;
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  background:rgba(66,161,255,.16);
+  border:1px solid rgba(98,181,255,.52);
+  color:#9fd4ff;
+  font-size:13px;
+}
+.prono-btn-label{
+  display:block;
+  font-size:9px;
+  font-weight:950;
+  line-height:1.15;
+  color:#fff;
+}
+
+@media(max-width:1180px){
+  .match-row-v831 .match-extra{
+    grid-template-columns:140px minmax(220px,1fr) 158px;
+  }
+}
+@media(max-width:760px){
+  .match-row-v831 .match-extra{
+    grid-template-columns:1fr;
+  }
+  .scorers-zone{
+    padding:9px 10px;
+  }
+  .scorers-zone .scorer-verdict-list em{
+    font-size:11px;
+    min-height:29px;
+    padding:6px 10px;
+  }
+  .prono-open-btn{
+    width:100%;
+    min-height:48px;
+    justify-content:center;
+  }
+  .prono-btn-label{
+    font-size:10px;
+  }
+}

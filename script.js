@@ -231,7 +231,7 @@ async function initLigue1(){
             </div>
           </div>
           <div class="scorers-zone"><small>BUTEURS</small>${scorerHTML}</div>
-          <button class="analysis-btn prono-open-btn" type="button" data-prono-index="${i}"><span>◉</span> PRONO</button>
+          <button class="analysis-btn prono-open-btn" type="button" data-prono-index="${i}"><span class="prono-btn-icon">◉</span><span class="prono-btn-label">ANALYSE DU MATCH</span></button>
         </div>
       </article>`;
     }).join("") || `<div class="empty-state">Aucun match disponible.</div>`;
