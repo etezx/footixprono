@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T06:11:03.044Z",
+  "updated_at": "2026-08-28T06:18:23.707Z",
   "days": {
     "1": {
       "OLYMPIQUE DE MARSEILLE|||RC STRASBOURG ALSACE": {
@@ -181,7 +181,11 @@
         ],
         "buteurs": "Sékou Mara\nAbdallah Sima\nFlorian Thauvin",
         "analyse": "Je vois des lensois en pleine forme et favoris mais je pense que la rencontre ne va pas être si simple pour eux, avec quelques tensions (un pénalty pour une des deux équipes) et une confrontation plus sérrée qu'on ne le pense"
-      }
+      },
+      "mustWatch": [
+        "LOSC|||PARIS SAINT-GERMAIN",
+        "AS MONACO|||OLYMPIQUE DE MARSEILLE"
+      ]
     }
   }
 }
