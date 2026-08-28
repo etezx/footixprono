@@ -29,6 +29,17 @@ jobs:
       - name: Mettre à jour les données
         run: python update_standings.py
 
+      - name: Vérifier que le classement n'est pas vide
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("standings.json").read_text(encoding="utf-8"))
+          teams = data.get("teams", [])
+          assert len(teams) >= 10, f"Classement incomplet: {len(teams)} équipes"
+          print(f"Classement vérifié: {len(teams)} équipes, {sum(int(t.get('p', 0) or 0) for t in teams)} matchs-équipe")
+          PY
+
       - name: Enregistrer les nouvelles données
         run: |
           git config user.name "footix-prono-bot"
