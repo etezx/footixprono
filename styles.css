@@ -99,3 +99,62 @@
 @media(max-width:760px){
   .home-mascot > img{width:190px!important;height:190px!important;max-height:190px!important}
 }
+
+
+/* =========================================================
+   V8.2 ADMIN — dashboard multi-compétitions
+   ========================================================= */
+.admin-v8{background:#020817;color:#f5f8ff;min-height:100vh}
+.admin-shell{min-height:100vh;display:grid;grid-template-columns:235px minmax(0,1fr)}
+.admin-sidebar{padding:18px 14px;background:linear-gradient(180deg,#020817,#04142a);border-right:1px solid #103256}
+.admin-brand{margin-bottom:28px}
+.admin-comp-btn{width:100%;min-height:64px;display:flex;align-items:center;gap:12px;text-align:left;border:1px solid #12375f;border-radius:9px;background:#06162c;color:#e9f0fa;margin:7px 0;padding:10px 12px;cursor:pointer}
+.admin-comp-btn>span:nth-child(2){display:flex;flex-direction:column;gap:2px}
+.admin-comp-btn b{font-size:12px}.admin-comp-btn small{font-size:9px;color:#7891b1}
+.admin-comp-btn.active{border-color:#82ed19;background:linear-gradient(90deg,rgba(105,235,22,.13),#07182e);box-shadow:inset 3px 0 #82ed19}
+.admin-side-note{margin-top:26px;border:1px solid #10365e;background:#06142a;border-radius:10px;padding:14px}
+.admin-side-note span{font-size:9px;color:#80ed18;font-weight:900;letter-spacing:.1em}.admin-side-note p{font-size:11px;color:#8ea3c0;line-height:1.5}
+.admin-back-link{display:block;margin-top:14px;color:#8ca6c7;text-decoration:none;font-size:11px;padding:10px}
+.admin-content{min-width:0}.admin-topbar{height:88px;display:flex;align-items:center;justify-content:space-between;padding:0 26px;border-bottom:1px solid #103154;background:#030b1a}
+.admin-topbar h1{font-size:24px;margin:5px 0 0}.admin-current-comp{font-size:12px;font-weight:900;color:#8df91c;border:1px solid #3d8510;background:#0d2512;border-radius:99px;padding:8px 12px}
+.admin-dashboard{max-width:1450px;margin:auto;padding:18px}.admin-panel{border:1px solid #12385f;background:linear-gradient(180deg,#071830,#061529);border-radius:12px;overflow:hidden;margin-bottom:14px}
+.admin-panel-head{min-height:65px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid #123457}
+.admin-panel-head h2,.admin-panel-head h3{margin:3px 0 0}.kicker{font-size:9px;color:#7fa0c7;font-weight:900;letter-spacing:.12em}
+.secure-chip{font-size:9px;color:#74ed92;border:1px solid #26834a;background:#09251a;border-radius:99px;padding:6px 9px}
+.admin-credentials-v8{display:grid;grid-template-columns:1fr 1fr 1fr 2fr;gap:10px;padding:14px}
+.admin-credentials-v8 label,.admin-fields-v8 label,.ucl-fixture-fields label,.admin-review-grid-v8 label,.admin-summary-v8{display:flex;flex-direction:column;gap:6px}
+.admin-credentials-v8 label span,.admin-fields-v8 label span,.ucl-fixture-fields label span,.admin-review-grid-v8 label span,.admin-summary-v8>span{font-size:9px;color:#8199b8;font-weight:800}
+.admin-v8 input,.admin-v8 select,.admin-v8 textarea{width:100%;background:#041226;color:#f4f8ff;border:1px solid #17446f;border-radius:7px;padding:10px 11px;font:inherit;outline:none}
+.admin-v8 input:focus,.admin-v8 select:focus,.admin-v8 textarea:focus{border-color:#248cff;box-shadow:0 0 0 2px rgba(36,140,255,.12)}
+.editor-head{position:sticky;top:0;z-index:3;background:#07182f}.admin-day-control{display:flex;align-items:center;gap:9px}.admin-day-control label{font-size:10px;color:#899fbd}.admin-day-control select{min-width:150px}
+.ucl-admin-toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center;margin:12px;border:1px solid #194b7c;background:#082141;border-radius:9px;padding:12px 14px}.ucl-admin-toolbar.hidden{display:none}.ucl-admin-toolbar b{display:block;font-size:12px}.ucl-admin-toolbar span{display:block;font-size:10px;color:#8ca4c3;margin-top:3px}
+.admin-outline-btn{border:1px solid #58bdff;background:#073465;color:#fff;border-radius:7px;padding:9px 13px;font-weight:800;cursor:pointer;white-space:nowrap}
+.admin-match-list{padding:12px}.admin-match-v8{border:1px solid #11375e;background:#071a31;border-radius:10px;margin-bottom:10px;overflow:hidden}
+.admin-match-top{min-height:58px;padding:10px 13px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #123553}
+.admin-match-top small{font-size:8px;color:#5e90c4;display:block;margin-bottom:5px}.admin-match-top strong{display:flex;align-items:center;gap:10px;font-size:13px}.admin-match-top strong i{font-style:normal;color:#5c7798}
+.admin-club-inline{display:inline-flex;align-items:center;gap:7px}.admin-club-inline img{width:27px;height:27px;object-fit:contain}.admin-club-inline i{width:27px;height:27px;border-radius:7px;background:#143a61;display:grid;place-items:center;font-size:7px;font-style:normal}
+.fixture-chip{font-size:9px;color:#72b9ff;border:1px solid #245a8e;border-radius:99px;padding:6px 9px}
+.admin-team-selects{display:grid;grid-template-columns:minmax(190px,1fr) 40px minmax(190px,1fr);gap:8px;align-items:center}.admin-team-selects>span{text-align:center;font-size:9px;color:#79a2cb;font-weight:900}
+.remove-ucl-match{width:32px;height:32px;border-radius:50%;border:1px solid #7b3141;background:#30101a;color:#ff8096;font-size:19px;cursor:pointer}
+.ucl-fixture-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 13px 0}
+.admin-fields-v8{display:grid;grid-template-columns:180px 180px minmax(220px,1fr);gap:10px;padding:12px 13px}
+.analysis-field-v8{grid-column:1/-1}.admin-fields-v8 textarea{resize:vertical;min-height:66px}.analysis-field-v8 textarea{min-height:125px}
+.admin-review-v8{border-top:1px solid #12375d;margin-top:4px}.compact-head{min-height:53px}.admin-review-grid-v8{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px 13px 0}.admin-summary-v8{padding:12px 13px}.admin-summary-v8 textarea{min-height:130px}
+.admin-publish-bar{position:sticky;bottom:0;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:13px 16px;border-top:1px solid #17436e;background:rgba(3,13,28,.96);backdrop-filter:blur(12px)}
+.admin-status{font-size:10px;color:#8da4c1}.admin-publish-btn{border:1px solid #75ef18;background:linear-gradient(180deg,#287a22,#155817);color:#fff;border-radius:8px;padding:11px 18px;font-weight:900;cursor:pointer}.admin-publish-btn:disabled{opacity:.5;cursor:wait}
+.admin-empty{padding:34px;text-align:center;border:1px dashed #20476f;border-radius:9px;color:#7e98b7}.admin-empty b,.admin-empty span{display:block}.admin-empty span{font-size:10px;margin-top:6px}
+.ucl-public-match-list{padding:9px}.ucl-public-match{border:1px solid #123960;background:#071a32;border-radius:9px;margin:7px 0;overflow:hidden}.ucl-public-date{font-size:9px;color:#759bc4;padding:7px 10px;border-bottom:1px solid #102f50}
+.ucl-public-teams{display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;padding:10px}.ucl-public-teams>span{display:flex;align-items:center;gap:8px;font-size:11px}.ucl-public-teams>span:last-child{justify-content:flex-end;text-align:right}.ucl-public-teams>strong{text-align:center;font-size:18px}
+.ucl-match-logo-wrap{display:inline-grid;place-items:center}.ucl-match-logo{width:30px;height:30px;object-fit:contain}.ucl-match-logo-fallback{display:none;width:30px;height:30px;border-radius:7px;background:#153c64;place-items:center;font-size:7px}
+.ucl-public-extra{display:grid;grid-template-columns:90px 1fr 2fr;border-top:1px solid #102f50}.ucl-public-extra>span{padding:8px 10px;border-right:1px solid #102f50}.ucl-public-extra>span:last-child{border-right:0}.ucl-public-extra small{display:block;font-size:7px;color:#718cac}.ucl-public-extra b{font-size:9px}
+
+@media(max-width:1000px){
+  .admin-shell{grid-template-columns:1fr}.admin-sidebar{display:grid;grid-template-columns:1fr 1fr;gap:6px}.admin-brand{grid-column:1/-1}.admin-side-note,.admin-back-link,.admin-sidebar .side-label{display:none}
+  .admin-credentials-v8{grid-template-columns:1fr 1fr}.token-field{grid-column:1/-1}.admin-fields-v8{grid-template-columns:1fr 1fr}.scorers-field{grid-column:1/-1}
+}
+@media(max-width:650px){
+  .admin-topbar{height:auto;padding:14px}.admin-topbar h1{font-size:19px}.admin-current-comp{display:none}.admin-dashboard{padding:8px}
+  .admin-credentials-v8,.admin-fields-v8,.admin-review-grid-v8,.ucl-fixture-fields{grid-template-columns:1fr}.token-field,.scorers-field,.analysis-field-v8{grid-column:1}.admin-panel-head{align-items:flex-start}.editor-head{flex-direction:column}.admin-day-control{width:100%}.admin-day-control select{flex:1}
+  .admin-team-selects{grid-template-columns:1fr}.admin-team-selects>span{display:none}.ucl-admin-toolbar{align-items:flex-start;flex-direction:column}.admin-outline-btn{width:100%}.admin-publish-bar{align-items:stretch;flex-direction:column}.admin-publish-btn{width:100%}
+  .ucl-public-extra{grid-template-columns:1fr}.ucl-public-extra>span{border-right:0;border-bottom:1px solid #102f50}
+}

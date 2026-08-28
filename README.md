@@ -155,3 +155,11 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Les bons buteurs restent comptabilisés manuellement via le bilan de journée.
 - Ajout du tirage officiel de la phase de ligue de Ligue des Champions 2026/27 : 8 adversaires par club, domicile/extérieur.
 - Ajout des logos des 36 clubs LDC avec fallback graphique si une ressource distante est indisponible.
+
+## V8.2
+- Refonte complète de `admin.html` dans le design dashboard V8.
+- Sélecteur de compétition Ligue 1 / Ligue des Champions.
+- Ligue 1 : édition identique fonctionnellement, mais nouvelle interface.
+- Ligue des Champions : J01 à J08, ajout/suppression manuel des affiches, choix des 36 clubs, date, heure, score Footix, 1/N/2, buteurs, analyse et bilan.
+- Nouveau fichier `champions-pronos.json` publié par l'Admin séparément de `pronos.json`.
+- La page `champions.html` affiche automatiquement les pronostics LDC saisis dans l'Admin.

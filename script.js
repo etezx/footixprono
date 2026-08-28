@@ -123,22 +123,52 @@ async function initLigue1(){
 }
 async function initUCL(){
   if(!$("#ucl-day-tabs")) return;
-  const d=await getJSON("champions.json");
+  const [d,uclPronos]=await Promise.all([
+    getJSON("champions.json"),
+    getJSON("champions-pronos.json").catch(()=>({days:{}}))
+  ]);
   const byName=Object.fromEntries(d.teams.map(t=>[t.club,t]));
+  let current=1;
+
+  function logoFor(name,klass="ucl-logo"){
+    const t=byName[name]||{abbr:(name||"?").slice(0,3).toUpperCase(),logo:""};
+    return imageWithFallback(t.logo,t.abbr,klass);
+  }
 
   d.matchdays.forEach((md,i)=>{
     const b=document.createElement("button");
     b.textContent=md.label;
     b.className=i===0?"active":"";
     b.onclick=()=>{
+      current=md.day;
       $$("#ucl-day-tabs button").forEach(x=>x.classList.remove("active"));
       b.classList.add("active");
       showDay(md);
     };
     $("#ucl-day-tabs").appendChild(b);
   });
+
   function showDay(md){
-    $("#ucl-day-content").innerHTML=`<div class="ucl-coming"><span>✦</span><div><b>${md.label} · ${md.window}</b><p>Les rencontres seront automatiquement rangées ici dès publication des dates et horaires officiels.</p></div><em>CALENDRIER À VENIR</em></div>`;
+    const day=(uclPronos.days||{})[String(md.day)]||{};
+    const matches=day.matches||[];
+    if(!matches.length){
+      $("#ucl-day-content").innerHTML=`<div class="ucl-coming"><span>✦</span><div><b>${md.label} · ${md.window}</b><p>Les rencontres seront affichées ici dès qu’elles seront ajoutées depuis l’Admin ou publiées officiellement.</p></div><em>CALENDRIER À VENIR</em></div>`;
+      return;
+    }
+    $("#ucl-day-content").innerHTML=`<div class="ucl-public-match-list">${matches.map((m,i)=>`
+      <article class="ucl-public-match">
+        <div class="ucl-public-date">${m.date||m.time?`${m.date||""}${m.date&&m.time?" · ":""}${m.time||""}`:"Horaire à confirmer"}</div>
+        <div class="ucl-public-teams">
+          <span>${logoFor(m.home,"ucl-match-logo")}<b>${m.home||"À déterminer"}</b></span>
+          <strong>${m.score||"—"}</strong>
+          <span>${logoFor(m.away,"ucl-match-logo")}<b>${m.away||"À déterminer"}</b></span>
+        </div>
+        <div class="ucl-public-extra">
+          <span><small>PRONO</small><b>${m.pick||"—"}</b></span>
+          <span><small>BUTEURS</small><b>${m.buteurs||"—"}</b></span>
+          <span><small>ANALYSE</small><b>${m.analyse||"À venir"}</b></span>
+        </div>
+      </article>`).join("")}</div>`;
   }
   showDay(d.matchdays[0]);
 
@@ -176,7 +206,7 @@ async function initUCL(){
   }));
 
   $("#ucl-standings").innerHTML=`<div class="stand-head"><span>#</span><span>ÉQUIPE</span><span>J</span><span>DIFF</span><span>PTS</span></div>`+
-  d.teams.map((t,i)=>`<div class="stand-row ${i<8?"direct":i<24?"playoff":"out"}"><span>${i+1}</span><span class="stand-team">${imageWithFallback(t.logo,t.abbr,"ucl-mini-logo")}${t.club}</span><span>0</span><span>0</span><strong>0</strong></div>`).join("");
+  d.teams.map((t,i)=>`<div class="stand-row ${i<8?"direct":i<24?"playoff":"out"}"><span>${i+1}</span><span class="stand-team">${imageWithFallback(t.logo,t.abbr,"ucl-mini-logo")}${t.club}</span><span>${t.p||0}</span><span>${(t.gf||0)-(t.ga||0)}</span><strong>${t.pts||0}</strong></div>`).join("");
 
   $("#knockout-tree").innerHTML=d.knockout.map((r,i)=>`<div class="round-card"><small>${String(i+1).padStart(2,"0")}</small><b>${r.round}</b><span>${r.dates}</span><em>${i<4?"Équipes à déterminer":"🏆"}</em></div>`).join("");
 }

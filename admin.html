@@ -1,67 +1,105 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="robots" content="noindex,nofollow" />
-  <title>Administration — Footix Prono</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7.1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#020817">
+  <title>Footix Prono — Administration</title>
+  <link rel="stylesheet" href="styles.css?v=8.2">
 </head>
-<body class="admin-page">
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Retour à Footix Prono">
-      <img src="logo-footix-prono.png" alt="Logo Footix Prono" />
-      <div><strong>Footix Prono</strong><span>Administration des pronostics</span></div>
+<body class="admin-v8">
+<div class="admin-shell">
+  <aside class="admin-sidebar">
+    <a class="brand admin-brand" href="index.html">
+      <img src="logo-footix-prono.png" alt="Footix Prono">
+      <div><strong>FOOTIX</strong><span>— ADMIN —</span></div>
     </a>
-    <nav class="main-nav"><a class="nav-link" href="index.html">← Retour au site</a></nav>
-  </header>
 
-  <main class="admin-main">
-    <section class="admin-hero">
-      <span class="eyebrow">ESPACE ÉDITEUR</span>
-      <h1>Publier tes <span>pronostics.</span></h1>
-      <p>Choisis une journée, renseigne ton 1 / N / 2, ton score, tes buteurs et ton analyse, puis publie directement dans <code>pronos.json</code>. Tu ne touches plus à <code>index.html</code>.</p>
-    </section>
+    <div class="side-label">COMPÉTITION À ÉDITER</div>
+    <button class="admin-comp-btn active" data-comp="ligue1" type="button">
+      <span class="comp-mark l1-mark">1</span>
+      <span><b>LIGUE 1</b><small>34 journées</small></span>
+    </button>
+    <button class="admin-comp-btn" data-comp="ucl" type="button">
+      <span class="comp-mark ucl-mark">✦</span>
+      <span><b>LIGUE DES CHAMPIONS</b><small>8 journées</small></span>
+    </button>
 
-    <section class="admin-connect card-like">
-      <div class="admin-connect-copy">
-        <span class="kicker">Connexion GitHub</span>
-        <h2>Autoriser la publication</h2>
-        <p>Utilise un <strong>Fine-grained Personal Access Token</strong> limité au dépôt <code>etezx/footixprono</code>, avec uniquement <strong>Contents: Read and write</strong>. Le jeton reste en mémoire dans ton navigateur et n'est jamais enregistré dans les fichiers du site.</p>
-      </div>
-      <div class="admin-credentials">
-        <label>Propriétaire<input id="repo-owner" value="etezx" autocomplete="off"></label>
-        <label>Dépôt<input id="repo-name" value="footixprono" autocomplete="off"></label>
-        <label>Branche<input id="repo-branch" value="main" autocomplete="off"></label>
-        <label>Jeton GitHub<input id="github-token" type="password" placeholder="github_pat_…" autocomplete="off"></label>
-      </div>
-    </section>
+    <div class="admin-side-note">
+      <span>ESPACE PRIVÉ</span>
+      <p>Ton jeton GitHub reste uniquement dans la mémoire de cette page.</p>
+    </div>
 
-    <section class="section admin-editor">
-      <div class="section-head">
-        <div><span class="kicker">Éditeur</span><h2>Journée à modifier</h2></div>
-        <div class="day-select-wrap"><label for="admin-day-select">Journée</label><select id="admin-day-select"></select></div>
+    <a class="admin-back-link" href="index.html">← Retour au site</a>
+  </aside>
+
+  <div class="admin-content">
+    <header class="admin-topbar">
+      <div>
+        <span class="eyebrow">FOOTIX PRONO · ÉDITEUR</span>
+        <h1>Administration des pronostics</h1>
       </div>
-      <div id="admin-matches" class="admin-matches"><div class="loading-card">Chargement du calendrier…</div></div>
-      <section class="admin-review-block"><div class="section-head"><div><span class="kicker">Après les matchs</span><h2>Bilan de la journée</h2></div></div>
-        <div class="admin-review-grid"><label>Bons pronostics / 9<input id="admin-good-pronos" type="number" min="0" max="9" placeholder="Ex. 6"></label><label>Bons buteurs / 9<input id="admin-good-scorers" type="number" min="0" max="9" placeholder="Ex. 3"></label></div>
-        <label class="admin-summary-label">Résumé de la journée<textarea id="admin-day-summary" rows="8" placeholder="Ton résumé global : ce qui a fonctionné, les surprises, les pronostics à retenir…"></textarea></label>
+      <div class="admin-current-comp" id="admin-current-comp">LIGUE 1</div>
+    </header>
+
+    <main class="admin-dashboard">
+      <section class="admin-panel admin-login-panel">
+        <div class="admin-panel-head">
+          <div><span class="kicker">CONNEXION GITHUB</span><h2>Autoriser la publication</h2></div>
+          <span class="secure-chip">● JETON NON ENREGISTRÉ</span>
+        </div>
+        <div class="admin-credentials-v8">
+          <label><span>Propriétaire</span><input id="repo-owner" value="etezx" autocomplete="off"></label>
+          <label><span>Dépôt</span><input id="repo-name" value="footixprono" autocomplete="off"></label>
+          <label><span>Branche</span><input id="repo-branch" value="main" autocomplete="off"></label>
+          <label class="token-field"><span>Jeton GitHub</span><input id="github-token" type="password" placeholder="github_pat_…" autocomplete="off"></label>
+        </div>
       </section>
 
-      <div class="admin-actions">
-        <span id="admin-status" class="admin-status" aria-live="polite">Les modifications restent locales tant que tu ne publies pas.</span>
-        <button id="publish-pronos" class="btn primary" type="button">Publier les pronostics</button>
-      </div>
-    </section>
-  </main>
+      <section class="admin-panel admin-editor-panel">
+        <div class="admin-panel-head editor-head">
+          <div>
+            <span class="kicker" id="admin-editor-kicker">LIGUE 1</span>
+            <h2 id="admin-editor-title">Pronostics de la journée</h2>
+          </div>
+          <div class="admin-day-control">
+            <label for="admin-day-select">Journée</label>
+            <select id="admin-day-select"></select>
+          </div>
+        </div>
 
-  <footer>
-    <div class="brand mini"><img src="logo-footix-prono.png" alt=""><strong>Footix Prono</strong></div>
-    <p>Administration statique sécurisée par ton jeton GitHub.</p>
-  </footer>
-  <script src="admin.js?v=7.5"></script>
+        <div id="ucl-admin-toolbar" class="ucl-admin-toolbar hidden">
+          <div>
+            <b>Calendrier Ligue des Champions</b>
+            <span>Tu peux déjà créer les affiches manuellement. Elles pourront être remplacées automatiquement quand le calendrier officiel sera disponible.</span>
+          </div>
+          <button id="add-ucl-match" class="admin-outline-btn" type="button">＋ Ajouter un match</button>
+        </div>
+
+        <div id="admin-matches" class="admin-match-list">
+          <div class="loading-card">Chargement de l’éditeur…</div>
+        </div>
+
+        <section id="admin-review-section" class="admin-review-v8">
+          <div class="admin-panel-head compact-head">
+            <div><span class="kicker">APRÈS LES MATCHS</span><h3>Bilan de la journée</h3></div>
+          </div>
+          <div class="admin-review-grid-v8">
+            <label><span>Bons pronostics</span><input id="admin-good-pronos" type="number" min="0" max="18" placeholder="Ex. 6"></label>
+            <label><span>Bons buteurs</span><input id="admin-good-scorers" type="number" min="0" max="18" placeholder="Ex. 3"></label>
+          </div>
+          <label class="admin-summary-v8"><span>Résumé Footix de la journée</span><textarea id="admin-day-summary" rows="6" placeholder="Ce qui a fonctionné, les surprises, les pronostics à retenir…"></textarea></label>
+        </section>
+
+        <div class="admin-publish-bar">
+          <span id="admin-status" class="admin-status" aria-live="polite">Les modifications restent locales tant que tu ne publies pas.</span>
+          <button id="publish-pronos" class="admin-publish-btn" type="button">Publier sur GitHub</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+<script src="admin.js?v=8.2"></script>
 </body>
 </html>
