@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#020817">
 <title>Footix Prono — Ligue 1</title>
-<link rel="stylesheet" href="styles.css?v=8.1.1">
+<link rel="stylesheet" href="styles.css?v=8.1.2">
 </head>
 <body>
 <div class="app-shell">
@@ -15,10 +15,11 @@
     <a class="competition-link active" href="ligue1.html"><span class="comp-mark l1-mark">1</span><span>LIGUE 1</span><b>›</b></a>
     <a class="competition-link " href="champions.html"><span class="comp-mark ucl-mark">✦</span><span>LIGUE DES CHAMPIONS</span><b>›</b></a>
     
-        <div class="side-label">MENU LIGUE 1</div>
-        <a class="side-link active" href="#pronostics">⌁ <span>Pronostics</span></a>
-        <a class="side-link" href="#classement">♜ <span>Classement</span></a>
-        <a class="side-link" href="#mercato">↔ <span>Mercato</span></a>
+<div class="side-label">MENU LIGUE 1</div>
+<a class="side-link active" href="#pronostics">⌁ <span>Pronostics</span></a>
+<a class="side-link" href="#classement">♜ <span>Classement</span></a>
+<a class="side-link" href="#mercato">↔ <span>Mercato</span></a>
+
     <div class="sidebar-card mascot-card">
       <img src="logo-footix-prono.png" alt="">
       <p>ON EST TOUS<br>LE <em>FOOTIX</em><br>DE QUELQU’UN.</p>
@@ -27,7 +28,22 @@
       <strong>SUIVEZ FOOTIX PRONO</strong>
       <div class="social-row"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="YouTube">▶</a></div>
     </div>
-    </div>
+  </aside>
+
+  <div class="main-wrap">
+    <header class="topbar">
+      <div class="slogan">ON EST TOUS LE FOOTIX DE QUELQU’UN.</div>
+      <nav>
+        <a class="" href="index.html">⌂ ACCUEIL</a>
+        <a class="active" href="ligue1.html">♜ LIGUE 1</a>
+        <a class="" href="champions.html">✦ LIGUE DES CHAMPIONS</a>
+      </nav>
+      <div class="top-social">◎　𝕏　▶</div>
+    </header>
+    <main>
+
+<section class="competition-banner l1-banner">
+  <div class="banner-copy"><span class="banner-logo">1</span><div><h1>LIGUE 1</h1><p>34 journées de passion et de pronostics !</p></div></div>
   <img src="logo-footix-prono.png" alt="Footix">
   <div class="banner-side"><span>SAISON 2026/27</span><strong>FOOTIX EST PRÊT.</strong></div>
 </section>
@@ -38,22 +54,18 @@
     <div id="l1-day-tabs" class="day-tabs"></div>
     <div id="l1-match-list" class="match-table"></div>
   </section>
-
   <aside class="panel standings-panel" id="classement">
     <div class="panel-head"><h2>CLASSEMENT</h2><span class="muted">Toujours visible</span></div>
     <div id="l1-standings" class="standings-table"></div>
   </aside>
-
   <section class="panel lower-panel notice-panel">
     <div class="panel-head"><h3>📣 À NE PAS MANQUER</h3></div>
     <div class="feature-copy"><b>Une journée, un bilan Footix.</b><p>Les résultats de nos pronostics et de nos buteurs sont conservés journée après journée.</p></div>
   </section>
-
   <section class="panel lower-panel mercato-panel" id="mercato">
     <div class="panel-head"><h3>DERNIÈRES INFOS MERCATO</h3></div>
     <div id="mercato-list" class="news-list"><div class="empty-state">Chargement des informations…</div></div>
   </section>
-
   <aside class="panel stats-panel">
     <div class="panel-head"><h3>STATISTIQUES FOOTIX</h3><span class="muted">Mise à jour automatique</span></div>
     <div class="stats-grid stats-four">
@@ -64,11 +76,11 @@
     </div>
   </aside>
 </div>
-</main>
+
+    </main>
     <footer>© 2026 Footix Prono — Tous droits réservés.</footer>
   </div>
 </div>
-<script src="script.js?v=8.1.1"></script>
-
+<script src="script.js?v=8.1.2"></script>
 </body>
 </html>

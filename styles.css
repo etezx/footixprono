@@ -90,3 +90,12 @@
     max-height:140px !important;
   }
 }
+
+/* === V8.1.2 STRUCTURE FIX === */
+.home-mascot{overflow:hidden;min-width:0}
+.home-mascot > img{display:block;width:290px!important;height:280px!important;max-width:100%!important;max-height:280px!important;object-fit:contain!important}
+.competition-banner > img{position:relative!important;inset:auto!important;transform:none!important}
+.main-wrap,.main-wrap main,.home-hero,.competition-banner{min-width:0}
+@media(max-width:760px){
+  .home-mascot > img{width:190px!important;height:190px!important;max-height:190px!important}
+}
