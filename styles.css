@@ -831,3 +831,99 @@ body.prono-panel-open{overflow:hidden}
 @media(max-width:700px){
   .stats-grid.stats-three{grid-template-columns:1fr}
 }
+
+
+/* === V8.4.5 — Sélection manuelle des matchs à ne pas manquer === */
+.admin-must-watch-v845{
+  margin-top:14px;
+}
+.admin-must-watch-help{
+  margin:0 0 12px;
+  color:#91a5bd;
+  font-size:11px;
+  line-height:1.55;
+}
+.admin-must-watch-list{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+}
+.admin-must-watch-option{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  min-height:58px;
+  padding:9px 10px;
+  border:1px solid rgba(145,165,189,.18);
+  border-radius:10px;
+  background:rgba(7,16,31,.7);
+  cursor:pointer;
+  transition:border-color .16s ease,background .16s ease,transform .16s ease;
+}
+.admin-must-watch-option:hover{
+  border-color:rgba(75,209,132,.5);
+}
+.admin-must-watch-option.selected{
+  border-color:rgba(75,209,132,.8);
+  background:rgba(31,113,75,.14);
+}
+.admin-must-watch-option input{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
+.admin-must-watch-check{
+  display:grid;
+  place-items:center;
+  width:24px;
+  height:24px;
+  flex:0 0 24px;
+  border:1px solid rgba(145,165,189,.28);
+  border-radius:7px;
+  color:transparent;
+  font-size:12px;
+  font-weight:900;
+}
+.admin-must-watch-option.selected .admin-must-watch-check{
+  border-color:#4bd184;
+  color:#4bd184;
+  background:rgba(75,209,132,.12);
+}
+.admin-must-watch-match{
+  min-width:0;
+}
+.admin-must-watch-match small{
+  display:block;
+  margin-bottom:3px;
+  color:#70849c;
+  font-size:7px;
+  letter-spacing:.12em;
+}
+.admin-must-watch-match strong{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  color:#fff;
+  font-size:9px;
+}
+.admin-must-watch-match strong i{
+  color:#60748c;
+  font-size:7px;
+  font-style:normal;
+}
+.admin-must-watch-match .club-inline img{
+  width:17px;
+  height:17px;
+}
+.must-watch-manual-item + .must-watch-manual-item{
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid rgba(145,165,189,.14);
+}
+@media(max-width:950px){
+  .admin-must-watch-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  .admin-must-watch-list{grid-template-columns:1fr}
+}

@@ -255,3 +255,22 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Correction du compteur global `Bons buteurs` : une ancienne journée sans `actualScorers` utilise désormais le bilan validé au lieu d'afficher 0.
 - J1 affiche désormais 5 bons buteurs dans les statistiques globales.
 - Le générateur gratuit varie les formulations et cite plusieurs résultats marquants avant de parler des statistiques Footix.
+
+## V8.4.3
+- Statistiques Ligue 1 simplifiées : Pronostics réussis, Taux de réussite, Nombre de pronos.
+- Suppression de `Bons buteurs` du panneau Statistiques Footix.
+- `À NE PAS MANQUER` devient un vrai `MATCH À NE PAS MANQUER`, calculé automatiquement pour chaque journée.
+- Le choix privilégie le potentiel de spectacle : rythme de buts marqués/encaissés, classement, potentiel de buts du prono et léger bonus de prestige en tout début de saison.
+
+## V8.4.4
+- Correction du compteur `PRONOSTICS` de la page d'accueil.
+- Le nombre n'est plus figé à 0 : il est calculé automatiquement depuis `pronos.json`, `schedule.json` et `champions-pronos.json`.
+- Un match est compté lorsqu'un vrai pronostic a été renseigné (1/N/2, score, analyse ou buteur).
+
+## V8.4.5 — Match(s) à ne pas manquer choisi(s) dans l’Admin
+- Suppression du calcul automatique du match à ne pas manquer.
+- Nouveau menu `📣 Match(s) à ne pas manquer` dans l’Admin Ligue 1.
+- Pour chaque journée, Footix peut cocher une ou plusieurs rencontres.
+- Les choix sont enregistrés dans `pronos.json`, dans `days -> journée -> mustWatch`.
+- La page Ligue 1 affiche uniquement les rencontres choisies manuellement.
+- Si rien n’est coché, le site indique simplement qu’aucune rencontre n’a encore été sélectionnée.

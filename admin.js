@@ -84,6 +84,7 @@ function switchCompetition(comp){
   $a('#admin-editor-kicker').textContent=comp==='ligue1'?'LIGUE 1 · 2026/27':'LIGUE DES CHAMPIONS · 2026/27';
   $a('#admin-editor-title').textContent=comp==='ligue1'?'Pronostics de la journée':'Pronostics de la phase de ligue';
   $a('#ucl-admin-toolbar').classList.toggle('hidden',comp!=='ucl');
+  $a('#admin-must-watch-section').classList.toggle('hidden',comp!=='ligue1');
 
   const days=comp==='ligue1'
     ? l1Schedule.map(d=>({day:d.journee,label:`Journée ${d.journee}`}))
@@ -111,9 +112,42 @@ function renderDay(dayNo){
   $a('#admin-status').textContent=`${currentCompetition==='ligue1'?'Ligue 1':'Ligue des Champions'} · journée ${dayNo} chargée.`;
 }
 
+
+function renderMustWatchAdmin(dayNo,dayData,matches){
+  const host=$a('#admin-must-watch-list');
+  if(!host) return;
+
+  const selected=Array.isArray(dayData.mustWatch) ? dayData.mustWatch : [];
+  if(!matches.length){
+    host.innerHTML='<div class="admin-empty">Aucune rencontre disponible pour cette journée.</div>';
+    return;
+  }
+
+  host.innerHTML=matches.map((m,index)=>{
+    const home=m[0], away=m[1];
+    const key=matchKey(home,away);
+    const checked=selected.includes(key);
+    return `<label class="admin-must-watch-option ${checked?'selected':''}">
+      <input type="checkbox" data-must-watch="${esc(key)}" ${checked?'checked':''}>
+      <span class="admin-must-watch-check">✓</span>
+      <span class="admin-must-watch-match">
+        <small>MATCH ${String(index+1).padStart(2,'0')}</small>
+        <strong>${clubInline(home,'ligue1')}<i>VS</i>${clubInline(away,'ligue1')}</strong>
+      </span>
+    </label>`;
+  }).join('');
+
+  host.querySelectorAll('[data-must-watch]').forEach(input=>{
+    input.addEventListener('change',()=>{
+      input.closest('.admin-must-watch-option')?.classList.toggle('selected',input.checked);
+    });
+  });
+}
+
 function renderL1(dayNo,dayData){
   const day=l1Schedule.find(d=>d.journee===dayNo);
   const matches=day?.matches||[];
+  renderMustWatchAdmin(dayNo,dayData,matches);
   $a('#admin-matches').innerHTML=matches.map((m,index)=>{
     const [home,away,fixture={}] = m;
     const key=matchKey(home,away);
@@ -229,6 +263,10 @@ function saveVisible(){
   if(Object.values(review).some(v=>v!=='')) day.review=review; else delete day.review;
 
   if(currentCompetition==='ligue1'){
+    const selectedMustWatch=$$a('#admin-must-watch-list [data-must-watch]:checked').map(input=>input.dataset.mustWatch);
+    if(selectedMustWatch.length) day.mustWatch=selectedMustWatch;
+    else delete day.mustWatch;
+
     $$a('.admin-match-v8').forEach(card=>{
       const key=card.dataset.key, item={};
       card.querySelectorAll('[data-field]').forEach(input=>{

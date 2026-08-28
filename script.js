@@ -204,92 +204,32 @@ function dayAfterMatchHTML(pronos,dayNo){
 }
 
 
-function normalizeClubKey(name){
-  return String(name||"")
-    .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
-    .toLowerCase()
-    .replace(/\b(fc|cf|sc|29)\b/g,"")
-    .replace(/[^a-z0-9]+/g," ")
-    .trim();
-}
-
-function mustWatchMatch(day,pronos,standing){
-  const rows=(standing&&standing.teams)||[];
-  const byClub=new Map(rows.map((t,i)=>[normalizeClubKey(t.club),{...t,rank:i+1}]));
-  const prestige={
-    "paris saint germain":5,
-    "olympique de marseille":4.5,
-    "as monaco":3.8,
-    "olympique lyonnais":3.7,
-    "losc":3.5,
-    "rc lens":3.3,
-    "stade rennais":3.0,
-    "ogc nice":3.0
-  };
-
-  function teamStats(name){
-    const key=normalizeClubKey(name);
-    if(byClub.has(key)) return byClub.get(key);
-    for(const [k,v] of byClub){
-      if(k.includes(key)||key.includes(k)) return v;
-    }
-    return {p:0,gf:0,ga:0,pts:0,rank:99};
-  }
-
-  function scoreMatch(m,i){
-    const home=m[0], away=m[1];
-    const a=teamStats(home), b=teamStats(away);
-    const p=pronoForMatch(pronos,day.journee,home,away,i);
-
-    let predictedGoals=0;
-    const sm=String(p.score||p.scorePrevu||"").match(/(\d+)\s*[-–:]\s*(\d+)/);
-    if(sm) predictedGoals=Number(sm[1])+Number(sm[2]);
-
-    const played=(Number(a.p)||0)+(Number(b.p)||0);
-    let statisticalSpectacle=0;
-    if(played>0){
-      const rateA=Number(a.p)?((Number(a.gf)||0)+(Number(a.ga)||0))/Number(a.p):0;
-      const rateB=Number(b.p)?((Number(b.gf)||0)+(Number(b.ga)||0))/Number(b.p):0;
-      statisticalSpectacle=(rateA+rateB)*2.2;
-
-      const rankBonus=
-        Math.max(0,20-Number(a.rank||20))/20 +
-        Math.max(0,20-Number(b.rank||20))/20;
-      statisticalSpectacle+=rankBonus*1.4;
-    }
-
-    const prestigeBonus=
-      (prestige[normalizeClubKey(home)]||0)+
-      (prestige[normalizeClubKey(away)]||0);
-
-    return {
-      home,away,
-      total:statisticalSpectacle + predictedGoals*1.6 + prestigeBonus*.55,
-      predictedGoals,
-      played
-    };
-  }
-
-  return (day.matches||[])
-    .map(scoreMatch)
-    .sort((x,y)=>y.total-x.total)[0]||null;
-}
-
-function renderMustWatch(day,pronos,standing){
+function renderMustWatch(day,pronos){
   const box=$("#l1-must-watch");
   if(!box) return;
-  const pick=mustWatchMatch(day,pronos,standing);
 
-  if(!pick){
-    box.innerHTML="<b>Aucune affiche disponible.</b><p>Le calendrier de cette journée n'est pas encore renseigné.</p>";
+  const dayData=((pronos.days||{})[String(day?.journee)]||{});
+  const selected=Array.isArray(dayData.mustWatch) ? dayData.mustWatch : [];
+  const matches=day?.matches||[];
+
+  const chosen=selected.map(key=>{
+    const found=matches.find(m=>`${m[0]}|||${m[1]}`===key);
+    return found ? {home:found[0],away:found[1],fixture:found[2]||{}} : null;
+  }).filter(Boolean);
+
+  if(!chosen.length){
+    box.innerHTML=`<b>Aucune rencontre sélectionnée.</b>
+      <p>Footix n’a pas encore choisi son ou ses matchs à ne pas manquer pour cette journée.</p>`;
     return;
   }
 
-  const reason=pick.played>0
-    ? "Cette affiche ressort grâce au rythme de buts des deux équipes, à leur dynamique au classement et au potentiel offensif attendu."
-    : "En début de saison, Footix s'appuie surtout sur le potentiel de buts du prono et le niveau des équipes ; les statistiques réelles prendront ensuite le relais.";
-
-  box.innerHTML=`<b>🔥 ${escapeHTML(pick.home)} – ${escapeHTML(pick.away)}</b><p>${reason}</p>`;
+  box.innerHTML=chosen.map((m,index)=>{
+    const meta=fmtDayMeta(m.fixture);
+    return `<div class="must-watch-manual-item">
+      <b>🔥 ${escapeHTML(m.home)} – ${escapeHTML(m.away)}</b>
+      <p>${meta?escapeHTML(meta)+" · ":""}${chosen.length>1?`Sélection Footix n°${index+1}`:"La sélection Footix de cette journée."}</p>
+    </div>`;
+  }).join("");
 }
 
 
@@ -317,7 +257,7 @@ async function initLigue1(){
     $$("#l1-day-tabs button").forEach((b,i)=>b.classList.toggle("active",schedule[i].journee===current));
     const day=schedule.find(d=>d.journee===current);
     $("#l1-day-date").textContent=day?.date||"";
-    renderMustWatch(day,pronos,standing);
+    renderMustWatch(day,pronos);
 
     const sorted=(day?.matches||[]).slice().sort(matchSort);
     $("#l1-match-list").innerHTML=sorted.map((m,i)=>{
