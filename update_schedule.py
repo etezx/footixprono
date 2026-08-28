@@ -181,6 +181,32 @@ def kickoff(event: dict) -> tuple[str, str] | None:
     return dt.strftime("%Y-%m-%d"), dt.strftime("%H:%M")
 
 
+def result_info(event: dict) -> dict:
+    """Retourne score réel + état terminé à partir du scoreboard ESPN."""
+    competitions = event.get("competitions") or []
+    if not competitions:
+        return {}
+    comp = competitions[0]
+    competitors = comp.get("competitors") or []
+    if len(competitors) < 2:
+        return {}
+
+    home = next((c for c in competitors if c.get("homeAway") == "home"), competitors[0])
+    away = next((c for c in competitors if c.get("homeAway") == "away"), competitors[1])
+
+    status = (event.get("status") or {}).get("type") or {}
+    completed = bool(status.get("completed"))
+    out = {"completed": completed}
+
+    if completed:
+        try:
+            out["homeScore"] = int(float(home.get("score")))
+            out["awayScore"] = int(float(away.get("score")))
+        except (TypeError, ValueError):
+            pass
+    return out
+
+
 def main() -> None:
     if not OUTPUT.exists():
         raise RuntimeError("schedule.json introuvable à la racine du dépôt")
@@ -196,6 +222,7 @@ def main() -> None:
 
     matched = 0
     updated = 0
+    result_updates = 0
 
     for day in schedule:
         for match in day.get("matches", []):
@@ -217,11 +244,25 @@ def main() -> None:
 
             old_date = fixture.get("date")
             old_time = fixture.get("time")
+            old_result = (
+                fixture.get("completed"),
+                fixture.get("homeScore"),
+                fixture.get("awayScore"),
+            )
 
             fixture["date"] = date_value
             fixture["time"] = time_value
             fixture["official"] = True
             fixture["source"] = "ESPN public scoreboard"
+
+            info = result_info(event)
+            fixture["completed"] = bool(info.get("completed"))
+            if fixture["completed"] and "homeScore" in info and "awayScore" in info:
+                fixture["homeScore"] = info["homeScore"]
+                fixture["awayScore"] = info["awayScore"]
+            elif not fixture["completed"]:
+                fixture.pop("homeScore", None)
+                fixture.pop("awayScore", None)
 
             if len(match) > 2:
                 match[2] = fixture
@@ -231,11 +272,19 @@ def main() -> None:
             if (old_date, old_time) != (date_value, time_value):
                 updated += 1
 
-    print(f"{matched} rencontre(s) Footix reconnue(s), {updated} horaire(s) modifié(s).")
+            new_result = (
+                fixture.get("completed"),
+                fixture.get("homeScore"),
+                fixture.get("awayScore"),
+            )
+            if old_result != new_result:
+                result_updates += 1
+
+    print(f"{matched} rencontre(s) Footix reconnue(s), {updated} horaire(s) modifié(s), {result_updates} résultat(s) modifié(s).")
 
     # Si ESPN n'a qu'un morceau du calendrier, on met simplement à jour ce qu'il connaît.
-    if updated == 0:
-        print("[OK] Aucun nouvel horaire à enregistrer.")
+    if updated == 0 and result_updates == 0:
+        print("[OK] Aucun nouvel horaire ou résultat à enregistrer.")
         return
 
     OUTPUT.write_text(

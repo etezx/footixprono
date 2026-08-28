@@ -146,3 +146,12 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Ligue des Champions : 36 clubs 2026/27, 8 journées, zones de qualification et structure de phase finale.
 - Les dates/heures détaillées de LDC sont prévues pour être intégrées dès la publication officielle.
 - L'Admin et les workflows Ligue 1 existants sont conservés.
+
+## V8.1
+- Suppression du compteur de visites dans le menu latéral.
+- L'Admin propose désormais un vrai choix 1 / N / 2.
+- `update_schedule.py` enregistre aussi les scores réels et l'état terminé depuis ESPN.
+- Le site calcule automatiquement les pronostics 1/N/2 réussis, le nombre jugé et le taux de réussite.
+- Les bons buteurs restent comptabilisés manuellement via le bilan de journée.
+- Ajout du tirage officiel de la phase de ligue de Ligue des Champions 2026/27 : 8 adversaires par club, domicile/extérieur.
+- Ajout des logos des 36 clubs LDC avec fallback graphique si une ressource distante est indisponible.

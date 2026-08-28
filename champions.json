@@ -1,7 +1,7 @@
 {
   "season": "2026/27",
   "status": "draw-complete-fixtures-pending",
-  "notice": "Le tirage est terminé. Les dates et heures officielles des rencontres seront intégrées dès leur publication.",
+  "notice": "Chaque club connaît ses huit adversaires. Les dates et heures définitives seront intégrées dès publication officielle.",
   "matchdays": [
     {
       "day": 1,
@@ -72,6 +72,21 @@
       "abbr": "AEK",
       "country": "GRE",
       "color": "#f2c300",
+      "logo": "https://assets.footylogos.com/logos/aek-athens/aek-athens-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Real Madrid",
+          "Roma",
+          "Galatasaray",
+          "LASK"
+        ],
+        "away": [
+          "Manchester City",
+          "Borussia Dortmund",
+          "Shakhtar",
+          "Como"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -85,6 +100,21 @@
       "abbr": "ARS",
       "country": "ENG",
       "color": "#d71920",
+      "logo": "https://assets.footylogos.com/logos/arsenal/arsenal-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Real Madrid",
+          "Borussia Dortmund",
+          "Lille",
+          "Sabah"
+        ],
+        "away": [
+          "Bayern München",
+          "Real Betis",
+          "Napoli",
+          "Slavia Praha"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -98,6 +128,21 @@
       "abbr": "AVL",
       "country": "ENG",
       "color": "#7a003c",
+      "logo": "https://assets.footylogos.com/logos/aston-villa/aston-villa-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Paris Saint-Germain",
+          "Borussia Dortmund",
+          "Fenerbahçe",
+          "Viking"
+        ],
+        "away": [
+          "Barcelona",
+          "Club Brugge",
+          "Galatasaray",
+          "Slavia Praha"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -111,45 +156,21 @@
       "abbr": "ATM",
       "country": "ESP",
       "color": "#d71920",
-      "p": 0,
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "pts": 0
-    },
-    {
-      "club": "Barcelona",
-      "abbr": "BAR",
-      "country": "ESP",
-      "color": "#004d98",
-      "p": 0,
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "pts": 0
-    },
-    {
-      "club": "Bayern München",
-      "abbr": "BAY",
-      "country": "GER",
-      "color": "#dc052d",
-      "p": 0,
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "pts": 0
-    },
-    {
-      "club": "Bodø/Glimt",
-      "abbr": "BOD",
-      "country": "NOR",
-      "color": "#f4dc00",
+      "logo": "https://assets.footylogos.com/logos/atletico-madrid/atletico-madrid-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Bayern München",
+          "Manchester United",
+          "Fenerbahçe",
+          "Viking"
+        ],
+        "away": [
+          "Liverpool",
+          "PSV",
+          "Bodø/Glimt",
+          "Stuttgart"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -163,6 +184,105 @@
       "abbr": "BVB",
       "country": "GER",
       "color": "#fdeb00",
+      "logo": "https://assets.footylogos.com/logos/borussia-dortmund/borussia-dortmund-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Inter",
+          "Real Betis",
+          "Villarreal",
+          "AEK Athens"
+        ],
+        "away": [
+          "Arsenal",
+          "Aston Villa",
+          "Bodø/Glimt",
+          "Sabah"
+        ]
+      },
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Barcelona",
+      "abbr": "BAR",
+      "country": "ESP",
+      "color": "#004d98",
+      "logo": "https://assets.footylogos.com/logos/fc-barcelona/fc-barcelona-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Manchester City",
+          "Aston Villa",
+          "Feyenoord",
+          "Como"
+        ],
+        "away": [
+          "Paris Saint-Germain",
+          "Sporting CP",
+          "Galatasaray",
+          "Sabah"
+        ]
+      },
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Bayern München",
+      "abbr": "BAY",
+      "country": "GER",
+      "color": "#dc052d",
+      "logo": "https://assets.footylogos.com/logos/bayern-munich/bayern-munich-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Arsenal",
+          "Real Betis",
+          "Bodø/Glimt",
+          "Slavia Praha"
+        ],
+        "away": [
+          "Atlético de Madrid",
+          "Manchester United",
+          "Lille",
+          "Viking"
+        ]
+      },
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Bodø/Glimt",
+      "abbr": "BOD",
+      "country": "NOR",
+      "color": "#f4dc00",
+      "logo": "https://assets.footylogos.com/logos/fk-bodo-glimt/fk-bodo-glimt-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Atlético de Madrid",
+          "Borussia Dortmund",
+          "Lille",
+          "LASK"
+        ],
+        "away": [
+          "Bayern München",
+          "Club Brugge",
+          "Napoli",
+          "Lens"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -176,6 +296,21 @@
       "abbr": "BRU",
       "country": "BEL",
       "color": "#0057b8",
+      "logo": "https://assets.footylogos.com/logos/club-brugge/club-brugge-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Liverpool",
+          "Aston Villa",
+          "Bodø/Glimt",
+          "Lens"
+        ],
+        "away": [
+          "Inter",
+          "PSV",
+          "Napoli",
+          "Stuttgart"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -189,6 +324,21 @@
       "abbr": "COM",
       "country": "ITA",
       "color": "#00529f",
+      "logo": "https://assets.footylogos.com/logos/como-1907/como-1907-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Paris Saint-Germain",
+          "Manchester United",
+          "Leipzig",
+          "AEK Athens"
+        ],
+        "away": [
+          "Barcelona",
+          "Real Betis",
+          "Feyenoord",
+          "Lens"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -202,6 +352,21 @@
       "abbr": "FEN",
       "country": "TUR",
       "color": "#f5d000",
+      "logo": "https://assets.footylogos.com/logos/fenerbahce/fenerbahce-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Liverpool",
+          "Roma",
+          "Villarreal",
+          "Slavia Praha"
+        ],
+        "away": [
+          "Atlético de Madrid",
+          "Aston Villa",
+          "Shakhtar",
+          "LASK"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -215,6 +380,21 @@
       "abbr": "FEY",
       "country": "NED",
       "color": "#e30613",
+      "logo": "https://assets.footylogos.com/logos/feyenoord/feyenoord-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Inter",
+          "Porto",
+          "Leipzig",
+          "Como"
+        ],
+        "away": [
+          "Barcelona",
+          "Real Betis",
+          "Galatasaray",
+          "Viking"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -228,6 +408,21 @@
       "abbr": "GAL",
       "country": "TUR",
       "color": "#f7a600",
+      "logo": "https://assets.footylogos.com/logos/galatasaray/galatasaray-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Barcelona",
+          "Aston Villa",
+          "Feyenoord",
+          "Stuttgart"
+        ],
+        "away": [
+          "Paris Saint-Germain",
+          "Sporting CP",
+          "Lille",
+          "AEK Athens"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -241,6 +436,21 @@
       "abbr": "INT",
       "country": "ITA",
       "color": "#0068a8",
+      "logo": "https://assets.footylogos.com/logos/inter-milan/inter-milan-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Liverpool",
+          "Club Brugge",
+          "Shakhtar",
+          "Stuttgart"
+        ],
+        "away": [
+          "Real Madrid",
+          "Borussia Dortmund",
+          "Feyenoord",
+          "Slovan Bratislava"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -254,6 +464,21 @@
       "abbr": "LAS",
       "country": "AUT",
       "color": "#111111",
+      "logo": "https://assets.footylogos.com/logos/lask/lask-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Liverpool",
+          "Porto",
+          "Fenerbahçe",
+          "Slovan Bratislava"
+        ],
+        "away": [
+          "Real Madrid",
+          "Sporting CP",
+          "Bodø/Glimt",
+          "AEK Athens"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -267,6 +492,21 @@
       "abbr": "RBL",
       "country": "GER",
       "color": "#e40046",
+      "logo": "https://assets.footylogos.com/logos/rb-leipzig/rb-leipzig-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Manchester City",
+          "PSV",
+          "Shakhtar",
+          "Lens"
+        ],
+        "away": [
+          "Real Madrid",
+          "Manchester United",
+          "Feyenoord",
+          "Como"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -280,6 +520,21 @@
       "abbr": "RCL",
       "country": "FRA",
       "color": "#e30613",
+      "logo": "assets/clubs/lens.png",
+      "draw": {
+        "home": [
+          "Manchester City",
+          "Sporting CP",
+          "Bodø/Glimt",
+          "Como"
+        ],
+        "away": [
+          "Liverpool",
+          "Club Brugge",
+          "Leipzig",
+          "Slavia Praha"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -293,6 +548,21 @@
       "abbr": "LIL",
       "country": "FRA",
       "color": "#d71920",
+      "logo": "assets/clubs/lille.png",
+      "draw": {
+        "home": [
+          "Bayern München",
+          "Real Betis",
+          "Galatasaray",
+          "Slovan Bratislava"
+        ],
+        "away": [
+          "Arsenal",
+          "Roma",
+          "Bodø/Glimt",
+          "Stuttgart"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -306,6 +576,21 @@
       "abbr": "LIV",
       "country": "ENG",
       "color": "#c8102e",
+      "logo": "https://assets.footylogos.com/logos/liverpool-fc/liverpool-fc-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Atlético de Madrid",
+          "Porto",
+          "Villarreal",
+          "Lens"
+        ],
+        "away": [
+          "Inter",
+          "Club Brugge",
+          "Fenerbahçe",
+          "LASK"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -319,6 +604,21 @@
       "abbr": "MCI",
       "country": "ENG",
       "color": "#6cabdd",
+      "logo": "https://assets.footylogos.com/logos/manchester-city/manchester-city-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Paris Saint-Germain",
+          "Sporting CP",
+          "Napoli",
+          "AEK Athens"
+        ],
+        "away": [
+          "Barcelona",
+          "Porto",
+          "Leipzig",
+          "Lens"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -332,6 +632,21 @@
       "abbr": "MUN",
       "country": "ENG",
       "color": "#da291c",
+      "logo": "https://assets.footylogos.com/logos/manchester-united/manchester-united-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Bayern München",
+          "Roma",
+          "Leipzig",
+          "Sabah"
+        ],
+        "away": [
+          "Atlético de Madrid",
+          "Sporting CP",
+          "Villarreal",
+          "Como"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -345,6 +660,21 @@
       "abbr": "NAP",
       "country": "ITA",
       "color": "#12a0d7",
+      "logo": "https://assets.footylogos.com/logos/napoli/napoli-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Arsenal",
+          "Club Brugge",
+          "Bodø/Glimt",
+          "Viking"
+        ],
+        "away": [
+          "Manchester City",
+          "Porto",
+          "Villarreal",
+          "Sabah"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -358,6 +688,21 @@
       "abbr": "PSG",
       "country": "FRA",
       "color": "#004170",
+      "logo": "assets/clubs/psg.png",
+      "draw": {
+        "home": [
+          "Barcelona",
+          "Roma",
+          "Galatasaray",
+          "Slovan Bratislava"
+        ],
+        "away": [
+          "Manchester City",
+          "Aston Villa",
+          "Villarreal",
+          "Como"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -371,6 +716,21 @@
       "abbr": "POR",
       "country": "POR",
       "color": "#005ca9",
+      "logo": "https://assets.footylogos.com/logos/fc-porto/fc-porto-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Manchester City",
+          "PSV",
+          "Napoli",
+          "Slavia Praha"
+        ],
+        "away": [
+          "Liverpool",
+          "Real Betis",
+          "Feyenoord",
+          "LASK"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -384,6 +744,21 @@
       "abbr": "PSV",
       "country": "NED",
       "color": "#e30613",
+      "logo": "https://assets.footylogos.com/logos/psv-eindhoven/psv-eindhoven-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Atlético de Madrid",
+          "Club Brugge",
+          "Shakhtar",
+          "Stuttgart"
+        ],
+        "away": [
+          "Real Madrid",
+          "Porto",
+          "Leipzig",
+          "Viking"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -397,6 +772,21 @@
       "abbr": "BET",
       "country": "ESP",
       "color": "#00954c",
+      "logo": "https://assets.footylogos.com/logos/real-betis-balompie/real-betis-balompie-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Arsenal",
+          "Porto",
+          "Feyenoord",
+          "Como"
+        ],
+        "away": [
+          "Bayern München",
+          "Borussia Dortmund",
+          "Lille",
+          "Slovan Bratislava"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -410,6 +800,21 @@
       "abbr": "RMA",
       "country": "ESP",
       "color": "#b9a05f",
+      "logo": "https://assets.footylogos.com/logos/real-madrid/real-madrid-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Inter",
+          "PSV",
+          "Leipzig",
+          "LASK"
+        ],
+        "away": [
+          "Arsenal",
+          "Roma",
+          "Shakhtar",
+          "AEK Athens"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -423,6 +828,21 @@
       "abbr": "ROM",
       "country": "ITA",
       "color": "#8e1f2f",
+      "logo": "https://assets.footylogos.com/logos/as-roma/as-roma-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Real Madrid",
+          "Sporting CP",
+          "Lille",
+          "Slovan Bratislava"
+        ],
+        "away": [
+          "Paris Saint-Germain",
+          "Manchester United",
+          "Fenerbahçe",
+          "AEK Athens"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -435,7 +855,22 @@
       "club": "Sabah",
       "abbr": "SAB",
       "country": "AZE",
-      "color": "#143b8f",
+      "color": "#d5488e",
+      "logo": "https://assets.footylogos.com/logos/sabah-fk/sabah-fk-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Barcelona",
+          "Borussia Dortmund",
+          "Napoli",
+          "Slavia Praha"
+        ],
+        "away": [
+          "Arsenal",
+          "Manchester United",
+          "Villarreal",
+          "Viking"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -449,6 +884,21 @@
       "abbr": "SHA",
       "country": "UKR",
       "color": "#f47a21",
+      "logo": "https://assets.footylogos.com/logos/shakhtar-donetsk/shakhtar-donetsk-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Real Madrid",
+          "Sporting CP",
+          "Fenerbahçe",
+          "AEK Athens"
+        ],
+        "away": [
+          "Inter",
+          "PSV",
+          "Leipzig",
+          "Slovan Bratislava"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -462,6 +912,21 @@
       "abbr": "SLA",
       "country": "CZE",
       "color": "#d71920",
+      "logo": "https://assets.footylogos.com/logos/slavia-praha/slavia-praha-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Arsenal",
+          "Aston Villa",
+          "Villarreal",
+          "Lens"
+        ],
+        "away": [
+          "Bayern München",
+          "Porto",
+          "Fenerbahçe",
+          "Sabah"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -475,6 +940,21 @@
       "abbr": "SLB",
       "country": "SVK",
       "color": "#5bb8e8",
+      "logo": "https://assets.footylogos.com/logos/sk-slovan-bratislava/sk-slovan-bratislava-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Inter",
+          "Real Betis",
+          "Shakhtar",
+          "Stuttgart"
+        ],
+        "away": [
+          "Paris Saint-Germain",
+          "Roma",
+          "Lille",
+          "LASK"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -488,6 +968,21 @@
       "abbr": "SCP",
       "country": "POR",
       "color": "#008f39",
+      "logo": "https://assets.footylogos.com/logos/sporting-cp/sporting-cp-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Barcelona",
+          "Manchester United",
+          "Galatasaray",
+          "LASK"
+        ],
+        "away": [
+          "Manchester City",
+          "Roma",
+          "Shakhtar",
+          "Lens"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -501,6 +996,21 @@
       "abbr": "VFB",
       "country": "GER",
       "color": "#e32219",
+      "logo": "https://assets.footylogos.com/logos/vfb-stuttgart/vfb-stuttgart-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Atlético de Madrid",
+          "Club Brugge",
+          "Lille",
+          "Viking"
+        ],
+        "away": [
+          "Inter",
+          "PSV",
+          "Galatasaray",
+          "Slovan Bratislava"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -514,6 +1024,21 @@
       "abbr": "VIK",
       "country": "NOR",
       "color": "#1c4c93",
+      "logo": "https://assets.footylogos.com/logos/viking-fk/viking-fk-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Bayern München",
+          "PSV",
+          "Feyenoord",
+          "Sabah"
+        ],
+        "away": [
+          "Atlético de Madrid",
+          "Aston Villa",
+          "Napoli",
+          "Stuttgart"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,
@@ -527,6 +1052,21 @@
       "abbr": "VIL",
       "country": "ESP",
       "color": "#f3df00",
+      "logo": "https://assets.footylogos.com/logos/villarreal-cf/villarreal-cf-logo-footylogos.svg",
+      "draw": {
+        "home": [
+          "Paris Saint-Germain",
+          "Manchester United",
+          "Napoli",
+          "Sabah"
+        ],
+        "away": [
+          "Liverpool",
+          "Borussia Dortmund",
+          "Fenerbahçe",
+          "Slavia Praha"
+        ]
+      },
       "p": 0,
       "w": 0,
       "d": 0,

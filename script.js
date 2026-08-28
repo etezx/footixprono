@@ -23,13 +23,37 @@ function matchSort(a,b){
   const ma=a[2]||{}, mb=b[2]||{};
   return ((ma.date||"9999")+(ma.time||"99")).localeCompare((mb.date||"9999")+(mb.time||"99"));
 }
+
+function normalizePick(value){
+  const v=String(value||"").trim().toUpperCase();
+  return ["1","N","2"].includes(v) ? v : null;
+}
+function resultFromFixture(f){
+  if(!f || !f.completed) return null;
+  const h=Number(f.homeScore), a=Number(f.awayScore);
+  if(!Number.isFinite(h)||!Number.isFinite(a)) return null;
+  return h>a ? "1" : h<a ? "2" : "N";
+}
+function pronoForMatch(pronos,dayNo,home,away,index){
+  const day=(pronos.days||{})[String(dayNo)]||{};
+  if(day[`${home}|||${away}`]) return day[`${home}|||${away}`];
+  if(Array.isArray(day.matches)) return day.matches[index]||{};
+  return {};
+}
+function imageWithFallback(src,abbr,klass="ucl-logo"){
+  return `<span class="${klass}-wrap"><img class="${klass}" src="${src}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="${klass}-fallback">${abbr}</span></span>`;
+}
 async function initLigue1(){
   if(!$("#l1-day-tabs")) return;
   const [schedule,standing,pronos,clubmap,mercato] = await Promise.all([
-    getJSON("schedule.json"),getJSON("standings.json"),getJSON("pronos.json").catch(()=>({days:{}})),clubs(),getJSON("mercato.json").catch(()=>({items:[]}))
+    getJSON("schedule.json"),getJSON("standings.json"),
+    getJSON("pronos.json").catch(()=>({days:{}})),
+    clubs(),getJSON("mercato.json").catch(()=>({items:[]}))
   ]);
+
   let current = Number(localStorage.getItem("footix-l1-day")||1);
   if(!schedule.some(d=>d.journee===current)) current=1;
+
   const tabs=$("#l1-day-tabs");
   schedule.forEach(d=>{
     const b=document.createElement("button");
@@ -38,24 +62,35 @@ async function initLigue1(){
     b.onclick=()=>{current=d.journee;localStorage.setItem("footix-l1-day",current);render();};
     tabs.appendChild(b);
   });
+
   function render(){
     $$("#l1-day-tabs button").forEach((b,i)=>b.classList.toggle("active",schedule[i].journee===current));
     const day=schedule.find(d=>d.journee===current);
     $("#l1-day-date").textContent=day?.date||"";
-    const pday=(pronos.days||{})[String(current)]||(pronos.days||{})[current]||{};
-    const plist=pday.matches||pday;
-    $("#l1-match-list").innerHTML=(day?.matches||[]).slice().sort(matchSort).map((m,i)=>{
-      const p=Array.isArray(plist)?(plist[i]||{}):(plist?.[i]||{});
+
+    const sorted=(day?.matches||[]).slice().sort(matchSort);
+    $("#l1-match-list").innerHTML=sorted.map((m,i)=>{
+      const p=pronoForMatch(pronos,current,m[0],m[1],i);
+      const pick=normalizePick(p.pick);
       const score=p.score||p.scorePrevu||"—";
-      const pr=p.prono||p.cote||"—";
       const scorers=p.buteurs||p.buteur||"—";
       const analysis=p.analyse||p.analysis||"";
+      const f=m[2]||{};
+      const actual=resultFromFixture(f);
+      const status=pick&&actual ? `<span class="pick-status ${pick===actual?"ok":"ko"}">${pick===actual?"✓":"✕"}</span>` : "";
+      const real=f.completed && Number.isFinite(Number(f.homeScore)) && Number.isFinite(Number(f.awayScore))
+        ? `${f.homeScore} - ${f.awayScore}` : "—";
+
       return `<article class="match-row">
-        <div class="match-meta">${fmtDayMeta(m[2])||"Horaire à confirmer"}</div>
+        <div class="match-meta">${fmtDayMeta(f)||"Horaire à confirmer"}${f.completed?`<small class="real-score">Score réel · ${real}</small>`:""}</div>
         <div class="team home">${clubLogo(m[0],clubmap)}<span>${m[0]}</span></div>
         <div class="prediction-score">${score}</div>
         <div class="team away">${clubLogo(m[1],clubmap)}<span>${m[1]}</span></div>
-        <div class="match-extra"><span><small>PRONO FOOTIX</small><b>${pr}</b></span><span><small>BUTEURS</small><b>${scorers}</b></span><button class="analysis-btn" title="${analysis.replace(/"/g,'&quot;')}">⌁</button></div>
+        <div class="match-extra">
+          <span><small>PRONO 1/N/2</small><b>${pick||"—"} ${status}</b></span>
+          <span><small>BUTEURS</small><b>${scorers}</b></span>
+          <button class="analysis-btn" title="${analysis.replace(/"/g,'&quot;')}">⌁</button>
+        </div>
       </article>`;
     }).join("") || `<div class="empty-state">Aucun match disponible.</div>`;
   }
@@ -67,31 +102,93 @@ async function initLigue1(){
 
   const news=mercato.items||[];
   $("#mercato-list").innerHTML=news.length ? news.slice(0,5).map(n=>`<a class="news-item" href="${n.link||"#"}" target="_blank" rel="noopener"><span>✓</span><div><b>${n.title||"Info mercato"}</b><small>${n.source||"Actualité"}</small></div></a>`).join("") : `<div class="empty-state">Aucune actualité mercato pour le moment.</div>`;
-  let count=0; Object.values(pronos.days||{}).forEach(d=>{ const x=d.matches||d; if(Array.isArray(x)) count+=x.filter(p=>p&&Object.keys(p).length).length;});
-  if($("#l1-prono-count")) $("#l1-prono-count").textContent=count;
+
+  // Automatic 1/N/2 statistics from completed fixtures.
+  let judged=0,wins=0,goodScorers=0;
+  schedule.forEach(day=>{
+    (day.matches||[]).forEach((m,i)=>{
+      const pick=normalizePick(pronoForMatch(pronos,day.journee,m[0],m[1],i).pick);
+      const actual=resultFromFixture(m[2]||{});
+      if(pick && actual){ judged++; if(pick===actual) wins++; }
+    });
+    const review=(pronos.days||{})[String(day.journee)]?.review;
+    const n=Number(review?.goodScorers);
+    if(Number.isFinite(n)) goodScorers+=n;
+  });
+  const rate=judged ? Math.round((wins/judged)*100) : null;
+  if($("#l1-prono-wins")) $("#l1-prono-wins").textContent=wins;
+  if($("#l1-prono-played")) $("#l1-prono-played").textContent=judged;
+  if($("#l1-prono-rate")) $("#l1-prono-rate").textContent=rate===null?"—":rate+"%";
+  if($("#l1-scorer-wins")) $("#l1-scorer-wins").textContent=goodScorers;
 }
 async function initUCL(){
   if(!$("#ucl-day-tabs")) return;
   const d=await getJSON("champions.json");
+  const byName=Object.fromEntries(d.teams.map(t=>[t.club,t]));
+
   d.matchdays.forEach((md,i)=>{
-    const b=document.createElement("button"); b.textContent=md.label; b.className=i===0?"active":"";
-    b.onclick=()=>{$$("#ucl-day-tabs button").forEach(x=>x.classList.remove("active"));b.classList.add("active");show(md);};
+    const b=document.createElement("button");
+    b.textContent=md.label;
+    b.className=i===0?"active":"";
+    b.onclick=()=>{
+      $$("#ucl-day-tabs button").forEach(x=>x.classList.remove("active"));
+      b.classList.add("active");
+      showDay(md);
+    };
     $("#ucl-day-tabs").appendChild(b);
   });
-  function show(md){ $("#ucl-day-content").innerHTML=`<div class="ucl-coming"><span>✦</span><div><b>${md.label} · ${md.window}</b><p>Les affiches seront automatiquement rangées ici dès la publication du calendrier officiel.</p></div><em>À VENIR</em></div>`;}
-  show(d.matchdays[0]);
-  $("#ucl-teams").innerHTML=d.teams.map(t=>`<div class="ucl-team-card"><span class="ucl-badge" style="--club:${t.color}">${t.abbr}</span><div><b>${t.club}</b><small>${t.country}</small></div></div>`).join("");
+  function showDay(md){
+    $("#ucl-day-content").innerHTML=`<div class="ucl-coming"><span>✦</span><div><b>${md.label} · ${md.window}</b><p>Les rencontres seront automatiquement rangées ici dès publication des dates et horaires officiels.</p></div><em>CALENDRIER À VENIR</em></div>`;
+  }
+  showDay(d.matchdays[0]);
+
+  const select=$("#ucl-team-select");
+  select.innerHTML=d.teams.map(t=>`<option value="${t.club}">${t.club}</option>`).join("");
+
+  function opponentCard(name,side){
+    const t=byName[name]||{club:name,abbr:name.slice(0,3).toUpperCase(),logo:"",color:"#355f8f"};
+    return `<div class="draw-opponent">
+      ${imageWithFallback(t.logo,t.abbr,"draw-logo")}
+      <div><b>${t.club}</b><small>${side}</small></div>
+    </div>`;
+  }
+  function renderDraw(name){
+    const t=byName[name]; if(!t) return;
+    $("#ucl-draw-detail").innerHTML=`
+      <div class="draw-team-main">
+        ${imageWithFallback(t.logo,t.abbr,"draw-main-logo")}
+        <div><small>ÉQUIPE SÉLECTIONNÉE</small><strong>${t.club}</strong><span>${t.country}</span></div>
+      </div>
+      <div class="draw-side"><h4>🏠 À DOMICILE</h4>${t.draw.home.map(x=>opponentCard(x,"Domicile")).join("")}</div>
+      <div class="draw-side"><h4>✈ À L’EXTÉRIEUR</h4>${t.draw.away.map(x=>opponentCard(x,"Extérieur")).join("")}</div>`;
+  }
+  select.addEventListener("change",()=>renderDraw(select.value));
+  renderDraw(select.value);
+
+  $("#ucl-teams").innerHTML=d.teams.map(t=>`<button type="button" class="ucl-team-card" data-team="${t.club}">
+    ${imageWithFallback(t.logo,t.abbr,"ucl-logo")}
+    <div><b>${t.club}</b><small>${t.country}</small></div>
+  </button>`).join("");
+  $$("#ucl-teams .ucl-team-card").forEach(btn=>btn.addEventListener("click",()=>{
+    select.value=btn.dataset.team;
+    renderDraw(btn.dataset.team);
+    $("#ucl-team-select").scrollIntoView({behavior:"smooth",block:"center"});
+  }));
+
   $("#ucl-standings").innerHTML=`<div class="stand-head"><span>#</span><span>ÉQUIPE</span><span>J</span><span>DIFF</span><span>PTS</span></div>`+
-  d.teams.map((t,i)=>`<div class="stand-row ${i<8?"direct":i<24?"playoff":"out"}"><span>${i+1}</span><span class="stand-team"><span class="ucl-mini" style="--club:${t.color}">${t.abbr}</span>${t.club}</span><span>0</span><span>0</span><strong>0</strong></div>`).join("");
+  d.teams.map((t,i)=>`<div class="stand-row ${i<8?"direct":i<24?"playoff":"out"}"><span>${i+1}</span><span class="stand-team">${imageWithFallback(t.logo,t.abbr,"ucl-mini-logo")}${t.club}</span><span>0</span><span>0</span><strong>0</strong></div>`).join("");
+
   $("#knockout-tree").innerHTML=d.knockout.map((r,i)=>`<div class="round-card"><small>${String(i+1).padStart(2,"0")}</small><b>${r.round}</b><span>${r.dates}</span><em>${i<4?"Équipes à déterminer":"🏆"}</em></div>`).join("");
 }
 async function initVisitorCounter(){
-  const el=$("#visitor-count"); if(!el) return;
+  const targets=["#home-visits"].map(s=>$(s)).filter(Boolean);
+  if(!targets.length) return;
   try{
     const r=await fetch("https://countapi.mileshilliard.com/api/v1/hit/footixprono-etezx-home-2026",{cache:"no-store"});
-    if(!r.ok) throw 0; const d=await r.json(); const v=Number(d.value);
-    el.textContent=Number.isFinite(v)?v.toLocaleString("fr-FR"):"—";
-    ["#home-visits","#l1-visitor-copy"].forEach(s=>{if($(s))$(s).textContent=el.textContent;});
-  }catch(e){ el.textContent="—"; }
+    if(!r.ok) throw 0;
+    const d=await r.json(), v=Number(d.value);
+    const text=Number.isFinite(v)?v.toLocaleString("fr-FR"):"—";
+    targets.forEach(el=>el.textContent=text);
+  }catch(e){ targets.forEach(el=>el.textContent="—"); }
 }
 initVisitorCounter(); initLigue1().catch(console.error); initUCL().catch(console.error);

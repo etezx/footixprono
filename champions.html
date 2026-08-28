@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#020817">
 <title>Footix Prono — Ligue des Champions</title>
-<link rel="stylesheet" href="styles.css?v=8.0">
+<link rel="stylesheet" href="styles.css?v=8.1">
 </head>
 <body>
 <div class="app-shell">
@@ -27,26 +27,7 @@
       <strong>SUIVEZ FOOTIX PRONO</strong>
       <div class="social-row"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="YouTube">▶</a></div>
     </div>
-    <div class="sidebar-card visits-card">
-      <small>VISITES SUR LE SITE</small>
-      <div class="visits-number">◉ <strong id="visitor-count">—</strong></div>
-      <span>Merci pour votre soutien !</span>
     </div>
-  </aside>
-
-  <div class="main-wrap">
-    <header class="topbar">
-      <div class="slogan">ON EST TOUS LE FOOTIX DE QUELQU’UN.</div>
-      <nav>
-        <a class="" href="index.html">⌂ ACCUEIL</a>
-        <a class="" href="ligue1.html">♜ LIGUE 1</a>
-        <a class="active" href="champions.html">✦ LIGUE DES CHAMPIONS</a>
-      </nav>
-      <div class="top-social">◎　𝕏　▶</div>
-    </header>
-    <main>
-<section class="competition-banner ucl-banner">
-  <div class="banner-copy"><span class="banner-logo">✦</span><div><h1>LIGUE DES CHAMPIONS</h1><p>La plus belle des compétitions arrive chez Footix.</p></div></div>
   <img src="logo-footix-prono.png" alt="Footix">
   <div class="banner-side"><span>2026/27 · 36 CLUBS</span><strong>ROAD TO MADRID.</strong></div>
 </section>
@@ -56,7 +37,14 @@
     <div class="panel-head"><h2>LDC · PHASE DE LIGUE</h2><span class="status-pill">TIRAGE TERMINÉ</span></div>
     <div id="ucl-day-tabs" class="day-tabs compact"></div>
     <div id="ucl-day-content"></div>
-    <div class="ucl-teams-title"><h3>LES 36 ÉQUIPES</h3><span>Les écussons définitifs seront ajoutés avec le calendrier officiel.</span></div>
+    <section class="draw-box">
+      <div class="draw-head">
+        <div><span class="eyebrow">TIRAGE OFFICIEL · 2026/27</span><h3>Les 8 adversaires de chaque club</h3></div>
+        <select id="ucl-team-select" aria-label="Choisir un club"></select>
+      </div>
+      <div id="ucl-draw-detail" class="draw-detail"></div>
+    </section>
+    <div class="ucl-teams-title"><h3>LES 36 ÉQUIPES</h3><span>Clique sur une équipe pour afficher son tirage.</span></div>
     <div id="ucl-teams" class="ucl-team-grid"></div>
   </section>
 
@@ -80,7 +68,7 @@
     <footer>© 2026 Footix Prono — Tous droits réservés.</footer>
   </div>
 </div>
-<script src="script.js?v=8.0"></script>
+<script src="script.js?v=8.1"></script>
 
 </body>
 </html>

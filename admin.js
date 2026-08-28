@@ -43,7 +43,14 @@ function renderAdminDay(dayNo){
       <div class="admin-match-title"><span>Match ${index+1}${fixture.official && fixture.date && fixture.time ? ` • ${formatFixtureDate(fixture.date)} à ${esc(fixture.time)}` : ''}</span><strong>${adminClub(home)} <i>–</i> ${adminClub(away)}</strong></div>
       <div class="admin-fields">
         <label>Score prévu<input data-field="score" value="${esc(p.score||'')}" placeholder="2 - 1"></label>
-        <label>Pronostic<textarea data-field="prono" rows="2" placeholder="Victoire PSG, +2,5 buts…">${esc(p.prono||p.cote||'')}</textarea></label>
+        <label>Pronostic 1 / N / 2
+          <select data-field="pick">
+            <option value="" ${!p.pick?'selected':''}>— Choisir —</option>
+            <option value="1" ${p.pick==='1'?'selected':''}>1 · Victoire domicile</option>
+            <option value="N" ${p.pick==='N'?'selected':''}>N · Match nul</option>
+            <option value="2" ${p.pick==='2'?'selected':''}>2 · Victoire extérieur</option>
+          </select>
+        </label>
         <label>Buteurs potentiels<textarea data-field="buteurs" rows="2" placeholder="Dembélé, Barcola, Ramos…">${esc(p.buteurs||p.buteur||'')}</textarea></label>
         <label class="analysis-field">Analyse<textarea data-field="analyse" rows="8" placeholder="Ton analyse du match…">${esc(p.analyse||'')}</textarea></label>
       </div>
