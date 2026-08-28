@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#020817">
+<title>Footix Prono — Ligue des Champions</title>
+<link rel="stylesheet" href="styles.css?v=8.0">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>— PRONO —</span></div></a>
+    <div class="side-label">COMPÉTITIONS</div>
+    <a class="competition-link " href="ligue1.html"><span class="comp-mark l1-mark">1</span><span>LIGUE 1</span><b>›</b></a>
+    <a class="competition-link active" href="champions.html"><span class="comp-mark ucl-mark">✦</span><span>LIGUE DES CHAMPIONS</span><b>›</b></a>
+    
+        <div class="side-label">MENU LIGUE DES CHAMPIONS</div>
+        <a class="side-link active" href="#pronostics">✦ <span>Pronostics</span></a>
+        <a class="side-link" href="#classement">♜ <span>Classement</span></a>
+        <a class="side-link" href="#phase-finale">⌁ <span>Phase finale</span></a>
+    <div class="sidebar-card mascot-card">
+      <img src="logo-footix-prono.png" alt="">
+      <p>ON EST TOUS<br>LE <em>FOOTIX</em><br>DE QUELQU’UN.</p>
+    </div>
+    <div class="sidebar-card social-card">
+      <strong>SUIVEZ FOOTIX PRONO</strong>
+      <div class="social-row"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="YouTube">▶</a></div>
+    </div>
+    <div class="sidebar-card visits-card">
+      <small>VISITES SUR LE SITE</small>
+      <div class="visits-number">◉ <strong id="visitor-count">—</strong></div>
+      <span>Merci pour votre soutien !</span>
+    </div>
+  </aside>
+
+  <div class="main-wrap">
+    <header class="topbar">
+      <div class="slogan">ON EST TOUS LE FOOTIX DE QUELQU’UN.</div>
+      <nav>
+        <a class="" href="index.html">⌂ ACCUEIL</a>
+        <a class="" href="ligue1.html">♜ LIGUE 1</a>
+        <a class="active" href="champions.html">✦ LIGUE DES CHAMPIONS</a>
+      </nav>
+      <div class="top-social">◎　𝕏　▶</div>
+    </header>
+    <main>
+<section class="competition-banner ucl-banner">
+  <div class="banner-copy"><span class="banner-logo">✦</span><div><h1>LIGUE DES CHAMPIONS</h1><p>La plus belle des compétitions arrive chez Footix.</p></div></div>
+  <img src="logo-footix-prono.png" alt="Footix">
+  <div class="banner-side"><span>2026/27 · 36 CLUBS</span><strong>ROAD TO MADRID.</strong></div>
+</section>
+
+<div class="dashboard-grid ucl-layout">
+  <section class="panel matches-panel" id="pronostics">
+    <div class="panel-head"><h2>LDC · PHASE DE LIGUE</h2><span class="status-pill">TIRAGE TERMINÉ</span></div>
+    <div id="ucl-day-tabs" class="day-tabs compact"></div>
+    <div id="ucl-day-content"></div>
+    <div class="ucl-teams-title"><h3>LES 36 ÉQUIPES</h3><span>Les écussons définitifs seront ajoutés avec le calendrier officiel.</span></div>
+    <div id="ucl-teams" class="ucl-team-grid"></div>
+  </section>
+
+  <aside class="panel standings-panel ucl-standings-panel" id="classement">
+    <div class="panel-head"><h2>CLASSEMENT LDC</h2><span class="muted">36 équipes</span></div>
+    <div class="qualification-legend"><span class="q-direct">1–8 · 1/8</span><span class="q-playoff">9–24 · Barrages</span><span class="q-out">25–36 · Éliminés</span></div>
+    <div id="ucl-standings" class="standings-table ucl-table"></div>
+  </aside>
+
+  <section class="panel knockout-panel" id="phase-finale">
+    <div class="panel-head"><h2>PHASE FINALE</h2><span class="muted">Arbre évolutif</span></div>
+    <div id="knockout-tree" class="knockout-tree"></div>
+  </section>
+
+  <aside class="panel stats-panel ucl-stat">
+    <div class="panel-head"><h3>FORMAT 2026/27</h3></div>
+    <div class="stats-grid"><div><strong>36</strong><span>CLUBS</span></div><div><strong>8</strong><span>MATCHS / CLUB</span></div><div><strong>24</strong><span>QUALIFIÉS / BARRAGES</span></div></div>
+  </aside>
+</div>
+</main>
+    <footer>© 2026 Footix Prono — Tous droits réservés.</footer>
+  </div>
+</div>
+<script src="script.js?v=8.0"></script>
+
+</body>
+</html>

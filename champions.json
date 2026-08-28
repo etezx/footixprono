@@ -1,0 +1,539 @@
+{
+  "season": "2026/27",
+  "status": "draw-complete-fixtures-pending",
+  "notice": "Le tirage est terminé. Les dates et heures officielles des rencontres seront intégrées dès leur publication.",
+  "matchdays": [
+    {
+      "day": 1,
+      "label": "J01",
+      "window": "8–10 septembre 2026"
+    },
+    {
+      "day": 2,
+      "label": "J02",
+      "window": "13/14 octobre 2026"
+    },
+    {
+      "day": 3,
+      "label": "J03",
+      "window": "20/21 octobre 2026"
+    },
+    {
+      "day": 4,
+      "label": "J04",
+      "window": "3/4 novembre 2026"
+    },
+    {
+      "day": 5,
+      "label": "J05",
+      "window": "24/25 novembre 2026"
+    },
+    {
+      "day": 6,
+      "label": "J06",
+      "window": "8/9 décembre 2026"
+    },
+    {
+      "day": 7,
+      "label": "J07",
+      "window": "19/20 janvier 2027"
+    },
+    {
+      "day": 8,
+      "label": "J08",
+      "window": "27 janvier 2027"
+    }
+  ],
+  "knockout": [
+    {
+      "round": "Barrages",
+      "dates": "16/17 & 23/24 février 2027"
+    },
+    {
+      "round": "1/8 de finale",
+      "dates": "9/10 & 16/17 mars 2027"
+    },
+    {
+      "round": "1/4 de finale",
+      "dates": "6/7 & 13/14 avril 2027"
+    },
+    {
+      "round": "1/2 finales",
+      "dates": "27/28 avril & 4/5 mai 2027"
+    },
+    {
+      "round": "Finale",
+      "dates": "5 juin 2027 · Madrid"
+    }
+  ],
+  "teams": [
+    {
+      "club": "AEK Athens",
+      "abbr": "AEK",
+      "country": "GRE",
+      "color": "#f2c300",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Arsenal",
+      "abbr": "ARS",
+      "country": "ENG",
+      "color": "#d71920",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Aston Villa",
+      "abbr": "AVL",
+      "country": "ENG",
+      "color": "#7a003c",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Atlético de Madrid",
+      "abbr": "ATM",
+      "country": "ESP",
+      "color": "#d71920",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Barcelona",
+      "abbr": "BAR",
+      "country": "ESP",
+      "color": "#004d98",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Bayern München",
+      "abbr": "BAY",
+      "country": "GER",
+      "color": "#dc052d",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Bodø/Glimt",
+      "abbr": "BOD",
+      "country": "NOR",
+      "color": "#f4dc00",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Borussia Dortmund",
+      "abbr": "BVB",
+      "country": "GER",
+      "color": "#fdeb00",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Club Brugge",
+      "abbr": "BRU",
+      "country": "BEL",
+      "color": "#0057b8",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Como",
+      "abbr": "COM",
+      "country": "ITA",
+      "color": "#00529f",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Fenerbahçe",
+      "abbr": "FEN",
+      "country": "TUR",
+      "color": "#f5d000",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Feyenoord",
+      "abbr": "FEY",
+      "country": "NED",
+      "color": "#e30613",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Galatasaray",
+      "abbr": "GAL",
+      "country": "TUR",
+      "color": "#f7a600",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Inter",
+      "abbr": "INT",
+      "country": "ITA",
+      "color": "#0068a8",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "LASK",
+      "abbr": "LAS",
+      "country": "AUT",
+      "color": "#111111",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Leipzig",
+      "abbr": "RBL",
+      "country": "GER",
+      "color": "#e40046",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Lens",
+      "abbr": "RCL",
+      "country": "FRA",
+      "color": "#e30613",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Lille",
+      "abbr": "LIL",
+      "country": "FRA",
+      "color": "#d71920",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Liverpool",
+      "abbr": "LIV",
+      "country": "ENG",
+      "color": "#c8102e",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Manchester City",
+      "abbr": "MCI",
+      "country": "ENG",
+      "color": "#6cabdd",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Manchester United",
+      "abbr": "MUN",
+      "country": "ENG",
+      "color": "#da291c",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Napoli",
+      "abbr": "NAP",
+      "country": "ITA",
+      "color": "#12a0d7",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "abbr": "PSG",
+      "country": "FRA",
+      "color": "#004170",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Porto",
+      "abbr": "POR",
+      "country": "POR",
+      "color": "#005ca9",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "PSV",
+      "abbr": "PSV",
+      "country": "NED",
+      "color": "#e30613",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Real Betis",
+      "abbr": "BET",
+      "country": "ESP",
+      "color": "#00954c",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Real Madrid",
+      "abbr": "RMA",
+      "country": "ESP",
+      "color": "#b9a05f",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Roma",
+      "abbr": "ROM",
+      "country": "ITA",
+      "color": "#8e1f2f",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Sabah",
+      "abbr": "SAB",
+      "country": "AZE",
+      "color": "#143b8f",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Shakhtar",
+      "abbr": "SHA",
+      "country": "UKR",
+      "color": "#f47a21",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Slavia Praha",
+      "abbr": "SLA",
+      "country": "CZE",
+      "color": "#d71920",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Slovan Bratislava",
+      "abbr": "SLB",
+      "country": "SVK",
+      "color": "#5bb8e8",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Sporting CP",
+      "abbr": "SCP",
+      "country": "POR",
+      "color": "#008f39",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Stuttgart",
+      "abbr": "VFB",
+      "country": "GER",
+      "color": "#e32219",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Viking",
+      "abbr": "VIK",
+      "country": "NOR",
+      "color": "#1c4c93",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    },
+    {
+      "club": "Villarreal",
+      "abbr": "VIL",
+      "country": "ESP",
+      "color": "#f3df00",
+      "p": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "pts": 0
+    }
+  ]
+}

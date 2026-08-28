@@ -107,3 +107,42 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Récupération désormais via le scoreboard Ligue 1, mois par mois.
 - Si la source ne fournit temporairement aucune rencontre, le workflow reste valide et conserve schedule.json.
 - Mise à jour partielle autorisée : seules les rencontres réellement reconnues sont modifiées.
+
+
+## V7.4.2
+- Suppression complète des balayages/reflets blancs animés et des effets lumineux liés au pointeur.
+- Conservation des animations de mouvement et de profondeur qui ne provoquent pas de flash.
+
+## V7.4.3
+- Suppression à la source du shimmer blanc `emptyGlow` sur les pronostics vides.
+- Suppression du reflet blanc `dayShine` sur la journée active.
+- Bandeau lumineux du header rendu statique.
+- Les animations de mouvement non lumineuses sont conservées.
+
+## V7.5
+- Bilan par journée : bons pronostics /9, bons buteurs /9 et résumé éditorial.
+- Données modifiables depuis admin.html et enregistrées dans pronos.json.
+- Zones Analyse Footix agrandies.
+- Emplacement prêt pour Cloudflare Web Analytics.
+- Compatible avec un futur sous-domaine gratuit `*.pages.dev`.
+
+## V7.6
+- Ajout d'un compteur discret de visites totales dans le footer.
+- Le compteur utilise une API publique sans authentification et n'affecte pas l'espace Admin.
+- Une visite correspond à un chargement de la page publique : ce n'est pas un compteur de visiteurs uniques.
+- En cas d'indisponibilité du service externe, le site continue de fonctionner et affiche simplement « — ».
+
+## V7.6.1
+- Les workflows Mercato, Classement et Calendrier utilisent tous `footix-data-updates`.
+- Les mises à jour se mettent en file d'attente au lieu d'écrire en même temps.
+- Suppression de `git pull --rebase origin main`, source des conflits sur les JSON.
+
+## V8.0 — refonte multi-compétitions
+- Nouvelle page d'accueil dédiée à Footix Prono.
+- Deux espaces : Ligue 1 et Ligue des Champions.
+- Interface inspirée du nouveau mockup : sidebar, panneaux sportifs, navigation compacte et responsive.
+- Le classement reste affiché quel que soit la journée sélectionnée.
+- Ligue 1 : données existantes conservées (`schedule.json`, `standings.json`, `pronos.json`, `mercato.json`).
+- Ligue des Champions : 36 clubs 2026/27, 8 journées, zones de qualification et structure de phase finale.
+- Les dates/heures détaillées de LDC sont prévues pour être intégrées dès la publication officielle.
+- L'Admin et les workflows Ligue 1 existants sont conservés.

@@ -1,285 +1,97 @@
 
-function matchDateTimeValue(match) {
-  // Match format: [home, away, fixture]
-  const fixture = Array.isArray(match) ? (match[2] || {}) : (match || {});
+const $ = (s,root=document)=>root.querySelector(s);
+const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
+const norm = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
 
-  const raw =
-    fixture.datetime ||
-    fixture.dateTime ||
-    fixture.kickoff ||
-    fixture.start ||
-    fixture.date_time ||
-    null;
-
-  if (raw) {
-    const t = Date.parse(raw);
-    if (!Number.isNaN(t)) return t;
+let clubsCache=null;
+async function getJSON(url){ const r=await fetch(url+"?v=8.0",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
+async function clubs(){ if(!clubsCache) clubsCache=await getJSON("clubs.json"); return clubsCache; }
+function clubLogo(name, map){
+  const entries=Object.entries(map?.clubs||{});
+  const hit=entries.find(([k])=>norm(k)===norm(name)) || entries.find(([k])=>norm(name).includes(norm(k))||norm(k).includes(norm(name)));
+  return hit ? `<img class="crest" src="${hit[1]}" alt="">` : `<span class="fake-crest">${(name||"?").slice(0,2).toUpperCase()}</span>`;
+}
+function fmtDayMeta(meta){
+  if(!meta) return "";
+  if(meta.date){
+    const d=new Date(meta.date+"T12:00:00");
+    return d.toLocaleDateString("fr-FR",{weekday:"short",day:"numeric",month:"short"})+(meta.time?` · ${meta.time}`:"");
   }
-
-  const date = fixture.date || fixture.matchDate || fixture.day || "";
-  const time = fixture.time || fixture.hour || fixture.heure || "";
-
-  if (date) {
-    const isoCandidate = `${date}${time ? "T" + time : "T23:59"}`;
-    const t = Date.parse(isoCandidate);
-    if (!Number.isNaN(t)) return t;
-  }
-
-  return Number.POSITIVE_INFINITY;
+  return meta.time||"";
 }
-
-function sortMatchesChronologically(matches) {
-  return matches
-    .map((match, index) => ({ match, index }))
-    .sort((a, b) => {
-      const av = matchDateTimeValue(a.match);
-      const bv = matchDateTimeValue(b.match);
-      if (av !== bv) return av - bv;
-      return a.index - b.index;
-    })
-    .map(item => item.match);
+function matchSort(a,b){
+  const ma=a[2]||{}, mb=b[2]||{};
+  return ((ma.date||"9999")+(ma.time||"99")).localeCompare((mb.date||"9999")+(mb.time||"99"));
 }
-
-let schedule = [];
-let pronos = {days:{}};
-let activeDay = 1;
-let clubAssets = {league_logo:'', clubs:{}, colors:{}};
-let standingsLogoMap = {};
-
-const $ = (s) => document.querySelector(s);
-const $$ = (s) => document.querySelectorAll(s);
-
-function escapeHtml(s=''){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
-function matchKey(home, away){ return `${home}|||${away}`; }
-function normName(name=''){return String(name).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/gi,' ').trim().toLowerCase();}
-function lookup(map,name){
-  if(!map) return '';
-  if(map[name]) return map[name];
-  const target=normName(name);
-  const hit=Object.keys(map).find(k=>normName(k)===target);
-  return hit ? map[hit] : '';
-}
-function clubLogo(name){ return lookup(clubAssets.clubs,name) || lookup(standingsLogoMap,name) || ''; }
-function clubColor(name){ return lookup(clubAssets.colors,name) || '#3982ff'; }
-function initials(name){ return String(name).split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join('').toUpperCase(); }
-function clubWithLogo(name){
-  const logo=clubLogo(name), color=clubColor(name);
-  return `<span class="club-inline" style="--club:${color}"><span class="club-badge"><span class="club-fallback">${escapeHtml(initials(name))}</span>${logo?`<img class="club-logo" src="${logo}" alt="Logo ${escapeHtml(name)}" loading="lazy">`:''}</span><span>${escapeHtml(name)}</span></span>`;
-}
-
-async function loadSchedule(){
-  const [scheduleRes, pronosRes, assetsRes, standingsRes] = await Promise.all([
-    fetch('schedule.json', {cache:'no-store'}),
-    fetch(`pronos.json?t=${Date.now()}`, {cache:'no-store'}).catch(()=>null),
-    fetch(`clubs.json?t=${Date.now()}`, {cache:'no-store'}).catch(()=>null),
-    fetch(`standings.json?t=${Date.now()}`, {cache:'no-store'}).catch(()=>null)
+async function initLigue1(){
+  if(!$("#l1-day-tabs")) return;
+  const [schedule,standing,pronos,clubmap,mercato] = await Promise.all([
+    getJSON("schedule.json"),getJSON("standings.json"),getJSON("pronos.json").catch(()=>({days:{}})),clubs(),getJSON("mercato.json").catch(()=>({items:[]}))
   ]);
-  schedule = await scheduleRes.json();
-  if(assetsRes?.ok) clubAssets = await assetsRes.json();
-  if(pronosRes?.ok) pronos = await pronosRes.json();
-  if(standingsRes?.ok){ const sd=await standingsRes.json(); (sd.teams||[]).forEach(t=>{ if(t.club && t.logo) standingsLogoMap[t.club]=t.logo; }); }
-  pronos.days ||= {};
-  buildDayNavigation();
-  renderDay(1);
-  const leagueLogo=document.querySelector('#league-logo');
-  if(leagueLogo && clubAssets.league_logo){leagueLogo.src=clubAssets.league_logo;leagueLogo.hidden=false;}
-}
-
-function buildDayNavigation(){
-  const menu = $('#day-menu');
-  const select = $('#day-select');
-  menu.innerHTML = schedule.map(d => `<button class="day-btn ${d.journee===1?'active':''}" data-day="${d.journee}" title="${cleanDate(d.date)}">J${String(d.journee).padStart(2,'0')}</button>`).join('');
-  select.innerHTML = schedule.map(d => `<option value="${d.journee}">Journée ${d.journee} — ${cleanDate(d.date)}</option>`).join('');
-  menu.addEventListener('click',e=>{const b=e.target.closest('.day-btn'); if(b) renderDay(Number(b.dataset.day));});
-  select.addEventListener('change',()=>renderDay(Number(select.value)));
-}
-
-function cleanDate(s){
-  return s.toLowerCase().replace(/^samedi/i,'Samedi').replace(/^dimanche/i,'Dimanche').replace('août','août').replace('septembre','septembre').replace('octobre','octobre').replace('novembre','novembre').replace('décembre','décembre').replace('janvier','janvier').replace('février','février').replace('avril','avril').replace('mai','mai');
-}
-
-function valueOrPlaceholder(value, text, cls='placeholder'){
-  return value ? `<span class="published-value">${escapeHtml(value)}</span>` : `<span class="${cls}">${text}</span>`;
-}
-
-function fixtureDateLabel(fixture={}){
-  if(!fixture?.official || !fixture.date || !fixture.time) return '';
-  try{
-    const date=new Intl.DateTimeFormat('fr-FR',{weekday:'short',day:'2-digit',month:'short'}).format(new Date(`${fixture.date}T12:00:00`));
-    return `${date.replace('.', '')} • ${fixture.time}`;
-  }catch{return `${fixture.date} • ${fixture.time}`;}
-}
-
-function splitValues(value=''){
-  return String(value).split(/\n|,|;|\|/).map(v=>v.trim()).filter(Boolean);
-}
-
-function multiValue(value){
-  const items=splitValues(value);
-  if(!items.length) return `<span class="empty-slot" aria-label="Non renseigné"></span>`;
-  return `<div class="value-chips">${items.map(x=>`<span>${escapeHtml(x)}</span>`).join('')}</div>`;
-}
-
-function renderDayReview(n){
-  const dayData = pronos.days?.[String(n)] || {}; const review = dayData.review || {};
-  const gp=$('#good-pronos'), gs=$('#good-scorers'), summary=$('#day-summary');
-  if(gp) gp.textContent=review.goodPronos===''||review.goodPronos==null?'—':String(review.goodPronos);
-  if(gs) gs.textContent=review.goodScorers===''||review.goodScorers==null?'—':String(review.goodScorers);
-  if(summary) summary.textContent=review.summary||'';
-}
-
-function renderDay(n){
-  const day = schedule.find(d=>d.journee===n); if(!day) return;
-  activeDay=n;
-  renderDayReview(n);
-  $$('.day-btn').forEach(b=>b.classList.toggle('active',Number(b.dataset.day)===n));
-  $('#day-select').value=String(n);
-  $('#matchday-kicker').textContent=`Journée ${n} • Ligue 1 2026/2027`;
-  $('#matchday-title').textContent='Les 9 matchs';
-  $('#matchday-date').textContent=cleanDate(day.date);
-  const dayPronos = pronos.days?.[String(n)] || {};
-  const grid=$('#matches-grid');
-  if(!grid) return;
-  const orderedMatches = sortMatchesChronologically(day.matches);
-  grid.innerHTML=orderedMatches.map((match,idx)=>{
-    const [home,away,fixture={}] = match;
-    const p = dayPronos[matchKey(home,away)] || {};
-    const homeLogo=clubLogo(home), awayLogo=clubLogo(away);
-    const score=p.score || '—';
-    return `<article class="match-card" style="--home:${clubColor(home)};--away:${clubColor(away)};--delay:${idx*55}ms">
-      <div class="match-card-top"><span class="match-card-no">MATCH ${String(idx+1).padStart(2,'0')}</span><span class="match-status">${fixtureDateLabel(fixture) || 'Date à confirmer'}</span></div>
-      <div class="match-teams">
-        <div class="match-team home"><div class="team-logo-shell">${homeLogo?`<img src="${homeLogo}" alt="Logo ${escapeHtml(home)}" loading="lazy">`:`<b>${escapeHtml(initials(home))}</b>`}</div><strong>${escapeHtml(home)}</strong></div>
-        <div class="score-core"><span>PRONO</span><b>${escapeHtml(score)}</b><i>VS</i></div>
-        <div class="match-team away"><div class="team-logo-shell">${awayLogo?`<img src="${awayLogo}" alt="Logo ${escapeHtml(away)}" loading="lazy">`:`<b>${escapeHtml(initials(away))}</b>`}</div><strong>${escapeHtml(away)}</strong></div>
-      </div>
-      <div class="match-meta">
-        <div><span>🎯 Pronostic</span>${multiValue(p.prono||p.cote)}</div>
-        <div><span>⚽ Buteurs</span>${multiValue(p.buteurs||p.buteur)}</div>
-      </div>
-      <div class="match-analysis"><span>ANALYSE FOOTIX</span><p class="${p.analyse?'':'empty-analysis'}">${p.analyse?escapeHtml(p.analyse):''}</p></div>
-      <div class="card-glow"></div>
-    </article>`;
-  }).join('');
-}
-
-
-function showView(name){
-  $$('.view').forEach(v=>v.classList.remove('active'));
-  $(`#${name}-view`).classList.add('active');
-  $$('.nav-link[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===name));
-  window.scrollTo({top:0,behavior:'smooth'});
-  if(name==='mercato') loadMercato();
-}
-
-$$('.nav-link[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
-$$('[data-view-link]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();showView(b.dataset.viewLink)}));
-
-function fmtDate(value){
-  try{return new Intl.DateTimeFormat('fr-FR',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}).format(new Date(value));}catch{return value||''}
-}
-
-async function loadMercato(){
-  const grid=$('#mercato-grid');
-  try{
-    const r=await fetch(`mercato.json?t=${Date.now()}`,{cache:'no-store'});
-    if(!r.ok) throw new Error('flux indisponible');
-    const data=await r.json();
-    $('#mercato-updated').textContent=fmtDate(data.updated_at);
-    if(!data.items?.length) throw new Error('aucune actualité');
-    grid.innerHTML=data.items.map(item=>`<a class="news-card" href="${item.link}" target="_blank" rel="noopener noreferrer">
-      <div class="news-source"><span>${item.source||'Actualité'}</span><span>${fmtDate(item.published)}</span></div>
-      <h3>${escapeHtml(item.title)}</h3>
-      <span class="read">Lire l'article ↗</span>
-    </a>`).join('');
-  }catch(e){
-    grid.innerHTML=`<div class="loading-card"><strong>Le flux mercato n'est pas encore alimenté.</strong><p>Après l'envoi du dossier <code>.github</code> et du script sur GitHub, lance une fois l'action “Mettre à jour le mercato”.</p></div>`;
-    $('#mercato-updated').textContent='En attente de la première mise à jour';
-  }
-}
-$('#refresh-mercato').addEventListener('click',loadMercato);
-loadSchedule().catch(()=>{const g=$('#matches-grid'); if(g) g.innerHTML='<div class="loading-card">Impossible de charger le calendrier.</div>';});
-
-async function loadStandings(){
-  const body=$('#standings-body');
-  if(!body) return;
-  try{
-    const r=await fetch(`standings.json?t=${Date.now()}`,{cache:'no-store'});
-    if(!r.ok) throw new Error('classement indisponible');
-    const data=await r.json();
-    (data.teams||[]).forEach(t=>{ if(t.club && t.logo) standingsLogoMap[t.club]=t.logo; });
-    const teams=[...(data.teams||[])].sort((a,b)=>
-      (b.pts-a.pts)||((b.gf-b.ga)-(a.gf-a.ga))||(b.gf-a.gf)||a.club.localeCompare(b.club,'fr')
-    );
-    body.innerHTML=teams.map((t,i)=>{
-      const diff=(t.gf||0)-(t.ga||0);
-      const diffClass=diff>0?'positive':diff<0?'negative':'';
-      const diffText=diff>0?`+${diff}`:`${diff}`;
-      const form=[...(t.last5||[])].slice(-5);
-      while(form.length<5) form.unshift('-');
-      const badges=form.map(x=>{
-        const cls=x==='V'?'win':x==='N'?'draw':x==='D'?'loss':'empty';
-        return `<span class="form-badge ${cls}" title="${x==='V'?'Victoire':x==='N'?'Match nul':x==='D'?'Défaite':'Pas encore joué'}">${x}</span>`;
-      }).join('');
-      return `<tr>
-        <td class="standing-pos">${i+1}</td>
-        <td class="standing-club">${clubWithLogo(t.club)}</td>
-        <td>${t.p||0}</td><td>${t.w||0}</td><td>${t.d||0}</td><td>${t.l||0}</td>
-        <td>${t.gf||0}</td><td>${t.ga||0}</td><td class="standing-diff ${diffClass}">${diffText}</td>
-        <td class="standing-points"><span class="points-pill">${t.pts||0}</span></td>
-        <td class="form-cell"><div class="form-row">${badges}</div></td>
-      </tr>`;
-    }).join('');
-    if(schedule.length) renderDay(activeDay);
-    const updated=$('#standings-updated');
-    if(updated){
-      const source=data.source?' • source : flux public ESPN':'';
-      updated.textContent=data.updated_at?`Dernière mise à jour automatique : ${fmtDate(data.updated_at)}${source}`:'Classement prêt pour le début de saison.';
-    }
-  }catch(e){
-    body.innerHTML='<tr><td colspan="11">Impossible de charger le classement.</td></tr>';
-  }
-}
-
-loadStandings();
-
-
-// V7 — léger effet 3D sur la mascotte, sans dépendance externe.
-const hero3d=document.querySelector('#hero-3d');
-if(hero3d && window.matchMedia('(pointer:fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-  hero3d.addEventListener('pointermove',e=>{
-    const r=hero3d.getBoundingClientRect();
-    const x=(e.clientX-r.left)/r.width-.5;
-    const y=(e.clientY-r.top)/r.height-.5;
-    hero3d.style.setProperty('--rx',`${(-y*8).toFixed(2)}deg`);
-    hero3d.style.setProperty('--ry',`${(x*10).toFixed(2)}deg`);
+  let current = Number(localStorage.getItem("footix-l1-day")||1);
+  if(!schedule.some(d=>d.journee===current)) current=1;
+  const tabs=$("#l1-day-tabs");
+  schedule.forEach(d=>{
+    const b=document.createElement("button");
+    b.textContent="J"+String(d.journee).padStart(2,"0");
+    b.className=d.journee===current?"active":"";
+    b.onclick=()=>{current=d.journee;localStorage.setItem("footix-l1-day",current);render();};
+    tabs.appendChild(b);
   });
-  hero3d.addEventListener('pointerleave',()=>{hero3d.style.setProperty('--rx','0deg');hero3d.style.setProperty('--ry','0deg');});
-}
-
-
-// V7.2 — liens sociaux neutres tant que les comptes ne sont pas publiés
-document.querySelectorAll('.social-link.is-placeholder').forEach(link=>{
-  link.addEventListener('click',e=>e.preventDefault());
-});
-
-
-async function initVisitorCounter(){
-  const el = document.getElementById('visitor-count');
-  if(!el) return;
-
-  // Compteur public simple : une visite = un chargement de la page d'accueil.
-  // Ce n'est pas un compteur de visiteurs uniques.
-  const endpoint = 'https://countapi.mileshilliard.com/api/v1/hit/footixprono-etezx-home-2026';
-
-  try{
-    const response = await fetch(endpoint, {cache:'no-store'});
-    if(!response.ok) throw new Error('counter unavailable');
-    const data = await response.json();
-    const value = Number(data.value);
-    el.textContent = Number.isFinite(value) ? value.toLocaleString('fr-FR') : '—';
-  }catch(error){
-    el.textContent = '—';
+  function render(){
+    $$("#l1-day-tabs button").forEach((b,i)=>b.classList.toggle("active",schedule[i].journee===current));
+    const day=schedule.find(d=>d.journee===current);
+    $("#l1-day-date").textContent=day?.date||"";
+    const pday=(pronos.days||{})[String(current)]||(pronos.days||{})[current]||{};
+    const plist=pday.matches||pday;
+    $("#l1-match-list").innerHTML=(day?.matches||[]).slice().sort(matchSort).map((m,i)=>{
+      const p=Array.isArray(plist)?(plist[i]||{}):(plist?.[i]||{});
+      const score=p.score||p.scorePrevu||"—";
+      const pr=p.prono||p.cote||"—";
+      const scorers=p.buteurs||p.buteur||"—";
+      const analysis=p.analyse||p.analysis||"";
+      return `<article class="match-row">
+        <div class="match-meta">${fmtDayMeta(m[2])||"Horaire à confirmer"}</div>
+        <div class="team home">${clubLogo(m[0],clubmap)}<span>${m[0]}</span></div>
+        <div class="prediction-score">${score}</div>
+        <div class="team away">${clubLogo(m[1],clubmap)}<span>${m[1]}</span></div>
+        <div class="match-extra"><span><small>PRONO FOOTIX</small><b>${pr}</b></span><span><small>BUTEURS</small><b>${scorers}</b></span><button class="analysis-btn" title="${analysis.replace(/"/g,'&quot;')}">⌁</button></div>
+      </article>`;
+    }).join("") || `<div class="empty-state">Aucun match disponible.</div>`;
   }
+  render();
+
+  const teams=(standing.teams||[]).slice().sort((a,b)=>(b.pts-a.pts)||((b.gf-b.ga)-(a.gf-a.ga))||(b.gf-a.gf));
+  $("#l1-standings").innerHTML=`<div class="stand-head"><span>#</span><span>ÉQUIPE</span><span>J</span><span>DIFF</span><span>PTS</span></div>`+
+  teams.map((t,i)=>`<div class="stand-row"><span>${i+1}</span><span class="stand-team">${clubLogo(t.club,clubmap)}${t.club}</span><span>${t.p}</span><span>${(t.gf-t.ga)>0?"+":""}${t.gf-t.ga}</span><strong>${t.pts}</strong></div>`).join("");
+
+  const news=mercato.items||[];
+  $("#mercato-list").innerHTML=news.length ? news.slice(0,5).map(n=>`<a class="news-item" href="${n.link||"#"}" target="_blank" rel="noopener"><span>✓</span><div><b>${n.title||"Info mercato"}</b><small>${n.source||"Actualité"}</small></div></a>`).join("") : `<div class="empty-state">Aucune actualité mercato pour le moment.</div>`;
+  let count=0; Object.values(pronos.days||{}).forEach(d=>{ const x=d.matches||d; if(Array.isArray(x)) count+=x.filter(p=>p&&Object.keys(p).length).length;});
+  if($("#l1-prono-count")) $("#l1-prono-count").textContent=count;
 }
-initVisitorCounter();
+async function initUCL(){
+  if(!$("#ucl-day-tabs")) return;
+  const d=await getJSON("champions.json");
+  d.matchdays.forEach((md,i)=>{
+    const b=document.createElement("button"); b.textContent=md.label; b.className=i===0?"active":"";
+    b.onclick=()=>{$$("#ucl-day-tabs button").forEach(x=>x.classList.remove("active"));b.classList.add("active");show(md);};
+    $("#ucl-day-tabs").appendChild(b);
+  });
+  function show(md){ $("#ucl-day-content").innerHTML=`<div class="ucl-coming"><span>✦</span><div><b>${md.label} · ${md.window}</b><p>Les affiches seront automatiquement rangées ici dès la publication du calendrier officiel.</p></div><em>À VENIR</em></div>`;}
+  show(d.matchdays[0]);
+  $("#ucl-teams").innerHTML=d.teams.map(t=>`<div class="ucl-team-card"><span class="ucl-badge" style="--club:${t.color}">${t.abbr}</span><div><b>${t.club}</b><small>${t.country}</small></div></div>`).join("");
+  $("#ucl-standings").innerHTML=`<div class="stand-head"><span>#</span><span>ÉQUIPE</span><span>J</span><span>DIFF</span><span>PTS</span></div>`+
+  d.teams.map((t,i)=>`<div class="stand-row ${i<8?"direct":i<24?"playoff":"out"}"><span>${i+1}</span><span class="stand-team"><span class="ucl-mini" style="--club:${t.color}">${t.abbr}</span>${t.club}</span><span>0</span><span>0</span><strong>0</strong></div>`).join("");
+  $("#knockout-tree").innerHTML=d.knockout.map((r,i)=>`<div class="round-card"><small>${String(i+1).padStart(2,"0")}</small><b>${r.round}</b><span>${r.dates}</span><em>${i<4?"Équipes à déterminer":"🏆"}</em></div>`).join("");
+}
+async function initVisitorCounter(){
+  const el=$("#visitor-count"); if(!el) return;
+  try{
+    const r=await fetch("https://countapi.mileshilliard.com/api/v1/hit/footixprono-etezx-home-2026",{cache:"no-store"});
+    if(!r.ok) throw 0; const d=await r.json(); const v=Number(d.value);
+    el.textContent=Number.isFinite(v)?v.toLocaleString("fr-FR"):"—";
+    ["#home-visits","#l1-visitor-copy"].forEach(s=>{if($(s))$(s).textContent=el.textContent;});
+  }catch(e){ el.textContent="—"; }
+}
+initVisitorCounter(); initLigue1().catch(console.error); initUCL().catch(console.error);

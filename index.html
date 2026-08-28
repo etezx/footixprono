@@ -1,145 +1,75 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Footix Prono — Ligue 1 2026/2027</title>
-  <meta name="description" content="Analyses, prévisions de scores, buteurs, cotes et actualités mercato Ligue 1." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7.6" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#020817">
+<title>Footix Prono — Accueil</title>
+<link rel="stylesheet" href="styles.css?v=8.0">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#" data-view-link="pronos" aria-label="Footix Prono accueil">
-      <img src="logo-footix-prono.png" alt="Logo Footix Prono" />
-      <div><strong>Footix Prono</strong><span>Ligue 1 • 2026/2027</span></div>
-    </a>
-    <nav class="main-nav" aria-label="Navigation principale">
-      <button class="nav-link active" data-view="pronos">Pronostics</button>
-      <button class="nav-link" data-view="mercato">Mercato <span class="live-dot"></span></button>
-      <a class="nav-link external" href="https://www.ligue1.com" target="_blank" rel="noopener">Ligue 1 ↗</a>
-    </nav>
-  </header>
-  <div class="live-strip"><div class="live-strip-track"><span>⚡ FOOTIX PRONO</span><span>•</span><span>Analyses Ligue 1</span><span>•</span><span>Scores probables</span><span>•</span><span>Buteurs</span><span>•</span><span>Classement automatique</span><span>•</span><span>Mercato en direct</span><span>•</span><span>⚡ FOOTIX PRONO</span></div></div>
-
-  <main>
-    <section id="pronos-view" class="view active">
-      <section class="hero">
-        <div class="hero-copy">
-          <span class="eyebrow"><span class="eyebrow-dot"></span> LIGUE 1 • 34 JOURNÉES • 306 MATCHS</span>
-          <h1>On est tous le <br><span>Footix de quelqu’un.</span></h1>
-          <p>Analyses, scores probables, buteurs et tendances de chaque journée de Ligue 1. Le foot sérieusement analysé, sans toujours se prendre au sérieux.</p>
-          <div class="hero-actions"><a class="btn primary" href="#journees">Explorer la journée</a><span class="hero-chip">⚡ Mise à jour automatique</span></div>
-        </div>
-        <div class="hero-logo" id="hero-3d"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="stadium-lights"></div><div class="glow"></div><img src="logo-footix-prono.png" alt="Mascotte Footix Prono" /><div class="floating-tag tag-one"><b>34</b><span>journées</span></div><div class="floating-ball" aria-hidden="true">⚽</div></div>
-      </section>
-
-      <section class="season-bar">
-        <div class="season-item"><i>01</i><div><span>Saison</span><strong>2026 / 2027</strong></div></div>
-        <div class="season-item"><i>02</i><div><span>Format</span><strong>34 journées</strong></div></div>
-        <div class="season-item"><i>03</i><div><span>Par journée</span><strong>9 matchs</strong></div></div>
-        <div class="competition-cell"><img id="league-logo" class="league-logo" src="" alt="Logo Ligue 1" hidden><div><span>Compétition</span><strong>Ligue 1</strong></div></div>
-      </section>
-
-      <section id="journees" class="section">
-        <div class="section-head">
-          <div><span class="kicker">Calendrier officiel 2026/2027</span><h2>Choisir une journée</h2></div>
-          <div class="day-select-wrap">
-            <label for="day-select">Accès rapide</label>
-            <select id="day-select" aria-label="Choisir une journée"></select>
-          </div>
-        </div>
-        <div id="day-menu" class="day-menu" aria-label="Journées de Ligue 1"></div>
-      </section>
-
-      <section class="section matches-section">
-        <div class="section-head match-head">
-          <div>
-            <span id="matchday-kicker" class="kicker">Journée 1</span>
-            <h2 id="matchday-title">Les 9 matchs</h2>
-            <p id="matchday-date" class="subtle"></p>
-          </div>
-        </div>
-        <div id="matches-grid" class="matches-grid" aria-live="polite"></div>
-      </section>
-      <section class="section day-review" id="day-review">
-        <div class="section-head day-review-head"><div><span class="kicker">Bilan Footix</span><h2>Le bilan de la journée</h2></div>
-          <div class="review-scores"><div class="review-score"><strong id="good-pronos">—</strong><span>Bons pronostics / 9</span></div><div class="review-score"><strong id="good-scorers">—</strong><span>Bons buteurs / 9</span></div></div></div>
-        <div class="review-summary"><span>Résumé de la journée</span><p id="day-summary"></p></div>
-      </section>
-    </section>
-
-    <section id="mercato-view" class="view">
-      <section class="mercato-hero">
-        <div>
-          <span class="eyebrow">FIL MERCATO • LIGUE 1</span>
-          <h1>Les dernières infos <span>mercato.</span></h1>
-          <p>Un flux automatiquement mis à jour par GitHub Actions à partir d'actualités publiques liées au mercato de Ligue 1.</p>
-        </div>
-        <div class="mercato-status"><span class="pulse"></span><div><small>Dernière actualisation</small><strong id="mercato-updated">Chargement…</strong></div></div>
-      </section>
-
-      <section class="section mercato-section">
-        <div class="mercato-toolbar">
-          <div><span class="kicker">Actualités récentes</span><h2>Mercato Ligue 1</h2></div>
-          <button id="refresh-mercato" class="btn ghost" type="button">Actualiser l'affichage</button>
-        </div>
-        <div id="mercato-grid" class="mercato-grid"><div class="loading-card">Chargement des dernières infos…</div></div>
-        <p class="source-note">Les titres et liens appartiennent à leurs éditeurs respectifs. Footix Prono agrège uniquement des liens vers les sources.</p>
-      </section>
-    </section>
-
-
-    <section id="standings-section" class="section standings-section">
-      <div class="section-head standings-head">
-        <div>
-          <span class="kicker league-kicker"><img id="league-logo-mini" class="league-logo-mini" src="https://sachawd.github.io/wc26-assets/league-logos/league_ligue-1.png" alt="Logo Ligue 1"> Classement • Ligue 1 2026/2027</span>
-          <h2>Classement</h2>
-          <p class="subtle">Le classement est trié par points, différence de buts puis buts marqués.</p>
-        </div>
-        <div class="form-legend" aria-label="Légende des cinq derniers matchs">
-          <span><b class="form-badge win">V</b> Victoire</span>
-          <span><b class="form-badge draw">N</b> Nul</span>
-          <span><b class="form-badge loss">D</b> Défaite</span>
-        </div>
-      </div>
-      <div class="table-wrap standings-wrap">
-        <table class="standings-table">
-          <thead>
-            <tr>
-              <th>#</th><th>Club</th><th>J</th><th>V</th><th>N</th><th>D</th><th>BP</th><th>BC</th><th>Diff.</th><th>Pts</th><th>5 derniers</th>
-            </tr>
-          </thead>
-          <tbody id="standings-body"></tbody>
-        </table>
-      </div>
-      <p id="standings-updated" class="source-note">Chargement de la dernière mise à jour automatique…</p>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="brand mini"><img src="logo-footix-prono.png" alt="" /><strong>Footix Prono</strong></div>
-    <p>Prévisions sportives à titre informatif. Aucun résultat n'est garanti.</p>
-    <div class="footer-socials" aria-label="Réseaux sociaux">
-      <a class="social-link is-placeholder" href="#" aria-label="Instagram — lien à venir" title="Instagram — bientôt">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.7" r="1"></circle></svg>
-      </a>
-      <a class="social-link is-placeholder" href="#" aria-label="X (Twitter) — lien à venir" title="X / Twitter — bientôt">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4l14 16M19 4L5 20"></path></svg>
-      </a>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>— PRONO —</span></div></a>
+    <div class="side-label">COMPÉTITIONS</div>
+    <a class="competition-link " href="ligue1.html"><span class="comp-mark l1-mark">1</span><span>LIGUE 1</span><b>›</b></a>
+    <a class="competition-link " href="champions.html"><span class="comp-mark ucl-mark">✦</span><span>LIGUE DES CHAMPIONS</span><b>›</b></a>
+    
+    <div class="sidebar-card mascot-card">
+      <img src="logo-footix-prono.png" alt="">
+      <p>ON EST TOUS<br>LE <em>FOOTIX</em><br>DE QUELQU’UN.</p>
     </div>
-    <p>© 2026 Footix Prono</p>
-  
-        <div class="visitor-counter" title="Compteur indicatif de visites">
-          <span class="visitor-eye" aria-hidden="true">◉</span>
-          <span><strong id="visitor-count">—</strong> visites</span>
-        </div>
+    <div class="sidebar-card social-card">
+      <strong>SUIVEZ FOOTIX PRONO</strong>
+      <div class="social-row"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="YouTube">▶</a></div>
+    </div>
+    <div class="sidebar-card visits-card">
+      <small>VISITES SUR LE SITE</small>
+      <div class="visits-number">◉ <strong id="visitor-count">—</strong></div>
+      <span>Merci pour votre soutien !</span>
+    </div>
+  </aside>
 
-  </footer>
-  <script src="script.js?v=7.6"></script>
-  <!-- CLOUDFLARE_WEB_ANALYTICS : emplacement prêt pour le beacon Cloudflare. -->
+  <div class="main-wrap">
+    <header class="topbar">
+      <div class="slogan">ON EST TOUS LE FOOTIX DE QUELQU’UN.</div>
+      <nav>
+        <a class="active" href="index.html">⌂ ACCUEIL</a>
+        <a class="" href="ligue1.html">♜ LIGUE 1</a>
+        <a class="" href="champions.html">✦ LIGUE DES CHAMPIONS</a>
+      </nav>
+      <div class="top-social">◎　𝕏　▶</div>
+    </header>
+    <main>
+<section class="home-hero">
+  <div class="home-copy">
+    <span class="eyebrow">FOOTIX PRONO · SAISON 2026/27</span>
+    <h1>Le foot sérieusement analysé.<br><em>Sans toujours se prendre au sérieux.</em></h1>
+    <p>Scores probables, buteurs, tendances et analyses de chaque journée. Cette saison, Footix Prono suit la Ligue 1 et la Ligue des Champions.</p>
+    <div class="hero-actions"><a class="btn primary" href="ligue1.html">Découvrir la Ligue 1</a><a class="btn secondary" href="champions.html">Entrer en Ligue des Champions</a></div>
+  </div>
+  <div class="home-mascot"><div class="halo"></div><img src="logo-footix-prono.png" alt="Footix Prono"></div>
+</section>
+
+<section class="competition-choice">
+  <a class="choice-card ligue1-choice" href="ligue1.html">
+    <div><span class="mega-symbol">1</span><h2>LIGUE 1</h2><p>34 journées de passion, pronostics, classement en direct et mercato.</p><strong>VOIR LES PRONOSTICS →</strong></div>
+  </a>
+  <a class="choice-card ucl-choice" href="champions.html">
+    <div><span class="mega-symbol">✦</span><h2>LIGUE DES CHAMPIONS</h2><p>36 clubs, 8 journées, classement européen et tout l’arbre de la phase finale.</p><strong>DÉCOUVRIR LA LDC →</strong></div>
+  </a>
+</section>
+
+<section class="home-grid">
+  <article class="panel"><div class="panel-head"><h3>📣 À NE PAS MANQUER</h3></div><div class="feature-copy"><b>La Ligue des Champions arrive sur Footix Prono</b><p>Le tirage 2026/27 est terminé. Les horaires définitifs seront intégrés dès leur publication.</p><a class="mini-btn" href="champions.html">Voir le tirage</a></div></article>
+  <article class="panel"><div class="panel-head"><h3>⚽ LE PRINCIPE</h3></div><div class="feature-copy"><b>Un regard Footix sur chaque affiche</b><p>Score prévu, tendance 1/N/2, buteurs potentiels et une analyse concise avant chaque rencontre.</p></div></article>
+  <article class="panel"><div class="panel-head"><h3>📊 STATISTIQUES FOOTIX</h3></div><div class="stats-grid"><div><strong id="home-pronos">0</strong><span>PRONOSTICS</span></div><div><strong>2</strong><span>COMPÉTITIONS</span></div><div><strong id="home-visits">—</strong><span>VISITES</span></div></div></article>
+</section>
+</main>
+    <footer>© 2026 Footix Prono — Tous droits réservés.</footer>
+  </div>
+</div>
+<script src="script.js?v=8.0"></script>
+
 </body>
 </html>
