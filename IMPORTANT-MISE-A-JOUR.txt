@@ -1,0 +1,6 @@
+FOOTIX PRONO V8.4.7
+
+Pour une mise à jour d'une version existante, ne remplace pas tes données vivantes par d'anciennes copies.
+Fichiers à préserver sur GitHub : standings.json, players.json, schedule.json, pronos.json, mercato.json, champions-pronos.json.
+
+La V8.4.7 protège désormais le classement côté site et côté workflow.

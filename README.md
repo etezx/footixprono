@@ -282,3 +282,18 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Protection : `players.json` n'est plus validé si ESPN renvoie un effectif manifestement incomplet.
 - Le workflow Effectifs se lance aussi automatiquement lors de l'installation de cette version.
 - Contrôle du nombre de clubs et joueurs avant publication.
+
+
+## V8.4.7 — Protection du classement
+- Le site reconstruit automatiquement le classement depuis les résultats de `schedule.json` si `standings.json` revient anormalement à zéro.
+- `update_standings.py` refuse désormais toute régression du nombre de matchs joués : un classement valide ne peut plus être remplacé par un classement ESPN vide ou plus ancien.
+- Le workflow Classement vérifie le fichier avant de le publier.
+- Important : lors d'une mise à jour du site, évite de remplacer les fichiers de données vivants (`standings.json`, `players.json`, `schedule.json`, `pronos.json`, `mercato.json`) par des copies anciennes.
+
+## V8.4.8
+- Restauration du bilan complet de la Journée 1.
+- Conservation des pronostics J1.
+- Intégration des pronostics actuellement saisis pour la Journée 2.
+- Conservation des sélections manuelles "Match(s) à ne pas manquer" pour J1 et J2.
+- Le fichier `pronos.json` est inclus dans ce ZIP afin de remettre les résumés et pronostics en place.
+- Les autres données vivantes (`standings.json`, `schedule.json`, `players.json`, `mercato.json`) restent volontairement absentes pour ne pas écraser leurs versions GitHub à jour.
