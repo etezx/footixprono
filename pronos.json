@@ -1,77 +1,186 @@
 {
-  "updated_at": null,
+  "updated_at": "2026-08-28T06:11:03.044Z",
   "days": {
     "1": {
       "OLYMPIQUE DE MARSEILLE|||RC STRASBOURG ALSACE": {
         "score": "3-1",
         "pick": "1",
+        "scorers": [
+          "Gouiri",
+          "Paixao"
+        ],
         "buteurs": "Gouiri\nPaixao",
-        "analyse": "Les marseillais ont réalisé des matchs amicaux plutôt convaincants malgrés la situation compliquée actuelle. De plus Balerdi ne sera pas dans le groupe donc c'est un atout pour eux, je les vois tout de même encaisser un but.",
-        "prono": "Victoire OM, But des 2 équipes\nPlus de 3 buts"
+        "analyse": "Les marseillais ont réalisé des matchs amicaux plutôt convaincants malgrés la situation compliquée actuelle. De plus Balerdi ne sera pas dans le groupe donc c'est un atout pour eux, je les vois tout de même encaisser un but."
       },
       "ANGERS SCO|||LOSC": {
         "score": "1-2",
         "pick": "2",
+        "scorers": [
+          "El Ouazzani",
+          "Giroud"
+        ],
         "buteurs": "El Ouazzani\nGiroud",
-        "analyse": "Les angevins ont marqués lors de tous leur matchs amicaux de cet été et semble sur une bonne dynamique, néanmoins le LOSC reste au dessus pour moi sur cette confrontation",
-        "prono": "Victoire LOSC\nBut des 2 équipes"
+        "analyse": "Les angevins ont marqués lors de tous leur matchs amicaux de cet été et semble sur une bonne dynamique, néanmoins le LOSC reste au dessus pour moi sur cette confrontation"
       },
       "LE HAVRE|||AS MONACO": {
         "score": "1-2",
         "pick": "2",
+        "scorers": [
+          "Brunner"
+        ],
         "buteurs": "Brunner",
-        "analyse": "Monaco sort d'un joli déplacement à l'extérieur en Ligue conférence mais sont rarement bons sur 90 minutes, je les vois tout de même gagner mais en encaissant un but sur un temps faible.",
-        "prono": "Victoire ASM\nBut des 2 équipes"
+        "analyse": "Monaco sort d'un joli déplacement à l'extérieur en Ligue conférence mais sont rarement bons sur 90 minutes, je les vois tout de même gagner mais en encaissant un but sur un temps faible."
       },
       "LE MANS FC|||STADE BRESTOIS 29": {
         "score": "1-1",
         "pick": "N",
+        "scorers": [
+          "Mafouta",
+          "Ajorque"
+        ],
         "buteurs": "Mafouta\nAjorque",
-        "analyse": "Le mans sort d'une magnifique saison 2025 en ligue 2 mais cela sera t-il suffisant pour nous convaincre en L1 face à un brest en plein remaniement ?",
-        "prono": "Match nul\nBut des 2 équipes\nMoins de 3 buts"
+        "analyse": "Le mans sort d'une magnifique saison 2025 en ligue 2 mais cela sera t-il suffisant pour nous convaincre en L1 face à un brest en plein remaniement ?"
       },
       "RC LENS|||AJ AUXERRE": {
         "score": "2-0",
         "pick": "1",
+        "scorers": [
+          "Thauvin décisif"
+        ],
         "buteurs": "Thauvin décisif",
-        "analyse": "Lens sort d'une très belle victoire face aux parisiens, Auxerre a perdu son grand buteur Sinayoko (parti au paris fc), je vois une rencontre dominée par les lensois mais avec peu de buts.",
-        "prono": "Victoire LENS\nMoins de 3 buts"
+        "analyse": "Lens sort d'une très belle victoire face aux parisiens, Auxerre a perdu son grand buteur Sinayoko (parti au paris fc), je vois une rencontre dominée par les lensois mais avec peu de buts."
       },
       "OGC NICE|||FC LORIENT": {
         "score": "1-1",
         "pick": "N",
+        "scorers": [
+          "Hein"
+        ],
         "buteurs": "Hein",
-        "analyse": "Mis à part le carton contre l'om lors des matchs amicaux de cet été, les nicois ont été décevants dans l'ensemble, en face une équipe de lorient qui a perdu son chouchou pagis, je vous conseille de ne pas regarder ce match !",
-        "prono": "Match nul\nMoins de 3 buts"
+        "analyse": "Mis à part le carton contre l'om lors des matchs amicaux de cet été, les nicois ont été décevants dans l'ensemble, en face une équipe de lorient qui a perdu son chouchou pagis, je vous conseille de ne pas regarder ce match !"
       },
       "PARIS SAINT-GERMAIN|||STADE RENNAIS FC": {
         "score": "2-1",
         "pick": "1",
-        "buteurs": "Lepaul\nDembele\nTorres",
-        "analyse": "Changement de dernière minute le match se jouera à rennes, je vois un match ouvert avec beaucoup d'occasions, côté buteurs parisiens difficile à déterminer en avance sans les compositions",
-        "prono": "Victoire PSG\nPlus de 2 Buts\nBut pour les 2 équipes"
+        "scorers": [
+          "Dembele",
+          "Torres",
+          "Lepaul"
+        ],
+        "buteurs": "Dembele\nTorres\nLepaul",
+        "analyse": "Changement de dernière minute le match se jouera à rennes, je vois un match ouvert avec beaucoup d'occasions, côté buteurs parisiens difficile à déterminer en avance sans les compositions"
       },
       "TOULOUSE FC|||OLYMPIQUE LYONNAIS": {
         "score": "1-2",
         "pick": "2",
+        "scorers": [
+          "Openda",
+          "Hidalgo"
+        ],
         "buteurs": "Openda\nHidalgo",
-        "analyse": "Avec les départs de Cresswell et Methalie, les toulousains s'affaiblissent énormément défensivement, je les vois tenir tête mais perdre face à des lyonnais  qui sortent d'une belle confrontation face aux turques de Fenerbahce",
-        "prono": "Victoire Lyon\nBut pour les 2 équipes\nPlus de 2\nbuts"
+        "analyse": "Avec les départs de Cresswell et Methalie, les toulousains s'affaiblissent énormément défensivement, je les vois tenir tête mais perdre face à des lyonnais  qui sortent d'une belle confrontation face aux turques de Fenerbahce"
       },
       "ESTAC TROYES|||PARIS FC": {
         "score": "1-2",
         "pick": "2",
+        "scorers": [
+          "Ripart",
+          "Pagis"
+        ],
         "buteurs": "Ripart\nPagis",
-        "analyse": "Encore un match qui me semble très ouvert avec des équipes qui encaissent mais savent également marquer des buts, je vois tout de même les parisiens légèrement favori",
-        "prono": "Victoire PARIS FC\nBut pour les 2 équipes"
+        "analyse": "Encore un match qui me semble très ouvert avec des équipes qui encaissent mais savent également marquer des buts, je vois tout de même les parisiens légèrement favori"
+      }
+    },
+    "2": {
+      "AJ AUXERRE|||ANGERS SCO": {
+        "score": "1-1",
+        "pick": "N",
+        "scorers": [
+          "Danny Namaso",
+          "Amine El Ouazzani"
+        ],
+        "buteurs": "Danny Namaso\nAmine El Ouazzani",
+        "analyse": "Deux équipes qui vont certainement jouer le bas de tableau cette saison, Auxerre a encaissé beaucoup de but face à Lens mais a marqué au cours de ses 10 derniers matchs, je vois donc un match plutôt calme, avec peu de buts ( moins de 2,5) et un match nul avec les deux équipes qui marquent"
       },
-      "review": {
-        "goodPronos": 7,
-        "judgedPronos": 9,
-        "goodScorers": 5,
-        "summary": "Première journée et déjà quelques belles secousses 😅. Marseille n’a pas fait dans le détail avec son 4-0 contre Strasbourg, pendant que Lens s’est carrément offert un festival offensif face à Auxerre (5-2) 🔥. Lyon a aussi parfaitement négocié son déplacement à Toulouse avec une victoire 2-0.\n\nDe mon côté, Footix termine avec 7 bons pronostics sur 9, soit 77,8 % 🎯. Pas parfait, mais pour une reprise, je signe tout de suite ! Côté buteurs, plusieurs choix ont payé, notamment Gouiri, Giroud, Mafouta, Thauvin, Lepaul et/ou Torres selon les matchs validés ✅.\n\nEt puis Paris… 2-2 contre Rennes alors que j’avais misé sur une victoire parisienne. Merci les gars, mon cœur de supporter et mes statistiques avaient pourtant passé un accord 😭. Une J1 animée, quelques très bonnes inspirations et déjà deux-trois pronos à ranger discrètement dans un tiroir 🫠.",
-        "autoGenerated": false,
-        "legacyScorerFallback": true
+      "STADE BRESTOIS 29|||TOULOUSE FC": {
+        "score": "1-1",
+        "pick": "N",
+        "scorers": [
+          "Ajorque",
+          "Santiago Hidalgo"
+        ],
+        "buteurs": "Ajorque\nSantiago Hidalgo",
+        "analyse": "Malgrè un jeu proposé correct face aux lyonnais, les toulousains se sont inclinés 2 à 0 lors de leur dernière rencontre, je vois une rencontre plutôt ouvertes avec pas mal d'occasions mais peu de buts"
+      },
+      "LOSC|||PARIS SAINT-GERMAIN": {
+        "score": "1-3",
+        "pick": "2",
+        "scorers": [
+          "Ethan Mbappé",
+          "Désiré Doué",
+          "Ferran Torres"
+        ],
+        "buteurs": "Ethan Mbappé\nDésiré Doué\nFerran Torres",
+        "analyse": "Les lillois sortent d'une victoire 2 à 0 face à des angevins entreprenants (20 tirs) recoivent des parisiens qui sortent de 2 matchs décevants et auront pour motivation l'envie de décrocheur leur première victoire lors de cette nouvelle saison de ligue 1. Le trio offensif va devoir être convaincant avec un Ousmane Dembelé laissé au repos et à une dizaine de jours du début de la ligue des champions. Ce match risque d'être spectaculaire en actions et je vois bien Ethan Mbappé prendre sa revanche face à un de ses anciens clubs"
+      },
+      "FC LORIENT|||ESTAC TROYES": {
+        "score": "1-0",
+        "pick": "1",
+        "scorers": [
+          "Mamadou Koné"
+        ],
+        "buteurs": "Mamadou Koné",
+        "analyse": "Un match qui s'annonce soporifique avec très peu d'occasions, je vois tout de même Lorient s'en sortir de justesse"
+      },
+      "OLYMPIQUE LYONNAIS|||LE HAVRE": {
+        "score": "1-0",
+        "pick": "1",
+        "scorers": [
+          "Kail Boudache"
+        ],
+        "buteurs": "Kail Boudache",
+        "analyse": "Les lyonnais ont encore une fois de plus déçu leur supporter suite à l'élimination en LDC, il risque d'y avoir quelques changement dans la composition mais je les vois quand-même supérieur à des havrais fébrils lors de leur première rencontre, j'espère avoir raison sur mon choix de Boudache que je sens très prometteur"
+      },
+      "AS MONACO|||OLYMPIQUE DE MARSEILLE": {
+        "score": "2-2",
+        "pick": "2",
+        "scorers": [
+          "Brunner",
+          "Gouiri",
+          "Igor Paixão"
+        ],
+        "buteurs": "Brunner\nGouiri\nIgor Paixão",
+        "analyse": "C'est la seconde grosse affiche de ce week-end, avec des monégasques qui sortent d'un match plutôt simple face au Gornik Zabrze, on risque d'assister à un match très sérré avec énormément d'occasions mais aussi beaucoup de tensions. Le jeune Brunner fait un très bon début de saison donc je le vois buteur et côté marseillais vont-ils rester sur la note positive laissée le week-end dernier ? Réponse dimanche soir !"
+      },
+      "PARIS FC|||OGC NICE": {
+        "score": "1-0",
+        "pick": "1",
+        "scorers": [
+          "Lassine Sinayoko"
+        ],
+        "buteurs": "Lassine Sinayoko",
+        "analyse": "Le jeu parisien a été très décevant lors de la première journée, je les vois rebondir à domicile face à des nicois très timide et décevants également. Je vois un match plutôt fermé et peut-être un but sur penalty"
+      },
+      "STADE RENNAIS FC|||LE MANS FC": {
+        "score": "2-1",
+        "pick": "1",
+        "scorers": [
+          "Lepaul",
+          "Mafouta"
+        ],
+        "buteurs": "Lepaul\nMafouta",
+        "analyse": "Un très beau match des rennais qui ont failli surprendre les parisiens le week-end dernier, je les vois largement favori face à des manceaux qui risquent d'avoir peu le ballon mais je les vois quand-même réussir à marquer un but lors de cette rencontre"
+      },
+      "RC STRASBOURG ALSACE|||RC LENS": {
+        "score": "1-2",
+        "pick": "2",
+        "scorers": [
+          "Sékou Mara",
+          "Abdallah Sima",
+          "Florian Thauvin"
+        ],
+        "buteurs": "Sékou Mara\nAbdallah Sima\nFlorian Thauvin",
+        "analyse": "Je vois des lensois en pleine forme et favoris mais je pense que la rencontre ne va pas être si simple pour eux, avec quelques tensions (un pénalty pour une des deux équipes) et une confrontation plus sérrée qu'on ne le pense"
       }
     }
   }
