@@ -1,0 +1,54 @@
+{
+  "updated_at": null,
+  "source": "Footix Prono + ESPN roster updater",
+  "clubs": {
+    "OLYMPIQUE DE MARSEILLE": [
+      "Gouiri",
+      "Paixao"
+    ],
+    "RC STRASBOURG ALSACE": [],
+    "ANGERS SCO": [
+      "El Ouazzani"
+    ],
+    "LOSC": [
+      "Giroud"
+    ],
+    "LE HAVRE": [],
+    "AS MONACO": [
+      "Brunner"
+    ],
+    "LE MANS FC": [
+      "Mafouta"
+    ],
+    "STADE BRESTOIS 29": [
+      "Ajorque"
+    ],
+    "RC LENS": [
+      "Thauvin"
+    ],
+    "AJ AUXERRE": [],
+    "OGC NICE": [],
+    "FC LORIENT": [
+      "Hein"
+    ],
+    "PARIS SAINT-GERMAIN": [
+      "Dembele",
+      "Torres"
+    ],
+    "STADE RENNAIS FC": [
+      "Lepaul"
+    ],
+    "TOULOUSE FC": [
+      "Openda"
+    ],
+    "OLYMPIQUE LYONNAIS": [
+      "Hidalgo"
+    ],
+    "ESTAC TROYES": [
+      "Ripart"
+    ],
+    "PARIS FC": [
+      "Pagis"
+    ]
+  }
+}

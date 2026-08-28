@@ -163,3 +163,34 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Ligue des Champions : J01 à J08, ajout/suppression manuel des affiches, choix des 36 clubs, date, heure, score Footix, 1/N/2, buteurs, analyse et bilan.
 - Nouveau fichier `champions-pronos.json` publié par l'Admin séparément de `pronos.json`.
 - La page `champions.html` affiche automatiquement les pronostics LDC saisis dans l'Admin.
+
+## V8.2.1
+- Correctif Admin : remplacement de deux appels `$$()` erronés par `$$a()`.
+- Le bug empêchait le chargement des journées et des cartes de matchs dès l'ouverture de `admin.html`.
+- Aucun changement de données, workflows ou assets.
+
+## V8.2.2
+- Restauration complète des pronostics Ligue 1 J1 depuis l'historique GitHub.
+- Conversion des tendances en 1/N/2.
+- Résultats réels J1 intégrés dans schedule.json.
+- Bilan J1 : 7/9 pronostics 1/N/2 corrects (77,8 %).
+- Buteurs : réussite sur 5 affiches sur 9 selon les noms saisis avant match.
+
+## V8.2.3
+- Résultat final affiché automatiquement sur chaque match Ligue 1 terminé.
+- Verdict automatique du 1/N/2 : BON PRONO ou PRONO RATÉ.
+- Badge SCORE EXACT lorsque le score Footix correspond exactement au score final.
+- Nouveau script léger `update_results.py` qui ne consulte que les matchs autour de la date actuelle.
+- Nouveau workflow `update-results.yml`, planifié toutes les 15 minutes.
+- Le workflow calendrier quotidien reste inchangé.
+
+## V8.3
+- Sélecteur de buteurs dans l'Admin : jusqu'à 4 joueurs par match.
+- Les joueurs des deux clubs apparaissent sous forme de boutons.
+- Champ de secours pour ajouter un joueur absent de la liste.
+- Nouveau `players.json` et `update_players.py` pour enrichir automatiquement les effectifs Ligue 1 via ESPN.
+- Nouveau workflow `update-players.yml` quotidien + lancement manuel possible.
+- `update_results.py` tente désormais de récupérer les buteurs réels dans le résumé ESPN après le match.
+- Sur la page publique : ✓ pour un buteur trouvé, ✕ pour un buteur qui n'a pas marqué.
+- La statistique « bons buteurs » se calcule automatiquement à partir des joueurs réellement buteurs lorsque la donnée ESPN est disponible.
+- Compatibilité conservée avec les anciens champs texte `buteurs`.

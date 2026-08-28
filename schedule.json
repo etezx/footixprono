@@ -9,7 +9,10 @@
         {
           "date": "2026-08-23",
           "time": "15:00",
-          "official": true
+          "official": true,
+          "completed": true,
+          "homeScore": 0,
+          "awayScore": 2
         }
       ],
       [
@@ -18,7 +21,10 @@
         {
           "date": "2026-08-23",
           "time": "17:15",
-          "official": true
+          "official": true,
+          "completed": true,
+          "homeScore": 0,
+          "awayScore": 1
         }
       ],
       [
@@ -27,7 +33,10 @@
         {
           "date": "2026-08-22",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "completed": true,
+          "homeScore": 2,
+          "awayScore": 2
         }
       ],
       [
@@ -36,7 +45,10 @@
         {
           "date": "2026-08-22",
           "time": "17:15",
-          "official": true
+          "official": true,
+          "completed": true,
+          "homeScore": 5,
+          "awayScore": 2
         }
       ],
       [
@@ -45,7 +57,10 @@
         {
           "date": "2026-08-21",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "completed": true,
+          "homeScore": 4,
+          "awayScore": 0
         }
       ],
       [
@@ -54,7 +69,10 @@
         {
           "date": "2026-08-22",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "completed": true,
+          "homeScore": 0,
+          "awayScore": 0
         }
       ],
       [
@@ -63,7 +81,10 @@
         {
           "date": "2026-08-23",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "completed": true,
+          "homeScore": 2,
+          "awayScore": 2
         }
       ],
       [
@@ -72,7 +93,10 @@
         {
           "date": "2026-08-22",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "completed": true,
+          "homeScore": 0,
+          "awayScore": 2
         }
       ],
       [
@@ -81,7 +105,10 @@
         {
           "date": "2026-08-22",
           "time": "20:45",
-          "official": true
+          "official": true,
+          "completed": true,
+          "homeScore": 0,
+          "awayScore": 0
         }
       ]
     ]

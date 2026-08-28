@@ -158,3 +158,77 @@
   .admin-team-selects{grid-template-columns:1fr}.admin-team-selects>span{display:none}.ucl-admin-toolbar{align-items:flex-start;flex-direction:column}.admin-outline-btn{width:100%}.admin-publish-bar{align-items:stretch;flex-direction:column}.admin-publish-btn{width:100%}
   .ucl-public-extra{grid-template-columns:1fr}.ucl-public-extra>span{border-right:0;border-bottom:1px solid #102f50}
 }
+
+
+/* === V8.2.3 — Résultats finaux et verdicts automatiques === */
+.match-row.is-finished{
+  border-color:#25517d;
+  background:linear-gradient(180deg,#081d36,#07172c);
+}
+.final-result{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  margin-top:5px;
+}
+.final-result small{
+  width:max-content;
+  font-size:7px;
+  font-weight:900;
+  letter-spacing:.12em;
+  color:#a8b8cb;
+}
+.final-result strong{
+  font-size:12px;
+  color:#fff;
+  letter-spacing:.03em;
+}
+.final-verdict,.exact-score{
+  display:inline-flex;
+  width:max-content;
+  margin-top:5px;
+  padding:3px 7px;
+  border-radius:999px;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.04em;
+  border:1px solid transparent;
+}
+.final-verdict.ok,.exact-score.ok{
+  color:#8ff866;
+  background:rgba(62,185,48,.12);
+  border-color:rgba(101,229,82,.35);
+}
+.final-verdict.ko{
+  color:#ff8292;
+  background:rgba(198,48,68,.12);
+  border-color:rgba(238,79,100,.35);
+}
+.exact-score.muted{
+  color:#8ca3bd;
+  background:rgba(104,132,162,.09);
+  border-color:rgba(116,145,177,.22);
+}
+@media(max-width:760px){
+  .final-result strong{font-size:11px}
+  .final-verdict,.exact-score{white-space:normal}
+}
+
+
+/* === V8.3 — Sélecteur de buteurs (4 max) === */
+.scorer-picker{border:1px solid #15426c;background:#05162a;border-radius:8px;padding:10px}
+.scorer-picker-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:8px}
+.scorer-picker-head>span{font-size:9px;color:#8199b8;font-weight:800}
+.scorer-picker-head small{font-size:8px;color:#72a4d5}.scorer-picker-head b{color:#8cf21f}
+.scorer-options{display:flex;flex-wrap:wrap;gap:6px;max-height:145px;overflow:auto;padding:2px 1px 7px}
+.scorer-chip{border:1px solid #24547f;background:#08203b;color:#b8c9dc;border-radius:999px;padding:6px 9px;font-size:9px;cursor:pointer}
+.scorer-chip.selected{border-color:#77ed20;background:#153a19;color:#a5ff73;font-weight:900}
+.scorer-chip:disabled{opacity:.35;cursor:not-allowed}
+.scorer-empty{font-size:9px;color:#7189a5;padding:5px}
+.scorer-custom{display:grid;grid-template-columns:1fr auto;gap:6px;margin-top:4px}
+.scorer-custom input{min-width:0}.scorer-add-btn{border:1px solid #2f7ebb;background:#0c3157;color:#fff;border-radius:7px;padding:8px 11px;font-weight:800;cursor:pointer}
+.scorer-verdict-list{display:flex;flex-wrap:wrap;gap:4px}
+.scorer-verdict-list em{font-style:normal;font-size:8px;padding:3px 6px;border-radius:999px;border:1px solid #274867;background:#0a2139;color:#b8c6d6}
+.scorer-verdict-list em.ok{border-color:rgba(101,229,82,.35);background:rgba(62,185,48,.12);color:#8ff866}
+.scorer-verdict-list em.ko{border-color:rgba(238,79,100,.35);background:rgba(198,48,68,.12);color:#ff8292}
+@media(max-width:650px){.scorer-custom{grid-template-columns:1fr}.scorer-add-btn{width:100%}}

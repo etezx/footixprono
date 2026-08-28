@@ -4,7 +4,7 @@ const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
 const norm = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
 
 let clubsCache=null;
-async function getJSON(url){ const r=await fetch(url+"?v=8.0",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
+async function getJSON(url){ const r=await fetch(url+"?v=8.2.3",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
 async function clubs(){ if(!clubsCache) clubsCache=await getJSON("clubs.json"); return clubsCache; }
 function clubLogo(name, map){
   const entries=Object.entries(map?.clubs||{});
@@ -77,18 +77,28 @@ async function initLigue1(){
       const analysis=p.analyse||p.analysis||"";
       const f=m[2]||{};
       const actual=resultFromFixture(f);
-      const status=pick&&actual ? `<span class="pick-status ${pick===actual?"ok":"ko"}">${pick===actual?"✓":"✕"}</span>` : "";
       const real=f.completed && Number.isFinite(Number(f.homeScore)) && Number.isFinite(Number(f.awayScore))
-        ? `${f.homeScore} - ${f.awayScore}` : "—";
+        ? `${f.homeScore} - ${f.awayScore}` : null;
+      const pickGood=Boolean(pick&&actual&&pick===actual);
+      const exactScore=Boolean(real && String(score).replace(/\s/g,"")===real.replace(/\s/g,""));
+      const verdict=f.completed && actual
+        ? `<span class="final-verdict ${pickGood?"ok":"ko"}">${pickGood?"✓ BON PRONO":"✕ PRONO RATÉ"}${pick?` · ${pick}`:""}</span>`
+        : "";
+      const exactBadge=f.completed && real && score!=="—"
+        ? `<span class="exact-score ${exactScore?"ok":"muted"}">${exactScore?"✓ SCORE EXACT":"Score prévu · "+score}</span>`
+        : "";
 
-      return `<article class="match-row">
-        <div class="match-meta">${fmtDayMeta(f)||"Horaire à confirmer"}${f.completed?`<small class="real-score">Score réel · ${real}</small>`:""}</div>
+      return `<article class="match-row ${f.completed?"is-finished":""}">
+        <div class="match-meta">
+          <span>${fmtDayMeta(f)||"Horaire à confirmer"}</span>
+          ${f.completed&&real?`<div class="final-result"><small>TERMINÉ</small><strong>FINAL · ${real}</strong></div>`:""}
+        </div>
         <div class="team home">${clubLogo(m[0],clubmap)}<span>${m[0]}</span></div>
         <div class="prediction-score">${score}</div>
         <div class="team away">${clubLogo(m[1],clubmap)}<span>${m[1]}</span></div>
         <div class="match-extra">
-          <span><small>PRONO 1/N/2</small><b>${pick||"—"} ${status}</b></span>
-          <span><small>BUTEURS</small><b>${scorers}</b></span>
+          <span><small>PRONO 1/N/2</small><b>${pick||"—"}</b>${verdict}</span>
+          <span><small>BUTEURS</small><b>${scorers}</b>${exactBadge}</span>
           <button class="analysis-btn" title="${analysis.replace(/"/g,'&quot;')}">⌁</button>
         </div>
       </article>`;
