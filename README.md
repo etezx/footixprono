@@ -274,3 +274,11 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Les choix sont enregistrés dans `pronos.json`, dans `days -> journée -> mustWatch`.
 - La page Ligue 1 affiche uniquement les rencontres choisies manuellement.
 - Si rien n’est coché, le site indique simplement qu’aucune rencontre n’a encore été sélectionnée.
+
+## V8.4.6 — Effectifs / buteurs fiabilisés
+- Correction de la récupération ESPN des effectifs Ligue 1.
+- Lecture plus robuste des attaquants et milieux, même lorsque ESPN groupe les joueurs par poste.
+- Les gardiens restent exclus du sélecteur de buteurs.
+- Protection : `players.json` n'est plus validé si ESPN renvoie un effectif manifestement incomplet.
+- Le workflow Effectifs se lance aussi automatiquement lors de l'installation de cette version.
+- Contrôle du nombre de clubs et joueurs avant publication.

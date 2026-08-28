@@ -192,7 +192,7 @@ function scorerPicker(home,away,p){
   return `<div class="scorer-picker" data-max="4">
     <div class="scorer-picker-head"><span>Buteurs potentiels</span><small><b class="scorer-count">${selected.length}</b>/4 sélectionnés</small></div>
     <div class="scorer-options">
-      ${names.length?names.map(name=>`<button type="button" class="scorer-chip ${selected.some(x=>norm(x)===norm(name))?'selected':''}" data-scorer="${esc(name)}">${esc(name)}</button>`).join(''):`<span class="scorer-empty">La liste des joueurs sera enrichie par le workflow Effectifs.</span>`}
+      ${names.length?names.map(name=>`<button type="button" class="scorer-chip ${selected.some(x=>norm(x)===norm(name))?'selected':''}" data-scorer="${esc(name)}">${esc(name)}</button>`).join(''):`<span class="scorer-empty">Effectif non chargé : lance le workflow « Mettre à jour les joueurs » ou ajoute un joueur manuellement ci-dessous.</span>`}
     </div>
     <div class="scorer-custom">
       <input class="scorer-custom-input" type="text" placeholder="Ajouter un joueur absent de la liste">
