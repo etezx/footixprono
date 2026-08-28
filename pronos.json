@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T06:18:23.707Z",
+  "updated_at": "2026-08-28T06:19:59.364Z",
   "days": {
     "1": {
       "OLYMPIQUE DE MARSEILLE|||RC STRASBOURG ALSACE": {
@@ -89,7 +89,11 @@
         ],
         "buteurs": "Ripart\nPagis",
         "analyse": "Encore un match qui me semble très ouvert avec des équipes qui encaissent mais savent également marquer des buts, je vois tout de même les parisiens légèrement favori"
-      }
+      },
+      "mustWatch": [
+        "OLYMPIQUE DE MARSEILLE|||RC STRASBOURG ALSACE",
+        "PARIS SAINT-GERMAIN|||STADE RENNAIS FC"
+      ]
     },
     "2": {
       "AJ AUXERRE|||ANGERS SCO": {
