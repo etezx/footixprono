@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#020817">
 <title>Footix Prono — Ligue 1</title>
-<link rel="stylesheet" href="styles.css?v=8.4.2">
+<link rel="stylesheet" href="styles.css?v=8.4.4">
 </head>
 <body>
 <div class="app-shell">
@@ -59,8 +59,11 @@
     <div id="l1-standings" class="standings-table"></div>
   </aside>
   <section class="panel lower-panel notice-panel">
-    <div class="panel-head"><h3>📣 À NE PAS MANQUER</h3></div>
-    <div class="feature-copy"><b>Une journée, un bilan Footix.</b><p>Les résultats de nos pronostics et de nos buteurs sont conservés journée après journée.</p></div>
+    <div class="panel-head"><h3>📣 MATCH À NE PAS MANQUER</h3><span class="muted">Sélection automatique</span></div>
+    <div id="l1-must-watch" class="feature-copy">
+      <b>Calcul du match le plus spectaculaire…</b>
+      <p>Footix analyse les statistiques de la journée.</p>
+    </div>
   </section>
   <section class="panel lower-panel mercato-panel" id="mercato">
     <div class="panel-head"><h3>DERNIÈRES INFOS MERCATO</h3></div>
@@ -68,11 +71,10 @@
   </section>
   <aside class="panel stats-panel">
     <div class="panel-head"><h3>STATISTIQUES FOOTIX</h3><span class="muted">Mise à jour automatique</span></div>
-    <div class="stats-grid stats-four">
+    <div class="stats-grid stats-three">
       <div><strong id="l1-prono-wins">0</strong><span>PRONOS RÉUSSIS</span></div>
       <div><strong id="l1-prono-rate">—</strong><span>TAUX DE RÉUSSITE</span></div>
-      <div><strong id="l1-prono-played">0</strong><span>PRONOS JUGÉS</span></div>
-      <div><strong id="l1-scorer-wins">0</strong><span>BONS BUTEURS</span></div>
+      <div><strong id="l1-prono-played">0</strong><span>NOMBRE DE PRONOS</span></div>
     </div>
   </aside>
 </div>
@@ -81,6 +83,6 @@
     <footer>© 2026 Footix Prono — Tous droits réservés.</footer>
   </div>
 </div>
-<script src="script.js?v=8.4.2"></script>
+<script src="script.js?v=8.4.4"></script>
 </body>
 </html>
