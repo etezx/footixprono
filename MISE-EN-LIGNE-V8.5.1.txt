@@ -1,0 +1,19 @@
+FOOTIX PRONO V8.5.1 — DOMAINE OFFICIEL
+
+Domaine officiel : https://footixprono.fr/
+
+Cette version met à jour les adresses SEO et de partage vers footixprono.fr :
+- liens canonical
+- Open Graph / Twitter
+- sitemap.xml
+- robots.txt
+- identification du script de classement
+
+IMPORTANT : le fichier CNAME doit rester à la racine du dépôt GitHub.
+Il contient : footixprono.fr
+
+Lors de la mise à jour GitHub :
+1. Décompresser le ZIP.
+2. Envoyer/remplacer les fichiers de cette version dans la racine du dépôt.
+3. NE PAS supprimer les fichiers JSON de données déjà présents dans le dépôt s'ils ne sont pas dans ce ZIP.
+4. Vérifier ensuite Settings > Pages : Custom domain = footixprono.fr et Enforce HTTPS coché.

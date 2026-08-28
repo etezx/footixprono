@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /footixprono/admin.html
 
-Sitemap: https://etezx.github.io/footixprono/sitemap.xml
+Sitemap: https://footixprono.fr/sitemap.xml

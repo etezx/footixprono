@@ -17,7 +17,7 @@ SEASON = 2026  # saison ESPN 2026 = exercice 2026/2027
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "standings.json"
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; FootixProno/1.0; +https://etezx.github.io/footixprono/)",
+    "User-Agent": "Mozilla/5.0 (compatible; FootixProno/1.0; +https://footixprono.fr/)",
     "Accept": "application/json,text/plain,*/*",
 }
 
