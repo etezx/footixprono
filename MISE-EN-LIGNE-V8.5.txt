@@ -1,0 +1,7 @@
+FOOTIX PRONO V8.5 — PRODUCTION
+Uploade le contenu sur GitHub sans supprimer les données déjà présentes.
+NE SUPPRIME PAS : pronos.json, standings.json, schedule.json, players.json, mercato.json, champions-pronos.json.
+Puis GitHub > Settings > Pages > active Enforce HTTPS.
+admin.html est exclu de Google, mais reste accessible par son URL : ne mets jamais ton jeton GitHub dans les fichiers du dépôt.
+Après upload : Ctrl+F5.
+Quand tu choisiras ton domaine, nous remplacerons les URL SEO actuelles par le nouveau domaine.

@@ -297,3 +297,10 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Conservation des sélections manuelles "Match(s) à ne pas manquer" pour J1 et J2.
 - Le fichier `pronos.json` est inclus dans ce ZIP afin de remettre les résumés et pronostics en place.
 - Les autres données vivantes (`standings.json`, `schedule.json`, `players.json`, `mercato.json`) restent volontairement absentes pour ne pas écraser leurs versions GitHub à jour.
+
+## V8.5 — Production
+- Audit de jetons GitHub embarqués : OK.
+- SEO et partage social (Open Graph / Twitter Cards), favicon.
+- robots.txt, sitemap.xml et page 404.
+- Admin exclu de l'indexation.
+- Données vivantes exclues du ZIP pour éviter leur écrasement.
