@@ -4,7 +4,7 @@ const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
 const norm = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
 
 let clubsCache=null;
-async function getJSON(url){ const r=await fetch(url+"?v=8.2.3",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
+async function getJSON(url){ const r=await fetch(url+"?v=8.3.1",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
 async function clubs(){ if(!clubsCache) clubsCache=await getJSON("clubs.json"); return clubsCache; }
 function clubLogo(name, map){
   const entries=Object.entries(map?.clubs||{});
@@ -43,6 +43,139 @@ function pronoForMatch(pronos,dayNo,home,away,index){
 function imageWithFallback(src,abbr,klass="ucl-logo"){
   return `<span class="${klass}-wrap"><img class="${klass}" src="${src}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="${klass}-fallback">${abbr}</span></span>`;
 }
+
+function escapeHTML(value){
+  return String(value??"")
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;").replace(/'/g,"&#039;");
+}
+function normalizePersonName(value){
+  return String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+}
+function predictedScorers(p={}){
+  if(Array.isArray(p.scorers)) return p.scorers.slice(0,4);
+  return String(p.buteurs||p.buteur||"")
+    .split(/[\n,;]+/).map(x=>x.trim()).filter(Boolean).slice(0,4);
+}
+function scorerVerdicts(p={},fixture={}){
+  const predicted=predictedScorers(p);
+  const actual=Array.isArray(fixture.actualScorers) ? fixture.actualScorers : [];
+  if(!fixture.completed) return predicted.map(name=>({name,state:"pending"}));
+  if(!actual.length) return predicted.map(name=>({name,state:"waiting"}));
+  const actualNorm=actual.map(normalizePersonName);
+  return predicted.map(name=>{
+    const n=normalizePersonName(name);
+    const hit=actualNorm.some(a=>a===n || a.endsWith(" "+n) || n.endsWith(" "+a));
+    return {name,state:hit?"ok":"ko"};
+  });
+}
+function scorerChipsHTML(p={},fixture={}){
+  const verdicts=scorerVerdicts(p,fixture);
+  if(!verdicts.length) return "—";
+  return `<span class="scorer-verdict-list">${verdicts.map(x=>{
+    const icon=x.state==="ok"?"✓":x.state==="ko"?"✕":"";
+    return `<em class="${x.state}">${icon?icon+" ":""}${escapeHTML(x.name)}</em>`;
+  }).join("")}</span>`;
+}
+function ensurePronoPanel(){
+  let panel=$("#prono-detail-overlay");
+  if(panel) return panel;
+  panel=document.createElement("div");
+  panel.id="prono-detail-overlay";
+  panel.className="prono-detail-overlay";
+  panel.hidden=true;
+  panel.innerHTML=`
+    <div class="prono-detail-backdrop" data-prono-close></div>
+    <aside class="prono-detail-panel" role="dialog" aria-modal="true" aria-labelledby="prono-detail-title">
+      <button type="button" class="prono-detail-close" data-prono-close aria-label="Fermer">×</button>
+      <div id="prono-detail-body"></div>
+    </aside>`;
+  document.body.appendChild(panel);
+  panel.addEventListener("click",e=>{
+    if(e.target.closest("[data-prono-close]")) closePronoPanel();
+  });
+  document.addEventListener("keydown",e=>{
+    if(e.key==="Escape" && !panel.hidden) closePronoPanel();
+  });
+  return panel;
+}
+function closePronoPanel(){
+  const panel=$("#prono-detail-overlay");
+  if(!panel) return;
+  panel.hidden=true;
+  document.body.classList.remove("prono-panel-open");
+}
+function openPronoPanel(data){
+  const panel=ensurePronoPanel();
+  const body=$("#prono-detail-body",panel);
+  const {
+    home,away,homeLogo,awayLogo,meta,score,pick,analysis,fixture,p
+  }=data;
+  const actual=resultFromFixture(fixture);
+  const finished=Boolean(fixture.completed);
+  const real=finished && Number.isFinite(Number(fixture.homeScore)) && Number.isFinite(Number(fixture.awayScore))
+    ? `${fixture.homeScore} - ${fixture.awayScore}` : null;
+  const pickGood=Boolean(pick&&actual&&pick===actual);
+  const exact=Boolean(real && String(score).replace(/\s/g,"")===real.replace(/\s/g,""));
+  const scorerRows=scorerVerdicts(p,fixture);
+  const goodScorers=scorerRows.filter(x=>x.state==="ok").length;
+  const checkedScorers=scorerRows.filter(x=>["ok","ko"].includes(x.state)).length;
+
+  body.innerHTML=`
+    <div class="prono-detail-heading">
+      <small>FOOTIX PRONO</small>
+      <h2 id="prono-detail-title">Analyse du match</h2>
+    </div>
+    <div class="prono-detail-match">
+      <div class="prono-detail-team">${homeLogo}<b>${escapeHTML(home)}</b></div>
+      <div class="prono-detail-score"><strong>${escapeHTML(score)}</strong><small>SCORE PRÉVU</small></div>
+      <div class="prono-detail-team away">${awayLogo}<b>${escapeHTML(away)}</b></div>
+      <div class="prono-detail-meta">${escapeHTML(meta||"Horaire à confirmer")}${finished?` <span>TERMINÉ</span>`:""}</div>
+    </div>
+
+    <section class="prono-detail-section">
+      <div class="prono-detail-section-title">MON PRONOSTIC</div>
+      <div class="prono-detail-pick-row">
+        <span class="prono-big-pick">${escapeHTML(pick||"—")}</span>
+        ${finished&&actual?`<b class="prono-detail-verdict ${pickGood?"ok":"ko"}">${pickGood?"✓ BON PRONO":"✕ PRONO RATÉ"}</b>`:`<b class="prono-detail-verdict pending">EN ATTENTE</b>`}
+        <span class="prono-detail-forecast">Score prévu : <b>${escapeHTML(score)}</b></span>
+      </div>
+    </section>
+
+    <section class="prono-detail-section">
+      <div class="prono-detail-section-title">BUTEURS PRONOSTIQUÉS <small>(JUSQU’À 4)</small></div>
+      <div class="prono-detail-scorers">
+        ${scorerRows.length?scorerRows.map(x=>`
+          <div class="prono-detail-scorer ${x.state}">
+            <span>${x.state==="ok"?"✓":x.state==="ko"?"✕":"•"}</span>
+            <b>${escapeHTML(x.name)}</b>
+            <em>${x.state==="ok"?"A marqué":x.state==="ko"?"N’a pas marqué":x.state==="waiting"?"Vérification en attente":"Match à venir"}</em>
+          </div>`).join(""):`<div class="prono-no-scorer">Aucun buteur sélectionné.</div>`}
+      </div>
+    </section>
+
+    ${finished&&real?`
+      <section class="prono-detail-final">
+        <span>SCORE FINAL</span>
+        <strong>${escapeHTML(real)}</strong>
+      </section>`:""}
+
+    <section class="prono-detail-section">
+      <div class="prono-detail-section-title">MON ANALYSE</div>
+      <p class="prono-analysis-text">${analysis?escapeHTML(analysis):"Aucune analyse renseignée pour ce match."}</p>
+    </section>
+
+    <section class="prono-detail-stats">
+      <div><small>PRONO 1/N/2</small><strong class="${finished&&actual?(pickGood?"ok":"ko"):""}">${finished&&actual?(pickGood?"✓ BON":"✕ RATÉ"):"—"}</strong><span>${escapeHTML(pick||"—")} choisi</span></div>
+      <div><small>BONS BUTEURS</small><strong>${checkedScorers?`${goodScorers} / ${scorerRows.length}`:"—"}</strong><span>${checkedScorers?Math.round(goodScorers/scorerRows.length*100)+" %":"En attente"}</span></div>
+      <div><small>SCORE EXACT</small><strong class="${finished?(exact?"ok":"ko"):""}">${finished?(exact?"✓ OUI":"✕ NON"):"—"}</strong><span>${finished&&real?escapeHTML(real)+" réel":"En attente"}</span></div>
+    </section>`;
+  panel.hidden=false;
+  document.body.classList.add("prono-panel-open");
+  $(".prono-detail-close",panel)?.focus();
+}
+
 async function initLigue1(){
   if(!$("#l1-day-tabs")) return;
   const [schedule,standing,pronos,clubmap,mercato] = await Promise.all([
@@ -73,36 +206,52 @@ async function initLigue1(){
       const p=pronoForMatch(pronos,current,m[0],m[1],i);
       const pick=normalizePick(p.pick);
       const score=p.score||p.scorePrevu||"—";
-      const scorers=p.buteurs||p.buteur||"—";
       const analysis=p.analyse||p.analysis||"";
       const f=m[2]||{};
       const actual=resultFromFixture(f);
       const real=f.completed && Number.isFinite(Number(f.homeScore)) && Number.isFinite(Number(f.awayScore))
         ? `${f.homeScore} - ${f.awayScore}` : null;
       const pickGood=Boolean(pick&&actual&&pick===actual);
-      const exactScore=Boolean(real && String(score).replace(/\s/g,"")===real.replace(/\s/g,""));
-      const verdict=f.completed && actual
-        ? `<span class="final-verdict ${pickGood?"ok":"ko"}">${pickGood?"✓ BON PRONO":"✕ PRONO RATÉ"}${pick?` · ${pick}`:""}</span>`
-        : "";
-      const exactBadge=f.completed && real && score!=="—"
-        ? `<span class="exact-score ${exactScore?"ok":"muted"}">${exactScore?"✓ SCORE EXACT":"Score prévu · "+score}</span>`
-        : "";
+      const scorerHTML=scorerChipsHTML(p,f);
 
-      return `<article class="match-row ${f.completed?"is-finished":""}">
+      return `<article class="match-row match-row-v831 ${f.completed?"is-finished":""}">
         <div class="match-meta">
-          <span>${fmtDayMeta(f)||"Horaire à confirmer"}</span>
-          ${f.completed&&real?`<div class="final-result"><small>TERMINÉ</small><strong>FINAL · ${real}</strong></div>`:""}
+          <span class="match-kickoff">${fmtDayMeta(f)||"Horaire à confirmer"}</span>
+          ${f.completed&&real?`<span class="finished-label">TERMINÉ</span><div class="final-score-box"><small>SCORE FINAL</small><strong>${real}</strong></div>`:""}
         </div>
         <div class="team home">${clubLogo(m[0],clubmap)}<span>${m[0]}</span></div>
-        <div class="prediction-score">${score}</div>
+        <div class="prediction-score-wrap"><strong class="prediction-score">${score}</strong><small>SCORE PRÉVU</small></div>
         <div class="team away">${clubLogo(m[1],clubmap)}<span>${m[1]}</span></div>
         <div class="match-extra">
-          <span><small>PRONO 1/N/2</small><b>${pick||"—"}</b>${verdict}</span>
-          <span><small>BUTEURS</small><b>${scorers}</b>${exactBadge}</span>
-          <button class="analysis-btn" title="${analysis.replace(/"/g,'&quot;')}">⌁</button>
+          <div class="pick-zone">
+            <small>PRONO 1/N/2</small>
+            <div class="pick-line">
+              <strong class="pick-value pick-${(pick||"x").toLowerCase()}">${pick||"—"}</strong>
+              ${f.completed&&actual?`<span class="final-verdict ${pickGood?"ok":"ko"}">${pickGood?"✓ BON PRONO":"✕ PRONO RATÉ"}</span>`:""}
+            </div>
+          </div>
+          <div class="scorers-zone"><small>BUTEURS</small>${scorerHTML}</div>
+          <button class="analysis-btn prono-open-btn" type="button" data-prono-index="${i}"><span>◉</span> PRONO</button>
         </div>
       </article>`;
     }).join("") || `<div class="empty-state">Aucun match disponible.</div>`;
+
+    $$("#l1-match-list .prono-open-btn").forEach(btn=>btn.addEventListener("click",()=>{
+      const idx=Number(btn.dataset.pronoIndex);
+      const m=sorted[idx];
+      if(!m) return;
+      const p=pronoForMatch(pronos,current,m[0],m[1],idx);
+      openPronoPanel({
+        home:m[0],away:m[1],
+        homeLogo:clubLogo(m[0],clubmap),awayLogo:clubLogo(m[1],clubmap),
+        meta:fmtDayMeta(m[2]||{}),
+        score:p.score||p.scorePrevu||"—",
+        pick:normalizePick(p.pick),
+        analysis:p.analyse||p.analysis||"",
+        fixture:m[2]||{},
+        p
+      });
+    }));
   }
   render();
 
@@ -117,13 +266,15 @@ async function initLigue1(){
   let judged=0,wins=0,goodScorers=0;
   schedule.forEach(day=>{
     (day.matches||[]).forEach((m,i)=>{
-      const pick=normalizePick(pronoForMatch(pronos,day.journee,m[0],m[1],i).pick);
-      const actual=resultFromFixture(m[2]||{});
+      const p=pronoForMatch(pronos,day.journee,m[0],m[1],i);
+      const pick=normalizePick(p.pick);
+      const f=m[2]||{};
+      const actual=resultFromFixture(f);
       if(pick && actual){ judged++; if(pick===actual) wins++; }
+      if(f.completed && Array.isArray(f.actualScorers) && f.actualScorers.length){
+        goodScorers += scorerVerdicts(p,f).filter(x=>x.state==="ok").length;
+      }
     });
-    const review=(pronos.days||{})[String(day.journee)]?.review;
-    const n=Number(review?.goodScorers);
-    if(Number.isFinite(n)) goodScorers+=n;
   });
   const rate=judged ? Math.round((wins/judged)*100) : null;
   if($("#l1-prono-wins")) $("#l1-prono-wins").textContent=wins;

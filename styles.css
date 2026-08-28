@@ -232,3 +232,116 @@
 .scorer-verdict-list em.ok{border-color:rgba(101,229,82,.35);background:rgba(62,185,48,.12);color:#8ff866}
 .scorer-verdict-list em.ko{border-color:rgba(238,79,100,.35);background:rgba(198,48,68,.12);color:#ff8292}
 @media(max-width:650px){.scorer-custom{grid-template-columns:1fr}.scorer-add-btn{width:100%}}
+
+
+/* === V8.3.1 — cartes matchs / panneau PRONO === */
+.match-row-v831{
+  grid-template-columns:112px minmax(180px,1fr) 92px minmax(180px,1fr) minmax(320px,1.05fr);
+  min-height:82px;
+}
+.match-row-v831 .match-meta{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px}
+.match-kickoff{font-size:9px;color:#91a7c4}
+.finished-label{font-size:7px;letter-spacing:.12em;font-weight:900;color:#77bfff}
+.final-score-box{margin-top:1px;border:1px solid #214767;background:#07182c;border-radius:6px;padding:5px 8px;min-width:72px}
+.final-score-box small{display:block;font-size:7px;color:#7f98b7;letter-spacing:.06em}
+.final-score-box strong{display:block;font-size:15px;color:#fff;line-height:1.1;margin-top:2px}
+.match-row-v831 .team.home{justify-content:flex-end;text-align:right}
+.match-row-v831 .team.away{justify-content:flex-start;text-align:left}
+.match-row-v831 .team{font-size:12px}
+.prediction-score-wrap{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.prediction-score-wrap .prediction-score{font-size:25px;line-height:1;color:#f2fff0;letter-spacing:.03em}
+.prediction-score-wrap small{margin-top:5px;font-size:7px;color:#7189a8;background:#0c2743;border-radius:4px;padding:2px 5px}
+.match-row-v831 .match-extra{grid-template-columns:minmax(112px,.75fr) minmax(150px,1.2fr) 104px;gap:4px;padding:0 8px}
+.match-extra>div{min-width:0}
+.pick-zone>small,.scorers-zone>small{display:block;font-size:7px;color:#7890ae;margin-bottom:4px}
+.pick-line{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.pick-value{display:inline-grid;place-items:center;min-width:32px;height:30px;padding:0 8px;border-radius:6px;font-size:18px;line-height:1;font-weight:950;border:1px solid #3e8c28;background:#183c1b;color:#9cff65}
+.pick-n{border-color:#a87c16;background:#3d2f10;color:#ffd75b}
+.final-verdict{margin:0;padding:4px 7px;font-size:8px;white-space:nowrap}
+.scorers-zone .scorer-verdict-list{gap:4px}
+.scorers-zone .scorer-verdict-list em{font-size:8px;padding:4px 6px}
+.scorer-verdict-list em.waiting{color:#a8b7c9;border-color:#314c69;background:#0b2036}
+.prono-open-btn{
+  width:92px;height:34px;border-radius:9px;border:1px solid #237de1;background:#071b34;
+  color:#fff;font-size:9px;font-weight:900;letter-spacing:.04em;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+}
+.prono-open-btn:hover{background:#0b2b50;border-color:#4ba0ff}
+.prono-open-btn span{color:#80c5ff;font-size:11px}
+
+/* panneau d'analyse */
+body.prono-panel-open{overflow:hidden}
+.prono-detail-overlay{position:fixed;inset:0;z-index:1000}
+.prono-detail-overlay[hidden]{display:none}
+.prono-detail-backdrop{position:absolute;inset:0;background:rgba(0,5,14,.68);backdrop-filter:blur(3px)}
+.prono-detail-panel{
+  position:absolute;right:18px;top:18px;bottom:18px;width:min(470px,calc(100vw - 36px));
+  overflow:auto;border:1px solid #1b5589;border-radius:13px;
+  background:linear-gradient(180deg,#071b34,#061427);box-shadow:0 24px 70px rgba(0,0,0,.52);
+  padding:18px;
+}
+.prono-detail-close{
+  position:absolute;right:13px;top:10px;width:34px;height:34px;border:0;background:transparent;
+  color:#fff;font-size:28px;cursor:pointer;line-height:1
+}
+.prono-detail-heading small{color:#63b7ff;font-size:8px;font-weight:900;letter-spacing:.14em}
+.prono-detail-heading h2{font-size:21px;margin:3px 0 15px;text-transform:uppercase}
+.prono-detail-match{
+  display:grid;grid-template-columns:1fr 72px 1fr;align-items:center;gap:9px;
+  border:1px solid #143d64;background:#081d37;border-radius:9px;padding:13px 11px;position:relative
+}
+.prono-detail-team{display:flex;align-items:center;gap:8px;font-size:10px}
+.prono-detail-team.away{justify-content:flex-end;text-align:right}
+.prono-detail-team.away img,.prono-detail-team.away .fake-crest{order:2}
+.prono-detail-team .crest,.prono-detail-team .fake-crest{width:30px;height:30px}
+.prono-detail-score{text-align:center}
+.prono-detail-score strong{display:block;font-size:22px}
+.prono-detail-score small{font-size:6px;color:#7690af}
+.prono-detail-meta{grid-column:1/-1;text-align:center;font-size:8px;color:#8ca3bf;border-top:1px solid #123451;padding-top:8px}
+.prono-detail-meta span{margin-left:7px;color:#62b7ff;border:1px solid #236fb1;border-radius:4px;padding:2px 5px}
+.prono-detail-section{border:1px solid #123a60;background:#071a31;border-radius:9px;padding:14px;margin-top:10px}
+.prono-detail-section-title{font-size:10px;font-weight:900;color:#dce9f7;margin-bottom:10px}
+.prono-detail-section-title small{font-size:7px;color:#7890ad}
+.prono-detail-pick-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.prono-big-pick{display:grid;place-items:center;min-width:34px;height:31px;border-radius:6px;background:#1e4e1b;border:1px solid #397d28;color:#a3ff6c;font-size:18px;font-weight:950}
+.prono-detail-verdict{font-size:10px}.prono-detail-verdict.ok{color:#78f35d}.prono-detail-verdict.ko{color:#ff6478}.prono-detail-verdict.pending{color:#8498b2}
+.prono-detail-forecast{margin-left:auto;border:1px solid #1b3b5d;background:#0b2038;border-radius:7px;padding:7px 9px;color:#859ab4;font-size:9px}
+.prono-detail-forecast b{color:#fff;font-size:12px}
+.prono-detail-scorers{display:grid;gap:2px}
+.prono-detail-scorer{display:grid;grid-template-columns:22px 1fr auto;align-items:center;gap:6px;min-height:35px;border-bottom:1px solid #102f4e;font-size:10px}
+.prono-detail-scorer:last-child{border-bottom:0}
+.prono-detail-scorer>span{display:grid;place-items:center;width:18px;height:18px;border-radius:50%;font-weight:900}
+.prono-detail-scorer em{font-style:normal;font-size:9px}
+.prono-detail-scorer.ok>span{background:#133c22;color:#73f35f}.prono-detail-scorer.ok em{color:#69ec62}
+.prono-detail-scorer.ko>span{background:#451621;color:#ff5d70}.prono-detail-scorer.ko em{color:#ff6978}
+.prono-detail-scorer.waiting>span,.prono-detail-scorer.pending>span{background:#132d47;color:#9db0c6}
+.prono-detail-scorer.waiting em,.prono-detail-scorer.pending em{color:#8398b2}
+.prono-no-scorer{font-size:9px;color:#879ab3}
+.prono-detail-final{
+  margin-top:10px;border:1px solid #1a446c;background:#081c34;border-radius:9px;padding:12px;
+  display:flex;align-items:center;justify-content:space-between
+}
+.prono-detail-final span{font-size:10px;font-weight:900}.prono-detail-final strong{font-size:28px;letter-spacing:.06em}
+.prono-analysis-text{font-size:11px;line-height:1.65;color:#b5c4d6;margin:0;white-space:pre-line}
+.prono-detail-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}
+.prono-detail-stats>div{border:1px solid #123a60;background:#071a31;border-radius:8px;padding:11px 7px;text-align:center}
+.prono-detail-stats small{display:block;font-size:7px;color:#8297b1}
+.prono-detail-stats strong{display:block;font-size:13px;margin:7px 0}.prono-detail-stats strong.ok{color:#75ef5a}.prono-detail-stats strong.ko{color:#ff6478}
+.prono-detail-stats span{font-size:8px;color:#8fa2ba}
+
+@media(max-width:1180px){
+  .match-row-v831{grid-template-columns:92px minmax(150px,1fr) 80px minmax(150px,1fr)}
+  .match-row-v831 .match-extra{grid-column:1/-1;grid-template-columns:150px 1fr 104px;min-height:52px;padding:7px 10px}
+}
+@media(max-width:760px){
+  .match-row-v831{grid-template-columns:1fr 74px 1fr;padding-top:8px}
+  .match-row-v831 .match-meta{grid-column:1/-1;display:grid;grid-template-columns:1fr auto auto;align-items:center;padding:0 9px 7px}
+  .final-score-box{display:flex;align-items:center;gap:5px;padding:4px 7px}.final-score-box strong{font-size:12px}.final-score-box small{font-size:6px}
+  .match-row-v831 .team{font-size:9px}.match-row-v831 .team.home{justify-content:flex-end}
+  .prediction-score-wrap .prediction-score{font-size:20px}
+  .match-row-v831 .match-extra{grid-template-columns:1fr;gap:8px;padding:10px;border-top:1px solid #123252}
+  .prono-open-btn{width:100%}
+  .prono-detail-panel{right:8px;top:8px;bottom:8px;width:calc(100vw - 16px);padding:14px}
+  .prono-detail-match{grid-template-columns:1fr 62px 1fr}
+  .prono-detail-stats{grid-template-columns:1fr}
+}
