@@ -298,18 +298,34 @@ async function initLigue1(){
   $("#mercato-list").innerHTML=news.length ? news.slice(0,5).map(n=>`<a class="news-item" href="${n.link||"#"}" target="_blank" rel="noopener"><span>✓</span><div><b>${n.title||"Info mercato"}</b><small>${n.source||"Actualité"}</small></div></a>`).join("") : `<div class="empty-state">Aucune actualité mercato pour le moment.</div>`;
 
   // Automatic 1/N/2 statistics from completed fixtures.
+  // Buteurs : priorité aux données réelles ESPN. Pour une ancienne journée
+  // sans actualScorers, on reprend le bilan validé dans pronos.json afin
+  // d'éviter d'afficher 0 à tort.
   let judged=0,wins=0,goodScorers=0;
   schedule.forEach(day=>{
+    let dayVerifiedScorers=0;
+    let dayHasScorerData=false;
+
     (day.matches||[]).forEach((m,i)=>{
       const p=pronoForMatch(pronos,day.journee,m[0],m[1],i);
       const pick=normalizePick(p.pick);
       const f=m[2]||{};
       const actual=resultFromFixture(f);
       if(pick && actual){ judged++; if(pick===actual) wins++; }
-      if(f.completed && Array.isArray(f.actualScorers) && f.actualScorers.length){
-        goodScorers += scorerVerdicts(p,f).filter(x=>x.state==="ok").length;
+
+      if(f.completed && Array.isArray(f.actualScorers)){
+        dayHasScorerData=true;
+        dayVerifiedScorers += scorerVerdicts(p,f).filter(x=>x.state==="ok").length;
       }
     });
+
+    if(dayHasScorerData){
+      goodScorers += dayVerifiedScorers;
+    }else{
+      const review=((pronos.days||{})[String(day.journee)]||{}).review||{};
+      const fallback=Number(review.goodScorers);
+      if(Number.isFinite(fallback) && fallback>0) goodScorers += fallback;
+    }
   });
   const rate=judged ? Math.round((wins/judged)*100) : null;
   if($("#l1-prono-wins")) $("#l1-prono-wins").textContent=wins;

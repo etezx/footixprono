@@ -248,3 +248,10 @@ Les écussons sont intégrés au projet pour fiabiliser l'affichage. Les marques
 - Ton Footix : naturel, un peu drôle, autodérision, légère fibre parisienne et emojis modérés.
 - Le texte s'appuie uniquement sur les scores, pronostics et buteurs présents dans les JSON.
 - Les formulations varient selon la journée afin d'éviter un texte identique à chaque fois.
+
+## V8.4.2 — Débrief plus humain + correction buteurs
+- Réécriture du débrief automatique pour raconter réellement les principaux résultats de la journée.
+- Correction du texte J1 : formulation naturelle, faits marquants, humour léger et fibre parisienne.
+- Correction du compteur global `Bons buteurs` : une ancienne journée sans `actualScorers` utilise désormais le bilan validé au lieu d'afficher 0.
+- J1 affiche désormais 5 bons buteurs dans les statistiques globales.
+- Le générateur gratuit varie les formulations et cite plusieurs résultats marquants avant de parler des statistiques Footix.

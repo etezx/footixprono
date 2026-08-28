@@ -123,9 +123,7 @@
         {
           "date": "2026-08-29",
           "time": "20:45",
-          "official": true,
-          "completed": false,
-          "eventId": "401876484"
+          "official": true
         }
       ],
       [
@@ -134,9 +132,7 @@
         {
           "date": "2026-08-29",
           "time": "20:45",
-          "official": true,
-          "completed": false,
-          "eventId": "401876483"
+          "official": true
         }
       ],
       [
@@ -145,9 +141,7 @@
         {
           "date": "2026-08-28",
           "time": "20:45",
-          "official": true,
-          "completed": false,
-          "eventId": "401876476"
+          "official": true
         }
       ],
       [
@@ -156,9 +150,7 @@
         {
           "date": "2026-08-29",
           "time": "20:45",
-          "official": true,
-          "completed": false,
-          "eventId": "401876482"
+          "official": true
         }
       ],
       [
@@ -167,9 +159,7 @@
         {
           "date": "2026-08-29",
           "time": "20:45",
-          "official": true,
-          "completed": false,
-          "eventId": "401876481"
+          "official": true
         }
       ],
       [
@@ -178,9 +168,7 @@
         {
           "date": "2026-08-30",
           "time": "20:45",
-          "official": true,
-          "completed": false,
-          "eventId": "401876480"
+          "official": true
         }
       ],
       [
@@ -189,9 +177,7 @@
         {
           "date": "2026-08-30",
           "time": "15:00",
-          "official": true,
-          "completed": false,
-          "eventId": "401876479"
+          "official": true
         }
       ],
       [
@@ -209,9 +195,7 @@
         {
           "date": "2026-08-29",
           "time": "17:15",
-          "official": true,
-          "completed": false,
-          "eventId": "401876477"
+          "official": true
         }
       ]
     ]

@@ -59,94 +59,93 @@ def choose(seed, items):
     return r.choice(items)
 
 def free_summary(payload):
-    """Résumé 100 % local, sans API ni clé externe."""
+    """Résumé 100 % local : raconte réellement la journée à partir des scores fournis."""
     day = payload["journee"]
     matches = payload["matches"]
     bilan = payload["bilan_footix"]
 
-    # Match marquant = plus gros total/biggest goal difference.
-    def impact(m):
+    def parsed(m):
         try:
             h, a = [int(x) for x in m["score_final"].split("-")]
         except Exception:
-            return (0, 0)
+            h, a = 0, 0
+        home, away = m["match"].split(" - ", 1)
+        return home, away, h, a
+
+    def impact(m):
+        _, _, h, a = parsed(m)
         return (abs(h-a), h+a)
 
-    standout = max(matches, key=impact) if matches else None
+    ranked = sorted(matches, key=impact, reverse=True)
+    standout = ranked[0] if ranked else None
+    second = ranked[1] if len(ranked) > 1 else None
+    draws = [m for m in matches if parsed(m)[2] == parsed(m)[3]]
     surprises = [m for m in matches if m.get("prono_1N2") and not m.get("prono_correct")]
-    corrects = [m for m in matches if m.get("prono_correct")]
-    scorer_hits = []
-    for m in matches:
-        scorer_hits.extend(m.get("buteurs_trouves") or [])
-
+    scorer_hits = [n for m in matches for n in (m.get("buteurs_trouves") or [])]
     seed = f"{day}-" + "-".join(m["score_final"] for m in matches)
 
     intros = [
-        "Rideau sur cette journée, et il y avait encore de quoi avoir quelques sueurs froides 😅.",
-        "Fin de journée en Ligue 1 : du spectacle, des confirmations et deux-trois dossiers à ranger discrètement 🫠.",
-        "Coup de sifflet final sur la journée : Footix sort la calculette… et garde quand même le sourire ⚽.",
-        "La journée est terminée, les comptes sont faits : il y a du bon, du très bon, et quelques pronos qu’on ne montrera pas trop longtemps 👀.",
+        "Journée terminée, et il y avait franchement de quoi raconter 😅.",
+        "Coup de sifflet final sur cette journée : quelques cartons, des matchs accrochés et déjà des pronos qui piquent un peu 🫠.",
+        "Voilà, tout le monde a joué ! Une journée bien animée, avec son lot de confirmations et de petites claques 👀.",
     ]
     parts = [choose(seed+"intro", intros)]
 
-    if standout:
-        home, away = standout["match"].split(" - ", 1)
-        hs, as_ = [int(x) for x in standout["score_final"].split("-")]
-        winner = home if hs > as_ else away if as_ > hs else None
-        if winner:
-            parts.append(
-                f"Le résultat qui saute aux yeux, c’est {standout['match']} ({standout['score_final']}) : "
-                f"{winner} a clairement marqué les esprits 🔥."
-            )
+    football_bits = []
+    for idx, m in enumerate([x for x in (standout, second) if x]):
+        home, away, h, a = parsed(m)
+        if h == a:
+            football_bits.append(f"{home} et {away} se sont neutralisés {h}-{a}")
         else:
-            parts.append(
-                f"Parmi les matchs qui retiennent l’attention, {standout['match']} s’est terminé sur un {standout['score_final']} bien accroché 🤝."
-            )
+            winner = home if h > a else away
+            score = f"{h}-{a}"
+            if abs(h-a) >= 3 or h+a >= 5:
+                football_bits.append(f"{winner} a frappé fort contre {away if winner==home else home} ({score}) 🔥")
+            else:
+                football_bits.append(f"{winner} a fait le boulot face à {away if winner==home else home} ({score})")
+    if football_bits:
+        parts.append("Sur les terrains, " + ", tandis que ".join(football_bits) + ".")
 
-    good = bilan.get("bons_pronos", 0)
-    judged = bilan.get("pronos_juges", 0)
+    if draws:
+        examples = ", ".join(f"{m['match']} ({m['score_final']})" for m in draws[:2])
+        parts.append(f"On a aussi eu des rencontres beaucoup plus serrées, notamment {examples}. Pas exactement le genre de matchs qui laisse la grille de pronos tranquille 😬.")
+
+    good = int(bilan.get("bons_pronos", 0) or 0)
+    judged = int(bilan.get("pronos_juges", 0) or 0)
     if judged:
-        rate = round(good * 100 / judged)
-        if rate >= 75:
-            verdict = "Footix avait plutôt le nez fin 🎯"
-        elif rate >= 50:
-            verdict = "bilan correct, même si tout n’était pas parfaitement senti"
-        else:
-            verdict = "bon… on va dire que le ballon n’a pas toujours voulu écouter Footix 🫠"
-        parts.append(f"Côté pronos, ça donne {good}/{judged} bons résultats ({rate} %) : {verdict}.")
+        rate = round(good * 100 / judged, 1)
+        verdict = (
+            "Footix avait plutôt le nez fin 🎯" if rate >= 75 else
+            "c’est correct, mais il reste de la marge" if rate >= 50 else
+            "on va éviter d’encadrer cette grille au mur 🫠"
+        )
+        parts.append(f"Côté pronostics, bilan de {good}/{judged}, soit {str(rate).replace('.', ',')} % : {verdict}.")
 
     if surprises:
         m = choose(seed+"miss", surprises)
-        parts.append(
-            f"Le petit caillou dans la chaussure ? {m['match']} : j’étais parti sur {m.get('prono_1N2')}, "
-            f"et le terrain m’a gentiment rappelé qui commande."
-        )
-    elif corrects:
-        parts.append("Et pour une fois, pas besoin de sortir les grandes excuses : la lecture des matchs était solide 😎.")
+        parts.append(f"Le prono qui me reste un peu en travers ? {m['match']} : j’avais choisi {m.get('prono_1N2')}, et le terrain en a décidé autrement. Le football adore nous rappeler qui commande.")
 
-    pred_s = bilan.get("buteurs_pronostiques", 0)
-    hit_s = bilan.get("buteurs_trouves", 0)
+    hit_s = int(bilan.get("buteurs_trouves", 0) or 0)
+    pred_s = int(bilan.get("buteurs_pronostiques", 0) or 0)
     if pred_s:
         if scorer_hits:
-            shown = ", ".join(scorer_hits[:3])
-            parts.append(f"Chez les buteurs, {hit_s}/{pred_s} trouvés, avec notamment {shown}. Ça, on prend ✅.")
+            parts.append(f"Chez les buteurs, {hit_s} sélection(s) trouvée(s), avec notamment {', '.join(scorer_hits[:3])} ✅.")
         else:
-            parts.append(f"Pour les buteurs, {hit_s}/{pred_s}. Là, clairement, Footix doit revoir ses fiches avant la prochaine journée 📝.")
+            parts.append(f"Chez les buteurs, {hit_s} sélection(s) validée(s). Il y a eu de bonnes intuitions, même si tout n’est pas encore parfait ✅.")
 
-    # Petite touche parisienne uniquement si PSG apparaît, sans inventer d'événement.
-    psg = next((m for m in matches if "PSG" in m["match"] or "Paris Saint-Germain" in m["match"]), None)
+    psg = next((m for m in matches if "PARIS SAINT-GERMAIN" in m["match"] or "PSG" in m["match"]), None)
     if psg:
-        ph, pa = [int(x) for x in psg["score_final"].split("-")]
-        is_home = psg["match"].startswith("PSG") or psg["match"].startswith("Paris Saint-Germain")
-        psg_goals, opp_goals = (ph, pa) if is_home else (pa, ph)
-        if psg_goals > opp_goals:
-            parts.append("Et côté parisien, forcément, la victoire se savoure toujours avec un petit supplément de plaisir ❤️💙.")
-        elif psg_goals < opp_goals:
-            parts.append("Pour Paris, je vais éviter d’en faire trois paragraphes… mon cœur de supporter a déjà assez pris comme ça 😭.")
+        home, away, h, a = parsed(psg)
+        psg_home = "PARIS SAINT-GERMAIN" in home or home == "PSG"
+        pg, og = (h, a) if psg_home else (a, h)
+        if pg > og:
+            parts.append("Et Paris qui gagne, forcément, ça met toujours un petit supplément de bonne humeur au débrief ❤️💙.")
+        elif pg < og:
+            parts.append("Pour Paris, on va passer assez vite… mon côté supporter a déjà fait le débrief tout seul dans sa tête 😭.")
         else:
-            parts.append("Paris laisse quelques regrets sur ce nul… le supporter en moi aurait évidemment signé pour un peu mieux 😬.")
+            parts.append("Et Paris laisse deux points en route avec ce nul… mon côté supporter avait évidemment commandé un peu mieux 😬.")
 
-    return "\n\n".join(parts[:5])
+    return "\n\n".join(parts[:6])
 
 def main():
     schedule = json.loads(SCHEDULE.read_text(encoding="utf-8"))
@@ -230,11 +229,18 @@ def main():
                 "buteurs_rates": misses,
             })
 
-        # We wait for scorer data so the generated prose cannot call a scorer wrong
-        # just because ESPN has not populated the summary yet.
-        if not scorer_data_ready:
+        # Pour les nouvelles journées, on préfère attendre les données buteurs.
+        # Pour une ancienne journée déjà validée manuellement, on conserve le nombre
+        # de bons buteurs du bilan existant afin de ne pas rester bloqué indéfiniment.
+        legacy_good_scorers = existing.get("goodScorers") if isinstance(existing, dict) else None
+        if not scorer_data_ready and legacy_good_scorers is None:
             print(f"[WAIT] J{day_no}: résultats terminés, données buteurs encore incomplètes.")
             continue
+        if not scorer_data_ready and legacy_good_scorers is not None:
+            try:
+                scorer_hits = int(legacy_good_scorers)
+            except (TypeError, ValueError):
+                scorer_hits = 0
 
         review = {
             "goodPronos": good_pronos,
