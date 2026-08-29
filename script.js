@@ -4,7 +4,7 @@ const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
 const norm = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
 
 let clubsCache=null;
-async function getJSON(url){ const r=await fetch(url+"?v=8.3.1",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
+async function getJSON(url){ const r=await fetch(url+"?v=8.6.0",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
 async function clubs(){ if(!clubsCache) clubsCache=await getJSON("clubs.json"); return clubsCache; }
 function clubLogo(name, map){
   const entries=Object.entries(map?.clubs||{});
@@ -34,6 +34,12 @@ function resultFromFixture(f){
   if(!Number.isFinite(h)||!Number.isFinite(a)) return null;
   return h>a ? "1" : h<a ? "2" : "N";
 }
+function currentResultFromFixture(f){
+  if(!f || (!f.live&&!f.completed)) return null;
+  const h=Number(f.homeScore), a=Number(f.awayScore);
+  if(!Number.isFinite(h)||!Number.isFinite(a)) return null;
+  return h>a ? "1" : h<a ? "2" : "N";
+}
 function pronoForMatch(pronos,dayNo,home,away,index){
   const day=(pronos.days||{})[String(dayNo)]||{};
   if(day[`${home}|||${away}`]) return day[`${home}|||${away}`];
@@ -43,7 +49,6 @@ function pronoForMatch(pronos,dayNo,home,away,index){
 function imageWithFallback(src,abbr,klass="ucl-logo"){
   return `<span class="${klass}-wrap"><img class="${klass}" src="${src}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="${klass}-fallback">${abbr}</span></span>`;
 }
-
 function escapeHTML(value){
   return String(value??"")
     .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
@@ -58,16 +63,23 @@ function predictedScorers(p={}){
   return String(p.buteurs||p.buteur||"")
     .split(/[\n,;]+/).map(x=>x.trim()).filter(Boolean).slice(0,4);
 }
+function personMatches(predicted,actual){
+  const p=normalizePersonName(predicted), a=normalizePersonName(actual);
+  if(!p||!a) return false;
+  if(p===a) return true;
+  // Un nom seul (ex. Gouiri) peut correspondre au nom de famille exact du flux BSD.
+  const pp=p.split(" "), aa=a.split(" ");
+  return pp.length===1 && pp[0].length>=4 && aa[aa.length-1]===pp[0];
+}
 function scorerVerdicts(p={},fixture={}){
   const predicted=predictedScorers(p);
   const actual=Array.isArray(fixture.actualScorers) ? fixture.actualScorers : [];
-  if(!fixture.completed) return predicted.map(name=>({name,state:"pending"}));
-  if(!actual.length) return predicted.map(name=>({name,state:"waiting"}));
-  const actualNorm=actual.map(normalizePersonName);
+  const verified=fixture.scorersVerified===true;
   return predicted.map(name=>{
-    const n=normalizePersonName(name);
-    const hit=actualNorm.some(a=>a===n || a.endsWith(" "+n) || n.endsWith(" "+a));
-    return {name,state:hit?"ok":"ko"};
+    const hit=actual.some(a=>personMatches(name,a));
+    if(hit) return {name,state:"ok"};
+    if(fixture.completed) return {name,state:verified?"ko":"waiting"};
+    return {name,state:"pending"};
   });
 }
 function scorerChipsHTML(p={},fixture={}){
@@ -77,6 +89,101 @@ function scorerChipsHTML(p={},fixture={}){
     const icon=x.state==="ok"?"✓":x.state==="ko"?"✕":"";
     return `<em class="${x.state}">${icon?icon+" ":""}${escapeHTML(x.name)}</em>`;
   }).join("")}</span>`;
+}
+function liveEvents(data,leagueId){
+  return (Array.isArray(data?.events)?data.events:[]).filter(e=>Number(e.leagueId)===Number(leagueId));
+}
+function liveEventFor(data,leagueId,home,away,meta={}){
+  const candidates=liveEvents(data,leagueId).filter(e=>norm(e.home)===norm(home)&&norm(e.away)===norm(away));
+  if(!candidates.length) return null;
+  const date=String(meta?.date||"").slice(0,10);
+  if(date){
+    const dated=candidates.find(e=>String(e.kickoff||"").slice(0,10)===date);
+    if(dated) return dated;
+  }
+  return candidates.slice().sort((a,b)=>String(b.kickoff||"").localeCompare(String(a.kickoff||"")))[0];
+}
+function mergeFixtureData(fixture={},event=null){
+  if(!event) return {...fixture};
+  if(fixture.completed && !event.completed) return {...fixture};
+  const out={...fixture};
+  ["eventId","status","live","completed","minute","period","homeScore","awayScore","actualScorers","scorersVerified","updatedAt"].forEach(k=>{
+    if(event[k]!==undefined && event[k]!==null) out[k]=event[k];
+  });
+  if(event.updatedAt) out.lastLiveUpdate=event.updatedAt;
+  return out;
+}
+function fixtureScore(f){
+  const h=Number(f?.homeScore),a=Number(f?.awayScore);
+  return Number.isFinite(h)&&Number.isFinite(a)?`${h}–${a}`:null;
+}
+function verdictData(pick,fixture,home,away){
+  const current=currentResultFromFixture(fixture);
+  if(!fixture?.live&&!fixture?.completed){
+    return {state:"pending",label:"EN ATTENTE",why:"Le match n’a pas encore commencé."};
+  }
+  if(!pick||!current){
+    return {state:"pending",label:"À VÉRIFIER",why:"Le pronostic 1/N/2 ou le score actuel n’est pas disponible."};
+  }
+  const good=pick===current;
+  const live=Boolean(fixture.live&&!fixture.completed);
+  let why="";
+  if(good){
+    why=live?"Le résultat actuel correspond au pronostic de Footix.":"Le résultat final correspond au pronostic de Footix.";
+  }else if(pick==="1"){
+    why=live?`${home} ne mène pas pour le moment.`:`${home} n’a pas gagné comme prévu.`;
+  }else if(pick==="2"){
+    why=live?`${away} ne mène pas pour le moment.`:`${away} n’a pas gagné comme prévu.`;
+  }else{
+    why=live?"Le score n’est pas nul pour le moment.":"Le match ne s’est pas terminé sur un nul comme prévu.";
+  }
+  return {
+    state:good?"ok":"ko",
+    label:live?(good?"PRONO ACTUELLEMENT BON":"PRONO ACTUELLEMENT FAUX"):(good?"✓ BON PRONO":"✕ MAUVAIS PRONO"),
+    why
+  };
+}
+function matchFlowHTML({home,away,score,pick,fixture}){
+  const live=Boolean(fixture?.live&&!fixture?.completed);
+  const final=Boolean(fixture?.completed);
+  const real=fixtureScore(fixture);
+  const verdict=verdictData(pick,fixture,home,away);
+  const status=live?`🔴 LIVE${fixture.minute!=null?` ${fixture.minute}’`:""}`:final?"RÉSULTAT":"RÉSULTAT / LIVE";
+  const resultText=real?`${home} ${real} ${away}`:"À venir";
+  return `<div class="prono-flow ${live?"is-live":final?"is-final":"is-upcoming"}">
+    <div class="flow-step flow-prono"><small>PRONO</small><strong>${escapeHTML(home)} ${escapeHTML(score||"—")} ${escapeHTML(away)}</strong><span>${pick?`Choix ${escapeHTML(pick)}`:"Choix —"}</span></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step flow-result"><small>${status}</small><strong>${escapeHTML(resultText)}</strong><span>${live?"Score en cours":final?"Score final":"En attente du coup d’envoi"}</span></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step flow-verdict ${verdict.state}"><small>VERDICT</small><strong>${escapeHTML(verdict.label)}</strong></div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step flow-why"><small>POURQUOI</small><strong>${escapeHTML(verdict.why)}</strong></div>
+  </div>`;
+}
+function competitionStandings(bsd,leagueId){
+  const block=bsd?.leagues?.[String(leagueId)];
+  return Array.isArray(block?.teams)?block.teams:[];
+}
+function applyLiveToStandings(baseTeams,eventData,leagueId){
+  const map=new Map((baseTeams||[]).map(t=>[norm(t.club),{...t,live:false}]));
+  const ensure=name=>{
+    const key=norm(name);
+    if(!map.has(key)) map.set(key,{club:name,p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0,live:false});
+    return map.get(key);
+  };
+  liveEvents(eventData,leagueId).filter(e=>e.live&&!e.completed).forEach(e=>{
+    const hs=Number(e.homeScore),as=Number(e.awayScore);
+    if(!Number.isFinite(hs)||!Number.isFinite(as)) return;
+    const h=ensure(e.home),a=ensure(e.away);
+    h.p=(Number(h.p)||0)+1;a.p=(Number(a.p)||0)+1;
+    h.gf=(Number(h.gf)||0)+hs;h.ga=(Number(h.ga)||0)+as;
+    a.gf=(Number(a.gf)||0)+as;a.ga=(Number(a.ga)||0)+hs;
+    h.live=a.live=true;
+    if(hs>as){h.w=(Number(h.w)||0)+1;h.pts=(Number(h.pts)||0)+3;a.l=(Number(a.l)||0)+1;}
+    else if(hs<as){a.w=(Number(a.w)||0)+1;a.pts=(Number(a.pts)||0)+3;h.l=(Number(h.l)||0)+1;}
+    else{h.d=(Number(h.d)||0)+1;a.d=(Number(a.d)||0)+1;h.pts=(Number(h.pts)||0)+1;a.pts=(Number(a.pts)||0)+1;}
+  });
+  return [...map.values()].sort((a,b)=>(Number(b.pts)-Number(a.pts))||(((Number(b.gf)-Number(b.ga))-(Number(a.gf)-Number(a.ga))))||(Number(b.gf)-Number(a.gf))||String(a.club).localeCompare(String(b.club)));
 }
 function ensurePronoPanel(){
   let panel=$("#prono-detail-overlay");
@@ -109,57 +216,39 @@ function closePronoPanel(){
 function openPronoPanel(data){
   const panel=ensurePronoPanel();
   const body=$("#prono-detail-body",panel);
-  const {
-    home,away,homeLogo,awayLogo,meta,score,pick,analysis,fixture,p
-  }=data;
+  const {home,away,homeLogo,awayLogo,meta,score,pick,analysis,fixture,p}=data;
   const actual=resultFromFixture(fixture);
   const finished=Boolean(fixture.completed);
-  const real=finished && Number.isFinite(Number(fixture.homeScore)) && Number.isFinite(Number(fixture.awayScore))
-    ? `${fixture.homeScore} - ${fixture.awayScore}` : null;
+  const live=Boolean(fixture.live&&!fixture.completed);
+  const real=fixtureScore(fixture);
   const pickGood=Boolean(pick&&actual&&pick===actual);
-  const exact=Boolean(real && String(score).replace(/\s/g,"")===real.replace(/\s/g,""));
+  const exact=Boolean(real && String(score).replace(/\s/g,"").replace(/-/g,"–")===real.replace(/\s/g,""));
   const scorerRows=scorerVerdicts(p,fixture);
   const goodScorers=scorerRows.filter(x=>x.state==="ok").length;
   const checkedScorers=scorerRows.filter(x=>["ok","ko"].includes(x.state)).length;
 
   body.innerHTML=`
-    <div class="prono-detail-heading">
-      <small>FOOTIX PRONO</small>
-      <h2 id="prono-detail-title">Analyse du match</h2>
-    </div>
+    <div class="prono-detail-heading"><small>FOOTIX PRONO</small><h2 id="prono-detail-title">Analyse du match</h2></div>
     <div class="prono-detail-match">
       <div class="prono-detail-team">${homeLogo}<b>${escapeHTML(home)}</b></div>
       <div class="prono-detail-score"><strong>${escapeHTML(score)}</strong><small>SCORE PRÉVU</small></div>
       <div class="prono-detail-team away">${awayLogo}<b>${escapeHTML(away)}</b></div>
-      <div class="prono-detail-meta">${escapeHTML(meta||"Horaire à confirmer")}${finished?` <span>TERMINÉ</span>`:""}</div>
+      <div class="prono-detail-meta">${escapeHTML(meta||"Horaire à confirmer")}${live?` <span class="live-mini">LIVE${fixture.minute!=null?` ${fixture.minute}’`:""}</span>`:finished?` <span>TERMINÉ</span>`:""}</div>
     </div>
 
-    <section class="prono-detail-section">
-      <div class="prono-detail-section-title">MON PRONOSTIC</div>
-      <div class="prono-detail-pick-row">
-        <span class="prono-big-pick">${escapeHTML(pick||"—")}</span>
-        ${finished&&actual?`<b class="prono-detail-verdict ${pickGood?"ok":"ko"}">${pickGood?"✓ BON PRONO":"✕ PRONO RATÉ"}</b>`:`<b class="prono-detail-verdict pending">EN ATTENTE</b>`}
-        <span class="prono-detail-forecast">Score prévu : <b>${escapeHTML(score)}</b></span>
-      </div>
-    </section>
+    ${matchFlowHTML({home,away,score,pick,fixture})}
 
     <section class="prono-detail-section">
-      <div class="prono-detail-section-title">BUTEURS PRONOSTIQUÉS <small>(JUSQU’À 4)</small></div>
+      <div class="prono-detail-section-title">BUTEURS PRONOSTIQUÉS <small>(VALIDATION BSD STRICTE)</small></div>
       <div class="prono-detail-scorers">
         ${scorerRows.length?scorerRows.map(x=>`
           <div class="prono-detail-scorer ${x.state}">
             <span>${x.state==="ok"?"✓":x.state==="ko"?"✕":"•"}</span>
             <b>${escapeHTML(x.name)}</b>
-            <em>${x.state==="ok"?"A marqué":x.state==="ko"?"N’a pas marqué":x.state==="waiting"?"Vérification en attente":"Match à venir"}</em>
+            <em>${x.state==="ok"?"A marqué":x.state==="ko"?"N’a pas marqué":x.state==="waiting"?"Vérification en attente":live?"Match en cours":"Match à venir"}</em>
           </div>`).join(""):`<div class="prono-no-scorer">Aucun buteur sélectionné.</div>`}
       </div>
     </section>
-
-    ${finished&&real?`
-      <section class="prono-detail-final">
-        <span>SCORE FINAL</span>
-        <strong>${escapeHTML(real)}</strong>
-      </section>`:""}
 
     <section class="prono-detail-section">
       <div class="prono-detail-section-title">MON ANALYSE</div>
@@ -167,9 +256,9 @@ function openPronoPanel(data){
     </section>
 
     <section class="prono-detail-stats">
-      <div><small>PRONO 1/N/2</small><strong class="${finished&&actual?(pickGood?"ok":"ko"):""}">${finished&&actual?(pickGood?"✓ BON":"✕ RATÉ"):"—"}</strong><span>${escapeHTML(pick||"—")} choisi</span></div>
-      <div><small>BONS BUTEURS</small><strong>${checkedScorers?`${goodScorers} / ${scorerRows.length}`:"—"}</strong><span>${checkedScorers?Math.round(goodScorers/scorerRows.length*100)+" %":"En attente"}</span></div>
-      <div><small>SCORE EXACT</small><strong class="${finished?(exact?"ok":"ko"):""}">${finished?(exact?"✓ OUI":"✕ NON"):"—"}</strong><span>${finished&&real?escapeHTML(real)+" réel":"En attente"}</span></div>
+      <div><small>PRONO 1/N/2</small><strong class="${finished&&actual?(pickGood?"ok":"ko"):""}">${finished&&actual?(pickGood?"✓ BON":"✕ RATÉ"):live?"LIVE":"—"}</strong><span>${escapeHTML(pick||"—")} choisi</span></div>
+      <div><small>BONS BUTEURS</small><strong>${checkedScorers?`${goodScorers} / ${scorerRows.length}`:"—"}</strong><span>${fixture.scorersVerified?"Vérification BSD":"En attente"}</span></div>
+      <div><small>SCORE EXACT</small><strong class="${finished?(exact?"ok":"ko"):""}">${finished?(exact?"✓ OUI":"✕ NON"):"—"}</strong><span>${finished&&real?escapeHTML(real)+" réel":live&&real?escapeHTML(real)+" en cours":"En attente"}</span></div>
     </section>`;
   panel.hidden=false;
   document.body.classList.add("prono-panel-open");
@@ -254,30 +343,27 @@ function deriveStandingsFromSchedule(schedule){
   });
   return [...table.values()];
 }
-
-function safeLigue1Standings(standing,schedule){
+function safeLigue1Standings(standing,schedule,bsdStandings){
+  const bsdTeams=competitionStandings(bsdStandings,6);
+  if(bsdTeams.length) return bsdTeams;
   const apiTeams=Array.isArray(standing?.teams)?standing.teams:[];
   const apiPlayed=apiTeams.reduce((sum,t)=>sum+(Number(t.p)||0),0);
   const derived=deriveStandingsFromSchedule(schedule);
   const derivedPlayed=derived.reduce((sum,t)=>sum+(Number(t.p)||0),0);
-
-  // Si le fichier classement régresse brutalement à 0 alors que des matchs sont terminés,
-  // on reconstruit le classement depuis schedule.json au lieu d'afficher des zéros.
   if(apiPlayed===0 && derivedPlayed>0) return derived;
   return apiTeams.length ? apiTeams : derived;
 }
 
 async function initLigue1(){
   if(!$("#l1-day-tabs")) return;
-  const [schedule,standing,pronos,clubmap,mercato] = await Promise.all([
-    getJSON("schedule.json"),getJSON("standings.json"),
-    getJSON("pronos.json").catch(()=>({days:{}})),
-    clubs(),getJSON("mercato.json").catch(()=>({items:[]}))
+  let [schedule,standing,pronos,clubmap,mercato,liveData,bsdStanding] = await Promise.all([
+    getJSON("schedule.json"),getJSON("standings.json").catch(()=>({teams:[]})),
+    getJSON("pronos.json").catch(()=>({days:{}})),clubs(),getJSON("mercato.json").catch(()=>({items:[]})),
+    getJSON("live-results.json").catch(()=>({events:[]})),getJSON("bsd-standings.json").catch(()=>({leagues:{}}))
   ]);
 
   let current = Number(localStorage.getItem("footix-l1-day")||1);
   if(!schedule.some(d=>d.journee===current)) current=1;
-
   const tabs=$("#l1-day-tabs");
   schedule.forEach(d=>{
     const b=document.createElement("button");
@@ -287,186 +373,123 @@ async function initLigue1(){
     tabs.appendChild(b);
   });
 
+  function effectiveFixture(m){
+    const raw=m[2]||{};
+    return mergeFixtureData(raw,liveEventFor(liveData,6,m[0],m[1],raw));
+  }
+  function renderStandings(){
+    const base=safeLigue1Standings(standing,schedule,bsdStanding);
+    const teams=applyLiveToStandings(base,liveData,6);
+    const hasLive=liveEvents(liveData,6).some(e=>e.live&&!e.completed);
+    const status=$("#l1-standings-status");
+    if(status){status.textContent=hasLive?"🔴 LIVE PROVISOIRE":"BSD · officiel";status.classList.toggle("live-standing",hasLive);}
+    $("#l1-standings").innerHTML=`<div class="stand-head"><span>#</span><span>ÉQUIPE</span><span>J</span><span>DIFF</span><span>PTS</span></div>`+
+      teams.map((t,i)=>`<div class="stand-row ${t.live?"is-live-team":""}"><span>${i+1}</span><span class="stand-team">${clubLogo(t.club,clubmap)}${escapeHTML(t.club)}${t.live?'<i class="live-dot">LIVE</i>':''}</span><span>${Number(t.p)||0}</span><span>${(Number(t.gf)-Number(t.ga))>0?"+":""}${(Number(t.gf)||0)-(Number(t.ga)||0)}</span><strong>${Number(t.pts)||0}</strong></div>`).join("");
+  }
   function render(){
     $$("#l1-day-tabs button").forEach((b,i)=>b.classList.toggle("active",schedule[i].journee===current));
     const day=schedule.find(d=>d.journee===current);
     $("#l1-day-date").textContent=day?.date||"";
     renderMustWatch(day,pronos);
-
     const sorted=(day?.matches||[]).slice().sort(matchSort);
     $("#l1-match-list").innerHTML=sorted.map((m,i)=>{
       const p=pronoForMatch(pronos,current,m[0],m[1],i);
-      const pick=normalizePick(p.pick);
-      const score=p.score||p.scorePrevu||"—";
-      const analysis=p.analyse||p.analysis||"";
-      const f=m[2]||{};
-      const actual=resultFromFixture(f);
-      const real=f.completed && Number.isFinite(Number(f.homeScore)) && Number.isFinite(Number(f.awayScore))
-        ? `${f.homeScore} - ${f.awayScore}` : null;
-      const pickGood=Boolean(pick&&actual&&pick===actual);
-      const scorerHTML=scorerChipsHTML(p,f);
-
-      return `<article class="match-row match-row-v831 ${f.completed?"is-finished":""}">
-        <div class="match-meta">
-          <span class="match-kickoff">${fmtDayMeta(f)||"Horaire à confirmer"}</span>
-          ${f.completed&&real?`<span class="finished-label">TERMINÉ</span><div class="final-score-box"><small>SCORE FINAL</small><strong>${real}</strong></div>`:""}
-        </div>
-        <div class="team home">${clubLogo(m[0],clubmap)}<span>${m[0]}</span></div>
-        <div class="prediction-score-wrap"><strong class="prediction-score">${score}</strong><small>SCORE PRÉVU</small></div>
-        <div class="team away">${clubLogo(m[1],clubmap)}<span>${m[1]}</span></div>
-        <div class="match-extra">
-          <div class="pick-zone">
-            <small>PRONO 1/N/2</small>
-            <div class="pick-line">
-              <strong class="pick-value pick-${(pick||"x").toLowerCase()}">${pick||"—"}</strong>
-              ${f.completed&&actual?`<span class="final-verdict ${pickGood?"ok":"ko"}">${pickGood?"✓ BON PRONO":"✕ PRONO RATÉ"}</span>`:""}
-            </div>
-          </div>
-          <div class="scorers-zone"><small>BUTEURS</small>${scorerHTML}</div>
-          <button class="analysis-btn prono-open-btn" type="button" data-prono-index="${i}"><span class="prono-btn-icon">◉</span><span class="prono-btn-label">ANALYSE DU MATCH</span></button>
-        </div>
+      const pick=normalizePick(p.pick), score=p.score||p.scorePrevu||"—", f=effectiveFixture(m);
+      return `<article class="match-row-live ${f.live?"is-live":f.completed?"is-finished":""}">
+        <div class="live-card-meta"><span>${escapeHTML(fmtDayMeta(m[2]||{})||"Horaire à confirmer")}</span>${f.live?`<b>🔴 LIVE${f.minute!=null?` ${f.minute}’`:""}</b>`:f.completed?"<b>TERMINÉ</b>":""}</div>
+        ${matchFlowHTML({home:m[0],away:m[1],score,pick,fixture:f})}
+        <div class="live-card-bottom"><div class="scorers-zone"><small>BUTEURS PRONOSTIQUÉS</small>${scorerChipsHTML(p,f)}</div><button class="analysis-btn prono-open-btn" type="button" data-prono-index="${i}"><span class="prono-btn-icon">◉</span><span class="prono-btn-label">ANALYSE DU MATCH</span></button></div>
       </article>`;
     }).join("") || `<div class="empty-state">Aucun match disponible.</div>`;
 
     let after=$("#l1-after-match");
-    if(!after){
-      after=document.createElement("div");
-      after.id="l1-after-match";
-      $("#l1-match-list").insertAdjacentElement("afterend",after);
-    }
+    if(!after){after=document.createElement("div");after.id="l1-after-match";$("#l1-match-list").insertAdjacentElement("afterend",after);}
     after.innerHTML=dayAfterMatchHTML(pronos,current);
-
     $$("#l1-match-list .prono-open-btn").forEach(btn=>btn.addEventListener("click",()=>{
-      const idx=Number(btn.dataset.pronoIndex);
-      const m=sorted[idx];
-      if(!m) return;
-      const p=pronoForMatch(pronos,current,m[0],m[1],idx);
-      openPronoPanel({
-        home:m[0],away:m[1],
-        homeLogo:clubLogo(m[0],clubmap),awayLogo:clubLogo(m[1],clubmap),
-        meta:fmtDayMeta(m[2]||{}),
-        score:p.score||p.scorePrevu||"—",
-        pick:normalizePick(p.pick),
-        analysis:p.analyse||p.analysis||"",
-        fixture:m[2]||{},
-        p
-      });
+      const idx=Number(btn.dataset.pronoIndex),m=sorted[idx];if(!m)return;
+      const p=pronoForMatch(pronos,current,m[0],m[1],idx),f=effectiveFixture(m);
+      openPronoPanel({home:m[0],away:m[1],homeLogo:clubLogo(m[0],clubmap),awayLogo:clubLogo(m[1],clubmap),meta:fmtDayMeta(m[2]||{}),score:p.score||p.scorePrevu||"—",pick:normalizePick(p.pick),analysis:p.analyse||p.analysis||"",fixture:f,p});
     }));
+    renderStandings();
   }
   render();
-
-  const teams=safeLigue1Standings(standing,schedule).slice().sort((a,b)=>(b.pts-a.pts)||((b.gf-b.ga)-(a.gf-a.ga))||(b.gf-a.gf));
-  $("#l1-standings").innerHTML=`<div class="stand-head"><span>#</span><span>ÉQUIPE</span><span>J</span><span>DIFF</span><span>PTS</span></div>`+
-  teams.map((t,i)=>`<div class="stand-row"><span>${i+1}</span><span class="stand-team">${clubLogo(t.club,clubmap)}${t.club}</span><span>${t.p}</span><span>${(t.gf-t.ga)>0?"+":""}${t.gf-t.ga}</span><strong>${t.pts}</strong></div>`).join("");
 
   const news=mercato.items||[];
   $("#mercato-list").innerHTML=news.length ? news.slice(0,5).map(n=>`<a class="news-item" href="${n.link||"#"}" target="_blank" rel="noopener"><span>✓</span><div><b>${n.title||"Info mercato"}</b><small>${n.source||"Actualité"}</small></div></a>`).join("") : `<div class="empty-state">Aucune actualité mercato pour le moment.</div>`;
 
-  // Statistiques Footix Ligue 1 : uniquement les pronostics 1/N/2.
   let judged=0,wins=0;
-  schedule.forEach(day=>{
-    (day.matches||[]).forEach((m,i)=>{
-      const p=pronoForMatch(pronos,day.journee,m[0],m[1],i);
-      const pick=normalizePick(p.pick);
-      const actual=resultFromFixture(m[2]||{});
-      if(pick && actual){ judged++; if(pick===actual) wins++; }
-    });
-  });
-  const rate=judged ? Math.round((wins/judged)*100) : null;
+  schedule.forEach(day=>{(day.matches||[]).forEach((m,i)=>{const p=pronoForMatch(pronos,day.journee,m[0],m[1],i);const pick=normalizePick(p.pick);const actual=resultFromFixture(effectiveFixture(m));if(pick&&actual){judged++;if(pick===actual)wins++;}});});
+  const rate=judged?Math.round((wins/judged)*100):null;
   if($("#l1-prono-wins")) $("#l1-prono-wins").textContent=wins;
   if($("#l1-prono-played")) $("#l1-prono-played").textContent=judged;
   if($("#l1-prono-rate")) $("#l1-prono-rate").textContent=rate===null?"—":rate+"%";
+
+  // Le navigateur relit les JSON chaque minute. GitHub Actions vise une mise à jour toutes les 5 min.
+  setInterval(async()=>{
+    try{
+      const [freshSchedule,freshLive,freshBsd]=await Promise.all([getJSON("schedule.json"),getJSON("live-results.json").catch(()=>liveData),getJSON("bsd-standings.json").catch(()=>bsdStanding)]);
+      schedule=freshSchedule;liveData=freshLive;bsdStanding=freshBsd;render();
+    }catch(e){console.warn("Footix Live: actualisation différée",e);}
+  },60000);
 }
 async function initUCL(){
   if(!$("#ucl-day-tabs")) return;
-  const [d,uclPronos]=await Promise.all([
-    getJSON("champions.json"),
-    getJSON("champions-pronos.json").catch(()=>({days:{}}))
+  let [d,uclPronos,liveData,bsdStanding]=await Promise.all([
+    getJSON("champions.json"),getJSON("champions-pronos.json").catch(()=>({days:{}})),
+    getJSON("live-results.json").catch(()=>({events:[]})),getJSON("bsd-standings.json").catch(()=>({leagues:{}}))
   ]);
   const byName=Object.fromEntries(d.teams.map(t=>[t.club,t]));
   let current=1;
-
   function logoFor(name,klass="ucl-logo"){
     const t=byName[name]||{abbr:(name||"?").slice(0,3).toUpperCase(),logo:""};
     return imageWithFallback(t.logo,t.abbr,klass);
   }
-
   d.matchdays.forEach((md,i)=>{
-    const b=document.createElement("button");
-    b.textContent=md.label;
-    b.className=i===0?"active":"";
-    b.onclick=()=>{
-      current=md.day;
-      $$("#ucl-day-tabs button").forEach(x=>x.classList.remove("active"));
-      b.classList.add("active");
-      showDay(md);
-    };
+    const b=document.createElement("button");b.textContent=md.label;b.className=i===0?"active":"";
+    b.onclick=()=>{current=md.day;$$("#ucl-day-tabs button").forEach(x=>x.classList.remove("active"));b.classList.add("active");showDay(md);};
     $("#ucl-day-tabs").appendChild(b);
   });
-
+  function fixtureFor(m){
+    const meta={date:m.date||""};
+    return mergeFixtureData({},liveEventFor(liveData,7,m.home,m.away,meta));
+  }
   function showDay(md){
     const day=(uclPronos.days||{})[String(md.day)]||{};
     const matches=day.matches||[];
-    if(!matches.length){
-      $("#ucl-day-content").innerHTML=`<div class="ucl-coming"><span>✦</span><div><b>${md.label} · ${md.window}</b><p>Les rencontres seront affichées ici dès qu’elles seront ajoutées depuis l’Admin ou publiées officiellement.</p></div><em>CALENDRIER À VENIR</em></div>`;
-      return;
-    }
-    $("#ucl-day-content").innerHTML=`<div class="ucl-public-match-list">${matches.map((m,i)=>`
-      <article class="ucl-public-match">
-        <div class="ucl-public-date">${m.date||m.time?`${m.date||""}${m.date&&m.time?" · ":""}${m.time||""}`:"Horaire à confirmer"}</div>
-        <div class="ucl-public-teams">
-          <span>${logoFor(m.home,"ucl-match-logo")}<b>${m.home||"À déterminer"}</b></span>
-          <strong>${m.score||"—"}</strong>
-          <span>${logoFor(m.away,"ucl-match-logo")}<b>${m.away||"À déterminer"}</b></span>
-        </div>
-        <div class="ucl-public-extra">
-          <span><small>PRONO</small><b>${m.pick||"—"}</b></span>
-          <span><small>BUTEURS</small><b>${m.buteurs||"—"}</b></span>
-          <span><small>ANALYSE</small><b>${m.analyse||"À venir"}</b></span>
-        </div>
-      </article>`).join("")}</div>`;
+    if(!matches.length){$("#ucl-day-content").innerHTML=`<div class="ucl-coming"><span>✦</span><div><b>${md.label} · ${md.window}</b><p>Les rencontres seront affichées ici dès qu’elles seront ajoutées depuis l’Admin ou publiées officiellement.</p></div><em>CALENDRIER À VENIR</em></div>`;return;}
+    $("#ucl-day-content").innerHTML=`<div class="ucl-public-match-list live-ucl-list">${matches.map((m,i)=>{
+      const f=fixtureFor(m),pick=normalizePick(m.pick),score=m.score||m.scorePrevu||"—";
+      return `<article class="match-row-live ucl-live-card ${f.live?"is-live":f.completed?"is-finished":""}">
+        <div class="live-card-meta"><span>${escapeHTML(m.date||"")}${m.date&&m.time?" · ":""}${escapeHTML(m.time||"")}</span>${f.live?`<b>🔴 LIVE${f.minute!=null?` ${f.minute}’`:""}</b>`:f.completed?"<b>TERMINÉ</b>":""}</div>
+        ${matchFlowHTML({home:m.home||"À déterminer",away:m.away||"À déterminer",score,pick,fixture:f})}
+        <div class="live-card-bottom"><div class="scorers-zone"><small>BUTEURS PRONOSTIQUÉS</small>${scorerChipsHTML(m,f)}</div><button class="analysis-btn prono-open-btn ucl-analysis-open" type="button" data-ucl-index="${i}"><span class="prono-btn-icon">◉</span><span class="prono-btn-label">ANALYSE DU MATCH</span></button></div>
+      </article>`;
+    }).join("")}</div>`;
+    $$("#ucl-day-content .ucl-analysis-open").forEach(btn=>btn.addEventListener("click",()=>{
+      const m=matches[Number(btn.dataset.uclIndex)];if(!m)return;const f=fixtureFor(m);
+      openPronoPanel({home:m.home,away:m.away,homeLogo:logoFor(m.home,"ucl-match-logo"),awayLogo:logoFor(m.away,"ucl-match-logo"),meta:[m.date,m.time].filter(Boolean).join(" · "),score:m.score||m.scorePrevu||"—",pick:normalizePick(m.pick),analysis:m.analyse||m.analysis||"",fixture:f,p:m});
+    }));
+  }
+  function renderUclStandings(){
+    let base=competitionStandings(bsdStanding,7);
+    if(!base.length) base=d.teams.map(t=>({club:t.club,p:t.p||0,w:t.w||0,d:t.d||0,l:t.l||0,gf:t.gf||0,ga:t.ga||0,pts:t.pts||0}));
+    const teams=applyLiveToStandings(base,liveData,7);
+    const hasLive=liveEvents(liveData,7).some(e=>e.live&&!e.completed);
+    const status=$("#ucl-standings-status");if(status){status.textContent=hasLive?"🔴 LIVE PROVISOIRE":"BSD · officiel";status.classList.toggle("live-standing",hasLive);}
+    $("#ucl-standings").innerHTML=`<div class="stand-head"><span>#</span><span>ÉQUIPE</span><span>J</span><span>DIFF</span><span>PTS</span></div>`+
+      teams.map((t,i)=>`<div class="stand-row ${i<8?"direct":i<24?"playoff":"out"} ${t.live?"is-live-team":""}"><span>${i+1}</span><span class="stand-team">${logoFor(t.club,"ucl-mini-logo")}${escapeHTML(t.club)}${t.live?'<i class="live-dot">LIVE</i>':''}</span><span>${Number(t.p)||0}</span><span>${(Number(t.gf)-Number(t.ga))>0?"+":""}${(Number(t.gf)||0)-(Number(t.ga)||0)}</span><strong>${Number(t.pts)||0}</strong></div>`).join("");
   }
   showDay(d.matchdays[0]);
-
-  const select=$("#ucl-team-select");
-  select.innerHTML=d.teams.map(t=>`<option value="${t.club}">${t.club}</option>`).join("");
-
-  function opponentCard(name,side){
-    const t=byName[name]||{club:name,abbr:name.slice(0,3).toUpperCase(),logo:"",color:"#355f8f"};
-    return `<div class="draw-opponent">
-      ${imageWithFallback(t.logo,t.abbr,"draw-logo")}
-      <div><b>${t.club}</b><small>${side}</small></div>
-    </div>`;
-  }
-  function renderDraw(name){
-    const t=byName[name]; if(!t) return;
-    $("#ucl-draw-detail").innerHTML=`
-      <div class="draw-team-main">
-        ${imageWithFallback(t.logo,t.abbr,"draw-main-logo")}
-        <div><small>ÉQUIPE SÉLECTIONNÉE</small><strong>${t.club}</strong><span>${t.country}</span></div>
-      </div>
-      <div class="draw-side"><h4>🏠 À DOMICILE</h4>${t.draw.home.map(x=>opponentCard(x,"Domicile")).join("")}</div>
-      <div class="draw-side"><h4>✈ À L’EXTÉRIEUR</h4>${t.draw.away.map(x=>opponentCard(x,"Extérieur")).join("")}</div>`;
-  }
-  select.addEventListener("change",()=>renderDraw(select.value));
-  renderDraw(select.value);
-
-  $("#ucl-teams").innerHTML=d.teams.map(t=>`<button type="button" class="ucl-team-card" data-team="${t.club}">
-    ${imageWithFallback(t.logo,t.abbr,"ucl-logo")}
-    <div><b>${t.club}</b><small>${t.country}</small></div>
-  </button>`).join("");
-  $$("#ucl-teams .ucl-team-card").forEach(btn=>btn.addEventListener("click",()=>{
-    select.value=btn.dataset.team;
-    renderDraw(btn.dataset.team);
-    $("#ucl-team-select").scrollIntoView({behavior:"smooth",block:"center"});
-  }));
-
-  $("#ucl-standings").innerHTML=`<div class="stand-head"><span>#</span><span>ÉQUIPE</span><span>J</span><span>DIFF</span><span>PTS</span></div>`+
-  d.teams.map((t,i)=>`<div class="stand-row ${i<8?"direct":i<24?"playoff":"out"}"><span>${i+1}</span><span class="stand-team">${imageWithFallback(t.logo,t.abbr,"ucl-mini-logo")}${t.club}</span><span>${t.p||0}</span><span>${(t.gf||0)-(t.ga||0)}</span><strong>${t.pts||0}</strong></div>`).join("");
-
+  const select=$("#ucl-team-select");select.innerHTML=d.teams.map(t=>`<option value="${t.club}">${t.club}</option>`).join("");
+  function opponentCard(name,side){const t=byName[name]||{club:name,abbr:name.slice(0,3).toUpperCase(),logo:"",color:"#355f8f"};return `<div class="draw-opponent">${imageWithFallback(t.logo,t.abbr,"draw-logo")}<div><b>${t.club}</b><small>${side}</small></div></div>`;}
+  function renderDraw(name){const t=byName[name];if(!t)return;$("#ucl-draw-detail").innerHTML=`<div class="draw-team-main">${imageWithFallback(t.logo,t.abbr,"draw-main-logo")}<div><small>ÉQUIPE SÉLECTIONNÉE</small><strong>${t.club}</strong><span>${t.country}</span></div></div><div class="draw-side"><h4>🏠 À DOMICILE</h4>${t.draw.home.map(x=>opponentCard(x,"Domicile")).join("")}</div><div class="draw-side"><h4>✈ À L’EXTÉRIEUR</h4>${t.draw.away.map(x=>opponentCard(x,"Extérieur")).join("")}</div>`;}
+  select.addEventListener("change",()=>renderDraw(select.value));renderDraw(select.value);
+  $("#ucl-teams").innerHTML=d.teams.map(t=>`<button type="button" class="ucl-team-card" data-team="${t.club}">${imageWithFallback(t.logo,t.abbr,"ucl-logo")}<div><b>${t.club}</b><small>${t.country}</small></div></button>`).join("");
+  $$("#ucl-teams .ucl-team-card").forEach(btn=>btn.addEventListener("click",()=>{select.value=btn.dataset.team;renderDraw(btn.dataset.team);$("#ucl-team-select").scrollIntoView({behavior:"smooth",block:"center"});}));
+  renderUclStandings();
   $("#knockout-tree").innerHTML=d.knockout.map((r,i)=>`<div class="round-card"><small>${String(i+1).padStart(2,"0")}</small><b>${r.round}</b><span>${r.dates}</span><em>${i<4?"Équipes à déterminer":"🏆"}</em></div>`).join("");
+  setInterval(async()=>{try{[liveData,bsdStanding]=await Promise.all([getJSON("live-results.json").catch(()=>liveData),getJSON("bsd-standings.json").catch(()=>bsdStanding)]);const md=d.matchdays.find(x=>x.day===current)||d.matchdays[0];showDay(md);renderUclStandings();}catch(e){console.warn("Footix UCL Live: actualisation différée",e);}},60000);
 }
-
 async function initHomePronoCount(){
   const el=$("#home-pronos");
   if(!el) return;

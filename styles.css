@@ -931,3 +931,22 @@ body.prono-panel-open{overflow:hidden}
 
 /* V8.5.2 — mentions légales et avertissement */
 .site-footer{max-width:980px;margin:0 auto;text-align:center;color:#667c9d;padding:18px 18px 26px;line-height:1.45}.site-footer p{margin:5px 0}.site-footer .legal-disclaimer{font-size:10px;color:#7f92ad}.site-footer a{color:#7aa7d8;text-decoration:none}.site-footer a:hover{text-decoration:underline}.legal-page{max-width:920px;margin:0 auto;padding:26px 18px 60px}.legal-card{border:1px solid #10365e;background:linear-gradient(180deg,#07182f,#06152a);border-radius:12px;padding:24px;margin:14px 0}.legal-card h1,.legal-card h2{margin-top:0}.legal-card h2{font-size:18px}.legal-card p,.legal-card li{color:#b8c6d9;line-height:1.65}.legal-card strong{color:#fff}.legal-card a{color:#68b6ff}.legal-notice{border-left:3px solid #78e811;padding-left:14px}.legal-back{display:inline-flex;margin-bottom:8px;color:#86f31b;text-decoration:none;font-weight:800}
+
+/* === V8.6.0 — Footix Live : lecture PRONO → LIVE/RÉSULTAT → VERDICT → POURQUOI === */
+.match-row-live{border:1px solid #123a60;background:linear-gradient(180deg,#081b33,#06172c);border-radius:10px;margin:7px 0;overflow:hidden}
+.match-row-live.is-live{border-color:#b4384d;background:linear-gradient(180deg,#101b31,#0b162a)}
+.live-card-meta{min-height:34px;padding:7px 11px;display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #123451;color:#8fa6c1;font-size:10px;font-weight:800}
+.live-card-meta b{color:#dce9f7;font-size:10px;letter-spacing:.04em}.match-row-live.is-live .live-card-meta b{color:#ff7286}
+.prono-flow{display:grid;grid-template-columns:minmax(180px,1fr) 22px minmax(180px,1fr) 22px minmax(155px,.8fr) 22px minmax(210px,1.15fr);align-items:stretch;padding:10px;gap:0}
+.flow-step{min-width:0;border:1px solid #153b61;background:#071a31;border-radius:9px;padding:10px 11px;display:flex;flex-direction:column;justify-content:center;min-height:72px}
+.flow-step small{font-size:8px;letter-spacing:.11em;font-weight:950;color:#7f9ab8;margin-bottom:6px}.flow-step strong{font-size:11px;line-height:1.25;color:#eef6ff}.flow-step span{font-size:8px;color:#8298b1;margin-top:5px}
+.flow-prono{border-color:#28547c}.flow-prono strong{color:#e9ffe4}.flow-result{border-color:#256caa}.prono-flow.is-live .flow-result{border-color:#b4384d;background:#241321}.prono-flow.is-live .flow-result small,.prono-flow.is-live .flow-result strong{color:#ff8c9c}
+.flow-verdict.ok{border-color:#3f8e36;background:#102b1a}.flow-verdict.ok strong{color:#8dff70}.flow-verdict.ko{border-color:#9d3547;background:#28131b}.flow-verdict.ko strong{color:#ff8394}.flow-verdict.pending strong{color:#a8bacf}
+.flow-why strong{font-size:10px;color:#c4d3e4;font-weight:750}.flow-arrow{display:grid;place-items:center;color:#4c7195;font-size:16px;font-weight:900}
+.live-card-bottom{display:grid;grid-template-columns:minmax(0,1fr) 150px;align-items:center;gap:10px;padding:9px 10px 10px;border-top:1px solid #123451}.live-card-bottom .prono-open-btn{width:100%;min-width:0}
+.live-standing{color:#ff7286!important}.stand-row.is-live-team{background:rgba(146,38,58,.12)}.live-dot{display:inline-flex;margin-left:auto;padding:2px 4px;border:1px solid #a63a4d;border-radius:4px;color:#ff7e90;font-size:6px;font-style:normal;font-weight:950}
+.live-mini{color:#ff7186!important;border-color:#a63a4d!important}
+.prono-detail-panel .prono-flow{grid-template-columns:1fr;gap:6px;margin-top:10px;padding:0}.prono-detail-panel .flow-arrow{transform:rotate(90deg);height:12px}.prono-detail-panel .flow-step{min-height:58px}
+.ucl-live-card{margin:8px}.live-ucl-list{padding:2px 0 8px}
+@media(max-width:1320px){.prono-flow{grid-template-columns:1fr 18px 1fr 18px 1fr}.flow-why{grid-column:1/-1;margin-top:8px}.prono-flow>.flow-arrow:nth-of-type(3){display:none}}
+@media(max-width:900px){.prono-flow{grid-template-columns:1fr;gap:6px}.flow-arrow{transform:rotate(90deg);height:12px}.flow-why{grid-column:auto;margin-top:0}.live-card-bottom{grid-template-columns:1fr}.flow-step{min-height:62px}.flow-step strong{font-size:10px}}

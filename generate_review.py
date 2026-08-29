@@ -2,7 +2,7 @@
 """Génère automatiquement le bilan Footix d'une journée Ligue 1 terminée.
 
 - Calcule les bons pronostics 1/N/2 depuis schedule.json + pronos.json.
-- Calcule les buteurs trouvés lorsque ESPN a fourni actualScorers.
+- Calcule les buteurs trouvés uniquement lorsque BSD a validé actualScorers.
 - Génère gratuitement le résumé avec un moteur local Footix lorsque tous les matchs de la journée
   sont terminés et que les données buteurs sont disponibles.
 - Ne régénère pas un bilan IA déjà créé sauf FORCE_REVIEW=1.
@@ -43,9 +43,15 @@ def predicted_scorers(p):
 
 def scorer_hit(predicted, actual):
     p = norm(predicted)
+    if not p:
+        return False
+    p_parts = p.split()
     for scorer in actual:
         a = norm(scorer)
-        if a == p or a.endswith(" " + p) or p.endswith(" " + a):
+        if a == p:
+            return True
+        a_parts = a.split()
+        if len(p_parts) == 1 and len(p_parts[0]) >= 4 and a_parts and a_parts[-1] == p_parts[0]:
             return True
     return False
 
@@ -194,17 +200,11 @@ def main():
 
             predicted = predicted_scorers(p)
             actual_scorers = f.get("actualScorers")
-            if predicted and not isinstance(actual_scorers, list):
+            scorers_verified = f.get("scorersVerified") is True
+            if predicted and (not isinstance(actual_scorers, list) or not scorers_verified):
+                # On n'invente jamais un "n'a pas marqué" si la timeline BSD n'est pas complète.
                 scorer_data_ready = False
-                actual_scorers = []
-            elif predicted and not actual_scorers:
-                # 0-0 legitimately has no scorer; otherwise wait for ESPN scorer data.
-                try:
-                    total_goals = int(f.get("homeScore", 0)) + int(f.get("awayScore", 0))
-                except (TypeError, ValueError):
-                    total_goals = 1
-                if total_goals > 0:
-                    scorer_data_ready = False
+                actual_scorers = actual_scorers if isinstance(actual_scorers, list) else []
 
             hits = []
             misses = []
