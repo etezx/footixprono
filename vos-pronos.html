@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#041022">
 <title>Vos pronos — Footix Prono</title>
 <meta name="description" content="Livre d'or et suggestions de la communauté Footix Prono.">
-<link rel="stylesheet" href="styles.css?v=9.8.2">
+<link rel="stylesheet" href="styles.css?v=9.9.1">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
 <body class="page-votes-v940">
@@ -92,9 +92,18 @@
       </div>
 
       <div id="matchday-kpis" class="votes-kpis">
-        <div><span class="kpi-ico">◷</span><small>MATCHS TERMINÉS</small><b>—</b></div>
-        <div><span class="kpi-ico">☆</span><small>BONS PRONOS</small><b>—</b></div>
-        <div class="points"><span class="kpi-ico">↻</span><small>POINTS DE LA JOURNÉE</small><b>—</b></div>
+        <div class="votes-kpi-card">
+          <span class="kpi-ico">◷</span>
+          <div class="kpi-copy"><small>MATCHS TERMINÉS</small><b>—</b></div>
+        </div>
+        <div class="votes-kpi-card good">
+          <span class="kpi-ico">✓</span>
+          <div class="kpi-copy"><small>BONS PRONOS</small><b>—</b></div>
+        </div>
+        <div class="votes-kpi-card points">
+          <span class="kpi-ico">★</span>
+          <div class="kpi-copy"><small>POINTS</small><b>—</b><em>sur cette journée</em></div>
+        </div>
       </div>
 
       <div class="votes-points-note">
@@ -175,6 +184,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
 <script src="auth-community.js?v=9.3.2"></script>
-<script src="vos-pronos.js?v=9.8.2"></script>
-<script src="notifications.js?v=9.8.2"></script>
+<script src="vos-pronos.js?v=9.9.1"></script>
+<script src="notifications.js?v=9.9.0"></script>
 </body></html>

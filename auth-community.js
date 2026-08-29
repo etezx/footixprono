@@ -292,7 +292,8 @@
 
   async function loadHomePodium() {
     const root = $('#home-podium'); if (!root) return;
-    const {data,error} = await db.rpc('leaderboard',{p_competition:null,p_period:'season',p_limit:3});
+    const monthStart=new Date(); monthStart.setDate(1); const month=monthStart.toISOString().slice(0,10);
+    const {data,error} = await db.rpc('monthly_leaderboard',{p_month:month,p_competition:null,p_limit:3});
     if (error || !data?.length) return;
     const map = new Map(data.map(r=>[Number(r.rank),r]));
     const card = (rank,klass,defaultSlug) => {

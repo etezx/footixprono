@@ -4138,3 +4138,167 @@ body:has(.monthly-ranking-main){
   border-color:#a34058!important;
   color:#ff94a2!important;
 }
+
+/* V9.9.0 — KPI journée premium + podium accueil mensuel */
+.page-votes-v940 .votes-kpis{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:10px!important;
+  margin:14px 0 16px!important;
+}
+.page-votes-v940 .votes-kpi-card{
+  min-height:76px!important;
+  display:grid!important;
+  grid-template-columns:42px 1fr!important;
+  align-items:center!important;
+  gap:11px!important;
+  padding:12px 14px!important;
+  border:1px solid #245382!important;
+  border-radius:12px!important;
+  background:linear-gradient(145deg,#0d315f,#092448)!important;
+  box-shadow:0 8px 20px rgba(0,12,32,.16)!important;
+}
+.page-votes-v940 .votes-kpi-card .kpi-ico{
+  width:38px!important;height:38px!important;
+  display:grid!important;place-items:center!important;
+  border-radius:10px!important;
+  background:#123f73!important;
+  border:1px solid #2a659f!important;
+  color:#8cc8ff!important;
+  font-size:17px!important;font-weight:950!important;
+}
+.page-votes-v940 .votes-kpi-card.good .kpi-ico{
+  background:#123f37!important;border-color:#2d806a!important;color:#7ce4b5!important;
+}
+.page-votes-v940 .votes-kpi-card.points .kpi-ico{
+  background:#173b67!important;border-color:#3676b6!important;color:#d9ecff!important;
+}
+.page-votes-v940 .votes-kpi-card .kpi-copy{
+  min-width:0!important;display:grid!important;grid-template-columns:1fr auto!important;
+  align-items:end!important;column-gap:8px!important;
+}
+.page-votes-v940 .votes-kpi-card small{
+  grid-column:1!important;color:#89a9ca!important;font-size:7px!important;
+  font-weight:950!important;letter-spacing:.08em!important;line-height:1.2!important;
+}
+.page-votes-v940 .votes-kpi-card b{
+  grid-column:2!important;grid-row:1 / span 2!important;
+  color:#fff!important;font-size:22px!important;line-height:1!important;font-weight:950!important;
+}
+.page-votes-v940 .votes-kpi-card.good b{color:#7ce4b5!important}
+.page-votes-v940 .votes-kpi-card.points b{color:#fff!important}
+.page-votes-v940 .votes-kpi-card em{
+  grid-column:1!important;color:#6589ae!important;font-size:7px!important;font-style:normal!important;
+  margin-top:4px!important;
+}
+@media(max-width:650px){
+  .page-votes-v940 .votes-kpis{grid-template-columns:1fr!important;gap:7px!important}
+  .page-votes-v940 .votes-kpi-card{min-height:58px!important;grid-template-columns:34px 1fr!important;padding:9px 11px!important}
+  .page-votes-v940 .votes-kpi-card .kpi-ico{width:31px!important;height:31px!important;font-size:14px!important}
+  .page-votes-v940 .votes-kpi-card b{font-size:19px!important}
+}
+
+/* V9.9.1 — Correctif anti-zones-blanches Vos pronos
+   Neutralise les anciens composants light encore présents dans la page. */
+.page-votes-v940 .votes-premium-main,
+.page-votes-v940 .votes-premium-shell,
+.page-votes-v940 .votes-premium-board,
+.page-votes-v940 .votes-content,
+.page-votes-v940 .votes-main-column,
+.page-votes-v940 .premium-match-list{
+  background:#071d3b!important;
+  color:#eef6ff!important;
+}
+
+/* bande blanche observée entre résumé et matchs */
+.page-votes-v940 .votes-premium-board,
+.page-votes-v940 .votes-content,
+.page-votes-v940 .premium-match-list,
+.page-votes-v940 .premium-date-group{
+  border-color:#245382!important;
+}
+.page-votes-v940 .premium-date-group{
+  background:#0a2850!important;
+}
+
+/* encart d'information : bleu et non blanc */
+.page-votes-v940 .votes-info,
+.page-votes-v940 .votes-help,
+.page-votes-v940 .votes-rule-note,
+.page-votes-v940 .premium-info,
+.page-votes-v940 [class*="info-card"],
+.page-votes-v940 [class*="rule-card"]{
+  background:#0d315f!important;
+  border-color:#2a5f94!important;
+  color:#a9c5e2!important;
+}
+.page-votes-v940 .votes-info *,
+.page-votes-v940 .votes-help *,
+.page-votes-v940 .votes-rule-note *,
+.page-votes-v940 .premium-info *,
+.page-votes-v940 [class*="info-card"] *,
+.page-votes-v940 [class*="rule-card"] *{
+  color:inherit!important;
+}
+
+/* le badge RÉSULTAT ne doit jamais redevenir blanc */
+.page-votes-v940 .result-pick,
+.page-votes-v940 .result-finished .result-pick{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-width:52px!important;
+  padding:4px 7px!important;
+  border-radius:999px!important;
+  background:#123f73!important;
+  border:1px solid #2f6da8!important;
+  color:#a9d3fb!important;
+  font-size:6.5px!important;
+  font-weight:950!important;
+  line-height:1!important;
+  letter-spacing:.045em!important;
+  white-space:nowrap!important;
+}
+
+/* zones de journées et lignes */
+.page-votes-v940 .date-bar,
+.page-votes-v940 .premium-date-title,
+.page-votes-v940 .premium-date-head{
+  background:#0e3b72!important;
+  color:#f4f9ff!important;
+}
+.page-votes-v940 .premium-match-row,
+.page-votes-v940 .premium-match-row:nth-child(even){
+  background:#0a2850!important;
+  color:#eef6ff!important;
+}
+.page-votes-v940 .premium-match-row:nth-child(even){
+  background:#0b2d58!important;
+}
+
+/* tous les champs/contrôles internes de Vos pronos restent dark */
+.page-votes-v940 select,
+.page-votes-v940 input,
+.page-votes-v940 option{
+  background:#071f3f!important;
+  color:#eef6ff!important;
+  border-color:#2b5e92!important;
+}
+
+/* les séparateurs restent bleus, jamais blancs */
+.page-votes-v940 hr,
+.page-votes-v940 .premium-match-head,
+.page-votes-v940 .match-table-head{
+  border-color:#2a5b8d!important;
+  background:#09264b!important;
+  color:#89a9ca!important;
+}
+
+@media(max-width:650px){
+  .page-votes-v940 .result-pick,
+  .page-votes-v940 .result-finished .result-pick{
+    min-width:46px!important;
+    padding:3px 5px!important;
+    font-size:6px!important;
+  }
+}

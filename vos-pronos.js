@@ -153,7 +153,7 @@ const showPronoToast=(text)=>{
     const values=box.querySelectorAll('b');
     if(values[0]) values[0].textContent=`${finished.length} / ${shown.length}`;
     if(values[1]) values[1].textContent=String(good);
-    if(values[2]) values[2].innerHTML=`${good} <small>PTS</small>`;
+    if(values[2]) values[2].textContent=String(good);
   }
 
   function renderSummary(){
