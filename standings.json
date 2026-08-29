@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T18:29:42.476973+00:00",
+  "updated_at": "2026-08-29T21:44:46.521825+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -11,6 +11,30 @@
       "l": 0,
       "gf": 4,
       "ga": 2,
+      "pts": 4,
+      "last5": []
+    },
+    {
+      "club": "Lyon",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
+      "p": 2,
+      "w": 1,
+      "d": 1,
+      "l": 0,
+      "gf": 3,
+      "ga": 1,
+      "pts": 4,
+      "last5": []
+    },
+    {
+      "club": "Troyes",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
+      "p": 2,
+      "w": 1,
+      "d": 1,
+      "l": 0,
+      "gf": 2,
+      "ga": 1,
       "pts": 4,
       "last5": []
     },
@@ -39,18 +63,6 @@
       "last5": []
     },
     {
-      "club": "Lyon",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
-      "p": 1,
-      "w": 1,
-      "d": 0,
-      "l": 0,
-      "gf": 2,
-      "ga": 0,
-      "pts": 3,
-      "last5": []
-    },
-    {
       "club": "AS Monaco",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
       "p": 1,
@@ -59,6 +71,18 @@
       "l": 0,
       "gf": 1,
       "ga": 0,
+      "pts": 3,
+      "last5": []
+    },
+    {
+      "club": "Angers",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
+      "p": 2,
+      "w": 1,
+      "d": 0,
+      "l": 1,
+      "gf": 3,
+      "ga": 3,
       "pts": 3,
       "last5": []
     },
@@ -75,8 +99,8 @@
       "last5": []
     },
     {
-      "club": "Paris Saint-Germain",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+      "club": "Brest",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
       "p": 2,
       "w": 0,
       "d": 2,
@@ -87,15 +111,15 @@
       "last5": []
     },
     {
-      "club": "Brest",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
-      "p": 1,
+      "club": "Paris Saint-Germain",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+      "p": 2,
       "w": 0,
-      "d": 1,
+      "d": 2,
       "l": 0,
-      "gf": 2,
-      "ga": 2,
-      "pts": 1,
+      "gf": 4,
+      "ga": 4,
+      "pts": 2,
       "last5": []
     },
     {
@@ -119,18 +143,6 @@
       "l": 0,
       "gf": 2,
       "ga": 2,
-      "pts": 1,
-      "last5": []
-    },
-    {
-      "club": "Lorient",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
-      "p": 1,
-      "w": 0,
-      "d": 1,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
       "pts": 1,
       "last5": []
     },
@@ -159,62 +171,50 @@
       "last5": []
     },
     {
-      "club": "Troyes",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
-      "p": 1,
+      "club": "Lorient",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+      "p": 2,
       "w": 0,
       "d": 1,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
+      "l": 1,
+      "gf": 1,
+      "ga": 2,
       "pts": 1,
       "last5": []
     },
     {
       "club": "Le Havre AC",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
-      "p": 1,
+      "p": 2,
       "w": 0,
-      "d": 0,
+      "d": 1,
       "l": 1,
-      "gf": 0,
-      "ga": 1,
-      "pts": 0,
+      "gf": 1,
+      "ga": 2,
+      "pts": 1,
       "last5": []
     },
     {
       "club": "Toulouse",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
-      "p": 1,
+      "p": 2,
       "w": 0,
-      "d": 0,
+      "d": 1,
       "l": 1,
-      "gf": 0,
-      "ga": 2,
-      "pts": 0,
-      "last5": []
-    },
-    {
-      "club": "Angers",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
-      "p": 1,
-      "w": 0,
-      "d": 0,
-      "l": 1,
-      "gf": 0,
-      "ga": 2,
-      "pts": 0,
+      "gf": 2,
+      "ga": 4,
+      "pts": 1,
       "last5": []
     },
     {
       "club": "AJ Auxerre",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
-      "p": 1,
+      "p": 2,
       "w": 0,
       "d": 0,
-      "l": 1,
-      "gf": 2,
-      "ga": 5,
+      "l": 2,
+      "gf": 3,
+      "ga": 8,
       "pts": 0,
       "last5": []
     }
