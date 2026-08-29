@@ -1,8 +1,0 @@
-V8.6.9 COMPLETE
-- Correctif buteurs intégré (Thauvin / F. Thauvin / Florian Thauvin / Thauvin décisif).
-- Calendrier LDC complet J01 à J08 intégré.
-- Design V8.6.8 conservé.
-- Cache passé en 8.6.9.
-
-Dépose/remplace tous ces fichiers à la racine GitHub puis Commit changes.
-Ne supprime surtout pas CNAME ni les fichiers JSON live déjà présents dans le dépôt.
