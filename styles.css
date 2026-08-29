@@ -2838,3 +2838,59 @@ body.modal-open{overflow:hidden}
 .v91-auth-nav .is-hidden{
   display:none!important;
 }
+
+/* ============================================================
+   FOOTIX PRONO V9.3.0 — VOS PRONOS
+   ============================================================ */
+.vos-pronos-main{max-width:1180px}
+.compact-vote-hero{min-height:auto!important;padding:24px 28px!important}
+.compact-vote-hero h1{margin:3px 0 5px;font-size:42px}
+.compact-vote-hero p{max-width:680px;margin:0;color:#9eb0c8}
+.vote-legend{display:flex;gap:7px;flex-wrap:wrap;align-self:flex-end}
+.vote-legend span{padding:6px 9px;border:1px solid #203b59;border-radius:6px;background:#081a2a;color:#91a8c4;font-size:9px;font-weight:900}
+.vote-toolbar{display:flex;justify-content:space-between;gap:14px;align-items:center;margin:16px 0}
+.competition-tabs{display:flex;gap:6px;padding:4px;border:1px solid #17334e;border-radius:9px;background:#071522}
+.vote-tab{border:0;border-radius:6px;padding:9px 13px;background:transparent;color:#8299b6;font-weight:950;font-size:10px;cursor:pointer}
+.vote-tab.active{background:#0c2b42;color:#2ce48c}
+.vote-session-note{color:#748aa5;font-size:10px}
+.community-vote-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 14px}
+.community-vote-summary>div{padding:12px 14px;border:1px solid #17334e;border-radius:9px;background:#081723}
+.community-vote-summary small{display:block;color:#6e87a5;font-size:8px;font-weight:900}
+.community-vote-summary b{display:block;margin-top:3px;color:#edf7ff;font-size:20px}
+.community-match-list{display:grid;gap:14px}
+.vote-matchday{display:grid;gap:7px}
+.vote-matchday-title{display:flex;justify-content:space-between;padding:7px 2px;color:#68819f;font-size:9px;font-weight:900;letter-spacing:.06em}
+.vote-matchday-title b{color:#2ce48c}
+.community-vote-card{border:1px solid #17344f;border-radius:11px;background:#071724;padding:12px 14px}
+.vote-card-top,.vote-card-bottom,.vote-community-line{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.vote-card-top{color:#718aa7;font-size:9px;font-weight:800}
+.vote-open{color:#2ce48c}.vote-lock{color:#7d91aa}
+.vote-fixture{display:grid;grid-template-columns:1fr 100px 1fr;align-items:center;gap:12px;margin:12px 0 10px;text-align:center}
+.vote-fixture strong:first-child{text-align:right}.vote-fixture strong:last-child{text-align:left}
+.vote-fixture strong{color:#f1f7ff;font-size:15px}
+.vote-vs{color:#8ba1bb;font-size:14px;font-weight:900}.vote-vs i{font-style:normal;color:#405a75;margin:0 6px}
+.pick-buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;max-width:480px;margin:0 auto 12px}
+.pick-buttons button{display:flex;justify-content:center;align-items:center;gap:7px;border:1px solid #244766;border-radius:8px;padding:8px;background:#091d2d;color:#b8c9da;cursor:pointer}
+.pick-buttons button b{font-size:15px}.pick-buttons button small{font-size:8px;font-weight:900;color:#7189a4}
+.pick-buttons button:hover:not(:disabled){border-color:#3979ad}
+.pick-buttons button.selected{border-color:#2ce48c;background:#0b2b2a;color:#2ce48c}
+.pick-buttons button.selected small{color:#7ce9b2}
+.pick-buttons button:disabled{cursor:default;opacity:.72}
+.vote-community-line{border-top:1px solid #122b41;padding-top:9px;color:#657e9b;font-size:8px;font-weight:900}
+.vote-percentages{display:flex;gap:13px}.vote-percentages b{color:#a7bad0}
+.vote-bars{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:6px}
+.vote-bars i{display:block;height:3px;border-radius:3px;background:linear-gradient(90deg,#2ce48c var(--w),#132c40 var(--w));}
+.vote-card-bottom{margin-top:8px;color:#748ba6;font-size:9px;font-weight:900}
+.vote-card-bottom>b{color:#2ce48c}
+.member-verdict{margin-left:auto}.member-verdict.good{color:#2ce48c}.member-verdict.bad{color:#ff6f7e}
+.vote-empty{padding:30px;border:1px solid #17344f;border-radius:10px;background:#071724;color:#8299b4;text-align:center}
+@media(max-width:720px){
+ .vote-toolbar{align-items:stretch;flex-direction:column}
+ .competition-tabs{display:grid;grid-template-columns:1fr 1fr}
+ .community-vote-summary{grid-template-columns:repeat(2,1fr)}
+ .vote-fixture{grid-template-columns:1fr 64px 1fr;gap:5px}
+ .vote-fixture strong{font-size:12px}
+ .pick-buttons button{gap:3px;padding:8px 4px}
+ .pick-buttons button small{display:none}
+ .vote-community-line{align-items:flex-start;flex-direction:column}
+}
