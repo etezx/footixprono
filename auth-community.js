@@ -72,8 +72,14 @@
   async function refreshAuthUI() {
     const {data:{session}} = await db.auth.getSession();
     const logged = !!session?.user;
-    $$('.login-trigger,.signup-trigger').forEach(el => el.classList.toggle('is-hidden',logged));
-    $$('.account-link,.logout-link').forEach(el => el.classList.toggle('is-hidden',!logged));
+    $$('.login-trigger,.signup-trigger').forEach(el => {
+      el.classList.toggle('is-hidden', logged);
+      el.hidden = logged;
+    });
+    $$('.account-link,.logout-link').forEach(el => {
+      el.classList.toggle('is-hidden', !logged);
+      el.hidden = !logged;
+    });
     if (logged) {
       await upsertPendingConsent();
       const {data:p} = await db.from('profiles').select('username').eq('id',session.user.id).maybeSingle();

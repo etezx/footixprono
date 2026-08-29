@@ -2462,3 +2462,92 @@ body.modal-open{overflow:hidden}
   .v912-benefits article{border-right:0;border-bottom:1px solid #173b63}
   .v912-hero h1{font-size:31px}
 }
+
+
+/* ============================================================
+   FOOTIX PRONO V9.1.3 — MENU AUTH + CADRAGE AVATARS
+   ============================================================ */
+
+/* État natif prioritaire : aucun conflit CSS possible. */
+[hidden]{
+  display:none!important;
+}
+
+/* Le menu compte ne montre qu'un état à la fois. */
+.v912-auth-nav{
+  display:flex!important;
+  align-items:center!important;
+  gap:10px!important;
+}
+.v912-auth-nav .top-nav-link{
+  flex:0 0 auto!important;
+}
+.v912-auth-nav .account-link,
+.v912-auth-nav .logout-link{
+  background:#06152a!important;
+  border:1px solid #29557f!important;
+  color:#dce7f5!important;
+}
+
+/* Avatars : on affiche désormais l'image complète, sans zoom/crop. */
+.v912-avatar-grid{
+  grid-template-columns:repeat(6,minmax(125px,1fr))!important;
+  align-items:stretch!important;
+}
+.showcase-avatar{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:flex-start!important;
+  min-width:0!important;
+  overflow:hidden!important;
+}
+.showcase-avatar img{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:10 / 11!important;
+  object-fit:contain!important;
+  object-position:center bottom!important;
+  background:linear-gradient(180deg,#081c38,#06152c)!important;
+  padding:5px 4px 0!important;
+  box-sizing:border-box!important;
+}
+.showcase-avatar span{
+  margin-top:auto!important;
+  min-height:28px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:6px 4px!important;
+  background:#07172d!important;
+}
+
+/* Même principe dans l'inscription et le profil. */
+.avatar-choice .avatar-orb{
+  width:68px!important;
+  height:76px!important;
+  border-radius:10px!important;
+  background:#07182f!important;
+}
+.avatar-choice .avatar-orb img,
+.profile-avatar img,
+.rank-player .avatar-orb img,
+.podium-slot .avatar-orb img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center bottom!important;
+  padding:2px!important;
+  box-sizing:border-box!important;
+  transform:none!important;
+  background:#07182f!important;
+}
+
+/* Garde les deux lignes propres sur desktop. */
+@media(min-width:1251px){
+  .v912-avatar-showcase{
+    min-height:0!important;
+  }
+  .v912-avatar-grid{
+    grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  }
+}
