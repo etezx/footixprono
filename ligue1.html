@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#020817">
 <title>Pronostics Ligue 1 — Footix Prono</title>
-<link rel="stylesheet" href="styles.css?v=9.0.0">
+<link rel="stylesheet" href="styles.css?v=9.1.0">
   <meta name="description" content="Retrouve les pronostics Ligue 1 de Footix : scores, 1/N/2, buteurs, analyses, classement et bilan des journées.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#07101f">
@@ -28,6 +28,13 @@
     <a class="competition-link active" href="ligue1.html"><span class="comp-mark l1-mark"><img src="logo-l1-option3.png" alt="" aria-hidden="true"></span><span>LIGUE 1</span><b>›</b></a>
     <a class="competition-link " href="champions.html"><span class="comp-mark ucl-mark"><img src="logo-europe-option3.png" alt="" aria-hidden="true"></span><span>LIGUE DES CHAMPIONS</span><b>›</b></a>
     
+
+<div class="side-label community-side-title">NAVIGATION</div>
+<a class="side-link site-nav-home" href="index.html"><span class="side-nav-ico">⌂</span><span>Accueil</span></a>
+<a class="side-link site-nav-ranking" href="classement.html"><span class="side-nav-ico">♛</span><span>Classements</span></a>
+<a class="side-link site-nav-community" href="community.html"><span class="side-nav-ico">▱</span><span>Communauté</span></a>
+<a class="side-link site-nav-rules" href="reglement.html"><span class="side-nav-ico">▤</span><span>Règlement</span></a>
+
 <div class="side-label">MENU LIGUE 1</div>
 <a class="side-link active" href="#pronostics">⌁ <span>Pronostics</span></a>
 <a class="side-link" href="#classement">♜ <span>Classement</span></a>
@@ -51,17 +58,15 @@
   <div class="main-wrap">
     <header class="topbar">
       <div class="slogan">ON EST TOUS LE FOOTIX DE QUELQU’UN.</div>
-      <nav class="top-nav community-top-nav" aria-label="Navigation principale">
-  <a class="top-nav-link nav-home-community" href="index.html">
-    <span class="top-nav-icon home-icon"><img src="nav-home.svg" alt=""></span><span>ACCUEIL</span>
-  </a>
-  <a class="top-nav-link" href="classement.html"><span class="nav-glyph">🏆</span><span>CLASSEMENTS</span></a>
-  <a class="top-nav-link" href="reglement.html"><span class="nav-glyph">📋</span><span>RÈGLEMENT</span></a>
-  <button class="top-nav-link auth-link login-trigger" type="button"><span class="nav-glyph">↪</span><span>CONNEXION</span></button>
-  <button class="top-nav-link signup-link signup-trigger" type="button"><span class="nav-glyph">＋</span><span>S'INSCRIRE</span></button>
+      
+<nav class="top-nav v91-auth-nav" aria-label="Compte membre">
+  <button class="theme-moon" type="button" aria-label="Thème sombre" title="Thème sombre">☾</button>
+  <button class="top-nav-link auth-link login-trigger" type="button"><span class="nav-glyph">♟</span><span>SE CONNECTER</span></button>
+  <button class="top-nav-link signup-link signup-trigger" type="button"><span class="nav-glyph">♙+</span><span>S'INSCRIRE</span></button>
   <a class="top-nav-link account-link is-hidden" href="profil.html"><span class="nav-glyph">●</span><span class="account-label">MON PROFIL</span></a>
   <button class="top-nav-link logout-link is-hidden" type="button"><span class="nav-glyph">↩</span><span>DÉCONNEXION</span></button>
 </nav>
+
       <div class="top-social social-real" aria-label="Réseaux sociaux">
   <a class="social-icon instagram" href="#" onclick="return false" aria-label="Instagram — bientôt" title="Instagram — bientôt"><img src="social-instagram.svg" alt=""></a>
   <a class="social-icon x" href="#" onclick="return false" aria-label="X — bientôt" title="X — bientôt"><img src="social-x.svg" alt=""></a>
@@ -116,7 +121,7 @@
     </footer>
   </div>
 </div>
-<script src="script.js?v=9.0.0"></script>
+<script src="script.js?v=9.1.0"></script>
 
 <div class="auth-modal" id="auth-modal" aria-hidden="true">
   <div class="auth-backdrop" data-auth-close></div>
@@ -177,7 +182,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
-<script src="auth-community.js?v=9.0.0"></script>
+<script src="auth-community.js?v=9.1.0"></script>
 
 </body>
 </html>

@@ -2,30 +2,31 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07101f">
-<title>Classements — Footix Prono</title>
-<meta name="description" content="Classements de la communauté Footix Prono.">
+<meta name="theme-color" content="#041022">
+<title>Communauté — Footix Prono</title>
+<meta name="description" content="Livre d'or et suggestions de la communauté Footix Prono.">
 <link rel="stylesheet" href="styles.css?v=9.1.0">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
 <body>
 <div class="app-shell">
-  <aside class="sidebar">
-    <a class="brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>— PRONO —</span></div></a>
+  <aside class="sidebar v91-sidebar">
+    <a class="brand v91-brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>PRONO</span><small>PRONOSTICS COMMUNAUTAIRES</small></div></a>
     <div class="side-label">COMPÉTITIONS</div>
-    <a class="competition-link" href="ligue1.html"><span class="comp-mark l1-mark"><img src="logo-l1-option3.png" alt=""></span><span>LIGUE 1</span><b>›</b></a>
-    <a class="competition-link" href="champions.html"><span class="comp-mark ucl-mark"><img src="logo-europe-option3.png" alt=""></span><span>LIGUE DES CHAMPIONS</span><b>›</b></a>
+    <a class="competition-link" href="ligue1.html"><span class="comp-mark l1-mark"><img src="logo-l1-option3.png" alt=""></span><span>Ligue 1</span></a>
+    <a class="competition-link" href="champions.html"><span class="comp-mark ucl-mark"><img src="logo-europe-option3.png" alt=""></span><span>Ligue des Champions</span></a>
     
 <div class="side-label community-side-title">NAVIGATION</div>
 <a class="side-link site-nav-home" href="index.html"><span class="side-nav-ico">⌂</span><span>Accueil</span></a>
-<a class="side-link site-nav-ranking active" href="classement.html"><span class="side-nav-ico">♛</span><span>Classements</span></a>
-<a class="side-link site-nav-community" href="community.html"><span class="side-nav-ico">▱</span><span>Communauté</span></a>
+<a class="side-link site-nav-ranking" href="classement.html"><span class="side-nav-ico">♛</span><span>Classements</span></a>
+<a class="side-link site-nav-community active" href="community.html"><span class="side-nav-ico">▱</span><span>Communauté</span></a>
 <a class="side-link site-nav-rules" href="reglement.html"><span class="side-nav-ico">▤</span><span>Règlement</span></a>
 
-<div class="sidebar-card mascot-card"><img src="logo-footix-prono.png" alt=""><p>ON EST TOUS<br>LE <em>FOOTIX</em><br>DE QUELQU’UN.</p></div>
+    <div class="sidebar-card join-card"><b>💬 TA VOIX COMPTE.</b><p>Partage tes idées pour faire évoluer Footix Prono.</p></div>
+    <div class="sidebar-mascot-art" aria-hidden="true"></div>
   </aside>
   <div class="main-wrap">
-    <header class="topbar"><div class="slogan">ON EST TOUS LE FOOTIX DE QUELQU’UN.</div>
+    <header class="topbar v91-topbar"><nav class="desktop-main-nav"><a href="index.html">⌂ Accueil</a><a href="classement.html">♜ Classements</a><a class="active" href="community.html">▱ Communauté</a><a href="reglement.html">▤ Règlement</a></nav>
 <nav class="top-nav v91-auth-nav" aria-label="Compte membre">
   <button class="theme-moon" type="button" aria-label="Thème sombre" title="Thème sombre">☾</button>
   <button class="top-nav-link auth-link login-trigger" type="button"><span class="nav-glyph">♟</span><span>SE CONNECTER</span></button>
@@ -34,39 +35,26 @@
   <button class="top-nav-link logout-link is-hidden" type="button"><span class="nav-glyph">↩</span><span>DÉCONNEXION</span></button>
 </nav>
 </header>
-    <main>
-<section class="community-page-head">
-  <span class="eyebrow">COMMUNAUTÉ FOOTIX</span>
-  <h1>LE CLASSEMENT <em>DES FOOTIX</em></h1>
-  <p>1 point par bon résultat 1/N/2. Aucun argent à miser : ici, seul ton flair compte.</p>
-</section>
-<section class="leaderboard-shell">
-  <div class="leaderboard-toolbar">
-    <div class="segmented" id="ranking-competition">
-      <button class="active" data-comp="">GÉNÉRAL</button><button data-comp="L1">LIGUE 1</button><button data-comp="UCL">LDC</button>
-    </div>
-    <div class="segmented" id="ranking-period">
-      <button data-period="week">SEMAINE</button><button class="active" data-period="month">MOIS</button><button data-period="season">SAISON</button>
-    </div>
-  </div>
-  <div id="podium" class="podium-loading"><div class="community-empty">Le podium apparaîtra dès les premiers résultats communautaires.</div></div>
-  <div class="ranking-table-wrap">
-    <table class="ranking-table">
-      <thead><tr><th>#</th><th>JOUEUR</th><th>PTS</th><th>PRONOS</th><th>RÉUSSITE</th></tr></thead>
-      <tbody id="ranking-body"><tr><td colspan="5" class="community-empty">Chargement du classement…</td></tr></tbody>
-    </table>
-  </div>
-  <div class="leaderboard-note"><span>🏆</span><p>Les récompenses éventuelles sont soumises aux conditions d'éligibilité prévues au règlement. Le classement reste accessible à tous les membres actifs.</p></div>
-</section>
-</main>
-    <footer class="site-footer">
-      <p>© 2026 Footix Prono — Tous droits réservés.</p>
-      <p class="legal-disclaimer">Pronostics et analyses proposés à titre informatif et ludique. Aucun pari en argent réel, aucune prise de mise et aucun gain ne sont proposés sur ce site. Les pronostics ne garantissent aucun résultat.</p>
-      <p><a href="mentions-legales.html">Mentions légales</a> · <a href="reglement.html">Règlement</a> · <a href="confidentialite.html">Confidentialité</a></p>
-    </footer>
+    <main class="community-v91-page">
+      <section class="community-page-head"><span class="eyebrow">ESPACE COMMUNAUTAIRE</span><h1>PARLE AVEC <em>LA COMMUNAUTÉ</em></h1><p>Livre d'or, discussions et idées d'amélioration. Connecte-toi pour publier ou répondre.</p></section>
+      <section class="community-board">
+        <div class="community-board-tabs">
+          <button class="active" data-community-tab="livre_or" id="livre-or">💬 LIVRE D'OR</button>
+          <button data-community-tab="suggestion" id="suggestions">💡 SUGGESTIONS</button>
+        </div>
+        <div class="community-compose">
+          <div class="compose-avatar"><img id="compose-avatar-img" src="avatars/footix-classique.jpg" alt=""></div>
+          <form id="community-post-form">
+            <textarea id="community-post-body" maxlength="1500" rows="3" placeholder="Connecte-toi pour laisser un message, partager ton avis ou proposer une idée…"></textarea>
+            <div><span id="community-char-count">0 / 1500</span><button class="community-cta" type="submit">PUBLIER</button></div>
+          </form>
+        </div>
+        <div id="community-feed" class="community-feed"><div class="community-empty">Chargement des messages…</div></div>
+      </section>
+    </main>
+    <footer class="site-footer"><p>© 2026 Footix Prono — Tous droits réservés.</p><p class="legal-disclaimer">Pronostics et analyses proposés à titre informatif et ludique. Aucun pari en argent réel, aucune prise de mise et aucun gain ne sont proposés sur ce site. Les pronostics ne garantissent aucun résultat.</p></footer>
   </div>
 </div>
-
 <div class="auth-modal" id="auth-modal" aria-hidden="true">
   <div class="auth-backdrop" data-auth-close></div>
   <section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="auth-title">
@@ -124,9 +112,7 @@
   </section>
 </div>
 
-
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
 <script src="auth-community.js?v=9.1.0"></script>
-
 </body></html>

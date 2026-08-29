@@ -49,7 +49,8 @@
     return data?.length ? data.map(a => [a.slug,a.label]) : avatarFallbacks;
   }
   function avatarMarkup(slug, label, name='avatar_slug') {
-    return `<label class="avatar-choice"><input type="radio" name="${name}" value="${slug}"><span class="avatar-orb avatar-${slug}"><img src="logo-footix-prono.png" alt=""></span><small>${label.replace(/^Footix /,'')}</small></label>`;
+    const safe = String(slug || 'footix-classique').replace(/[^a-z0-9-]/g,'');
+    return `<label class="avatar-choice"><input type="radio" name="${name}" value="${safe}"><span class="avatar-orb avatar-${safe}"><img src="avatars/${safe}.jpg" alt="${escapeHtml(label)}"></span><small>${escapeHtml(String(label).replace(/^Footix /,''))}</small></label>`;
   }
   async function fillAvatarPickers() {
     const avatars = await getAvatars();
@@ -96,7 +97,7 @@
       const radio = form.querySelector(`input[value="${CSS.escape(p.avatar_slug)}"]`); if (radio) radio.checked = true;
     }
     const av = $('#profile-avatar');
-    if (av && p?.avatar_slug) av.className = `profile-avatar avatar-orb avatar-${p.avatar_slug}`;
+    if (av && p?.avatar_slug) { av.className = `profile-avatar avatar-orb avatar-${p.avatar_slug}`; const im=av.querySelector('img'); if(im) im.src=`avatars/${p.avatar_slug}.jpg`; }
     const {data:eligible} = await db.rpc('reward_eligible',{check_user:user.id});
     const status = $('#eligibility-status');
     if (status) {
@@ -114,7 +115,7 @@
       const {data,error} = await db.rpc('leaderboard',args);
       if (error) { $('#ranking-body').innerHTML = `<tr><td colspan="5" class="community-empty">Classement indisponible pour le moment.</td></tr>`; return; }
       const rows = data || [];
-      $('#ranking-body').innerHTML = rows.length ? rows.map(r => `<tr><td><b class="rank-number">${r.rank}</b></td><td><div class="rank-player"><span class="avatar-orb avatar-${r.avatar_slug}"><img src="logo-footix-prono.png" alt=""></span><strong>${escapeHtml(r.username)}</strong></div></td><td><strong>${r.points}</strong></td><td>${r.played}</td><td>${r.success_rate}%</td></tr>`).join('') : '<tr><td colspan="5" class="community-empty">Pas encore de résultats sur cette période.</td></tr>';
+      $('#ranking-body').innerHTML = rows.length ? rows.map(r => `<tr><td><b class="rank-number">${r.rank}</b></td><td><div class="rank-player"><span class="avatar-orb avatar-${r.avatar_slug}"><img src="avatars/${r.avatar_slug}.jpg" alt=""></span><strong>${escapeHtml(r.username)}</strong></div></td><td><strong>${r.points}</strong></td><td>${r.played}</td><td>${r.success_rate}%</td></tr>`).join('') : '<tr><td colspan="5" class="community-empty">Pas encore de résultats sur cette période.</td></tr>';
       renderPodium(rows.slice(0,3));
     };
     $$('#ranking-competition button').forEach(b => b.addEventListener('click',()=>{ comp=b.dataset.comp; $$('#ranking-competition button').forEach(x=>x.classList.toggle('active',x===b)); render(); }));
@@ -129,7 +130,7 @@
     root.className='podium';
     root.innerHTML=order.map(rank=>{
       const r=byRank.get(rank); if(!r) return `<div class="podium-slot rank-${rank} empty"><span>${rank}</span><b>—</b></div>`;
-      return `<div class="podium-slot rank-${rank}"><span class="podium-rank">${rank}</span><div class="avatar-orb avatar-${r.avatar_slug}"><img src="logo-footix-prono.png" alt=""></div><b>${escapeHtml(r.username)}</b><strong>${r.points} PTS</strong><small>${r.success_rate}% de réussite</small></div>`;
+      return `<div class="podium-slot rank-${rank}"><span class="podium-rank">${rank}</span><div class="avatar-orb avatar-${r.avatar_slug}"><img src="avatars/${r.avatar_slug}.jpg" alt=""></div><b>${escapeHtml(r.username)}</b><strong>${r.points} PTS</strong><small>${r.success_rate}% de réussite</small></div>`;
     }).join('');
   }
   function escapeHtml(v='') { return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c])); }
@@ -187,4 +188,91 @@
   fillAvatarPickers().then(loadProfile);
   refreshAuthUI();
   loadLeaderboard();
+  loadHomePodium();
+
+  async function loadHomePodium() {
+    const root = $('#home-podium'); if (!root) return;
+    const {data,error} = await db.rpc('leaderboard',{p_competition:null,p_period:'season',p_limit:3});
+    if (error || !data?.length) return;
+    const map = new Map(data.map(r=>[Number(r.rank),r]));
+    const card = (rank,klass,defaultSlug) => {
+      const r=map.get(rank); if(!r) return `<div class="podium-mini ${klass}"><span>${rank}</span><img src="avatars/${defaultSlug}.jpg" alt=""><b>—</b><small>0 pts</small></div>`;
+      return `<div class="podium-mini ${klass}"><span>${rank}</span><img src="avatars/${r.avatar_slug}.jpg" alt=""><b>${escapeHtml(r.username)}</b><small>${r.points} pts</small></div>`;
+    };
+    root.innerHTML=card(2,'place2','footix-capitaine')+card(1,'place1','footix-champion')+card(3,'place3','footix-tacticien');
+  }
+
+  let communityCategory='livre_or';
+  async function loadCommunityFeed() {
+    const root=$('#community-feed'); if(!root) return;
+    root.innerHTML='<div class="community-empty">Chargement des messages…</div>';
+    const {data:posts,error}=await db.from('community_posts')
+      .select('id,author_id,category,parent_id,body,pinned,created_at')
+      .eq('category',communityCategory).is('parent_id',null)
+      .order('pinned',{ascending:false}).order('created_at',{ascending:false}).limit(60);
+    if(error){root.innerHTML='<div class="community-empty">Impossible de charger les messages pour le moment.</div>';return;}
+    if(!posts?.length){root.innerHTML='<div class="community-empty">Aucun message pour le moment. Sois le premier à écrire !</div>';return;}
+    const ids=[...new Set(posts.map(p=>p.author_id))];
+    const {data:profiles}=await db.from('profiles').select('id,username,avatar_slug').in('id',ids);
+    const pm=new Map((profiles||[]).map(p=>[p.id,p]));
+    root.innerHTML=posts.map(p=>{
+      const u=pm.get(p.author_id)||{username:'Membre Footix',avatar_slug:'footix-classique'};
+      const d=new Intl.DateTimeFormat('fr-FR',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}).format(new Date(p.created_at));
+      return `<article class="community-post" data-post-id="${p.id}">
+        <img class="post-avatar" src="avatars/${u.avatar_slug}.jpg" alt="">
+        <div class="post-content"><div class="post-meta"><b>${escapeHtml(u.username)}</b>${p.pinned?'<span class="pinned-badge">ÉPINGLÉ</span>':''}<small>${d}</small></div>
+        <p>${escapeHtml(p.body).replace(/\n/g,'<br>')}</p>
+        <div class="post-actions"><button type="button" class="reply-post">↩ Répondre</button><button type="button" class="report-post">⚑ Signaler</button></div>
+        <form class="reply-form is-hidden"><textarea maxlength="1500" rows="2" placeholder="Ta réponse…"></textarea><button class="community-cta compact" type="submit">RÉPONDRE</button></form>
+        <div class="replies" data-replies="${p.id}"></div></div></article>`;
+    }).join('');
+    for(const p of posts) loadReplies(p.id);
+  }
+  async function loadReplies(parentId){
+    const box=document.querySelector(`[data-replies="${parentId}"]`); if(!box) return;
+    const {data:rows}=await db.from('community_posts').select('id,author_id,body,created_at').eq('parent_id',parentId).order('created_at');
+    if(!rows?.length){box.innerHTML='';return;}
+    const ids=[...new Set(rows.map(p=>p.author_id))];
+    const {data:profiles}=await db.from('profiles').select('id,username,avatar_slug').in('id',ids);
+    const pm=new Map((profiles||[]).map(p=>[p.id,p]));
+    box.innerHTML=rows.map(p=>{const u=pm.get(p.author_id)||{username:'Membre Footix',avatar_slug:'footix-classique'};return `<div class="community-reply"><img src="avatars/${u.avatar_slug}.jpg" alt=""><div><b>${escapeHtml(u.username)}</b><p>${escapeHtml(p.body).replace(/\n/g,'<br>')}</p></div></div>`}).join('');
+  }
+  function initCommunity(){
+    if(!$('#community-feed')) return;
+    $$('.community-board-tabs button').forEach(btn=>btn.addEventListener('click',()=>{
+      communityCategory=btn.dataset.communityTab;
+      $$('.community-board-tabs button').forEach(b=>b.classList.toggle('active',b===btn));
+      loadCommunityFeed();
+    }));
+    const ta=$('#community-post-body');
+    ta?.addEventListener('input',()=>{$('#community-char-count').textContent=`${ta.value.length} / 1500`;});
+    $('#community-post-form')?.addEventListener('submit',async e=>{
+      e.preventDefault();
+      const {data:{user}}=await db.auth.getUser(); if(!user){openAuth('login');return;}
+      const body=(ta.value||'').trim(); if(!body)return;
+      const {error}=await db.from('community_posts').insert({author_id:user.id,category:communityCategory,body,status:'visible',pinned:false});
+      if(error){alert(normalizeError(error));return;} ta.value=''; $('#community-char-count').textContent='0 / 1500'; loadCommunityFeed();
+    });
+    document.addEventListener('click',async e=>{
+      const article=e.target.closest('.community-post'); if(!article)return;
+      if(e.target.closest('.reply-post')) article.querySelector('.reply-form')?.classList.toggle('is-hidden');
+      if(e.target.closest('.report-post')){
+        const {data:{user}}=await db.auth.getUser(); if(!user){openAuth('login');return;}
+        const reason=prompt('Pourquoi souhaites-tu signaler ce message ?'); if(!reason?.trim())return;
+        const {error}=await db.from('post_reports').insert({post_id:Number(article.dataset.postId),reporter_id:user.id,reason:reason.trim()});
+        alert(error?'Signalement déjà envoyé ou impossible.':'Merci. Le signalement a été enregistré.');
+      }
+    });
+    document.addEventListener('submit',async e=>{
+      const form=e.target.closest('.reply-form'); if(!form)return;
+      e.preventDefault();
+      const {data:{user}}=await db.auth.getUser(); if(!user){openAuth('login');return;}
+      const article=form.closest('.community-post'), body=(form.querySelector('textarea').value||'').trim(); if(!body)return;
+      const {error}=await db.from('community_posts').insert({author_id:user.id,category:communityCategory,parent_id:Number(article.dataset.postId),body,status:'visible',pinned:false});
+      if(error){alert(normalizeError(error));return;} form.reset(); form.classList.add('is-hidden'); loadReplies(Number(article.dataset.postId));
+    });
+    loadCommunityFeed();
+  }
+
+  initCommunity();
 })();
