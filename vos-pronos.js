@@ -10,7 +10,7 @@
   }
 
   const db=window.supabase.createClient(cfg.url,cfg.key);
-  let comp='ligue1', user=null, rows=[], myVotes=new Map();
+  let comp='L1', user=null, rows=[], myVotes=new Map();
   const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
   const dt=v=>v?new Intl.DateTimeFormat('fr-FR',{weekday:'short',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}).format(new Date(v)):'Horaire à venir';
 
@@ -50,7 +50,7 @@
     }
     const groups=new Map();
     rows.forEach(m=>{const k=m.matchday??'—';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(m)});
-    root.innerHTML=[...groups].map(([day,ms])=>`<section class="vote-matchday"><div class="vote-matchday-title"><span>${comp==='ligue1'?'LIGUE 1':'LIGUE DES CHAMPIONS'}</span><b>J${String(day).padStart(2,'0')}</b></div>${ms.map(card).join('')}</section>`).join('');
+    root.innerHTML=[...groups].map(([day,ms])=>`<section class="vote-matchday"><div class="vote-matchday-title"><span>${comp==='L1'?'LIGUE 1':'LIGUE DES CHAMPIONS'}</span><b>J${String(day).padStart(2,'0')}</b></div>${ms.map(card).join('')}</section>`).join('');
     summary();
   }
 
