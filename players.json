@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T17:40:38.227928+00:00",
+  "updated_at": "2026-08-29T11:46:04.927372+00:00",
   "source": "ESPN rosters + ajouts manuels Footix Prono",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -410,6 +410,7 @@
       "Abu Francis",
       "Alexis Vossah",
       "Aron Donnum",
+      "Aymen Ammaouch",
       "Christ Tapé",
       "Cristian Cásseres Jr.",
       "David Odogu",
@@ -516,5 +517,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 460
+  "players_fetched": 459
 }
