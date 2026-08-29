@@ -4302,3 +4302,28 @@ body:has(.monthly-ranking-main){
     font-size:6px!important;
   }
 }
+
+/* V9.9.2 — switch Ligue 1 / Ligue des Champions 100% bleu */
+.page-votes-v940 .votes-comp-switch button{
+  background:#0b2b54!important;
+  border:1px solid #2b5f94!important;
+  color:#c9def2!important;
+  box-shadow:none!important;
+}
+.page-votes-v940 .votes-comp-switch button:hover{
+  background:#103866!important;
+  border-color:#3c78b5!important;
+  color:#ffffff!important;
+}
+.page-votes-v940 .votes-comp-switch button.active{
+  background:#1769d2!important;
+  border-color:#4c9aee!important;
+  color:#ffffff!important;
+}
+.page-votes-v940 .votes-comp-switch button img{
+  filter:none!important;
+  opacity:1!important;
+}
+.page-votes-v940 .votes-comp-switch>span{
+  color:#86a7c8!important;
+}
