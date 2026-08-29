@@ -2816,3 +2816,25 @@ body.modal-open{overflow:hidden}
   font-weight:950;
   letter-spacing:.07em;
 }
+
+
+/* ============================================================
+   FOOTIX PRONO V9.2.1 — ÉTAT CONNEXION DU HEADER
+   ============================================================ */
+
+/* Priorité absolue : un élément masqué par l'auth ne peut jamais être
+   réaffiché par une ancienne règle display:flex / display:inline-flex. */
+.v914-auth-nav [hidden],
+.v914-auth-nav .is-hidden,
+.topbar .v914-auth-nav [hidden],
+.topbar .v914-auth-nav .is-hidden{
+  display:none!important;
+}
+
+/* Même sécurité pour les éventuelles variantes de versions précédentes. */
+.v912-auth-nav [hidden],
+.v912-auth-nav .is-hidden,
+.v91-auth-nav [hidden],
+.v91-auth-nav .is-hidden{
+  display:none!important;
+}

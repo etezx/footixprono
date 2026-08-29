@@ -80,6 +80,15 @@
       el.classList.toggle('is-hidden', !logged);
       el.hidden = !logged;
     });
+
+    // Sécurité visuelle supplémentaire pour le header :
+    // même si une ancienne règle CSS essaie de forcer display:flex.
+    $$('.v914-auth-nav .login-trigger,.v914-auth-nav .signup-trigger').forEach(el => {
+      el.style.setProperty('display', logged ? 'none' : '', logged ? 'important' : '');
+    });
+    $$('.v914-auth-nav .account-link,.v914-auth-nav .logout-link').forEach(el => {
+      el.style.setProperty('display', logged ? '' : 'none', logged ? '' : 'important');
+    });
     if (logged) {
       await upsertPendingConsent();
       currentUserIsAdmin = await checkAdmin(session.user.id);
