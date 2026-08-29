@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-08-29T20:49:32Z",
+  "generatedAt": "2026-08-29T21:39:21Z",
   "events": [
     {
       "eventId": 210448,
@@ -15,7 +15,7 @@
       "period": "FT",
       "homeScore": 2,
       "awayScore": 2,
-      "updatedAt": "2026-08-29T20:49:32Z",
+      "updatedAt": "2026-08-29T21:39:21Z",
       "actualScorers": [
         "Marquinhos",
         "Vitinha",
@@ -35,7 +35,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-29T20:49:32Z",
+      "updatedAt": "2026-08-29T21:39:21Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -47,38 +47,16 @@
       "goalIncidents": 3
     },
     {
-      "eventId": 210449,
+      "eventId": 210447,
       "leagueId": 6,
-      "home": "Lorient",
-      "away": "Troyes",
+      "home": "Auxerre",
+      "away": "Angers",
       "kickoff": "2026-08-29T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-29T20:49:32Z",
-      "minute": null,
-      "homeScore": 1,
-      "awayScore": 2,
-      "actualScorers": [
-        "J. Makengo",
-        "L. Maronnier",
-        "R. Ripart"
-      ],
-      "scorersVerified": true,
-      "goalIncidents": 3
-    },
-    {
-      "eventId": 210447,
-      "leagueId": 6,
-      "home": "Auxerre",
-      "away": "Angers",
-      "kickoff": "2026-08-29T18:45:00Z",
-      "status": "finished",
-      "live": false,
-      "completed": true,
-      "period": "FT",
-      "updatedAt": "2026-08-29T20:49:32Z",
+      "updatedAt": "2026-08-29T21:39:21Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -92,16 +70,38 @@
       "goalIncidents": 4
     },
     {
-      "eventId": 210450,
+      "eventId": 210449,
       "leagueId": 6,
-      "home": "Olympique Lyonnais",
-      "away": "Le Havre",
-      "kickoff": "2026-08-29T18:45:00Z",
+      "home": "Lorient",
+      "away": "Troyes",
+      "kickoff": "2026-08-29T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-29T20:49:32Z",
+      "updatedAt": "2026-08-29T21:39:21Z",
+      "minute": null,
+      "homeScore": 1,
+      "awayScore": 2,
+      "actualScorers": [
+        "J. Makengo",
+        "L. Maronnier",
+        "R. Ripart"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 3
+    },
+    {
+      "eventId": 210450,
+      "leagueId": 6,
+      "home": "Olympique Lyonnais",
+      "away": "Le Havre",
+      "kickoff": "2026-08-29T18:45:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-08-29T21:39:21Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -117,12 +117,12 @@
       "leagueId": 6,
       "home": "Stade Brestois",
       "away": "Toulouse",
-      "kickoff": "2026-08-29T18:45:00Z",
+      "kickoff": "2026-08-29T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-29T20:49:32Z",
+      "updatedAt": "2026-08-29T21:39:21Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 2,
@@ -145,7 +145,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T20:49:32Z"
+      "updatedAt": "2026-08-29T21:39:21Z"
     },
     {
       "eventId": 210454,
@@ -157,7 +157,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T20:49:32Z"
+      "updatedAt": "2026-08-29T21:39:21Z"
     },
     {
       "eventId": 210446,
@@ -169,7 +169,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T20:49:32Z"
+      "updatedAt": "2026-08-29T21:39:21Z"
     }
   ]
 }
