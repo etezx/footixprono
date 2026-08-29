@@ -2,7 +2,8 @@ name: Mettre à jour les résultats
 
 on:
   schedule:
-    # Décalé des minutes rondes pour réduire le risque de retard GitHub Actions.
+    # Détection toutes les 5 min. Si un match L1 ou LDC est en live,
+    # le job effectue ensuite 2 rafraîchissements supplémentaires à 2 min d'intervalle.
     - cron: '2-59/5 * * * *'
   workflow_dispatch:
   repository_dispatch:
@@ -18,7 +19,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 6
 
     steps:
       - name: Récupérer le dépôt
@@ -31,19 +32,72 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Mettre à jour les résultats récents
+      - name: Rafraîchir Footix et accélérer pendant le live
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
-        run: python update_results.py
-
-      - name: Générer gratuitement le bilan Footix si la journée est terminée
-        run: python generate_review.py
-
-      - name: Enregistrer les résultats, le live et le classement
+        shell: bash
         run: |
-          git config user.name "footix-prono-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add schedule.json pronos.json live-results.json bsd-standings.json
-          git diff --cached --quiet && exit 0
-          git commit -m "Mise à jour résultats live Footix"
-          git push origin main
+          set -e
+
+          refresh_data () {
+            python update_results.py
+            python generate_review.py
+
+            git config user.name "footix-prono-bot"
+            git config user.email "actions@users.noreply.github.com"
+
+            # Si une autre action a écrit juste avant nous, on récupère proprement.
+            git pull --rebase origin main || true
+
+            git add schedule.json pronos.json live-results.json bsd-standings.json
+
+            if ! git diff --cached --quiet; then
+              git commit -m "Mise à jour résultats live Footix"
+              git push origin main
+            fi
+          }
+
+          is_live () {
+            python - <<'PY'
+          import json
+          from pathlib import Path
+
+          try:
+              data = json.loads(Path("live-results.json").read_text(encoding="utf-8"))
+          except Exception:
+              print("false")
+              raise SystemExit
+
+          # Ligue 1 = BSD 6 ; Ligue des Champions = BSD 7
+          live = any(
+              bool(e.get("live"))
+              and not bool(e.get("completed"))
+              and int(e.get("leagueId") or 0) in (6, 7)
+              for e in (data.get("events") or [])
+          )
+          print("true" if live else "false")
+          PY
+          }
+
+          # Rafraîchissement normal.
+          refresh_data
+
+          # Hors match : on s'arrête ici. Le prochain contrôle sera dans ~5 min.
+          if [ "$(is_live)" != "true" ]; then
+            echo "Aucun match Ligue 1 / LDC en direct : fréquence normale."
+            exit 0
+          fi
+
+          echo "Match en direct détecté : passage en mode LIVE ~2 minutes."
+
+          # Deux passages supplémentaires : environ +2 min puis +4 min.
+          # Le prochain cron prend ensuite le relais vers +5 min.
+          for pass in 1 2; do
+            sleep 120
+            refresh_data
+
+            if [ "$(is_live)" != "true" ]; then
+              echo "Plus aucun match en direct : retour à la fréquence normale."
+              break
+            fi
+          done
