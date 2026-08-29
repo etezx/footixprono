@@ -1361,3 +1361,229 @@ body.prono-panel-open{overflow:hidden}
   .flow-club-logo-wrap{width:36px!important;height:36px!important;flex-basis:36px!important}
   .flow-club-logo{width:34px!important;height:34px!important;max-width:34px!important;max-height:34px!important}
 }
+
+
+/* === V8.6.6 — style validé par le mockup === */
+
+/* Logos compétition : option 3 */
+.comp-mark.l1-mark,
+.comp-mark.ucl-mark{
+  width:34px!important;
+  height:34px!important;
+  flex:0 0 34px!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+}
+.comp-mark.l1-mark img,
+.comp-mark.ucl-mark img{
+  display:block;
+  width:32px;
+  height:32px;
+  object-fit:contain;
+}
+.comp-mark.ucl-mark::before{content:none!important}
+
+.banner-logo.l1-mark{
+  display:grid!important;
+  place-items:center!important;
+  width:72px!important;
+  min-width:72px!important;
+  height:72px!important;
+  padding:0!important;
+}
+.banner-logo.l1-mark img{
+  width:64px;
+  height:64px;
+  object-fit:contain;
+}
+
+/* Scores : plus petits et strictement identiques dans PRONO / RÉSULTAT */
+.prono-flow .flow-score,
+.prono-flow .flow-prono .flow-score,
+.prono-flow .flow-result .flow-score{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif!important;
+  font-size:31px!important;
+  line-height:.92!important;
+  font-weight:800!important;
+  letter-spacing:-.02em!important;
+  min-width:55px!important;
+  width:auto!important;
+  color:#f8fafc!important;
+  text-shadow:none!important;
+}
+.prono-flow.is-live .flow-result .flow-score{
+  color:#f8fafc!important;
+}
+
+/* Plus de place aux équipes : le score ne peut plus masquer les noms */
+.flow-matchline{
+  max-width:100%!important;
+  width:100%!important;
+  grid-template-columns:minmax(138px,1fr) 58px minmax(138px,1fr)!important;
+  column-gap:10px!important;
+}
+.prono-flow .flow-team{
+  min-width:0!important;
+  gap:8px!important;
+}
+.prono-flow .flow-team b{
+  min-width:0!important;
+  font-size:16px!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+
+/* Logos clubs légèrement plus petits et nets */
+.flow-club-logo-wrap{
+  width:34px!important;
+  height:34px!important;
+  flex:0 0 34px!important;
+  display:grid!important;
+  place-items:center!important;
+  overflow:hidden!important;
+}
+.flow-club-logo{
+  width:31px!important;
+  height:31px!important;
+  max-width:31px!important;
+  max-height:31px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+
+/* Verdict façon mockup : fond sombre, couleur portée uniquement par le texte */
+.prono-flow .flow-verdict{
+  background:linear-gradient(180deg,#07192e,#061528)!important;
+  border-color:#20466a!important;
+}
+.prono-flow .flow-verdict.ok{
+  background:linear-gradient(180deg,#0a2518,#071d14)!important;
+  border-color:#397829!important;
+}
+.prono-flow .flow-verdict.ko{
+  background:linear-gradient(180deg,#07192e,#061528)!important;
+  border-color:#20466a!important;
+}
+.prono-flow .flow-verdict.pending{
+  background:linear-gradient(180deg,#07192e,#061528)!important;
+  border-color:#20466a!important;
+}
+.prono-flow .flow-verdict strong{
+  font-size:18px!important;
+  font-weight:800!important;
+}
+.prono-flow .flow-verdict.ko strong{
+  color:#ff667c!important;
+}
+.prono-flow .flow-verdict.ok strong{
+  color:#8eff62!important;
+}
+.prono-flow .flow-verdict.pending strong{
+  color:#aebfd1!important;
+}
+
+/* Buteurs plus fins / moins gros */
+.scorers-zone{
+  min-height:58px!important;
+  padding:9px 13px!important;
+}
+.scorers-zone>small{
+  font-size:10px!important;
+  letter-spacing:.06em!important;
+  margin-bottom:7px!important;
+}
+.scorers-zone .scorer-verdict-list{
+  gap:7px!important;
+}
+.scorers-zone .scorer-verdict-list em{
+  min-height:27px!important;
+  padding:4px 10px!important;
+  font-family:Inter,system-ui,sans-serif!important;
+  font-size:12px!important;
+  line-height:1.1!important;
+  font-weight:650!important;
+}
+
+/* Bouton Analyse du match comme le mockup */
+.analysis-btn.prono-open-btn{
+  min-width:150px!important;
+  min-height:42px!important;
+  padding:7px 13px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:10px!important;
+  border:1px solid #1185ef!important;
+  border-radius:8px!important;
+  background:linear-gradient(180deg,rgba(5,37,67,.96),rgba(4,27,51,.98))!important;
+  color:#69b9ff!important;
+  box-shadow:inset 0 0 18px rgba(20,127,222,.06)!important;
+}
+.analysis-btn.prono-open-btn:hover{
+  border-color:#53adff!important;
+  background:linear-gradient(180deg,#082e50,#062442)!important;
+}
+.analysis-btn .prono-btn-label{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif!important;
+  font-size:13px!important;
+  line-height:.9!important;
+  font-weight:800!important;
+  letter-spacing:.035em!important;
+  text-align:left!important;
+}
+.broadcast-bars{
+  width:20px;
+  height:22px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  gap:3px;
+  flex:0 0 20px;
+}
+.broadcast-bars i{
+  display:block;
+  width:3px;
+  border-radius:2px 2px 0 0;
+  background:#45a9ff;
+  box-shadow:0 0 6px rgba(69,169,255,.28);
+}
+.broadcast-bars i:nth-child(1){height:8px}
+.broadcast-bars i:nth-child(2){height:14px}
+.broadcast-bars i:nth-child(3){height:20px}
+
+/* Cartes un peu plus compactes pour correspondre à la maquette */
+.prono-flow .flow-step{
+  min-height:98px!important;
+  padding:10px 14px!important;
+}
+.live-card-bottom{
+  padding:0 12px 11px!important;
+}
+
+/* Titres de cartes */
+.prono-flow .flow-step small{
+  font-size:10px!important;
+  letter-spacing:.08em!important;
+}
+
+/* Responsive */
+@media(max-width:1200px){
+  .flow-matchline{
+    grid-template-columns:minmax(110px,1fr) 52px minmax(110px,1fr)!important;
+  }
+  .prono-flow .flow-score,
+  .prono-flow .flow-prono .flow-score,
+  .prono-flow .flow-result .flow-score{
+    font-size:28px!important;
+    min-width:50px!important;
+  }
+  .prono-flow .flow-team b{font-size:15px!important}
+  .flow-club-logo-wrap{width:31px!important;height:31px!important;flex-basis:31px!important}
+  .flow-club-logo{width:28px!important;height:28px!important;max-width:28px!important;max-height:28px!important}
+}

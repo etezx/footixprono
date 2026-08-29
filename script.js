@@ -475,7 +475,7 @@ async function initLigue1(){
       return `<article class="match-row-live ${f.live?"is-live":f.completed?"is-finished":""}">
         <div class="live-card-meta"><span>${escapeHTML(fmtDayMeta(m[2]||{})||"Horaire à confirmer")}</span>${f.live?`<b>🔴 LIVE${f.minute!=null?` ${f.minute}’`:""}</b>`:f.completed?"<b>TERMINÉ</b>":""}</div>
         ${matchFlowHTML({home:m[0],away:m[1],score,pick,fixture:f,homeLogo:clubLogo(m[0],clubmap),awayLogo:clubLogo(m[1],clubmap)})}
-        <div class="live-card-bottom"><div class="scorers-zone"><small>BUTEURS PRONOSTIQUÉS</small>${scorerChipsHTML(p,f)}</div><button class="analysis-btn prono-open-btn" type="button" data-prono-index="${i}"><span class="prono-btn-icon">◉</span><span class="prono-btn-label">ANALYSE DU MATCH</span></button></div>
+        <div class="live-card-bottom"><div class="scorers-zone"><small>BUTEURS PRONOSTIQUÉS</small>${scorerChipsHTML(p,f)}</div><button class="analysis-btn prono-open-btn" type="button" data-prono-index="${i}"><span class="prono-btn-icon broadcast-bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="prono-btn-label">ANALYSE DU MATCH</span></button></div>
       </article>`;
     }).join("") || `<div class="empty-state">Aucun match disponible.</div>`;
 
@@ -539,7 +539,7 @@ async function initUCL(){
       return `<article class="match-row-live ucl-live-card ${f.live?"is-live":f.completed?"is-finished":""}">
         <div class="live-card-meta"><span>${escapeHTML(m.date||"")}${m.date&&m.time?" · ":""}${escapeHTML(m.time||"")}</span>${f.live?`<b>🔴 LIVE${f.minute!=null?` ${f.minute}’`:""}</b>`:f.completed?"<b>TERMINÉ</b>":""}</div>
         ${matchFlowHTML({home:m.home||"À déterminer",away:m.away||"À déterminer",score,pick,fixture:f,homeLogo:logoFor(m.home,"flow-club-logo"),awayLogo:logoFor(m.away,"flow-club-logo")})}
-        <div class="live-card-bottom"><div class="scorers-zone"><small>BUTEURS PRONOSTIQUÉS</small>${scorerChipsHTML(m,f)}</div><button class="analysis-btn prono-open-btn ucl-analysis-open" type="button" data-ucl-index="${i}"><span class="prono-btn-icon">◉</span><span class="prono-btn-label">ANALYSE DU MATCH</span></button></div>
+        <div class="live-card-bottom"><div class="scorers-zone"><small>BUTEURS PRONOSTIQUÉS</small>${scorerChipsHTML(m,f)}</div><button class="analysis-btn prono-open-btn ucl-analysis-open" type="button" data-ucl-index="${i}"><span class="prono-btn-icon broadcast-bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="prono-btn-label">ANALYSE DU MATCH</span></button></div>
       </article>`;
     }).join("")}</div>`;
     $$("#ucl-day-content .ucl-analysis-open").forEach(btn=>btn.addEventListener("click",()=>{
