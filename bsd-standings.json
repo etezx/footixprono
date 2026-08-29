@@ -48,12 +48,12 @@
         {
           "position": 3,
           "club": "RC Lens",
-          "p": 1,
+          "p": 2,
           "w": 1,
           "d": 0,
-          "l": 0,
-          "gf": 5,
-          "ga": 2,
+          "l": 1,
+          "gf": 6,
+          "ga": 4,
           "pts": 3,
           "group": "",
           "zone": {
@@ -98,14 +98,14 @@
         },
         {
           "position": 6,
-          "club": "Paris Saint-Germain",
+          "club": "RC Strasbourg",
           "p": 2,
-          "w": 0,
-          "d": 2,
-          "l": 0,
-          "gf": 4,
-          "ga": 4,
-          "pts": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 2,
+          "ga": 5,
+          "pts": 3,
           "group": "",
           "zone": {
             "key": "uecl",
@@ -115,6 +115,19 @@
         },
         {
           "position": 7,
+          "club": "Paris Saint-Germain",
+          "p": 2,
+          "w": 0,
+          "d": 2,
+          "l": 0,
+          "gf": 4,
+          "ga": 4,
+          "pts": 2,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 8,
           "club": "Le Mans",
           "p": 1,
           "w": 0,
@@ -127,7 +140,7 @@
           "zone": null
         },
         {
-          "position": 8,
+          "position": 9,
           "club": "Stade Brestois",
           "p": 1,
           "w": 0,
@@ -140,7 +153,7 @@
           "zone": null
         },
         {
-          "position": 9,
+          "position": 10,
           "club": "Stade Rennais",
           "p": 1,
           "w": 0,
@@ -153,7 +166,7 @@
           "zone": null
         },
         {
-          "position": 10,
+          "position": 11,
           "club": "Lorient",
           "p": 1,
           "w": 0,
@@ -166,7 +179,7 @@
           "zone": null
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "Nice",
           "p": 1,
           "w": 0,
@@ -179,7 +192,7 @@
           "zone": null
         },
         {
-          "position": 12,
+          "position": 13,
           "club": "Paris FC",
           "p": 1,
           "w": 0,
@@ -192,7 +205,7 @@
           "zone": null
         },
         {
-          "position": 13,
+          "position": 14,
           "club": "Troyes",
           "p": 1,
           "w": 0,
@@ -205,7 +218,7 @@
           "zone": null
         },
         {
-          "position": 14,
+          "position": 15,
           "club": "Le Havre",
           "p": 1,
           "w": 0,
@@ -218,21 +231,8 @@
           "zone": null
         },
         {
-          "position": 15,
-          "club": "Angers",
-          "p": 1,
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "gf": 0,
-          "ga": 2,
-          "pts": 0,
-          "group": "",
-          "zone": null
-        },
-        {
           "position": 16,
-          "club": "Toulouse",
+          "club": "Angers",
           "p": 1,
           "w": 0,
           "d": 0,
@@ -249,6 +249,23 @@
         },
         {
           "position": 17,
+          "club": "Toulouse",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 0,
+          "ga": 2,
+          "pts": 0,
+          "group": "",
+          "zone": {
+            "key": "rel",
+            "label": "Relegation",
+            "type": "relegation"
+          }
+        },
+        {
+          "position": 18,
           "club": "Auxerre",
           "p": 1,
           "w": 0,
@@ -263,27 +280,10 @@
             "label": "Relegation",
             "type": "relegation"
           }
-        },
-        {
-          "position": 18,
-          "club": "RC Strasbourg",
-          "p": 1,
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "gf": 0,
-          "ga": 4,
-          "pts": 0,
-          "group": "",
-          "zone": {
-            "key": "rel",
-            "label": "Relegation",
-            "type": "relegation"
-          }
         }
       ]
     }
   },
-  "generatedAt": "2026-08-29T15:45:44Z",
+  "generatedAt": "2026-08-29T17:27:24Z",
   "source": "BSD"
 }

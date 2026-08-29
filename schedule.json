@@ -137,7 +137,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T15:45:44Z"
+          "lastLiveUpdate": "2026-08-29T17:27:24Z"
         }
       ],
       [
@@ -148,8 +148,11 @@
           "time": "20:45",
           "official": true,
           "completed": false,
-          "eventId": "401876483",
-          "source": "ESPN public scoreboard"
+          "eventId": 210453,
+          "source": "bsd",
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-08-29T17:27:24Z"
         }
       ],
       [
@@ -174,7 +177,7 @@
           "live": false,
           "period": "FT",
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T15:45:44Z"
+          "lastLiveUpdate": "2026-08-29T17:27:24Z"
         }
       ],
       [
@@ -189,7 +192,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T15:45:44Z"
+          "lastLiveUpdate": "2026-08-29T17:27:24Z"
         }
       ],
       [
@@ -204,7 +207,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T15:45:44Z"
+          "lastLiveUpdate": "2026-08-29T17:27:24Z"
         }
       ],
       [
@@ -219,7 +222,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T15:45:44Z"
+          "lastLiveUpdate": "2026-08-29T17:27:24Z"
         }
       ],
       [
@@ -234,7 +237,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T15:45:44Z"
+          "lastLiveUpdate": "2026-08-29T17:27:24Z"
         }
       ],
       [
@@ -243,7 +246,13 @@
         {
           "date": "2026-08-30",
           "time": "17:15",
-          "official": true
+          "official": true,
+          "source": "bsd",
+          "eventId": 210454,
+          "status": "notstarted",
+          "live": false,
+          "completed": false,
+          "lastLiveUpdate": "2026-08-29T17:27:24Z"
         }
       ],
       [
@@ -253,9 +262,20 @@
           "date": "2026-08-29",
           "time": "17:15",
           "official": true,
-          "completed": false,
-          "eventId": "401876477",
-          "source": "ESPN public scoreboard"
+          "completed": true,
+          "eventId": 210452,
+          "source": "bsd",
+          "status": "finished",
+          "live": false,
+          "period": "FT",
+          "homeScore": 2,
+          "awayScore": 1,
+          "actualScorers": [
+            "G. Yassine",
+            "F. Thauvin"
+          ],
+          "scorersVerified": true,
+          "lastLiveUpdate": "2026-08-29T17:27:24Z"
         }
       ]
     ]
