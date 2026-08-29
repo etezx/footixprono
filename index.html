@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#041022">
 <title>Footix Prono — Pronostics & communauté football</title>
 <meta name="description" content="Footix Prono : pronostics Ligue 1 et Ligue des Champions, communauté, classements et profils membres.">
-<link rel="stylesheet" href="styles.css?v=9.1.0">
+<link rel="stylesheet" href="styles.css?v=9.1.1">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
 <body class="v91-home">
@@ -40,7 +40,6 @@
       </nav>
       
 <nav class="top-nav v91-auth-nav" aria-label="Compte membre">
-  <button class="theme-moon" type="button" aria-label="Thème sombre" title="Thème sombre">☾</button>
   <button class="top-nav-link auth-link login-trigger" type="button"><span class="nav-glyph">♟</span><span>SE CONNECTER</span></button>
   <button class="top-nav-link signup-link signup-trigger" type="button"><span class="nav-glyph">♙+</span><span>S'INSCRIRE</span></button>
   <a class="top-nav-link account-link is-hidden" href="profil.html"><span class="nav-glyph">●</span><span class="account-label">MON PROFIL</span></a>
@@ -78,12 +77,23 @@
         </div>
       </section>
 
-      <aside class="v91-community-card">
-        <div class="v91-card-title">💬 <b>LA COMMUNAUTÉ</b></div>
-        <a href="community.html#livre-or" class="community-entry"><span class="entry-icon">▰</span><div><b>LIVRE D'OR</b><p>Discute, partage ta passion et échange avec la communauté.</p></div><strong>›</strong></a>
-        <a href="community.html#suggestions" class="community-entry"><span class="entry-icon idea">💡</span><div><b>SUGGESTIONS</b><p>Propose tes idées pour améliorer Footix Prono.</p></div><strong>›</strong></a>
-        <div class="join-discussion"><b>Rejoins la discussion !</b><p>Ta voix compte dans l'évolution de Footix Prono.</p><a href="community.html">Voir la communauté <span>›</span></a></div>
-      </aside>
+      <aside class="v91-community-card compact-community-card">
+  <div class="v91-card-title">💬 <b>LA COMMUNAUTÉ</b></div>
+  <a href="community.html" class="community-entry single-community-entry">
+    <span class="entry-icon">💬</span>
+    <div>
+      <b>ESPACE COMMUNAUTÉ</b>
+      <p>Discute, partage ton avis et propose tes idées pour faire évoluer Footix Prono.</p>
+      <small>Livre d'or · Suggestions</small>
+    </div>
+    <strong>›</strong>
+  </a>
+  <div class="join-discussion compact">
+    <b>Ta voix compte.</b>
+    <p>Retrouve toutes les discussions au même endroit.</p>
+    <a href="community.html">Entrer dans la communauté <span>›</span></a>
+  </div>
+</aside>
 
       <section class="v91-benefits">
         <article><span>🛡</span><div><b>100% GRATUIT</b><p>Aucun pari, aucune mise. Uniquement du fun !</p></div></article>
@@ -159,5 +169,5 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
-<script src="auth-community.js?v=9.1.0"></script>
+<script src="auth-community.js?v=9.1.1"></script>
 </body></html>
