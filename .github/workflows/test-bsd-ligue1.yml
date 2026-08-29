@@ -75,10 +75,11 @@ jobs:
           print(f"   Ligue : {league_name or 'Ligue 1'} | Pays : {country or 'France'} | ID : {LEAGUE_ID}")
 
           # 2) Saison courante, sans ID codé en dur
-          season = get_json(f"/leagues/{LEAGUE_ID}/season/")
+          season_payload = get_json(f"/leagues/{LEAGUE_ID}/season/")
+          season = season_payload.get("season", season_payload) if isinstance(season_payload, dict) else {}
           if not isinstance(season, dict) or not season.get("id"):
               print("ERREUR : impossible d'identifier la saison courante.")
-              print(json.dumps(season, ensure_ascii=False)[:1000])
+              print(json.dumps(season_payload, ensure_ascii=False)[:1000])
               sys.exit(2)
 
           season_id = season["id"]
