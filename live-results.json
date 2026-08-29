@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-08-29T19:04:32Z",
+  "generatedAt": "2026-08-29T19:17:55Z",
   "events": [
     {
       "eventId": 210448,
@@ -15,7 +15,7 @@
       "period": "FT",
       "homeScore": 2,
       "awayScore": 2,
-      "updatedAt": "2026-08-29T19:04:32Z",
+      "updatedAt": "2026-08-29T19:17:55Z",
       "actualScorers": [
         "Marquinhos",
         "Vitinha",
@@ -35,7 +35,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-29T19:04:32Z",
+      "updatedAt": "2026-08-29T19:17:55Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -56,8 +56,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T19:04:32Z",
-      "minute": 18,
+      "updatedAt": "2026-08-29T19:17:55Z",
+      "minute": 32,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -76,13 +76,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T19:04:32Z",
-      "minute": 18,
+      "updatedAt": "2026-08-29T19:17:55Z",
+      "minute": 32,
       "homeScore": 0,
-      "awayScore": 0,
-      "actualScorers": [],
+      "awayScore": 1,
+      "actualScorers": [
+        "R. Ripart"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210450,
@@ -94,8 +96,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T19:04:32Z",
-      "minute": 18,
+      "updatedAt": "2026-08-29T19:17:55Z",
+      "minute": 31,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -112,8 +114,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T19:04:32Z",
-      "minute": 18,
+      "updatedAt": "2026-08-29T19:17:55Z",
+      "minute": 31,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -133,7 +135,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T19:04:32Z"
+      "updatedAt": "2026-08-29T19:17:55Z"
     },
     {
       "eventId": 210454,
@@ -145,7 +147,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T19:04:32Z"
+      "updatedAt": "2026-08-29T19:17:55Z"
     },
     {
       "eventId": 210446,
@@ -157,7 +159,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T19:04:32Z"
+      "updatedAt": "2026-08-29T19:17:55Z"
     }
   ]
 }
