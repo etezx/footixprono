@@ -4,7 +4,19 @@ const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
 const norm = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
 
 let clubsCache=null;
-async function getJSON(url){ const r=await fetch(url+"?v=8.6.4",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
+async function getJSON(url){
+  const sep = url.includes("?") ? "&" : "?";
+  const freshUrl = `${url}${sep}_=${Date.now()}`;
+  const r = await fetch(freshUrl,{
+    cache:"no-store",
+    headers:{
+      "Cache-Control":"no-cache, no-store, max-age=0",
+      "Pragma":"no-cache"
+    }
+  });
+  if(!r.ok) throw new Error(url);
+  return r.json();
+}
 async function clubs(){ if(!clubsCache) clubsCache=await getJSON("clubs.json"); return clubsCache; }
 function clubLogo(name, map){
   const entries=Object.entries(map?.clubs||{});

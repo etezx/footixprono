@@ -2661,3 +2661,60 @@ body.modal-open{overflow:hidden}
 .v91-auth-nav .signup-link{
   box-shadow:none!important;
 }
+
+
+/* ============================================================
+   FOOTIX PRONO V9.1.6 — ANTI-CACHE LIVE + LOGO SIDEBAR
+   ============================================================ */
+
+/* Le bloc logo reste entièrement contenu dans la largeur du menu gauche. */
+.v912-brand,
+.v91-brand,
+.brand.v912-brand,
+.brand.v91-brand{
+  min-height:108px!important;
+  padding:16px 12px 13px!important;
+  gap:9px!important;
+  overflow:hidden!important;
+  box-sizing:border-box!important;
+}
+.v912-brand img,
+.v91-brand img,
+.brand.v912-brand img,
+.brand.v91-brand img{
+  width:61px!important;
+  height:61px!important;
+  flex:0 0 61px!important;
+  object-fit:contain!important;
+}
+.v912-brand div,
+.v91-brand div{
+  min-width:0!important;
+  overflow:hidden!important;
+}
+.v912-brand strong,
+.v91-brand strong{
+  font-size:24px!important;
+  line-height:.95!important;
+  white-space:nowrap!important;
+}
+.v912-brand span,
+.v91-brand span{
+  font-size:19px!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+}
+.v912-brand small,
+.v91-brand small{
+  margin-top:6px!important;
+  font-size:7px!important;
+  line-height:1.15!important;
+  letter-spacing:.015em!important;
+  white-space:nowrap!important;
+}
+
+/* Sécurité supplémentaire pour éviter tout débordement horizontal de la sidebar. */
+.v912-sidebar,
+.sidebar{
+  overflow-x:hidden!important;
+}
