@@ -982,3 +982,124 @@ body.prono-panel-open{overflow:hidden}
 #l1-day-date{font-size:12px;font-weight:900;letter-spacing:.035em;color:#b7c8da;text-transform:none;font-variant-numeric:tabular-nums}
 @media(max-width:900px){.flow-matchline{grid-template-columns:minmax(90px,1fr) auto minmax(90px,1fr);gap:8px}.flow-score{font-size:24px!important}.flow-result .flow-score{font-size:27px!important}.flow-team b{font-size:12px}}
 \n\n/* === V8.6.3 — finition typographique + scores premium === */\n.prono-flow .flow-step{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}\n.prono-flow .flow-step small{font-weight:800;letter-spacing:.08em;color:#8ea5bf}\n.prono-flow .flow-team b{font-weight:750;letter-spacing:-.015em;color:#f2f6fb}\n.prono-flow .flow-score{font-family:"Arial Narrow",Inter,ui-sans-serif,system-ui,sans-serif;font-weight:900;letter-spacing:-.045em;color:#f4f7fb!important;text-shadow:none}\n.prono-flow .flow-prono .flow-score{color:#f4f7fb!important}\n.prono-flow .flow-result .flow-score{color:#58bfff!important}\n.prono-flow.is-live .flow-result .flow-score{color:#ff6f83!important}\n.prono-flow .flow-step>span{font-size:11px;font-weight:700;color:#91a5bc;letter-spacing:.01em}\n.prono-flow .flow-verdict strong{font-size:14px;font-weight:850;letter-spacing:-.01em}\n.scorers-zone .scorer-verdict-list em.ok{color:#8cff79;border-color:rgba(91,220,96,.65);background:rgba(44,132,55,.15)}\n.scorers-zone .scorer-verdict-list em.ko{color:#ff7d8e;border-color:rgba(225,73,91,.65);background:rgba(146,39,55,.16)}\n
+
+/* === V8.6.4 — identité football premium === */
+/* Barlow Condensed : police open source, utilisée ici comme inspiration broadcast,
+   sans reprendre les fontes propriétaires Ligue 1 / UEFA. */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@500;600;700;800&display=swap');
+
+.prono-flow .flow-step{
+  font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+}
+.prono-flow .flow-step small{
+  font-family:Inter,system-ui,sans-serif;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.12em;
+  color:#7892ad;
+}
+.prono-flow .flow-team b{
+  font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  font-size:17px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:.025em;
+  color:#f5f8fc;
+  text-transform:uppercase;
+  overflow:visible;
+  text-overflow:clip;
+}
+.prono-flow .flow-score{
+  font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  font-size:34px!important;
+  line-height:.9;
+  font-weight:900;
+  letter-spacing:.015em;
+  color:#f8fbff!important;
+  font-variant-numeric:tabular-nums;
+}
+.prono-flow .flow-result .flow-score{
+  color:#dff5ff!important;
+}
+.prono-flow.is-live .flow-result .flow-score{
+  color:#ff7185!important;
+}
+.prono-flow .flow-step>span{
+  font-family:Inter,system-ui,sans-serif;
+  font-size:10px;
+  font-weight:700;
+  color:#8fa4bb;
+}
+.prono-flow .flow-verdict strong{
+  font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:.025em;
+}
+.flow-matchline{
+  max-width:620px;
+  grid-template-columns:minmax(115px,1fr) auto minmax(115px,1fr);
+  gap:16px;
+}
+.flow-team .crest,.flow-team .fake-crest,
+.flow-club-logo-wrap,.flow-club-logo,.flow-club-logo-fallback{
+  width:38px;
+  height:38px;
+  flex-basis:38px;
+}
+.scorers-zone>small{
+  font-family:Inter,system-ui,sans-serif;
+  letter-spacing:.1em;
+}
+.scorers-zone .scorer-verdict-list em{
+  font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:.015em;
+}
+.scorers-zone .scorer-verdict-list em.ok{
+  color:#9bff85;
+  border-color:rgba(113,232,104,.7);
+  background:rgba(39,137,52,.19);
+}
+.scorers-zone .scorer-verdict-list em.ko{
+  color:#ff8796;
+  border-color:rgba(238,84,103,.7);
+  background:rgba(158,40,57,.19);
+}
+
+/* Emblèmes originaux : évitent de reprendre les logos officiels protégés. */
+.comp-mark.l1-mark,.banner-logo.l1-mark{
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(132,255,52,.58);
+  border-radius:8px;
+  background:linear-gradient(145deg,rgba(116,255,31,.18),rgba(8,38,51,.9));
+  color:#9cff3e;
+  font-family:"Barlow Condensed",sans-serif;
+  font-weight:900;
+  font-style:italic;
+  letter-spacing:-.04em;
+  box-shadow:inset 0 0 18px rgba(114,255,37,.08);
+}
+.comp-mark.ucl-mark{
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(91,170,255,.5);
+  border-radius:50%;
+  background:radial-gradient(circle at 50% 50%,rgba(64,141,255,.18),rgba(7,25,51,.95) 68%);
+  color:#dbeaff;
+  font-size:13px;
+  text-shadow:0 0 8px rgba(95,164,255,.55);
+}
+.comp-mark.ucl-mark::before{content:"✦";transform:rotate(12deg)}
+.comp-mark.ucl-mark{font-size:0}
+
+@media(max-width:900px){
+  .prono-flow .flow-team b{font-size:15px}
+  .prono-flow .flow-score{font-size:30px!important}
+  .flow-team .crest,.flow-team .fake-crest,
+  .flow-club-logo-wrap,.flow-club-logo,.flow-club-logo-fallback{
+    width:32px;height:32px;flex-basis:32px;
+  }
+}

@@ -4,7 +4,7 @@ const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
 const norm = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
 
 let clubsCache=null;
-async function getJSON(url){ const r=await fetch(url+"?v=8.6.2",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
+async function getJSON(url){ const r=await fetch(url+"?v=8.6.4",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
 async function clubs(){ if(!clubsCache) clubsCache=await getJSON("clubs.json"); return clubsCache; }
 function clubLogo(name, map){
   const entries=Object.entries(map?.clubs||{});
@@ -30,6 +30,52 @@ function updateLigue1HeaderClock(){
 function matchSort(a,b){
   const ma=a[2]||{}, mb=b[2]||{};
   return ((ma.date||"9999")+(ma.time||"99")).localeCompare((mb.date||"9999")+(mb.time||"99"));
+}
+
+const TEAM_SHORT_NAMES = {
+  "PARIS SAINT-GERMAIN":"PSG",
+  "OLYMPIQUE DE MARSEILLE":"OM",
+  "OLYMPIQUE LYONNAIS":"LYON",
+  "RC STRASBOURG ALSACE":"STRASBOURG",
+  "STADE RENNAIS FC":"RENNES",
+  "STADE BRESTOIS 29":"BREST",
+  "AJ AUXERRE":"AUXERRE",
+  "ANGERS SCO":"ANGERS",
+  "AS MONACO":"MONACO",
+  "FC LORIENT":"LORIENT",
+  "LE HAVRE":"LE HAVRE",
+  "LE MANS FC":"LE MANS",
+  "OGC NICE":"NICE",
+  "PARIS FC":"PARIS FC",
+  "RC LENS":"LENS",
+  "TOULOUSE FC":"TOULOUSE",
+  "ESTAC TROYES":"TROYES",
+  "LOSC":"LOSC"
+};
+function teamDisplayName(name){
+  return TEAM_SHORT_NAMES[String(name||"").toUpperCase()] || String(name||"");
+}
+
+/* J01 a été jouée avant le passage à BSD. schedule.json ne contient plus ses
+   buteurs. On réinjecte uniquement cet historique figé afin que les pastilles
+   vert/rouge restent correctes sans dépendre du nouveau flux live. */
+const LEGACY_J01_SCORERS = {
+  "ANGERS SCO|||LOSC":["Olivier Giroud","Tiago Santos"],
+  "LE HAVRE|||AS MONACO":["Eric Dier"],
+  "LE MANS FC|||STADE BRESTOIS 29":["Dame Gueye","Louis Mafouta","Romain Del Castillo","Kamory Doumbia"],
+  "RC LENS|||AJ AUXERRE":["Florian Thauvin","Franjo Ivanovic","Saud Abdulhamid","Ismaëlo Ganiou","Danny Namaso","Lamine Sy"],
+  "OLYMPIQUE DE MARSEILLE|||RC STRASBOURG ALSACE":["Amine Gouiri","Keyliane Abdallah","Pierre-Emile Højbjerg"],
+  "OGC NICE|||FC LORIENT":[],
+  "PARIS SAINT-GERMAIN|||STADE RENNAIS FC":["Sebastian Szymanski","Esteban Lepaul","Ferran Torres"],
+  "TOULOUSE FC|||OLYMPIQUE LYONNAIS":["Noah Nartey","Malick Fofana"],
+  "ESTAC TROYES|||PARIS FC":[]
+};
+function withLegacyScorers(fixture,dayNo,home,away){
+  if(Number(dayNo)!==1 || !fixture?.completed) return fixture;
+  const key=`${home}|||${away}`;
+  if(!(key in LEGACY_J01_SCORERS)) return fixture;
+  if(Array.isArray(fixture.actualScorers) && fixture.actualScorers.length) return fixture;
+  return {...fixture,actualScorers:LEGACY_J01_SCORERS[key],scorersVerified:true};
 }
 
 function normalizePick(value){
@@ -174,14 +220,15 @@ function verdictData(pick,fixture,home,away){
   };
 }
 function matchFlowHTML({home,away,score,pick,fixture,homeLogo="",awayLogo=""}){
+  const homeDisplay=teamDisplayName(home), awayDisplay=teamDisplayName(away);
   const live=Boolean(fixture?.live&&!fixture?.completed);
   const final=Boolean(fixture?.completed);
   const real=fixtureScore(fixture);
   const verdict=verdictData(pick,fixture,home,away);
   const status=live?`🔴 LIVE${fixture.minute!=null?` ${fixture.minute}’`:""}`:final?"RÉSULTAT":"RÉSULTAT / LIVE";
   const resultScore=real||"—";
-  const teams=`<span class="flow-team home">${homeLogo}<b>${escapeHTML(home)}</b></span><span class="flow-score">${escapeHTML(score||"—")}</span><span class="flow-team away"><b>${escapeHTML(away)}</b>${awayLogo}</span>`;
-  const resultTeams=real?`<span class="flow-team home">${homeLogo}<b>${escapeHTML(home)}</b></span><span class="flow-score">${escapeHTML(resultScore)}</span><span class="flow-team away"><b>${escapeHTML(away)}</b>${awayLogo}</span>`:`<span class="flow-waiting">À venir</span>`;
+  const teams=`<span class="flow-team home" title="${escapeHTML(home)}">${homeLogo}<b>${escapeHTML(homeDisplay)}</b></span><span class="flow-score">${escapeHTML(score||"—")}</span><span class="flow-team away" title="${escapeHTML(away)}"><b>${escapeHTML(awayDisplay)}</b>${awayLogo}</span>`;
+  const resultTeams=real?`<span class="flow-team home" title="${escapeHTML(home)}">${homeLogo}<b>${escapeHTML(homeDisplay)}</b></span><span class="flow-score">${escapeHTML(resultScore)}</span><span class="flow-team away" title="${escapeHTML(away)}"><b>${escapeHTML(awayDisplay)}</b>${awayLogo}</span>`:`<span class="flow-waiting">À venir</span>`;
   return `<div class="prono-flow ${live?"is-live":final?"is-final":"is-upcoming"}">
     <div class="flow-step flow-prono"><small>PRONO</small><strong class="flow-matchline">${teams}</strong><span>${pick?`Choix ${escapeHTML(pick)}`:"Choix —"}</span></div>
     <span class="flow-arrow">→</span>
@@ -424,7 +471,7 @@ async function initLigue1(){
     const sorted=(day?.matches||[]).slice().sort(matchSort);
     $("#l1-match-list").innerHTML=sorted.map((m,i)=>{
       const p=pronoForMatch(pronos,current,m[0],m[1],i);
-      const pick=normalizePick(p.pick), score=p.score||p.scorePrevu||"—", f=effectiveFixture(m);
+      const pick=normalizePick(p.pick), score=p.score||p.scorePrevu||"—", f=withLegacyScorers(effectiveFixture(m),current,m[0],m[1]);
       return `<article class="match-row-live ${f.live?"is-live":f.completed?"is-finished":""}">
         <div class="live-card-meta"><span>${escapeHTML(fmtDayMeta(m[2]||{})||"Horaire à confirmer")}</span>${f.live?`<b>🔴 LIVE${f.minute!=null?` ${f.minute}’`:""}</b>`:f.completed?"<b>TERMINÉ</b>":""}</div>
         ${matchFlowHTML({home:m[0],away:m[1],score,pick,fixture:f,homeLogo:clubLogo(m[0],clubmap),awayLogo:clubLogo(m[1],clubmap)})}
@@ -437,7 +484,7 @@ async function initLigue1(){
     after.innerHTML=dayAfterMatchHTML(pronos,current);
     $$("#l1-match-list .prono-open-btn").forEach(btn=>btn.addEventListener("click",()=>{
       const idx=Number(btn.dataset.pronoIndex),m=sorted[idx];if(!m)return;
-      const p=pronoForMatch(pronos,current,m[0],m[1],idx),f=effectiveFixture(m);
+      const p=pronoForMatch(pronos,current,m[0],m[1],idx),f=withLegacyScorers(effectiveFixture(m),current,m[0],m[1]);
       openPronoPanel({home:m[0],away:m[1],homeLogo:clubLogo(m[0],clubmap),awayLogo:clubLogo(m[1],clubmap),meta:fmtDayMeta(m[2]||{}),score:p.score||p.scorePrevu||"—",pick:normalizePick(p.pick),analysis:p.analyse||p.analysis||"",fixture:f,p});
     }));
     renderStandings();
