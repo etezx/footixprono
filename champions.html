@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#020817">
 <title>Pronostics Ligue des Champions — Footix Prono</title>
-<link rel="stylesheet" href="styles.css?v=8.7.0">
+<link rel="stylesheet" href="styles.css?v=9.0.0">
   <meta name="description" content="Les pronostics Ligue des Champions de Footix, avec analyses des matchs, scores, buteurs et suivi de la compétition.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#07101f">
@@ -51,19 +51,16 @@
   <div class="main-wrap">
     <header class="topbar">
       <div class="slogan">ON EST TOUS LE FOOTIX DE QUELQU’UN.</div>
-      <nav class="top-nav" aria-label="Navigation principale">
-  <a class="top-nav-link " href="index.html">
-    <span class="top-nav-icon home-icon"><img src="nav-home.svg" alt=""></span>
-    <span>ACCUEIL</span>
+      <nav class="top-nav community-top-nav" aria-label="Navigation principale">
+  <a class="top-nav-link nav-home-community" href="index.html">
+    <span class="top-nav-icon home-icon"><img src="nav-home.svg" alt=""></span><span>ACCUEIL</span>
   </a>
-  <a class="top-nav-link " href="ligue1.html">
-    <span class="top-nav-icon"><img src="logo-l1-option3.png" alt=""></span>
-    <span>LIGUE 1</span>
-  </a>
-  <a class="top-nav-link active" href="champions.html">
-    <span class="top-nav-icon"><img src="logo-europe-option3.png" alt=""></span>
-    <span>LIGUE DES CHAMPIONS</span>
-  </a>
+  <a class="top-nav-link" href="classement.html"><span class="nav-glyph">🏆</span><span>CLASSEMENTS</span></a>
+  <a class="top-nav-link" href="reglement.html"><span class="nav-glyph">📋</span><span>RÈGLEMENT</span></a>
+  <button class="top-nav-link auth-link login-trigger" type="button"><span class="nav-glyph">↪</span><span>CONNEXION</span></button>
+  <button class="top-nav-link signup-link signup-trigger" type="button"><span class="nav-glyph">＋</span><span>S'INSCRIRE</span></button>
+  <a class="top-nav-link account-link is-hidden" href="profil.html"><span class="nav-glyph">●</span><span class="account-label">MON PROFIL</span></a>
+  <button class="top-nav-link logout-link is-hidden" type="button"><span class="nav-glyph">↩</span><span>DÉCONNEXION</span></button>
 </nav>
       <div class="top-social social-real" aria-label="Réseaux sociaux">
   <a class="social-icon instagram" href="#" onclick="return false" aria-label="Instagram — bientôt" title="Instagram — bientôt"><img src="social-instagram.svg" alt=""></a>
@@ -118,6 +115,68 @@
     </footer>
   </div>
 </div>
-<script src="script.js?v=8.7.0"></script>
+<script src="script.js?v=9.0.0"></script>
+
+<div class="auth-modal" id="auth-modal" aria-hidden="true">
+  <div class="auth-backdrop" data-auth-close></div>
+  <section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <button class="auth-close" type="button" data-auth-close aria-label="Fermer">×</button>
+    <div class="auth-brand">
+      <div class="auth-brand-mark"><img src="logo-footix-prono.png" alt=""></div>
+      <div><span>ESPACE COMMUNAUTÉ</span><strong id="auth-title">REJOINS FOOTIX PRONO</strong></div>
+    </div>
+    <div class="auth-tabs">
+      <button type="button" class="auth-tab active" data-auth-tab="signup">INSCRIPTION</button>
+      <button type="button" class="auth-tab" data-auth-tab="login">CONNEXION</button>
+    </div>
+
+    <form class="auth-form" id="signup-form">
+      <label>TON PSEUDO
+        <input name="username" autocomplete="nickname" minlength="3" maxlength="20" pattern="[A-Za-z0-9À-ÿ_-]{3,20}" required placeholder="Ex. Footix75">
+      </label>
+      <label>TON EMAIL
+        <input name="email" type="email" autocomplete="email" required placeholder="toi@exemple.fr">
+      </label>
+      <label>MOT DE PASSE
+        <input name="password" type="password" autocomplete="new-password" minlength="8" required placeholder="8 caractères minimum">
+      </label>
+      <fieldset class="avatar-fieldset">
+        <legend>CHOISIS TON FOOTIX</legend>
+        <div class="avatar-picker" id="avatar-picker"></div>
+      </fieldset>
+      <label class="consent-row">
+        <input name="consent" type="checkbox" required>
+        <span>J'accepte le <a href="reglement.html">règlement</a> et la <a href="confidentialite.html">politique de confidentialité</a>.</span>
+      </label>
+      <button class="community-cta" type="submit">CRÉER MON COMPTE</button>
+      <p class="auth-help">Un email de confirmation te sera envoyé. Ton compte devient actif après validation de ton adresse.</p>
+    </form>
+
+    <form class="auth-form is-hidden" id="login-form">
+      <label>EMAIL
+        <input name="email" type="email" autocomplete="email" required placeholder="toi@exemple.fr">
+      </label>
+      <label>MOT DE PASSE
+        <input name="password" type="password" autocomplete="current-password" required>
+      </label>
+      <button class="community-cta" type="submit">ME CONNECTER</button>
+      <button class="text-action" id="forgot-password" type="button">Mot de passe oublié ?</button>
+    </form>
+
+    <form class="auth-form is-hidden" id="reset-form">
+      <label>EMAIL
+        <input name="email" type="email" autocomplete="email" required placeholder="toi@exemple.fr">
+      </label>
+      <button class="community-cta" type="submit">ENVOYER LE LIEN</button>
+      <button class="text-action" type="button" data-auth-tab="login">Retour à la connexion</button>
+    </form>
+    <div class="auth-message" id="auth-message" role="status"></div>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
+<script src="auth-community.js?v=9.0.0"></script>
+
 </body>
 </html>
