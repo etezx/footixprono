@@ -2,8 +2,8 @@ name: Mettre à jour les résultats
 
 on:
   schedule:
-    # Détection toutes les 5 min. Si un match L1 ou LDC est en live,
-    # le job effectue ensuite 2 rafraîchissements supplémentaires à 2 min d'intervalle.
+    # GitHub autorise au minimum un déclenchement toutes les 5 minutes.
+    # On évite les minutes rondes, souvent plus chargées.
     - cron: '2-59/5 * * * *'
   workflow_dispatch:
   repository_dispatch:
@@ -19,7 +19,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 10
 
     steps:
       - name: Récupérer le dépôt
@@ -32,33 +32,59 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Vérifier la clé BSD
+        env:
+          BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+        shell: bash
+        run: |
+          if [ -z "$BSD_API_KEY" ]; then
+            echo "ERREUR : le secret BSD_API_KEY est absent."
+            exit 1
+          fi
+
       - name: Rafraîchir Footix et accélérer pendant le live
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
         shell: bash
         run: |
-          set -e
+          set -euo pipefail
+
+          git config user.name "footix-prono-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          sync_before_refresh () {
+            # Toujours se remettre sur la dernière version distante AVANT de modifier les JSON.
+            # Cela évite le pull --rebase sur un arbre de travail déjà modifié.
+            git fetch origin main
+            git reset --hard origin/main
+          }
 
           refresh_data () {
+            sync_before_refresh
+
             python update_results.py
             python generate_review.py
 
-            git config user.name "footix-prono-bot"
-            git config user.email "actions@users.noreply.github.com"
-
-            # Si une autre action a écrit juste avant nous, on récupère proprement.
-            git pull --rebase origin main || true
-
             git add schedule.json pronos.json live-results.json bsd-standings.json
 
-            if ! git diff --cached --quiet; then
-              git commit -m "Mise à jour résultats live Footix"
-              git push origin main
+            if git diff --cached --quiet; then
+              echo "Aucun changement de données à publier."
+              return 0
+            fi
+
+            git commit -m "Mise à jour résultats live Footix"
+
+            # En cas de changement distant très récent, un seul retry propre.
+            if ! git push origin HEAD:main; then
+              echo "Le dépôt a changé pendant le rafraîchissement : nouvelle tentative."
+              git fetch origin main
+              git rebase origin/main
+              git push origin HEAD:main
             fi
           }
 
           is_live () {
-            python - <<'PY'
+            python - <<'PYLIVE'
           import json
           from pathlib import Path
 
@@ -68,36 +94,39 @@ jobs:
               print("false")
               raise SystemExit
 
-          # Ligue 1 = BSD 6 ; Ligue des Champions = BSD 7
-          live = any(
-              bool(e.get("live"))
-              and not bool(e.get("completed"))
-              and int(e.get("leagueId") or 0) in (6, 7)
-              for e in (data.get("events") or [])
-          )
+          events = data.get("events") or []
+          live = False
+          for e in events:
+              try:
+                  league_id = int(e.get("leagueId") or 0)
+              except Exception:
+                  league_id = 0
+              if league_id in (6, 7) and bool(e.get("live")) and not bool(e.get("completed")):
+                  live = True
+                  break
+
           print("true" if live else "false")
-          PY
+          PYLIVE
           }
 
-          # Rafraîchissement normal.
+          # 1er passage immédiatement.
           refresh_data
 
-          # Hors match : on s'arrête ici. Le prochain contrôle sera dans ~5 min.
           if [ "$(is_live)" != "true" ]; then
-            echo "Aucun match Ligue 1 / LDC en direct : fréquence normale."
+            echo "Aucun match Ligue 1 / LDC en direct : prochain contrôle programmé dans ~5 min."
             exit 0
           fi
 
-          echo "Match en direct détecté : passage en mode LIVE ~2 minutes."
+          echo "Match L1/LDC en direct : mode LIVE renforcé."
 
-          # Deux passages supplémentaires : environ +2 min puis +4 min.
-          # Le prochain cron prend ensuite le relais vers +5 min.
-          for pass in 1 2; do
-            sleep 120
+          # Pendant un match : trois passages supplémentaires toutes les 90 secondes.
+          # Soit environ 0:00 / 1:30 / 3:00 / 4:30, avant le cron suivant.
+          for pass in 1 2 3; do
+            sleep 90
             refresh_data
 
             if [ "$(is_live)" != "true" ]; then
-              echo "Plus aucun match en direct : retour à la fréquence normale."
+              echo "Plus aucun match L1/LDC en direct : arrêt du mode accéléré."
               break
             fi
           done

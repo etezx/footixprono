@@ -2,7 +2,7 @@ name: Surveillance du live Footix
 
 on:
   schedule:
-    # Filet de sécurité si le cron principal GitHub prend du retard.
+    # Filet de sécurité décalé par rapport au workflow principal.
     - cron: '4-59/10 * * * *'
   workflow_dispatch:
 
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   watchdog:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 6
 
     steps:
       - name: Récupérer le dépôt
@@ -40,6 +40,7 @@ jobs:
 
           stale = True
           age_minutes = None
+          live = False
 
           try:
               data = json.loads(Path("live-results.json").read_text(encoding="utf-8"))
@@ -47,11 +48,26 @@ jobs:
               if stamp:
                   dt = datetime.fromisoformat(stamp.replace("Z", "+00:00"))
                   age_minutes = (datetime.now(timezone.utc) - dt.astimezone(timezone.utc)).total_seconds() / 60
-                  stale = age_minutes > 12
+
+              for e in data.get("events") or []:
+                  try:
+                      league_id = int(e.get("leagueId") or 0)
+                  except Exception:
+                      league_id = 0
+                  if league_id in (6, 7) and bool(e.get("live")) and not bool(e.get("completed")):
+                      live = True
+                      break
+
+              # Plus strict pendant un live : 7 minutes max.
+              limit = 7 if live else 12
+              stale = age_minutes is None or age_minutes > limit
           except Exception as exc:
               print(f"Lecture live-results impossible: {exc}")
 
           print(f"Âge des données: {age_minutes:.1f} min" if age_minutes is not None else "Âge des données: inconnu")
+          print(f"Match L1/LDC live détecté: {live}")
+          print(f"Données considérées anciennes: {stale}")
+
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
               f.write(f"stale={'true' if stale else 'false'}\n")
           PY
@@ -60,14 +76,26 @@ jobs:
         if: steps.stale.outputs.stale == 'true'
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+        shell: bash
         run: |
-          python update_results.py
-          python generate_review.py
+          set -euo pipefail
+
+          if [ -z "$BSD_API_KEY" ]; then
+            echo "ERREUR : le secret BSD_API_KEY est absent."
+            exit 1
+          fi
 
           git config user.name "footix-prono-watchdog"
           git config user.email "actions@users.noreply.github.com"
-          git pull --rebase origin main || true
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          python update_results.py
+          python generate_review.py
+
           git add schedule.json pronos.json live-results.json bsd-standings.json
           git diff --cached --quiet && exit 0
+
           git commit -m "Rattrapage automatique du live Footix"
-          git push origin main
+          git push origin HEAD:main
