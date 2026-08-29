@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-08-29T05:41:49Z",
+  "generatedAt": "2026-08-29T11:47:09Z",
   "events": [
     {
       "eventId": 210448,
@@ -15,7 +15,7 @@
       "period": "FT",
       "homeScore": 2,
       "awayScore": 2,
-      "updatedAt": "2026-08-29T05:41:49Z",
+      "updatedAt": "2026-08-29T11:47:09Z",
       "actualScorers": [
         "Marquinhos",
         "Vitinha",
@@ -35,7 +35,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T05:41:49Z"
+      "updatedAt": "2026-08-29T11:47:09Z"
     },
     {
       "eventId": 210447,
@@ -47,7 +47,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T05:41:49Z"
+      "updatedAt": "2026-08-29T11:47:09Z"
     },
     {
       "eventId": 210449,
@@ -59,7 +59,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T05:41:49Z"
+      "updatedAt": "2026-08-29T11:47:09Z"
     },
     {
       "eventId": 210450,
@@ -71,7 +71,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T05:41:49Z"
+      "updatedAt": "2026-08-29T11:47:09Z"
     },
     {
       "eventId": 210453,
@@ -83,7 +83,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T05:41:49Z"
+      "updatedAt": "2026-08-29T11:47:09Z"
     },
     {
       "eventId": 210451,
@@ -95,7 +95,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T05:41:49Z"
+      "updatedAt": "2026-08-29T11:47:09Z"
     },
     {
       "eventId": 210454,
@@ -107,7 +107,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T05:41:49Z"
+      "updatedAt": "2026-08-29T11:47:09Z"
     },
     {
       "eventId": 210446,
@@ -119,7 +119,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T05:41:49Z"
+      "updatedAt": "2026-08-29T11:47:09Z"
     }
   ]
 }

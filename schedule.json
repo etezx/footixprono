@@ -134,10 +134,10 @@
           "official": true,
           "completed": false,
           "eventId": 210447,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T05:41:49Z"
+          "lastLiveUpdate": "2026-08-29T11:47:09Z"
         }
       ],
       [
@@ -161,7 +161,7 @@
           "official": true,
           "completed": true,
           "eventId": 210448,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "homeScore": 2,
           "awayScore": 2,
           "actualScorers": [
@@ -174,7 +174,7 @@
           "live": false,
           "period": "FT",
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T05:41:49Z"
+          "lastLiveUpdate": "2026-08-29T11:47:09Z"
         }
       ],
       [
@@ -186,10 +186,10 @@
           "official": true,
           "completed": false,
           "eventId": 210449,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T05:41:49Z"
+          "lastLiveUpdate": "2026-08-29T11:47:09Z"
         }
       ],
       [
@@ -201,10 +201,10 @@
           "official": true,
           "completed": false,
           "eventId": 210450,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T05:41:49Z"
+          "lastLiveUpdate": "2026-08-29T11:47:09Z"
         }
       ],
       [
@@ -216,10 +216,10 @@
           "official": true,
           "completed": false,
           "eventId": 210446,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T05:41:49Z"
+          "lastLiveUpdate": "2026-08-29T11:47:09Z"
         }
       ],
       [
@@ -231,10 +231,10 @@
           "official": true,
           "completed": false,
           "eventId": 210451,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T05:41:49Z"
+          "lastLiveUpdate": "2026-08-29T11:47:09Z"
         }
       ],
       [
