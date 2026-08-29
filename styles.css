@@ -2867,3 +2867,47 @@ body.modal-open{overflow:hidden}
 .vote-card-bottom{padding-top:8px;color:#748ba6;font-size:9px;font-weight:900}.vote-card-bottom>b{color:#2ce48c}
 .member-verdict{margin-left:auto}.member-verdict.good{color:#2ce48c}.member-verdict.bad{color:#ff7281}
 @media(max-width:700px){.community-vote-summary{grid-template-columns:1fr 1fr}.vote-fixture{grid-template-columns:1fr 55px 1fr}.pick-buttons button small{display:none}}
+
+/* V9.3.5 — navigation par journée */
+.matchday-selector{
+  display:grid;
+  grid-template-columns:36px minmax(120px,190px) 36px;
+  justify-content:center;
+  align-items:center;
+  gap:7px;
+  margin:0 0 12px;
+  padding:9px;
+  border:1px solid #17344f;
+  border-radius:9px;
+  background:#071724;
+}
+.matchday-selector>button{
+  height:34px;
+  border:1px solid #244766;
+  border-radius:7px;
+  background:#091d2d;
+  color:#d9e8f6;
+  font-size:20px;
+  cursor:pointer;
+}
+.matchday-selector>button:disabled{opacity:.25;cursor:default}
+.matchday-selector label{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  align-items:center;
+  gap:8px;
+  color:#7189a4;
+  font-size:8px;
+  font-weight:950;
+}
+.matchday-selector select{
+  width:100%;
+  height:34px;
+  border:1px solid #285170;
+  border-radius:7px;
+  padding:0 9px;
+  background:#091d2d;
+  color:#2ce48c;
+  font-weight:950;
+  outline:none;
+}

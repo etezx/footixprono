@@ -10,7 +10,7 @@
   }
 
   const db=window.supabase.createClient(cfg.url,cfg.key);
-  let comp='L1', user=null, rows=[], myVotes=new Map();
+  let comp='L1', user=null, rows=[], myVotes=new Map(), selectedDay=null;
   const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
   const dt=v=>v?new Intl.DateTimeFormat('fr-FR',{weekday:'short',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}).format(new Date(v)):'Horaire à venir';
 
@@ -45,12 +45,38 @@
 
   function render(){
     if(!rows.length){
-      root.innerHTML='<div class="community-empty"><b>Aucun match dans Supabase pour cette compétition.</b><br><small>La synchronisation des matchs sera l’étape suivante.</small></div>';
+      root.innerHTML='<div class="community-empty"><b>Aucun match dans Supabase pour cette compétition.</b></div>';
       summary(); return;
     }
-    const groups=new Map();
-    rows.forEach(m=>{const k=m.matchday??'—';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(m)});
-    root.innerHTML=[...groups].map(([day,ms])=>`<section class="vote-matchday"><div class="vote-matchday-title"><span>${comp==='L1'?'LIGUE 1':'LIGUE DES CHAMPIONS'}</span><b>J${String(day).padStart(2,'0')}</b></div>${ms.map(card).join('')}</section>`).join('');
+
+    const days=[...new Set(rows.map(m=>m.matchday).filter(v=>v!==null&&v!==undefined))]
+      .sort((a,b)=>Number(a)-Number(b));
+
+    // Par défaut : première journée qui possède encore un match à venir/live.
+    if(selectedDay===null || !days.includes(selectedDay)){
+      const active=rows.find(m=>m.status==='live' || (m.status==='scheduled' && new Date(m.kickoff).getTime()>=Date.now()));
+      selectedDay=active?.matchday ?? days[days.length-1];
+    }
+
+    const shown=rows.filter(m=>m.matchday===selectedDay);
+    const idx=days.indexOf(selectedDay);
+    const prev=idx>0?days[idx-1]:null;
+    const next=idx>=0&&idx<days.length-1?days[idx+1]:null;
+
+    root.innerHTML=`
+      <div class="matchday-selector">
+        <button type="button" data-day-nav="${prev??''}" ${prev===null?'disabled':''}>‹</button>
+        <label>JOURNÉE
+          <select id="matchday-select">
+            ${days.map(d=>`<option value="${d}" ${d===selectedDay?'selected':''}>J${String(d).padStart(2,'0')}</option>`).join('')}
+          </select>
+        </label>
+        <button type="button" data-day-nav="${next??''}" ${next===null?'disabled':''}>›</button>
+      </div>
+      <section class="vote-matchday">
+        <div class="vote-matchday-title"><span>${comp==='L1'?'LIGUE 1':'LIGUE DES CHAMPIONS'}</span><b>J${String(selectedDay).padStart(2,'0')} · ${shown.length} MATCH${shown.length>1?'S':''}</b></div>
+        ${shown.map(card).join('')}
+      </section>`;
     summary();
   }
 
@@ -79,7 +105,11 @@
     const tab=e.target.closest('[data-vote-comp]');
     if(tab){
       $$('.vote-tabs button').forEach(b=>b.classList.remove('active'));
-      tab.classList.add('active'); comp=tab.dataset.voteComp; await load(); return;
+      tab.classList.add('active'); comp=tab.dataset.voteComp; selectedDay=null; await load(); return;
+    }
+    const dayBtn=e.target.closest('[data-day-nav]');
+    if(dayBtn && dayBtn.dataset.dayNav){
+      selectedDay=Number(dayBtn.dataset.dayNav); render(); return;
     }
     const btn=e.target.closest('[data-pick]');
     if(!btn) return;
@@ -88,6 +118,13 @@
     const {error}=await db.rpc('save_my_prediction',{p_match_id:id,p_pick:btn.dataset.pick});
     if(error){alert(error.message);return}
     await load();
+  });
+
+  document.addEventListener('change',e=>{
+    if(e.target.id==='matchday-select'){
+      selectedDay=Number(e.target.value);
+      render();
+    }
   });
 
   (async()=>{await getUser();await load()})();
