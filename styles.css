@@ -2911,3 +2911,51 @@ body.modal-open{overflow:hidden}
   font-weight:950;
   outline:none;
 }
+
+/* V9.3.6 — bilan de journée et résultats */
+.matchday-points{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:7px;
+  margin:0 0 10px;
+}
+.matchday-points>div{
+  min-height:52px;
+  padding:8px 10px;
+  border:1px solid #173b55;
+  border-radius:8px;
+  background:#081a28;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.matchday-points small{
+  color:#7189a4;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.06em;
+}
+.matchday-points b{
+  margin-top:2px;
+  color:#e9f4ff;
+  font-size:17px;
+}
+.matchday-points>div:last-child b{color:#2ce48c}
+.vote-card-bottom{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:7px 12px;
+}
+.member-result{
+  color:#9eb2c7;
+  font-size:10px;
+  font-weight:900;
+}
+.member-result b{color:#eaf4ff}
+.member-verdict.neutral{
+  color:#8195a8;
+}
+@media(max-width:720px){
+  .matchday-points{grid-template-columns:repeat(2,minmax(0,1fr))}
+}

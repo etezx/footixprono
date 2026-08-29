@@ -32,14 +32,18 @@
 
   function card(m){
     const mine=myVotes.get(Number(m.id)), lock=locked(m), final=m.result_pick;
-    let verdict='';
-    if(mine&&final) verdict=mine===final?'<span class="member-verdict good">✓ BON PRONO · +1 PT</span>':'<span class="member-verdict bad">✕ MAUVAIS PRONO · 0 PT</span>';
+    let verdict='', resultLine='';
+    if(final){
+      resultLine=`<span class="member-result">RÉSULTAT : <b>${final}</b></span>`;
+      if(mine) verdict=mine===final?'<span class="member-verdict good">✓ BON PRONO · +1 PT</span>':'<span class="member-verdict bad">✕ MAUVAIS PRONO · 0 PT</span>';
+      else verdict='<span class="member-verdict neutral">PAS DE PRONO · 0 PT</span>';
+    }
     return `<article class="community-vote-card" data-match="${m.id}">
       <div class="vote-card-top"><span>${dt(m.kickoff)}</span><b class="${lock?'vote-lock':'vote-open'}">${lock?'🔒 VERROUILLÉ':'OUVERT'}</b></div>
       <div class="vote-fixture"><strong>${esc(m.home_team)}</strong><span class="vote-vs">${m.home_score??'—'} <i>–</i> ${m.away_score??'—'}</span><strong>${esc(m.away_team)}</strong></div>
       <div class="pick-buttons">${['1','N','2'].map(p=>`<button type="button" data-pick="${p}" class="${mine===p?'selected':''}" ${lock?'disabled':''}><b>${p}</b><small>${p==='1'?'DOMICILE':p==='N'?'NUL':'EXTÉRIEUR'}</small></button>`).join('')}</div>
       <div class="vote-community-line"><span>COMMUNAUTÉ · ${m.total_votes||0} vote${Number(m.total_votes)===1?'':'s'}</span><div class="vote-percentages"><b>1 ${m.pct_1||0}%</b><b>N ${m.pct_n||0}%</b><b>2 ${m.pct_2||0}%</b></div></div>
-      <div class="vote-card-bottom">${mine?`TON CHOIX : <b>${mine}</b>`:'AUCUN CHOIX'}${verdict}</div>
+      <div class="vote-card-bottom"><span>${mine?`TON CHOIX : <b>${mine}</b>`:'AUCUN CHOIX'}</span>${resultLine}${verdict}</div>
     </article>`;
   }
 
@@ -59,6 +63,9 @@
     }
 
     const shown=rows.filter(m=>m.matchday===selectedDay);
+    const dayFinished=shown.filter(m=>m.result_pick);
+    const dayPlayed=dayFinished.filter(m=>myVotes.has(Number(m.id)));
+    const dayGood=dayPlayed.filter(m=>myVotes.get(Number(m.id))===m.result_pick).length;
     const idx=days.indexOf(selectedDay);
     const prev=idx>0?days[idx-1]:null;
     const next=idx>=0&&idx<days.length-1?days[idx+1]:null;
@@ -75,6 +82,12 @@
       </div>
       <section class="vote-matchday">
         <div class="vote-matchday-title"><span>${comp==='L1'?'LIGUE 1':'LIGUE DES CHAMPIONS'}</span><b>J${String(selectedDay).padStart(2,'0')} · ${shown.length} MATCH${shown.length>1?'S':''}</b></div>
+        <div class="matchday-points">
+          <div><small>TERMINÉS</small><b>${dayFinished.length}/${shown.length}</b></div>
+          <div><small>TES PRONOS JOUÉS</small><b>${dayPlayed.length}</b></div>
+          <div><small>BONS PRONOS</small><b>${dayGood}</b></div>
+          <div><small>POINTS JOURNÉE</small><b>${dayGood} pt${dayGood>1?'s':''}</b></div>
+        </div>
         ${shown.map(card).join('')}
       </section>`;
     summary();

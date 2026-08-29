@@ -57,6 +57,49 @@ def season_window():
     start_year = now.year if now.month >= 7 else now.year - 1
     return f"{start_year}-07-01", f"{start_year+1}-06-30"
 
+def season_start_year():
+    now = datetime.now(timezone.utc)
+    return now.year if now.month >= 7 else now.year - 1
+
+def ucl_main_phase_cutoff():
+    # Footix Prono : phase principale uniquement.
+    # Les tours de qualification/barrages de juillet-août sont exclus.
+    return datetime(season_start_year(), 9, 1, tzinfo=timezone.utc)
+
+def parse_event_datetime(value):
+    if not value:
+        return None
+    text=str(value).strip()
+    try:
+        if text.endswith("Z"):
+            text=text[:-1] + "+00:00"
+        dt=datetime.fromisoformat(text)
+        if dt.tzinfo is None:
+            dt=dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except ValueError:
+        return None
+
+def keep_for_community(event, competition):
+    if competition != "UCL":
+        return True
+    kickoff=parse_event_datetime(kickoff_value(event))
+    return bool(kickoff and kickoff >= ucl_main_phase_cutoff())
+
+def supabase_cleanup_ucl_qualifiers():
+    cutoff=ucl_main_phase_cutoff().isoformat()
+    headers={
+        "apikey": SUPABASE_SERVICE_ROLE_KEY,
+        "Authorization": f"Bearer {SUPABASE_SERVICE_ROLE_KEY}",
+        "Prefer": "return=minimal",
+    }
+    params=urllib.parse.urlencode({
+        "competition": "eq.UCL",
+        "kickoff": f"lt.{cutoff}",
+    })
+    request_json(f"{SUPABASE_URL}/rest/v1/matches?{params}", headers=headers, method="DELETE")
+    print(f"UCL: qualifications avant {cutoff[:10]} supprimées de Supabase.")
+
 def fetch_all_events(league_id: int):
     date_from, date_to = season_window()
     headers={"Authorization": f"Token {BSD_API_KEY}", "Accept": "application/json"}
@@ -287,13 +330,19 @@ def main():
     if not SUPABASE_SERVICE_ROLE_KEY:
         die("SUPABASE_SERVICE_ROLE_KEY absent.")
 
+    supabase_cleanup_ucl_qualifiers()
+
     total=0
     for league_id,competition in LEAGUES.items():
         events=fetch_all_events(league_id)
         rows=[]
         skipped=0
+        excluded_qualifiers=0
         first_skipped=None
         for e in events:
+            if not keep_for_community(e, competition):
+                excluded_qualifiers += 1
+                continue
             row=normalize(e,competition)
             if row:
                 rows.append(row)
@@ -303,7 +352,8 @@ def main():
                     first_skipped=diagnostic(e)
         supabase_upsert(rows)
         total += len(rows)
-        print(f"{competition}: {len(rows)} match(s) synchronisé(s), {skipped} ignoré(s).")
+        extra=f", {excluded_qualifiers} qualification(s) exclue(s)" if competition=="UCL" else ""
+        print(f"{competition}: {len(rows)} match(s) synchronisé(s), {skipped} ignoré(s){extra}.")
         if first_skipped is not None:
             print(f"{competition} diagnostic premier ignoré: {json.dumps(first_skipped, ensure_ascii=False)}")
 
