@@ -4327,3 +4327,120 @@ body:has(.monthly-ranking-main){
 .page-votes-v940 .votes-comp-switch>span{
   color:#86a7c8!important;
 }
+
+/* V9.9.3 — alignement KPI + encart information 100% bleu */
+.page-votes-v940 .votes-summary-row,
+.page-votes-v940 .votes-summary-grid,
+.page-votes-v940 .votes-summary{
+  align-items:stretch!important;
+}
+
+/* Les trois KPI ont exactement la même structure et hauteur */
+.page-votes-v940 .votes-kpis{
+  align-items:stretch!important;
+}
+.page-votes-v940 .votes-kpi-card{
+  min-height:82px!important;
+  height:100%!important;
+  grid-template-columns:40px minmax(0,1fr)!important;
+  align-items:center!important;
+  padding:12px 14px!important;
+}
+.page-votes-v940 .votes-kpi-card .kpi-ico{
+  margin:0!important;
+  align-self:center!important;
+}
+.page-votes-v940 .votes-kpi-card .kpi-copy{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto!important;
+  grid-template-rows:auto auto!important;
+  align-items:center!important;
+  row-gap:4px!important;
+  min-height:42px!important;
+}
+.page-votes-v940 .votes-kpi-card .kpi-copy small{
+  grid-column:1!important;
+  grid-row:1!important;
+  align-self:end!important;
+  margin:0!important;
+  line-height:1.15!important;
+}
+.page-votes-v940 .votes-kpi-card .kpi-copy b{
+  grid-column:2!important;
+  grid-row:1 / span 2!important;
+  align-self:center!important;
+  margin:0!important;
+  min-width:42px!important;
+  text-align:right!important;
+  line-height:1!important;
+}
+.page-votes-v940 .votes-kpi-card .kpi-copy em{
+  grid-column:1!important;
+  grid-row:2!important;
+  align-self:start!important;
+  margin:0!important;
+  min-height:8px!important;
+  line-height:1.1!important;
+}
+/* Réserve la même seconde ligne sur les 2 premiers KPI */
+.page-votes-v940 .votes-kpi-card:not(.points) .kpi-copy:after{
+  content:" ";
+  grid-column:1!important;
+  grid-row:2!important;
+  min-height:8px!important;
+}
+
+/* Encart info : aucune case blanche */
+.page-votes-v940 .votes-points-info,
+.page-votes-v940 .points-info,
+.page-votes-v940 .points-help,
+.page-votes-v940 .votes-explainer,
+.page-votes-v940 .votes-summary-note,
+.page-votes-v940 .votes-info,
+.page-votes-v940 .votes-help,
+.page-votes-v940 .votes-rule-note,
+.page-votes-v940 .premium-info,
+.page-votes-v940 [class*="info-card"],
+.page-votes-v940 [class*="rule-card"]{
+  background:#0b2b54!important;
+  border:1px solid #2b5f94!important;
+  color:#a9c8e6!important;
+  box-shadow:none!important;
+}
+.page-votes-v940 .votes-points-info *,
+.page-votes-v940 .points-info *,
+.page-votes-v940 .points-help *,
+.page-votes-v940 .votes-explainer *,
+.page-votes-v940 .votes-summary-note *,
+.page-votes-v940 .votes-info *,
+.page-votes-v940 .votes-help *,
+.page-votes-v940 .votes-rule-note *,
+.page-votes-v940 .premium-info *,
+.page-votes-v940 [class*="info-card"] *,
+.page-votes-v940 [class*="rule-card"] *{
+  color:inherit!important;
+}
+.page-votes-v940 .votes-points-info strong,
+.page-votes-v940 .points-info strong,
+.page-votes-v940 .points-help strong,
+.page-votes-v940 .votes-explainer strong,
+.page-votes-v940 .votes-summary-note strong{
+  color:#eef7ff!important;
+}
+.page-votes-v940 .votes-points-info .info-icon,
+.page-votes-v940 .points-info .info-icon,
+.page-votes-v940 .votes-explainer .info-icon{
+  color:#73baff!important;
+  border-color:#3c79b5!important;
+  background:#103866!important;
+}
+
+@media(max-width:650px){
+  .page-votes-v940 .votes-kpi-card{
+    min-height:62px!important;
+    grid-template-columns:34px minmax(0,1fr)!important;
+  }
+  .page-votes-v940 .votes-kpi-card .kpi-copy b{
+    min-width:34px!important;
+  }
+}
