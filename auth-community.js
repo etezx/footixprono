@@ -82,8 +82,18 @@
     });
     if (logged) {
       await upsertPendingConsent();
+      currentUserIsAdmin = await checkAdmin(session.user.id);
+      document.body.classList.toggle('footix-admin', currentUserIsAdmin);
       const {data:p} = await db.from('profiles').select('username').eq('id',session.user.id).maybeSingle();
       $$('.account-label').forEach(el => el.textContent = p?.username ? p.username.toUpperCase() : 'MON PROFIL');
+      $$('.admin-account-chip').forEach(el => el.remove());
+      if (currentUserIsAdmin) {
+        $$('.account-link').forEach(el => el.insertAdjacentHTML('afterend','<span class="admin-account-chip">ADMIN</span>'));
+      }
+    } else {
+      currentUserIsAdmin = false;
+      document.body.classList.remove('footix-admin');
+      $$('.admin-account-chip').forEach(el => el.remove());
     }
   }
 
@@ -98,9 +108,20 @@
     $('#profile-login')?.classList.add('is-hidden');
     const form = $('#profile-form');
     if (form && p) {
-      form.username.value = p.username || ''; form.bio.value = p.bio || '';
-      form.username.disabled = false; form.bio.disabled = false; form.querySelector('button[type=submit]').disabled = false;
-      const radio = form.querySelector(`input[value="${CSS.escape(p.avatar_slug)}"]`); if (radio) radio.checked = true;
+      form.username.value = p.username || '';
+      form.bio.value = p.bio || '';
+      form.username.disabled = false;
+      form.bio.disabled = false;
+      form.querySelectorAll('input[type="radio"]').forEach(r => r.disabled = false);
+      const saveBtn=form.querySelector('button[type=submit]');
+      if(saveBtn) saveBtn.disabled = false;
+      const radio = form.querySelector(`input[value="${CSS.escape(p.avatar_slug)}"]`);
+      if (radio) radio.checked = true;
+    }
+    const isAdmin = await checkAdmin(user.id);
+    const title = $('#profile-username');
+    if (title && isAdmin && !title.querySelector('.admin-badge')) {
+      title.insertAdjacentHTML('beforeend',' <span class="admin-badge profile-admin-badge">ADMIN</span>');
     }
     const av = $('#profile-avatar');
     if (av && p?.avatar_slug) { av.className = `profile-avatar avatar-orb avatar-${p.avatar_slug}`; const im=av.querySelector('img'); if(im) im.src=`avatars/${p.avatar_slug}.jpg`; }
@@ -140,6 +161,36 @@
     }).join('');
   }
   function escapeHtml(v='') { return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c])); }
+
+  let currentUserIsAdmin = false;
+
+  async function checkAdmin(userId) {
+    if (!userId) return false;
+    const {data,error} = await db.rpc('is_profile_admin',{p_user_id:userId});
+    if (!error) return !!data;
+    const fallback = await db.rpc('is_admin',{check_user:userId});
+    return !fallback.error && !!fallback.data;
+  }
+
+  async function adminMapFor(ids=[]) {
+    const unique=[...new Set(ids.filter(Boolean))];
+    const pairs=await Promise.all(unique.map(async id=>[id,await checkAdmin(id)]));
+    return new Map(pairs);
+  }
+
+  function adminBadge(isAdmin) {
+    return isAdmin ? '<span class="admin-badge">ADMIN · FOOTIX PRONO</span>' : '';
+  }
+
+  function adminControls(post) {
+    if (!currentUserIsAdmin) return '';
+    const hidden = post.status && post.status !== 'visible';
+    return `<div class="admin-post-actions">
+      <button type="button" class="admin-pin-post">${post.pinned ? 'DÉSÉPINGLER' : 'ÉPINGLER'}</button>
+      <button type="button" class="admin-toggle-post">${hidden ? 'RÉTABLIR' : 'MASQUER'}</button>
+    </div>`;
+  }
+
 
   document.addEventListener('click', async e => {
     if (e.target.closest('.signup-trigger')) openAuth('signup');
@@ -182,12 +233,46 @@
 
   $('#profile-form')?.addEventListener('submit', async e => {
     e.preventDefault();
-    const {data:{user}}=await db.auth.getUser(); if(!user) return openAuth('login');
-    const f=new FormData(e.currentTarget);
-    const avatar_slug=f.get('avatar_slug_profile') || 'footix-classique';
-    const {error}=await db.from('profiles').update({username:(f.get('username')||'').toString().trim(),bio:(f.get('bio')||'').toString().trim()||null,avatar_slug}).eq('id',user.id);
-    alert(error?normalizeError(error):'Profil enregistré.');
-    if(!error) { await refreshAuthUI(); await loadProfile(); }
+    const form=e.currentTarget;
+    const saveBtn=form.querySelector('button[type=submit]');
+    const status=$('#profile-save-status');
+    const {data:{user}}=await db.auth.getUser();
+    if(!user) return openAuth('login');
+
+    const f=new FormData(form);
+    const username=(f.get('username')||'').toString().trim();
+    const bio=(f.get('bio')||'').toString().trim();
+    const selected=form.querySelector('input[name="avatar_slug_profile"]:checked');
+    const avatar_slug=selected?.value || 'footix-classique';
+
+    if(saveBtn){ saveBtn.disabled=true; saveBtn.textContent='ENREGISTREMENT…'; }
+    if(status){ status.textContent=''; status.className='profile-save-status'; }
+
+    let {error}=await db.rpc('update_my_profile',{
+      p_username:username,
+      p_avatar_slug:avatar_slug,
+      p_bio:bio || null
+    });
+
+    // Compatibilité temporaire si le SQL V9.2.0 n'a pas encore été lancé.
+    if(error && /function|schema cache|PGRST202/i.test(error.message||'')){
+      const fallback=await db.from('profiles')
+        .update({username,bio:bio||null,avatar_slug})
+        .eq('id',user.id);
+      error=fallback.error;
+    }
+
+    if(saveBtn){ saveBtn.disabled=false; saveBtn.textContent='ENREGISTRER'; }
+
+    if(error){
+      if(status){ status.textContent=normalizeError(error); status.className='profile-save-status error'; }
+      else alert(normalizeError(error));
+      return;
+    }
+
+    if(status){ status.textContent='✓ Profil enregistré'; status.className='profile-save-status success'; }
+    await refreshAuthUI();
+    await loadProfile();
   });
 
   db.auth.onAuthStateChange(()=>setTimeout(()=>{refreshAuthUI();loadProfile();},0));
@@ -213,7 +298,7 @@
     const root=$('#community-feed'); if(!root) return;
     root.innerHTML='<div class="community-empty">Chargement des messages…</div>';
     const {data:posts,error}=await db.from('community_posts')
-      .select('id,author_id,category,parent_id,body,pinned,created_at')
+      .select('id,author_id,category,parent_id,body,pinned,status,created_at')
       .eq('category',communityCategory).is('parent_id',null)
       .order('pinned',{ascending:false}).order('created_at',{ascending:false}).limit(60);
     if(error){root.innerHTML='<div class="community-empty">Impossible de charger les messages pour le moment.</div>';return;}
@@ -221,27 +306,35 @@
     const ids=[...new Set(posts.map(p=>p.author_id))];
     const {data:profiles}=await db.from('profiles').select('id,username,avatar_slug').in('id',ids);
     const pm=new Map((profiles||[]).map(p=>[p.id,p]));
+    const admins=await adminMapFor(ids);
     root.innerHTML=posts.map(p=>{
       const u=pm.get(p.author_id)||{username:'Membre Footix',avatar_slug:'footix-classique'};
       const d=new Intl.DateTimeFormat('fr-FR',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}).format(new Date(p.created_at));
-      return `<article class="community-post" data-post-id="${p.id}">
+      const moderation=adminControls(p);
+      const state=p.status && p.status!=='visible' ? `<span class="moderation-state">${p.status.toUpperCase()}</span>` : '';
+      return `<article class="community-post ${p.status && p.status!=='visible'?'post-moderated':''}" data-post-id="${p.id}" data-pinned="${p.pinned?'1':'0'}" data-status="${p.status||'visible'}">
         <img class="post-avatar" src="avatars/${u.avatar_slug}.jpg" alt="">
-        <div class="post-content"><div class="post-meta"><b>${escapeHtml(u.username)}</b>${p.pinned?'<span class="pinned-badge">ÉPINGLÉ</span>':''}<small>${d}</small></div>
+        <div class="post-content"><div class="post-meta"><b>${escapeHtml(u.username)}</b>${adminBadge(admins.get(p.author_id))}${p.pinned?'<span class="pinned-badge">ÉPINGLÉ</span>':''}${state}<small>${d}</small></div>
         <p>${escapeHtml(p.body).replace(/\n/g,'<br>')}</p>
-        <div class="post-actions"><button type="button" class="reply-post">↩ Répondre</button><button type="button" class="report-post">⚑ Signaler</button></div>
-        <form class="reply-form is-hidden"><textarea maxlength="1500" rows="2" placeholder="Ta réponse…"></textarea><button class="community-cta compact" type="submit">RÉPONDRE</button></form>
+        <div class="post-actions"><button type="button" class="reply-post">↩ Répondre</button><button type="button" class="report-post">⚑ Signaler</button>${moderation}</div>
+        <form class="reply-form is-hidden"><textarea maxlength="1500" rows="2" placeholder="Ta réponse…"></textarea><button class="community-cta compact" type="submit">${currentUserIsAdmin?'RÉPONDRE EN ADMIN':'RÉPONDRE'}</button></form>
         <div class="replies" data-replies="${p.id}"></div></div></article>`;
     }).join('');
     for(const p of posts) loadReplies(p.id);
   }
   async function loadReplies(parentId){
     const box=document.querySelector(`[data-replies="${parentId}"]`); if(!box) return;
-    const {data:rows}=await db.from('community_posts').select('id,author_id,body,created_at').eq('parent_id',parentId).order('created_at');
+    const {data:rows}=await db.from('community_posts').select('id,author_id,body,status,pinned,created_at').eq('parent_id',parentId).order('created_at');
     if(!rows?.length){box.innerHTML='';return;}
     const ids=[...new Set(rows.map(p=>p.author_id))];
     const {data:profiles}=await db.from('profiles').select('id,username,avatar_slug').in('id',ids);
     const pm=new Map((profiles||[]).map(p=>[p.id,p]));
-    box.innerHTML=rows.map(p=>{const u=pm.get(p.author_id)||{username:'Membre Footix',avatar_slug:'footix-classique'};return `<div class="community-reply"><img src="avatars/${u.avatar_slug}.jpg" alt=""><div><b>${escapeHtml(u.username)}</b><p>${escapeHtml(p.body).replace(/\n/g,'<br>')}</p></div></div>`}).join('');
+    const admins=await adminMapFor(ids);
+    box.innerHTML=rows.map(p=>{
+      const u=pm.get(p.author_id)||{username:'Membre Footix',avatar_slug:'footix-classique'};
+      const controls=currentUserIsAdmin ? `<span class="reply-admin-controls"><button type="button" class="admin-hide-reply" data-reply-id="${p.id}">${p.status!=='visible'?'RÉTABLIR':'MASQUER'}</button></span>` : '';
+      return `<div class="community-reply ${p.status!=='visible'?'post-moderated':''}" data-reply-status="${p.status||'visible'}"><img src="avatars/${u.avatar_slug}.jpg" alt=""><div><b>${escapeHtml(u.username)}</b>${adminBadge(admins.get(p.author_id))}${controls}<p>${escapeHtml(p.body).replace(/\n/g,'<br>')}</p></div></div>`;
+    }).join('');
   }
   function initCommunity(){
     if(!$('#community-feed')) return;
@@ -267,6 +360,26 @@
         const reason=prompt('Pourquoi souhaites-tu signaler ce message ?'); if(!reason?.trim())return;
         const {error}=await db.from('post_reports').insert({post_id:Number(article.dataset.postId),reporter_id:user.id,reason:reason.trim()});
         alert(error?'Signalement déjà envoyé ou impossible.':'Merci. Le signalement a été enregistré.');
+      }
+      if(currentUserIsAdmin && e.target.closest('.admin-pin-post')){
+        const pinned=article.dataset.pinned==='1';
+        const status=article.dataset.status || 'visible';
+        const {error}=await db.rpc('admin_moderate_post',{p_post_id:Number(article.dataset.postId),p_status:status,p_pinned:!pinned});
+        if(error) alert(normalizeError(error)); else loadCommunityFeed();
+      }
+      if(currentUserIsAdmin && e.target.closest('.admin-toggle-post')){
+        const status=article.dataset.status || 'visible';
+        const pinned=article.dataset.pinned==='1';
+        const next=status==='visible'?'hidden':'visible';
+        const {error}=await db.rpc('admin_moderate_post',{p_post_id:Number(article.dataset.postId),p_status:next,p_pinned:pinned});
+        if(error) alert(normalizeError(error)); else loadCommunityFeed();
+      }
+      const replyAdmin=e.target.closest('.admin-hide-reply');
+      if(currentUserIsAdmin && replyAdmin){
+        const row=replyAdmin.closest('.community-reply');
+        const next=(row?.dataset.replyStatus||'visible')==='visible'?'hidden':'visible';
+        const {error}=await db.rpc('admin_moderate_post',{p_post_id:Number(replyAdmin.dataset.replyId),p_status:next,p_pinned:false});
+        if(error) alert(normalizeError(error)); else loadReplies(Number(article.dataset.postId));
       }
     });
     document.addEventListener('submit',async e=>{

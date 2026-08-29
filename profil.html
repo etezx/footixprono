@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#07101f">
 <title>Mon profil — Footix Prono</title>
 <meta name="description" content="Profil membre Footix Prono.">
-<link rel="stylesheet" href="styles.css?v=9.1.7">
+<link rel="stylesheet" href="styles.css?v=9.2.0">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
 <body>
@@ -64,7 +64,7 @@
       <label>PSEUDO<input name="username" minlength="3" maxlength="20" disabled></label>
       <label>BIO<textarea name="bio" maxlength="180" rows="3" disabled placeholder="Une petite phrase sur ton style de pronostiqueur…"></textarea></label>
       <fieldset class="avatar-fieldset"><legend>MON AVATAR</legend><div class="avatar-picker" id="profile-avatar-picker"></div></fieldset>
-      <button class="community-cta" type="submit" disabled>ENREGISTRER</button>
+      <button class="community-cta" type="submit" disabled>ENREGISTRER</button><div id="profile-save-status" class="profile-save-status" role="status"></div>
     </form>
   </article>
   <article class="profile-panel eligibility-panel">
@@ -143,6 +143,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
-<script src="auth-community.js?v=9.1.4"></script>
+<script src="auth-community.js?v=9.2.0"></script>
 
 </body></html>
