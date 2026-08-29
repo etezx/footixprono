@@ -1103,3 +1103,261 @@ body.prono-panel-open{overflow:hidden}
     width:32px;height:32px;flex-basis:32px;
   }
 }
+
+
+/* === V8.6.5 — Broadcast football === */
+
+/* Menu compétitions : emblèmes propres, contenus entièrement dans leur zone */
+.comp-mark{
+  width:34px;
+  height:34px;
+  flex:0 0 34px;
+  overflow:hidden;
+}
+.comp-mark.l1-mark{
+  border:0!important;
+  border-radius:5px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:#91ff23!important;
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif;
+  font-size:26px!important;
+  line-height:1;
+  font-weight:900!important;
+  font-style:italic;
+  letter-spacing:-.08em!important;
+}
+.comp-mark.ucl-mark{
+  position:relative;
+  border:0!important;
+  border-radius:50%!important;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 36%, rgba(137,196,255,.18) 37% 42%, transparent 43%),
+    #07182e!important;
+  box-shadow:none!important;
+}
+.comp-mark.ucl-mark::before{
+  content:"✦ ✧";
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  color:#e9f4ff;
+  font-size:12px;
+  letter-spacing:-2px;
+  transform:none!important;
+  text-shadow:0 0 7px rgba(91,170,255,.35);
+}
+
+/* Titre principal plus proche d'un habillage TV football */
+.matches-panel>.panel-head{
+  min-height:58px;
+  height:auto;
+  padding:0 18px;
+}
+.matches-panel>.panel-head h2{
+  position:relative;
+  padding-left:14px;
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif;
+  font-size:22px;
+  font-style:italic;
+  font-weight:800;
+  letter-spacing:.015em;
+  color:#f5f8fc;
+}
+.matches-panel>.panel-head h2::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:2px;
+  bottom:2px;
+  width:4px;
+  border-radius:3px;
+  background:#83f51b;
+}
+
+/* Cartes : plus nettes, moins "cadres dans des cadres" */
+.live-match-card{
+  border-color:#12395f!important;
+  background:linear-gradient(180deg,#071a31,#06172b)!important;
+  border-radius:12px!important;
+}
+.prono-flow{
+  gap:10px!important;
+  padding:12px!important;
+}
+.prono-flow .flow-step{
+  border-radius:10px!important;
+  min-height:108px;
+  padding:12px 16px!important;
+  background:linear-gradient(180deg,rgba(7,28,52,.96),rgba(6,23,43,.96))!important;
+  border:1px solid #204c74!important;
+  box-shadow:none!important;
+}
+.prono-flow .flow-result{
+  border-color:#2d6797!important;
+}
+.prono-flow .flow-verdict{
+  border-color:#427f2a!important;
+  background:linear-gradient(180deg,#0d321c,#0b2a19)!important;
+}
+
+/* Même dessin de chiffre dans PRONO et RÉSULTAT : aucune différence de fonte/taille */
+.prono-flow .flow-score,
+.prono-flow .flow-prono .flow-score,
+.prono-flow .flow-result .flow-score{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif!important;
+  font-size:42px!important;
+  line-height:.88!important;
+  font-weight:800!important;
+  letter-spacing:-.025em!important;
+  color:#f7f9fc!important;
+  text-shadow:0 1px 0 rgba(255,255,255,.08)!important;
+  min-width:72px!important;
+  font-variant-numeric:tabular-nums;
+}
+.prono-flow.is-live .flow-result .flow-score{
+  color:#ff7889!important;
+}
+
+/* Équipes plus équilibrées autour du score */
+.flow-matchline{
+  max-width:650px!important;
+  grid-template-columns:minmax(125px,1fr) 82px minmax(125px,1fr)!important;
+  gap:14px!important;
+}
+.prono-flow .flow-team{
+  gap:10px!important;
+}
+.prono-flow .flow-team b{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif!important;
+  font-size:18px!important;
+  line-height:1!important;
+  font-weight:800!important;
+  letter-spacing:.015em!important;
+  color:#f1f5fa!important;
+}
+
+/* Logos clubs : aucun cercle imposé, juste le blason dans une boîte invisible */
+.flow-club-logo-wrap{
+  width:42px!important;
+  height:42px!important;
+  flex:0 0 42px!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+}
+.flow-club-logo{
+  display:block;
+  width:40px!important;
+  height:40px!important;
+  max-width:40px!important;
+  max-height:40px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.flow-club-logo-fallback{
+  width:36px!important;
+  height:36px!important;
+  border-radius:8px!important;
+}
+
+/* Libellés uniformes */
+.prono-flow .flow-step small{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif!important;
+  font-size:11px!important;
+  line-height:1!important;
+  font-weight:700!important;
+  letter-spacing:.09em!important;
+  color:#9eb2ca!important;
+}
+.prono-flow .flow-step>span{
+  font-family:Inter,system-ui,sans-serif!important;
+  font-size:10px!important;
+  font-weight:600!important;
+  color:#a7b9cd!important;
+}
+.prono-flow .flow-verdict strong{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif!important;
+  font-size:21px!important;
+  font-weight:800!important;
+  letter-spacing:.01em!important;
+}
+
+/* Buteurs : plus proches du mockup */
+.live-card-bottom{
+  padding:0 12px 12px!important;
+}
+.scorers-zone{
+  min-height:64px!important;
+  padding:10px 14px!important;
+  border-radius:9px!important;
+}
+.scorers-zone>small{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif!important;
+  font-size:12px!important;
+  letter-spacing:.055em!important;
+}
+.scorers-zone .scorer-verdict-list em{
+  font-size:15px!important;
+  min-height:31px!important;
+  padding:5px 11px!important;
+  border-radius:999px!important;
+}
+.scorers-zone .scorer-verdict-list em.ok{
+  color:#a5ff73!important;
+  border-color:#398b2b!important;
+  background:#102e18!important;
+}
+.scorers-zone .scorer-verdict-list em.ko{
+  color:#ff8391!important;
+  border-color:#a83b50!important;
+  background:#2b1220!important;
+}
+
+/* Bouton analyse plus TV/broadcast */
+.analysis-wide{
+  min-width:150px!important;
+  min-height:39px!important;
+  border-radius:9px!important;
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif!important;
+  font-size:14px!important;
+  font-weight:800!important;
+  letter-spacing:.035em!important;
+}
+
+/* Grande marque L1 de la bannière : pas de cercle / pas de débordement */
+.banner-logo.l1-mark{
+  width:auto!important;
+  height:auto!important;
+  min-width:76px;
+  overflow:visible!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  color:#87fa16!important;
+  font-size:66px!important;
+  line-height:.8!important;
+}
+
+/* La fonte de secours reste compacte si Google Fonts n'est pas encore chargée */
+@media(max-width:1100px){
+  .prono-flow .flow-score,
+  .prono-flow .flow-prono .flow-score,
+  .prono-flow .flow-result .flow-score{
+    font-size:36px!important;
+  }
+  .prono-flow .flow-team b{font-size:16px!important}
+  .flow-matchline{
+    grid-template-columns:minmax(100px,1fr) 68px minmax(100px,1fr)!important;
+  }
+  .flow-club-logo-wrap{width:36px!important;height:36px!important;flex-basis:36px!important}
+  .flow-club-logo{width:34px!important;height:34px!important;max-width:34px!important;max-height:34px!important}
+}
