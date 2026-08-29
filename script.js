@@ -4,7 +4,7 @@ const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
 const norm = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
 
 let clubsCache=null;
-async function getJSON(url){ const r=await fetch(url+"?v=8.6.0",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
+async function getJSON(url){ const r=await fetch(url+"?v=8.6.1",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
 async function clubs(){ if(!clubsCache) clubsCache=await getJSON("clubs.json"); return clubsCache; }
 function clubLogo(name, map){
   const entries=Object.entries(map?.clubs||{});
@@ -143,21 +143,21 @@ function verdictData(pick,fixture,home,away){
     why
   };
 }
-function matchFlowHTML({home,away,score,pick,fixture}){
+function matchFlowHTML({home,away,score,pick,fixture,homeLogo="",awayLogo=""}){
   const live=Boolean(fixture?.live&&!fixture?.completed);
   const final=Boolean(fixture?.completed);
   const real=fixtureScore(fixture);
   const verdict=verdictData(pick,fixture,home,away);
   const status=live?`🔴 LIVE${fixture.minute!=null?` ${fixture.minute}’`:""}`:final?"RÉSULTAT":"RÉSULTAT / LIVE";
-  const resultText=real?`${home} ${real} ${away}`:"À venir";
+  const resultScore=real||"—";
+  const teams=`<span class="flow-team home">${homeLogo}<b>${escapeHTML(home)}</b></span><span class="flow-score">${escapeHTML(score||"—")}</span><span class="flow-team away"><b>${escapeHTML(away)}</b>${awayLogo}</span>`;
+  const resultTeams=real?`<span class="flow-team home">${homeLogo}<b>${escapeHTML(home)}</b></span><span class="flow-score">${escapeHTML(resultScore)}</span><span class="flow-team away"><b>${escapeHTML(away)}</b>${awayLogo}</span>`:`<span class="flow-waiting">À venir</span>`;
   return `<div class="prono-flow ${live?"is-live":final?"is-final":"is-upcoming"}">
-    <div class="flow-step flow-prono"><small>PRONO</small><strong>${escapeHTML(home)} ${escapeHTML(score||"—")} ${escapeHTML(away)}</strong><span>${pick?`Choix ${escapeHTML(pick)}`:"Choix —"}</span></div>
+    <div class="flow-step flow-prono"><small>PRONO</small><strong class="flow-matchline">${teams}</strong><span>${pick?`Choix ${escapeHTML(pick)}`:"Choix —"}</span></div>
     <span class="flow-arrow">→</span>
-    <div class="flow-step flow-result"><small>${status}</small><strong>${escapeHTML(resultText)}</strong><span>${live?"Score en cours":final?"Score final":"En attente du coup d’envoi"}</span></div>
+    <div class="flow-step flow-result"><small>${status}</small><strong class="flow-matchline">${resultTeams}</strong><span>${live?"Score en cours":final?"Score final":"En attente du coup d’envoi"}</span></div>
     <span class="flow-arrow">→</span>
     <div class="flow-step flow-verdict ${verdict.state}"><small>VERDICT</small><strong>${escapeHTML(verdict.label)}</strong></div>
-    <span class="flow-arrow">→</span>
-    <div class="flow-step flow-why"><small>POURQUOI</small><strong>${escapeHTML(verdict.why)}</strong></div>
   </div>`;
 }
 function competitionStandings(bsd,leagueId){
@@ -236,7 +236,7 @@ function openPronoPanel(data){
       <div class="prono-detail-meta">${escapeHTML(meta||"Horaire à confirmer")}${live?` <span class="live-mini">LIVE${fixture.minute!=null?` ${fixture.minute}’`:""}</span>`:finished?` <span>TERMINÉ</span>`:""}</div>
     </div>
 
-    ${matchFlowHTML({home,away,score,pick,fixture})}
+    ${matchFlowHTML({home,away,score,pick,fixture,homeLogo,awayLogo})}
 
     <section class="prono-detail-section">
       <div class="prono-detail-section-title">BUTEURS PRONOSTIQUÉS <small>(VALIDATION BSD STRICTE)</small></div>
@@ -397,7 +397,7 @@ async function initLigue1(){
       const pick=normalizePick(p.pick), score=p.score||p.scorePrevu||"—", f=effectiveFixture(m);
       return `<article class="match-row-live ${f.live?"is-live":f.completed?"is-finished":""}">
         <div class="live-card-meta"><span>${escapeHTML(fmtDayMeta(m[2]||{})||"Horaire à confirmer")}</span>${f.live?`<b>🔴 LIVE${f.minute!=null?` ${f.minute}’`:""}</b>`:f.completed?"<b>TERMINÉ</b>":""}</div>
-        ${matchFlowHTML({home:m[0],away:m[1],score,pick,fixture:f})}
+        ${matchFlowHTML({home:m[0],away:m[1],score,pick,fixture:f,homeLogo:clubLogo(m[0],clubmap),awayLogo:clubLogo(m[1],clubmap)})}
         <div class="live-card-bottom"><div class="scorers-zone"><small>BUTEURS PRONOSTIQUÉS</small>${scorerChipsHTML(p,f)}</div><button class="analysis-btn prono-open-btn" type="button" data-prono-index="${i}"><span class="prono-btn-icon">◉</span><span class="prono-btn-label">ANALYSE DU MATCH</span></button></div>
       </article>`;
     }).join("") || `<div class="empty-state">Aucun match disponible.</div>`;
@@ -461,7 +461,7 @@ async function initUCL(){
       const f=fixtureFor(m),pick=normalizePick(m.pick),score=m.score||m.scorePrevu||"—";
       return `<article class="match-row-live ucl-live-card ${f.live?"is-live":f.completed?"is-finished":""}">
         <div class="live-card-meta"><span>${escapeHTML(m.date||"")}${m.date&&m.time?" · ":""}${escapeHTML(m.time||"")}</span>${f.live?`<b>🔴 LIVE${f.minute!=null?` ${f.minute}’`:""}</b>`:f.completed?"<b>TERMINÉ</b>":""}</div>
-        ${matchFlowHTML({home:m.home||"À déterminer",away:m.away||"À déterminer",score,pick,fixture:f})}
+        ${matchFlowHTML({home:m.home||"À déterminer",away:m.away||"À déterminer",score,pick,fixture:f,homeLogo:logoFor(m.home,"flow-club-logo"),awayLogo:logoFor(m.away,"flow-club-logo")})}
         <div class="live-card-bottom"><div class="scorers-zone"><small>BUTEURS PRONOSTIQUÉS</small>${scorerChipsHTML(m,f)}</div><button class="analysis-btn prono-open-btn ucl-analysis-open" type="button" data-ucl-index="${i}"><span class="prono-btn-icon">◉</span><span class="prono-btn-label">ANALYSE DU MATCH</span></button></div>
       </article>`;
     }).join("")}</div>`;

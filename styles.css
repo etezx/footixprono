@@ -950,3 +950,18 @@ body.prono-panel-open{overflow:hidden}
 .ucl-live-card{margin:8px}.live-ucl-list{padding:2px 0 8px}
 @media(max-width:1320px){.prono-flow{grid-template-columns:1fr 18px 1fr 18px 1fr}.flow-why{grid-column:1/-1;margin-top:8px}.prono-flow>.flow-arrow:nth-of-type(3){display:none}}
 @media(max-width:900px){.prono-flow{grid-template-columns:1fr;gap:6px}.flow-arrow{transform:rotate(90deg);height:12px}.flow-why{grid-column:auto;margin-top:0}.live-card-bottom{grid-template-columns:1fr}.flow-step{min-height:62px}.flow-step strong{font-size:10px}}
+
+
+/* === V8.6.1 — Cartes compactes, logos restaurés, buteurs agrandis === */
+.prono-flow{grid-template-columns:minmax(250px,1.15fr) 22px minmax(250px,1.15fr) 22px minmax(170px,.72fr)}
+.flow-why{display:none!important}
+.flow-matchline{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:9px;width:100%}
+.flow-team{display:flex;align-items:center;gap:7px;min-width:0}.flow-team.home{justify-content:flex-end;text-align:right}.flow-team.away{justify-content:flex-start;text-align:left}
+.flow-team b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px}.flow-score{font-size:17px;font-weight:950;color:#f2fff0;white-space:nowrap}.flow-waiting{grid-column:1/-1;color:#a8bacf}
+.flow-team .crest,.flow-team .fake-crest{width:34px;height:34px;flex:0 0 34px}.flow-team .fake-crest{font-size:8px}
+.flow-club-logo-wrap{display:inline-grid;place-items:center;flex:0 0 34px}.flow-club-logo,.flow-club-logo-fallback{width:34px;height:34px}.flow-club-logo{object-fit:contain}.flow-club-logo-fallback{display:none;place-items:center;border-radius:50%;background:#17375c;color:#fff;font-size:8px;font-weight:900}
+.live-card-bottom{grid-template-columns:minmax(0,1fr) 150px;padding:11px 10px 12px}
+.scorers-zone{padding:10px 12px}.scorers-zone>small{font-size:9px;margin-bottom:9px}.scorers-zone .scorer-verdict-list{gap:8px}.scorers-zone .scorer-verdict-list em{min-height:32px;padding:7px 11px;font-size:12px}
+.prono-detail-scorer{min-height:42px;font-size:12px}.prono-detail-scorer>span{width:23px;height:23px}.prono-detail-scorer em{font-size:11px}
+@media(max-width:1320px){.prono-flow{grid-template-columns:1fr 18px 1fr 18px minmax(165px,.72fr)}}
+@media(max-width:900px){.prono-flow{grid-template-columns:1fr;gap:6px}.flow-arrow{transform:rotate(90deg);height:12px}.live-card-bottom{grid-template-columns:1fr}.flow-team .crest,.flow-team .fake-crest,.flow-club-logo-wrap,.flow-club-logo,.flow-club-logo-fallback{width:30px;height:30px;flex-basis:30px}.scorers-zone .scorer-verdict-list em{font-size:11px;min-height:30px}}
