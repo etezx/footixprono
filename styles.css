@@ -2551,3 +2551,113 @@ body.modal-open{overflow:hidden}
     grid-template-columns:repeat(6,minmax(0,1fr))!important;
   }
 }
+
+
+/* ============================================================
+   FOOTIX PRONO V9.1.4 — HEADER / LOGO / AUTH
+   ============================================================ */
+
+/* Logo Footix Prono plus présent et proche du visuel de référence */
+.v912-brand,
+.v91-brand,
+.brand.v912-brand,
+.brand.v91-brand{
+  min-height:118px!important;
+  padding:18px 18px 14px!important;
+  gap:12px!important;
+}
+.v912-brand img,
+.v91-brand img,
+.brand.v912-brand img,
+.brand.v91-brand img{
+  width:72px!important;
+  height:72px!important;
+  object-fit:contain!important;
+  flex:0 0 72px!important;
+}
+.v912-brand div,
+.v91-brand div{
+  display:grid!important;
+  align-content:center!important;
+  line-height:.92!important;
+}
+.v912-brand strong,
+.v91-brand strong{
+  font-size:28px!important;
+  letter-spacing:-.02em!important;
+}
+.v912-brand span,
+.v91-brand span{
+  font-size:22px!important;
+  font-weight:950!important;
+  color:#20e676!important;
+}
+.v912-brand small,
+.v91-brand small{
+  margin-top:8px!important;
+  font-size:8px!important;
+  line-height:1.1!important;
+  letter-spacing:.035em!important;
+  color:#d0d9e5!important;
+  white-space:nowrap!important;
+}
+
+/* Barre compte sobre, comme sur le visuel de référence */
+.v914-auth-nav{
+  margin-left:auto!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:12px!important;
+}
+.v914-auth-nav .top-nav-link{
+  min-height:42px!important;
+  padding:10px 20px!important;
+  border-radius:8px!important;
+  font-weight:850!important;
+  letter-spacing:0!important;
+  box-shadow:none!important;
+  white-space:nowrap!important;
+}
+.v914-auth-nav .auth-link{
+  border:1px solid #3a6d9f!important;
+  background:#07162a!important;
+  color:#f1f5fa!important;
+}
+.v914-auth-nav .signup-link{
+  border:1px solid #387cc8!important;
+  background:#0a2442!important;
+  color:#f5f9ff!important;
+  box-shadow:none!important;
+}
+.v914-auth-nav .signup-link:hover,
+.v914-auth-nav .auth-link:hover{
+  background:#0c2b4e!important;
+  border-color:#4e91d6!important;
+}
+.v914-auth-nav .signup-link:after,
+.v914-auth-nav .auth-link:after{
+  display:none!important;
+}
+.v914-auth-nav .nav-user-ico{
+  display:inline-grid!important;
+  place-items:center!important;
+  width:18px!important;
+  margin-right:3px!important;
+  color:#dce8f6!important;
+  background:transparent!important;
+  font-size:12px!important;
+}
+
+/* Profil / déconnexion utilisent le même style calme */
+.v914-auth-nav .account-link,
+.v914-auth-nav .logout-link{
+  background:#07162a!important;
+  border:1px solid #315d89!important;
+  color:#eef4fb!important;
+}
+
+/* Supprime les anciens styles trop voyants */
+.v912-auth-nav .signup-link,
+.v91-auth-nav .signup-link{
+  box-shadow:none!important;
+}
