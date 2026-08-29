@@ -120,9 +120,26 @@ function mergeFixtureData(fixture={},event=null){
   if(!event) return {...fixture};
   if(fixture.completed && !event.completed) return {...fixture};
   const out={...fixture};
-  ["eventId","status","live","completed","minute","period","homeScore","awayScore","actualScorers","scorersVerified","updatedAt"].forEach(k=>{
+  ["eventId","status","live","completed","minute","period","homeScore","awayScore","updatedAt"].forEach(k=>{
     if(event[k]!==undefined && event[k]!==null) out[k]=event[k];
   });
+  // Ne jamais écraser les buteurs historiques déjà validés par un flux BSD
+  // incomplet. C'est notamment indispensable pour la J01, validée avant BSD.
+  const oldScorers=Array.isArray(fixture.actualScorers)?fixture.actualScorers.filter(Boolean):[];
+  const newScorers=Array.isArray(event.actualScorers)?event.actualScorers.filter(Boolean):[];
+  if(event.scorersVerified===true){
+    out.actualScorers=newScorers;
+    out.scorersVerified=true;
+  }else if(oldScorers.length){
+    out.actualScorers=oldScorers;
+    if(fixture.scorersVerified!==undefined) out.scorersVerified=fixture.scorersVerified;
+    else delete out.scorersVerified; // historique : liste présente = validation héritée
+  }else if(newScorers.length){
+    out.actualScorers=newScorers;
+    out.scorersVerified=false;
+  }else if(event.scorersVerified!==undefined){
+    out.scorersVerified=event.scorersVerified;
+  }
   if(event.updatedAt) out.lastLiveUpdate=event.updatedAt;
   return out;
 }
