@@ -4,7 +4,7 @@ const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
 const norm = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
 
 let clubsCache=null;
-async function getJSON(url){ const r=await fetch(url+"?v=8.6.1",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
+async function getJSON(url){ const r=await fetch(url+"?v=8.6.2",{cache:"no-store"}); if(!r.ok) throw new Error(url); return r.json(); }
 async function clubs(){ if(!clubsCache) clubsCache=await getJSON("clubs.json"); return clubsCache; }
 function clubLogo(name, map){
   const entries=Object.entries(map?.clubs||{});
@@ -18,6 +18,14 @@ function fmtDayMeta(meta){
     return d.toLocaleDateString("fr-FR",{weekday:"short",day:"numeric",month:"short"})+(meta.time?` · ${meta.time}`:"");
   }
   return meta.time||"";
+}
+function updateLigue1HeaderClock(){
+  const el=$("#l1-day-date");
+  if(!el) return;
+  const now=new Date();
+  const date=new Intl.DateTimeFormat("fr-FR",{timeZone:"Europe/Paris",weekday:"long",day:"2-digit",month:"long",year:"numeric"}).format(now);
+  const time=new Intl.DateTimeFormat("fr-FR",{timeZone:"Europe/Paris",hour:"2-digit",minute:"2-digit",hour12:false}).format(now);
+  el.textContent=`${date.toLocaleUpperCase("fr-FR")} · ${time}`;
 }
 function matchSort(a,b){
   const ma=a[2]||{}, mb=b[2]||{};
@@ -74,7 +82,12 @@ function personMatches(predicted,actual){
 function scorerVerdicts(p={},fixture={}){
   const predicted=predictedScorers(p);
   const actual=Array.isArray(fixture.actualScorers) ? fixture.actualScorers : [];
-  const verified=fixture.scorersVerified===true;
+  // Historique J01 : avant BSD, schedule.json pouvait déjà contenir les vrais buteurs
+  // sans le nouveau drapeau scorersVerified. On conserve donc ces validations.
+  // Si BSD indique explicitement scorersVerified=false, on reste en attente pour
+  // éviter de transformer une liste d'incidents incomplète en faux verdict rouge.
+  const legacyVerified=fixture.completed && actual.length>0 && fixture.scorersVerified===undefined;
+  const verified=fixture.scorersVerified===true || legacyVerified;
   return predicted.map(name=>{
     const hit=actual.some(a=>personMatches(name,a));
     if(hit) return {name,state:"ok"};
@@ -389,7 +402,7 @@ async function initLigue1(){
   function render(){
     $$("#l1-day-tabs button").forEach((b,i)=>b.classList.toggle("active",schedule[i].journee===current));
     const day=schedule.find(d=>d.journee===current);
-    $("#l1-day-date").textContent=day?.date||"";
+    updateLigue1HeaderClock();
     renderMustWatch(day,pronos);
     const sorted=(day?.matches||[]).slice().sort(matchSort);
     $("#l1-match-list").innerHTML=sorted.map((m,i)=>{
