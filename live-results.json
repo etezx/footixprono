@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-08-29T19:20:00Z",
+  "generatedAt": "2026-08-29T19:22:09Z",
   "events": [
     {
       "eventId": 210448,
@@ -15,7 +15,7 @@
       "period": "FT",
       "homeScore": 2,
       "awayScore": 2,
-      "updatedAt": "2026-08-29T19:20:00Z",
+      "updatedAt": "2026-08-29T19:22:09Z",
       "actualScorers": [
         "Marquinhos",
         "Vitinha",
@@ -35,7 +35,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-29T19:20:00Z",
+      "updatedAt": "2026-08-29T19:22:09Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -56,8 +56,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T19:20:00Z",
-      "minute": 34,
+      "updatedAt": "2026-08-29T19:22:09Z",
+      "minute": 36,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -76,8 +76,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T19:20:00Z",
-      "minute": 34,
+      "updatedAt": "2026-08-29T19:22:09Z",
+      "minute": 36,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -96,8 +96,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T19:20:00Z",
-      "minute": 34,
+      "updatedAt": "2026-08-29T19:22:09Z",
+      "minute": 36,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -114,8 +114,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T19:20:00Z",
-      "minute": 33,
+      "updatedAt": "2026-08-29T19:22:09Z",
+      "minute": 36,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -135,7 +135,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T19:20:00Z"
+      "updatedAt": "2026-08-29T19:22:09Z"
     },
     {
       "eventId": 210454,
@@ -147,7 +147,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T19:20:00Z"
+      "updatedAt": "2026-08-29T19:22:09Z"
     },
     {
       "eventId": 210446,
@@ -159,7 +159,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T19:20:00Z"
+      "updatedAt": "2026-08-29T19:22:09Z"
     }
   ]
 }

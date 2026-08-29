@@ -137,8 +137,8 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T19:20:00Z",
-          "minute": 34,
+          "lastLiveUpdate": "2026-08-29T19:22:09Z",
+          "minute": 36,
           "period": "1st_half",
           "homeScore": 1,
           "awayScore": 1,
@@ -160,8 +160,8 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T19:20:00Z",
-          "minute": 33,
+          "lastLiveUpdate": "2026-08-29T19:22:09Z",
+          "minute": 36,
           "period": "1st_half",
           "homeScore": 1,
           "awayScore": 1,
@@ -194,7 +194,7 @@
           "live": false,
           "period": "FT",
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T19:20:00Z"
+          "lastLiveUpdate": "2026-08-29T19:22:09Z"
         }
       ],
       [
@@ -209,8 +209,8 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T19:20:00Z",
-          "minute": 34,
+          "lastLiveUpdate": "2026-08-29T19:22:09Z",
+          "minute": 36,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 1,
@@ -232,8 +232,8 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T19:20:00Z",
-          "minute": 34,
+          "lastLiveUpdate": "2026-08-29T19:22:09Z",
+          "minute": 36,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -253,7 +253,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T19:20:00Z"
+          "lastLiveUpdate": "2026-08-29T19:22:09Z"
         }
       ],
       [
@@ -268,7 +268,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T19:20:00Z"
+          "lastLiveUpdate": "2026-08-29T19:22:09Z"
         }
       ],
       [
@@ -283,7 +283,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-08-29T19:20:00Z"
+          "lastLiveUpdate": "2026-08-29T19:22:09Z"
         }
       ],
       [
@@ -306,7 +306,7 @@
             "F. Thauvin"
           ],
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T19:20:00Z"
+          "lastLiveUpdate": "2026-08-29T19:22:09Z"
         }
       ]
     ]
