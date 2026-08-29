@@ -5,10 +5,10 @@
 <meta name="theme-color" content="#07101f">
 <title>Mon profil — Footix Prono</title>
 <meta name="description" content="Profil membre Footix Prono.">
-<link rel="stylesheet" href="styles.css?v=9.4.1">
+<link rel="stylesheet" href="styles.css?v=9.5.0">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
-<body>
+<body class="page-profile-v950">
 <div class="app-shell">
   <aside class="sidebar">
     <a class="brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>— PRONO —</span></div></a>
@@ -48,43 +48,63 @@
 
 
 </header>
-    <main>
-<section class="community-page-head profile-head">
-  <span class="eyebrow">ESPACE MEMBRE</span><h1>MON <em>PROFIL FOOTIX</em></h1>
-  <p>Ton identité de pronostiqueur, tes statistiques et ton statut pour les récompenses.</p>
-</section>
-<section class="profile-layout">
-  <article class="profile-card" id="profile-card">
+    <main class="profile-premium-main">
+<section class="profile-premium-hero">
+  <div class="profile-identity">
     <div class="profile-avatar avatar-orb avatar-footix-classique" id="profile-avatar"><img src="logo-footix-prono.png" alt=""></div>
-    <div class="profile-main"><span class="profile-kicker">MEMBRE FOOTIX</span><h2 id="profile-username">Connexion requise</h2><p id="profile-email">Connecte-toi pour afficher ton profil.</p></div>
+    <div>
+      <span class="profile-kicker">MEMBRE FOOTIX PRONO</span>
+      <h1 id="profile-username">MON PROFIL</h1>
+      <p id="profile-email">Connecte-toi pour afficher tes statistiques.</p>
+      <div id="profile-admin-slot"></div>
+    </div>
+  </div>
+  <div class="profile-hero-actions">
+    <a href="vos-pronos.html" class="profile-primary-action">FAIRE MES PRONOS →</a>
     <button class="community-cta compact login-trigger" id="profile-login" type="button">SE CONNECTER</button>
-  </article>
-  <article class="profile-panel profile-stats-panel">
-    <div class="panel-head"><h3>MES STATS</h3><span id="profile-stats-month">MOIS EN COURS</span></div>
-    <div class="profile-stats-grid">
-      <div><small>POINTS DU MOIS</small><b id="ps-month-points">—</b></div>
+  </div>
+</section>
+
+<section class="profile-dashboard">
+  <article class="profile-month-card">
+    <div class="profile-section-title"><div><span>MOIS EN COURS</span><h2 id="profile-stats-month">MES PERFORMANCES</h2></div><a href="classement.html">CLASSEMENT →</a></div>
+    <div class="profile-kpi-grid">
+      <div class="main-kpi"><small>POINTS</small><b id="ps-month-points">—</b></div>
       <div><small>RANG MENSUEL</small><b id="ps-month-rank">—</b></div>
-      <div><small>RÉUSSITE DU MOIS</small><b id="ps-month-rate">—</b></div>
+      <div><small>RÉUSSITE</small><b id="ps-month-rate">—</b></div>
       <div><small>PRONOS TERMINÉS</small><b id="ps-month-played">—</b></div>
+    </div>
+  </article>
+
+  <article class="profile-trophy-card">
+    <div class="profile-section-title"><div><span>PALMARÈS</span><h2>MES MÉDAILLES</h2></div></div>
+    <div id="profile-medals" class="profile-medals"><div class="profile-empty-small">Aucune médaille pour le moment.</div></div>
+  </article>
+
+  <article class="profile-global-card">
+    <div class="profile-section-title"><div><span>CARRIÈRE</span><h2>STATISTIQUES GLOBALES</h2></div></div>
+    <div class="profile-global-kpis">
       <div><small>POINTS TOTAL</small><b id="ps-total-points">—</b></div>
+      <div><small>PRONOS TERMINÉS</small><b id="ps-total-played">—</b></div>
       <div><small>RÉUSSITE GLOBALE</small><b id="ps-total-rate">—</b></div>
     </div>
-    <a class="profile-ranking-link" href="classement.html">VOIR LE CLASSEMENT MENSUEL →</a>
+    <div id="profile-comp-stats" class="profile-comp-stats"></div>
   </article>
-  <article class="profile-panel">
-    <div class="panel-head"><h3>MON IDENTITÉ</h3></div>
-    <form id="profile-form" class="profile-form">
-      <label>PSEUDO<input name="username" minlength="3" maxlength="20" disabled></label>
-      <label>BIO<textarea name="bio" maxlength="180" rows="3" disabled placeholder="Une petite phrase sur ton style de pronostiqueur…"></textarea></label>
-      <fieldset class="avatar-fieldset"><legend>MON AVATAR</legend><div class="avatar-picker" id="profile-avatar-picker"></div></fieldset>
-      <button class="community-cta" type="submit" disabled>ENREGISTRER</button><div id="profile-save-status" class="profile-save-status" role="status"></div>
+
+  <article class="profile-history-card">
+    <div class="profile-section-title"><div><span>12 DERNIERS MOIS</span><h2>MON HISTORIQUE</h2></div></div>
+    <div id="profile-month-history" class="profile-month-history"><div class="profile-empty-small">Pas encore d’historique.</div></div>
+  </article>
+
+  <article class="profile-edit-card">
+    <div class="profile-section-title"><div><span>PERSONNALISATION</span><h2>MON IDENTITÉ FOOTIX</h2></div></div>
+    <form id="profile-edit-form">
+      <label>PSEUDO<input id="profile-edit-username" maxlength="24" autocomplete="username"></label>
+      <label>BIO<textarea id="profile-edit-bio" maxlength="160" rows="3" placeholder="Quelques mots sur toi…"></textarea></label>
+      <div><span class="profile-form-label">AVATAR</span><div id="profile-avatar-picker" class="avatar-picker"></div></div>
+      <button type="submit" class="profile-primary-action">ENREGISTRER</button>
+      <p id="profile-save-note" class="profile-save-note"></p>
     </form>
-  </article>
-  <article class="profile-panel eligibility-panel">
-    <div class="panel-head"><h3>ÉLIGIBILITÉ RÉCOMPENSES</h3></div>
-    <div id="eligibility-status" class="eligibility-status pending"><b>—</b><span>Connecte-toi pour vérifier ton statut.</span></div>
-    <ul class="eligibility-list"><li>Email confirmé</li><li>Règlement et confidentialité acceptés</li><li>Compte actif et conforme aux règles</li></ul>
-    <p class="smallprint">Une vérification complémentaire peut être effectuée avant remise d'un lot, notamment en cas de suspicion de multi-compte ou de fraude.</p>
   </article>
 </section>
 </main>
@@ -157,6 +177,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
 <script src="auth-community.js?v=9.3.2"></script>
-<script src="profil-stats.js?v=9.4.1"></script>
+<script src="profil-premium.js?v=9.5.0"></script>
 
 </body></html>
