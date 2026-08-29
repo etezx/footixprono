@@ -1,4 +1,18 @@
 (() => {
+
+const showPronoToast=(text)=>{
+  let t=document.querySelector('.footix-toast');
+  if(!t){
+    t=document.createElement('div');
+    t.className='footix-toast';
+    document.body.appendChild(t);
+  }
+  t.textContent=text;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer=setTimeout(()=>t.classList.remove('show'),1800);
+};
+
   const $=(s,r=document)=>r.querySelector(s);
   const $$=(s,r=document)=>[...r.querySelectorAll(s)];
   const cfg=window.FOOTIX_SUPABASE||{};
@@ -217,7 +231,7 @@
     const {error}=await db.rpc('save_my_prediction',{p_match_id:id,p_pick:btn.dataset.pick});
     if(error){alert(error.message);btn.disabled=false;return;}
     myVotes.set(id,btn.dataset.pick);
-    if(window.footixToast) window.footixToast('✓ Prono enregistré');
+    showPronoToast('✓ Prono enregistré');
     render();
   });
 

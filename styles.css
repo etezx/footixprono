@@ -3814,3 +3814,101 @@ body:has(.monthly-ranking-main){
   .page-votes-v940 .votes-premium-board,
   .admin-finalize-card,.admin-winners-card{border-radius:9px}
 }
+
+/* V9.8.1 — correctif DA bleue + suppression des zones blanches sur Vos pronos */
+.page-votes-v940,
+.page-votes-v940 .main-wrap,
+.page-votes-v940 .votes-premium-main{
+  background:#071d3b!important;
+}
+.page-votes-v940 .topbar{
+  background:#082448!important;
+  border-bottom-color:#174878!important;
+}
+.page-votes-v940 .topbar,
+.page-votes-v940 .topbar a,
+.page-votes-v940 .topbar button{
+  color:#eaf4ff;
+}
+.page-votes-v940 .votes-premium-shell,
+.page-votes-v940 .votes-premium-board,
+.page-votes-v940 .premium-match-list,
+.page-votes-v940 .votes-summary-card,
+.page-votes-v940 .votes-member-card,
+.page-votes-v940 .matchday-toolbar,
+.page-votes-v940 .votes-comp-switch,
+.page-votes-v940 .premium-date-group,
+.page-votes-v940 .premium-match-row,
+.page-votes-v940 .match-result-cell,
+.page-votes-v940 .match-pick-cell,
+.page-votes-v940 .votes-side-panel,
+.page-votes-v940 .votes-kpi-card{
+  background:#0a2850!important;
+  border-color:rgba(109,170,235,.2)!important;
+  color:#eef6ff!important;
+}
+.page-votes-v940 .premium-date-title,
+.page-votes-v940 .premium-date-head{
+  background:#082448!important;
+  color:#a9c6e7!important;
+  border-color:rgba(109,170,235,.18)!important;
+}
+.page-votes-v940 .premium-match-row:nth-child(even){
+  background:#0b2d58!important;
+}
+.page-votes-v940 .premium-match-row:hover{
+  background:#103a70!important;
+}
+.page-votes-v940 .club strong,
+.page-votes-v940 .score-core b,
+.page-votes-v940 .match-result-cell strong,
+.page-votes-v940 .match-pick-cell strong{
+  color:#f5f9ff!important;
+}
+.page-votes-v940 .club small,
+.page-votes-v940 .match-meta,
+.page-votes-v940 .premium-match-row small{
+  color:#98b7d8!important;
+}
+.page-votes-v940 .my-pick,
+.page-votes-v940 .match-verdict,
+.page-votes-v940 .result-pill{
+  background:#082448!important;
+  border-color:#245886!important;
+}
+.page-votes-v940 .my-pick.bad{
+  background:#3a1e2b!important;
+  border-color:#914052!important;
+  color:#ff9eaa!important;
+}
+.page-votes-v940 .my-pick.good{
+  background:#123b35!important;
+  border-color:#2f816d!important;
+  color:#7fe2bd!important;
+}
+.page-votes-v940 .pick-mini{
+  background:#0d315f!important;
+  border-color:#2d6099!important;
+  color:#e5f1ff!important;
+}
+.page-votes-v940 .pick-mini.selected{
+  background:#1769d2!important;
+  border-color:#5aa4f4!important;
+  color:#fff!important;
+}
+.page-votes-v940 #matchday-select,
+.page-votes-v940 .day-arrow{
+  background:#071f3f!important;
+  border-color:#285b8f!important;
+  color:#edf6ff!important;
+}
+/* empêcher d'anciens blocs blancs de ressortir */
+.page-votes-v940 main section,
+.page-votes-v940 main article,
+.page-votes-v940 main div{
+  --legacy-white:#0a2850;
+}
+.page-votes-v940 .premium-match-list,
+.page-votes-v940 .premium-match-list *{
+  scrollbar-color:#2e6098 #071d3b;
+}
