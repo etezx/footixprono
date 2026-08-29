@@ -2718,3 +2718,11 @@ body.modal-open{overflow:hidden}
 .sidebar{
   overflow-x:hidden!important;
 }
+
+
+/* V9.1.7 — suppression du petit sous-titre illisible sous FOOTIX PRONO */
+.v912-brand small,
+.v91-brand small,
+.brand small{
+  display:none!important;
+}
