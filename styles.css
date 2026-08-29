@@ -1587,3 +1587,20 @@ body.prono-panel-open{overflow:hidden}
   .flow-club-logo-wrap{width:31px!important;height:31px!important;flex-basis:31px!important}
   .flow-club-logo{width:28px!important;height:28px!important;max-width:28px!important;max-height:28px!important}
 }
+
+
+/* === V8.6.7 — logos option 3 exacts === */
+.comp-mark.l1-mark img,
+.comp-mark.ucl-mark img{
+  width:31px!important;
+  height:31px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  filter:none!important;
+}
+.banner-logo.l1-mark img{
+  width:58px!important;
+  height:58px!important;
+  object-fit:contain!important;
+  filter:none!important;
+}
