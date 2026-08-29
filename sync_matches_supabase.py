@@ -107,20 +107,27 @@ def first(obj, *keys):
     return None
 
 def team_name(event, side):
-    # BSD v2 can expose a team object or flattened names depending on endpoint/cache shape.
     candidates = [
         event.get(f"{side}_team"),
         event.get(side),
         event.get(f"{side}Team"),
+        event.get(f"{side}_competitor"),
     ]
     for v in candidates:
         if isinstance(v, dict):
-            name=first(v,"name","short_name","display_name","team_name")
+            name=first(v,"name","short_name","display_name","team_name","title")
             if name:
                 return str(name).strip()
         elif isinstance(v, str) and v.strip():
             return v.strip()
-    v=first(event, f"{side}_team_name", f"{side}_name", f"{side}Name")
+
+    v=first(
+        event,
+        f"{side}_team_name",
+        f"{side}_name",
+        f"{side}Name",
+        f"{side}_competitor_name"
+    )
     return str(v).strip() if v else None
 
 def score_value(event, side):
@@ -137,14 +144,40 @@ def score_value(event, side):
         return None
 
 def kickoff_value(event):
-    v=first(
+    # Shapes seen/documented across BSD list/live/detail payloads.
+    direct=first(
         event,
-        "start_time","kickoff","kickoff_time","scheduled_at","start_at",
-        "date","datetime","start_date"
+        "start_time","kickoff","kickoff_time","kickoff_at","scheduled_at",
+        "start_at","date","datetime","start_date","start_datetime",
+        "start_time_utc","utc_start_time"
     )
-    if isinstance(v, dict):
-        v=first(v,"date","datetime","start_time","utc")
-    return str(v) if v else None
+    if isinstance(direct, dict):
+        direct=first(direct,"date","datetime","start_time","utc","kickoff_at")
+    if direct:
+        return str(direct)
+
+    for block_name in ("time","start","schedule","fixture"):
+        block=event.get(block_name)
+        if isinstance(block, dict):
+            v=first(
+                block,
+                "kickoff_at","start_time","datetime","date","utc",
+                "scheduled_at","start_at"
+            )
+            if v:
+                return str(v)
+
+    # Some APIs expose UNIX seconds.
+    ts=first(event,"start_timestamp","kickoff_timestamp","timestamp","uts")
+    try:
+        if ts is not None:
+            ts=float(ts)
+            if ts > 10_000_000_000:  # ms
+                ts /= 1000.0
+            return datetime.fromtimestamp(ts, tz=timezone.utc).isoformat()
+    except (TypeError,ValueError,OSError):
+        pass
+    return None
 
 def matchday_value(event):
     v=first(event,"round_number","matchday","round_no","week")
@@ -163,17 +196,23 @@ def matchday_value(event):
         return None
 
 def status_value(event):
-    raw=str(first(event,"status","state","match_status") or "upcoming").strip().lower()
+    raw=first(event,"status","state","match_status")
+    if raw is None and isinstance(event.get("time"),dict):
+        raw=first(event["time"],"status","state")
+    raw=str(raw or "upcoming").strip().lower()
     mapping={
         "upcoming":"scheduled",
         "notstarted":"scheduled",
         "not_started":"scheduled",
         "scheduled":"scheduled",
+        "unresolved":"scheduled",
         "live":"live",
         "inprogress":"live",
         "in_progress":"live",
+        "started":"live",
         "finished":"finished",
         "completed":"finished",
+        "complete":"finished",
         "ft":"finished",
         "postponed":"postponed",
         "cancelled":"cancelled",
@@ -182,8 +221,21 @@ def status_value(event):
     return mapping.get(raw, "scheduled")
 
 def event_id(event):
-    v=first(event,"id","event_id","eventId")
+    v=first(event,"id","event_id","eventId","fixture_id","match_id")
     return str(v) if v is not None else None
+
+def diagnostic(event):
+    """Return a compact, secret-free look at one BSD event shape."""
+    if not isinstance(event,dict):
+        return {"type": type(event).__name__}
+    out={"keys": sorted(event.keys())}
+    for key in ("time","home","away","home_team","away_team","score","round"):
+        value=event.get(key)
+        if isinstance(value,dict):
+            out[f"{key}_keys"]=sorted(value.keys())
+        elif value is not None:
+            out[key]=str(value)[:100]
+    return out
 
 def normalize(event, competition):
     ext=event_id(event)
@@ -240,15 +292,20 @@ def main():
         events=fetch_all_events(league_id)
         rows=[]
         skipped=0
+        first_skipped=None
         for e in events:
             row=normalize(e,competition)
             if row:
                 rows.append(row)
             else:
                 skipped += 1
+                if first_skipped is None:
+                    first_skipped=diagnostic(e)
         supabase_upsert(rows)
         total += len(rows)
         print(f"{competition}: {len(rows)} match(s) synchronisé(s), {skipped} ignoré(s).")
+        if first_skipped is not None:
+            print(f"{competition} diagnostic premier ignoré: {json.dumps(first_skipped, ensure_ascii=False)}")
 
     print(f"OK — {total} match(s) envoyés vers Supabase.")
 
