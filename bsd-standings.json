@@ -1,0 +1,289 @@
+{
+  "leagues": {
+    "6": {
+      "leagueId": 6,
+      "season": {
+        "id": 1311,
+        "name": "Ligue 1 26/27",
+        "year": 2026,
+        "start_date": "2026-07-01",
+        "end_date": "2027-06-30",
+        "is_current": true
+      },
+      "teams": [
+        {
+          "position": 1,
+          "club": "Lille",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 2,
+          "pts": 4,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 2,
+          "club": "Olympique de Marseille",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 4,
+          "ga": 0,
+          "pts": 3,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 3,
+          "club": "RC Lens",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 5,
+          "ga": 2,
+          "pts": 3,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 4,
+          "club": "Olympique Lyonnais",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 2,
+          "ga": 0,
+          "pts": 3,
+          "group": "",
+          "zone": {
+            "key": "clq",
+            "label": "Champions League Qualification",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 5,
+          "club": "AS Monaco",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 1,
+          "ga": 0,
+          "pts": 3,
+          "group": "",
+          "zone": {
+            "key": "el",
+            "label": "Europa League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 6,
+          "club": "Paris Saint-Germain",
+          "p": 2,
+          "w": 0,
+          "d": 2,
+          "l": 0,
+          "gf": 4,
+          "ga": 4,
+          "pts": 2,
+          "group": "",
+          "zone": {
+            "key": "uecl",
+            "label": "Conference League Qualification",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 7,
+          "club": "Le Mans",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 1,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 8,
+          "club": "Stade Brestois",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 1,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 9,
+          "club": "Stade Rennais",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 1,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 10,
+          "club": "Lorient",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 1,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 11,
+          "club": "Nice",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 1,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 12,
+          "club": "Paris FC",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 1,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 13,
+          "club": "Troyes",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 1,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 14,
+          "club": "Le Havre",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 0,
+          "ga": 1,
+          "pts": 0,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 15,
+          "club": "Angers",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 0,
+          "ga": 2,
+          "pts": 0,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 16,
+          "club": "Toulouse",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 0,
+          "ga": 2,
+          "pts": 0,
+          "group": "",
+          "zone": {
+            "key": "relq",
+            "label": "Relegation Playoffs",
+            "type": "relegation"
+          }
+        },
+        {
+          "position": 17,
+          "club": "Auxerre",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 2,
+          "ga": 5,
+          "pts": 0,
+          "group": "",
+          "zone": {
+            "key": "rel",
+            "label": "Relegation",
+            "type": "relegation"
+          }
+        },
+        {
+          "position": 18,
+          "club": "RC Strasbourg",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 0,
+          "ga": 4,
+          "pts": 0,
+          "group": "",
+          "zone": {
+            "key": "rel",
+            "label": "Relegation",
+            "type": "relegation"
+          }
+        }
+      ]
+    }
+  },
+  "generatedAt": "2026-08-29T05:41:49Z",
+  "source": "BSD"
+}
