@@ -5,10 +5,10 @@
 <meta name="theme-color" content="#041022">
 <title>Vos pronos — Footix Prono</title>
 <meta name="description" content="Livre d'or et suggestions de la communauté Footix Prono.">
-<link rel="stylesheet" href="styles.css?v=9.3.6">
+<link rel="stylesheet" href="styles.css?v=9.4.0">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
-<body>
+<body class="page-votes-v940">
 <div class="app-shell">
   <aside class="sidebar v91-sidebar">
     <a class="brand v91-brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>PRONO</span></div></a>
@@ -25,7 +25,18 @@
 
     <div class="sidebar-card join-card"><b>💬 TA VOIX COMPTE.</b><p>Partage tes idées pour faire évoluer Footix Prono.</p></div>
     <div class="sidebar-mascot-art" aria-hidden="true"></div>
-  </aside>
+  
+    <div id="community-vote-summary" class="votes-side-summary is-hidden">
+      <div class="side-summary-head"><span>⚽</span><b>TON BILAN</b></div>
+      <strong id="side-total-points">0 <small>Point</small></strong>
+      <dl>
+        <div><dt>Bons pronos</dt><dd id="side-good">0</dd></div>
+        <div><dt>Pronos joués</dt><dd id="side-played">0</dd></div>
+        <div><dt>Taux de réussite</dt><dd id="side-rate">0%</dd></div>
+      </dl>
+      <a href="profil.html">Voir mon profil <span>→</span></a>
+    </div>
+</aside>
   <div class="main-wrap">
     <header class="topbar v91-topbar"><nav class="desktop-main-nav"><a href="index.html">⌂ Accueil</a><a class="active" href="vos-pronos.html">✓ Vos pronos</a><a href="classement.html">♜ Classements</a><a href="community.html">▱ Communauté</a><a href="reglement.html">▤ Règlement</a></nav>
 
@@ -49,22 +60,56 @@
 
 
 </header>
-    <main class="community-v91-page vos-pronos-main">
-  <section class="community-page-head vote-page-head">
-    <span class="eyebrow">COMMUNAUTÉ</span>
-    <h1>VOS <em>PRONOS</em></h1>
-    <p>Choisis 1, N ou 2. Ton choix reste modifiable jusqu'au coup d'envoi.</p>
-  </section>
-  <section class="community-board vote-board">
-    <div class="community-board-tabs vote-tabs">
-      <button class="active" data-vote-comp="L1" type="button">LIGUE 1</button>
-      <button data-vote-comp="UCL" type="button">LIGUE DES CHAMPIONS</button>
+    <main class="content votes-premium-main">
+  <section class="votes-premium-head">
+    <div>
+      <span class="votes-eyebrow">ESPACE MEMBRE</span>
+      <h1>VOS PRONOS</h1>
+      <p>Fais tes pronostics, suis tes résultats et marque des points.</p>
     </div>
-    <div id="vote-session-note" class="vote-session-note">Vérification de ta session…</div>
-    <div id="community-vote-summary" class="community-vote-summary is-hidden"></div>
-    <div id="community-match-list" class="community-match-list">
+    <div class="votes-comp-switch" aria-label="Compétition">
+      <span>COMPÉTITION</span>
+      <div>
+        <button class="active" data-vote-comp="L1" type="button">
+          <img src="logo-l1-option3.png" alt=""><b>Ligue 1</b>
+        </button>
+        <button data-vote-comp="UCL" type="button">
+          <img src="logo-europe-option3.png" alt=""><b>Ligue des Champions</b>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="votes-premium-board">
+    <div class="votes-control-strip">
+      <div class="votes-day-control">
+        <span>JOURNÉE</span>
+        <div class="votes-day-buttons">
+          <button type="button" class="day-arrow" id="day-prev" aria-label="Journée précédente">←</button>
+          <select id="matchday-select" aria-label="Choisir une journée"></select>
+          <button type="button" class="day-arrow" id="day-next" aria-label="Journée suivante">→</button>
+        </div>
+      </div>
+
+      <div id="matchday-kpis" class="votes-kpis">
+        <div><span class="kpi-ico">◷</span><small>MATCHS TERMINÉS</small><b>—</b></div>
+        <div><span class="kpi-ico">☆</span><small>BONS PRONOS</small><b>—</b></div>
+        <div class="points"><span class="kpi-ico">↻</span><small>POINTS DE LA JOURNÉE</small><b>—</b></div>
+      </div>
+
+      <div class="votes-points-note">
+        <span>ⓘ</span>
+        <p>1 point si ton pronostic <b>1 / N / 2</b> est correct à la fin du match.</p>
+      </div>
+    </div>
+
+    <div id="vote-session-note" class="vote-session-note premium-session-note">Vérification de ta session…</div>
+
+    <div id="community-match-list" class="premium-match-list">
       <div class="community-empty">Chargement des matchs…</div>
     </div>
+
+    <div class="votes-time-note">ⓘ Les horaires sont affichés dans ton fuseau horaire.</div>
   </section>
 </main>
     <footer class="site-footer"><p>© 2026 Footix Prono — Tous droits réservés.</p><p class="legal-disclaimer">Pronostics et analyses proposés à titre informatif et ludique. Aucun pari en argent réel, aucune prise de mise et aucun gain ne sont proposés sur ce site. Les pronostics ne garantissent aucun résultat.</p></footer>
@@ -130,5 +175,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
 <script src="auth-community.js?v=9.3.2"></script>
-<script src="vos-pronos.js?v=9.3.6"></script>
+<script src="vos-pronos.js?v=9.4.0"></script>
 </body></html>

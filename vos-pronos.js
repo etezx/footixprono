@@ -11,96 +11,170 @@
 
   const db=window.supabase.createClient(cfg.url,cfg.key);
   let comp='L1', user=null, rows=[], myVotes=new Map(), selectedDay=null;
+
   const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-  const dt=v=>v?new Intl.DateTimeFormat('fr-FR',{weekday:'short',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}).format(new Date(v)):'Horaire à venir';
+  const kickoffDate=v=>v?new Date(v):null;
+  const time=v=>v?new Intl.DateTimeFormat('fr-FR',{hour:'2-digit',minute:'2-digit'}).format(new Date(v)):'—';
+  const dayLabel=v=>v?new Intl.DateTimeFormat('fr-FR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'}).format(new Date(v)).toUpperCase():'DATE À VENIR';
+  const logo=id=>id?`https://sports.bzzoiro.com/img/team/${encodeURIComponent(id)}/?bg=transparent`:'';
+  const isFinished=m=>m.status==='finished'||!!m.result_pick;
+  const isLive=m=>m.status==='live';
+  const locked=m=>m.status!=='scheduled'||!m.kickoff||Date.now()>=new Date(m.kickoff).getTime();
+
+  function resultFromScore(m){
+    if(m.result_pick) return m.result_pick;
+    if(!isFinished(m)||m.home_score==null||m.away_score==null) return null;
+    return Number(m.home_score)>Number(m.away_score)?'1':Number(m.home_score)<Number(m.away_score)?'2':'N';
+  }
 
   async function getUser(){
     const {data}=await db.auth.getUser();
     user=data.user||null;
-    const n=$('#vote-session-note');
-    if(n) n.textContent=user?'Tes choix sont enregistrés automatiquement.':'Connecte-toi pour enregistrer tes choix.';
+    const note=$('#vote-session-note');
+    if(note) note.innerHTML=user
+      ? '<span>✓</span> Tes choix sont enregistrés automatiquement jusqu’au coup d’envoi.'
+      : '<span>ⓘ</span> Connecte-toi pour enregistrer tes pronostics.';
   }
 
   async function loadMine(){
     myVotes=new Map();
-    if(!user || !rows.length) return;
-    const {data,error}=await db.from('predictions').select('match_id,pick').eq('user_id',user.id).in('match_id',rows.map(m=>m.id));
+    if(!user||!rows.length) return;
+    const {data,error}=await db.from('predictions')
+      .select('match_id,pick')
+      .eq('user_id',user.id)
+      .in('match_id',rows.map(m=>m.id));
     if(!error) (data||[]).forEach(v=>myVotes.set(Number(v.match_id),v.pick));
   }
 
-  const locked=m=>m.status!=='scheduled'||!m.kickoff||Date.now()>=new Date(m.kickoff).getTime();
+  function crest(id,name){
+    const src=logo(id);
+    if(!src) return `<span class="club-logo club-logo-fallback">${esc(String(name||'?').slice(0,2).toUpperCase())}</span>`;
+    return `<span class="club-logo"><img src="${src}" alt="" loading="lazy" onerror="this.parentElement.classList.add('club-logo-broken');this.style.display='none';this.parentElement.textContent='${esc(String(name||'?').slice(0,2).toUpperCase())}'"></span>`;
+  }
 
-  function card(m){
-    const mine=myVotes.get(Number(m.id)), lock=locked(m), final=m.result_pick;
-    let verdict='', resultLine='';
-    if(final){
-      resultLine=`<span class="member-result">RÉSULTAT : <b>${final}</b></span>`;
-      if(mine) verdict=mine===final?'<span class="member-verdict good">✓ BON PRONO · +1 PT</span>':'<span class="member-verdict bad">✕ MAUVAIS PRONO · 0 PT</span>';
-      else verdict='<span class="member-verdict neutral">PAS DE PRONO · 0 PT</span>';
+  function pickPill(p, mine, disabled=false){
+    return `<button type="button" data-pick="${p}" class="pick-mini ${mine===p?'selected':''}" ${disabled?'disabled':''}>${p}</button>`;
+  }
+
+  function matchRow(m){
+    const mine=myVotes.get(Number(m.id));
+    const final=resultFromScore(m);
+    const finished=isFinished(m);
+    const live=isLive(m);
+    const lock=locked(m);
+    const good=finished&&mine&&mine===final;
+    const pts=finished&&mine?(good?1:0):null;
+
+    let resultCell='';
+    let choiceCell='';
+    if(finished){
+      resultCell=`<div class="result-finished"><b>${m.home_score ?? '—'} - ${m.away_score ?? '—'}</b><span class="result-pick">${final||'—'}</span></div>`;
+      choiceCell=mine?`<span class="my-pick ${good?'good':'bad'}">${mine}</span>`:'<span class="muted-dash">—</span>';
+    }else{
+      resultCell=`<div class="pick-inline">${['1','N','2'].map(p=>pickPill(p,mine,lock)).join('')}</div>`;
+      choiceCell=mine?`<span class="my-pick pending">${mine}</span>`:'<span class="muted-dash">—</span>';
     }
-    return `<article class="community-vote-card" data-match="${m.id}">
-      <div class="vote-card-top"><span>${dt(m.kickoff)}</span><b class="${lock?'vote-lock':'vote-open'}">${lock?'🔒 VERROUILLÉ':'OUVERT'}</b></div>
-      <div class="vote-fixture"><strong>${esc(m.home_team)}</strong><span class="vote-vs">${m.home_score??'—'} <i>–</i> ${m.away_score??'—'}</span><strong>${esc(m.away_team)}</strong></div>
-      <div class="pick-buttons">${['1','N','2'].map(p=>`<button type="button" data-pick="${p}" class="${mine===p?'selected':''}" ${lock?'disabled':''}><b>${p}</b><small>${p==='1'?'DOMICILE':p==='N'?'NUL':'EXTÉRIEUR'}</small></button>`).join('')}</div>
-      <div class="vote-community-line"><span>COMMUNAUTÉ · ${m.total_votes||0} vote${Number(m.total_votes)===1?'':'s'}</span><div class="vote-percentages"><b>1 ${m.pct_1||0}%</b><b>N ${m.pct_n||0}%</b><b>2 ${m.pct_2||0}%</b></div></div>
-      <div class="vote-card-bottom"><span>${mine?`TON CHOIX : <b>${mine}</b>`:'AUCUN CHOIX'}</span>${resultLine}${verdict}</div>
+
+    return `<article class="premium-match-row" data-match="${m.id}">
+      <div class="match-time">
+        <b>${time(m.kickoff)}</b>
+        <span class="${finished?'finished':live?'live':'upcoming'}">${finished?'Terminé':live?'En direct':'À venir'}</span>
+      </div>
+      <div class="match-clubs">
+        <div class="club home">${crest(m.home_team_id,m.home_team)}<strong>${esc(m.home_team)}</strong></div>
+        <div class="score-core">${finished||live?`<b>${m.home_score ?? '—'} <i>-</i> ${m.away_score ?? '—'}</b>`:'<b>–</b>'}</div>
+        <div class="club away">${crest(m.away_team_id,m.away_team)}<strong>${esc(m.away_team)}</strong></div>
+      </div>
+      <div class="match-result-cell">${resultCell}</div>
+      <div class="match-choice-cell">${choiceCell}</div>
+      <div class="match-points-cell ${pts===1?'good':pts===0?'bad':''}">${pts===1?'+1 PT':pts===0?'0 PT':'—'}</div>
     </article>`;
+  }
+
+  function dayGroups(matches){
+    const groups=new Map();
+    matches.forEach(m=>{
+      const d=kickoffDate(m.kickoff);
+      const key=d?`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`:'unknown';
+      if(!groups.has(key)) groups.set(key,[]);
+      groups.get(key).push(m);
+    });
+    return [...groups.values()];
+  }
+
+  function getDays(){
+    return [...new Set(rows.map(m=>Number(m.matchday)).filter(Number.isFinite))].sort((a,b)=>a-b);
+  }
+
+  function chooseDefaultDay(days){
+    if(selectedDay!==null&&days.includes(Number(selectedDay))) return;
+    const now=Date.now();
+    const active=rows.find(m=>m.status==='live'||(m.status==='scheduled'&&m.kickoff&&new Date(m.kickoff).getTime()>=now));
+    selectedDay=active?.matchday!=null?Number(active.matchday):days[days.length-1];
+  }
+
+  function renderDayControls(days){
+    chooseDefaultDay(days);
+    const sel=$('#matchday-select');
+    if(sel) sel.innerHTML=days.map(d=>`<option value="${d}" ${Number(d)===Number(selectedDay)?'selected':''}>J${String(d).padStart(2,'0')}</option>`).join('');
+    const idx=days.indexOf(Number(selectedDay));
+    const prev=$('#day-prev'), next=$('#day-next');
+    if(prev){prev.disabled=idx<=0;prev.dataset.dayNav=idx>0?days[idx-1]:'';}
+    if(next){next.disabled=idx<0||idx>=days.length-1;next.dataset.dayNav=idx>=0&&idx<days.length-1?days[idx+1]:'';}
+  }
+
+  function renderKpis(shown){
+    const finished=shown.filter(isFinished);
+    const played=finished.filter(m=>myVotes.has(Number(m.id)));
+    const good=played.filter(m=>myVotes.get(Number(m.id))===resultFromScore(m)).length;
+    const box=$('#matchday-kpis');
+    if(!box) return;
+    const values=box.querySelectorAll('b');
+    if(values[0]) values[0].textContent=`${finished.length} / ${shown.length}`;
+    if(values[1]) values[1].textContent=String(good);
+    if(values[2]) values[2].innerHTML=`${good} <small>PTS</small>`;
+  }
+
+  function renderSummary(){
+    const box=$('#community-vote-summary');
+    if(!box) return;
+    if(!user){box.classList.add('is-hidden');return;}
+    const playedAll=rows.filter(m=>myVotes.has(Number(m.id)));
+    const finished=playedAll.filter(isFinished);
+    const good=finished.filter(m=>myVotes.get(Number(m.id))===resultFromScore(m)).length;
+    const rate=finished.length?Math.round(good*100/finished.length):0;
+    box.classList.remove('is-hidden');
+    $('#side-total-points').innerHTML=`${good} <small>Point${good===1?'':'s'}</small>`;
+    $('#side-good').textContent=good;
+    $('#side-played').textContent=playedAll.length;
+    $('#side-rate').textContent=`${rate}%`;
   }
 
   function render(){
     if(!rows.length){
-      root.innerHTML='<div class="community-empty"><b>Aucun match dans Supabase pour cette compétition.</b></div>';
-      summary(); return;
+      root.innerHTML='<div class="community-empty"><b>Aucun match pour cette compétition.</b></div>';
+      renderSummary();
+      return;
     }
-
-    const days=[...new Set(rows.map(m=>m.matchday).filter(v=>v!==null&&v!==undefined))]
-      .sort((a,b)=>Number(a)-Number(b));
-
-    // Par défaut : première journée qui possède encore un match à venir/live.
-    if(selectedDay===null || !days.includes(selectedDay)){
-      const active=rows.find(m=>m.status==='live' || (m.status==='scheduled' && new Date(m.kickoff).getTime()>=Date.now()));
-      selectedDay=active?.matchday ?? days[days.length-1];
+    const days=getDays();
+    if(!days.length){
+      root.innerHTML='<div class="community-empty"><b>Aucune journée disponible.</b></div>';
+      return;
     }
+    renderDayControls(days);
+    const shown=rows.filter(m=>Number(m.matchday)===Number(selectedDay));
+    renderKpis(shown);
 
-    const shown=rows.filter(m=>m.matchday===selectedDay);
-    const dayFinished=shown.filter(m=>m.result_pick);
-    const dayPlayed=dayFinished.filter(m=>myVotes.has(Number(m.id)));
-    const dayGood=dayPlayed.filter(m=>myVotes.get(Number(m.id))===m.result_pick).length;
-    const idx=days.indexOf(selectedDay);
-    const prev=idx>0?days[idx-1]:null;
-    const next=idx>=0&&idx<days.length-1?days[idx+1]:null;
-
-    root.innerHTML=`
-      <div class="matchday-selector">
-        <button type="button" data-day-nav="${prev??''}" ${prev===null?'disabled':''}>‹</button>
-        <label>JOURNÉE
-          <select id="matchday-select">
-            ${days.map(d=>`<option value="${d}" ${d===selectedDay?'selected':''}>J${String(d).padStart(2,'0')}</option>`).join('')}
-          </select>
-        </label>
-        <button type="button" data-day-nav="${next??''}" ${next===null?'disabled':''}>›</button>
-      </div>
-      <section class="vote-matchday">
-        <div class="vote-matchday-title"><span>${comp==='L1'?'LIGUE 1':'LIGUE DES CHAMPIONS'}</span><b>J${String(selectedDay).padStart(2,'0')} · ${shown.length} MATCH${shown.length>1?'S':''}</b></div>
-        <div class="matchday-points">
-          <div><small>TERMINÉS</small><b>${dayFinished.length}/${shown.length}</b></div>
-          <div><small>TES PRONOS JOUÉS</small><b>${dayPlayed.length}</b></div>
-          <div><small>BONS PRONOS</small><b>${dayGood}</b></div>
-          <div><small>POINTS JOURNÉE</small><b>${dayGood} pt${dayGood>1?'s':''}</b></div>
+    root.innerHTML=dayGroups(shown).map(group=>`
+      <section class="premium-date-group">
+        <div class="date-bar">${dayLabel(group[0]?.kickoff)}</div>
+        <div class="match-table-head">
+          <span>HEURE</span><span>MATCH</span><span>RÉSULTAT / PRONO</span><span>MON PRONO</span><span>POINTS</span>
         </div>
-        ${shown.map(card).join('')}
-      </section>`;
-    summary();
-  }
-
-  function summary(){
-    const box=$('#community-vote-summary');
-    if(!box) return;
-    if(!user){box.classList.add('is-hidden');return}
-    const finished=rows.filter(m=>m.result_pick&&myVotes.has(Number(m.id)));
-    const good=finished.filter(m=>myVotes.get(Number(m.id))===m.result_pick).length;
-    box.classList.remove('is-hidden');
-    box.innerHTML=`<div><small>TES PRONOS</small><b>${rows.filter(m=>myVotes.has(Number(m.id))).length}</b></div><div><small>BONS</small><b>${good}</b></div><div><small>POINTS</small><b>${good}</b></div><div><small>RÉUSSITE</small><b>${finished.length?Math.round(good*100/finished.length):0}%</b></div>`;
+        ${group.map(matchRow).join('')}
+      </section>
+    `).join('');
+    renderSummary();
   }
 
   async function load(){
@@ -111,26 +185,39 @@
       return;
     }
     rows=(data||[]).filter(m=>m.kickoff).sort((a,b)=>new Date(a.kickoff)-new Date(b.kickoff));
-    await loadMine(); render();
+    await loadMine();
+    render();
   }
 
   document.addEventListener('click',async e=>{
     const tab=e.target.closest('[data-vote-comp]');
     if(tab){
-      $$('.vote-tabs button').forEach(b=>b.classList.remove('active'));
-      tab.classList.add('active'); comp=tab.dataset.voteComp; selectedDay=null; await load(); return;
+      $$('[data-vote-comp]').forEach(b=>b.classList.remove('active'));
+      tab.classList.add('active');
+      comp=tab.dataset.voteComp;
+      selectedDay=null;
+      await load();
+      return;
     }
-    const dayBtn=e.target.closest('[data-day-nav]');
-    if(dayBtn && dayBtn.dataset.dayNav){
-      selectedDay=Number(dayBtn.dataset.dayNav); render(); return;
+
+    const nav=e.target.closest('[data-day-nav]');
+    if(nav&&nav.dataset.dayNav){
+      selectedDay=Number(nav.dataset.dayNav);
+      render();
+      return;
     }
+
     const btn=e.target.closest('[data-pick]');
     if(!btn) return;
-    if(!user){document.querySelector('.login-trigger')?.click();return}
-    const id=Number(btn.closest('[data-match]').dataset.match);
+    if(!user){$('.login-trigger')?.click();return;}
+    const row=btn.closest('[data-match]');
+    if(!row) return;
+    const id=Number(row.dataset.match);
+    btn.disabled=true;
     const {error}=await db.rpc('save_my_prediction',{p_match_id:id,p_pick:btn.dataset.pick});
-    if(error){alert(error.message);return}
-    await load();
+    if(error){alert(error.message);btn.disabled=false;return;}
+    myVotes.set(id,btn.dataset.pick);
+    render();
   });
 
   document.addEventListener('change',e=>{

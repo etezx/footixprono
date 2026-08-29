@@ -173,6 +173,17 @@ def team_name(event, side):
     )
     return str(v).strip() if v else None
 
+def team_id(event, side):
+    v=first(event, f"{side}_team_id", f"{side}TeamId", f"{side}_id")
+    if v is None:
+        obj=event.get(f"{side}_team") or event.get(side)
+        if isinstance(obj, dict):
+            v=first(obj, "id", "team_id")
+    try:
+        return int(v) if v is not None else None
+    except (TypeError, ValueError):
+        return None
+
 def score_value(event, side):
     v=first(event, f"{side}_score", f"{side}Score")
     if v is None:
@@ -301,6 +312,8 @@ def normalize(event, competition):
         "matchday": matchday_value(event),
         "home_team": home,
         "away_team": away,
+        "home_team_id": team_id(event,"home"),
+        "away_team_id": team_id(event,"away"),
         "kickoff": kickoff,
         "status": status,
         "home_score": hs,
