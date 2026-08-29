@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-08-29T19:22:09Z",
+  "generatedAt": "2026-08-29T19:56:23Z",
   "events": [
     {
       "eventId": 210448,
@@ -15,7 +15,7 @@
       "period": "FT",
       "homeScore": 2,
       "awayScore": 2,
-      "updatedAt": "2026-08-29T19:22:09Z",
+      "updatedAt": "2026-08-29T19:56:23Z",
       "actualScorers": [
         "Marquinhos",
         "Vitinha",
@@ -35,7 +35,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-29T19:22:09Z",
+      "updatedAt": "2026-08-29T19:56:23Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -55,9 +55,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-08-29T19:22:09Z",
-      "minute": 36,
+      "period": "2nd_half",
+      "updatedAt": "2026-08-29T19:56:23Z",
+      "minute": 51,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -75,16 +75,18 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-08-29T19:22:09Z",
-      "minute": 36,
-      "homeScore": 0,
-      "awayScore": 1,
+      "period": "2nd_half",
+      "updatedAt": "2026-08-29T19:56:23Z",
+      "minute": 52,
+      "homeScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "J. Makengo",
+        "L. Maronnier",
         "R. Ripart"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 3
     },
     {
       "eventId": 210450,
@@ -95,9 +97,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-08-29T19:22:09Z",
-      "minute": 36,
+      "period": "2nd_half",
+      "updatedAt": "2026-08-29T19:56:23Z",
+      "minute": 53,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -113,9 +115,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-08-29T19:22:09Z",
-      "minute": 36,
+      "period": "2nd_half",
+      "updatedAt": "2026-08-29T19:56:23Z",
+      "minute": 51,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -135,7 +137,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T19:22:09Z"
+      "updatedAt": "2026-08-29T19:56:23Z"
     },
     {
       "eventId": 210454,
@@ -147,7 +149,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T19:22:09Z"
+      "updatedAt": "2026-08-29T19:56:23Z"
     },
     {
       "eventId": 210446,
@@ -159,7 +161,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T19:22:09Z"
+      "updatedAt": "2026-08-29T19:56:23Z"
     }
   ]
 }

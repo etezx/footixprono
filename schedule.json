@@ -137,9 +137,9 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T19:22:09Z",
-          "minute": 36,
-          "period": "1st_half",
+          "lastLiveUpdate": "2026-08-29T19:56:23Z",
+          "minute": 51,
+          "period": "2nd_half",
           "homeScore": 1,
           "awayScore": 1,
           "actualScorers": [
@@ -160,9 +160,9 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T19:22:09Z",
-          "minute": 36,
-          "period": "1st_half",
+          "lastLiveUpdate": "2026-08-29T19:56:23Z",
+          "minute": 51,
+          "period": "2nd_half",
           "homeScore": 1,
           "awayScore": 1,
           "actualScorers": [
@@ -194,7 +194,7 @@
           "live": false,
           "period": "FT",
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T19:22:09Z"
+          "lastLiveUpdate": "2026-08-29T19:56:23Z"
         }
       ],
       [
@@ -209,12 +209,14 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T19:22:09Z",
-          "minute": 36,
-          "period": "1st_half",
-          "homeScore": 0,
-          "awayScore": 1,
+          "lastLiveUpdate": "2026-08-29T19:56:23Z",
+          "minute": 52,
+          "period": "2nd_half",
+          "homeScore": 1,
+          "awayScore": 2,
           "actualScorers": [
+            "J. Makengo",
+            "L. Maronnier",
             "R. Ripart"
           ],
           "scorersVerified": true
@@ -232,9 +234,9 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T19:22:09Z",
-          "minute": 36,
-          "period": "1st_half",
+          "lastLiveUpdate": "2026-08-29T19:56:23Z",
+          "minute": 53,
+          "period": "2nd_half",
           "homeScore": 0,
           "awayScore": 0,
           "actualScorers": [],
@@ -253,7 +255,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T19:22:09Z"
+          "lastLiveUpdate": "2026-08-29T19:56:23Z"
         }
       ],
       [
@@ -268,7 +270,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T19:22:09Z"
+          "lastLiveUpdate": "2026-08-29T19:56:23Z"
         }
       ],
       [
@@ -283,7 +285,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-08-29T19:22:09Z"
+          "lastLiveUpdate": "2026-08-29T19:56:23Z"
         }
       ],
       [
@@ -306,7 +308,7 @@
             "F. Thauvin"
           ],
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T19:22:09Z"
+          "lastLiveUpdate": "2026-08-29T19:56:23Z"
         }
       ]
     ]
