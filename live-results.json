@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-08-29T18:56:10Z",
+  "generatedAt": "2026-08-29T19:04:32Z",
   "events": [
     {
       "eventId": 210448,
@@ -15,7 +15,7 @@
       "period": "FT",
       "homeScore": 2,
       "awayScore": 2,
-      "updatedAt": "2026-08-29T18:56:10Z",
+      "updatedAt": "2026-08-29T19:04:32Z",
       "actualScorers": [
         "Marquinhos",
         "Vitinha",
@@ -35,7 +35,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-29T18:56:10Z",
+      "updatedAt": "2026-08-29T19:04:32Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -56,8 +56,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T18:56:10Z",
-      "minute": 10,
+      "updatedAt": "2026-08-29T19:04:32Z",
+      "minute": 18,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -76,8 +76,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T18:56:10Z",
-      "minute": 10,
+      "updatedAt": "2026-08-29T19:04:32Z",
+      "minute": 18,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -94,8 +94,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T18:56:10Z",
-      "minute": 10,
+      "updatedAt": "2026-08-29T19:04:32Z",
+      "minute": 18,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -112,13 +112,16 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-08-29T18:56:10Z",
-      "minute": 10,
-      "homeScore": 0,
+      "updatedAt": "2026-08-29T19:04:32Z",
+      "minute": 18,
+      "homeScore": 1,
       "awayScore": 1,
-      "actualScorers": [],
-      "scorersVerified": false,
-      "goalIncidents": 0
+      "actualScorers": [
+        "K. Doumbia",
+        "J. Russell Rowe"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 2
     },
     {
       "eventId": 210451,
@@ -130,7 +133,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T18:56:10Z"
+      "updatedAt": "2026-08-29T19:04:32Z"
     },
     {
       "eventId": 210454,
@@ -142,7 +145,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T18:56:10Z"
+      "updatedAt": "2026-08-29T19:04:32Z"
     },
     {
       "eventId": 210446,
@@ -154,7 +157,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T18:56:10Z"
+      "updatedAt": "2026-08-29T19:04:32Z"
     }
   ]
 }

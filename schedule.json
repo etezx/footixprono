@@ -137,8 +137,8 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T18:56:10Z",
-          "minute": 10,
+          "lastLiveUpdate": "2026-08-29T19:04:32Z",
+          "minute": 18,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 1,
@@ -160,13 +160,16 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T18:56:10Z",
-          "minute": 10,
+          "lastLiveUpdate": "2026-08-29T19:04:32Z",
+          "minute": 18,
           "period": "1st_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 1,
-          "actualScorers": [],
-          "scorersVerified": false
+          "actualScorers": [
+            "K. Doumbia",
+            "J. Russell Rowe"
+          ],
+          "scorersVerified": true
         }
       ],
       [
@@ -191,7 +194,7 @@
           "live": false,
           "period": "FT",
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T18:56:10Z"
+          "lastLiveUpdate": "2026-08-29T19:04:32Z"
         }
       ],
       [
@@ -206,8 +209,8 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T18:56:10Z",
-          "minute": 10,
+          "lastLiveUpdate": "2026-08-29T19:04:32Z",
+          "minute": 18,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -227,8 +230,8 @@
           "source": "bsd",
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-08-29T18:56:10Z",
-          "minute": 10,
+          "lastLiveUpdate": "2026-08-29T19:04:32Z",
+          "minute": 18,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -248,7 +251,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T18:56:10Z"
+          "lastLiveUpdate": "2026-08-29T19:04:32Z"
         }
       ],
       [
@@ -263,7 +266,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T18:56:10Z"
+          "lastLiveUpdate": "2026-08-29T19:04:32Z"
         }
       ],
       [
@@ -278,7 +281,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-08-29T18:56:10Z"
+          "lastLiveUpdate": "2026-08-29T19:04:32Z"
         }
       ],
       [
@@ -301,7 +304,7 @@
             "F. Thauvin"
           ],
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T18:56:10Z"
+          "lastLiveUpdate": "2026-08-29T19:04:32Z"
         }
       ]
     ]
