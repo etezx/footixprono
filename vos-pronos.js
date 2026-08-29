@@ -30,6 +30,7 @@ const showPronoToast=(text)=>{
   const kickoffDate=v=>v?new Date(v):null;
   const time=v=>v?new Intl.DateTimeFormat('fr-FR',{hour:'2-digit',minute:'2-digit'}).format(new Date(v)):'—';
   const dayLabel=v=>v?new Intl.DateTimeFormat('fr-FR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'}).format(new Date(v)).toUpperCase():'DATE À VENIR';
+  const shortDate=v=>v?new Intl.DateTimeFormat('fr-FR',{day:'2-digit',month:'2-digit'}).format(new Date(v)):'—';
   const logo=id=>id?`https://sports.bzzoiro.com/img/team/${encodeURIComponent(id)}/?bg=transparent`:'';
   const isFinished=m=>m.status==='finished'||!!m.result_pick;
   const isLive=m=>m.status==='live';
@@ -82,8 +83,13 @@ const showPronoToast=(text)=>{
     let resultCell='';
     let choiceCell='';
     if(finished){
-      resultCell=`<div class="result-finished"><b>${m.home_score ?? '—'} - ${m.away_score ?? '—'}</b><span class="result-pick">${final||'—'}</span></div>`;
-      choiceCell=mine?`<span class="my-pick ${good?'good':'bad'}">${mine}</span>`:'<span class="muted-dash">—</span>';
+      resultCell=`<div class="result-finished ${good?'prediction-correct':mine?'prediction-wrong':''}">
+        <b>${m.home_score ?? '—'} - ${m.away_score ?? '—'}</b>
+        <span class="result-pick">RÉSULTAT ${final||'—'}</span>
+      </div>`;
+      choiceCell=mine
+        ? `<div class="my-pick-wrap ${good?'good':'bad'}"><span class="my-pick ${good?'good':'bad'}">${mine}</span><small>${good?'✓ BON PRONO':'✕ MAUVAIS PRONO'}</small></div>`
+        : '<span class="muted-dash">—</span>';
     }else{
       resultCell=`<div class="pick-inline">${['1','N','2'].map(p=>pickPill(p,mine,lock)).join('')}</div>`;
       choiceCell=mine?`<span class="my-pick pending">${mine}</span>`:'<span class="muted-dash">—</span>';
@@ -91,8 +97,9 @@ const showPronoToast=(text)=>{
 
     return `<article class="premium-match-row" data-match="${m.id}">
       <div class="match-time">
+        <small class="match-short-date">${shortDate(m.kickoff)}</small>
         <b>${time(m.kickoff)}</b>
-        <span class="${finished?'finished':live?'live':'upcoming'}">${finished?'Terminé':live?'En direct':'À venir'}</span>
+        <span class="match-status ${finished?'finished':live?'live':'upcoming'}">${finished?'TERMINÉ':live?'EN DIRECT':'À VENIR'}</span>
       </div>
       <div class="match-clubs">
         <div class="club home">${crest(m.home_team_id,m.home_team)}<strong>${esc(m.home_team)}</strong></div>
@@ -232,6 +239,8 @@ const showPronoToast=(text)=>{
     if(error){alert(error.message);btn.disabled=false;return;}
     myVotes.set(id,btn.dataset.pick);
     showPronoToast('✓ Prono enregistré');
+    try{ await db.rpc('notify_my_prediction',{p_match_id:id}); }catch(_e){}
+    if(window.footixNotificationsRefresh) window.footixNotificationsRefresh();
     render();
   });
 

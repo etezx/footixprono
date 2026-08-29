@@ -52,6 +52,7 @@
    }catch(_e){}
    render();
  }
+ window.footixNotificationsRefresh=async()=>{ await load(); };
  async function boot(){
    mount();
    const host=document.querySelector('#footix-notifications');

@@ -3912,3 +3912,211 @@ body:has(.monthly-ranking-main){
 .page-votes-v940 .premium-match-list *{
   scrollbar-color:#2e6098 #071d3b;
 }
+
+/* V9.8.2 — Classement bleu + lisibilité Vos pronos + résultats */
+
+/* CLASSEMENT : suppression complète de la DA blanche historique */
+.page-ranking-v941,
+.page-ranking-v941 .main-wrap,
+.page-ranking-v941 .ranking-premium-main{
+  background:#071d3b!important;
+  color:#eef6ff!important;
+}
+.page-ranking-v941 .ranking-hero h1,
+.page-ranking-v941 .ranking-hero h1 em,
+.page-ranking-v941 .ranking-board-top h2,
+.page-ranking-v941 .winners-history h2{
+  color:#f4f9ff!important;
+}
+.page-ranking-v941 .ranking-hero p,
+.page-ranking-v941 .ranking-eyebrow,
+.page-ranking-v941 .ranking-month-box label{
+  color:#9db9d8!important;
+}
+.page-ranking-v941 .ranking-month-box input{
+  border-color:#2b5d91!important;
+  background:#071f3f!important;
+  color:#f4f9ff!important;
+}
+.page-ranking-v941 .monthly-ranking-board,
+.page-ranking-v941 .winners-history{
+  border-color:rgba(110,170,234,.22)!important;
+  background:#0a2850!important;
+  box-shadow:0 8px 26px rgba(1,12,30,.22)!important;
+}
+.page-ranking-v941 .ranking-board-top,
+.page-ranking-v941 .winners-history-head{
+  border-color:rgba(110,170,234,.18)!important;
+  background:#082448!important;
+}
+.page-ranking-v941 .ranking-competition-tabs button{
+  border-color:#2a5a8d!important;
+  background:#0d315f!important;
+  color:#c7dbef!important;
+}
+.page-ranking-v941 .ranking-competition-tabs button.active{
+  border-color:#4c9aee!important;
+  background:#1769d2!important;
+  color:#fff!important;
+}
+.page-ranking-v941 .ranking-period-info{
+  border-color:#1f4b79!important;
+  background:#09264b!important;
+}
+.page-ranking-v941 .ranking-period-info>div{
+  border-color:#1f4b79!important;
+}
+.page-ranking-v941 .ranking-period-info small{color:#8faecd!important}
+.page-ranking-v941 .ranking-period-info b{color:#eef6ff!important}
+.page-ranking-v941 .ranking-table-v941 th{
+  background:#071f3f!important;
+  color:#8faecd!important;
+}
+.page-ranking-v941 .ranking-table-v941 td{
+  border-color:#173e68!important;
+  background:#0a2a53!important;
+  color:#c5d8eb!important;
+}
+.page-ranking-v941 .ranking-table-v941 tr:nth-child(even) td{
+  background:#0d315f!important;
+}
+.page-ranking-v941 .ranking-table-v941 td strong{color:#fff!important}
+.page-ranking-v941 .monthly-podium-card,
+.page-ranking-v941 .winner-month-card{
+  border-color:#235382!important;
+  background:#0d315f!important;
+  color:#eaf4ff!important;
+}
+.page-ranking-v941 .monthly-ranking-rules,
+.page-ranking-v941 .leaderboard-note{
+  border-color:#2a6baa!important;
+  background:#082448!important;
+  color:#a9c3de!important;
+}
+.page-ranking-v941 .monthly-ranking-rules strong{color:#eaf4ff!important}
+.page-ranking-v941 .monthly-ranking-rules p{color:#9db6d1!important}
+.page-ranking-v941 .winner-month-title{
+  background:#082448!important;
+  border-color:#214b78!important;
+}
+.page-ranking-v941 .winner-month-title b{color:#f4f9ff!important}
+
+/* VOS PRONOS : date / heure / statut très lisibles */
+.page-votes-v940 .date-bar{
+  padding:11px 14px!important;
+  background:#0e3b72!important;
+  color:#f5f9ff!important;
+  border-left:4px solid #45a1ff!important;
+  font-size:10px!important;
+  font-weight:950!important;
+  letter-spacing:.075em!important;
+}
+.page-votes-v940 .match-time{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:3px!important;
+  min-width:78px!important;
+}
+.page-votes-v940 .match-short-date{
+  color:#8fb8e3!important;
+  font-size:7px!important;
+  font-weight:900!important;
+}
+.page-votes-v940 .match-time>b{
+  color:#fff!important;
+  font-size:13px!important;
+  line-height:1!important;
+}
+.page-votes-v940 .match-status{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-width:57px!important;
+  padding:4px 6px!important;
+  border-radius:20px!important;
+  font-size:6.5px!important;
+  font-weight:950!important;
+  letter-spacing:.05em!important;
+}
+.page-votes-v940 .match-status.upcoming{
+  background:#123b69!important;
+  color:#89c7ff!important;
+  border:1px solid #2d6fae!important;
+}
+.page-votes-v940 .match-status.finished{
+  background:#243349!important;
+  color:#d4dfec!important;
+  border:1px solid #53677f!important;
+}
+.page-votes-v940 .match-status.live{
+  background:#4a1830!important;
+  color:#ff8aaa!important;
+  border:1px solid #a83c63!important;
+}
+
+/* Résultat final et verdict du membre */
+.page-votes-v940 .result-finished{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:4px!important;
+  min-width:86px!important;
+  padding:7px 9px!important;
+  border:1px solid #295b8d!important;
+  border-radius:7px!important;
+  background:#071f3f!important;
+}
+.page-votes-v940 .result-finished>b{
+  color:#fff!important;
+  font-size:15px!important;
+  letter-spacing:.04em!important;
+}
+.page-votes-v940 .result-pick{
+  color:#8eb8e2!important;
+  font-size:6.5px!important;
+  font-weight:950!important;
+}
+.page-votes-v940 .my-pick-wrap{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:4px!important;
+}
+.page-votes-v940 .my-pick-wrap small{
+  white-space:nowrap!important;
+  font-size:6.5px!important;
+  font-weight:950!important;
+}
+.page-votes-v940 .my-pick-wrap.good small{color:#72e0ae!important}
+.page-votes-v940 .my-pick-wrap.bad small{color:#ff8495!important}
+.page-votes-v940 .my-pick.good{
+  background:#123f37!important;
+  border:1px solid #2d8a70!important;
+  color:#86ebc0!important;
+}
+.page-votes-v940 .my-pick.bad{
+  background:#451d2a!important;
+  border:1px solid #a34058!important;
+  color:#ff94a2!important;
+}
+.page-votes-v940 .match-points-cell.good{
+  color:#7be3b3!important;
+  font-weight:950!important;
+}
+.page-votes-v940 .match-points-cell.bad{
+  color:#ff8d9c!important;
+  font-weight:950!important;
+}
+
+@media(max-width:620px){
+  .page-votes-v940 .match-time{min-width:62px!important}
+  .page-votes-v940 .match-time>b{font-size:12px!important}
+  .page-votes-v940 .match-status{min-width:50px;padding:3px 4px!important;font-size:6px!important}
+  .page-votes-v940 .result-finished{min-width:68px;padding:6px!important}
+  .page-votes-v940 .result-finished>b{font-size:13px!important}
+  .page-votes-v940 .my-pick-wrap small{font-size:5.8px!important}
+}
