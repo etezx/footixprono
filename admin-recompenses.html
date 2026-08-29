@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#07101f">
 <title>Classements — Footix Prono</title>
 <meta name="description" content="Classements de la communauté Footix Prono.">
-<link rel="stylesheet" href="styles.css?v=9.8.0">
+<link rel="stylesheet" href="styles.css?v=9.8.3">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
 <body class="page-admin-rewards"  class="page-ranking-v941">
@@ -60,6 +60,18 @@
 <section id="admin-access-state" class="admin-access-state">Vérification des droits administrateur…</section>
 
 <section id="admin-rewards-app" class="admin-rewards-app is-hidden">
+
+  <article class="admin-finalize-card admin-notif-test-card">
+    <span class="eyebrow">TEST NOTIFICATIONS</span>
+    <h2>SIMULER UNE FIN DE MATCH</h2>
+    <p>Ces boutons créent uniquement une notification de test dans ta cloche. Ils ne modifient ni les matchs, ni les pronos, ni les points du classement.</p>
+    <div class="admin-finalize-actions">
+      <button type="button" id="admin-test-good-prono">✓ TEST BON PRONO</button>
+      <button type="button" id="admin-test-bad-prono">✕ TEST MAUVAIS PRONO</button>
+    </div>
+    <p id="admin-test-notif-note"></p>
+  </article>
+
   <article class="admin-finalize-card">
     <div>
       <span>FINALISATION</span>
@@ -155,6 +167,6 @@
 <script src="auth-community.js?v=9.3.2"></script>
 
 
-<script src="admin-recompenses.js?v=9.6.0"></script>
-<script src="notifications.js?v=9.7.0"></script>
+<script src="admin-recompenses.js?v=9.8.3"></script>
+<script src="notifications.js?v=9.8.3"></script>
 </body></html>

@@ -4120,3 +4120,21 @@ body:has(.monthly-ranking-main){
   .page-votes-v940 .result-finished>b{font-size:13px!important}
   .page-votes-v940 .my-pick-wrap small{font-size:5.8px!important}
 }
+
+/* V9.8.3 — test admin notifications de fin de match */
+.page-admin-rewards .admin-notif-test-card{
+  background:#0a2850!important;
+  border-color:rgba(109,170,235,.24)!important;
+}
+.page-admin-rewards .admin-notif-test-card h2{color:#f4f9ff!important}
+.page-admin-rewards .admin-notif-test-card p{color:#a8c2de!important}
+.page-admin-rewards #admin-test-good-prono{
+  background:#123f37!important;
+  border-color:#2d8a70!important;
+  color:#86ebc0!important;
+}
+.page-admin-rewards #admin-test-bad-prono{
+  background:#451d2a!important;
+  border-color:#a34058!important;
+  color:#ff94a2!important;
+}

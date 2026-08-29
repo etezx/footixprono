@@ -53,6 +53,18 @@
      </section>`).join('');
  }
 
+
+ async function sendTestNotification(correct){
+   const note=$('#admin-test-notif-note');
+   note.textContent='Création de la notification de test…';
+   const {error}=await db.rpc('admin_send_test_match_notification',{p_correct:correct});
+   if(error){note.textContent='Erreur : '+error.message;return;}
+   note.textContent=correct?'✓ Notification « bon prono » créée.':'✓ Notification « mauvais prono » créée.';
+   if(window.footixNotificationsRefresh) await window.footixNotificationsRefresh();
+ }
+ $('#admin-test-good-prono')?.addEventListener('click',()=>sendTestNotification(true));
+ $('#admin-test-bad-prono')?.addEventListener('click',()=>sendTestNotification(false));
+
  $('#admin-finalize-btn')?.addEventListener('click',async()=>{
    const note=$('#admin-finalize-note');
    if(!input.value){note.textContent='Choisis un mois.';return;}
