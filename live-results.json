@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-08-29T17:27:24Z",
+  "generatedAt": "2026-08-29T18:54:29Z",
   "events": [
     {
       "eventId": 210448,
@@ -15,7 +15,7 @@
       "period": "FT",
       "homeScore": 2,
       "awayScore": 2,
-      "updatedAt": "2026-08-29T17:27:24Z",
+      "updatedAt": "2026-08-29T18:54:29Z",
       "actualScorers": [
         "Marquinhos",
         "Vitinha",
@@ -35,7 +35,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-29T17:27:24Z",
+      "updatedAt": "2026-08-29T18:54:29Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -51,48 +51,74 @@
       "leagueId": 6,
       "home": "Auxerre",
       "away": "Angers",
-      "kickoff": "2026-08-29T18:45:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-08-29T18:45:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-08-29T17:27:24Z"
+      "period": "1st_half",
+      "updatedAt": "2026-08-29T18:54:29Z",
+      "minute": 9,
+      "homeScore": 0,
+      "awayScore": 1,
+      "actualScorers": [
+        "B. Van den Boomen"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 1
     },
     {
       "eventId": 210449,
       "leagueId": 6,
       "home": "Lorient",
       "away": "Troyes",
-      "kickoff": "2026-08-29T18:45:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-08-29T18:45:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-08-29T17:27:24Z"
+      "period": "1st_half",
+      "updatedAt": "2026-08-29T18:54:29Z",
+      "minute": 8,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210450,
       "leagueId": 6,
       "home": "Olympique Lyonnais",
       "away": "Le Havre",
-      "kickoff": "2026-08-29T18:45:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-08-29T18:45:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-08-29T17:27:24Z"
+      "period": "1st_half",
+      "updatedAt": "2026-08-29T18:54:29Z",
+      "minute": 8,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210453,
       "leagueId": 6,
       "home": "Stade Brestois",
       "away": "Toulouse",
-      "kickoff": "2026-08-29T18:45:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-08-29T18:45:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-08-29T17:27:24Z"
+      "period": "1st_half",
+      "updatedAt": "2026-08-29T18:54:29Z",
+      "minute": 8,
+      "homeScore": 0,
+      "awayScore": 1,
+      "actualScorers": [],
+      "scorersVerified": false,
+      "goalIncidents": 0
     },
     {
       "eventId": 210451,
@@ -104,7 +130,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T17:27:24Z"
+      "updatedAt": "2026-08-29T18:54:29Z"
     },
     {
       "eventId": 210454,
@@ -116,7 +142,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T17:27:24Z"
+      "updatedAt": "2026-08-29T18:54:29Z"
     },
     {
       "eventId": 210446,
@@ -128,7 +154,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T17:27:24Z"
+      "updatedAt": "2026-08-29T18:54:29Z"
     }
   ]
 }

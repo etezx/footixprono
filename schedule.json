@@ -135,9 +135,17 @@
           "completed": false,
           "eventId": 210447,
           "source": "bsd",
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-08-29T17:27:24Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-08-29T18:54:29Z",
+          "minute": 9,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 1,
+          "actualScorers": [
+            "B. Van den Boomen"
+          ],
+          "scorersVerified": true
         }
       ],
       [
@@ -150,9 +158,15 @@
           "completed": false,
           "eventId": 210453,
           "source": "bsd",
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-08-29T17:27:24Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-08-29T18:54:29Z",
+          "minute": 8,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 1,
+          "actualScorers": [],
+          "scorersVerified": false
         }
       ],
       [
@@ -177,7 +191,7 @@
           "live": false,
           "period": "FT",
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T17:27:24Z"
+          "lastLiveUpdate": "2026-08-29T18:54:29Z"
         }
       ],
       [
@@ -190,9 +204,15 @@
           "completed": false,
           "eventId": 210449,
           "source": "bsd",
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-08-29T17:27:24Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-08-29T18:54:29Z",
+          "minute": 8,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -205,9 +225,15 @@
           "completed": false,
           "eventId": 210450,
           "source": "bsd",
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-08-29T17:27:24Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-08-29T18:54:29Z",
+          "minute": 8,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -222,7 +248,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T17:27:24Z"
+          "lastLiveUpdate": "2026-08-29T18:54:29Z"
         }
       ],
       [
@@ -237,7 +263,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T17:27:24Z"
+          "lastLiveUpdate": "2026-08-29T18:54:29Z"
         }
       ],
       [
@@ -252,7 +278,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-08-29T17:27:24Z"
+          "lastLiveUpdate": "2026-08-29T18:54:29Z"
         }
       ],
       [
@@ -275,7 +301,7 @@
             "F. Thauvin"
           ],
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T17:27:24Z"
+          "lastLiveUpdate": "2026-08-29T18:54:29Z"
         }
       ]
     ]
