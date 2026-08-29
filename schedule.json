@@ -132,20 +132,22 @@
           "date": "2026-08-29",
           "time": "20:45",
           "official": true,
-          "completed": false,
+          "completed": true,
           "eventId": 210447,
           "source": "bsd",
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-08-29T20:00:31Z",
-          "minute": 55,
-          "period": "2nd_half",
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-08-29T20:49:32Z",
+          "period": "FT",
           "homeScore": 1,
-          "awayScore": 1,
+          "awayScore": 3,
           "actualScorers": [
+            "A. E. Ouazzani",
+            "D. Harouna",
+            "R. Lascary",
             "B. Van den Boomen"
           ],
-          "scorersVerified": false
+          "scorersVerified": true
         }
       ],
       [
@@ -155,17 +157,18 @@
           "date": "2026-08-29",
           "time": "20:45",
           "official": true,
-          "completed": false,
+          "completed": true,
           "eventId": 210453,
           "source": "bsd",
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-08-29T20:00:31Z",
-          "minute": 55,
-          "period": "2nd_half",
-          "homeScore": 1,
-          "awayScore": 1,
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-08-29T20:49:32Z",
+          "period": "FT",
+          "homeScore": 2,
+          "awayScore": 2,
           "actualScorers": [
+            "L. Ajorque",
+            "C. Tapé",
             "K. Doumbia",
             "J. Russell Rowe"
           ],
@@ -194,7 +197,7 @@
           "live": false,
           "period": "FT",
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T20:00:31Z"
+          "lastLiveUpdate": "2026-08-29T20:49:32Z"
         }
       ],
       [
@@ -204,14 +207,13 @@
           "date": "2026-08-29",
           "time": "20:45",
           "official": true,
-          "completed": false,
+          "completed": true,
           "eventId": 210449,
           "source": "bsd",
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-08-29T20:00:31Z",
-          "minute": 55,
-          "period": "2nd_half",
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-08-29T20:49:32Z",
+          "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
           "actualScorers": [
@@ -229,17 +231,19 @@
           "date": "2026-08-29",
           "time": "20:45",
           "official": true,
-          "completed": false,
+          "completed": true,
           "eventId": 210450,
           "source": "bsd",
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-08-29T20:00:31Z",
-          "minute": 57,
-          "period": "2nd_half",
-          "homeScore": 0,
-          "awayScore": 0,
-          "actualScorers": [],
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-08-29T20:49:32Z",
+          "period": "FT",
+          "homeScore": 1,
+          "awayScore": 1,
+          "actualScorers": [
+            "L. Openda",
+            "A. Samatta"
+          ],
           "scorersVerified": true
         }
       ],
@@ -255,7 +259,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T20:00:31Z"
+          "lastLiveUpdate": "2026-08-29T20:49:32Z"
         }
       ],
       [
@@ -270,7 +274,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-29T20:00:31Z"
+          "lastLiveUpdate": "2026-08-29T20:49:32Z"
         }
       ],
       [
@@ -285,7 +289,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-08-29T20:00:31Z"
+          "lastLiveUpdate": "2026-08-29T20:49:32Z"
         }
       ],
       [
@@ -308,7 +312,7 @@
             "F. Thauvin"
           ],
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-29T20:00:31Z"
+          "lastLiveUpdate": "2026-08-29T20:49:32Z"
         }
       ]
     ]

@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-08-29T20:00:31Z",
+  "generatedAt": "2026-08-29T20:49:32Z",
   "events": [
     {
       "eventId": 210448,
@@ -15,7 +15,7 @@
       "period": "FT",
       "homeScore": 2,
       "awayScore": 2,
-      "updatedAt": "2026-08-29T20:00:31Z",
+      "updatedAt": "2026-08-29T20:49:32Z",
       "actualScorers": [
         "Marquinhos",
         "Vitinha",
@@ -35,7 +35,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-29T20:00:31Z",
+      "updatedAt": "2026-08-29T20:49:32Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -47,37 +47,17 @@
       "goalIncidents": 3
     },
     {
-      "eventId": 210447,
-      "leagueId": 6,
-      "home": "Auxerre",
-      "away": "Angers",
-      "kickoff": "2026-08-29T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-08-29T20:00:31Z",
-      "minute": 55,
-      "homeScore": 1,
-      "awayScore": 1,
-      "actualScorers": [
-        "B. Van den Boomen"
-      ],
-      "scorersVerified": false,
-      "goalIncidents": 1
-    },
-    {
       "eventId": 210449,
       "leagueId": 6,
       "home": "Lorient",
       "away": "Troyes",
-      "kickoff": "2026-08-29T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-08-29T20:00:31Z",
-      "minute": 55,
+      "kickoff": "2026-08-29T18:45:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-08-29T20:49:32Z",
+      "minute": null,
       "homeScore": 1,
       "awayScore": 2,
       "actualScorers": [
@@ -89,22 +69,48 @@
       "goalIncidents": 3
     },
     {
+      "eventId": 210447,
+      "leagueId": 6,
+      "home": "Auxerre",
+      "away": "Angers",
+      "kickoff": "2026-08-29T18:45:00Z",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-08-29T20:49:32Z",
+      "minute": null,
+      "homeScore": 1,
+      "awayScore": 3,
+      "actualScorers": [
+        "A. E. Ouazzani",
+        "D. Harouna",
+        "R. Lascary",
+        "B. Van den Boomen"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 4
+    },
+    {
       "eventId": 210450,
       "leagueId": 6,
       "home": "Olympique Lyonnais",
       "away": "Le Havre",
       "kickoff": "2026-08-29T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-08-29T20:00:31Z",
-      "minute": 57,
-      "homeScore": 0,
-      "awayScore": 0,
-      "actualScorers": [],
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-08-29T20:49:32Z",
+      "minute": null,
+      "homeScore": 1,
+      "awayScore": 1,
+      "actualScorers": [
+        "L. Openda",
+        "A. Samatta"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 2
     },
     {
       "eventId": 210453,
@@ -112,20 +118,22 @@
       "home": "Stade Brestois",
       "away": "Toulouse",
       "kickoff": "2026-08-29T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-08-29T20:00:31Z",
-      "minute": 55,
-      "homeScore": 1,
-      "awayScore": 1,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-08-29T20:49:32Z",
+      "minute": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "actualScorers": [
+        "L. Ajorque",
+        "C. Tapé",
         "K. Doumbia",
         "J. Russell Rowe"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 4
     },
     {
       "eventId": 210451,
@@ -137,7 +145,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T20:00:31Z"
+      "updatedAt": "2026-08-29T20:49:32Z"
     },
     {
       "eventId": 210454,
@@ -149,7 +157,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T20:00:31Z"
+      "updatedAt": "2026-08-29T20:49:32Z"
     },
     {
       "eventId": 210446,
@@ -161,7 +169,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-29T20:00:31Z"
+      "updatedAt": "2026-08-29T20:49:32Z"
     }
   ]
 }
