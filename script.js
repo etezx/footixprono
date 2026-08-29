@@ -532,6 +532,16 @@ async function initUCL(){
     b.onclick=()=>{current=md.day;$$("#ucl-day-tabs button").forEach(x=>x.classList.remove("active"));b.classList.add("active");showDay(md);};
     $("#ucl-day-tabs").appendChild(b);
   });
+  const teamsTab=document.createElement("button");
+  teamsTab.textContent="ÉQUIPES";
+  teamsTab.className="teams-tab";
+  teamsTab.onclick=()=>{
+    current="teams";
+    $$("#ucl-day-tabs button").forEach(x=>x.classList.remove("active"));
+    teamsTab.classList.add("active");
+    showTeamsPage();
+  };
+  $("#ucl-day-tabs").appendChild(teamsTab);
   function fixtureFor(m){
     const meta={date:m.date||""};
     return mergeFixtureData({},liveEventFor(liveData,7,m.home,m.away,meta));
@@ -553,6 +563,37 @@ async function initUCL(){
       openPronoPanel({home:m.home,away:m.away,homeLogo:logoFor(m.home,"ucl-match-logo"),awayLogo:logoFor(m.away,"ucl-match-logo"),meta:[m.date,m.time].filter(Boolean).join(" · "),score:m.score||m.scorePrevu||"—",pick:normalizePick(m.pick),analysis:m.analyse||m.analysis||"",fixture:f,p:m});
     }));
   }
+  function teamFixtures(name){
+    const fixtures=[];
+    Object.entries(uclPronos.days||{}).forEach(([dayNo,day])=>{
+      (day.matches||[]).forEach(m=>{
+        if(m.home===name||m.away===name){
+          fixtures.push({...m,day:Number(dayNo),side:m.home===name?"home":"away",opponent:m.home===name?m.away:m.home});
+        }
+      });
+    });
+    return fixtures.sort((a,b)=>a.day-b.day);
+  }
+  function showTeamsPage(){
+    const cards=d.teams.map(t=>{
+      const fixtures=teamFixtures(t.club);
+      const home=fixtures.filter(f=>f.side==="home");
+      const away=fixtures.filter(f=>f.side==="away");
+      const fixtureRow=f=>`<div class="ucl-team-fixture">
+        <span class="ucl-fixture-day">J${String(f.day).padStart(2,"0")}</span>
+        <span class="ucl-fixture-opponent">${logoFor(f.opponent,"ucl-fixture-logo")}<b>${escapeHTML(f.opponent)}</b></span>
+        <span class="ucl-fixture-date">${escapeHTML(f.date||"Date à confirmer")}${f.time?` · ${escapeHTML(f.time)}`:""}</span>
+      </div>`;
+      return `<article class="ucl-team-schedule-card">
+        <header>${logoFor(t.club,"ucl-team-schedule-logo")}<div><strong>${escapeHTML(t.club)}</strong><span>${escapeHTML(t.country||"")}</span></div></header>
+        <div class="ucl-team-schedule-columns">
+          <section><h4>🏠 RÉCEPTIONS</h4>${home.map(fixtureRow).join("")}</section>
+          <section><h4>✈ DÉPLACEMENTS</h4>${away.map(fixtureRow).join("")}</section>
+        </div>
+      </article>`;
+    }).join("");
+    $("#ucl-day-content").innerHTML=`<div class="ucl-teams-page-head"><div><span class="eyebrow">PHASE DE LIGUE · 2026/27</span><h3>Calendrier des 36 équipes</h3><p>Les 4 réceptions et 4 déplacements de chaque club, avec journée, adversaire, date et heure.</p></div></div><div class="ucl-team-schedules">${cards}</div>`;
+  }
   function renderUclStandings(){
     let base=competitionStandings(bsdStanding,7);
     if(!base.length) base=d.teams.map(t=>({club:t.club,p:t.p||0,w:t.w||0,d:t.d||0,l:t.l||0,gf:t.gf||0,ga:t.ga||0,pts:t.pts||0}));
@@ -571,7 +612,7 @@ async function initUCL(){
   $$("#ucl-teams .ucl-team-card").forEach(btn=>btn.addEventListener("click",()=>{select.value=btn.dataset.team;renderDraw(btn.dataset.team);$("#ucl-team-select").scrollIntoView({behavior:"smooth",block:"center"});}));
   renderUclStandings();
   $("#knockout-tree").innerHTML=d.knockout.map((r,i)=>`<div class="round-card"><small>${String(i+1).padStart(2,"0")}</small><b>${r.round}</b><span>${r.dates}</span><em>${i<4?"Équipes à déterminer":"🏆"}</em></div>`).join("");
-  setInterval(async()=>{try{[liveData,bsdStanding]=await Promise.all([getJSON("live-results.json").catch(()=>liveData),getJSON("bsd-standings.json").catch(()=>bsdStanding)]);const md=d.matchdays.find(x=>x.day===current)||d.matchdays[0];showDay(md);renderUclStandings();}catch(e){console.warn("Footix UCL Live: actualisation différée",e);}},60000);
+  setInterval(async()=>{try{[liveData,bsdStanding]=await Promise.all([getJSON("live-results.json").catch(()=>liveData),getJSON("bsd-standings.json").catch(()=>bsdStanding)]);if(current==="teams") showTeamsPage(); else {const md=d.matchdays.find(x=>x.day===current)||d.matchdays[0];showDay(md);}renderUclStandings();}catch(e){console.warn("Footix UCL Live: actualisation différée",e);}},60000);
 }
 async function initHomePronoCount(){
   const el=$("#home-pronos");

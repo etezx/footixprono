@@ -1790,3 +1790,80 @@ body.prono-panel-open{overflow:hidden}
     padding:0!important;
   }
 }
+
+
+/* === V8.7.0 — onglet ÉQUIPES LDC === */
+#ucl-day-tabs .teams-tab{
+  margin-left:8px;
+  border-color:rgba(35,143,255,.5);
+}
+#ucl-day-tabs .teams-tab.active{
+  border-color:#238fff!important;
+  background:#082541!important;
+  box-shadow:inset 0 -2px #238fff!important;
+}
+.ucl-teams-page-head{
+  margin:16px 0 12px;
+  padding:17px 18px;
+  border:1px solid #173d61;
+  border-radius:12px;
+  background:#06182c;
+}
+.ucl-teams-page-head h3{
+  margin:3px 0 4px;
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif;
+  font-size:25px;
+  color:#f4f8fd;
+}
+.ucl-teams-page-head p{margin:0;color:#8fa6bd;font-size:13px}
+.ucl-team-schedules{display:grid;grid-template-columns:1fr;gap:12px}
+.ucl-team-schedule-card{
+  border:1px solid #173958;
+  border-radius:12px;
+  background:#051426;
+  overflow:hidden;
+}
+.ucl-team-schedule-card>header{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  padding:12px 15px;
+  border-bottom:1px solid #12324f;
+  background:#071a30;
+}
+.ucl-team-schedule-card>header div{display:flex;flex-direction:column}
+.ucl-team-schedule-card>header strong{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif;
+  font-size:19px;color:#f5f8fc;letter-spacing:.015em
+}
+.ucl-team-schedule-card>header span{font-size:11px;color:#7892aa;text-transform:uppercase}
+.ucl-team-schedule-logo{width:36px;height:36px;object-fit:contain}
+.ucl-team-schedule-columns{display:grid;grid-template-columns:1fr 1fr}
+.ucl-team-schedule-columns>section{padding:11px 13px}
+.ucl-team-schedule-columns>section+section{border-left:1px solid #12324f}
+.ucl-team-schedule-columns h4{
+  margin:0 0 7px;font-size:11px;letter-spacing:.05em;color:#8ba5be
+}
+.ucl-team-fixture{
+  min-height:35px;
+  display:grid;
+  grid-template-columns:38px minmax(125px,1fr) auto;
+  align-items:center;
+  gap:7px;
+  border-top:1px solid rgba(20,52,79,.62);
+}
+.ucl-team-fixture:first-of-type{border-top:0}
+.ucl-fixture-day{font-size:10px;font-weight:900;color:#51aaff}
+.ucl-fixture-opponent{display:flex;align-items:center;gap:7px;min-width:0}
+.ucl-fixture-opponent b{
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:14px;color:#eaf1f8
+}
+.ucl-fixture-logo{width:21px;height:21px;object-fit:contain;flex:0 0 21px}
+.ucl-fixture-date{font-size:11px;color:#91a7bc;white-space:nowrap}
+@media(max-width:760px){
+  .ucl-team-schedule-columns{grid-template-columns:1fr}
+  .ucl-team-schedule-columns>section+section{border-left:0;border-top:1px solid #12324f}
+  .ucl-team-fixture{grid-template-columns:34px minmax(105px,1fr);padding:5px 0}
+  .ucl-fixture-date{grid-column:2}
+}
