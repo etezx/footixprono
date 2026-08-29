@@ -3559,3 +3559,258 @@ body.modal-open{overflow:hidden}
  /* vote page: larger touch targets and no horizontal overflow */
  .page-votes-v940 .votes-premium-board{border-radius:8px}.page-votes-v940 .premium-match-row{overflow:hidden}.page-votes-v940 .pick-mini{min-width:58px;height:42px;font-size:12px;touch-action:manipulation}.page-votes-v940 .day-arrow{height:44px}.page-votes-v940 #matchday-select{height:44px}.page-votes-v940 .votes-comp-switch button{min-height:48px}.page-votes-v940 .match-result-cell{width:100%}
 }
+
+/* V9.6.0 — administration des récompenses */
+.profile-admin-action{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 13px;border:1px solid #cfd9e4;border-radius:6px;background:#fff;color:#163452;font-size:8px;font-weight:950;text-decoration:none}
+.admin-rewards-main{max-width:1300px;margin:auto;padding:24px;color:#0b203b}
+.admin-rewards-hero{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:16px}.admin-rewards-hero>div>span,.admin-finalize-card>div>span,.admin-card-head span,.admin-month-title span{color:#71849b;font-size:8px;font-weight:950;letter-spacing:.14em}.admin-rewards-hero h1{margin:4px 0;color:#081d38;font-size:30px}.admin-rewards-hero p{margin:5px 0 0;color:#748399;font-size:11px}.admin-back{color:#1764c8;font-size:8px;font-weight:950;text-decoration:none}
+.admin-access-state,.admin-finalize-card,.admin-winners-card{border:1px solid #dce3eb;border-radius:11px;background:#fff;box-shadow:0 5px 18px rgba(12,37,67,.05)}.admin-access-state{padding:25px;text-align:center;color:#708197}
+.admin-rewards-app{display:grid;gap:14px}.admin-rewards-app.is-hidden,.admin-access-state.is-hidden{display:none!important}
+.admin-finalize-card{display:grid;grid-template-columns:1fr auto;align-items:center;gap:18px;padding:18px}.admin-finalize-card h2,.admin-card-head h2{margin:3px 0;color:#102640;font-size:15px}.admin-finalize-card p{margin:5px 0 0;color:#718096;font-size:9px}.admin-finalize-actions{display:flex;gap:8px}.admin-finalize-actions input,.admin-status,.admin-note{height:39px;border:1px solid #d2dce7;border-radius:6px;background:#fff;padding:0 9px;color:#18304b}.admin-finalize-actions button,.admin-save,#admin-reload-winners{height:39px;border:0;border-radius:6px;background:#0e5fc8;color:#fff;padding:0 13px;font-size:8px;font-weight:950;cursor:pointer}#admin-finalize-note{grid-column:1/-1;color:#188c48}
+.admin-card-head{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid #e3e8ee}#admin-reload-winners{background:#071d39}
+.admin-winners-list{padding:14px}.admin-month-block{overflow:hidden;margin-bottom:12px;border:1px solid #e0e6ed;border-radius:9px}.admin-month-title{display:flex;justify-content:space-between;padding:10px 12px;background:#f3f6f9;border-bottom:1px solid #e2e7ed}.admin-month-title b{font-size:10px}
+.admin-winner-row{display:grid;grid-template-columns:minmax(260px,1fr) 120px 130px minmax(140px,.7fr) 95px;align-items:center;gap:9px;padding:10px 12px;border-bottom:1px solid #e8edf2}.admin-winner-row:last-child{border-bottom:0}.admin-winner-id{display:flex;align-items:center;gap:9px}.admin-medal{font-size:22px}.admin-winner-id .avatar-orb{width:36px;height:36px}.admin-winner-id b{display:block;font-size:10px}.admin-winner-id small{color:#75859a;font-size:7px}.admin-eligibility{font-size:8px;font-weight:950}.admin-eligibility.ok{color:#16964a}.admin-eligibility.no{color:#df3939}.admin-status,.admin-note{width:100%;height:34px;font-size:8px}.admin-save{height:34px}
+@media(max-width:850px){.admin-rewards-hero{align-items:flex-start;flex-direction:column}.admin-finalize-card{grid-template-columns:1fr}.admin-finalize-actions{flex-direction:column}.admin-winner-row{grid-template-columns:1fr 1fr}.admin-winner-id{grid-column:1/-1}.admin-note{grid-column:1/-1}.profile-hero-actions{display:flex;flex-wrap:wrap;gap:7px}}
+@media(max-width:560px){.admin-rewards-main{padding:9px}.admin-winner-row{grid-template-columns:1fr}.admin-winner-id,.admin-note{grid-column:auto}.admin-save{width:100%}}
+
+/* V9.7.0 — centre de notifications */
+.footix-notifications{position:fixed;right:18px;top:14px;z-index:10020}.footix-notifications.is-hidden{display:none!important}
+.notif-bell{position:relative;width:38px;height:38px;border:1px solid #d7e0e9;border-radius:50%;background:#fff;box-shadow:0 4px 14px rgba(8,30,57,.12);cursor:pointer}
+.notif-count{position:absolute;right:-4px;top:-4px;min-width:17px;height:17px;padding:0 4px;display:flex;align-items:center;justify-content:center;border-radius:20px;background:#e93636;color:#fff;font-size:8px;font-weight:950}.notif-count.is-hidden,.notif-panel.is-hidden{display:none!important}
+.notif-panel{position:absolute;right:0;top:46px;width:350px;overflow:hidden;border:1px solid #dce3eb;border-radius:10px;background:#fff;box-shadow:0 16px 45px rgba(5,25,50,.2)}
+.notif-head{display:flex;justify-content:space-between;align-items:center;padding:12px 13px;border-bottom:1px solid #e5e9ee}.notif-head b{color:#112943;font-size:9px}.notif-read-all{border:0;background:none;color:#1764c8;font-size:7px;font-weight:950;cursor:pointer}
+.notif-list{max-height:410px;overflow:auto}.notif-item{width:100%;display:grid;grid-template-columns:9px 1fr;gap:7px;padding:11px 12px;border:0;border-bottom:1px solid #edf0f4;background:#fff;text-align:left;cursor:pointer}.notif-item.unread{background:#f3f8ff}.notif-dot{width:6px;height:6px;margin-top:4px;border-radius:50%;background:#c8d1dc}.notif-item.unread .notif-dot{background:#1764c8}.notif-item b{display:block;color:#132a45;font-size:9px}.notif-item small{display:block;margin-top:3px;color:#697b91;font-size:8px;line-height:1.35}.notif-item em{display:block;margin-top:4px;color:#97a3b2;font-size:7px;font-style:normal}.notif-empty{padding:25px;color:#78879a;font-size:9px;text-align:center}
+.footix-toast{position:fixed;left:50%;bottom:25px;z-index:10050;transform:translate(-50%,20px);padding:10px 15px;border-radius:7px;background:#092443;color:#fff;box-shadow:0 8px 25px rgba(5,25,50,.22);font-size:9px;font-weight:950;opacity:0;pointer-events:none;transition:.2s}.footix-toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:650px){.footix-notifications{right:10px;top:9px}.notif-panel{position:fixed;top:58px;right:8px;left:8px;width:auto;max-height:72vh}.notif-list{max-height:62vh}.notif-bell{width:40px;height:40px}}
+
+/* V9.7.1 — alignement équipes / score dans Vos pronos
+   Chaque équipe est alignée vers le score central, avec logo côté score. */
+.page-votes-v940 .match-clubs{
+  grid-template-columns:minmax(0,1fr) 76px minmax(0,1fr);
+  column-gap:14px;
+}
+.page-votes-v940 .club.home{
+  justify-content:flex-end;
+  flex-direction:row;
+  text-align:right;
+}
+.page-votes-v940 .club.home strong{order:1}
+.page-votes-v940 .club.home .club-logo{order:2}
+.page-votes-v940 .club.away{
+  justify-content:flex-start;
+  flex-direction:row;
+  text-align:left;
+}
+.page-votes-v940 .club.away .club-logo{order:1}
+.page-votes-v940 .club.away strong{order:2}
+.page-votes-v940 .score-core{
+  width:76px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  justify-self:center;
+}
+.page-votes-v940 .score-core b{
+  min-width:76px;
+  text-align:center;
+  white-space:nowrap;
+}
+@media(max-width:900px){
+  .page-votes-v940 .match-clubs{
+    grid-template-columns:minmax(0,1fr) 58px minmax(0,1fr);
+    column-gap:8px;
+  }
+  .page-votes-v940 .score-core,.page-votes-v940 .score-core b{width:58px;min-width:58px}
+}
+@media(max-width:620px){
+  .page-votes-v940 .match-clubs{
+    grid-template-columns:minmax(0,1fr) 46px minmax(0,1fr);
+    column-gap:5px;
+    align-items:center;
+  }
+  .page-votes-v940 .club,
+  .page-votes-v940 .club.away{
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+  .page-votes-v940 .club.home strong,
+  .page-votes-v940 .club.home .club-logo,
+  .page-votes-v940 .club.away strong,
+  .page-votes-v940 .club.away .club-logo{order:initial}
+  .page-votes-v940 .score-core,.page-votes-v940 .score-core b{width:46px;min-width:46px}
+}
+
+/* V9.8.0 — DA BLEUE FOOTIX
+   Retour à une identité bleu Footix cohérente sur les pages communautaires,
+   sans glow, flash ni sweep. */
+:root{
+  --footix-blue-950:#06172f;
+  --footix-blue-900:#082143;
+  --footix-blue-850:#0a2a55;
+  --footix-blue-800:#0c356c;
+  --footix-blue-700:#1051a3;
+  --footix-blue-600:#1769d2;
+  --footix-blue-500:#2380ec;
+  --footix-blue-100:#dcecff;
+  --footix-blue-050:#edf5ff;
+}
+.page-votes-v940,
+.page-profile-v950,
+.page-admin-rewards,
+body:has(.monthly-ranking-main){
+  background:linear-gradient(180deg,var(--footix-blue-950) 0,var(--footix-blue-900) 100%);
+}
+.page-votes-v940 .main-wrap,
+.page-profile-v950 .main-wrap,
+.page-admin-rewards .main-wrap{
+  background:transparent;
+}
+
+/* grands panneaux : bleu premium au lieu du blanc */
+.page-votes-v940 .votes-premium-shell,
+.page-votes-v940 .votes-premium-board,
+.page-votes-v940 .votes-summary-card,
+.page-votes-v940 .votes-member-card,
+.profile-premium-hero,
+.profile-dashboard>article,
+.admin-access-state,
+.admin-finalize-card,
+.admin-winners-card,
+.winners-history,
+.monthly-ranking-card,
+.ranking-podium-card{
+  border-color:rgba(104,164,231,.22)!important;
+  background:#0a2850!important;
+  box-shadow:0 8px 26px rgba(1,12,30,.22)!important;
+}
+
+/* panneaux secondaires */
+.page-votes-v940 .premium-match-row,
+.profile-kpi-grid>div,
+.profile-global-kpis>div,
+.profile-medal,
+.profile-comp-stats>div,
+.admin-month-block,
+.winner-month-card{
+  border-color:rgba(114,170,231,.18)!important;
+  background:#0d315f!important;
+}
+.page-votes-v940 .premium-match-row:hover{background:#103a70!important}
+
+/* textes principaux */
+.page-votes-v940 h1,.page-votes-v940 h2,.page-votes-v940 h3,
+.profile-identity h1,.profile-section-title h2,
+.admin-rewards-hero h1,.admin-finalize-card h2,.admin-card-head h2,
+.winners-history-head h2,.winner-month-title b,
+.monthly-ranking-main h1,.monthly-ranking-main h2{
+  color:#f4f9ff!important;
+}
+.page-votes-v940 .club strong,
+.page-votes-v940 .score-core b,
+.profile-kpi-grid b,.profile-global-kpis b,
+.profile-comp-stats strong,.profile-medal b,
+.admin-winner-id b,.history-month b{
+  color:#f2f7ff!important;
+}
+.page-votes-v940 p,.page-votes-v940 small,
+.profile-identity p,.profile-section-title span,
+.admin-rewards-hero p,.admin-finalize-card p,
+.winners-history-head p,.history-month,
+.profile-kicker{
+  color:#9db9d8!important;
+}
+
+/* en-têtes / séparateurs */
+.winners-history-head,.admin-card-head,.admin-month-title,.winner-month-title{
+  border-color:rgba(113,171,232,.18)!important;
+  background:#082348!important;
+}
+.page-votes-v940 .votes-comp-switch,
+.page-votes-v940 .matchday-toolbar{
+  border-color:rgba(113,171,232,.2)!important;
+  background:#08264c!important;
+}
+
+/* contrôles */
+.page-votes-v940 #matchday-select,
+.admin-finalize-actions input,.admin-status,.admin-note,
+.profile-edit-card input,.profile-edit-card textarea{
+  border-color:#245184!important;
+  background:#071f3f!important;
+  color:#eef6ff!important;
+}
+.page-votes-v940 .pick-mini{
+  border-color:#2d6099!important;
+  background:#0b2b54!important;
+  color:#dbeaff!important;
+}
+.page-votes-v940 .pick-mini:hover,
+.page-votes-v940 .pick-mini.selected{
+  border-color:#3d91f1!important;
+  background:#1769d2!important;
+  color:#fff!important;
+}
+.profile-primary-action,.admin-finalize-actions button,.admin-save,
+#admin-reload-winners{
+  background:#1769d2!important;
+}
+
+/* historique / stats */
+.history-bar{background:#071e3d!important}
+.history-bar i{background:#2380ec!important}
+.profile-kpi-grid .main-kpi{
+  border-color:#1769d2!important;
+  background:#1051a3!important;
+}
+.profile-edit-card .avatar-picker button{
+  border-color:#245184!important;
+  background:#082448!important;
+}
+.profile-admin-action{
+  border-color:#2b5d94!important;
+  background:#0b2b54!important;
+  color:#e9f4ff!important;
+}
+
+/* Classement mensuel */
+.monthly-ranking-main{
+  color:#eaf4ff!important;
+}
+.monthly-ranking-main table,
+.monthly-ranking-main tbody tr{
+  border-color:rgba(113,171,232,.17)!important;
+}
+.monthly-ranking-main tbody tr{background:#0b2b54!important}
+.monthly-ranking-main tbody tr:nth-child(even){background:#0d315f!important}
+
+/* notifications harmonisées */
+.notif-bell{
+  border-color:#2c5e95!important;
+  background:#0a2a55!important;
+  color:#fff!important;
+}
+.notif-panel{
+  border-color:#285789!important;
+  background:#082348!important;
+}
+.notif-head{border-color:#214b78!important}
+.notif-head b{color:#f1f7ff!important}
+.notif-item{
+  border-color:#173e6a!important;
+  background:#0a2850!important;
+}
+.notif-item.unread{background:#0d3567!important}
+.notif-item b{color:#eef6ff!important}
+.notif-item small{color:#a6bdd8!important}
+.notif-empty{color:#9db4cf!important}
+.footix-toast{background:#1769d2!important}
+
+/* conserver une lecture propre sur mobile */
+@media(max-width:650px){
+  .page-votes-v940,.page-profile-v950,.page-admin-rewards,
+  body:has(.monthly-ranking-main){background:#071d3b}
+  .profile-premium-hero,.profile-dashboard>article,
+  .page-votes-v940 .votes-premium-board,
+  .admin-finalize-card,.admin-winners-card{border-radius:9px}
+}

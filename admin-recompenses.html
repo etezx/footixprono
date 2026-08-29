@@ -2,43 +2,30 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#041022">
-<title>Vos pronos — Footix Prono</title>
-<meta name="description" content="Livre d'or et suggestions de la communauté Footix Prono.">
+<meta name="theme-color" content="#07101f">
+<title>Classements — Footix Prono</title>
+<meta name="description" content="Classements de la communauté Footix Prono.">
 <link rel="stylesheet" href="styles.css?v=9.8.0">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
-<body class="page-votes-v940">
+<body class="page-admin-rewards"  class="page-ranking-v941">
 <div class="app-shell">
-  <aside class="sidebar v91-sidebar">
-    <a class="brand v91-brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>PRONO</span></div></a>
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>— PRONO —</span></div></a>
     <div class="side-label">COMPÉTITIONS</div>
-    <a class="competition-link" href="ligue1.html"><span class="comp-mark l1-mark"><img src="logo-l1-option3.png" alt=""></span><span>Ligue 1</span></a>
-    <a class="competition-link" href="champions.html"><span class="comp-mark ucl-mark"><img src="logo-europe-option3.png" alt=""></span><span>Ligue des Champions</span></a>
+    <a class="competition-link" href="ligue1.html"><span class="comp-mark l1-mark"><img src="logo-l1-option3.png" alt=""></span><span>LIGUE 1</span><b>›</b></a>
+    <a class="competition-link" href="champions.html"><span class="comp-mark ucl-mark"><img src="logo-europe-option3.png" alt=""></span><span>LIGUE DES CHAMPIONS</span><b>›</b></a>
     
 <div class="side-label community-side-title">NAVIGATION</div>
 <a class="side-link site-nav-home" href="index.html"><span class="side-nav-ico">⌂</span><span>Accueil</span></a>
-<a class="side-link site-nav-votes active" href="vos-pronos.html"><span class="side-nav-ico">✓</span><span>Vos pronos</span></a>
-<a class="side-link site-nav-ranking" href="classement.html"><span class="side-nav-ico">♛</span><span>Classements</span></a>
+<a class="side-link site-nav-ranking active" href="classement.html"><span class="side-nav-ico">♛</span><span>Classements</span></a>
 <a class="side-link site-nav-community" href="community.html"><span class="side-nav-ico">▱</span><span>Communauté</span></a>
 <a class="side-link site-nav-rules" href="reglement.html"><span class="side-nav-ico">▤</span><span>Règlement</span></a>
 
-    <div class="sidebar-card join-card"><b>💬 TA VOIX COMPTE.</b><p>Partage tes idées pour faire évoluer Footix Prono.</p></div>
-    <div class="sidebar-mascot-art" aria-hidden="true"></div>
-  
-    <div id="community-vote-summary" class="votes-side-summary is-hidden">
-      <div class="side-summary-head"><span>⚽</span><b>TON BILAN</b></div>
-      <strong id="side-total-points">0 <small>Point</small></strong>
-      <dl>
-        <div><dt>Bons pronos</dt><dd id="side-good">0</dd></div>
-        <div><dt>Pronos joués</dt><dd id="side-played">0</dd></div>
-        <div><dt>Taux de réussite</dt><dd id="side-rate">0%</dd></div>
-      </dl>
-      <a href="profil.html">Voir mon profil <span>→</span></a>
-    </div>
-</aside>
+<div class="sidebar-card mascot-card"><img src="logo-footix-prono.png" alt=""><p>ON EST TOUS<br>LE <em>FOOTIX</em><br>DE QUELQU’UN.</p></div>
+  </aside>
   <div class="main-wrap">
-    <header class="topbar v91-topbar"><nav class="desktop-main-nav"><a href="index.html">⌂ Accueil</a><a class="active" href="vos-pronos.html">✓ Vos pronos</a><a href="classement.html">♜ Classements</a><a href="community.html">▱ Communauté</a><a href="reglement.html">▤ Règlement</a></nav>
+    <header class="topbar"><div class="slogan">ON EST TOUS LE FOOTIX DE QUELQU’UN.</div>
 
 
 
@@ -60,61 +47,51 @@
 
 
 </header>
-    <main class="content votes-premium-main">
-  <section class="votes-premium-head">
+    <main class="admin-rewards-main">
+<section class="admin-rewards-hero">
+  <div>
+    <span>ADMINISTRATION</span>
+    <h1>RÉCOMPENSES MENSUELLES</h1>
+    <p>Finalise un mois terminé, vérifie le Top 3 et suis la remise des récompenses.</p>
+  </div>
+  <a href="classement.html" class="admin-back">← CLASSEMENT PUBLIC</a>
+</section>
+
+<section id="admin-access-state" class="admin-access-state">Vérification des droits administrateur…</section>
+
+<section id="admin-rewards-app" class="admin-rewards-app is-hidden">
+  <article class="admin-finalize-card">
     <div>
-      <span class="votes-eyebrow">ESPACE MEMBRE</span>
-      <h1>VOS PRONOS</h1>
-      <p>Fais tes pronostics, suis tes résultats et marque des points.</p>
+      <span>FINALISATION</span>
+      <h2>FIGER LE TOP 3 D’UN MOIS</h2>
+      <p>Une fois finalisé, le podium est enregistré définitivement dans l’historique des récompenses.</p>
     </div>
-    <div class="votes-comp-switch" aria-label="Compétition">
-      <span>COMPÉTITION</span>
-      <div>
-        <button class="active" data-vote-comp="L1" type="button">
-          <img src="logo-l1-option3.png" alt=""><b>Ligue 1</b>
-        </button>
-        <button data-vote-comp="UCL" type="button">
-          <img src="logo-europe-option3.png" alt=""><b>Ligue des Champions</b>
-        </button>
-      </div>
+    <div class="admin-finalize-actions">
+      <input type="month" id="admin-reward-month">
+      <button type="button" id="admin-finalize-btn">FINALISER LE MOIS</button>
     </div>
-  </section>
+    <p id="admin-finalize-note"></p>
+  </article>
 
-  <section class="votes-premium-board">
-    <div class="votes-control-strip">
-      <div class="votes-day-control">
-        <span>JOURNÉE</span>
-        <div class="votes-day-buttons">
-          <button type="button" class="day-arrow" id="day-prev" aria-label="Journée précédente">←</button>
-          <select id="matchday-select" aria-label="Choisir une journée"></select>
-          <button type="button" class="day-arrow" id="day-next" aria-label="Journée suivante">→</button>
-        </div>
-      </div>
-
-      <div id="matchday-kpis" class="votes-kpis">
-        <div><span class="kpi-ico">◷</span><small>MATCHS TERMINÉS</small><b>—</b></div>
-        <div><span class="kpi-ico">☆</span><small>BONS PRONOS</small><b>—</b></div>
-        <div class="points"><span class="kpi-ico">↻</span><small>POINTS DE LA JOURNÉE</small><b>—</b></div>
-      </div>
-
-      <div class="votes-points-note">
-        <span>ⓘ</span>
-        <p>1 point si ton pronostic <b>1 / N / 2</b> est correct à la fin du match.</p>
-      </div>
+  <article class="admin-winners-card">
+    <div class="admin-card-head">
+      <div><span>HISTORIQUE</span><h2>GAGNANTS ENREGISTRÉS</h2></div>
+      <button type="button" id="admin-reload-winners">ACTUALISER</button>
     </div>
-
-    <div id="vote-session-note" class="vote-session-note premium-session-note">Vérification de ta session…</div>
-
-    <div id="community-match-list" class="premium-match-list">
-      <div class="community-empty">Chargement des matchs…</div>
+    <div id="admin-winners-list" class="admin-winners-list">
+      <div class="community-empty">Chargement…</div>
     </div>
-
-    <div class="votes-time-note">ⓘ Les horaires sont affichés dans ton fuseau horaire.</div>
-  </section>
+  </article>
+</section>
 </main>
-    <footer class="site-footer"><p>© 2026 Footix Prono — Tous droits réservés.</p><p class="legal-disclaimer">Pronostics et analyses proposés à titre informatif et ludique. Aucun pari en argent réel, aucune prise de mise et aucun gain ne sont proposés sur ce site. Les pronostics ne garantissent aucun résultat.</p></footer>
+    <footer class="site-footer">
+      <p>© 2026 Footix Prono — Tous droits réservés.</p>
+      <p class="legal-disclaimer">Pronostics et analyses proposés à titre informatif et ludique. Aucun pari en argent réel, aucune prise de mise et aucun gain ne sont proposés sur ce site. Les pronostics ne garantissent aucun résultat.</p>
+      <p><a href="mentions-legales.html">Mentions légales</a> · <a href="reglement.html">Règlement</a> · <a href="confidentialite.html">Confidentialité</a></p>
+    </footer>
   </div>
 </div>
+
 <div class="auth-modal" id="auth-modal" aria-hidden="true">
   <div class="auth-backdrop" data-auth-close></div>
   <section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="auth-title">
@@ -172,9 +149,12 @@
   </section>
 </div>
 
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
 <script src="auth-community.js?v=9.3.2"></script>
-<script src="vos-pronos.js?v=9.4.0"></script>
+
+
+<script src="admin-recompenses.js?v=9.6.0"></script>
 <script src="notifications.js?v=9.7.0"></script>
 </body></html>

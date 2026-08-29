@@ -217,6 +217,7 @@
     const {error}=await db.rpc('save_my_prediction',{p_match_id:id,p_pick:btn.dataset.pick});
     if(error){alert(error.message);btn.disabled=false;return;}
     myVotes.set(id,btn.dataset.pick);
+    if(window.footixToast) window.footixToast('✓ Prono enregistré');
     render();
   });
 
