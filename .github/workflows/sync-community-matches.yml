@@ -1,0 +1,50 @@
+name: Synchroniser les matchs communauté
+
+on:
+  schedule:
+    # Décalé du workflow live principal.
+    - cron: '4-59/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: footix-community-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Vérifier les secrets
+        shell: bash
+        env:
+          BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          if [ -z "$BSD_API_KEY" ]; then
+            echo "ERREUR : BSD_API_KEY est absent."
+            exit 1
+          fi
+          if [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "ERREUR : SUPABASE_SERVICE_ROLE_KEY est absent."
+            exit 1
+          fi
+
+      - name: Synchroniser BSD vers Supabase
+        env:
+          BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_URL: https://brjwujgtkyxzyytkwftw.supabase.co
+        run: python sync_matches_supabase.py
