@@ -134,7 +134,7 @@
           "official": true,
           "completed": false,
           "eventId": 210447,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "notstarted",
           "live": false,
           "lastLiveUpdate": "2026-08-29T05:41:49Z"
@@ -157,11 +157,11 @@
         "PARIS SAINT-GERMAIN",
         {
           "date": "2026-08-28",
-          "time": "20:45",
+          "time": "21:00",
           "official": true,
           "completed": true,
           "eventId": 210448,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "homeScore": 2,
           "awayScore": 2,
           "actualScorers": [
@@ -186,7 +186,7 @@
           "official": true,
           "completed": false,
           "eventId": 210449,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "notstarted",
           "live": false,
           "lastLiveUpdate": "2026-08-29T05:41:49Z"
@@ -201,7 +201,7 @@
           "official": true,
           "completed": false,
           "eventId": 210450,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "notstarted",
           "live": false,
           "lastLiveUpdate": "2026-08-29T05:41:49Z"
@@ -216,7 +216,7 @@
           "official": true,
           "completed": false,
           "eventId": 210446,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "notstarted",
           "live": false,
           "lastLiveUpdate": "2026-08-29T05:41:49Z"
@@ -231,7 +231,7 @@
           "official": true,
           "completed": false,
           "eventId": 210451,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "notstarted",
           "live": false,
           "lastLiveUpdate": "2026-08-29T05:41:49Z"
