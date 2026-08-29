@@ -5,10 +5,10 @@
 <meta name="theme-color" content="#07101f">
 <title>Classements — Footix Prono</title>
 <meta name="description" content="Classements de la communauté Footix Prono.">
-<link rel="stylesheet" href="styles.css?v=9.3.2">
+<link rel="stylesheet" href="styles.css?v=9.4.2">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
-<body>
+<body class="page-ranking-v941">
 <div class="app-shell">
   <aside class="sidebar">
     <a class="brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>— PRONO —</span></div></a>
@@ -47,29 +47,67 @@
 
 
 </header>
-    <main>
-<section class="community-page-head">
-  <span class="eyebrow">COMMUNAUTÉ FOOTIX</span>
-  <h1>LE CLASSEMENT <em>DES FOOTIX</em></h1>
-  <p>1 point par bon résultat 1/N/2. Aucun argent à miser : ici, seul ton flair compte.</p>
+    <main class="ranking-premium-main">
+<section class="ranking-hero">
+  <div>
+    <span class="ranking-eyebrow">COMMUNAUTÉ FOOTIX</span>
+    <h1>CLASSEMENT — <em id="ranking-title-month">MOIS EN COURS</em></h1>
+    <p id="ranking-date-range">Du 1er au dernier jour du mois. Le classement évolue automatiquement à chaque résultat définitif.</p>
+  </div>
+  <div class="ranking-month-box">
+    <label for="ranking-month">MOIS DU CLASSEMENT</label>
+    <input type="month" id="ranking-month">
+  </div>
 </section>
-<section class="leaderboard-shell">
-  <div class="leaderboard-toolbar">
-    <div class="segmented" id="ranking-competition">
-      <button class="active" data-comp="">GÉNÉRAL</button><button data-comp="L1">LIGUE 1</button><button data-comp="UCL">LDC</button>
+
+<section class="monthly-ranking-board">
+  <div class="ranking-board-top">
+    <div class="ranking-competition-tabs" id="monthly-ranking-comp">
+      <button class="active" data-comp="" type="button">GÉNÉRAL</button>
+      <button data-comp="L1" type="button">LIGUE 1</button>
+      <button data-comp="UCL" type="button">LDC</button>
     </div>
-    <div class="segmented" id="ranking-period">
-      <button data-period="week">SEMAINE</button><button class="active" data-period="month">MOIS</button><button data-period="season">SAISON</button>
+    <div class="ranking-rule-mini">
+      <span>1 BON PRONO</span><b>= 1 POINT</b>
     </div>
   </div>
-  <div id="podium" class="podium-loading"><div class="community-empty">Le podium apparaîtra dès les premiers résultats communautaires.</div></div>
-  <div class="ranking-table-wrap">
+
+  <div id="monthly-podium" class="monthly-podium">
+    <div class="community-empty">Chargement du podium…</div>
+  </div>
+
+  <div class="ranking-period-info">
+    <div><small>PÉRIODE</small><b id="ranking-period-label">—</b></div>
+    <div><small>MISE À JOUR</small><b>APRÈS CHAQUE MATCH</b></div>
+    <div><small>RÉCOMPENSES</small><b>🥇 OR · 🥈 ARGENT · 🥉 BRONZE</b></div>
+  </div>
+
+  <div class="ranking-table-wrap ranking-table-v941">
     <table class="ranking-table">
-      <thead><tr><th>#</th><th>JOUEUR</th><th>PTS</th><th>PRONOS</th><th>RÉUSSITE</th></tr></thead>
-      <tbody id="ranking-body"><tr><td colspan="5" class="community-empty">Chargement du classement…</td></tr></tbody>
+      <thead><tr><th>RANG</th><th>JOUEUR</th><th>POINTS</th><th>PRONOS TERMINÉS</th><th>RÉUSSITE</th></tr></thead>
+      <tbody id="monthly-ranking-body"><tr><td colspan="5" class="community-empty">Chargement du classement…</td></tr></tbody>
     </table>
   </div>
-  <div class="leaderboard-note"><span>🏆</span><p>Les récompenses éventuelles sont soumises aux conditions d'éligibilité prévues au règlement. Le classement reste accessible à tous les membres actifs.</p></div>
+
+  <div class="monthly-ranking-rules">
+    <strong>DÉPARTAGE</strong>
+    <p>En cas d’égalité de points : meilleur taux de réussite, puis dernier bon pronostic enregistré le plus tôt.</p>
+  </div>
+
+  <div class="leaderboard-note">
+    <span>🏆</span>
+    <p>Les trois premières places correspondent aux niveaux Or, Argent et Bronze. La remise d’une récompense reste soumise aux conditions d’éligibilité et aux modalités publiées dans le règlement du mois concerné.</p>
+  </div>
+</section>
+
+<section class="winners-history">
+  <div class="winners-history-head">
+    <div><span>PALMARÈS</span><h2>HISTORIQUE DES GAGNANTS</h2></div>
+    <p>Le Top 3 de chaque mois terminé est conservé ici.</p>
+  </div>
+  <div id="winners-history-list" class="winners-history-list">
+    <div class="community-empty">Chargement de l’historique…</div>
+  </div>
 </section>
 </main>
     <footer class="site-footer">
@@ -141,5 +179,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
 <script src="auth-community.js?v=9.3.2"></script>
+<script src="classement-mensuel.js?v=9.4.2"></script>
 
 </body></html>

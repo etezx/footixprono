@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#07101f">
 <title>Mon profil — Footix Prono</title>
 <meta name="description" content="Profil membre Footix Prono.">
-<link rel="stylesheet" href="styles.css?v=9.3.2">
+<link rel="stylesheet" href="styles.css?v=9.4.1">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
 <body>
@@ -58,6 +58,18 @@
     <div class="profile-avatar avatar-orb avatar-footix-classique" id="profile-avatar"><img src="logo-footix-prono.png" alt=""></div>
     <div class="profile-main"><span class="profile-kicker">MEMBRE FOOTIX</span><h2 id="profile-username">Connexion requise</h2><p id="profile-email">Connecte-toi pour afficher ton profil.</p></div>
     <button class="community-cta compact login-trigger" id="profile-login" type="button">SE CONNECTER</button>
+  </article>
+  <article class="profile-panel profile-stats-panel">
+    <div class="panel-head"><h3>MES STATS</h3><span id="profile-stats-month">MOIS EN COURS</span></div>
+    <div class="profile-stats-grid">
+      <div><small>POINTS DU MOIS</small><b id="ps-month-points">—</b></div>
+      <div><small>RANG MENSUEL</small><b id="ps-month-rank">—</b></div>
+      <div><small>RÉUSSITE DU MOIS</small><b id="ps-month-rate">—</b></div>
+      <div><small>PRONOS TERMINÉS</small><b id="ps-month-played">—</b></div>
+      <div><small>POINTS TOTAL</small><b id="ps-total-points">—</b></div>
+      <div><small>RÉUSSITE GLOBALE</small><b id="ps-total-rate">—</b></div>
+    </div>
+    <a class="profile-ranking-link" href="classement.html">VOIR LE CLASSEMENT MENSUEL →</a>
   </article>
   <article class="profile-panel">
     <div class="panel-head"><h3>MON IDENTITÉ</h3></div>
@@ -145,5 +157,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
 <script src="auth-community.js?v=9.3.2"></script>
+<script src="profil-stats.js?v=9.4.1"></script>
 
 </body></html>

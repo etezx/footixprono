@@ -3430,3 +3430,107 @@ body.modal-open{overflow:hidden}
   .pick-inline{gap:6px}
   .pick-mini{width:62px}
 }
+
+/* V9.4.1 — Classement mensuel & stats profil */
+.page-ranking-v941{background:#f2f5f8}
+.page-ranking-v941 .main-wrap{background:#f4f7fa}
+.ranking-premium-main{padding:24px;max-width:1400px;margin:auto}
+.ranking-hero{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:18px}
+.ranking-eyebrow{color:#66809d;font-size:9px;font-weight:950;letter-spacing:.16em}
+.ranking-hero h1{margin:4px 0;color:#071b35;font-size:34px}.ranking-hero h1 em{color:#145fc8;font-style:normal}
+.ranking-hero p{margin:7px 0 0;color:#6d7d92;font-size:12px}
+.ranking-month-box{min-width:190px}.ranking-month-box label{display:block;margin-bottom:6px;color:#6a7b92;font-size:8px;font-weight:950}
+.ranking-month-box input{width:100%;height:42px;border:1px solid #ccd7e4;border-radius:7px;padding:0 10px;background:#fff;color:#10233e;font-weight:900}
+.monthly-ranking-board{overflow:hidden;border:1px solid #dbe3ec;border-radius:12px;background:#fff;box-shadow:0 7px 24px rgba(14,38,68,.07)}
+.ranking-board-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 18px;border-bottom:1px solid #e2e7ed}
+.ranking-competition-tabs{display:flex;gap:7px}.ranking-competition-tabs button{height:36px;padding:0 15px;border:1px solid #ccd7e3;border-radius:6px;background:#fff;color:#53657c;font-size:9px;font-weight:950;cursor:pointer}
+.ranking-competition-tabs button.active{background:#071b35;border-color:#071b35;color:#fff}
+.ranking-rule-mini{text-align:right}.ranking-rule-mini span{display:block;color:#76859a;font-size:8px;font-weight:900}.ranking-rule-mini b{color:#1ca752;font-size:13px}
+.monthly-podium{display:grid;grid-template-columns:1fr 1.08fr 1fr;align-items:end;gap:12px;max-width:760px;margin:30px auto 24px;padding:0 20px}
+.monthly-podium-card{min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;border:1px solid #dbe3ec;border-radius:12px;background:#f8fafc;text-align:center}
+.monthly-podium-card.place-1{min-height:215px;background:linear-gradient(180deg,#fff9dc,#fff);border-color:#e9cf62;box-shadow:0 8px 24px rgba(185,145,23,.12)}
+.monthly-podium-card.place-2{border-color:#c7d0dc}.monthly-podium-card.place-3{border-color:#d8af87}
+.podium-medal{font-size:27px}.monthly-podium-card>b{margin:3px 0 9px;color:#718097;font-size:9px;letter-spacing:.12em}
+.monthly-podium-card .avatar-orb{width:58px;height:58px}.monthly-podium-card strong{margin-top:8px;color:#0b203c;font-size:14px}
+.monthly-podium-card em{margin-top:4px;color:#145fc8;font-size:16px;font-style:normal;font-weight:950}.monthly-podium-card small{margin-top:4px;color:#74849a;font-size:9px}
+.ranking-period-info{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #e5e9ee;border-bottom:1px solid #e5e9ee;background:#f7f9fb}
+.ranking-period-info>div{padding:12px 18px;border-right:1px solid #e1e6ec}.ranking-period-info>div:last-child{border-right:0}
+.ranking-period-info small{display:block;color:#79879b;font-size:8px;font-weight:900}.ranking-period-info b{display:block;margin-top:3px;color:#172a45;font-size:10px}
+.ranking-table-v941{margin:0}.ranking-table-v941 .ranking-table{width:100%}.ranking-table-v941 th{background:#fff;color:#7b899b;font-size:8px}
+.ranking-table-v941 td{border-top:1px solid #edf0f4;color:#354761}.ranking-table-v941 td strong{color:#0e223e}
+.ranking-rank{font-size:15px;font-weight:950}.rank-player{display:flex;align-items:center;gap:9px}.rank-player .avatar-orb{width:34px;height:34px}
+.rank-reward{padding:3px 6px;border-radius:4px;background:#eef4fc;color:#42678f;font-size:7px;font-weight:950}
+.top-rank.rank-1{background:#fffdf4}.top-rank.rank-2{background:#fbfcfd}.top-rank.rank-3{background:#fffaf6}
+.monthly-ranking-rules{margin:14px 18px 0;padding:11px 13px;border-left:3px solid #145fc8;background:#f3f7fc}
+.monthly-ranking-rules strong{color:#163252;font-size:9px}.monthly-ranking-rules p{margin:3px 0 0;color:#65768d;font-size:9px}
+.monthly-ranking-board .leaderboard-note{margin:12px 18px 18px;background:#f8fafc;color:#64758b}
+
+.profile-stats-panel{grid-column:1/-1}.profile-stats-panel .panel-head{display:flex;justify-content:space-between;align-items:center}
+.profile-stats-panel .panel-head span{color:#6783a3;font-size:9px;font-weight:950}
+.profile-stats-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.profile-stats-grid>div{padding:13px;border:1px solid rgba(74,132,224,.16);border-radius:10px;background:rgba(17,43,77,.34)}
+.profile-stats-grid small{display:block;color:#718aa9;font-size:8px;font-weight:900}.profile-stats-grid b{display:block;margin-top:5px;color:#ecf5ff;font-size:17px}
+.profile-ranking-link{display:inline-block;margin-top:12px;color:#39a1ff;font-size:9px;font-weight:950;text-decoration:none}
+@media(max-width:900px){.ranking-hero{align-items:flex-start;flex-direction:column}.ranking-month-box{width:100%}.monthly-podium{grid-template-columns:1fr}.monthly-podium-card.place-1{order:-1}.ranking-period-info{grid-template-columns:1fr}.ranking-period-info>div{border-right:0;border-bottom:1px solid #e1e6ec}.profile-stats-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* V9.4.2 — mois explicite + palmarès */
+.winners-history{
+  margin-top:18px;
+  overflow:hidden;
+  border:1px solid #dbe3ec;
+  border-radius:12px;
+  background:#fff;
+  box-shadow:0 7px 24px rgba(14,38,68,.06);
+}
+.winners-history-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:20px;
+  padding:18px 20px;
+  border-bottom:1px solid #e3e8ee;
+}
+.winners-history-head span{color:#66809d;font-size:8px;font-weight:950;letter-spacing:.15em}
+.winners-history-head h2{margin:3px 0 0;color:#0a203d;font-size:18px}
+.winners-history-head p{margin:0;color:#718198;font-size:10px}
+.winners-history-list{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+  padding:14px;
+}
+.winner-month-card{
+  overflow:hidden;
+  border:1px solid #dfe5ec;
+  border-radius:9px;
+  background:#fafbfd;
+}
+.winner-month-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 12px;
+  border-bottom:1px solid #e4e9ef;
+  background:#f3f6f9;
+}
+.winner-month-title span{color:#7c8b9e;font-size:7px;font-weight:950}
+.winner-month-title b{color:#102743;font-size:10px}
+.winner-three{padding:7px 11px}
+.winner-line{
+  display:grid;
+  grid-template-columns:22px 47px 30px minmax(0,1fr) auto;
+  align-items:center;
+  gap:5px;
+  min-height:42px;
+  border-bottom:1px solid #e8ecf1;
+}
+.winner-line:last-child{border-bottom:0}
+.winner-line>b{color:#718097;font-size:7px}
+.winner-line .avatar-orb{width:27px;height:27px}
+.winner-line strong{overflow:hidden;color:#172b46;font-size:9px;text-overflow:ellipsis;white-space:nowrap}
+.winner-line em{color:#155fc6;font-size:9px;font-style:normal;font-weight:950}
+@media(max-width:1000px){.winners-history-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){
+  .winners-history-head{align-items:flex-start;flex-direction:column}
+  .winners-history-list{grid-template-columns:1fr}
+}
