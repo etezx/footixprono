@@ -148,7 +148,7 @@ def kickoff_value(event):
     direct=first(
         event,
         "start_time","kickoff","kickoff_time","kickoff_at","scheduled_at",
-        "start_at","date","datetime","start_date","start_datetime",
+        "start_at","event_date","date","datetime","start_date","start_datetime",
         "start_time_utc","utc_start_time"
     )
     if isinstance(direct, dict):
