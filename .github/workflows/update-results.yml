@@ -1,4 +1,4 @@
-name: Mettre à jour les résultats LIVE
+name: Mettre à jour les résultats
 
 on:
   schedule:
@@ -15,6 +15,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
@@ -26,7 +27,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Mettre à jour LIVE, résultats, buteurs et classements BSD
+      - name: Mettre à jour les résultats récents
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
         run: python update_results.py
@@ -34,15 +35,11 @@ jobs:
       - name: Générer gratuitement le bilan Footix si la journée est terminée
         run: python generate_review.py
 
-      - name: Enregistrer les données actualisées
+      - name: Enregistrer les résultats, le live et le classement
         run: |
           git config user.name "footix-prono-bot"
           git config user.email "actions@users.noreply.github.com"
           git add schedule.json pronos.json live-results.json bsd-standings.json
-          if git diff --cached --quiet; then
-            echo "Aucun changement à enregistrer."
-            exit 0
-          fi
-          git commit -m "Mise à jour Footix Live"
-          git pull --rebase origin main
+          git diff --cached --quiet && exit 0
+          git commit -m "Mise à jour résultats live Footix"
           git push origin main
