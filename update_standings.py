@@ -17,23 +17,42 @@ SEASON = 2026  # saison ESPN 2026 = exercice 2026/2027
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "standings.json"
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; FootixProno/1.0; +https://footixprono.fr/)",
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
     "Accept": "application/json,text/plain,*/*",
+    "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+    "Referer": "https://www.espn.com/",
+    "Origin": "https://www.espn.com",
 }
 
 
 def get_json(url: str, retries: int = 3) -> dict:
-    last_error = None
-    for attempt in range(retries):
-        try:
-            req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=25) as response:
-                return json.load(response)
-        except Exception as exc:  # noqa: BLE001
-            last_error = exc
-            if attempt + 1 < retries:
-                time.sleep(2 + attempt * 2)
-    raise RuntimeError(f"Impossible de récupérer {url}: {last_error}")
+    """Récupère ESPN avec repli automatique sur le domaine web."""
+    urls_to_try = [url]
+    if "site.api.espn.com" in url:
+        fallback = url.replace("site.api.espn.com", "site.web.api.espn.com", 1)
+        if fallback not in urls_to_try:
+            urls_to_try.append(fallback)
+
+    errors = []
+    for candidate in urls_to_try:
+        last_error = None
+        for attempt in range(retries):
+            try:
+                req = urllib.request.Request(candidate, headers=HEADERS)
+                with urllib.request.urlopen(req, timeout=25) as response:
+                    return json.load(response)
+            except Exception as exc:  # noqa: BLE001
+                last_error = exc
+                if attempt + 1 < retries:
+                    time.sleep(2 + attempt * 2)
+        errors.append(f"{candidate}: {last_error}")
+        print(f"Source ESPN indisponible : {candidate} -> {last_error}")
+
+    raise RuntimeError("Impossible de récupérer les données ESPN : " + " | ".join(errors))
 
 
 def stat_map(entry: dict) -> dict:
