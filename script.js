@@ -118,12 +118,18 @@ function predictedScorers(p={}){
     .split(/[\n,;]+/).map(x=>x.trim()).filter(Boolean).slice(0,4);
 }
 function personMatches(predicted,actual){
-  const p=normalizePersonName(predicted), a=normalizePersonName(actual);
+  const clean=v=>normalizePersonName(v)
+    .replace(/\b(decisif|decisive|buteur|scorer|penalty|pen)\b/g," ")
+    .replace(/\s+/g," ").trim();
+  const p=clean(predicted), a=clean(actual);
   if(!p||!a) return false;
   if(p===a) return true;
-  // Un nom seul (ex. Gouiri) peut correspondre au nom de famille exact du flux BSD.
   const pp=p.split(" "), aa=a.split(" ");
-  return pp.length===1 && pp[0].length>=4 && aa[aa.length-1]===pp[0];
+  const pLast=pp[pp.length-1], aLast=aa[aa.length-1];
+  if(pLast!==aLast || pLast.length<4) return false;
+  if(pp.length===1 || aa.length===1) return true;
+  const pFirst=pp[0], aFirst=aa[0];
+  return pFirst===aFirst || pFirst[0]===aFirst[0];
 }
 function scorerVerdicts(p={},fixture={}){
   const predicted=predictedScorers(p);

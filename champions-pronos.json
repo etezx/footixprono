@@ -1,4 +1,1478 @@
 {
-  "updated_at": null,
-  "days": {}
+  "updated_at": "2026-08-29T19:30:00+02:00",
+  "source": "UEFA - calendrier officiel de la phase de ligue 2026/27 publié le 29 août 2026",
+  "days": {
+    "1": {
+      "matches": [
+        {
+          "home": "AEK Athens",
+          "away": "LASK",
+          "date": "2026-09-08",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Club Brugge",
+          "away": "Aston Villa",
+          "date": "2026-09-08",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Borussia Dortmund",
+          "away": "Villarreal",
+          "date": "2026-09-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Porto",
+          "away": "Manchester City",
+          "date": "2026-09-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Lille",
+          "away": "Real Betis",
+          "date": "2026-09-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Real Madrid",
+          "away": "Inter",
+          "date": "2026-09-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Barcelona",
+          "away": "Feyenoord",
+          "date": "2026-09-09",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Stuttgart",
+          "away": "Viking",
+          "date": "2026-09-09",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Liverpool",
+          "away": "Atlético de Madrid",
+          "date": "2026-09-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Paris Saint-Germain",
+          "away": "Slovan Bratislava",
+          "date": "2026-09-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Sporting CP",
+          "away": "Galatasaray",
+          "date": "2026-09-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Napoli",
+          "away": "Arsenal",
+          "date": "2026-09-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Fenerbahçe",
+          "away": "Roma",
+          "date": "2026-09-10",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "PSV Eindhoven",
+          "away": "Shakhtar Donetsk",
+          "date": "2026-09-10",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Como",
+          "away": "Leipzig",
+          "date": "2026-09-10",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Bayern München",
+          "away": "Bodø/Glimt",
+          "date": "2026-09-10",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Manchester United",
+          "away": "Sabah",
+          "date": "2026-09-10",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Slavia Praha",
+          "away": "Lens",
+          "date": "2026-09-10",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        }
+      ]
+    },
+    "2": {
+      "matches": [
+        {
+          "home": "Lens",
+          "away": "Sporting CP",
+          "date": "2026-10-13",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Sabah",
+          "away": "Slavia Praha",
+          "date": "2026-10-13",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Arsenal",
+          "away": "Lille",
+          "date": "2026-10-13",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Atlético de Madrid",
+          "away": "Manchester United",
+          "date": "2026-10-13",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Inter",
+          "away": "Club Brugge",
+          "date": "2026-10-13",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Galatasaray",
+          "away": "Barcelona",
+          "date": "2026-10-13",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Leipzig",
+          "away": "PSV Eindhoven",
+          "date": "2026-10-13",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Viking",
+          "away": "Bayern München",
+          "date": "2026-10-13",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Villarreal",
+          "away": "Napoli",
+          "date": "2026-10-13",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Feyenoord",
+          "away": "Como",
+          "date": "2026-10-14",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "LASK",
+          "away": "Liverpool",
+          "date": "2026-10-14",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Roma",
+          "away": "Real Madrid",
+          "date": "2026-10-14",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Aston Villa",
+          "away": "Fenerbahçe",
+          "date": "2026-10-14",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Shakhtar Donetsk",
+          "away": "AEK Athens",
+          "date": "2026-10-14",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Bodø/Glimt",
+          "away": "Borussia Dortmund",
+          "date": "2026-10-14",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Manchester City",
+          "away": "Paris Saint-Germain",
+          "date": "2026-10-14",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Real Betis",
+          "away": "Porto",
+          "date": "2026-10-14",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Slovan Bratislava",
+          "away": "Stuttgart",
+          "date": "2026-10-14",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        }
+      ]
+    },
+    "3": {
+      "matches": [
+        {
+          "home": "Fenerbahçe",
+          "away": "Slavia Praha",
+          "date": "2026-10-20",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Sabah",
+          "away": "Borussia Dortmund",
+          "date": "2026-10-20",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Roma",
+          "away": "Slovan Bratislava",
+          "date": "2026-10-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Porto",
+          "away": "PSV Eindhoven",
+          "date": "2026-10-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Liverpool",
+          "away": "Villarreal",
+          "date": "2026-10-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Manchester City",
+          "away": "AEK Athens",
+          "date": "2026-10-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Paris Saint-Germain",
+          "away": "Barcelona",
+          "date": "2026-10-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Napoli",
+          "away": "Bodø/Glimt",
+          "date": "2026-10-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Stuttgart",
+          "away": "Atlético de Madrid",
+          "date": "2026-10-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Como",
+          "away": "Manchester United",
+          "date": "2026-10-21",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Lille",
+          "away": "Galatasaray",
+          "date": "2026-10-21",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Aston Villa",
+          "away": "Viking",
+          "date": "2026-10-21",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Club Brugge",
+          "away": "Lens",
+          "date": "2026-10-21",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Bayern München",
+          "away": "Arsenal",
+          "date": "2026-10-21",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Inter",
+          "away": "Shakhtar Donetsk",
+          "date": "2026-10-21",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Real Madrid",
+          "away": "Leipzig",
+          "date": "2026-10-21",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Real Betis",
+          "away": "Feyenoord",
+          "date": "2026-10-21",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Sporting CP",
+          "away": "LASK",
+          "date": "2026-10-21",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        }
+      ]
+    },
+    "4": {
+      "matches": [
+        {
+          "home": "Shakhtar Donetsk",
+          "away": "Sporting CP",
+          "date": "2026-11-03",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Galatasaray",
+          "away": "Stuttgart",
+          "date": "2026-11-03",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Atlético de Madrid",
+          "away": "Bayern München",
+          "date": "2026-11-03",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Barcelona",
+          "away": "Aston Villa",
+          "date": "2026-11-03",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Feyenoord",
+          "away": "Inter",
+          "date": "2026-11-03",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Bodø/Glimt",
+          "away": "Lille",
+          "date": "2026-11-03",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "LASK",
+          "away": "Slovan Bratislava",
+          "date": "2026-11-03",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Manchester United",
+          "away": "Roma",
+          "date": "2026-11-03",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Villarreal",
+          "away": "Paris Saint-Germain",
+          "date": "2026-11-03",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "AEK Athens",
+          "away": "Real Madrid",
+          "date": "2026-11-04",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Fenerbahçe",
+          "away": "Liverpool",
+          "date": "2026-11-04",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Borussia Dortmund",
+          "away": "Real Betis",
+          "date": "2026-11-04",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Porto",
+          "away": "Napoli",
+          "date": "2026-11-04",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "PSV Eindhoven",
+          "away": "Club Brugge",
+          "date": "2026-11-04",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Leipzig",
+          "away": "Manchester City",
+          "date": "2026-11-04",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Lens",
+          "away": "Como",
+          "date": "2026-11-04",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Slavia Praha",
+          "away": "Arsenal",
+          "date": "2026-11-04",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Viking",
+          "away": "Sabah",
+          "date": "2026-11-04",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        }
+      ]
+    },
+    "5": {
+      "matches": [
+        {
+          "home": "Bodø/Glimt",
+          "away": "LASK",
+          "date": "2026-11-24",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Galatasaray",
+          "away": "Aston Villa",
+          "date": "2026-11-24",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Arsenal",
+          "away": "Borussia Dortmund",
+          "date": "2026-11-24",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Como",
+          "away": "AEK Athens",
+          "date": "2026-11-24",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Feyenoord",
+          "away": "Porto",
+          "date": "2026-11-24",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Manchester City",
+          "away": "Napoli",
+          "date": "2026-11-24",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Leipzig",
+          "away": "Lens",
+          "date": "2026-11-24",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Real Madrid",
+          "away": "PSV Eindhoven",
+          "date": "2026-11-24",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Slovan Bratislava",
+          "away": "Real Betis",
+          "date": "2026-11-24",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Sabah",
+          "away": "Barcelona",
+          "date": "2026-11-25",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Slavia Praha",
+          "away": "Villarreal",
+          "date": "2026-11-25",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Atlético de Madrid",
+          "away": "Viking",
+          "date": "2026-11-25",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Club Brugge",
+          "away": "Liverpool",
+          "date": "2026-11-25",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Inter",
+          "away": "Stuttgart",
+          "date": "2026-11-25",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Shakhtar Donetsk",
+          "away": "Fenerbahçe",
+          "date": "2026-11-25",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Lille",
+          "away": "Bayern München",
+          "date": "2026-11-25",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Paris Saint-Germain",
+          "away": "Roma",
+          "date": "2026-11-25",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Sporting CP",
+          "away": "Manchester United",
+          "date": "2026-11-25",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        }
+      ]
+    },
+    "6": {
+      "matches": [
+        {
+          "home": "Viking",
+          "away": "Feyenoord",
+          "date": "2026-12-08",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Villarreal",
+          "away": "Sabah",
+          "date": "2026-12-08",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "AEK Athens",
+          "away": "Galatasaray",
+          "date": "2026-12-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Roma",
+          "away": "Sporting CP",
+          "date": "2026-12-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Aston Villa",
+          "away": "Paris Saint-Germain",
+          "date": "2026-12-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Barcelona",
+          "away": "Manchester City",
+          "date": "2026-12-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Bayern München",
+          "away": "Slavia Praha",
+          "date": "2026-12-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Manchester United",
+          "away": "Leipzig",
+          "date": "2026-12-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Napoli",
+          "away": "Club Brugge",
+          "date": "2026-12-08",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Real Betis",
+          "away": "Como",
+          "date": "2026-12-09",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Slovan Bratislava",
+          "away": "Shakhtar Donetsk",
+          "date": "2026-12-09",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Arsenal",
+          "away": "Real Madrid",
+          "date": "2026-12-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Borussia Dortmund",
+          "away": "Inter",
+          "date": "2026-12-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "LASK",
+          "away": "Fenerbahçe",
+          "date": "2026-12-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Liverpool",
+          "away": "Porto",
+          "date": "2026-12-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "PSV Eindhoven",
+          "away": "Atlético de Madrid",
+          "date": "2026-12-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Lens",
+          "away": "Bodø/Glimt",
+          "date": "2026-12-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Stuttgart",
+          "away": "Lille",
+          "date": "2026-12-09",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        }
+      ]
+    },
+    "7": {
+      "matches": [
+        {
+          "home": "Bodø/Glimt",
+          "away": "Atlético de Madrid",
+          "date": "2027-01-19",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Galatasaray",
+          "away": "Feyenoord",
+          "date": "2027-01-19",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "AEK Athens",
+          "away": "Roma",
+          "date": "2027-01-19",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Aston Villa",
+          "away": "Borussia Dortmund",
+          "date": "2027-01-19",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Inter",
+          "away": "Liverpool",
+          "date": "2027-01-19",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Porto",
+          "away": "Slavia Praha",
+          "date": "2027-01-19",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Lille",
+          "away": "Slovan Bratislava",
+          "date": "2027-01-19",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Real Madrid",
+          "away": "LASK",
+          "date": "2027-01-19",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Stuttgart",
+          "away": "Club Brugge",
+          "date": "2027-01-19",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Fenerbahçe",
+          "away": "Villarreal",
+          "date": "2027-01-20",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Sabah",
+          "away": "Napoli",
+          "date": "2027-01-20",
+          "time": "18:45",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Como",
+          "away": "Paris Saint-Germain",
+          "date": "2027-01-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Manchester United",
+          "away": "Bayern München",
+          "date": "2027-01-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Leipzig",
+          "away": "Shakhtar Donetsk",
+          "date": "2027-01-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Lens",
+          "away": "Manchester City",
+          "date": "2027-01-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Real Betis",
+          "away": "Arsenal",
+          "date": "2027-01-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Sporting CP",
+          "away": "Barcelona",
+          "date": "2027-01-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Viking",
+          "away": "PSV Eindhoven",
+          "date": "2027-01-20",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        }
+      ]
+    },
+    "8": {
+      "matches": [
+        {
+          "home": "Arsenal",
+          "away": "Sabah",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Roma",
+          "away": "Lille",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Atlético de Madrid",
+          "away": "Fenerbahçe",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Borussia Dortmund",
+          "away": "AEK Athens",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Club Brugge",
+          "away": "Bodø/Glimt",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Bayern München",
+          "away": "Real Betis",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Barcelona",
+          "away": "Como",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Shakhtar Donetsk",
+          "away": "Real Madrid",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Feyenoord",
+          "away": "Leipzig",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "LASK",
+          "away": "Porto",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Liverpool",
+          "away": "Lens",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Manchester City",
+          "away": "Sporting CP",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Paris Saint-Germain",
+          "away": "Galatasaray",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "PSV Eindhoven",
+          "away": "Stuttgart",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Slavia Praha",
+          "away": "Aston Villa",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Napoli",
+          "away": "Viking",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Villarreal",
+          "away": "Manchester United",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        },
+        {
+          "home": "Slovan Bratislava",
+          "away": "Inter",
+          "date": "2027-01-27",
+          "time": "21:00",
+          "score": "",
+          "pick": "",
+          "scorers": [],
+          "analyse": ""
+        }
+      ]
+    }
+  }
 }
