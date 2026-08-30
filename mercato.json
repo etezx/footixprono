@@ -1,13 +1,7 @@
 {
-  "updated_at": "2026-08-30T18:10:23.230254+00:00",
+  "updated_at": "2026-08-30T21:28:14.573137+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
-    {
-      "title": "Mercato: annoncé à l'OM, Jean-Clair Todibo débarque à Lens - RMC Sport",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYm93VjdPZWEzekFNQUZtMmg5eG1lMC1EM2VJNTZSaGFkcGQyMVhCRlJyN29nNVY2TVhmaFcxdjRXbnZuWENhY25TaGduYVhWdWlnWmxHYzZKbEIzbTVhRVktNXVYZjAtdlFuMEFPV0RlMXNwa0d4cTA3Z0hRYm1MaFFnd1NMbUVOQndqbDRiX0Z0UUlQUnJjWTlxaGVLd21KOGRTaFVFU0stREtMd0VBaGpEYnQ4NkprdFNZNERuOVVSZw?oc=5",
-      "published": "2026-08-30T07:41:06+00:00",
-      "source": "RMC Sport"
-    },
     {
       "title": "ça s’emballe en Ligue 1 sur le mercato - Foot Mercato",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOc3RJQ1M1bDcxdHdJQXhOZi1UR0JSM1FiQ1hhX0tENHlnaUlpUkFBcTR4VTlmcW9RSFRKdHpjWDdVLVN3bkNBWU1zV2RRQ1RLNlVMeHNITVNUdWpkVl9MUE93cS05bFRONllIZkhJT3YydkpOM0MwZ0tJVnVzNzRrcVZ3a3FrTlJ4NnY0LXQzRDA0OERPNFhsTTBsVFV6UHZuQUhSeg?oc=5",
@@ -15,10 +9,16 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Mercato Ligue 1 : une offre d’Heerenveen pour le Manceau Milan Robin - Le Parisien",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPTFUzV1BheVFBN3dWbWROdkFHQzVjLWktSmFaNnpLbFFyLWNnbWdYOFNnMHBib2hlT21ua0k3OWZya3dCb29PZlJzRVYwZHlDMmdSY3dwa2tDUjdaTFZqNEs5R0JCVVJMeXRqUXg5WGpUekZCMVc2b2RtOTgtaEVqSzNlRzBfVTljNWh0SmFCZTJyZmxNTFR1aXlEa0lJWk4wczBlcHVtY2NEOUhVaDFBa1dLdTR4N3NnN2xXaVUwNTFPTjV0NnZmcFFuWUU4X3pQWE1HMmYtZDNfWmN4VXVHYlRGNjRUTU05VGJSU2R3?oc=5",
-      "published": "2026-08-27T17:20:34+00:00",
+      "title": "Mercato Ligue 1 : Leverkusen passe à l’action pour le Strasbourgeois Guéla Doué - Le Parisien",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNMWZ3eDBvejNTa1RFbjNIQ3p3WEV0WXFmOFRBb05vd0NoREhtLThpbmFOUWpjUEhaWFNnSC1fV0Uxd1oxRVBjam96N3FucGU5Q0dScGphZW1tR1dOakFqdnBMSlk0Nm1Fci1lUGYzYXdsNmZHSE1ERXdsWXVMdWJGampYX3VadUVHc2Z3aDBweVBUUTd0OVRKbDB1b2luX1JYMU9GdncwaFAzVDNKLXBnY3VSSlI5c0lWa0dwYzNxZ0tkcXpKUVhwNURvcHdfZjVQbWhMMnBFdUhSRkdXN25DaDdZVnlKTW43VU5ERmJYdGo0TE9GdGVJdE9wdEE?oc=5",
+      "published": "2026-08-29T06:23:21+00:00",
       "source": "Le Parisien"
+    },
+    {
+      "title": "« Je veux que le mercato ferme immédiatement » : l’OL vers 48 dernières heures agitées - Le Dauphiné Libéré",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZkc5MEY4NTZlWGNxY2xtaFZ0UU54SkI2aTczRFZLdEpKaW10RVYtN3U2Z1B6UHBRcDllaHN1aG9LRFU0dGo1cVRsUEN6VG1lbEtIcHhWUDJDQlNNVlRxQnZmd1Q1MWlGQ0l1VV9jZGx0V0ZFWWYyUUhGeHY5U1BDcXhmb3VmTjV4bkZEZWNtZ1lXMlJERDd1T3FkdmVmOHlfR3FLN1FQTEZ3Y0Qwa0FBWGtsWVpIbDd0V1o5cld2aVpEQQ?oc=5",
+      "published": "2026-08-30T17:10:12+00:00",
+      "source": "Le Dauphiné Libéré"
     },
     {
       "title": "Ligue 1. Le milieu du Stade rennais Djaoui Cissé pisté ? Le mercato du Racing Club de Strasbourg se poursuit - dna.fr",
@@ -27,16 +27,22 @@
       "source": "dna.fr"
     },
     {
+      "title": "Ligue 1 McDonald's : « Nous avons cette nécessité de vendre », Paulo Fonseca se prononce sur la fin du mercato - DAZN",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNVUhqR1FQQjUyNmROWFdLbTFfR2VZcE1oSWJ0bzlCQXBBNi16VnI0SVQ5Sk81VFBjMERzMjFFaVN2Qm03ZjB4SnlybGgxdDRiWTRhaWlXV1FQR0J4N1lhYnBzVEgwZTVvWnhnOXhNTDRwQkRlSzcwU3FZNXZzajlNNV84RklvVnlud29yakNBY0I3eVhsZkZhNUYxY3VDb2stWjViakh3VFAyQ3NoVm91VUc0SlhYRWtKZWowVmNvaVN5Y24wOER2WlhtTjEyenktWnFUVGhybVdiX0JTTU8wcXc0X0E1RnBRYnJrck43U3NpZHFKTGVPTlpheGpBY0E?oc=5",
+      "published": "2026-08-29T21:25:44+00:00",
+      "source": "DAZN"
+    },
+    {
+      "title": "Ligue 1. Les dernières heures du mercato en baromètre des objectifs de l’OL - Le Progrès",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQTBYZW1qei1KTjFORDJNdXk5QU05ckpvLVlCUVNSRDEtOUhKaU1rUVdOdVdnQzI2QjV3YXRzX0lxTmFFSm9vb3JNckM1WE1JbUZZY0pEd3VicEZxTnl6dGY5MzA0Tk9yLWZZY1prZDBpVjZQZjRNU3M5N2lUZjBIdTdsVzduSVdxRFZtZF85OUJYQ3lkU1hfSXJoaldHTjRKbUFuRVBvUklvUkhI?oc=5",
+      "published": "2026-08-30T16:25:48+00:00",
+      "source": "Le Progrès"
+    },
+    {
       "title": "Ligue 1. Olivier Létang, le président qui a vendu pour plus d’un demi-milliard d’euros de transferts en 9 ans - Ouest-France",
       "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQRklheDRYaXRnOVFzdkE5TGQzZkdXeWtWa09BY1pISlBCWHdsalB6ampiSFZKZUxuVGNMZ0JrZC02Ukg0VC14d01lR1k2TTIxLW5HTFRVUV8xRDZ4Q3N4RERsR2ZMbm5ZRldZdHJzNDJZeHY3ZDBmR1E3YlpBRnVhUWZZRGhkVExDWmhfc3phV3RnMG1fT0JVNXFGekFSYkpHdTdBZlRBVklaQnRrRHBaY1dtdGZNTDE3VjVvMUtXVTk4VUhyQTByb2Q3WWNEbk1tYmhrYnVvX01vbUZIOUU0ZGxtdFlaN1dhaXVrclFhWFpxU0lTa3NOVEswT3BrS1c2WEFSWmFVUm56TzMwSUhEUzBRVFA4RFQxekNOTGxvT3o?oc=5",
       "published": "2026-08-24T16:56:34+00:00",
       "source": "Ouest-France"
-    },
-    {
-      "title": "Mercato Ligue 1 : Leverkusen passe à l’action pour le Strasbourgeois Guéla Doué - Le Parisien",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNMWZ3eDBvejNTa1RFbjNIQ3p3WEV0WXFmOFRBb05vd0NoREhtLThpbmFOUWpjUEhaWFNnSC1fV0Uxd1oxRVBjam96N3FucGU5Q0dScGphZW1tR1dOakFqdnBMSlk0Nm1Fci1lUGYzYXdsNmZHSE1ERXdsWXVMdWJGampYX3VadUVHc2Z3aDBweVBUUTd0OVRKbDB1b2luX1JYMU9GdncwaFAzVDNKLXBnY3VSSlI5c0lWa0dwYzNxZ0tkcXpKUVhwNURvcHdfZjVQbWhMMnBFdUhSRkdXN25DaDdZVnlKTW43VU5ERmJYdGo0TE9GdGVJdE9wdEE?oc=5",
-      "published": "2026-08-29T06:23:21+00:00",
-      "source": "Le Parisien"
     },
     {
       "title": "JT Foot Mercato : ça s’emballe en Ligue 1 sur le mercato - Foot Mercato",
@@ -51,9 +57,9 @@
       "source": "Eurosport"
     },
     {
-      "title": "«Nous avons cette nécessité de vendre des joueurs» : Paolo Fonseca évoque la fin du mercato de l'OL après le nul contre Le Havre en Ligue 1 - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPNWhXdzJMSWctalBvemJnRi1KUUgwZl9sVlBySTF3RF82RFF1NktGSm9lM09nYnlzMEpXVjFVYm1FYlR5RTI3Y0x0dEEwaktfcW9MRFlzbHdWb0dkaXQ3NjF1Mk5QOUFxc21mS3FLRFdEWGgyOTFBZVJhUjJkTjFtWTJwWERJOFI0TERrOGh4emZCUEdTREp5ZEdzajlrck13YUd4NnlqcUFjS19VXy0zOWt5cWNOU0htY2VyZDQzdi1lVFBDX3JUSXc0amM0MDIweTkwMlhFRlFWSUxwS3FVMTZ3NTJ5R2xwNkVMLXZSb1J2V1YxckcxUm51dkp0UU9tZ0pNQjNHby1FeGdTMWY3LUI4YVNFZw?oc=5",
-      "published": "2026-08-29T21:51:33+00:00",
+      "title": "Mercato : Lille officialise l'arrivée du gardien international paraguayen Orlando Gill jusqu'en 2031 - L'Équipe",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNU01TSWlUc2V4T28tMWR2TVA3RUhWbnFndzJKblYxelRtQzU1V194eko3LTZ3b3MwbV9yN19NTWhWcEtLTTd0RkhhNWpLdnhVaVNoOUxDOUhybFJPWmRrVXhNS3FrZkdQWG1nbnNPcEtxSFJ2UTA3Rm9rcWhmaXhDNzgtOTY1cTZEZEVCU1pyb1F4MjNXdE5obVVKemI0LXZJVk1MR2N4T1hzVE92Tk5zZEFSUnNRd2FaVElEUE5DUzdXWWptX0tTd0VmMVJRZWJieDE2Z2NOa0U3U2NhblNnZG4xRQ?oc=5",
+      "published": "2026-08-26T19:29:26+00:00",
       "source": "L'Équipe"
     },
     {
@@ -67,12 +73,6 @@
       "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMWpmWDBaOEEzaVJybHN1VzNGNjJ6OHVxSk1zc3lIaUNtNEJmVEowcFlGYlMzR3pMRGhaWWVxT2stT01uazhvYzU5cDVaV3Q3YUZtbnp0V2xlMS1qVFNrcEFVSnhDX0ozTEQxMUZaTUdNUm9FUlNIajBCSVl1SHB0SHZKaWswbXhQRURtY3VJNFYtbTVXNS1iaQ?oc=5",
       "published": "2026-08-25T14:43:02+00:00",
       "source": "Foot Mercato"
-    },
-    {
-      "title": "Mercato : Jacques Ekomié rejoint officiellement Wrexham en provenance d'Angers - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQllLcTRXQlNLN0NsYzRfYzNUYUszMEtJdnBKSXF0dF9nR0UzMV9qdUJlQ3dnWGRJN1dLa0tSSHk0SFJ3R3dUSFFmUW82WlNBemZzSUZyOFlCM1BFVU11bTN5OTlZTjRkUGJwUjJFdEozdGdxRFFmYlUxRGY4czhnLXc4UmZiN29WdEFBNGlUa1VISndQSFg2Q3ZWQ2ZHaUtPTmlKYnltcVZmWlNsTHpnN0R6TW9hVWRzdDBKMUtGNm42ZTVrQWc?oc=5",
-      "published": "2026-08-27T12:04:04+00:00",
-      "source": "L'Équipe"
     }
   ]
 }
