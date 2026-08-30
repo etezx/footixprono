@@ -500,7 +500,23 @@ def main() -> int:
             for raw in base_events:
                 eid = int_or_none(raw.get("id") or raw.get("event_id"))
                 if eid in live_by_id:
+                    # Pendant le match, /events/live/ reste prioritaire pour
+                    # la minute et le score en cours.
                     raw = {**raw, **live_by_id[eid]}
+                elif eid and isinstance(old_events.get(eid), dict) and old_events[eid].get("live"):
+                    # LIVE -> FT :
+                    # lorsqu'un match vient de se terminer, il peut disparaître
+                    # immédiatement de /events/live/ alors que /events/ conserve
+                    # encore brièvement son ancien statut. Dans ce cas on relit
+                    # directement l'événement pour confirmer son état réel.
+                    try:
+                        detail = client.get(f"/events/{eid}/")
+                        if isinstance(detail, dict):
+                            raw = {**raw, **detail}
+                            print(f"[POST-LIVE] {eid}: statut détail = {event_status(detail)}")
+                    except Exception as exc:
+                        print(f"[WARN] Contrôle post-live {eid}: {exc}")
+
                 item = normalize_event(raw, league_id)
                 if item:
                     normalized.append(item)
@@ -511,6 +527,28 @@ def main() -> int:
                 item = normalize_event(raw, league_id)
                 if item and item["eventId"] not in known:
                     normalized.append(item)
+                    known.add(item["eventId"])
+
+            # Filet de sécurité : si un événement était LIVE au passage précédent
+            # mais n'est plus présent ni dans /live/ ni dans la fenêtre /events/,
+            # on contrôle aussi son détail individuel avant de conserver l'ancien LIVE.
+            for old_id, old_item in list(old_events.items()):
+                if (
+                    old_id not in known
+                    and isinstance(old_item, dict)
+                    and old_item.get("live")
+                    and int_or_none(old_item.get("leagueId")) == league_id
+                ):
+                    try:
+                        detail = client.get(f"/events/{old_id}/")
+                        if isinstance(detail, dict):
+                            item = normalize_event(detail, league_id)
+                            if item:
+                                normalized.append(item)
+                                known.add(old_id)
+                                print(f"[POST-LIVE] {old_id}: récupération hors liste = {item.get('status')}")
+                    except Exception as exc:
+                        print(f"[WARN] Contrôle post-live hors liste {old_id}: {exc}")
 
             for item in normalized:
                 eid = int(item["eventId"])
