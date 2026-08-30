@@ -13,6 +13,23 @@
       "teams": [
         {
           "position": 1,
+          "club": "AS Monaco",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 3,
+          "ga": 0,
+          "pts": 6,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 2,
           "club": "Paris FC",
           "p": 2,
           "w": 1,
@@ -29,7 +46,7 @@
           }
         },
         {
-          "position": 2,
+          "position": 3,
           "club": "Lille",
           "p": 2,
           "w": 1,
@@ -46,7 +63,7 @@
           }
         },
         {
-          "position": 3,
+          "position": 4,
           "club": "Olympique Lyonnais",
           "p": 2,
           "w": 1,
@@ -57,13 +74,13 @@
           "pts": 4,
           "group": "",
           "zone": {
-            "key": "cl",
-            "label": "Champions League",
+            "key": "clq",
+            "label": "Champions League Qualification",
             "type": "qualification"
           }
         },
         {
-          "position": 4,
+          "position": 5,
           "club": "Stade Rennais",
           "p": 2,
           "w": 1,
@@ -74,13 +91,13 @@
           "pts": 4,
           "group": "",
           "zone": {
-            "key": "clq",
-            "label": "Champions League Qualification",
+            "key": "el",
+            "label": "Europa League",
             "type": "qualification"
           }
         },
         {
-          "position": 5,
+          "position": 6,
           "club": "Troyes",
           "p": 2,
           "w": 1,
@@ -89,23 +106,6 @@
           "gf": 2,
           "ga": 1,
           "pts": 4,
-          "group": "",
-          "zone": {
-            "key": "el",
-            "label": "Europa League",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 6,
-          "club": "Olympique de Marseille",
-          "p": 1,
-          "w": 1,
-          "d": 0,
-          "l": 0,
-          "gf": 4,
-          "ga": 0,
-          "pts": 3,
           "group": "",
           "zone": {
             "key": "uecl",
@@ -128,13 +128,13 @@
         },
         {
           "position": 8,
-          "club": "AS Monaco",
-          "p": 1,
+          "club": "Olympique de Marseille",
+          "p": 2,
           "w": 1,
           "d": 0,
-          "l": 0,
-          "gf": 1,
-          "ga": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 2,
           "pts": 3,
           "group": "",
           "zone": null
@@ -284,6 +284,6 @@
       ]
     }
   },
-  "generatedAt": "2026-08-30T19:51:57Z",
+  "generatedAt": "2026-08-30T21:02:07Z",
   "source": "BSD"
 }
