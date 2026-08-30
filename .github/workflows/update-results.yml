@@ -2,8 +2,7 @@ name: Mettre à jour les résultats
 
 on:
   schedule:
-    # GitHub autorise au minimum un déclenchement toutes les 5 minutes.
-    # On évite les minutes rondes, souvent plus chargées.
+    # Passage principal toutes les 5 min, décalé des minutes rondes.
     - cron: '2-59/5 * * * *'
   workflow_dispatch:
   repository_dispatch:
@@ -13,14 +12,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: footix-data-updates
-  cancel-in-progress: false
+  group: footix-live-main
+  cancel-in-progress: true
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
+    timeout-minutes: 5
     steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
@@ -42,91 +40,32 @@ jobs:
             exit 1
           fi
 
-      - name: Rafraîchir Footix et accélérer pendant le live
+      - name: Rafraîchir les scores Footix
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
         shell: bash
         run: |
           set -euo pipefail
-
           git config user.name "footix-prono-bot"
           git config user.email "actions@users.noreply.github.com"
 
-          sync_before_refresh () {
-            # Toujours se remettre sur la dernière version distante AVANT de modifier les JSON.
-            # Cela évite le pull --rebase sur un arbre de travail déjà modifié.
-            git fetch origin main
-            git reset --hard origin/main
-          }
+          git fetch origin main
+          git reset --hard origin/main
 
-          refresh_data () {
-            sync_before_refresh
+          python update_results.py
+          python generate_review.py
 
-            python update_results.py
-            python generate_review.py
-
-            git add schedule.json pronos.json live-results.json bsd-standings.json
-
-            if git diff --cached --quiet; then
-              echo "Aucun changement de données à publier."
-              return 0
-            fi
-
-            git commit -m "Mise à jour résultats live Footix"
-
-            # En cas de changement distant très récent, un seul retry propre.
-            if ! git push origin HEAD:main; then
-              echo "Le dépôt a changé pendant le rafraîchissement : nouvelle tentative."
-              git fetch origin main
-              git rebase origin/main
-              git push origin HEAD:main
-            fi
-          }
-
-          is_live () {
-            python - <<'PYLIVE'
-          import json
-          from pathlib import Path
-
-          try:
-              data = json.loads(Path("live-results.json").read_text(encoding="utf-8"))
-          except Exception:
-              print("false")
-              raise SystemExit
-
-          events = data.get("events") or []
-          live = False
-          for e in events:
-              try:
-                  league_id = int(e.get("leagueId") or 0)
-              except Exception:
-                  league_id = 0
-              if league_id in (6, 7) and bool(e.get("live")) and not bool(e.get("completed")):
-                  live = True
-                  break
-
-          print("true" if live else "false")
-          PYLIVE
-          }
-
-          # 1er passage immédiatement.
-          refresh_data
-
-          if [ "$(is_live)" != "true" ]; then
-            echo "Aucun match Ligue 1 / LDC en direct : prochain contrôle programmé dans ~5 min."
+          git add schedule.json pronos.json live-results.json bsd-standings.json
+          if git diff --cached --quiet; then
+            echo "Aucun changement de données à publier."
             exit 0
           fi
 
-          echo "Match L1/LDC en direct : mode LIVE renforcé."
+          git commit -m "Mise à jour résultats live Footix"
 
-          # Pendant un match : trois passages supplémentaires toutes les 90 secondes.
-          # Soit environ 0:00 / 1:30 / 3:00 / 4:30, avant le cron suivant.
-          for pass in 1 2 3; do
-            sleep 90
-            refresh_data
-
-            if [ "$(is_live)" != "true" ]; then
-              echo "Plus aucun match L1/LDC en direct : arrêt du mode accéléré."
-              break
-            fi
-          done
+          if ! git push origin HEAD:main; then
+            echo "Le dépôt a changé pendant le rafraîchissement : retry propre."
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi

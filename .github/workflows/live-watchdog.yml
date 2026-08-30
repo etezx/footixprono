@@ -2,21 +2,21 @@ name: Surveillance du live Footix
 
 on:
   schedule:
-    # Filet de sécurité décalé par rapport au workflow principal.
-    - cron: '4-59/10 * * * *'
+    # Filet de sécurité toutes les 5 min, décalé du workflow principal.
+    - cron: '4-59/5 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: footix-data-updates
-  cancel-in-progress: false
+  group: footix-live-watchdog
+  cancel-in-progress: true
 
 jobs:
   watchdog:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 5
 
     steps:
       - name: Récupérer le dépôt
@@ -38,9 +38,9 @@ jobs:
           from datetime import datetime, timezone
           from pathlib import Path
 
-          stale = True
           age_minutes = None
           live = False
+          stale = True
 
           try:
               data = json.loads(Path("live-results.json").read_text(encoding="utf-8"))
@@ -58,30 +58,30 @@ jobs:
                       live = True
                       break
 
-              # Plus strict pendant un live : 7 minutes max.
-              limit = 7 if live else 12
+              # Si un fichier croit encore qu'un match est live, 4 min max.
+              # Hors live, on garde quand même un contrôle afin de récupérer le coup de sifflet final.
+              limit = 4 if live else 15
               stale = age_minutes is None or age_minutes > limit
           except Exception as exc:
               print(f"Lecture live-results impossible: {exc}")
 
-          print(f"Âge des données: {age_minutes:.1f} min" if age_minutes is not None else "Âge des données: inconnu")
-          print(f"Match L1/LDC live détecté: {live}")
-          print(f"Données considérées anciennes: {stale}")
+          print(f"Âge: {age_minutes:.1f} min" if age_minutes is not None else "Âge: inconnu")
+          print(f"Live détecté: {live}")
+          print(f"Rattrapage nécessaire: {stale}")
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
               f.write(f"stale={'true' if stale else 'false'}\n")
           PY
 
-      - name: Rattraper les données si nécessaire
+      - name: Rattraper les données
         if: steps.stale.outputs.stale == 'true'
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
         shell: bash
         run: |
           set -euo pipefail
-
           if [ -z "$BSD_API_KEY" ]; then
-            echo "ERREUR : le secret BSD_API_KEY est absent."
+            echo "ERREUR : BSD_API_KEY est absent."
             exit 1
           fi
 
@@ -95,7 +95,15 @@ jobs:
           python generate_review.py
 
           git add schedule.json pronos.json live-results.json bsd-standings.json
-          git diff --cached --quiet && exit 0
+          if git diff --cached --quiet; then
+            echo "BSD ne renvoie aucun changement à publier."
+            exit 0
+          fi
 
           git commit -m "Rattrapage automatique du live Footix"
-          git push origin HEAD:main
+
+          if ! git push origin HEAD:main; then
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
