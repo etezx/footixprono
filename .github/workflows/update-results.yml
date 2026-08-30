@@ -17,7 +17,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
@@ -44,9 +44,11 @@ jobs:
             exit 1
           fi
 
-      - name: Rafraîchir les scores Footix
+      - name: Rafraîchir le live 3 fois
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_URL: https://brjwujgtkyxzyytkwftw.supabase.co
         shell: bash
         run: |
           set -euo pipefail
@@ -54,27 +56,25 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git fetch origin main
           git reset --hard origin/main
-          python update_results.py
-          python generate_review.py
 
-      - name: Reporter les scores dans Vos pronos
-        env:
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          SUPABASE_URL: https://brjwujgtkyxzyytkwftw.supabase.co
-        run: python sync_live_results_supabase.py
+          for pass in 1 2 3; do
+            echo "=== Passage live BSD $pass/3 ==="
+            python update_results.py
+            python generate_review.py
+            python sync_live_results_supabase.py
 
-      - name: Publier les fichiers actualisés
-        shell: bash
-        run: |
-          set -euo pipefail
-          git add schedule.json pronos.json live-results.json bsd-standings.json
-          if git diff --cached --quiet; then
-            echo "Aucun changement de fichier à publier."
-            exit 0
-          fi
-          git commit -m "Mise à jour résultats live Footix"
-          if ! git push origin HEAD:main; then
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+            # Publication immédiate : le site peut voir chaque nouvel état.
+            git add schedule.json pronos.json live-results.json bsd-standings.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Live Footix passage $pass"
+              if ! git push origin HEAD:main; then
+                git fetch origin main
+                git rebase origin/main
+                git push origin HEAD:main
+              fi
+            fi
+
+            if [ "$pass" -lt 3 ]; then
+              sleep 60
+            fi
+          done
