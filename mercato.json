@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T13:58:08.289014+00:00",
+  "updated_at": "2026-08-30T18:10:23.230254+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -21,12 +21,6 @@
       "source": "Le Parisien"
     },
     {
-      "title": "Mercato: Le deuxième plus gros transfert de la Ligue 1 est acté - Sports.fr",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdmMzbVZoN3ZVWFkySVZ3STlvQ3ZWbUlyNGV3QUZOamxaM1V6NlJXSHgtMzZ6TUl3eUJvdUNPWXFkOEwzUXkzMWJRZElOT1o2NkwyREVNRU9FZ1VkMFRQd1J3eWxzYXhDNjFTUjFsWnJjRjk3aDY4dTlwNjFmZm1Mc25uNnctUnFsbEJrMTlzOGFYWS00QUo2YXJ0b04tcjgwbVBCTUVCMzZzTmpLd1k0ZWRMa0w?oc=5",
-      "published": "2026-08-23T14:48:18+00:00",
-      "source": "Sports.fr"
-    },
-    {
       "title": "Ligue 1. Le milieu du Stade rennais Djaoui Cissé pisté ? Le mercato du Racing Club de Strasbourg se poursuit - dna.fr",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZ3E2SDFxaVlMYUdad3FhTl9uRFVxdUJKNUZpVEdnc0p1djgyeEZ3Ul9wQlEtOEJpWUxXbERzOWdTWXUwX2RGUXJZRzlmS1o4YkZGN3NjVUFqdXVnY1NPbnRNa3huWXJpNW9XdEN1bS1MaEpFUkx6VllyQ1YxTEI5VWFXRjluM0hycW1ReG1wblh2cWdpR1lVR2E0LXFQejNTR0FudjFDRF95cjZ5MVkwV2htMWlTT2xMWUFlNE5zS181dy0xdzJWeVJJb0g1QQ?oc=5",
       "published": "2026-08-27T17:30:00+00:00",
@@ -37,12 +31,6 @@
       "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQRklheDRYaXRnOVFzdkE5TGQzZkdXeWtWa09BY1pISlBCWHdsalB6ampiSFZKZUxuVGNMZ0JrZC02Ukg0VC14d01lR1k2TTIxLW5HTFRVUV8xRDZ4Q3N4RERsR2ZMbm5ZRldZdHJzNDJZeHY3ZDBmR1E3YlpBRnVhUWZZRGhkVExDWmhfc3phV3RnMG1fT0JVNXFGekFSYkpHdTdBZlRBVklaQnRrRHBaY1dtdGZNTDE3VjVvMUtXVTk4VUhyQTByb2Q3WWNEbk1tYmhrYnVvX01vbUZIOUU0ZGxtdFlaN1dhaXVrclFhWFpxU0lTa3NOVEswT3BrS1c2WEFSWmFVUm56TzMwSUhEUzBRVFA4RFQxekNOTGxvT3o?oc=5",
       "published": "2026-08-24T16:56:34+00:00",
       "source": "Ouest-France"
-    },
-    {
-      "title": "Ayyoub Bouaddi va détrôner Neymar : le top 10 des plus grosses ventes de la Ligue 1 vers l'étranger - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxNcE5fNjhDU1phakVXY0l0b2JQYm1lbkdDbTBJQzB2dmFHR0I1WnktdVZjU3UwNzR6OHB4S1BmV0FkRlpfY3FoXzgzRk1XdkUyellQOUtYb3FjcnRuMHQ5c0NLYXBqUlVIZzZ0c2k4QXZWU1BRam9BQzJOQ1JKd1UwV1pZTGJLUm9oLUZ5bVI5UG1QTmFDbjRxTXlXUE43enFfQ2R4OWkwSnV4eml4LU5FS2dlSlc1Y29CdnU2SmM0ZzNJU195SG9hWWVBN3YwdFdOdWptSnVIM01hLWo1eUxjeXJXTU1FSnp5VkFSdFdYRWU5MUdwbkhsZzVreHByS0c0eDAyMngzYlZ5QlNtM0Fra2R5bExpZGNEWjJrREhxbXFVVUtKTllGOGI4STZnbFpTSnVuOUpya3dJUQ?oc=5",
-      "published": "2026-08-23T15:48:53+00:00",
-      "source": "L'Équipe"
     },
     {
       "title": "Mercato Ligue 1 : Leverkusen passe à l’action pour le Strasbourgeois Guéla Doué - Le Parisien",
@@ -73,6 +61,18 @@
       "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxOYlZleXZha2k0QVpxY2thckZwcW5EQWdaekdyaHptaHFjLXh4OXVQWUVOLWIwcmxVUEVUa0ZQdWo1dDdGMURDUS1VY1lReFdpMnJselJWclBkMnhlTF90QlVFRnBWZDFxRUszc3hTZ3k1Y25vaTV4WmVhNU9hek1QWmRmeFpRSVNpS3NidmdLLU11OGpqaWNzTENUWEFmR2pWY1poOFo3QzJRLTgwV1luQTVxSVU3RktCUFlnZ2diZlZlSVN3TzhrNGw1RGRGNk1OUllzMmZxd2Z5VUJvWnBFN2xHRlRlZlNrTUhUR2VPbTdOZVNOaXJPOVRKdkZBZ0Z5U29wVFV3NmJNM3ZOZmFGcmZuWTVsVU1WLXgtV1FHT1o3aEljOHZTTlhnRkNQZERVWVNYczNDdw?oc=5",
       "published": "2026-08-25T19:28:00+00:00",
       "source": "Eurosport"
+    },
+    {
+      "title": "Mercato PSG : ça va bouger pour Renato Sanches - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMWpmWDBaOEEzaVJybHN1VzNGNjJ6OHVxSk1zc3lIaUNtNEJmVEowcFlGYlMzR3pMRGhaWWVxT2stT01uazhvYzU5cDVaV3Q3YUZtbnp0V2xlMS1qVFNrcEFVSnhDX0ozTEQxMUZaTUdNUm9FUlNIajBCSVl1SHB0SHZKaWswbXhQRURtY3VJNFYtbTVXNS1iaQ?oc=5",
+      "published": "2026-08-25T14:43:02+00:00",
+      "source": "Foot Mercato"
+    },
+    {
+      "title": "Mercato : Jacques Ekomié rejoint officiellement Wrexham en provenance d'Angers - L'Équipe",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQllLcTRXQlNLN0NsYzRfYzNUYUszMEtJdnBKSXF0dF9nR0UzMV9qdUJlQ3dnWGRJN1dLa0tSSHk0SFJ3R3dUSFFmUW82WlNBemZzSUZyOFlCM1BFVU11bTN5OTlZTjRkUGJwUjJFdEozdGdxRFFmYlUxRGY4czhnLXc4UmZiN29WdEFBNGlUa1VISndQSFg2Q3ZWQ2ZHaUtPTmlKYnltcVZmWlNsTHpnN0R6TW9hVWRzdDBKMUtGNm42ZTVrQWc?oc=5",
+      "published": "2026-08-27T12:04:04+00:00",
+      "source": "L'Équipe"
     }
   ]
 }
