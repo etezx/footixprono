@@ -20,6 +20,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 SCHEDULE = ROOT / "schedule.json"
 PRONOS = ROOT / "pronos.json"
+SUPABASE_URL = os.getenv("SUPABASE_URL", "https://brjwujgtkyxzyytkwftw.supabase.co").rstrip("/")
+REVIEW_MODEL = "Footix Premium v10.0.5"
 
 def norm(value):
     value = unicodedata.normalize("NFD", str(value or ""))
@@ -103,16 +105,138 @@ def prono_for(day, home, away):
     return day.get(f"{home}|||{away}") or day.get(f"{home} - {away}") or {}
 
 
+
+def supabase_get(path, params):
+    """GET REST Supabase côté GitHub Actions avec la service_role (jamais côté navigateur)."""
+    service_role = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "").strip()
+    if not service_role:
+        return None
+
+    from urllib.parse import urlencode
+
+    query = urlencode(params, doseq=True, safe="(),.*")
+    url = f"{SUPABASE_URL}/rest/v1/{path}"
+    if query:
+        url += "?" + query
+
+    req = urllib.request.Request(
+        url,
+        headers={
+            "apikey": service_role,
+            "Authorization": f"Bearer {service_role}",
+            "Accept": "application/json",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except Exception as exc:
+        print(f"[WARN] Supabase communauté indisponible: {exc}")
+        return None
+
+
+def community_success(day_no, fixtures):
+    """Calcule le taux réel de pronostics communautaires corrects pour une journée L1."""
+    rows = supabase_get(
+        "matches",
+        {
+            "select": "id,home_team,away_team",
+            "competition": "eq.L1",
+            "matchday": f"eq.{day_no}",
+        },
+    )
+    if not isinstance(rows, list) or not rows:
+        return None
+
+    fixture_results = {
+        (norm(home), norm(away)): result_pick(f)
+        for home, away, f in fixtures
+    }
+
+    match_results = {}
+    for row in rows:
+        key = (norm(row.get("home_team")), norm(row.get("away_team")))
+        actual = fixture_results.get(key)
+        if actual and row.get("id") is not None:
+            match_results[int(row["id"])] = actual
+
+    if not match_results:
+        return None
+
+    ids = ",".join(str(x) for x in sorted(match_results))
+    service_role = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "").strip()
+    if not service_role:
+        return None
+
+    # Pagination pour rester juste même si la communauté dépasse 1000 votes.
+    from urllib.parse import urlencode
+    all_predictions = []
+    start = 0
+    page_size = 1000
+    while True:
+        params = {
+            "select": "pick,match_id",
+            "match_id": f"in.({ids})",
+        }
+        url = f"{SUPABASE_URL}/rest/v1/predictions?" + urlencode(params, safe="(),.*")
+        req = urllib.request.Request(
+            url,
+            headers={
+                "apikey": service_role,
+                "Authorization": f"Bearer {service_role}",
+                "Accept": "application/json",
+                "Range": f"{start}-{start + page_size - 1}",
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                page = json.loads(r.read().decode("utf-8"))
+        except Exception as exc:
+            print(f"[WARN] Lecture pronostics communauté impossible: {exc}")
+            return None
+
+        if not isinstance(page, list):
+            return None
+        all_predictions.extend(page)
+        if len(page) < page_size:
+            break
+        start += page_size
+
+    total = 0
+    correct = 0
+    for row in all_predictions:
+        try:
+            match_id = int(row.get("match_id"))
+        except (TypeError, ValueError):
+            continue
+        actual = match_results.get(match_id)
+        pick = str(row.get("pick") or "").upper().strip()
+        if actual and pick in {"1", "N", "2"}:
+            total += 1
+            if pick == actual:
+                correct += 1
+
+    if total == 0:
+        return {"correct": 0, "total": 0, "rate": None}
+
+    return {
+        "correct": correct,
+        "total": total,
+        "rate": round(correct * 100 / total, 1),
+    }
+
+
 def choose(seed, items):
     import random
     r = random.Random(seed)
     return r.choice(items)
 
 def free_summary(payload):
-    """Résumé 100 % local : raconte réellement la journée à partir des scores fournis."""
+    """Bilan court, premium et fun : journée, PSG, Footix, buteurs et communauté."""
     day = payload["journee"]
     matches = payload["matches"]
     bilan = payload["bilan_footix"]
+    community = payload.get("communaute")
 
     def parsed(m):
         try:
@@ -124,78 +248,115 @@ def free_summary(payload):
 
     def impact(m):
         _, _, h, a = parsed(m)
-        return (abs(h-a), h+a)
+        return (h + a, abs(h - a))
 
-    ranked = sorted(matches, key=impact, reverse=True)
-    standout = ranked[0] if ranked else None
-    second = ranked[1] if len(ranked) > 1 else None
-    draws = [m for m in matches if parsed(m)[2] == parsed(m)[3]]
-    surprises = [m for m in matches if m.get("prono_1N2") and not m.get("prono_correct")]
-    scorer_hits = [n for m in matches for n in (m.get("buteurs_trouves") or [])]
-    seed = f"{day}-" + "-".join(m["score_final"] for m in matches)
+    parts = []
 
-    intros = [
-        "Journée terminée, et il y avait franchement de quoi raconter 😅.",
-        "Coup de sifflet final sur cette journée : quelques cartons, des matchs accrochés et déjà des pronos qui piquent un peu 🫠.",
-        "Voilà, tout le monde a joué ! Une journée bien animée, avec son lot de confirmations et de petites claques 👀.",
-    ]
-    parts = [choose(seed+"intro", intros)]
-
-    football_bits = []
-    for idx, m in enumerate([x for x in (standout, second) if x]):
-        home, away, h, a = parsed(m)
+    # 1) Fait marquant de la journée : match le plus prolifique.
+    standout = max(matches, key=impact) if matches else None
+    if standout:
+        home, away, h, a = parsed(standout)
         if h == a:
-            football_bits.append(f"{home} et {away} se sont neutralisés {h}-{a}")
+            parts.append(
+                f"⚽ Le fait du jour : {home} et {away} se quittent sur un spectaculaire {h}-{a}, "
+                f"l'une des affiches les plus animées de cette J{day}."
+            )
         else:
             winner = home if h > a else away
-            score = f"{h}-{a}"
-            if abs(h-a) >= 3 or h+a >= 5:
-                football_bits.append(f"{winner} a frappé fort contre {away if winner==home else home} ({score}) 🔥")
-            else:
-                football_bits.append(f"{winner} a fait le boulot face à {away if winner==home else home} ({score})")
-    if football_bits:
-        parts.append("Sur les terrains, " + ", tandis que ".join(football_bits) + ".")
+            loser = away if h > a else home
+            parts.append(
+                f"⚽ Le fait du jour : {winner} s'impose {h}-{a} face à {loser} "
+                f"dans l'une des rencontres les plus prolifiques de cette J{day}."
+            )
 
-    if draws:
-        examples = ", ".join(f"{m['match']} ({m['score_final']})" for m in draws[:2])
-        parts.append(f"On a aussi eu des rencontres beaucoup plus serrées, notamment {examples}. Pas exactement le genre de matchs qui laisse la grille de pronos tranquille 😬.")
-
-    good = int(bilan.get("bons_pronos", 0) or 0)
-    judged = int(bilan.get("pronos_juges", 0) or 0)
-    if judged:
-        rate = round(good * 100 / judged, 1)
-        verdict = (
-            "Footix avait plutôt le nez fin 🎯" if rate >= 75 else
-            "c’est correct, mais il reste de la marge" if rate >= 50 else
-            "on va éviter d’encadrer cette grille au mur 🫠"
-        )
-        parts.append(f"Côté pronostics, bilan de {good}/{judged}, soit {str(rate).replace('.', ',')} % : {verdict}.")
-
-    if surprises:
-        m = choose(seed+"miss", surprises)
-        parts.append(f"Le prono qui me reste un peu en travers ? {m['match']} : j’avais choisi {m.get('prono_1N2')}, et le terrain en a décidé autrement. Le football adore nous rappeler qui commande.")
-
-    hit_s = int(bilan.get("buteurs_trouves", 0) or 0)
-    pred_s = int(bilan.get("buteurs_pronostiques", 0) or 0)
-    if pred_s:
-        if scorer_hits:
-            parts.append(f"Chez les buteurs, {hit_s} sélection(s) trouvée(s), avec notamment {', '.join(scorer_hits[:3])} ✅.")
-        else:
-            parts.append(f"Chez les buteurs, {hit_s} sélection(s) validée(s). Il y a eu de bonnes intuitions, même si tout n’est pas encore parfait ✅.")
-
-    psg = next((m for m in matches if "PARIS SAINT-GERMAIN" in m["match"] or "PSG" in m["match"]), None)
+    # 2) Petite signature parisienne, toujours factuelle.
+    psg = next(
+        (
+            m for m in matches
+            if "paris saint germain" in norm(m["match"]) or "psg" in norm(m["match"]).split()
+        ),
+        None,
+    )
     if psg:
         home, away, h, a = parsed(psg)
-        psg_home = "PARIS SAINT-GERMAIN" in home or home == "PSG"
-        pg, og = (h, a) if psg_home else (a, h)
-        if pg > og:
-            parts.append("Et Paris qui gagne, forcément, ça met toujours un petit supplément de bonne humeur au débrief ❤️💙.")
-        elif pg < og:
-            parts.append("Pour Paris, on va passer assez vite… mon côté supporter a déjà fait le débrief tout seul dans sa tête 😭.")
+        psg_is_home = "paris saint germain" in norm(home) or norm(home) == "psg"
+        psg_goals, opp_goals = (h, a) if psg_is_home else (a, h)
+        opponent = away if psg_is_home else home
+        if psg_goals > opp_goals:
+            parts.append(
+                f"🔴🔵 Côté Paris, le PSG s'impose {psg_goals}-{opp_goals} face à {opponent}. "
+                "Une ligne du bilan qu'on apprécie forcément un peu plus par ici."
+            )
+        elif psg_goals < opp_goals:
+            parts.append(
+                f"🔴🔵 Côté Paris, le PSG s'incline {psg_goals}-{opp_goals} face à {opponent}. "
+                "Pas la partie du bilan qu'on avait envie de relire, mais le terrain a parlé."
+            )
         else:
-            parts.append("Et Paris laisse deux points en route avec ce nul… mon côté supporter avait évidemment commandé un peu mieux 😬.")
+            parts.append(
+                f"🔴🔵 Côté Paris, le PSG concède le nul {psg_goals}-{opp_goals} face à {opponent}. "
+                "Un résultat un peu frustrant côté supporter parisien."
+            )
 
-    return "\n\n".join(parts[:6])
+    # 3) Performance éditoriale Footix.
+    good = int(bilan.get("bons_pronos", 0) or 0)
+    judged = int(bilan.get("pronos_juges", 0) or 0)
+    hit_s = int(bilan.get("buteurs_trouves", 0) or 0)
+    pred_s = int(bilan.get("buteurs_pronostiques", 0) or 0)
+    rate = round(good * 100 / judged, 1) if judged else None
+
+    scorer_hits = []
+    for m in matches:
+        for name in (m.get("buteurs_trouves") or []):
+            if name not in scorer_hits:
+                scorer_hits.append(name)
+
+    footix_bits = []
+    if judged:
+        footix_bits.append(
+            f"{good}/{judged} pronostics corrects, soit {str(rate).replace('.', ',')} % de réussite"
+        )
+    if pred_s:
+        scorer_text = f"{hit_s}/{pred_s} buteurs trouvés"
+        if scorer_hits:
+            scorer_text += ", avec notamment " + ", ".join(scorer_hits[:4])
+        footix_bits.append(scorer_text)
+
+    if footix_bits:
+        parts.append("🎯 Footix : " + " ; ".join(footix_bits) + ".")
+
+    # 4) Communauté + duel Footix/communauté.
+    if isinstance(community, dict) and community.get("rate") is not None:
+        c_rate = float(community["rate"])
+        c_total = int(community.get("total", 0) or 0)
+        c_correct = int(community.get("correct", 0) or 0)
+
+        comparison = ""
+        if rate is not None:
+            if rate > c_rate + 0.05:
+                comparison = " Footix prend l'avantage sur cette journée."
+            elif c_rate > rate + 0.05:
+                comparison = " La communauté prend l'avantage sur cette journée."
+            else:
+                comparison = " Égalité parfaite entre Footix et la communauté."
+
+        parts.append(
+            f"👥 La communauté termine à {str(round(c_rate, 1)).replace('.', ',')} % de réussite "
+            f"({c_correct}/{c_total} pronostics jugés).{comparison}"
+        )
+
+    # Conclusion courte, sans surcharger.
+    if judged and rate is not None:
+        if rate >= 75:
+            conclusion = "Une journée solide à conserver comme référence avant la prochaine grille."
+        elif rate >= 50:
+            conclusion = "Un bilan encourageant, avec encore quelques pièges à mieux lire sur la prochaine grille."
+        else:
+            conclusion = "Une journée plus compliquée : rendez-vous sur la prochaine grille pour remettre les compteurs dans le bon sens."
+        parts.append(conclusion)
+
+    return "\n\n".join(parts[:5])
+
 
 def main():
     schedule = json.loads(SCHEDULE.read_text(encoding="utf-8"))
@@ -230,6 +391,7 @@ def main():
         scorer_predictions = 0
         scorer_data_ready = True
         match_payload = []
+        community = community_success(day_no, fixtures)
 
         for home, away, f in fixtures:
             p = prono_for(day, home, away)
@@ -292,7 +454,10 @@ def main():
             "summary": "",
             "autoGenerated": True,
             "generatedAt": datetime.now(timezone.utc).isoformat(),
-            "model": "Footix local gratuit",
+            "model": REVIEW_MODEL,
+            "communityCorrect": community.get("correct") if isinstance(community, dict) else None,
+            "communityPredictions": community.get("total") if isinstance(community, dict) else None,
+            "communityRate": community.get("rate") if isinstance(community, dict) else None,
         }
 
         payload = {
@@ -304,10 +469,10 @@ def main():
                 "buteurs_pronostiques": scorer_predictions,
             },
             "matches": match_payload,
+            "communaute": community,
         }
 
         review["summary"] = free_summary(payload)
-        review["model"] = "Footix local gratuit"
 
         # Un bilan auto existant n'est régénéré que si les données calculées
         # ont réellement changé. Cela permet aux buteurs BSD arrivés plus tard
@@ -315,10 +480,20 @@ def main():
         same_stats = (
             isinstance(existing, dict)
             and existing.get("autoGenerated")
+            and existing.get("model") == REVIEW_MODEL
             and int(existing.get("goodPronos", -1) or 0) == good_pronos
             and int(existing.get("judgedPronos", -1) or 0) == judged
             and int(existing.get("goodScorers", -1) or 0) == scorer_hits
             and int(existing.get("scorerPredictions", -1) or 0) == scorer_predictions
+            and existing.get("communityCorrect") == (
+                community.get("correct") if isinstance(community, dict) else None
+            )
+            and existing.get("communityPredictions") == (
+                community.get("total") if isinstance(community, dict) else None
+            )
+            and existing.get("communityRate") == (
+                community.get("rate") if isinstance(community, dict) else None
+            )
         )
         if same_stats and existing.get("summary") and not force:
             continue
