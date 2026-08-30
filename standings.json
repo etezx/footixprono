@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-08-30T12:54:25.822871+00:00",
+  "updated_at": "2026-08-30T17:29:35.614436+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
+    {
+      "club": "Paris FC",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
+      "p": 2,
+      "w": 1,
+      "d": 1,
+      "l": 0,
+      "gf": 3,
+      "ga": 0,
+      "pts": 4,
+      "last5": []
+    },
     {
       "club": "Lille",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
@@ -23,6 +35,18 @@
       "l": 0,
       "gf": 3,
       "ga": 1,
+      "pts": 4,
+      "last5": []
+    },
+    {
+      "club": "Stade Rennais",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
+      "p": 2,
+      "w": 1,
+      "d": 1,
+      "l": 0,
+      "gf": 5,
+      "ga": 4,
       "pts": 4,
       "last5": []
     },
@@ -125,48 +149,12 @@
     {
       "club": "Le Mans",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
-      "p": 1,
+      "p": 2,
       "w": 0,
       "d": 1,
-      "l": 0,
-      "gf": 2,
-      "ga": 2,
-      "pts": 1,
-      "last5": []
-    },
-    {
-      "club": "Stade Rennais",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
-      "p": 1,
-      "w": 0,
-      "d": 1,
-      "l": 0,
-      "gf": 2,
-      "ga": 2,
-      "pts": 1,
-      "last5": []
-    },
-    {
-      "club": "Nice",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
-      "p": 1,
-      "w": 0,
-      "d": 1,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "pts": 1,
-      "last5": []
-    },
-    {
-      "club": "Paris FC",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
-      "p": 1,
-      "w": 0,
-      "d": 1,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
+      "l": 1,
+      "gf": 4,
+      "ga": 5,
       "pts": 1,
       "last5": []
     },
@@ -203,6 +191,18 @@
       "l": 1,
       "gf": 2,
       "ga": 4,
+      "pts": 1,
+      "last5": []
+    },
+    {
+      "club": "Nice",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
+      "p": 2,
+      "w": 0,
+      "d": 1,
+      "l": 1,
+      "gf": 0,
+      "ga": 3,
       "pts": 1,
       "last5": []
     },
