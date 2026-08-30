@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parent
 SCHEDULE = ROOT / "schedule.json"
 PRONOS = ROOT / "pronos.json"
 SUPABASE_URL = os.getenv("SUPABASE_URL", "https://brjwujgtkyxzyytkwftw.supabase.co").rstrip("/")
-REVIEW_MODEL = "Footix Premium v10.0.5"
+REVIEW_MODEL = "Footix Premium v10.0.6"
 
 def norm(value):
     value = unicodedata.normalize("NFD", str(value or ""))
@@ -135,44 +135,47 @@ def supabase_get(path, params):
         return None
 
 
-def community_success(day_no, fixtures):
-    """Calcule le taux réel de pronostics communautaires corrects pour une journée L1."""
+def community_success(day_no, fixtures=None):
+    """Taux réel communauté d'une journée L1, basé sur les résultats déjà synchronisés dans Supabase."""
     rows = supabase_get(
         "matches",
         {
-            "select": "id,home_team,away_team",
+            "select": "id,result_pick,status",
             "competition": "eq.L1",
             "matchday": f"eq.{day_no}",
+            "result_pick": "not.is.null",
         },
     )
     if not isinstance(rows, list) or not rows:
+        print(f"[INFO] J{day_no}: aucun résultat Supabase exploitable pour la communauté.")
         return None
-
-    fixture_results = {
-        (norm(home), norm(away)): result_pick(f)
-        for home, away, f in fixtures
-    }
 
     match_results = {}
     for row in rows:
-        key = (norm(row.get("home_team")), norm(row.get("away_team")))
-        actual = fixture_results.get(key)
-        if actual and row.get("id") is not None:
-            match_results[int(row["id"])] = actual
+        try:
+            match_id = int(row.get("id"))
+        except (TypeError, ValueError):
+            continue
+        actual = str(row.get("result_pick") or "").upper().strip()
+        if actual in {"1", "N", "2"}:
+            match_results[match_id] = actual
 
     if not match_results:
+        print(f"[INFO] J{day_no}: result_pick absent/invalide dans Supabase.")
+        return None
+
+    service_role = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "").strip()
+    if not service_role:
+        print("[WARN] SUPABASE_SERVICE_ROLE_KEY absente : statistiques communauté ignorées.")
         return None
 
     ids = ",".join(str(x) for x in sorted(match_results))
-    service_role = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "").strip()
-    if not service_role:
-        return None
 
-    # Pagination pour rester juste même si la communauté dépasse 1000 votes.
     from urllib.parse import urlencode
     all_predictions = []
-    start = 0
+    start_row = 0
     page_size = 1000
+
     while True:
         params = {
             "select": "pick,match_id",
@@ -185,7 +188,7 @@ def community_success(day_no, fixtures):
                 "apikey": service_role,
                 "Authorization": f"Bearer {service_role}",
                 "Accept": "application/json",
-                "Range": f"{start}-{start + page_size - 1}",
+                "Range": f"{start_row}-{start_row + page_size - 1}",
             },
         )
         try:
@@ -197,10 +200,11 @@ def community_success(day_no, fixtures):
 
         if not isinstance(page, list):
             return None
+
         all_predictions.extend(page)
         if len(page) < page_size:
             break
-        start += page_size
+        start_row += page_size
 
     total = 0
     correct = 0
@@ -209,6 +213,7 @@ def community_success(day_no, fixtures):
             match_id = int(row.get("match_id"))
         except (TypeError, ValueError):
             continue
+
         actual = match_results.get(match_id)
         pick = str(row.get("pick") or "").upper().strip()
         if actual and pick in {"1", "N", "2"}:
@@ -217,19 +222,50 @@ def community_success(day_no, fixtures):
                 correct += 1
 
     if total == 0:
+        print(f"[INFO] J{day_no}: aucun vote communauté sur les matchs jugés.")
         return {"correct": 0, "total": 0, "rate": None}
 
-    return {
-        "correct": correct,
-        "total": total,
-        "rate": round(correct * 100 / total, 1),
-    }
+    rate = round(correct * 100 / total, 1)
+    print(f"[OK] J{day_no}: communauté {correct}/{total} = {rate}%.")
+    return {"correct": correct, "total": total, "rate": rate}
 
 
 def choose(seed, items):
     import random
     r = random.Random(seed)
     return r.choice(items)
+
+
+CLUB_DISPLAY = {
+    "STADE RENNAIS FC": "Rennes",
+    "LE MANS FC": "Le Mans",
+    "PARIS SAINT-GERMAIN": "PSG",
+    "PARIS SAINT GERMAIN": "PSG",
+    "LOSC LILLE": "Lille",
+    "LOSC": "Lille",
+    "OLYMPIQUE DE MARSEILLE": "Marseille",
+    "OLYMPIQUE LYONNAIS": "Lyon",
+    "RC LENS": "Lens",
+    "RACING CLUB DE LENS": "Lens",
+    "RC STRASBOURG ALSACE": "Strasbourg",
+    "AJ AUXERRE": "Auxerre",
+    "ANGERS SCO": "Angers",
+    "STADE BRESTOIS 29": "Brest",
+    "TOULOUSE FC": "Toulouse",
+    "FC LORIENT": "Lorient",
+    "ESTAC TROYES": "Troyes",
+    "HAVRE AC": "Le Havre",
+    "LE HAVRE AC": "Le Havre",
+    "AS MONACO": "Monaco",
+    "PARIS FC": "Paris FC",
+    "OGC NICE": "Nice",
+}
+
+
+def club_display(name):
+    raw = str(name or "").strip()
+    return CLUB_DISPLAY.get(raw.upper(), raw.title() if raw.isupper() else raw)
+
 
 def free_summary(payload):
     """Bilan court, premium et fun : journée, PSG, Footix, buteurs et communauté."""
@@ -244,7 +280,7 @@ def free_summary(payload):
         except Exception:
             h, a = 0, 0
         home, away = m["match"].split(" - ", 1)
-        return home, away, h, a
+        return club_display(home), club_display(away), h, a
 
     def impact(m):
         _, _, h, a = parsed(m)
@@ -266,7 +302,7 @@ def free_summary(payload):
             loser = away if h > a else home
             parts.append(
                 f"⚽ Le fait du jour : {winner} s'impose {h}-{a} face à {loser} "
-                f"dans l'une des rencontres les plus prolifiques de cette J{day}."
+                f"au terme de l'un des matchs les plus animés de cette J{day}."
             )
 
     # 2) Petite signature parisienne, toujours factuelle.
@@ -319,7 +355,7 @@ def free_summary(payload):
     if pred_s:
         scorer_text = f"{hit_s}/{pred_s} buteurs trouvés"
         if scorer_hits:
-            scorer_text += ", avec notamment " + ", ".join(scorer_hits[:4])
+            scorer_text += ", avec " + ", ".join(scorer_hits)
         footix_bits.append(scorer_text)
 
     if footix_bits:
@@ -352,7 +388,7 @@ def free_summary(payload):
         elif rate >= 50:
             conclusion = "Un bilan encourageant, avec encore quelques pièges à mieux lire sur la prochaine grille."
         else:
-            conclusion = "Une journée plus compliquée : rendez-vous sur la prochaine grille pour remettre les compteurs dans le bon sens."
+            conclusion = "Une journée contrastée pour Footix. Il faudra viser plus juste sur la prochaine grille."
         parts.append(conclusion)
 
     return "\n\n".join(parts[:5])
