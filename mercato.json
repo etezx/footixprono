@@ -1,7 +1,13 @@
 {
-  "updated_at": "2026-08-30T08:30:43.267936+00:00",
+  "updated_at": "2026-08-30T13:58:08.289014+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
+    {
+      "title": "Mercato: annoncé à l'OM, Jean-Clair Todibo débarque à Lens - RMC Sport",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYm93VjdPZWEzekFNQUZtMmg5eG1lMC1EM2VJNTZSaGFkcGQyMVhCRlJyN29nNVY2TVhmaFcxdjRXbnZuWENhY25TaGduYVhWdWlnWmxHYzZKbEIzbTVhRVktNXVYZjAtdlFuMEFPV0RlMXNwa0d4cTA3Z0hRYm1MaFFnd1NMbUVOQndqbDRiX0Z0UUlQUnJjWTlxaGVLd21KOGRTaFVFU0stREtMd0VBaGpEYnQ4NkprdFNZNERuOVVSZw?oc=5",
+      "published": "2026-08-30T07:41:06+00:00",
+      "source": "RMC Sport"
+    },
     {
       "title": "ça s’emballe en Ligue 1 sur le mercato - Foot Mercato",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOc3RJQ1M1bDcxdHdJQXhOZi1UR0JSM1FiQ1hhX0tENHlnaUlpUkFBcTR4VTlmcW9RSFRKdHpjWDdVLVN3bkNBWU1zV2RRQ1RLNlVMeHNITVNUdWpkVl9MUE93cS05bFRONllIZkhJT3YydkpOM0MwZ0tJVnVzNzRrcVZ3a3FrTlJ4NnY0LXQzRDA0OERPNFhsTTBsVFV6UHZuQUhSeg?oc=5",
@@ -33,16 +39,16 @@
       "source": "Ouest-France"
     },
     {
-      "title": "Mercato Ligue 1 : Leverkusen passe à l’action pour le Strasbourgeois Guéla Doué - Le Parisien",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNMWZ3eDBvejNTa1RFbjNIQ3p3WEV0WXFmOFRBb05vd0NoREhtLThpbmFOUWpjUEhaWFNnSC1fV0Uxd1oxRVBjam96N3FucGU5Q0dScGphZW1tR1dOakFqdnBMSlk0Nm1Fci1lUGYzYXdsNmZHSE1ERXdsWXVMdWJGampYX3VadUVHc2Z3aDBweVBUUTd0OVRKbDB1b2luX1JYMU9GdncwaFAzVDNKLXBnY3VSSlI5c0lWa0dwYzNxZ0tkcXpKUVhwNURvcHdfZjVQbWhMMnBFdUhSRkdXN25DaDdZVnlKTW43VU5ERmJYdGo0TE9GdGVJdE9wdEE?oc=5",
-      "published": "2026-08-29T06:23:21+00:00",
-      "source": "Le Parisien"
-    },
-    {
       "title": "Ayyoub Bouaddi va détrôner Neymar : le top 10 des plus grosses ventes de la Ligue 1 vers l'étranger - L'Équipe",
       "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxNcE5fNjhDU1phakVXY0l0b2JQYm1lbkdDbTBJQzB2dmFHR0I1WnktdVZjU3UwNzR6OHB4S1BmV0FkRlpfY3FoXzgzRk1XdkUyellQOUtYb3FjcnRuMHQ5c0NLYXBqUlVIZzZ0c2k4QXZWU1BRam9BQzJOQ1JKd1UwV1pZTGJLUm9oLUZ5bVI5UG1QTmFDbjRxTXlXUE43enFfQ2R4OWkwSnV4eml4LU5FS2dlSlc1Y29CdnU2SmM0ZzNJU195SG9hWWVBN3YwdFdOdWptSnVIM01hLWo1eUxjeXJXTU1FSnp5VkFSdFdYRWU5MUdwbkhsZzVreHByS0c0eDAyMngzYlZ5QlNtM0Fra2R5bExpZGNEWjJrREhxbXFVVUtKTllGOGI4STZnbFpTSnVuOUpya3dJUQ?oc=5",
       "published": "2026-08-23T15:48:53+00:00",
       "source": "L'Équipe"
+    },
+    {
+      "title": "Mercato Ligue 1 : Leverkusen passe à l’action pour le Strasbourgeois Guéla Doué - Le Parisien",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNMWZ3eDBvejNTa1RFbjNIQ3p3WEV0WXFmOFRBb05vd0NoREhtLThpbmFOUWpjUEhaWFNnSC1fV0Uxd1oxRVBjam96N3FucGU5Q0dScGphZW1tR1dOakFqdnBMSlk0Nm1Fci1lUGYzYXdsNmZHSE1ERXdsWXVMdWJGampYX3VadUVHc2Z3aDBweVBUUTd0OVRKbDB1b2luX1JYMU9GdncwaFAzVDNKLXBnY3VSSlI5c0lWa0dwYzNxZ0tkcXpKUVhwNURvcHdfZjVQbWhMMnBFdUhSRkdXN25DaDdZVnlKTW43VU5ERmJYdGo0TE9GdGVJdE9wdEE?oc=5",
+      "published": "2026-08-29T06:23:21+00:00",
+      "source": "Le Parisien"
     },
     {
       "title": "JT Foot Mercato : ça s’emballe en Ligue 1 sur le mercato - Foot Mercato",
@@ -57,22 +63,16 @@
       "source": "Eurosport"
     },
     {
-      "title": "Mercato PSG : ça va bouger pour Renato Sanches - Foot Mercato",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMWpmWDBaOEEzaVJybHN1VzNGNjJ6OHVxSk1zc3lIaUNtNEJmVEowcFlGYlMzR3pMRGhaWWVxT2stT01uazhvYzU5cDVaV3Q3YUZtbnp0V2xlMS1qVFNrcEFVSnhDX0ozTEQxMUZaTUdNUm9FUlNIajBCSVl1SHB0SHZKaWswbXhQRURtY3VJNFYtbTVXNS1iaQ?oc=5",
-      "published": "2026-08-25T14:43:02+00:00",
-      "source": "Foot Mercato"
+      "title": "«Nous avons cette nécessité de vendre des joueurs» : Paolo Fonseca évoque la fin du mercato de l'OL après le nul contre Le Havre en Ligue 1 - L'Équipe",
+      "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPNWhXdzJMSWctalBvemJnRi1KUUgwZl9sVlBySTF3RF82RFF1NktGSm9lM09nYnlzMEpXVjFVYm1FYlR5RTI3Y0x0dEEwaktfcW9MRFlzbHdWb0dkaXQ3NjF1Mk5QOUFxc21mS3FLRFdEWGgyOTFBZVJhUjJkTjFtWTJwWERJOFI0TERrOGh4emZCUEdTREp5ZEdzajlrck13YUd4NnlqcUFjS19VXy0zOWt5cWNOU0htY2VyZDQzdi1lVFBDX3JUSXc0amM0MDIweTkwMlhFRlFWSUxwS3FVMTZ3NTJ5R2xwNkVMLXZSb1J2V1YxckcxUm51dkp0UU9tZ0pNQjNHby1FeGdTMWY3LUI4YVNFZw?oc=5",
+      "published": "2026-08-29T21:51:33+00:00",
+      "source": "L'Équipe"
     },
     {
       "title": "Fofana pourrait rester à l'OL, Nkunku de retour à Leipzig : les 12 infos mercato de mardi - Eurosport",
       "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxOYlZleXZha2k0QVpxY2thckZwcW5EQWdaekdyaHptaHFjLXh4OXVQWUVOLWIwcmxVUEVUa0ZQdWo1dDdGMURDUS1VY1lReFdpMnJselJWclBkMnhlTF90QlVFRnBWZDFxRUszc3hTZ3k1Y25vaTV4WmVhNU9hek1QWmRmeFpRSVNpS3NidmdLLU11OGpqaWNzTENUWEFmR2pWY1poOFo3QzJRLTgwV1luQTVxSVU3RktCUFlnZ2diZlZlSVN3TzhrNGw1RGRGNk1OUllzMmZxd2Z5VUJvWnBFN2xHRlRlZlNrTUhUR2VPbTdOZVNOaXJPOVRKdkZBZ0Z5U29wVFV3NmJNM3ZOZmFGcmZuWTVsVU1WLXgtV1FHT1o3aEljOHZTTlhnRkNQZERVWVNYczNDdw?oc=5",
       "published": "2026-08-25T19:28:00+00:00",
       "source": "Eurosport"
-    },
-    {
-      "title": "«Nous avons cette nécessité de vendre des joueurs» : Paolo Fonseca évoque la fin du mercato de l'OL après le nul contre Le Havre en Ligue 1 - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPNWhXdzJMSWctalBvemJnRi1KUUgwZl9sVlBySTF3RF82RFF1NktGSm9lM09nYnlzMEpXVjFVYm1FYlR5RTI3Y0x0dEEwaktfcW9MRFlzbHdWb0dkaXQ3NjF1Mk5QOUFxc21mS3FLRFdEWGgyOTFBZVJhUjJkTjFtWTJwWERJOFI0TERrOGh4emZCUEdTREp5ZEdzajlrck13YUd4NnlqcUFjS19VXy0zOWt5cWNOU0htY2VyZDQzdi1lVFBDX3JUSXc0amM0MDIweTkwMlhFRlFWSUxwS3FVMTZ3NTJ5R2xwNkVMLXZSb1J2V1YxckcxUm51dkp0UU9tZ0pNQjNHby1FeGdTMWY3LUI4YVNFZw?oc=5",
-      "published": "2026-08-29T21:51:33+00:00",
-      "source": "L'Équipe"
     }
   ]
 }
