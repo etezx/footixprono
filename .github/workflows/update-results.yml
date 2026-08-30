@@ -2,7 +2,6 @@ name: Mettre à jour les résultats
 
 on:
   schedule:
-    # Passage principal toutes les 5 min, décalé des minutes rondes.
     - cron: '2-59/5 * * * *'
   workflow_dispatch:
   repository_dispatch:
@@ -30,13 +29,18 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Vérifier la clé BSD
+      - name: Vérifier les secrets
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         shell: bash
         run: |
           if [ -z "$BSD_API_KEY" ]; then
-            echo "ERREUR : le secret BSD_API_KEY est absent."
+            echo "ERREUR : BSD_API_KEY est absent."
+            exit 1
+          fi
+          if [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "ERREUR : SUPABASE_SERVICE_ROLE_KEY est absent."
             exit 1
           fi
 
@@ -48,23 +52,28 @@ jobs:
           set -euo pipefail
           git config user.name "footix-prono-bot"
           git config user.email "actions@users.noreply.github.com"
-
           git fetch origin main
           git reset --hard origin/main
-
           python update_results.py
           python generate_review.py
 
+      - name: Reporter les scores dans Vos pronos
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_URL: https://brjwujgtkyxzyytkwftw.supabase.co
+        run: python sync_live_results_supabase.py
+
+      - name: Publier les fichiers actualisés
+        shell: bash
+        run: |
+          set -euo pipefail
           git add schedule.json pronos.json live-results.json bsd-standings.json
           if git diff --cached --quiet; then
-            echo "Aucun changement de données à publier."
+            echo "Aucun changement de fichier à publier."
             exit 0
           fi
-
           git commit -m "Mise à jour résultats live Footix"
-
           if ! git push origin HEAD:main; then
-            echo "Le dépôt a changé pendant le rafraîchissement : retry propre."
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
