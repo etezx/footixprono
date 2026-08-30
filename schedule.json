@@ -137,7 +137,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T13:13:17Z",
+          "lastLiveUpdate": "2026-08-30T16:33:45Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 3,
@@ -162,7 +162,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T13:13:17Z",
+          "lastLiveUpdate": "2026-08-30T16:33:45Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 2,
@@ -197,7 +197,7 @@
           "live": false,
           "period": "FT",
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-30T13:13:17Z"
+          "lastLiveUpdate": "2026-08-30T16:33:45Z"
         }
       ],
       [
@@ -212,7 +212,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T13:13:17Z",
+          "lastLiveUpdate": "2026-08-30T16:33:45Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -236,7 +236,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T13:13:17Z",
+          "lastLiveUpdate": "2026-08-30T16:33:45Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -259,7 +259,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T13:13:17Z"
+          "lastLiveUpdate": "2026-08-30T16:33:45Z"
         }
       ],
       [
@@ -269,17 +269,20 @@
           "date": "2026-08-30",
           "time": "15:00",
           "official": true,
-          "completed": false,
+          "completed": true,
           "eventId": 210451,
           "source": "bsd",
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-08-30T13:13:17Z",
-          "minute": 12,
-          "period": "1st_half",
-          "homeScore": 0,
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-08-30T16:33:45Z",
+          "period": "FT",
+          "homeScore": 3,
           "awayScore": 0,
-          "actualScorers": [],
+          "actualScorers": [
+            "V. Marchetti",
+            "S. S. Chergui",
+            "L. Sinayoko"
+          ],
           "scorersVerified": true
         }
       ],
@@ -292,10 +295,20 @@
           "official": true,
           "source": "bsd",
           "eventId": 210454,
-          "status": "notstarted",
-          "live": false,
+          "status": "live",
+          "live": true,
           "completed": false,
-          "lastLiveUpdate": "2026-08-30T13:13:17Z"
+          "lastLiveUpdate": "2026-08-30T16:33:45Z",
+          "minute": 60,
+          "period": "2nd_half",
+          "homeScore": 2,
+          "awayScore": 2,
+          "actualScorers": [
+            "L. Mafouta",
+            "V. Rongier",
+            "E. Lepaul"
+          ],
+          "scorersVerified": true
         }
       ],
       [
@@ -318,7 +331,7 @@
             "F. Thauvin"
           ],
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-30T13:13:17Z"
+          "lastLiveUpdate": "2026-08-30T16:33:45Z"
         }
       ]
     ]

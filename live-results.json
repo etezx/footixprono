@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-08-30T13:13:17Z",
+  "generatedAt": "2026-08-30T16:33:45Z",
   "events": [
     {
       "eventId": 210448,
@@ -15,7 +15,7 @@
       "period": "FT",
       "homeScore": 2,
       "awayScore": 2,
-      "updatedAt": "2026-08-30T13:13:17Z",
+      "updatedAt": "2026-08-30T16:33:45Z",
       "actualScorers": [
         "Marquinhos",
         "Vitinha",
@@ -35,7 +35,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-30T13:13:17Z",
+      "updatedAt": "2026-08-30T16:33:45Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -56,7 +56,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-30T13:13:17Z",
+      "updatedAt": "2026-08-30T16:33:45Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -79,7 +79,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-30T13:13:17Z",
+      "updatedAt": "2026-08-30T16:33:45Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -101,7 +101,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-30T13:13:17Z",
+      "updatedAt": "2026-08-30T16:33:45Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -122,7 +122,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-08-30T13:13:17Z",
+      "updatedAt": "2026-08-30T16:33:45Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 2,
@@ -140,30 +140,44 @@
       "leagueId": 6,
       "home": "Paris FC",
       "away": "Nice",
-      "kickoff": "2026-08-30T13:00:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-08-30T13:13:17Z",
-      "minute": 12,
-      "homeScore": 0,
+      "kickoff": "2026-08-30T13:00:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-08-30T16:33:45Z",
+      "minute": null,
+      "homeScore": 3,
       "awayScore": 0,
-      "actualScorers": [],
+      "actualScorers": [
+        "V. Marchetti",
+        "S. S. Chergui",
+        "L. Sinayoko"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 3
     },
     {
       "eventId": 210454,
       "leagueId": 6,
       "home": "Stade Rennais",
       "away": "Le Mans",
-      "kickoff": "2026-08-30T15:15:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-08-30T15:15:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-08-30T13:13:17Z"
+      "period": "2nd_half",
+      "updatedAt": "2026-08-30T16:33:45Z",
+      "minute": 60,
+      "homeScore": 2,
+      "awayScore": 2,
+      "actualScorers": [
+        "L. Mafouta",
+        "V. Rongier",
+        "E. Lepaul"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 4
     },
     {
       "eventId": 210446,
@@ -175,7 +189,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-08-30T13:13:17Z"
+      "updatedAt": "2026-08-30T16:33:45Z"
     }
   ]
 }

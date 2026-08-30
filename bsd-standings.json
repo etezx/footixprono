@@ -13,6 +13,23 @@
       "teams": [
         {
           "position": 1,
+          "club": "Paris FC",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 3,
+          "ga": 0,
+          "pts": 4,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 2,
           "club": "Lille",
           "p": 2,
           "w": 1,
@@ -29,7 +46,7 @@
           }
         },
         {
-          "position": 2,
+          "position": 3,
           "club": "Olympique Lyonnais",
           "p": 2,
           "w": 1,
@@ -46,7 +63,7 @@
           }
         },
         {
-          "position": 3,
+          "position": 4,
           "club": "Troyes",
           "p": 2,
           "w": 1,
@@ -57,13 +74,13 @@
           "pts": 4,
           "group": "",
           "zone": {
-            "key": "cl",
-            "label": "Champions League",
+            "key": "clq",
+            "label": "Champions League Qualification",
             "type": "qualification"
           }
         },
         {
-          "position": 4,
+          "position": 5,
           "club": "Olympique de Marseille",
           "p": 1,
           "w": 1,
@@ -74,13 +91,13 @@
           "pts": 3,
           "group": "",
           "zone": {
-            "key": "clq",
-            "label": "Champions League Qualification",
+            "key": "el",
+            "label": "Europa League",
             "type": "qualification"
           }
         },
         {
-          "position": 5,
+          "position": 6,
           "club": "RC Lens",
           "p": 2,
           "w": 1,
@@ -91,13 +108,13 @@
           "pts": 3,
           "group": "",
           "zone": {
-            "key": "el",
-            "label": "Europa League",
+            "key": "uecl",
+            "label": "Conference League Qualification",
             "type": "qualification"
           }
         },
         {
-          "position": 6,
+          "position": 7,
           "club": "AS Monaco",
           "p": 1,
           "w": 1,
@@ -107,14 +124,10 @@
           "ga": 0,
           "pts": 3,
           "group": "",
-          "zone": {
-            "key": "uecl",
-            "label": "Conference League Qualification",
-            "type": "qualification"
-          }
+          "zone": null
         },
         {
-          "position": 7,
+          "position": 8,
           "club": "Angers",
           "p": 2,
           "w": 1,
@@ -127,7 +140,7 @@
           "zone": null
         },
         {
-          "position": 8,
+          "position": 9,
           "club": "RC Strasbourg",
           "p": 2,
           "w": 1,
@@ -140,7 +153,7 @@
           "zone": null
         },
         {
-          "position": 9,
+          "position": 10,
           "club": "Paris Saint-Germain",
           "p": 2,
           "w": 0,
@@ -153,7 +166,7 @@
           "zone": null
         },
         {
-          "position": 10,
+          "position": 11,
           "club": "Stade Brestois",
           "p": 2,
           "w": 0,
@@ -166,7 +179,7 @@
           "zone": null
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "Le Mans",
           "p": 1,
           "w": 0,
@@ -179,7 +192,7 @@
           "zone": null
         },
         {
-          "position": 12,
+          "position": 13,
           "club": "Stade Rennais",
           "p": 1,
           "w": 0,
@@ -192,33 +205,7 @@
           "zone": null
         },
         {
-          "position": 13,
-          "club": "Nice",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 1,
-          "group": "",
-          "zone": null
-        },
-        {
           "position": 14,
-          "club": "Paris FC",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 1,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 15,
           "club": "Le Havre",
           "p": 2,
           "w": 0,
@@ -231,7 +218,7 @@
           "zone": null
         },
         {
-          "position": 16,
+          "position": 15,
           "club": "Lorient",
           "p": 2,
           "w": 0,
@@ -239,6 +226,19 @@
           "l": 1,
           "gf": 1,
           "ga": 2,
+          "pts": 1,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 16,
+          "club": "Toulouse",
+          "p": 2,
+          "w": 0,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 4,
           "pts": 1,
           "group": "",
           "zone": {
@@ -249,13 +249,13 @@
         },
         {
           "position": 17,
-          "club": "Toulouse",
+          "club": "Nice",
           "p": 2,
           "w": 0,
           "d": 1,
           "l": 1,
-          "gf": 2,
-          "ga": 4,
+          "gf": 0,
+          "ga": 3,
           "pts": 1,
           "group": "",
           "zone": {
@@ -284,6 +284,6 @@
       ]
     }
   },
-  "generatedAt": "2026-08-30T13:13:17Z",
+  "generatedAt": "2026-08-30T16:33:45Z",
   "source": "BSD"
 }
