@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T11:46:04.927372+00:00",
+  "updated_at": "2026-08-30T10:39:04.251775+00:00",
   "source": "ESPN rosters + ajouts manuels Footix Prono",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -517,5 +517,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 459
+  "players_fetched": 456
 }
