@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-08-30T17:29:35.614436+00:00",
+  "updated_at": "2026-08-30T21:06:15.011701+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
+    {
+      "club": "AS Monaco",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
+      "p": 2,
+      "w": 2,
+      "d": 0,
+      "l": 0,
+      "gf": 3,
+      "ga": 0,
+      "pts": 6,
+      "last5": []
+    },
     {
       "club": "Paris FC",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
@@ -63,18 +75,6 @@
       "last5": []
     },
     {
-      "club": "Marseille",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
-      "p": 1,
-      "w": 1,
-      "d": 0,
-      "l": 0,
-      "gf": 4,
-      "ga": 0,
-      "pts": 3,
-      "last5": []
-    },
-    {
       "club": "Lens",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
       "p": 2,
@@ -87,14 +87,14 @@
       "last5": []
     },
     {
-      "club": "AS Monaco",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
-      "p": 1,
+      "club": "Marseille",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+      "p": 2,
       "w": 1,
       "d": 0,
-      "l": 0,
-      "gf": 1,
-      "ga": 0,
+      "l": 1,
+      "gf": 4,
+      "ga": 2,
       "pts": 3,
       "last5": []
     },
