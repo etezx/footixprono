@@ -64,13 +64,13 @@
         },
         {
           "position": 4,
-          "club": "Troyes",
+          "club": "Stade Rennais",
           "p": 2,
           "w": 1,
           "d": 1,
           "l": 0,
-          "gf": 2,
-          "ga": 1,
+          "gf": 5,
+          "ga": 4,
           "pts": 4,
           "group": "",
           "zone": {
@@ -81,6 +81,23 @@
         },
         {
           "position": 5,
+          "club": "Troyes",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 2,
+          "ga": 1,
+          "pts": 4,
+          "group": "",
+          "zone": {
+            "key": "el",
+            "label": "Europa League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 6,
           "club": "Olympique de Marseille",
           "p": 1,
           "w": 1,
@@ -91,13 +108,13 @@
           "pts": 3,
           "group": "",
           "zone": {
-            "key": "el",
-            "label": "Europa League",
+            "key": "uecl",
+            "label": "Conference League Qualification",
             "type": "qualification"
           }
         },
         {
-          "position": 6,
+          "position": 7,
           "club": "RC Lens",
           "p": 2,
           "w": 1,
@@ -107,14 +124,10 @@
           "ga": 4,
           "pts": 3,
           "group": "",
-          "zone": {
-            "key": "uecl",
-            "label": "Conference League Qualification",
-            "type": "qualification"
-          }
+          "zone": null
         },
         {
-          "position": 7,
+          "position": 8,
           "club": "AS Monaco",
           "p": 1,
           "w": 1,
@@ -127,7 +140,7 @@
           "zone": null
         },
         {
-          "position": 8,
+          "position": 9,
           "club": "Angers",
           "p": 2,
           "w": 1,
@@ -140,7 +153,7 @@
           "zone": null
         },
         {
-          "position": 9,
+          "position": 10,
           "club": "RC Strasbourg",
           "p": 2,
           "w": 1,
@@ -153,7 +166,7 @@
           "zone": null
         },
         {
-          "position": 10,
+          "position": 11,
           "club": "Paris Saint-Germain",
           "p": 2,
           "w": 0,
@@ -166,7 +179,7 @@
           "zone": null
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "Stade Brestois",
           "p": 2,
           "w": 0,
@@ -179,27 +192,14 @@
           "zone": null
         },
         {
-          "position": 12,
-          "club": "Le Mans",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 2,
-          "ga": 2,
-          "pts": 1,
-          "group": "",
-          "zone": null
-        },
-        {
           "position": 13,
-          "club": "Stade Rennais",
-          "p": 1,
+          "club": "Le Mans",
+          "p": 2,
           "w": 0,
           "d": 1,
-          "l": 0,
-          "gf": 2,
-          "ga": 2,
+          "l": 1,
+          "gf": 4,
+          "ga": 5,
           "pts": 1,
           "group": "",
           "zone": null
@@ -284,6 +284,6 @@
       ]
     }
   },
-  "generatedAt": "2026-08-30T17:15:16Z",
+  "generatedAt": "2026-08-30T17:39:07Z",
   "source": "BSD"
 }

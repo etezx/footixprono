@@ -137,7 +137,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T17:15:16Z",
+          "lastLiveUpdate": "2026-08-30T17:39:07Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 3,
@@ -162,7 +162,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T17:15:16Z",
+          "lastLiveUpdate": "2026-08-30T17:39:07Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 2,
@@ -197,7 +197,7 @@
           "live": false,
           "period": "FT",
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-30T17:15:16Z"
+          "lastLiveUpdate": "2026-08-30T17:39:07Z"
         }
       ],
       [
@@ -212,7 +212,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T17:15:16Z",
+          "lastLiveUpdate": "2026-08-30T17:39:07Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -236,7 +236,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T17:15:16Z",
+          "lastLiveUpdate": "2026-08-30T17:39:07Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -259,7 +259,7 @@
           "source": "bsd",
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T17:15:16Z"
+          "lastLiveUpdate": "2026-08-30T17:39:07Z"
         }
       ],
       [
@@ -274,7 +274,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-30T17:15:16Z",
+          "lastLiveUpdate": "2026-08-30T17:39:07Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 0,
@@ -295,12 +295,11 @@
           "official": true,
           "source": "bsd",
           "eventId": 210454,
-          "status": "live",
-          "live": true,
-          "completed": false,
-          "lastLiveUpdate": "2026-08-30T17:15:16Z",
-          "minute": 102,
-          "period": "2nd_half",
+          "status": "finished",
+          "live": false,
+          "completed": true,
+          "lastLiveUpdate": "2026-08-30T17:39:07Z",
+          "period": "FT",
           "homeScore": 3,
           "awayScore": 2,
           "actualScorers": [
@@ -331,7 +330,7 @@
             "F. Thauvin"
           ],
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-30T17:15:16Z"
+          "lastLiveUpdate": "2026-08-30T17:39:07Z"
         }
       ]
     ]
