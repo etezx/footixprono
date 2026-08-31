@@ -405,11 +405,27 @@ async function publish(){
     if(error) throw error;
     if(!data?.ok) throw new Error(data?.error||'Réponse serveur invalide');
     status.textContent=`✓ ${competition==='ligue1'?'Pronostics Ligue 1':'Pronostics LDC'} publiés. GitHub Pages se mettra à jour dans quelques instants.`;
-  }catch(err){
-    status.textContent=`Erreur de publication : ${err.message||err}`;
-  }finally{
-    button.disabled=!adminAuthorized;
+}catch(err){
+  let detail=err?.message||String(err);
+
+  try{
+    if(err?.context){
+      const clone=err.context.clone();
+      const body=await clone.json();
+      detail=body?.error||body?.message||JSON.stringify(body);
+    }
+  }catch{
+    try{
+      if(err?.context){
+        detail=await err.context.text();
+      }
+    }catch{}
   }
+
+  status.textContent=`Erreur de publication : ${detail}`;
+}finally{
+  button.disabled=!adminAuthorized;
+}
 }
 
 verifyAdminAccess().catch(()=>{});
