@@ -341,63 +341,78 @@ function encodeBase64Utf8(text){
   for(let i=0;i<bytes.length;i+=chunk) binary+=String.fromCharCode(...bytes.subarray(i,i+chunk));
   return btoa(binary);
 }
-async function githubRequest(url,token,options={}){
-  const res=await fetch(url,{...options,headers:{
-    'Accept':'application/vnd.github+json',
-    'Authorization':`Bearer ${token}`,
-    'X-GitHub-Api-Version':'2022-11-28',
-    'Content-Type':'application/json',
-    ...(options.headers||{})
-  }});
-  if(!res.ok){
-    let message=`${res.status} ${res.statusText}`;
-    try{const body=await res.json();if(body.message)message=body.message;}catch{}
-    throw new Error(message);
+const supabaseCfg=window.FOOTIX_SUPABASE||{};
+const adminDb=(window.supabase&&supabaseCfg.url&&supabaseCfg.key)
+  ? window.supabase.createClient(supabaseCfg.url,supabaseCfg.key)
+  : null;
+let adminAuthorized=false;
+
+async function verifyAdminAccess(){
+  const chip=$a('#admin-auth-chip');
+  const message=$a('#admin-auth-message');
+  const button=$a('#publish-pronos');
+  if(!adminDb){
+    if(chip) chip.textContent='● SUPABASE INDISPONIBLE';
+    if(message) message.textContent='Impossible de vérifier les droits administrateur.';
+    if(button) button.disabled=true;
+    return false;
   }
-  return res.json();
+  const {data:{user},error:userError}=await adminDb.auth.getUser();
+  if(userError||!user){
+    if(chip) chip.textContent='● CONNEXION REQUISE';
+    if(message) message.textContent='Connecte-toi d’abord à ton compte Footix Prono administrateur.';
+    if(button) button.disabled=true;
+    return false;
+  }
+  let {data:isAdmin,error}=await adminDb.rpc('is_profile_admin',{p_user_id:user.id});
+  if(error){
+    const fallback=await adminDb.rpc('is_admin',{check_user:user.id});
+    isAdmin=fallback.data;
+    error=fallback.error;
+  }
+  adminAuthorized=Boolean(isAdmin&&!error);
+  if(chip) chip.textContent=adminAuthorized?'● ADMIN AUTORISÉ':'● ACCÈS REFUSÉ';
+  if(message) message.textContent=adminAuthorized
+    ? `Connecté en administrateur${user.email?` · ${user.email}`:''}. Le jeton GitHub reste côté serveur.`
+    : 'Ce compte ne possède pas les droits administrateur.';
+  if(button) button.disabled=!adminAuthorized;
+  return adminAuthorized;
 }
 
 async function publish(){
   saveVisible();
-  const owner=$a('#repo-owner').value.trim();
-  const repo=$a('#repo-name').value.trim();
-  const branch=$a('#repo-branch').value.trim()||'main';
-  const token=$a('#github-token').value.trim();
   const status=$a('#admin-status');
   const button=$a('#publish-pronos');
 
-  if(!owner||!repo||!token){
-    status.textContent='Renseigne le propriétaire, le dépôt et ton jeton GitHub.';
+  if(!adminAuthorized && !(await verifyAdminAccess())){
+    status.textContent='Publication refusée : connexion administrateur requise.';
     return;
   }
 
-  const path=currentCompetition==='ligue1'?'pronos.json':'champions-pronos.json';
+  const competition=currentCompetition;
+  datasets[competition].updated_at=new Date().toISOString();
   button.disabled=true;
-  status.textContent=`Publication de ${path} en cours…`;
+  status.textContent=`Publication de ${competition==='ligue1'?'pronos.json':'champions-pronos.json'} en cours…`;
 
   try{
-    const api=`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/${path}?ref=${encodeURIComponent(branch)}`;
-    let sha=null;
-    try{const current=await githubRequest(api,token);sha=current.sha;}
-    catch(err){if(!String(err.message).includes('404'))throw err;}
-
-    datasets[currentCompetition].updated_at=new Date().toISOString();
-    const text=JSON.stringify(datasets[currentCompetition],null,2)+'\n';
-    const body={
-      message:`Mise à jour ${currentCompetition==='ligue1'?'Ligue 1':'LDC'} — J${currentDay}`,
-      content:encodeBase64Utf8(text),
-      branch
-    };
-    if(sha) body.sha=sha;
-    const putUrl=`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/${path}`;
-    await githubRequest(putUrl,token,{method:'PUT',body:JSON.stringify(body)});
-    status.textContent=`✓ ${currentCompetition==='ligue1'?'Pronostics Ligue 1':'Pronostics LDC'} publiés. GitHub Pages se mettra à jour dans quelques instants.`;
+    const {data,error}=await adminDb.functions.invoke('publish-pronos',{
+      body:{
+        competition,
+        day:currentDay,
+        data:datasets[competition]
+      }
+    });
+    if(error) throw error;
+    if(!data?.ok) throw new Error(data?.error||'Réponse serveur invalide');
+    status.textContent=`✓ ${competition==='ligue1'?'Pronostics Ligue 1':'Pronostics LDC'} publiés. GitHub Pages se mettra à jour dans quelques instants.`;
   }catch(err){
-    status.textContent=`Erreur : ${err.message}. Vérifie le jeton et son droit “Contents: Read and write”.`;
+    status.textContent=`Erreur de publication : ${err.message||err}`;
   }finally{
-    button.disabled=false;
+    button.disabled=!adminAuthorized;
   }
 }
+
+verifyAdminAccess().catch(()=>{});
 
 loadAdmin().catch(err=>{
   $a('#admin-matches').innerHTML=`<div class="admin-empty">Impossible de charger l’éditeur : ${esc(err.message)}</div>`;
