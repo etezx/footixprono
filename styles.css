@@ -4662,3 +4662,11 @@ body:has(.monthly-ranking-main){
   margin:0 6px;
   color:#6fa9dc!important;
 }
+
+
+/* === V9.8.3 — Clochette : évite le chevauchement avec TikTok === */
+@media(min-width:1181px){
+  .footix-notifications{
+    right:200px!important;
+  }
+}
