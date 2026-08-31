@@ -2,8 +2,7 @@ name: Synchroniser les matchs communauté
 
 on:
   schedule:
-    # Décalé du workflow live principal.
-    - cron: '4-59/5 * * * *'
+    - cron: '12 * * * *'
   workflow_dispatch:
 
 permissions:
