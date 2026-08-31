@@ -19,7 +19,13 @@
      <div class="notif-head"><b>NOTIFICATIONS</b><button type="button" class="notif-read-all">TOUT LIRE</button></div>
      <div class="notif-list"></div>
    </div>`;
-   document.body.appendChild(host);
+   const topNav=document.querySelector('.topbar .v914-auth-nav');
+    if(topNav){
+      host.classList.add('notif-in-topnav');
+      topNav.insertBefore(host,topNav.firstChild);
+    }else{
+      document.body.appendChild(host);
+    }
    host.querySelector('.notif-bell').onclick=()=>host.querySelector('.notif-panel').classList.toggle('is-hidden');
    host.querySelector('.notif-read-all').onclick=async()=>{await db.rpc('mark_notification_read',{p_id:null});items=items.map(x=>({...x,read_at:x.read_at||new Date().toISOString()}));render()};
    host.querySelector('.notif-list').onclick=async e=>{

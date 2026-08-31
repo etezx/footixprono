@@ -4664,9 +4664,28 @@ body:has(.monthly-ranking-main){
 }
 
 
-/* === V9.8.3 — Clochette : évite le chevauchement avec TikTok === */
+/* === V9.8.4 — Clochette intégrée au bloc compte sur ordinateur === */
 @media(min-width:1181px){
-  .footix-notifications{
-    right:200px!important;
+  .topbar .v914-auth-nav .footix-notifications{
+    position:relative!important;
+    right:auto!important;
+    top:auto!important;
+    z-index:10020;
+    display:flex;
+    align-items:center;
+    align-self:center;
+    height:100%;
+    margin-right:8px;
+    flex:0 0 auto;
+  }
+
+  .topbar .v914-auth-nav .footix-notifications.is-hidden{
+    display:none!important;
+  }
+
+  .topbar .v914-auth-nav .footix-notifications .notif-panel{
+    position:absolute;
+    right:0;
+    top:62px;
   }
 }
