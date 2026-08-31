@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T10:39:04.251775+00:00",
+  "updated_at": "2026-08-31T11:48:17.071685+00:00",
   "source": "ESPN rosters + ajouts manuels Footix Prono",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -53,6 +53,7 @@
       "Maximillian Oyedele",
       "Milos Lukovic",
       "Omari Kellyman",
+      "Oso",
       "Pape Diop",
       "Samir El Mourabet",
       "Samuel Amo-Ameyaw",
@@ -275,6 +276,7 @@
       "Lamfia Dioubaté",
       "Lamine Sy",
       "Lasso Coulibaly",
+      "Mamadou Diop",
       "Mamoudou Cissokho",
       "Marvin Senaya",
       "Mohamed Coulibaly",
@@ -299,6 +301,7 @@
       "Antoine Mendy",
       "Axel Witsel",
       "Brad-Hamilton Mantsounga",
+      "Djelan Morana",
       "Djibril Coulibaly",
       "Elye Wahi",
       "Everton Pereira",
@@ -517,5 +520,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 456
+  "players_fetched": 458
 }
