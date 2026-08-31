@@ -4612,3 +4612,20 @@ body:has(.monthly-ranking-main){
     padding-bottom:4px;
   }
 }
+
+/* V10.0.1 — encart barème Vos pronos */
+.page-votes-v940 .votes-points-note{
+  border:1px solid #2b5f96!important;
+  background:linear-gradient(180deg,#0b2d58,#082449)!important;
+  color:#dcecff!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.03)!important;
+}
+.page-votes-v940 .votes-points-note>span{
+  color:#62b2ff!important;
+}
+.page-votes-v940 .votes-points-note p{
+  color:#c6dcf2!important;
+}
+.page-votes-v940 .votes-points-note p b{
+  color:#9cff62!important;
+}
