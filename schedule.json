@@ -137,7 +137,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-31T01:26:26Z",
+          "lastLiveUpdate": "2026-08-31T01:27:35Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 3,
@@ -162,7 +162,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-31T01:26:26Z",
+          "lastLiveUpdate": "2026-08-31T01:27:35Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 2,
@@ -212,7 +212,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-31T01:26:26Z",
+          "lastLiveUpdate": "2026-08-31T01:27:35Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -236,7 +236,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-31T01:26:26Z",
+          "lastLiveUpdate": "2026-08-31T01:27:35Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -259,7 +259,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-31T01:26:26Z",
+          "lastLiveUpdate": "2026-08-31T01:27:35Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 0,
@@ -281,7 +281,7 @@
           "source": "bsd",
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-08-31T01:26:26Z",
+          "lastLiveUpdate": "2026-08-31T01:27:35Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 0,
@@ -305,7 +305,7 @@
           "status": "finished",
           "live": false,
           "completed": true,
-          "lastLiveUpdate": "2026-08-31T01:26:26Z",
+          "lastLiveUpdate": "2026-08-31T01:27:35Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 2,
@@ -337,7 +337,7 @@
             "F. Thauvin"
           ],
           "scorersVerified": true,
-          "lastLiveUpdate": "2026-08-31T01:26:26Z"
+          "lastLiveUpdate": "2026-08-31T01:27:35Z"
         }
       ]
     ]
