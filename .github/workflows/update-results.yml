@@ -18,6 +18,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+
     steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
@@ -44,7 +45,87 @@ jobs:
             exit 1
           fi
 
-      - name: Rafraîchir le live 3 fois
+      - name: Vérifier si un match nécessite le live
+        id: live_window
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_URL: https://brjwujgtkyxzyytkwftw.supabase.co
+          EVENT_NAME: ${{ github.event_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Un lancement manuel reste toujours possible pour tester/forcer une mise à jour.
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "run_live=true" >> "$GITHUB_OUTPUT"
+            echo "Lancement manuel : actualisation BSD autorisée."
+            exit 0
+          fi
+
+          python - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+          from datetime import datetime, timedelta, timezone
+
+          base = os.environ["SUPABASE_URL"].rstrip("/")
+          key = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
+
+          # On lit uniquement Supabase : aucun appel BSD à cette étape.
+          params = urllib.parse.urlencode({
+              "select": "id,competition,home_team,away_team,kickoff,status",
+              "status": "in.(scheduled,live)",
+              "order": "kickoff.asc"
+          })
+          url = f"{base}/rest/v1/matches?{params}"
+
+          req = urllib.request.Request(
+              url,
+              headers={
+                  "apikey": key,
+                  "Authorization": f"Bearer {key}",
+                  "Accept": "application/json",
+              },
+          )
+
+          with urllib.request.urlopen(req, timeout=20) as response:
+              matches = json.load(response)
+
+          now = datetime.now(timezone.utc)
+          active = []
+
+          for match in matches:
+              raw = match.get("kickoff")
+              if not raw:
+                  continue
+
+              kickoff = datetime.fromisoformat(raw.replace("Z", "+00:00")).astimezone(timezone.utc)
+
+              # Fenêtre live : 45 min avant le coup d'envoi jusqu'à 3 h après.
+              if kickoff - timedelta(minutes=45) <= now <= kickoff + timedelta(hours=3):
+                  active.append(match)
+
+          output = os.environ["GITHUB_OUTPUT"]
+
+          with open(output, "a", encoding="utf-8") as fh:
+              fh.write(f"run_live={'true' if active else 'false'}\n")
+
+          if active:
+              print("Fenêtre live active :")
+              for match in active:
+                  print(
+                      f"- {match.get('competition')} | "
+                      f"{match.get('home_team')} - {match.get('away_team')} | "
+                      f"{match.get('kickoff')} | {match.get('status')}"
+                  )
+          else:
+              print("Aucun match dans la fenêtre -45 min / +3 h.")
+              print("0 appel BSD : le workflow s'arrête ici.")
+          PY
+
+      - name: Rafraîchir le live
+        if: steps.live_window.outputs.run_live == 'true'
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
@@ -57,24 +138,17 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
 
-          for pass in 1 2 3; do
-            echo "=== Passage live BSD $pass/3 ==="
-            python update_results.py
-            python generate_review.py
-            python sync_live_results_supabase.py
+          echo "=== Passage live BSD 1/1 ==="
+          python update_results.py
+          python generate_review.py
+          python sync_live_results_supabase.py
 
-            # Publication immédiate : le site peut voir chaque nouvel état.
-            git add schedule.json pronos.json live-results.json bsd-standings.json
-            if ! git diff --cached --quiet; then
-              git commit -m "Live Footix passage $pass"
-              if ! git push origin HEAD:main; then
-                git fetch origin main
-                git rebase origin/main
-                git push origin HEAD:main
-              fi
+          git add schedule.json pronos.json live-results.json bsd-standings.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Live Footix"
+            if ! git push origin HEAD:main; then
+              git fetch origin main
+              git rebase origin/main
+              git push origin HEAD:main
             fi
-
-            if [ "$pass" -lt 3 ]; then
-              sleep 60
-            fi
-          done
+          fi
