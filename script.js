@@ -674,16 +674,4 @@ async function initHomePronoCount(){
     el.textContent="—";
   }
 }
-
-async function initVisitorCounter(){
-  const targets=["#home-visits"].map(s=>$(s)).filter(Boolean);
-  if(!targets.length) return;
-  try{
-    const r=await fetch("https://countapi.mileshilliard.com/api/v1/hit/footixprono-etezx-home-2026",{cache:"no-store"});
-    if(!r.ok) throw 0;
-    const d=await r.json(), v=Number(d.value);
-    const text=Number.isFinite(v)?v.toLocaleString("fr-FR"):"—";
-    targets.forEach(el=>el.textContent=text);
-  }catch(e){ targets.forEach(el=>el.textContent="—"); }
-}
-initVisitorCounter(); initHomePronoCount(); initLigue1().catch(console.error); initUCL().catch(console.error);
+initHomePronoCount(); initLigue1().catch(console.error); initUCL().catch(console.error);
