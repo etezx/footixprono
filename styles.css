@@ -4444,3 +4444,171 @@ body:has(.monthly-ranking-main){
     min-width:34px!important;
   }
 }
+
+/* =========================================================
+   V10.0.0 — VOS PRONOS : SCORE EXACT 3 / 1 / 0
+   ========================================================= */
+.page-votes-v940 .score-prono-editor{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+}
+.page-votes-v940 .score-inputs{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+}
+.page-votes-v940 .score-inputs>span{
+  color:#8eb8e2;
+  font-weight:950;
+}
+.page-votes-v940 .score-prono-input{
+  width:44px!important;
+  height:36px!important;
+  min-width:44px!important;
+  padding:0 4px!important;
+  border:1px solid #376caa!important;
+  border-radius:7px!important;
+  background:#071f3f!important;
+  color:#fff!important;
+  font-size:15px!important;
+  font-weight:950!important;
+  text-align:center!important;
+  outline:none!important;
+  appearance:textfield;
+}
+.page-votes-v940 .score-prono-input::-webkit-outer-spin-button,
+.page-votes-v940 .score-prono-input::-webkit-inner-spin-button{
+  margin:0;
+  -webkit-appearance:none;
+}
+.page-votes-v940 .score-prono-input:focus{
+  border-color:#5da9ff!important;
+  box-shadow:0 0 0 2px rgba(53,145,245,.18)!important;
+}
+.page-votes-v940 .score-save-btn{
+  min-width:63px;
+  height:36px;
+  padding:0 8px;
+  border:1px solid #3489e9;
+  border-radius:7px;
+  background:#1769d2;
+  color:#fff;
+  font-size:7px;
+  font-weight:950;
+  letter-spacing:.04em;
+  cursor:pointer;
+}
+.page-votes-v940 .score-save-btn:hover:not(:disabled){
+  background:#2180ed;
+}
+.page-votes-v940 .score-save-btn:disabled{
+  opacity:.55;
+  cursor:default;
+}
+.page-votes-v940 .pending-score-wrap,
+.page-votes-v940 .my-score-wrap,
+.page-votes-v940 .locked-score{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+}
+.page-votes-v940 .my-score,
+.page-votes-v940 .locked-score>b{
+  min-width:58px;
+  min-height:30px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 8px;
+  border:1px solid #376caa;
+  border-radius:6px;
+  background:#071f3f;
+  color:#eaf4ff;
+  font-size:11px;
+  font-weight:950;
+}
+.page-votes-v940 .pending-score-wrap small,
+.page-votes-v940 .locked-score small,
+.page-votes-v940 .my-score-wrap small{
+  white-space:nowrap;
+  color:#8eb8e2!important;
+  font-size:6.5px!important;
+  font-weight:950!important;
+  letter-spacing:.03em;
+}
+.page-votes-v940 .my-score-wrap.exact .my-score,
+.page-votes-v940 .match-points-cell.exact{
+  color:#9cff62!important;
+}
+.page-votes-v940 .my-score-wrap.exact .my-score{
+  border-color:#5dbd38!important;
+  background:#153b22!important;
+}
+.page-votes-v940 .my-score-wrap.exact small{
+  color:#9cff62!important;
+}
+.page-votes-v940 .my-score-wrap.good .my-score{
+  border-color:#b99730!important;
+  background:#403512!important;
+  color:#ffd75a!important;
+}
+.page-votes-v940 .my-score-wrap.good small{
+  color:#ffd75a!important;
+}
+.page-votes-v940 .my-score-wrap.bad .my-score{
+  border-color:#a34058!important;
+  background:#451d2a!important;
+  color:#ff94a2!important;
+}
+.page-votes-v940 .my-score-wrap.bad small{
+  color:#ff94a2!important;
+}
+.page-votes-v940 .match-points-cell.exact{
+  font-weight:950!important;
+}
+.page-votes-v940 .votes-points-note p b{
+  color:#9cff62;
+}
+
+@media(max-width:1180px){
+  .page-votes-v940 .match-table-head,
+  .page-votes-v940 .premium-match-row{
+    grid-template-columns:78px minmax(310px,1fr) 205px 100px 68px;
+  }
+}
+
+@media(max-width:900px){
+  .page-votes-v940 .premium-match-row{
+    grid-template-columns:62px 1fr 205px;
+  }
+  .page-votes-v940 .score-prono-editor{
+    flex-wrap:wrap;
+  }
+}
+
+@media(max-width:620px){
+  .page-votes-v940 .score-prono-editor{
+    flex-wrap:nowrap;
+    width:100%;
+  }
+  .page-votes-v940 .score-prono-input{
+    width:48px!important;
+    min-width:48px!important;
+    height:42px!important;
+    font-size:16px!important;
+  }
+  .page-votes-v940 .score-save-btn{
+    height:42px;
+    min-width:76px;
+    font-size:8px;
+  }
+  .page-votes-v940 .match-result-cell{
+    padding-top:10px;
+    padding-bottom:4px;
+  }
+}

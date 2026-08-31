@@ -36,10 +36,50 @@ const showPronoToast=(text)=>{
   const isLive=m=>m.status==='live';
   const locked=m=>m.status!=='scheduled'||!m.kickoff||Date.now()>=new Date(m.kickoff).getTime();
 
+  function pickFromScores(home,away){
+    if(home==null||away==null||home===''||away==='') return null;
+    const h=Number(home), a=Number(away);
+    if(!Number.isInteger(h)||!Number.isInteger(a)||h<0||a<0) return null;
+    return h>a?'1':h<a?'2':'N';
+  }
+
   function resultFromScore(m){
     if(m.result_pick) return m.result_pick;
     if(!isFinished(m)||m.home_score==null||m.away_score==null) return null;
     return Number(m.home_score)>Number(m.away_score)?'1':Number(m.home_score)<Number(m.away_score)?'2':'N';
+  }
+
+  function votePick(v){
+    if(!v) return null;
+    return pickFromScores(v.home,v.away)||v.pick||null;
+  }
+
+  function hasExactScore(v){
+    return !!v && v.home!=null && v.away!=null;
+  }
+
+  function pointsFor(m,v){
+    if(!isFinished(m)||!v) return null;
+    if(
+      hasExactScore(v) &&
+      m.home_score!=null &&
+      m.away_score!=null &&
+      Number(v.home)===Number(m.home_score) &&
+      Number(v.away)===Number(m.away_score)
+    ) return 3;
+    return votePick(v)===resultFromScore(m)?1:0;
+  }
+
+  function verdictFor(m,v){
+    const pts=pointsFor(m,v);
+    if(pts===3) return {cls:'exact',text:'🎯 SCORE PARFAIT !',points:'+3 PTS'};
+    if(pts===1) return {cls:'good',text:'✓ BON RÉSULTAT !',points:'+1 PT'};
+    if(pts===0) return {cls:'bad',text:'✕ PRONO RATÉ !',points:'0 PT'};
+    return null;
+  }
+
+  function scoreText(v){
+    return hasExactScore(v)?`${v.home} - ${v.away}`:(v?.pick||'—');
   }
 
   async function getUser(){
@@ -47,7 +87,7 @@ const showPronoToast=(text)=>{
     user=data.user||null;
     const note=$('#vote-session-note');
     if(note) note.innerHTML=user
-      ? '<span>✓</span> Tes choix sont enregistrés automatiquement jusqu’au coup d’envoi.'
+      ? '<span>✓</span> Saisis ton score puis valide-le. Tu peux le modifier jusqu’au coup d’envoi.'
       : '<span>ⓘ</span> Connecte-toi pour enregistrer tes pronostics.';
   }
 
@@ -55,10 +95,14 @@ const showPronoToast=(text)=>{
     myVotes=new Map();
     if(!user||!rows.length) return;
     const {data,error}=await db.from('predictions')
-      .select('match_id,pick')
+      .select('match_id,pick,predicted_home_score,predicted_away_score')
       .eq('user_id',user.id)
       .in('match_id',rows.map(m=>m.id));
-    if(!error) (data||[]).forEach(v=>myVotes.set(Number(v.match_id),v.pick));
+    if(!error) (data||[]).forEach(v=>myVotes.set(Number(v.match_id),{
+      pick:v.pick,
+      home:v.predicted_home_score,
+      away:v.predicted_away_score
+    }));
   }
 
   function crest(id,name){
@@ -67,8 +111,26 @@ const showPronoToast=(text)=>{
     return `<span class="club-logo"><img src="${src}" alt="" loading="lazy" onerror="this.parentElement.classList.add('club-logo-broken');this.style.display='none';this.parentElement.textContent='${esc(String(name||'?').slice(0,2).toUpperCase())}'"></span>`;
   }
 
-  function pickPill(p, mine, disabled=false){
-    return `<button type="button" data-pick="${p}" class="pick-mini ${mine===p?'selected':''}" ${disabled?'disabled':''}>${p}</button>`;
+  function scoreEditor(m,mine,disabled=false){
+    const h=hasExactScore(mine)?mine.home:'';
+    const a=hasExactScore(mine)?mine.away:'';
+    return `<div class="score-prono-editor">
+      <div class="score-inputs">
+        <input class="score-prono-input" data-score-home type="number" min="0" step="1" inputmode="numeric" aria-label="Buts ${esc(m.home_team)}" value="${h}" ${disabled?'disabled':''}>
+        <span>–</span>
+        <input class="score-prono-input" data-score-away type="number" min="0" step="1" inputmode="numeric" aria-label="Buts ${esc(m.away_team)}" value="${a}" ${disabled?'disabled':''}>
+      </div>
+      <button class="score-save-btn" type="button" data-save-score ${disabled?'disabled':''}>${mine?'MODIFIER':'VALIDER'}</button>
+    </div>`;
+  }
+
+  function pendingPick(mine){
+    const p=votePick(mine);
+    if(!p) return '<span class="muted-dash">—</span>';
+    return `<div class="pending-score-wrap">
+      <span class="my-score pending">${scoreText(mine)}</span>
+      <small>ISSUE ${p}</small>
+    </div>`;
   }
 
   function matchRow(m){
@@ -77,22 +139,34 @@ const showPronoToast=(text)=>{
     const finished=isFinished(m);
     const live=isLive(m);
     const lock=locked(m);
-    const good=finished&&mine&&mine===final;
-    const pts=finished&&mine?(good?1:0):null;
+    const pts=pointsFor(m,mine);
+    const verdict=verdictFor(m,mine);
 
     let resultCell='';
     let choiceCell='';
+
     if(finished){
-      resultCell=`<div class="result-finished ${good?'prediction-correct':mine?'prediction-wrong':''}">
+      resultCell=`<div class="result-finished">
         <b>${m.home_score ?? '—'} - ${m.away_score ?? '—'}</b>
         <span class="result-pick">RÉSULTAT ${final||'—'}</span>
       </div>`;
+
       choiceCell=mine
-        ? `<div class="my-pick-wrap ${good?'good':'bad'}"><span class="my-pick ${good?'good':'bad'}">${mine}</span><small>${good?'✓ BON PRONO':'✕ MAUVAIS PRONO'}</small></div>`
+        ? `<div class="my-score-wrap ${verdict?.cls||''}">
+            <span class="my-score ${verdict?.cls||''}">${scoreText(mine)}</span>
+            <small>${verdict?.text||''}</small>
+          </div>`
+        : '<span class="muted-dash">—</span>';
+    }else if(lock){
+      resultCell=mine
+        ? `<div class="locked-score"><b>${scoreText(mine)}</b><small>PRONO VERROUILLÉ</small></div>`
+        : '<span class="muted-dash">—</span>';
+      choiceCell=mine
+        ? `<span class="my-pick pending">${votePick(mine)||'—'}</span>`
         : '<span class="muted-dash">—</span>';
     }else{
-      resultCell=`<div class="pick-inline">${['1','N','2'].map(p=>pickPill(p,mine,lock)).join('')}</div>`;
-      choiceCell=mine?`<span class="my-pick pending">${mine}</span>`:'<span class="muted-dash">—</span>';
+      resultCell=scoreEditor(m,mine,false);
+      choiceCell=pendingPick(mine);
     }
 
     return `<article class="premium-match-row" data-match="${m.id}">
@@ -108,7 +182,7 @@ const showPronoToast=(text)=>{
       </div>
       <div class="match-result-cell">${resultCell}</div>
       <div class="match-choice-cell">${choiceCell}</div>
-      <div class="match-points-cell ${pts===1?'good':pts===0?'bad':''}">${pts===1?'+1 PT':pts===0?'0 PT':'—'}</div>
+      <div class="match-points-cell ${pts===3?'exact':pts===1?'good':pts===0?'bad':''}">${verdict?.points||'—'}</div>
     </article>`;
   }
 
@@ -147,13 +221,14 @@ const showPronoToast=(text)=>{
   function renderKpis(shown){
     const finished=shown.filter(isFinished);
     const played=finished.filter(m=>myVotes.has(Number(m.id)));
-    const good=played.filter(m=>myVotes.get(Number(m.id))===resultFromScore(m)).length;
+    const good=played.filter(m=>pointsFor(m,myVotes.get(Number(m.id)))>0).length;
+    const points=played.reduce((sum,m)=>sum+(pointsFor(m,myVotes.get(Number(m.id)))||0),0);
     const box=$('#matchday-kpis');
     if(!box) return;
     const values=box.querySelectorAll('b');
     if(values[0]) values[0].textContent=`${finished.length} / ${shown.length}`;
     if(values[1]) values[1].textContent=String(good);
-    if(values[2]) values[2].textContent=String(good);
+    if(values[2]) values[2].textContent=String(points);
   }
 
   function renderSummary(){
@@ -162,10 +237,11 @@ const showPronoToast=(text)=>{
     if(!user){box.classList.add('is-hidden');return;}
     const playedAll=rows.filter(m=>myVotes.has(Number(m.id)));
     const finished=playedAll.filter(isFinished);
-    const good=finished.filter(m=>myVotes.get(Number(m.id))===resultFromScore(m)).length;
+    const good=finished.filter(m=>pointsFor(m,myVotes.get(Number(m.id)))>0).length;
+    const points=finished.reduce((sum,m)=>sum+(pointsFor(m,myVotes.get(Number(m.id)))||0),0);
     const rate=finished.length?Math.round(good*100/finished.length):0;
     box.classList.remove('is-hidden');
-    $('#side-total-points').innerHTML=`${good} <small>Point${good===1?'':'s'}</small>`;
+    $('#side-total-points').innerHTML=`${points} <small>Point${points===1?'':'s'}</small>`;
     $('#side-good').textContent=good;
     $('#side-played').textContent=playedAll.length;
     $('#side-rate').textContent=`${rate}%`;
@@ -190,7 +266,7 @@ const showPronoToast=(text)=>{
       <section class="premium-date-group">
         <div class="date-bar">${dayLabel(group[0]?.kickoff)}</div>
         <div class="match-table-head">
-          <span>HEURE</span><span>MATCH</span><span>RÉSULTAT / PRONO</span><span>MON PRONO</span><span>POINTS</span>
+          <span>HEURE</span><span>MATCH</span><span>SCORE / PRONO</span><span>MON PRONO</span><span>POINTS</span>
         </div>
         ${group.map(matchRow).join('')}
       </section>
@@ -198,15 +274,57 @@ const showPronoToast=(text)=>{
     renderSummary();
   }
 
-  async function load(){
-    root.innerHTML='<div class="community-empty">Chargement des matchs…</div>';
-    const {data,error}=await db.rpc('community_matches_feed',{p_competition:comp});
-    if(error){
-      root.innerHTML=`<div class="community-empty"><b>Erreur de chargement Supabase</b><br><small>${esc(error.message)}</small></div>`;
+  async function saveScore(btn){
+    if(!user){$('.login-trigger')?.click();return;}
+
+    const row=btn.closest('[data-match]');
+    if(!row) return;
+
+    const id=Number(row.dataset.match);
+    const match=rows.find(m=>Number(m.id)===id);
+    if(!match||locked(match)){
+      showPronoToast('🔒 Pronostic verrouillé');
+      render();
       return;
     }
-    rows=(data||[]).filter(m=>m.kickoff).sort((a,b)=>new Date(a.kickoff)-new Date(b.kickoff));
-    await loadMine();
+
+    const homeInput=$('[data-score-home]',row);
+    const awayInput=$('[data-score-away]',row);
+    const homeRaw=homeInput?.value?.trim() ?? '';
+    const awayRaw=awayInput?.value?.trim() ?? '';
+
+    if(homeRaw===''||awayRaw===''){
+      showPronoToast('⚠️ Saisis les deux scores');
+      return;
+    }
+
+    const home=Number(homeRaw);
+    const away=Number(awayRaw);
+
+    if(!Number.isInteger(home)||!Number.isInteger(away)||home<0||away<0){
+      showPronoToast('⚠️ Score invalide');
+      return;
+    }
+
+    btn.disabled=true;
+    const {error}=await db.rpc('save_my_score_prediction',{
+      p_match_id:id,
+      p_home_score:home,
+      p_away_score:away
+    });
+
+    if(error){
+      alert(error.message);
+      btn.disabled=false;
+      return;
+    }
+
+    const pick=pickFromScores(home,away);
+    myVotes.set(id,{pick,home,away});
+    showPronoToast(`✓ Prono ${home}-${away} enregistré`);
+
+    try{ await db.rpc('notify_my_prediction',{p_match_id:id}); }catch(_e){}
+    if(window.footixNotificationsRefresh) window.footixNotificationsRefresh();
     render();
   }
 
@@ -228,20 +346,18 @@ const showPronoToast=(text)=>{
       return;
     }
 
-    const btn=e.target.closest('[data-pick]');
-    if(!btn) return;
-    if(!user){$('.login-trigger')?.click();return;}
-    const row=btn.closest('[data-match]');
-    if(!row) return;
-    const id=Number(row.dataset.match);
-    btn.disabled=true;
-    const {error}=await db.rpc('save_my_prediction',{p_match_id:id,p_pick:btn.dataset.pick});
-    if(error){alert(error.message);btn.disabled=false;return;}
-    myVotes.set(id,btn.dataset.pick);
-    showPronoToast('✓ Prono enregistré');
-    try{ await db.rpc('notify_my_prediction',{p_match_id:id}); }catch(_e){}
-    if(window.footixNotificationsRefresh) window.footixNotificationsRefresh();
-    render();
+    const save=e.target.closest('[data-save-score]');
+    if(save){
+      await saveScore(save);
+    }
+  });
+
+  document.addEventListener('keydown',async e=>{
+    if(e.key!=='Enter'||!e.target.matches('.score-prono-input')) return;
+    e.preventDefault();
+    const row=e.target.closest('[data-match]');
+    const save=row?.querySelector('[data-save-score]');
+    if(save&&!save.disabled) await saveScore(save);
   });
 
   document.addEventListener('change',e=>{
