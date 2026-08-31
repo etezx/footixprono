@@ -274,28 +274,6 @@ const showPronoToast=(text)=>{
     renderSummary();
   }
 
-
-  async function load(){
-    root.innerHTML='<div class="community-empty">Chargement des matchs…</div>';
-
-    const {data,error}=await db.rpc('community_matches_feed',{
-      p_competition:comp
-    });
-
-    if(error){
-      console.error('community_matches_feed:', error);
-      root.innerHTML=`<div class="community-empty"><b>Erreur de chargement des matchs.</b><br><small>${esc(error.message)}</small></div>`;
-      return;
-    }
-
-    rows=(data||[])
-      .filter(m=>m.kickoff)
-      .sort((a,b)=>new Date(a.kickoff)-new Date(b.kickoff));
-
-    await loadMine();
-    render();
-  }
-
   async function saveScore(btn){
     if(!user){$('.login-trigger')?.click();return;}
 
