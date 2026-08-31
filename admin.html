@@ -29,7 +29,7 @@
 
     <div class="admin-side-note">
       <span>ESPACE PRIVÉ</span>
-      <p>Ton jeton GitHub reste uniquement dans la mémoire de cette page.</p>
+      <p>Le jeton GitHub reste protégé côté serveur et n’est jamais exposé dans cette page.</p>
     </div>
 
     <a class="admin-back-link" href="index.html">← Retour au site</a>
@@ -47,14 +47,11 @@
     <main class="admin-dashboard">
       <section class="admin-panel admin-login-panel">
         <div class="admin-panel-head">
-          <div><span class="kicker">CONNEXION GITHUB</span><h2>Autoriser la publication</h2></div>
-          <span class="secure-chip">● JETON NON ENREGISTRÉ</span>
+          <div><span class="kicker">ACCÈS SÉCURISÉ</span><h2>Publication administrateur</h2></div>
+          <span class="secure-chip" id="admin-auth-chip">● VÉRIFICATION…</span>
         </div>
         <div class="admin-credentials-v8">
-          <label><span>Propriétaire</span><input id="repo-owner" value="etezx" autocomplete="off"></label>
-          <label><span>Dépôt</span><input id="repo-name" value="footixprono" autocomplete="off"></label>
-          <label><span>Branche</span><input id="repo-branch" value="main" autocomplete="off"></label>
-          <label class="token-field"><span>Jeton GitHub</span><input id="github-token" type="password" placeholder="github_pat_…" autocomplete="off"></label>
+          <p id="admin-auth-message">Vérification de ta session Footix Prono et de tes droits administrateur…</p>
         </div>
       </section>
 
@@ -113,6 +110,8 @@
     </main>
   </div>
 </div>
-<script src="admin.js?v=8.5"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
+<script src="admin.js?v=9.0-secure"></script>
 </body>
 </html>
