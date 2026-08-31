@@ -402,30 +402,39 @@ async function publish(){
         data:datasets[competition]
       }
     });
-    if(error) throw error;
+
+    if(error){
+      console.error('EDGE FUNCTION ERROR:', error);
+
+      let detail=error.message||'Erreur Edge Function';
+
+      try{
+        if(error.context){
+          const response=error.context;
+          const text=await response.text();
+          if(text){
+            try{
+              const parsed=JSON.parse(text);
+              detail=parsed.error||parsed.message||text;
+            }catch{
+              detail=text;
+            }
+          }
+        }
+      }catch(readErr){
+        console.error('Impossible de lire la réponse Edge Function:',readErr);
+      }
+
+      throw new Error(detail);
+    }
+
     if(!data?.ok) throw new Error(data?.error||'Réponse serveur invalide');
     status.textContent=`✓ ${competition==='ligue1'?'Pronostics Ligue 1':'Pronostics LDC'} publiés. GitHub Pages se mettra à jour dans quelques instants.`;
-}catch(err){
-  let detail=err?.message||String(err);
-
-  try{
-    if(err?.context){
-      const clone=err.context.clone();
-      const body=await clone.json();
-      detail=body?.error||body?.message||JSON.stringify(body);
-    }
-  }catch{
-    try{
-      if(err?.context){
-        detail=await err.context.text();
-      }
-    }catch{}
+  }catch(err){
+    status.textContent=`Erreur de publication : ${err.message||err}`;
+  }finally{
+    button.disabled=!adminAuthorized;
   }
-
-  status.textContent=`Erreur de publication : ${detail}`;
-}finally{
-  button.disabled=!adminAuthorized;
-}
 }
 
 verifyAdminAccess().catch(()=>{});
