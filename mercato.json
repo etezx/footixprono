@@ -1,12 +1,30 @@
 {
-  "updated_at": "2026-09-01T05:34:09.636878+00:00",
+  "updated_at": "2026-09-01T11:58:00.561055+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
+    {
+      "title": "Mercato : l'attaquant de Saint-Étienne Lucas Stassin en route pour le Séville FC - L'Équipe",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcXp5bmJ6Y1lYSDFNNTlDLVlLdW15d29DMEdJZVYxV2MtSU5yZjNFV1AzTnJkYmZxWVd2bDBIVnJPMEVkR0d5OFB4ZDQ2bnRTcmIxdURwcHUtUDg4bDhZMkdOMzBvbGd0ZTB5dkhxMVVFYzdEVU9keWhaRU00SXFEb1d0Q3N1QzNrQnFFQlJ2OXZPRllWUGdvOE9sX1ZFNmk5eVF4QW5JZngtT1k4Z0Y5cEdaZ3VNMmFVR0RLU3E2TE5kOUtxbmVjNg?oc=5",
+      "published": "2026-08-31T20:45:36+00:00",
+      "source": "L'Équipe"
+    },
     {
       "title": "Mercato. Quand se termine la fenêtre estivale de transferts dans les principaux championnats ? - Ouest-France",
       "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPbVFLSTNJOTY1T1M1ZTVKZHg0dHV6VkdGa0c5dTQ0Q0oyT3g4SUVVQlhFQnBqX2RNLWtnbnFjY2syRnQ0djZWczFhcTYyaE9hbnRoMkQzeWhyTVQzak5JalJRSkdKRWZJczJvZmlrZ3RQWmFoV1ROWUQwVVU5TnhNM3RDNm1hdkJNRHI5T05ubzFOc3NhYXd6azQ0T0Qzc1M2Y3JZZENQY0F3MzFiLXBqa3ItSUNUcjVJb1JCbWtvV2J4ZldnN1l2NjJfbTRySXozWmhvTnJjMzhUbXFCMFM5M3JDU2NPbTJnN0I4dnpidndSX2xkX3RmLUlCLVo0NHhTTzhCbkp1UE9CUnJkYkt3?oc=5",
       "published": "2026-08-31T10:34:00+00:00",
       "source": "Ouest-France"
+    },
+    {
+      "title": "Ligue 1, Premier League, Arabie saoudite... les principales dates de fermeture de mercato en Europe et dans le monde - RMC Sport",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdFlqcGttQVM5QVI5MEVEOUJydzdRNDU4TFlOcmk3ZXNzMlo1M3pjSjFHM2Ffc1MwYnN3TjAzamo0NG9PZG1UZmY5WmJKMEdkWm5RT1E4NWVyWTVSX2lOck5mOE5FdWNKUXhYVTdNMC1sR1pxNElnYUQzZjdOSEItSVFQMnVYb1VrTnc1SU1lY1llZnQ5OS1lVWhES3RrVkttSk9PQkRySF9FbWFITTZNcERycENweTdFQXZUX2pJWk5hV2piOHJacU5NMTVCMEpjU0lVQlZraw?oc=5",
+      "published": "2026-09-01T05:48:30+00:00",
+      "source": "RMC Sport"
+    },
+    {
+      "title": "Mercato I Barcola, Neymar, Bouaddi, Pépé, Osimhen, Ramos : les dix plus gros transferts de Ligue 1 vers l'étranger - Eurosport",
+      "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNbF9NUVNaSTVjbWUyNWxmd0dvWXc0LXZfVnhNS0xQdFRoNkhBMFU2Y1JqTFBES3U3eXJqTFphSHlrRGZ6Wi1pWDlZTnFoSFloM1lfZGF4QXhORnFxRDNmb3pHTzY4akJxcUFOYS0ycDEtMF9MSjdrb0gtUVN0NDdDMFEwNzRRdzd3T2VvZ2pMUmllU3VycTdjYjdxc05TNlh1QTkzYlNMUVhCa3FHaEZUMFhwTzVudXFPYW1ZbERsS0Iwb01XTnZ6cW9YNjE0ODh0Z3o5Z1E4TTNsSG41ZFZvWENLYmFUdF9BZ3ZkWUhxQVpUVHUweDRTdzE2V1NTbUlRbGNsZVpkbFplenRhVnptNHZRNA?oc=5",
+      "published": "2026-08-31T14:05:00+00:00",
+      "source": "Eurosport"
     },
     {
       "title": "ça s’emballe en Ligue 1 sur le mercato - Foot Mercato",
@@ -27,16 +45,10 @@
       "source": "Le Petit Lillois"
     },
     {
-      "title": "« Je veux que le mercato ferme immédiatement » : l’OL vers 48 dernières heures agitées - Le Dauphiné Libéré",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZkc5MEY4NTZlWGNxY2xtaFZ0UU54SkI2aTczRFZLdEpKaW10RVYtN3U2Z1B6UHBRcDllaHN1aG9LRFU0dGo1cVRsUEN6VG1lbEtIcHhWUDJDQlNNVlRxQnZmd1Q1MWlGQ0l1VV9jZGx0V0ZFWWYyUUhGeHY5U1BDcXhmb3VmTjV4bkZEZWNtZ1lXMlJERDd1T3FkdmVmOHlfR3FLN1FQTEZ3Y0Qwa0FBWGtsWVpIbDd0V1o5cld2aVpEQQ?oc=5",
-      "published": "2026-08-29T07:00:00+00:00",
-      "source": "Le Dauphiné Libéré"
-    },
-    {
-      "title": "\"Je veux que le mercato se ferme immédiatement\" : Lyon doit sortir de la spirale - Eurosport",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPbHpua0N5TUlRNzJmbExCM1dka3E4RmFTZVpQdFQ0RWdrbjdiYTlacnc4YS13NzZCOFgweFJsRlNYZm9uOTdWZDdBUjRUUUd4eldOQ2s0SUstZ1dMRTRLb2FkR2dEYllYVl95SEY5ZklIN3FJZmVxdDRBbmo1WDV2X3NmSWtMRmpIQTdKZ1lLQUhJbW40VVd4X1FIXzQyRU5HVnNuZFJyZk9LMVRjMXlWdkgzYTIwZnFaWWdwLXFtTjJ0b0tYS0wwbExzYks2NGlPNTUwREoxSG5PM3Vub0NhUEpFdFlDV0RMdkE0N1hxd29ndG51?oc=5",
-      "published": "2026-08-29T22:04:00+00:00",
-      "source": "Eurosport"
+      "title": "Mercato : les mouvements du dernier jour ! - ligue1.com",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPN3RHRTJVaHlZcHltTEp3NDhMbU1LeDBZSGN5MUJNa0k1YjJpY1JfdFI2QU1kUlB3bkNnMUVyX2tRYWxjSUdkMkpoTEhHTHRtOWNoZ3dzWU1Qa2k5SzJXSDFVRFRXcENER0dxenRIbU1MX3BIeGd1NG4wcE1vRzZhdmFhbVNDMFZQNHdoOQ?oc=5",
+      "published": "2026-08-31T23:29:00+00:00",
+      "source": "ligue1.com"
     },
     {
       "title": "Ligue 1. Le milieu du Stade rennais Djaoui Cissé pisté ? Le mercato du Racing Club de Strasbourg se poursuit - dna.fr",
@@ -45,34 +57,22 @@
       "source": "dna.fr"
     },
     {
-      "title": "Ligue 1 McDonald's : « Si on a l'opportunité de faire quelque chose pour donner plus d'options à l'entraîneur, on va le faire », explique Thiago Scuro au sujet de la fin du mercato - DAZN",
-      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOM2tPZktpZ0YtS0puVnpNb1lDVnlOZ2dFRE11X1NTaW95NV94bWptMFIyRlpKY3VQaTFEWXU4cEZoOG9mRXFQdkhkR0tLLWNyWkVBaUNFZHBnNUpjVGk0YlB0SFIxZjRrcWNEVVJqN01uZHVrU1o2REhvYVhGelZ3S19ONDVvaUFWX1VIRnVFOHpoeHhueWNuZ3dOSkg0RGlMUTFvbVRiVTVlTkdNRndHVTQzVzdMR0pMOVhMTlpqdWlxZVhSZ2IyaWxkWXhpQXY1VGQ5WlhQWUZ4N1JWUkg4MnM5by1TYUszdy05cE44a2hJck1NSzJzZ1FZLW5oM1V5M1pqZmVDVDgtdHJVSi1rSjZiNXd4RFlWd3o0M0R2bThxX3NPS2w0RHNIaXo0d0Q4cV9GT2VyZ05leXhIMTFiQ3VKUzJrNW5JcUZtRFNOTk5wS1hPRGc?oc=5",
-      "published": "2026-08-30T21:45:22+00:00",
-      "source": "DAZN"
-    },
-    {
-      "title": "Mercato d’été 2026: Les dates de clôture des principaux championnats - Sports.fr",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOGNMSGRCUjkwS2lVTWJTZzlpTF81dWJvejdaRkZURHlqLXBoaUhZRllFNFFrLWdJY2J3cTY5ZFVKVjZsbW5WZHJHV1AtbFVDUEt0d2Jjb285SHZXbXpxMkswQldscVhmeWp1STl3MVAyWHg5WTFZWnZod1NvOWNHWHc4a3UwOWtKLU93d19CVHY0c090RGVEWktwLXBLb0FTOExHMElqSkdMLTBoejhZ?oc=5",
-      "published": "2026-08-31T13:15:25+00:00",
-      "source": "Sports.fr"
-    },
-    {
-      "title": "D'abord la France puis le reste du Big Five, quelques jours de plus en Turquie... Les principales dates de clôture du mercato d'été 2026 - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOeF9YYkE5MUJkRGl2QU5NWng1OXdXQ3p1SGdaZmE1RUxCZWFfNENWbVZoYzNmQ1lBcHVlX3JKMHBfR0kybld1Sm4xX1hWTmJCZUtISTd6QTB4ZDNMVnZwNzFsb0xZTmtPZE9IQUEzSVhiUGYtUkxPblM1OGlublV6LU81M3h0YmdVZWpaQUNZLS05bC02dXpyVW5aZTl2TTY0OGc2RmFhcTNmVjlYNEVhNWFSV2FwYXZvN0NzTnMwam9EOGhOdFFGaGhUN1dkS203eHZDcldNV251TDRaVGlQMWo4Z0dBUUZITm1hQVk2X2NvRjBibVlKNmt3UU5QZnV1aGItSHZCdWtpTzBKaS10OA?oc=5",
-      "published": "2026-08-31T09:27:32+00:00",
-      "source": "L'Équipe"
-    },
-    {
-      "title": "Football : quand se termine le mercato d’été dans les différents championnats ? - Le Parisien",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNUTE0QnU1Zml1NlcxRks2Q1pLTkhGNURpWEctRlFxblVsWDJTRXVoNUZ3elVhMDhSZnNJU19zWkIzS1pkczhvMG9mTVhaWUxnRWpSVm1xWVMzVS1zTXZCMlIyX1lPN0ZTcmUtS2RFUTBpRWtwM0FHcUE4V0FqQS03d050UVRqdUFVczRDQVN1LXdjanFJMldmdXZ5eHd3UldxOEprcjJpNUNZM0hteWc4aTRyUEtLaFFYV3ZIeDZpTE5TV2o0dDQ5aGl3ai0wTjhieFRLbzJCaVJNTkFkemhzMTY5aDVDUWFJQmVXYXhzYw?oc=5",
-      "published": "2026-08-31T09:57:31+00:00",
-      "source": "Le Parisien"
-    },
-    {
       "title": "JT Foot Mercato : ça s’emballe en Ligue 1 sur le mercato - Foot Mercato",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSUpIZUF5TnNZWjdXLVB6blp3eFUxdTBIRFpIczE5V2tEQUEwYW03aHlsV056eXMzemNxRE9JbUFLRmJLX3Y2RnVxaDFCSnp2QXQ5RFNnTVA5c19LNXZlUkp1eHdBWTBPLTdybDFlajBEX0dkekt2Ri1wMGJnSjhFZmlpUC12Znd4UDFKR3ZlSTFTU0lJcjFEZXF5SzdoejJGdzhpcUF2NDlXNGVD?oc=5",
       "published": "2026-08-29T15:58:26+00:00",
       "source": "Foot Mercato"
+    },
+    {
+      "title": "Mercato Ligue 1. C’est officiel, Romain Del Castillo quitte le Stade Brestois pour Osasuna - Ouest-France",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOMWJLdVpRTTdELURwQ2ZUOHRsdUx5X21ZcDZJOWdTS29yMktsanA0Y3lRM2VZSWVLT2ltWGJCdXU5dzBTOGp3RkJWckVmV0FoaHd2cE94aXpTUXZSc2x0ZDM2Xzc5VlVQZmMtZGN3OTNBZXFvMHJBd3BsZGVxUDJjckRhbEVENGw0UWk1QU1SZWFpaGlsU3NEMVlsQTZ5YjZwTFVUbVNtWlEwU28yYWN2TTdSc2JBdzV6U285NXhFNFZia2FadWNicUltcm1rU0Rrd28yX0xGSmhHOGZ0blV1dlJHZi0yM0FLdnItdUpRcF81UFFXVjlNbW5KWUQ2aXJVel9TSA?oc=5",
+      "published": "2026-09-01T10:01:11+00:00",
+      "source": "Ouest-France"
+    },
+    {
+      "title": "\"Je veux que le mercato se ferme immédiatement\" : Lyon doit sortir de la spirale - Eurosport",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPbHpua0N5TUlRNzJmbExCM1dka3E4RmFTZVpQdFQ0RWdrbjdiYTlacnc4YS13NzZCOFgweFJsRlNYZm9uOTdWZDdBUjRUUUd4eldOQ2s0SUstZ1dMRTRLb2FkR2dEYllYVl95SEY5ZklIN3FJZmVxdDRBbmo1WDV2X3NmSWtMRmpIQTdKZ1lLQUhJbW40VVd4X1FIXzQyRU5HVnNuZFJyZk9LMVRjMXlWdkgzYTIwZnFaWWdwLXFtTjJ0b0tYS0wwbExzYks2NGlPNTUwREoxSG5PM3Vub0NhUEpFdFlDV0RMdkE0N1hxd29ndG51?oc=5",
+      "published": "2026-08-29T22:04:00+00:00",
+      "source": "Eurosport"
     }
   ]
 }
