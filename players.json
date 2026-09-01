@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T11:48:17.071685+00:00",
+  "updated_at": "2026-09-01T10:23:10.303384+00:00",
   "source": "ESPN rosters + ajouts manuels Footix Prono",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -33,6 +33,7 @@
       "Andrew Omobamidele",
       "Ben Chilwell",
       "Benjamin Brantlind",
+      "Conrad Harder",
       "Diogo Sousa",
       "Fabio Baldé",
       "Genesis Antwi",
@@ -92,6 +93,7 @@
     ],
     "LOSC": [
       "Alexsandro",
+      "Ayase Ueda",
       "Basar Önal",
       "Benjamin André",
       "Calvin Verdonk",
@@ -239,6 +241,7 @@
       "Franjo Ivanovic",
       "Jhoanner Chavez",
       "Jonathan Gradit",
+      "Junior Kadile",
       "Kyllian Antonio",
       "Maik Nawrocki",
       "Matthieu Udol",
@@ -316,6 +319,7 @@
       "Melvin Bard",
       "Mohamed Abdelmoneim",
       "Mohamed-Ali Cho",
+      "Mohamed Amoura",
       "Moïse Bombito",
       "Morgan Sanson",
       "Nassim Laarej",
@@ -351,6 +355,7 @@
       "Nosa Obaretin",
       "Panos Katseris",
       "Souleymane Faye",
+      "Srdjan Kuzmic",
       "Théo Le Bris",
       "Tosin Aiyegun"
     ],
@@ -414,6 +419,7 @@
       "Alexis Vossah",
       "Aron Donnum",
       "Aymen Ammaouch",
+      "Casper Tengstedt",
       "Christ Tapé",
       "Cristian Cásseres Jr.",
       "David Odogu",
@@ -478,6 +484,7 @@
       "Idrissa Soukouna",
       "Iron Gomis",
       "Ismael Boura",
+      "Jeremy Le Douaron",
       "Kandet Diawara",
       "Lucas Maronnier",
       "Merwan Ifnaoui",
@@ -520,5 +527,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 458
+  "players_fetched": 462
 }
