@@ -134,7 +134,7 @@
           "official": true,
           "completed": true,
           "eventId": 210447,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -159,7 +159,7 @@
           "official": true,
           "completed": true,
           "eventId": 210453,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -184,7 +184,7 @@
           "official": true,
           "completed": true,
           "eventId": 210448,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "homeScore": 2,
           "awayScore": 2,
           "actualScorers": [
@@ -209,7 +209,7 @@
           "official": true,
           "completed": true,
           "eventId": 210449,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -233,7 +233,7 @@
           "official": true,
           "completed": true,
           "eventId": 210450,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -256,7 +256,7 @@
           "official": true,
           "completed": true,
           "eventId": 210446,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -278,7 +278,7 @@
           "official": true,
           "completed": true,
           "eventId": 210451,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -326,7 +326,7 @@
           "official": true,
           "completed": true,
           "eventId": 210452,
-          "source": "bsd",
+          "source": "ESPN public scoreboard",
           "status": "finished",
           "live": false,
           "period": "FT",
@@ -547,7 +547,7 @@
         "ESTAC TROYES",
         {
           "date": "2026-09-19",
-          "time": "20:00",
+          "time": "20:45",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -557,8 +557,8 @@
         "AJ AUXERRE",
         "STADE BRESTOIS 29",
         {
-          "date": "2026-09-19",
-          "time": "20:00",
+          "date": "2026-09-20",
+          "time": "15:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -569,7 +569,7 @@
         "FC LORIENT",
         {
           "date": "2026-09-19",
-          "time": "20:00",
+          "time": "20:45",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -594,8 +594,8 @@
         "AS MONACO",
         "RC LENS",
         {
-          "date": "2026-09-19",
-          "time": "20:00",
+          "date": "2026-09-18",
+          "time": "20:45",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -605,8 +605,8 @@
         "OGC NICE",
         "LOSC",
         {
-          "date": "2026-09-19",
-          "time": "20:00",
+          "date": "2026-09-20",
+          "time": "17:15",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -617,7 +617,7 @@
         "RC STRASBOURG ALSACE",
         {
           "date": "2026-09-19",
-          "time": "20:00",
+          "time": "17:15",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -628,7 +628,7 @@
         "LE HAVRE",
         {
           "date": "2026-09-19",
-          "time": "20:00",
+          "time": "20:45",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
