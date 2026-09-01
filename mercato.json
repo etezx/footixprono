@@ -1,13 +1,7 @@
 {
-  "updated_at": "2026-08-31T22:59:45.734176+00:00",
+  "updated_at": "2026-09-01T05:34:09.636878+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
-    {
-      "title": "Mercato : accord Liverpool - Saint-Étienne pour Djylian N'Guessan, qui devrait rester en France... mais pas à l'ASSE - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNM25vMHRLalpvOGlBa3ZYQVNNNVJwUi04VEZhbnZSd2tLM2xVd29FajRNQWlGOWpFSkFCNTNpOVdqRXZDU3JyMWJRd253UzhtV3FTcVpzZVVLQjkzQVEycnIzSGY3NU9KaE5TR1EyQnBBWmk0Si1CVXNRMlRYdnliWXpwNHB1Mm9oYUtUeGZtMk9MWGYtSkNzdWdWZmFvb2pqQ0V1UlpoZDBodG0wRFZWUXJFR3ZfaDhtUFZZdDhHTFZhQjlnb3pxMWhPaFJ0bGJlRkZIV2xNVS1DV3Z1RUhZTDU2OTg?oc=5",
-      "published": "2026-08-31T13:49:11+00:00",
-      "source": "L'Équipe"
-    },
     {
       "title": "Mercato. Quand se termine la fenêtre estivale de transferts dans les principaux championnats ? - Ouest-France",
       "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPbVFLSTNJOTY1T1M1ZTVKZHg0dHV6VkdGa0c5dTQ0Q0oyT3g4SUVVQlhFQnBqX2RNLWtnbnFjY2syRnQ0djZWczFhcTYyaE9hbnRoMkQzeWhyTVQzak5JalJRSkdKRWZJczJvZmlrZ3RQWmFoV1ROWUQwVVU5TnhNM3RDNm1hdkJNRHI5T05ubzFOc3NhYXd6azQ0T0Qzc1M2Y3JZZENQY0F3MzFiLXBqa3ItSUNUcjVJb1JCbWtvV2J4ZldnN1l2NjJfbTRySXozWmhvTnJjMzhUbXFCMFM5M3JDU2NPbTJnN0I4dnpidndSX2xkX3RmLUlCLVo0NHhTTzhCbkp1UE9CUnJkYkt3?oc=5",
@@ -25,6 +19,12 @@
       "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNMWZ3eDBvejNTa1RFbjNIQ3p3WEV0WXFmOFRBb05vd0NoREhtLThpbmFOUWpjUEhaWFNnSC1fV0Uxd1oxRVBjam96N3FucGU5Q0dScGphZW1tR1dOakFqdnBMSlk0Nm1Fci1lUGYzYXdsNmZHSE1ERXdsWXVMdWJGampYX3VadUVHc2Z3aDBweVBUUTd0OVRKbDB1b2luX1JYMU9GdncwaFAzVDNKLXBnY3VSSlI5c0lWa0dwYzNxZ0tkcXpKUVhwNURvcHdfZjVQbWhMMnBFdUhSRkdXN25DaDdZVnlKTW43VU5ERmJYdGo0TE9GdGVJdE9wdEE?oc=5",
       "published": "2026-08-29T06:23:21+00:00",
       "source": "Le Parisien"
+    },
+    {
+      "title": "Mercato Ligue 1 : Paris continue de vendre, l'OM éteint, Strasbourg hypercactif, une pluie de prêts - Le Petit Lillois",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObUZSOUkwMDdEVkJrQVFFbnB5VWVRVVE5TDFXZmEwdHlEaTFudy1McGpYZGYxY1JXd3hmaUp1Y2FCY1hjS3R4bGVuWUprX3AzLVlPbVRQNk5PUEo2bV9rTWxVQmd6aWZTYkdlRi1CWnJsSGp0dmFWT19tV1FudzBDQldXTmFnQUJOSTE5TE9B?oc=5",
+      "published": "2026-08-31T11:29:00+00:00",
+      "source": "Le Petit Lillois"
     },
     {
       "title": "« Je veux que le mercato ferme immédiatement » : l’OL vers 48 dernières heures agitées - Le Dauphiné Libéré",
@@ -45,22 +45,22 @@
       "source": "dna.fr"
     },
     {
-      "title": "Ligue 1 McDonald's : « Si on a l'opportunité de faire quelque chose pour donner plus d'options à l'entraîneur, on va le faire », explique Thiago Scuro au sujet de la fin du mercato - dazn.com",
+      "title": "Ligue 1 McDonald's : « Si on a l'opportunité de faire quelque chose pour donner plus d'options à l'entraîneur, on va le faire », explique Thiago Scuro au sujet de la fin du mercato - DAZN",
       "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOM2tPZktpZ0YtS0puVnpNb1lDVnlOZ2dFRE11X1NTaW95NV94bWptMFIyRlpKY3VQaTFEWXU4cEZoOG9mRXFQdkhkR0tLLWNyWkVBaUNFZHBnNUpjVGk0YlB0SFIxZjRrcWNEVVJqN01uZHVrU1o2REhvYVhGelZ3S19ONDVvaUFWX1VIRnVFOHpoeHhueWNuZ3dOSkg0RGlMUTFvbVRiVTVlTkdNRndHVTQzVzdMR0pMOVhMTlpqdWlxZVhSZ2IyaWxkWXhpQXY1VGQ5WlhQWUZ4N1JWUkg4MnM5by1TYUszdy05cE44a2hJck1NSzJzZ1FZLW5oM1V5M1pqZmVDVDgtdHJVSi1rSjZiNXd4RFlWd3o0M0R2bThxX3NPS2w0RHNIaXo0d0Q4cV9GT2VyZ05leXhIMTFiQ3VKUzJrNW5JcUZtRFNOTk5wS1hPRGc?oc=5",
       "published": "2026-08-30T21:45:22+00:00",
-      "source": "dazn.com"
+      "source": "DAZN"
     },
     {
-      "title": "Ligue 1. Les dernières heures du mercato en baromètre des objectifs de l’OL - Le Progrès",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQTBYZW1qei1KTjFORDJNdXk5QU05ckpvLVlCUVNSRDEtOUhKaU1rUVdOdVdnQzI2QjV3YXRzX0lxTmFFSm9vb3JNckM1WE1JbUZZY0pEd3VicEZxTnl6dGY5MzA0Tk9yLWZZY1prZDBpVjZQZjRNU3M5N2lUZjBIdTdsVzduSVdxRFZtZF85OUJYQ3lkU1hfSXJoaldHTjRKbUFuRVBvUklvUkhI?oc=5",
-      "published": "2026-08-30T04:25:09+00:00",
-      "source": "Le Progrès"
+      "title": "Mercato d’été 2026: Les dates de clôture des principaux championnats - Sports.fr",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOGNMSGRCUjkwS2lVTWJTZzlpTF81dWJvejdaRkZURHlqLXBoaUhZRllFNFFrLWdJY2J3cTY5ZFVKVjZsbW5WZHJHV1AtbFVDUEt0d2Jjb285SHZXbXpxMkswQldscVhmeWp1STl3MVAyWHg5WTFZWnZod1NvOWNHWHc4a3UwOWtKLU93d19CVHY0c090RGVEWktwLXBLb0FTOExHMElqSkdMLTBoejhZ?oc=5",
+      "published": "2026-08-31T13:15:25+00:00",
+      "source": "Sports.fr"
     },
     {
-      "title": "TFC - Ligue 1 : le mercato s'accélère, un attaquant débarque au Stadium - ici.fr",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNcXlKaE1LRUEyeFA2NXNvcFZDaUY5dHRxS3JEWEg3bzNja0R1VWJnb1NXc2EtNExHRElhd0dZTkd4QkFud09IaGhOdUlFWkdZZlRBeHRucV9zeXhLNlU4SEhTX0YxZDIxRjd6MjJMMkR1SC1YMGZTSGtLRWZ3VE10cUxHejJHdG82cWJkRUMySEE4VEN4X21CVzB1WXNfZWJPQjNyWGRRcnZPOEt1Z1Y3SUUwTTMxUEx0RV8wS0xXRVpaWW5uZmhYUg?oc=5",
-      "published": "2026-08-31T16:31:15+00:00",
-      "source": "ici.fr"
+      "title": "D'abord la France puis le reste du Big Five, quelques jours de plus en Turquie... Les principales dates de clôture du mercato d'été 2026 - L'Équipe",
+      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOeF9YYkE5MUJkRGl2QU5NWng1OXdXQ3p1SGdaZmE1RUxCZWFfNENWbVZoYzNmQ1lBcHVlX3JKMHBfR0kybld1Sm4xX1hWTmJCZUtISTd6QTB4ZDNMVnZwNzFsb0xZTmtPZE9IQUEzSVhiUGYtUkxPblM1OGlublV6LU81M3h0YmdVZWpaQUNZLS05bC02dXpyVW5aZTl2TTY0OGc2RmFhcTNmVjlYNEVhNWFSV2FwYXZvN0NzTnMwam9EOGhOdFFGaGhUN1dkS203eHZDcldNV251TDRaVGlQMWo4Z0dBUUZITm1hQVk2X2NvRjBibVlKNmt3UU5QZnV1aGItSHZCdWtpTzBKaS10OA?oc=5",
+      "published": "2026-08-31T09:27:32+00:00",
+      "source": "L'Équipe"
     },
     {
       "title": "Football : quand se termine le mercato d’été dans les différents championnats ? - Le Parisien",
