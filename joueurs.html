@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07101f">
+<title>Joueurs — Footix Prono</title>
+<meta name="description" content="Découvre les membres de la communauté Footix Prono et leurs statistiques.">
+<link rel="stylesheet" href="styles.css?v=9.8.4">
+<link rel="stylesheet" href="joueurs.css?v=10.0.0">
+<link rel="icon" type="image/png" href="logo-footix-prono.png">
+</head>
+<body class="page-players-v1000">
+<div class="app-shell">
+  
+<aside class="sidebar">
+  <a class="brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>— PRONO —</span></div></a>
+  <div class="side-label">COMPÉTITIONS</div>
+  <a class="competition-link" href="ligue1.html"><span class="comp-mark l1-mark"><img src="logo-l1-option3.png" alt=""></span><span>LIGUE 1</span><b>›</b></a>
+  <a class="competition-link" href="champions.html"><span class="comp-mark ucl-mark"><img src="logo-europe-option3.png" alt=""></span><span>LIGUE DES CHAMPIONS</span><b>›</b></a>
+
+  <div class="side-label community-side-title">NAVIGATION</div>
+  <a class="side-link site-nav-home" href="index.html"><span class="side-nav-ico">⌂</span><span>Accueil</span></a>
+  <a class="side-link site-nav-votes" href="vos-pronos.html"><span class="side-nav-ico">✓</span><span>Vos pronos</span></a>
+  <a class="side-link site-nav-ranking" href="classement.html"><span class="side-nav-ico">♛</span><span>Classements</span></a>
+  <a class="side-link site-nav-players active" href="joueurs.html"><span class="side-nav-ico">♟</span><span>Joueurs</span></a>
+  <a class="side-link site-nav-community" href="community.html"><span class="side-nav-ico">▱</span><span>Communauté</span></a>
+  <a class="side-link site-nav-rules" href="reglement.html"><span class="side-nav-ico">▤</span><span>Règlement</span></a>
+
+  <div class="sidebar-card mascot-card"><img src="logo-footix-prono.png" alt=""><p>ON EST TOUS<br>LE <em>FOOTIX</em><br>DE QUELQU’UN.</p></div>
+</aside>
+
+  <div class="main-wrap">
+    
+<header class="topbar">
+  <div class="slogan">ON EST TOUS LE FOOTIX DE QUELQU’UN.</div>
+  <nav class="top-nav v914-auth-nav" aria-label="Compte membre">
+    <button class="top-nav-link auth-link login-trigger" type="button">
+      <span class="nav-user-ico">♟</span><span>SE CONNECTER</span>
+    </button>
+    <button class="top-nav-link signup-link signup-trigger" type="button">
+      <span class="nav-user-ico">♙</span><span>S'INSCRIRE</span>
+    </button>
+    <a class="top-nav-link account-link is-hidden" href="profil.html" hidden>
+      <span class="nav-user-ico">●</span><span class="account-label">MON PROFIL</span>
+    </a>
+    <button class="top-nav-link logout-link is-hidden" type="button" hidden>
+      <span class="nav-user-ico">↩</span><span>DÉCONNEXION</span>
+    </button>
+  </nav>
+</header>
+
+    <main class="players-main">
+      <section class="players-hero">
+        <div>
+          <span class="players-eyebrow">COMMUNAUTÉ FOOTIX</span>
+          <h1>LES <em>JOUEURS</em></h1>
+          <p>Retrouve tous les membres de Footix Prono, leurs statistiques et leur palmarès.</p>
+        </div>
+        <div class="players-count-card">
+          <small>MEMBRES</small>
+          <strong id="players-count">—</strong>
+          <span>Footix inscrits</span>
+        </div>
+      </section>
+
+      <section class="players-toolbar" aria-label="Recherche et tri">
+        <label class="players-search">
+          <span>RECHERCHER UN JOUEUR</span>
+          <input id="players-search" type="search" autocomplete="off" placeholder="Pseudo…">
+        </label>
+        <label class="players-sort">
+          <span>TRIER PAR</span>
+          <select id="players-sort">
+            <option value="name">Pseudo A → Z</option>
+            <option value="points">Points</option>
+            <option value="rate">Réussite</option>
+            <option value="played">Pronos terminés</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="players-directory">
+        <div class="players-directory-head">
+          <div><span>ANNUAIRE</span><h2>COMMUNAUTÉ FOOTIX</h2></div>
+          <p>Clique sur un joueur pour consulter sa fiche publique.</p>
+        </div>
+        <div id="players-grid" class="players-grid">
+          <div class="community-empty">Chargement des joueurs…</div>
+        </div>
+      </section>
+    </main>
+    
+<footer class="site-footer">
+  <p>© 2026 Footix Prono — Tous droits réservés.</p>
+  <p class="legal-disclaimer">Pronostics et analyses proposés à titre informatif et ludique. Aucun pari en argent réel, aucune prise de mise et aucun gain ne sont proposés sur ce site. Les pronostics ne garantissent aucun résultat.</p>
+  <p><a href="mentions-legales.html">Mentions légales</a> · <a href="reglement.html">Règlement</a> · <a href="confidentialite.html">Confidentialité</a></p>
+</footer>
+
+  </div>
+</div>
+
+<div class="auth-modal" id="auth-modal" aria-hidden="true">
+  <div class="auth-backdrop" data-auth-close></div>
+  <section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <button class="auth-close" type="button" data-auth-close aria-label="Fermer">×</button>
+    <div class="auth-brand">
+      <div class="auth-brand-mark"><img src="logo-footix-prono.png" alt=""></div>
+      <div><span>ESPACE COMMUNAUTÉ</span><strong id="auth-title">REJOINS FOOTIX PRONO</strong></div>
+    </div>
+    <div class="auth-tabs">
+      <button type="button" class="auth-tab active" data-auth-tab="signup">INSCRIPTION</button>
+      <button type="button" class="auth-tab" data-auth-tab="login">CONNEXION</button>
+    </div>
+    <form class="auth-form" id="signup-form">
+      <label>TON PSEUDO
+        <input name="username" autocomplete="nickname" minlength="3" maxlength="20" pattern="[A-Za-z0-9À-ÿ_-]{3,20}" required placeholder="Ex. Footix75">
+      </label>
+      <label>TON EMAIL
+        <input name="email" type="email" autocomplete="email" required placeholder="toi@exemple.fr">
+      </label>
+      <label>MOT DE PASSE
+        <input name="password" type="password" autocomplete="new-password" minlength="8" required placeholder="8 caractères minimum">
+      </label>
+      <fieldset class="avatar-fieldset">
+        <legend>CHOISIS TON FOOTIX</legend>
+        <div class="avatar-picker" id="avatar-picker"></div>
+      </fieldset>
+      <label class="consent-row">
+        <input name="consent" type="checkbox" required>
+        <span>J'accepte le <a href="reglement.html">règlement</a> et la <a href="confidentialite.html">politique de confidentialité</a>.</span>
+      </label>
+      <button class="community-cta" type="submit">CRÉER MON COMPTE</button>
+      <p class="auth-help">Un email de confirmation te sera envoyé. Ton compte devient actif après validation de ton adresse.</p>
+    </form>
+    <form class="auth-form is-hidden" id="login-form">
+      <label>EMAIL
+        <input name="email" type="email" autocomplete="email" required placeholder="toi@exemple.fr">
+      </label>
+      <label>MOT DE PASSE
+        <input name="password" type="password" autocomplete="current-password" required>
+      </label>
+      <button class="community-cta" type="submit">ME CONNECTER</button>
+      <button class="text-action" id="forgot-password" type="button">Mot de passe oublié ?</button>
+    </form>
+    <form class="auth-form is-hidden" id="reset-form">
+      <label>EMAIL
+        <input name="email" type="email" autocomplete="email" required placeholder="toi@exemple.fr">
+      </label>
+      <button class="community-cta" type="submit">ENVOYER LE LIEN</button>
+      <button class="text-action" type="button" data-auth-tab="login">Retour à la connexion</button>
+    </form>
+    <div class="auth-message" id="auth-message" role="status"></div>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
+<script src="auth-community.js?v=10.0.0"></script>
+<script src="joueurs.js?v=10.0.0"></script>
+<script src="notifications.js?v=9.8.4"></script>
+</body></html>

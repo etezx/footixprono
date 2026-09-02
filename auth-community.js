@@ -27,6 +27,26 @@
     return e?.message || 'Une erreur est survenue.';
   };
 
+  const playerHref = id => `joueur.html?id=${encodeURIComponent(id)}`;
+  const playerLink = (id, username, klass='player-public-link') =>
+    `<a class="${klass}" href="${playerHref(id)}">${escapeHtml(username)}</a>`;
+
+  function ensurePlayersNavigation() {
+    if (!document.getElementById('footix-player-link-style')) {
+      const style=document.createElement('style');
+      style.id='footix-player-link-style';
+      style.textContent='.player-public-link{color:inherit;text-decoration:none}.player-public-link:hover{text-decoration:underline;text-underline-offset:3px}.rank-player .player-public-link,.monthly-podium-card .player-public-link,.winner-line .player-public-link{font-weight:inherit}';
+      document.head.appendChild(style);
+    }
+    if (document.querySelector('.site-nav-players')) return;
+    const ranking=document.querySelector('.site-nav-ranking');
+    if (!ranking) return;
+    ranking.insertAdjacentHTML(
+      'afterend',
+      '<a class="side-link site-nav-players" href="joueurs.html"><span class="side-nav-ico">♟</span><span>Joueurs</span></a>'
+    );
+  }
+
   function setAuthTab(name) {
     $$('.auth-form').forEach(f => f.classList.add('is-hidden'));
     $$('.auth-tab').forEach(b => b.classList.toggle('active', b.dataset.authTab === name));
@@ -151,7 +171,7 @@
       const {data,error} = await db.rpc('leaderboard',args);
       if (error) { $('#ranking-body').innerHTML = `<tr><td colspan="5" class="community-empty">Classement indisponible pour le moment.</td></tr>`; return; }
       const rows = data || [];
-      $('#ranking-body').innerHTML = rows.length ? rows.map(r => `<tr><td><b class="rank-number">${r.rank}</b></td><td><div class="rank-player"><span class="avatar-orb avatar-${r.avatar_slug}"><img src="avatars/${r.avatar_slug}.jpg" alt=""></span><strong>${escapeHtml(r.username)}</strong></div></td><td><strong>${r.points}</strong></td><td>${r.played}</td><td>${r.success_rate}%</td></tr>`).join('') : '<tr><td colspan="5" class="community-empty">Pas encore de résultats sur cette période.</td></tr>';
+      $('#ranking-body').innerHTML = rows.length ? rows.map(r => `<tr><td><b class="rank-number">${r.rank}</b></td><td><div class="rank-player"><span class="avatar-orb avatar-${r.avatar_slug}"><img src="avatars/${r.avatar_slug}.jpg" alt=""></span><strong>${playerLink(r.user_id,r.username)}</strong></div></td><td><strong>${r.points}</strong></td><td>${r.played}</td><td>${r.success_rate}%</td></tr>`).join('') : '<tr><td colspan="5" class="community-empty">Pas encore de résultats sur cette période.</td></tr>';
       renderPodium(rows.slice(0,3));
     };
     $$('#ranking-competition button').forEach(b => b.addEventListener('click',()=>{ comp=b.dataset.comp; $$('#ranking-competition button').forEach(x=>x.classList.toggle('active',x===b)); render(); }));
@@ -166,7 +186,7 @@
     root.className='podium';
     root.innerHTML=order.map(rank=>{
       const r=byRank.get(rank); if(!r) return `<div class="podium-slot rank-${rank} empty"><span>${rank}</span><b>—</b></div>`;
-      return `<div class="podium-slot rank-${rank}"><span class="podium-rank">${rank}</span><div class="avatar-orb avatar-${r.avatar_slug}"><img src="avatars/${r.avatar_slug}.jpg" alt=""></div><b>${escapeHtml(r.username)}</b><strong>${r.points} PTS</strong><small>${r.success_rate}% de réussite</small></div>`;
+      return `<div class="podium-slot rank-${rank}"><span class="podium-rank">${rank}</span><div class="avatar-orb avatar-${r.avatar_slug}"><img src="avatars/${r.avatar_slug}.jpg" alt=""></div><b>${playerLink(r.user_id,r.username)}</b><strong>${r.points} PTS</strong><small>${r.success_rate}% de réussite</small></div>`;
     }).join('');
   }
   function escapeHtml(v='') { return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c])); }
@@ -298,7 +318,7 @@
     const map = new Map(data.map(r=>[Number(r.rank),r]));
     const card = (rank,klass,defaultSlug) => {
       const r=map.get(rank); if(!r) return `<div class="podium-mini ${klass}"><span>${rank}</span><img src="avatars/${defaultSlug}.jpg" alt=""><b>—</b><small>0 pts</small></div>`;
-      return `<div class="podium-mini ${klass}"><span>${rank}</span><img src="avatars/${r.avatar_slug}.jpg" alt=""><b>${escapeHtml(r.username)}</b><small>${r.points} pts</small></div>`;
+      return `<div class="podium-mini ${klass}"><span>${rank}</span><img src="avatars/${r.avatar_slug}.jpg" alt=""><b>${playerLink(r.user_id,r.username)}</b><small>${r.points} pts</small></div>`;
     };
     root.innerHTML=card(2,'place2','footix-capitaine')+card(1,'place1','footix-champion')+card(3,'place3','footix-tacticien');
   }
@@ -324,7 +344,7 @@
       const state=p.status && p.status!=='visible' ? `<span class="moderation-state">${p.status.toUpperCase()}</span>` : '';
       return `<article class="community-post ${p.status && p.status!=='visible'?'post-moderated':''}" data-post-id="${p.id}" data-pinned="${p.pinned?'1':'0'}" data-status="${p.status||'visible'}">
         <img class="post-avatar" src="avatars/${u.avatar_slug}.jpg" alt="">
-        <div class="post-content"><div class="post-meta"><b>${escapeHtml(u.username)}</b>${adminBadge(admins.get(p.author_id))}${p.pinned?'<span class="pinned-badge">ÉPINGLÉ</span>':''}${state}<small>${d}</small></div>
+        <div class="post-content"><div class="post-meta"><b>${playerLink(p.author_id,u.username)}</b>${adminBadge(admins.get(p.author_id))}${p.pinned?'<span class="pinned-badge">ÉPINGLÉ</span>':''}${state}<small>${d}</small></div>
         <p>${escapeHtml(p.body).replace(/\n/g,'<br>')}</p>
         <div class="post-actions"><button type="button" class="reply-post">↩ Répondre</button><button type="button" class="report-post">⚑ Signaler</button>${moderation}</div>
         <form class="reply-form is-hidden"><textarea maxlength="1500" rows="2" placeholder="Ta réponse…"></textarea><button class="community-cta compact" type="submit">${currentUserIsAdmin?'RÉPONDRE EN ADMIN':'RÉPONDRE'}</button></form>
@@ -343,7 +363,7 @@
     box.innerHTML=rows.map(p=>{
       const u=pm.get(p.author_id)||{username:'Membre Footix',avatar_slug:'footix-classique'};
       const controls=currentUserIsAdmin ? `<span class="reply-admin-controls"><button type="button" class="admin-hide-reply" data-reply-id="${p.id}">${p.status!=='visible'?'RÉTABLIR':'MASQUER'}</button></span>` : '';
-      return `<div class="community-reply ${p.status!=='visible'?'post-moderated':''}" data-reply-status="${p.status||'visible'}"><img src="avatars/${u.avatar_slug}.jpg" alt=""><div><b>${escapeHtml(u.username)}</b>${adminBadge(admins.get(p.author_id))}${controls}<p>${escapeHtml(p.body).replace(/\n/g,'<br>')}</p></div></div>`;
+      return `<div class="community-reply ${p.status!=='visible'?'post-moderated':''}" data-reply-status="${p.status||'visible'}"><img src="avatars/${u.avatar_slug}.jpg" alt=""><div><b>${playerLink(p.author_id,u.username)}</b>${adminBadge(admins.get(p.author_id))}${controls}<p>${escapeHtml(p.body).replace(/\n/g,'<br>')}</p></div></div>`;
     }).join('');
   }
   function initCommunity(){
@@ -403,5 +423,6 @@
     loadCommunityFeed();
   }
 
+  ensurePlayersNavigation();
   initCommunity();
 })();

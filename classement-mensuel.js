@@ -8,6 +8,7 @@
   let comp='';
 
   const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+  const playerLink=(r)=>`<a class="player-public-link" href="joueur.html?id=${encodeURIComponent(r.user_id)}">${esc(r.username)}</a>`;
   const monthInput=$('#ranking-month');
   const now=new Date();
   monthInput.value=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
@@ -49,7 +50,7 @@
         <span class="podium-medal">${medal(rank)}</span>
         <b>${reward(rank)}</b>
         <span class="avatar-orb avatar-${esc(r.avatar_slug)}"><img src="avatars/${esc(r.avatar_slug)}.jpg" alt=""></span>
-        <strong>${esc(r.username)}</strong>
+        <strong>${playerLink(r)}</strong>
         <em>${r.points} PT${Number(r.points)>1?'S':''}</em>
         <small>${r.success_rate}% · ${r.played} pronos</small>
       </article>`;
@@ -75,7 +76,7 @@
     body.innerHTML=rows.length?rows.map(r=>`
       <tr class="${Number(r.rank)<=3?'top-rank rank-'+r.rank:''}">
         <td><span class="ranking-rank">${Number(r.rank)<=3?medal(Number(r.rank)):r.rank}</span></td>
-        <td><div class="rank-player"><span class="avatar-orb avatar-${esc(r.avatar_slug)}"><img src="avatars/${esc(r.avatar_slug)}.jpg" alt=""></span><strong>${esc(r.username)}</strong>${Number(r.rank)<=3?`<small class="rank-reward">${reward(Number(r.rank))}</small>`:''}</div></td>
+        <td><div class="rank-player"><span class="avatar-orb avatar-${esc(r.avatar_slug)}"><img src="avatars/${esc(r.avatar_slug)}.jpg" alt=""></span><strong>${playerLink(r)}</strong>${Number(r.rank)<=3?`<small class="rank-reward">${reward(Number(r.rank))}</small>`:''}</div></td>
         <td><strong>${r.points}</strong></td>
         <td>${r.played}</td>
         <td>${r.success_rate}%</td>
@@ -120,7 +121,7 @@
             return `<div class="winner-line place-${rank}">
               <span>${medalIcon}</span><b>${level}</b>
               <span class="avatar-orb avatar-${esc(r.avatar_slug)}"><img src="avatars/${esc(r.avatar_slug)}.jpg" alt=""></span>
-              <strong>${esc(r.username)}</strong><em>${r.points} pt${Number(r.points)>1?'s':''}</em>
+              <strong>${playerLink(r)}</strong><em>${r.points} pt${Number(r.points)>1?'s':''}</em>
             </div>`;
           }).join('')}
         </div>
