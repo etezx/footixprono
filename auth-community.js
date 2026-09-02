@@ -35,7 +35,7 @@
     if (!document.getElementById('footix-player-link-style')) {
       const style=document.createElement('style');
       style.id='footix-player-link-style';
-      style.textContent='.player-public-link{color:#0b4f86!important;font-weight:900!important;text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:3px!important;text-decoration-color:#8fb5d6!important}.player-public-link:hover{color:#07345d!important;text-decoration-color:#07345d!important}';
+      style.textContent='.player-public-link{color:#0b4f86!important;font-weight:900!important;text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:3px!important;text-decoration-color:#8fb5d6!important}.player-public-link:hover{color:#07345d!important;text-decoration-color:#07345d!important}.winner-line .player-public-link,.monthly-podium-card .player-public-link,.podium-slot .player-public-link,.dark-card .player-public-link{color:#eaf5ff!important;text-decoration-color:#78b9ef!important}.winner-line .player-public-link:hover,.monthly-podium-card .player-public-link:hover,.podium-slot .player-public-link:hover,.dark-card .player-public-link:hover{color:#9cff62!important;text-decoration-color:#9cff62!important}';
       document.head.appendChild(style);
     }
     if (document.querySelector('.site-nav-players')) return;

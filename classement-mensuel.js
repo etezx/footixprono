@@ -133,7 +133,8 @@
   $$('#monthly-ranking-comp button').forEach(btn=>btn.addEventListener('click',()=>{
     comp=btn.dataset.comp||'';
     $$('#monthly-ranking-comp button').forEach(b=>b.classList.toggle('active',b===btn));
-    load();
+    ensurePublicPlayerLinkStyles();
+  load();
   }));
   monthInput.addEventListener('change',load);
   load();
