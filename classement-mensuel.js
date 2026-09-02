@@ -9,6 +9,37 @@
 
   const esc=(v='')=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
   const playerLink=(r)=>`<a class="player-public-link" href="joueur.html?id=${encodeURIComponent(r.user_id)}">${esc(r.username)}</a>`;
+  function ensurePublicPlayerLinkStyles(){
+    if(document.getElementById('footix-ranking-player-links-v104')) return;
+    const style=document.createElement('style');
+    style.id='footix-ranking-player-links-v104';
+    style.textContent=`
+      #monthly-podium .player-public-link,
+      #monthly-ranking-body .player-public-link,
+      #monthly-history .player-public-link,
+      .monthly-podium-card .player-public-link,
+      .rank-player .player-public-link,
+      .winner-line .player-public-link{
+        color:#f2f8ff!important;
+        font-weight:900!important;
+        text-decoration:underline!important;
+        text-decoration-thickness:1px!important;
+        text-underline-offset:3px!important;
+        text-decoration-color:#78b9ef!important;
+        text-shadow:0 1px 2px rgba(0,0,0,.28)!important;
+      }
+      #monthly-podium .player-public-link:hover,
+      #monthly-ranking-body .player-public-link:hover,
+      #monthly-history .player-public-link:hover,
+      .monthly-podium-card .player-public-link:hover,
+      .rank-player .player-public-link:hover,
+      .winner-line .player-public-link:hover{
+        color:#9cff62!important;
+        text-decoration-color:#9cff62!important;
+      }
+    `;
+    document.head.appendChild(style);
+  }
   const monthInput=$('#ranking-month');
   const now=new Date();
   monthInput.value=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
@@ -133,10 +164,10 @@
   $$('#monthly-ranking-comp button').forEach(btn=>btn.addEventListener('click',()=>{
     comp=btn.dataset.comp||'';
     $$('#monthly-ranking-comp button').forEach(b=>b.classList.toggle('active',b===btn));
-    ensurePublicPlayerLinkStyles();
-  load();
+    load();
   }));
   monthInput.addEventListener('change',load);
+  ensurePublicPlayerLinkStyles();
   load();
   loadHistory();
 })();
