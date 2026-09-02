@@ -32,8 +32,14 @@
   function predictionLabel(p){
     const exact=p.predicted_home_score!==null && p.predicted_home_score!==undefined &&
                 p.predicted_away_score!==null && p.predicted_away_score!==undefined;
-    if(!exact) return '<span class="public-pred-old">ANCIEN PRONO 1/N/2</span>';
-    return `<span class="public-pred-score">PRONO <b>${num(p.predicted_home_score)}–${num(p.predicted_away_score)}</b></span>`;
+
+    if(exact){
+      return `<span class="public-pred-score">SCORE PRONOSTIQUÉ <b>${num(p.predicted_home_score)}–${num(p.predicted_away_score)}</b></span>`;
+    }
+
+    const pick=String(p.pick||'').toUpperCase();
+    const oldLabel=pick==='1'?'VICTOIRE DOMICILE':pick==='N'?'MATCH NUL':pick==='2'?'VICTOIRE EXTÉRIEUR':'PRONO 1/N/2';
+    return `<span class="public-pred-old">ANCIEN PRONO : <b>${esc(pick||'—')}</b> · ${oldLabel}</span>`;
   }
 
   function verdict(p){

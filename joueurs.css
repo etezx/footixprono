@@ -257,3 +257,22 @@
   .public-prediction{align-items:flex-start;flex-direction:column}
   .public-pred-result{text-align:left}
 }
+
+
+/* === V10.0.1 — pseudos joueurs plus lisibles === */
+.player-public-link{
+  color:#0b4f86!important;
+  font-weight:900!important;
+  text-decoration:underline!important;
+  text-decoration-thickness:1px!important;
+  text-underline-offset:3px!important;
+  text-decoration-color:#8fb5d6!important;
+}
+.player-public-link:hover{
+  color:#07345d!important;
+  text-decoration-color:#07345d!important;
+}
+.player-card .player-card-identity strong{
+  color:#082a4d!important;
+  font-weight:900!important;
+}

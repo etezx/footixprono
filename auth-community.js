@@ -35,7 +35,7 @@
     if (!document.getElementById('footix-player-link-style')) {
       const style=document.createElement('style');
       style.id='footix-player-link-style';
-      style.textContent='.player-public-link{color:inherit;text-decoration:none}.player-public-link:hover{text-decoration:underline;text-underline-offset:3px}.rank-player .player-public-link,.monthly-podium-card .player-public-link,.winner-line .player-public-link{font-weight:inherit}';
+      style.textContent='.player-public-link{color:#0b4f86!important;font-weight:900!important;text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:3px!important;text-decoration-color:#8fb5d6!important}.player-public-link:hover{color:#07345d!important;text-decoration-color:#07345d!important}';
       document.head.appendChild(style);
     }
     if (document.querySelector('.site-nav-players')) return;
