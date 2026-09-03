@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T00:58:27.849Z",
+  "updated_at": "2026-09-03T14:30:47.336Z",
   "days": {
     "1": {
       "OLYMPIQUE DE MARSEILLE|||RC STRASBOURG ALSACE": {
@@ -198,6 +198,18 @@
         "communityCorrect": 2,
         "communityPredictions": 4,
         "communityRate": 50
+      }
+    },
+    "3": {
+      "TOULOUSE FC|||LOSC": {
+        "score": "1-2",
+        "pick": "2",
+        "scorers": [
+          "Giroud",
+          "Russell-Rowe"
+        ],
+        "buteurs": "Giroud\nRussell-Rowe",
+        "analyse": "Lille part favori, mais je ne vois pas les Dogues passer une soirée tranquille au Stadium. Toulouse n’a pas encore vraiment lancé sa saison et, devant son public, je m’attends à voir une équipe beaucoup plus accrocheuse, capable de répondre à Lille et de lui poser quelques problèmes.\n\nSous le soleil toulousain, je vois un match assez ouvert, avec des Violets qui vont tenir tête aux Lillois pendant une bonne partie de la rencontre. Mais le LOSC me semble avoir davantage d’expérience et surtout un peu plus d’efficacité pour faire la différence dans les moments importants.\n\nEt devant, difficile de ne pas avoir un œil sur Olivier Giroud. Je le vois bien profiter d’une occasion dans la surface pour laisser sa marque sur cette rencontre. Lille devrait souffrir, mais finir par repartir du Stadium avec les trois points."
       }
     }
   }
