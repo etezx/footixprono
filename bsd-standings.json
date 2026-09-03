@@ -13,6 +13,23 @@
       "teams": [
         {
           "position": 1,
+          "club": "Lille",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 2,
+          "pts": 7,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 2,
           "club": "AS Monaco",
           "p": 2,
           "w": 2,
@@ -29,7 +46,7 @@
           }
         },
         {
-          "position": 2,
+          "position": 3,
           "club": "Paris FC",
           "p": 2,
           "w": 1,
@@ -37,23 +54,6 @@
           "l": 0,
           "gf": 3,
           "ga": 0,
-          "pts": 4,
-          "group": "",
-          "zone": {
-            "key": "cl",
-            "label": "Champions League",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 3,
-          "club": "Lille",
-          "p": 2,
-          "w": 1,
-          "d": 1,
-          "l": 0,
-          "gf": 4,
-          "ga": 2,
           "pts": 4,
           "group": "",
           "zone": {
@@ -233,12 +233,12 @@
         {
           "position": 16,
           "club": "Toulouse",
-          "p": 2,
+          "p": 3,
           "w": 0,
           "d": 1,
-          "l": 1,
+          "l": 2,
           "gf": 2,
-          "ga": 4,
+          "ga": 5,
           "pts": 1,
           "group": "",
           "zone": {
@@ -284,6 +284,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-03T20:30:35Z",
+  "generatedAt": "2026-09-03T20:54:06Z",
   "source": "BSD"
 }
