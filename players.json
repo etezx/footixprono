@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T09:51:54.141339+00:00",
+  "updated_at": "2026-09-03T10:03:07.797207+00:00",
   "source": "ESPN rosters + ajouts manuels Footix Prono",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -220,6 +220,7 @@
       "Brendan Chardonnet",
       "Evan Mailly",
       "Gautier Lloris",
+      "Giovani Versini",
       "Hamidou Makalou",
       "Hugo Magnetti",
       "Joris Chotard",
@@ -467,6 +468,7 @@
       "Hidalgo",
       "Julien Duranville",
       "Kail Boudache",
+      "Keito Nakamura",
       "Khalis Merah",
       "Loïs Openda",
       "Mads Bidstrup",
@@ -543,5 +545,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 462
+  "players_fetched": 460
 }
