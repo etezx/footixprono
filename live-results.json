@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-03T18:30:33Z",
+  "generatedAt": "2026-09-03T18:55:10Z",
   "events": [
     {
       "eventId": 210448,
@@ -204,12 +204,18 @@
       "leagueId": 6,
       "home": "Toulouse",
       "away": "Lille",
-      "kickoff": "2026-09-03T18:45:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-09-03T18:45:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-03T18:30:33Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-03T18:55:10Z",
+      "minute": 8,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210458,
@@ -221,7 +227,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-03T18:30:33Z"
+      "updatedAt": "2026-09-03T18:55:10Z"
     },
     {
       "eventId": 210460,
@@ -233,7 +239,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-03T18:30:33Z"
+      "updatedAt": "2026-09-03T18:55:10Z"
     },
     {
       "eventId": 210461,
@@ -245,7 +251,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-03T18:30:33Z"
+      "updatedAt": "2026-09-03T18:55:10Z"
     },
     {
       "eventId": 210456,
@@ -257,7 +263,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-03T18:30:33Z"
+      "updatedAt": "2026-09-03T18:55:10Z"
     },
     {
       "eventId": 210457,
@@ -269,7 +275,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-03T18:30:33Z"
+      "updatedAt": "2026-09-03T18:55:10Z"
     }
   ]
 }
