@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-04T19:30:31Z",
+  "generatedAt": "2026-09-04T19:52:59Z",
   "events": [
     {
       "eventId": 210448,
@@ -209,7 +209,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-04T19:30:31Z",
+      "updatedAt": "2026-09-04T19:52:59Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-04T19:30:31Z",
+      "updatedAt": "2026-09-04T19:52:59Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,13 +252,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-04T19:30:31Z",
-      "minute": 25,
-      "homeScore": 0,
+      "updatedAt": "2026-09-04T19:52:59Z",
+      "minute": 47,
+      "homeScore": 1,
       "awayScore": 0,
-      "actualScorers": [],
+      "actualScorers": [
+        "Marquinhos"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210461,
@@ -270,7 +272,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:30:31Z"
+      "updatedAt": "2026-09-04T19:52:59Z"
     },
     {
       "eventId": 210456,
@@ -282,7 +284,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:30:31Z"
+      "updatedAt": "2026-09-04T19:52:59Z"
     },
     {
       "eventId": 210457,
@@ -294,7 +296,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:30:31Z"
+      "updatedAt": "2026-09-04T19:52:59Z"
     },
     {
       "eventId": 210463,
@@ -306,7 +308,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:30:31Z"
+      "updatedAt": "2026-09-04T19:52:59Z"
     },
     {
       "eventId": 210455,
@@ -318,7 +320,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:30:31Z"
+      "updatedAt": "2026-09-04T19:52:59Z"
     },
     {
       "eventId": 210459,
@@ -330,7 +332,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:30:31Z"
+      "updatedAt": "2026-09-04T19:52:59Z"
     }
   ]
 }
