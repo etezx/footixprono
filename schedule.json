@@ -355,7 +355,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-09-04T20:00:33Z"
+          "lastLiveUpdate": "2026-09-04T20:30:33Z"
         }
       ],
       [
@@ -370,7 +370,7 @@
           "eventId": 210456,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-04T20:00:33Z"
+          "lastLiveUpdate": "2026-09-04T20:30:33Z"
         }
       ],
       [
@@ -385,7 +385,7 @@
           "eventId": 210461,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-04T20:00:33Z"
+          "lastLiveUpdate": "2026-09-04T20:30:33Z"
         }
       ],
       [
@@ -400,7 +400,7 @@
           "eventId": 210458,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-04T20:00:33Z",
+          "lastLiveUpdate": "2026-09-04T20:30:33Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
@@ -425,7 +425,7 @@
           "eventId": 210459,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-04T20:00:33Z"
+          "lastLiveUpdate": "2026-09-04T20:30:33Z"
         }
       ],
       [
@@ -440,7 +440,7 @@
           "eventId": 210457,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-04T20:00:33Z"
+          "lastLiveUpdate": "2026-09-04T20:30:33Z"
         }
       ],
       [
@@ -455,12 +455,13 @@
           "eventId": 210460,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-04T20:00:33Z",
-          "minute": 45,
-          "period": "halftime",
+          "lastLiveUpdate": "2026-09-04T20:30:33Z",
+          "minute": 66,
+          "period": "2nd_half",
           "homeScore": 1,
-          "awayScore": 0,
+          "awayScore": 1,
           "actualScorers": [
+            "F. Nazinho",
             "Marquinhos"
           ],
           "scorersVerified": true
@@ -478,7 +479,7 @@
           "eventId": 210462,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-04T20:00:33Z",
+          "lastLiveUpdate": "2026-09-04T20:30:33Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -500,7 +501,7 @@
           "eventId": 210463,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-04T20:00:33Z"
+          "lastLiveUpdate": "2026-09-04T20:30:33Z"
         }
       ]
     ]

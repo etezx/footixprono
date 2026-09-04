@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-04T20:00:33Z",
+  "generatedAt": "2026-09-04T20:30:33Z",
   "events": [
     {
       "eventId": 210448,
@@ -209,7 +209,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-04T20:00:33Z",
+      "updatedAt": "2026-09-04T20:30:33Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-04T20:00:33Z",
+      "updatedAt": "2026-09-04T20:30:33Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -251,16 +251,17 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-09-04T20:00:33Z",
-      "minute": 45,
+      "period": "2nd_half",
+      "updatedAt": "2026-09-04T20:30:33Z",
+      "minute": 66,
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 1,
       "actualScorers": [
+        "F. Nazinho",
         "Marquinhos"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210461,
@@ -272,7 +273,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T20:00:33Z"
+      "updatedAt": "2026-09-04T20:30:33Z"
     },
     {
       "eventId": 210456,
@@ -284,7 +285,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T20:00:33Z"
+      "updatedAt": "2026-09-04T20:30:33Z"
     },
     {
       "eventId": 210457,
@@ -296,7 +297,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T20:00:33Z"
+      "updatedAt": "2026-09-04T20:30:33Z"
     },
     {
       "eventId": 210463,
@@ -308,7 +309,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T20:00:33Z"
+      "updatedAt": "2026-09-04T20:30:33Z"
     },
     {
       "eventId": 210455,
@@ -320,7 +321,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T20:00:33Z"
+      "updatedAt": "2026-09-04T20:30:33Z"
     },
     {
       "eventId": 210459,
@@ -332,7 +333,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T20:00:33Z"
+      "updatedAt": "2026-09-04T20:30:33Z"
     }
   ]
 }
