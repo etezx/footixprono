@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-04T18:00:35Z",
+  "generatedAt": "2026-09-04T18:30:36Z",
   "events": [
     {
       "eventId": 210448,
@@ -209,7 +209,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-04T18:00:35Z",
+      "updatedAt": "2026-09-04T18:30:36Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -228,18 +228,19 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-09-04T18:00:35Z",
-      "minute": 45,
-      "homeScore": 2,
+      "period": "2nd_half",
+      "updatedAt": "2026-09-04T18:30:36Z",
+      "minute": 68,
+      "homeScore": 3,
       "awayScore": 1,
       "actualScorers": [
+        "E. Nuamah",
         "C. Archer",
         "Z. Athekame",
         "F. Bacher"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 210460,
@@ -251,7 +252,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T18:00:35Z"
+      "updatedAt": "2026-09-04T18:30:36Z"
     },
     {
       "eventId": 210461,
@@ -263,7 +264,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T18:00:35Z"
+      "updatedAt": "2026-09-04T18:30:36Z"
     },
     {
       "eventId": 210456,
@@ -275,7 +276,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T18:00:35Z"
+      "updatedAt": "2026-09-04T18:30:36Z"
     },
     {
       "eventId": 210457,
@@ -287,7 +288,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T18:00:35Z"
+      "updatedAt": "2026-09-04T18:30:36Z"
     },
     {
       "eventId": 210463,
@@ -299,7 +300,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T18:00:35Z"
+      "updatedAt": "2026-09-04T18:30:36Z"
     },
     {
       "eventId": 210455,
@@ -311,7 +312,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T18:00:35Z"
+      "updatedAt": "2026-09-04T18:30:36Z"
     },
     {
       "eventId": 210459,
@@ -323,7 +324,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T18:00:35Z"
+      "updatedAt": "2026-09-04T18:30:36Z"
     }
   ]
 }
