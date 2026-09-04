@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-04T19:00:31Z",
+  "generatedAt": "2026-09-04T19:23:09Z",
   "events": [
     {
       "eventId": 210448,
@@ -209,7 +209,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-04T19:00:31Z",
+      "updatedAt": "2026-09-04T19:23:09Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -224,12 +224,12 @@
       "leagueId": 6,
       "home": "Olympique Lyonnais",
       "away": "Auxerre",
-      "kickoff": "2026-09-04T17:00:00Z",
+      "kickoff": "2026-09-04T17:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-04T19:00:31Z",
+      "updatedAt": "2026-09-04T19:23:09Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -248,11 +248,17 @@
       "home": "Paris Saint-Germain",
       "away": "AS Monaco",
       "kickoff": "2026-09-04T19:05:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-04T19:00:31Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-04T19:23:09Z",
+      "minute": 17,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210461,
@@ -264,7 +270,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:00:31Z"
+      "updatedAt": "2026-09-04T19:23:09Z"
     },
     {
       "eventId": 210456,
@@ -276,7 +282,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:00:31Z"
+      "updatedAt": "2026-09-04T19:23:09Z"
     },
     {
       "eventId": 210457,
@@ -288,7 +294,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:00:31Z"
+      "updatedAt": "2026-09-04T19:23:09Z"
     },
     {
       "eventId": 210463,
@@ -300,7 +306,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:00:31Z"
+      "updatedAt": "2026-09-04T19:23:09Z"
     },
     {
       "eventId": 210455,
@@ -312,7 +318,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:00:31Z"
+      "updatedAt": "2026-09-04T19:23:09Z"
     },
     {
       "eventId": 210459,
@@ -324,7 +330,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:00:31Z"
+      "updatedAt": "2026-09-04T19:23:09Z"
     }
   ]
 }
