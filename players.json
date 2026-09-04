@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T10:03:07.797207+00:00",
+  "updated_at": "2026-09-04T09:54:13.882961+00:00",
   "source": "ESPN rosters + ajouts manuels Footix Prono",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -524,6 +524,7 @@
       "Ilan Kebbal",
       "Jean-Phillipe Krasso",
       "Jonathan Ikoné",
+      "Kevin Trapp",
       "Lassine Sinayoko",
       "Luca Koleosho",
       "Maxime López",
@@ -545,5 +546,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 460
+  "players_fetched": 456
 }
