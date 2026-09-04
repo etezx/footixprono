@@ -1,7 +1,31 @@
 {
-  "updated_at": "2026-09-04T18:24:52.287065+00:00",
+  "updated_at": "2026-09-04T21:29:33.140879+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
+    {
+      "club": "AS Monaco",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
+      "p": 3,
+      "w": 3,
+      "d": 0,
+      "l": 0,
+      "gf": 5,
+      "ga": 1,
+      "pts": 9,
+      "last5": []
+    },
+    {
+      "club": "Lyon",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
+      "p": 3,
+      "w": 2,
+      "d": 1,
+      "l": 0,
+      "gf": 6,
+      "ga": 2,
+      "pts": 7,
+      "last5": []
+    },
     {
       "club": "Lille",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
@@ -15,18 +39,6 @@
       "last5": []
     },
     {
-      "club": "AS Monaco",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
-      "p": 2,
-      "w": 2,
-      "d": 0,
-      "l": 0,
-      "gf": 3,
-      "ga": 0,
-      "pts": 6,
-      "last5": []
-    },
-    {
       "club": "Paris FC",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
       "p": 2,
@@ -35,18 +47,6 @@
       "l": 0,
       "gf": 3,
       "ga": 0,
-      "pts": 4,
-      "last5": []
-    },
-    {
-      "club": "Lyon",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
-      "p": 2,
-      "w": 1,
-      "d": 1,
-      "l": 0,
-      "gf": 3,
-      "ga": 1,
       "pts": 4,
       "last5": []
     },
@@ -137,12 +137,12 @@
     {
       "club": "Paris Saint-Germain",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-      "p": 2,
+      "p": 3,
       "w": 0,
       "d": 2,
-      "l": 0,
-      "gf": 4,
-      "ga": 4,
+      "l": 1,
+      "gf": 5,
+      "ga": 6,
       "pts": 2,
       "last5": []
     },
@@ -209,12 +209,12 @@
     {
       "club": "AJ Auxerre",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
-      "p": 2,
+      "p": 3,
       "w": 0,
       "d": 0,
-      "l": 2,
-      "gf": 3,
-      "ga": 8,
+      "l": 3,
+      "gf": 4,
+      "ga": 11,
       "pts": 0,
       "last5": []
     }
