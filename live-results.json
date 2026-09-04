@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-04T19:54:24Z",
+  "generatedAt": "2026-09-04T20:00:33Z",
   "events": [
     {
       "eventId": 210448,
@@ -209,7 +209,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-04T19:54:24Z",
+      "updatedAt": "2026-09-04T20:00:33Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-04T19:54:24Z",
+      "updatedAt": "2026-09-04T20:00:33Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,7 +252,7 @@
       "live": true,
       "completed": false,
       "period": "halftime",
-      "updatedAt": "2026-09-04T19:54:24Z",
+      "updatedAt": "2026-09-04T20:00:33Z",
       "minute": 45,
       "homeScore": 1,
       "awayScore": 0,
@@ -272,7 +272,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:54:24Z"
+      "updatedAt": "2026-09-04T20:00:33Z"
     },
     {
       "eventId": 210456,
@@ -284,7 +284,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:54:24Z"
+      "updatedAt": "2026-09-04T20:00:33Z"
     },
     {
       "eventId": 210457,
@@ -296,7 +296,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:54:24Z"
+      "updatedAt": "2026-09-04T20:00:33Z"
     },
     {
       "eventId": 210463,
@@ -308,7 +308,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:54:24Z"
+      "updatedAt": "2026-09-04T20:00:33Z"
     },
     {
       "eventId": 210455,
@@ -320,7 +320,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:54:24Z"
+      "updatedAt": "2026-09-04T20:00:33Z"
     },
     {
       "eventId": 210459,
@@ -332,7 +332,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-04T19:54:24Z"
+      "updatedAt": "2026-09-04T20:00:33Z"
     }
   ]
 }
