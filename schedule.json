@@ -355,7 +355,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-09-05T19:20:25Z"
+          "lastLiveUpdate": "2026-09-05T19:30:27Z"
         }
       ],
       [
@@ -370,8 +370,8 @@
           "eventId": 210456,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-05T19:20:25Z",
-          "minute": 34,
+          "lastLiveUpdate": "2026-09-05T19:30:27Z",
+          "minute": 44,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 1,
@@ -393,7 +393,7 @@
           "eventId": 210461,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T19:20:25Z",
+          "lastLiveUpdate": "2026-09-05T19:30:27Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -415,7 +415,7 @@
           "eventId": 210458,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T19:20:25Z",
+          "lastLiveUpdate": "2026-09-05T19:30:27Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
@@ -440,7 +440,7 @@
           "eventId": 210459,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T19:20:25Z"
+          "lastLiveUpdate": "2026-09-05T19:30:27Z"
         }
       ],
       [
@@ -455,12 +455,13 @@
           "eventId": 210457,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-05T19:20:25Z",
-          "minute": 35,
+          "lastLiveUpdate": "2026-09-05T19:30:27Z",
+          "minute": 45,
           "period": "1st_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 1,
           "actualScorers": [
+            "E. Wahi",
             "A. Bourabaa"
           ],
           "scorersVerified": true
@@ -478,7 +479,7 @@
           "eventId": 210460,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T19:20:25Z",
+          "lastLiveUpdate": "2026-09-05T19:30:27Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -502,7 +503,7 @@
           "eventId": 210462,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T19:20:25Z",
+          "lastLiveUpdate": "2026-09-05T19:30:27Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -524,7 +525,7 @@
           "eventId": 210463,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T19:20:25Z"
+          "lastLiveUpdate": "2026-09-05T19:30:27Z"
         }
       ]
     ]
