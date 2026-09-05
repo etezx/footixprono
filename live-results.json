@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-05T19:30:27Z",
+  "generatedAt": "2026-09-05T19:40:23Z",
   "events": [
     {
       "eventId": 210448,
@@ -209,7 +209,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T19:30:27Z",
+      "updatedAt": "2026-09-05T19:40:23Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T19:30:27Z",
+      "updatedAt": "2026-09-05T19:40:23Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,7 +252,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T19:30:27Z",
+      "updatedAt": "2026-09-05T19:40:23Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -274,7 +274,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T19:30:27Z",
+      "updatedAt": "2026-09-05T19:40:23Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -293,9 +293,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-09-05T19:30:27Z",
-      "minute": 44,
+      "period": "halftime",
+      "updatedAt": "2026-09-05T19:40:23Z",
+      "minute": 45,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -313,8 +313,8 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-09-05T19:30:27Z",
+      "period": "halftime",
+      "updatedAt": "2026-09-05T19:40:23Z",
       "minute": 45,
       "homeScore": 1,
       "awayScore": 1,
@@ -335,7 +335,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T19:30:27Z"
+      "updatedAt": "2026-09-05T19:40:23Z"
     },
     {
       "eventId": 210455,
@@ -347,7 +347,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T19:30:27Z"
+      "updatedAt": "2026-09-05T19:40:23Z"
     },
     {
       "eventId": 210459,
@@ -359,7 +359,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T19:30:27Z"
+      "updatedAt": "2026-09-05T19:40:23Z"
     }
   ]
 }
