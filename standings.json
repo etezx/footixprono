@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T16:05:05.718763+00:00",
+  "updated_at": "2026-09-05T18:18:54.073613+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -75,15 +75,15 @@
       "last5": []
     },
     {
-      "club": "Lens",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
-      "p": 2,
+      "club": "Lorient",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+      "p": 3,
       "w": 1,
-      "d": 0,
+      "d": 1,
       "l": 1,
-      "gf": 6,
-      "ga": 4,
-      "pts": 3,
+      "gf": 2,
+      "ga": 2,
+      "pts": 4,
       "last5": []
     },
     {
@@ -95,6 +95,18 @@
       "l": 1,
       "gf": 4,
       "ga": 2,
+      "pts": 3,
+      "last5": []
+    },
+    {
+      "club": "Lens",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+      "p": 3,
+      "w": 1,
+      "d": 0,
+      "l": 2,
+      "gf": 6,
+      "ga": 5,
       "pts": 3,
       "last5": []
     },
@@ -155,18 +167,6 @@
       "l": 1,
       "gf": 4,
       "ga": 5,
-      "pts": 1,
-      "last5": []
-    },
-    {
-      "club": "Lorient",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
-      "p": 2,
-      "w": 0,
-      "d": 1,
-      "l": 1,
-      "gf": 1,
-      "ga": 2,
       "pts": 1,
       "last5": []
     },
