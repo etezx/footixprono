@@ -74,6 +74,23 @@
         },
         {
           "position": 4,
+          "club": "Stade Brestois",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 6,
+          "ga": 5,
+          "pts": 5,
+          "group": "",
+          "zone": {
+            "key": "clq",
+            "label": "Champions League Qualification",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 5,
           "club": "Paris FC",
           "p": 2,
           "w": 1,
@@ -84,13 +101,13 @@
           "pts": 4,
           "group": "",
           "zone": {
-            "key": "clq",
-            "label": "Champions League Qualification",
+            "key": "el",
+            "label": "Europa League",
             "type": "qualification"
           }
         },
         {
-          "position": 5,
+          "position": 6,
           "club": "Stade Rennais",
           "p": 2,
           "w": 1,
@@ -101,13 +118,13 @@
           "pts": 4,
           "group": "",
           "zone": {
-            "key": "el",
-            "label": "Europa League",
+            "key": "uecl",
+            "label": "Conference League Qualification",
             "type": "qualification"
           }
         },
         {
-          "position": 6,
+          "position": 7,
           "club": "Troyes",
           "p": 2,
           "w": 1,
@@ -117,14 +134,10 @@
           "ga": 1,
           "pts": 4,
           "group": "",
-          "zone": {
-            "key": "uecl",
-            "label": "Conference League Qualification",
-            "type": "qualification"
-          }
+          "zone": null
         },
         {
-          "position": 7,
+          "position": 8,
           "club": "Lorient",
           "p": 3,
           "w": 1,
@@ -137,7 +150,7 @@
           "zone": null
         },
         {
-          "position": 8,
+          "position": 9,
           "club": "Olympique de Marseille",
           "p": 2,
           "w": 1,
@@ -150,7 +163,7 @@
           "zone": null
         },
         {
-          "position": 9,
+          "position": 10,
           "club": "RC Lens",
           "p": 3,
           "w": 1,
@@ -163,7 +176,7 @@
           "zone": null
         },
         {
-          "position": 10,
+          "position": 11,
           "club": "Angers",
           "p": 2,
           "w": 1,
@@ -176,7 +189,7 @@
           "zone": null
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "RC Strasbourg",
           "p": 2,
           "w": 1,
@@ -189,21 +202,8 @@
           "zone": null
         },
         {
-          "position": 12,
-          "club": "Stade Brestois",
-          "p": 2,
-          "w": 0,
-          "d": 2,
-          "l": 0,
-          "gf": 4,
-          "ga": 4,
-          "pts": 2,
-          "group": "",
-          "zone": null
-        },
-        {
           "position": 13,
-          "club": "Paris Saint-Germain",
+          "club": "Le Mans",
           "p": 3,
           "w": 0,
           "d": 2,
@@ -216,39 +216,39 @@
         },
         {
           "position": 14,
-          "club": "Le Mans",
-          "p": 2,
+          "club": "Paris Saint-Germain",
+          "p": 3,
           "w": 0,
-          "d": 1,
+          "d": 2,
           "l": 1,
-          "gf": 4,
-          "ga": 5,
-          "pts": 1,
+          "gf": 5,
+          "ga": 6,
+          "pts": 2,
           "group": "",
           "zone": null
         },
         {
           "position": 15,
-          "club": "Le Havre",
-          "p": 2,
+          "club": "Nice",
+          "p": 3,
           "w": 0,
-          "d": 1,
+          "d": 2,
           "l": 1,
           "gf": 1,
-          "ga": 2,
-          "pts": 1,
+          "ga": 4,
+          "pts": 2,
           "group": "",
           "zone": null
         },
         {
           "position": 16,
-          "club": "Toulouse",
+          "club": "Le Havre",
           "p": 3,
           "w": 0,
           "d": 1,
           "l": 2,
           "gf": 2,
-          "ga": 5,
+          "ga": 4,
           "pts": 1,
           "group": "",
           "zone": {
@@ -259,13 +259,13 @@
         },
         {
           "position": 17,
-          "club": "Nice",
-          "p": 2,
+          "club": "Toulouse",
+          "p": 3,
           "w": 0,
           "d": 1,
-          "l": 1,
-          "gf": 0,
-          "ga": 3,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
           "pts": 1,
           "group": "",
           "zone": {
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-05T20:40:24Z",
+  "generatedAt": "2026-09-05T20:50:24Z",
   "source": "BSD"
 }

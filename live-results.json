@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-05T20:40:24Z",
+  "generatedAt": "2026-09-05T20:50:24Z",
   "events": [
     {
       "eventId": 210448,
@@ -209,7 +209,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:40:24Z",
+      "updatedAt": "2026-09-05T20:50:24Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:40:24Z",
+      "updatedAt": "2026-09-05T20:50:24Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,7 +252,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:40:24Z",
+      "updatedAt": "2026-09-05T20:50:24Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -274,7 +274,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:40:24Z",
+      "updatedAt": "2026-09-05T20:50:24Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -285,37 +285,16 @@
       "goalIncidents": 1
     },
     {
-      "eventId": 210456,
-      "leagueId": 6,
-      "home": "Le Havre",
-      "away": "Stade Brestois",
-      "kickoff": "2026-09-05T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-09-05T20:40:24Z",
-      "minute": 96,
-      "homeScore": 1,
-      "awayScore": 2,
-      "actualScorers": [
-        "R. Fofana",
-        "K. Doumbia"
-      ],
-      "scorersVerified": true,
-      "goalIncidents": 3
-    },
-    {
       "eventId": 210457,
       "leagueId": 6,
       "home": "Nice",
       "away": "Le Mans",
-      "kickoff": "2026-09-05T18:45:00Z",
+      "kickoff": "2026-09-05T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:40:24Z",
+      "updatedAt": "2026-09-05T20:50:24Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -327,6 +306,27 @@
       "goalIncidents": 2
     },
     {
+      "eventId": 210456,
+      "leagueId": 6,
+      "home": "Le Havre",
+      "away": "Stade Brestois",
+      "kickoff": "2026-09-05T18:45:00Z",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-05T20:50:24Z",
+      "minute": null,
+      "homeScore": 1,
+      "awayScore": 2,
+      "actualScorers": [
+        "R. Fofana",
+        "K. Doumbia"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 3
+    },
+    {
       "eventId": 210463,
       "leagueId": 6,
       "home": "Troyes",
@@ -336,7 +336,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T20:40:24Z"
+      "updatedAt": "2026-09-05T20:50:24Z"
     },
     {
       "eventId": 210455,
@@ -348,7 +348,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T20:40:24Z"
+      "updatedAt": "2026-09-05T20:50:24Z"
     },
     {
       "eventId": 210459,
@@ -360,7 +360,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T20:40:24Z"
+      "updatedAt": "2026-09-05T20:50:24Z"
     }
   ]
 }
