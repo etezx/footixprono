@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T09:54:13.882961+00:00",
+  "updated_at": "2026-09-05T09:17:04.142232+00:00",
   "source": "ESPN rosters + ajouts manuels Footix Prono",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -110,6 +110,7 @@
       "Loun Srdanovic",
       "Matias Fernandez-Pardo",
       "Maurits Kjaergaard",
+      "Maxima Goffi",
       "Mohamed Bayo",
       "Nabil Bentaleb",
       "Nathan Ngoy",
@@ -218,6 +219,7 @@
       "Axel Camblan",
       "Bradley Locko",
       "Brendan Chardonnet",
+      "Djylian N'Guessan",
       "Evan Mailly",
       "Gautier Lloris",
       "Giovani Versini",
@@ -413,6 +415,7 @@
       "Elias Legendre",
       "Eliezer Mayenda",
       "Esteban Lepaul",
+      "Firmin Thétiot",
       "Gonçalo Oliveira",
       "Henrick Do Marcolino",
       "Issa Soumaré",
@@ -546,5 +549,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 456
+  "players_fetched": 455
 }
