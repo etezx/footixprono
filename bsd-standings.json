@@ -125,14 +125,14 @@
         },
         {
           "position": 7,
-          "club": "RC Lens",
-          "p": 2,
+          "club": "Lorient",
+          "p": 3,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 1,
-          "gf": 6,
-          "ga": 4,
-          "pts": 3,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4,
           "group": "",
           "zone": null
         },
@@ -151,6 +151,19 @@
         },
         {
           "position": 9,
+          "club": "RC Lens",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 6,
+          "ga": 5,
+          "pts": 3,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 10,
           "club": "Angers",
           "p": 2,
           "w": 1,
@@ -163,7 +176,7 @@
           "zone": null
         },
         {
-          "position": 10,
+          "position": 11,
           "club": "RC Strasbourg",
           "p": 2,
           "w": 1,
@@ -176,7 +189,7 @@
           "zone": null
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "Stade Brestois",
           "p": 2,
           "w": 0,
@@ -189,7 +202,7 @@
           "zone": null
         },
         {
-          "position": 12,
+          "position": 13,
           "club": "Paris Saint-Germain",
           "p": 3,
           "w": 0,
@@ -202,7 +215,7 @@
           "zone": null
         },
         {
-          "position": 13,
+          "position": 14,
           "club": "Le Mans",
           "p": 2,
           "w": 0,
@@ -215,21 +228,8 @@
           "zone": null
         },
         {
-          "position": 14,
-          "club": "Le Havre",
-          "p": 2,
-          "w": 0,
-          "d": 1,
-          "l": 1,
-          "gf": 1,
-          "ga": 2,
-          "pts": 1,
-          "group": "",
-          "zone": null
-        },
-        {
           "position": 15,
-          "club": "Lorient",
+          "club": "Le Havre",
           "p": 2,
           "w": 0,
           "d": 1,
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-05T17:10:25Z",
+  "generatedAt": "2026-09-05T18:00:25Z",
   "source": "BSD"
 }
