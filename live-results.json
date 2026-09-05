@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-05T20:30:26Z",
+  "generatedAt": "2026-09-05T20:40:24Z",
   "events": [
     {
       "eventId": 210448,
@@ -209,7 +209,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:30:26Z",
+      "updatedAt": "2026-09-05T20:40:24Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:30:26Z",
+      "updatedAt": "2026-09-05T20:40:24Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,7 +252,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:30:26Z",
+      "updatedAt": "2026-09-05T20:40:24Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -274,7 +274,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:30:26Z",
+      "updatedAt": "2026-09-05T20:40:24Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -294,8 +294,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-05T20:30:26Z",
-      "minute": 86,
+      "updatedAt": "2026-09-05T20:40:24Z",
+      "minute": 96,
       "homeScore": 1,
       "awayScore": 2,
       "actualScorers": [
@@ -311,12 +311,12 @@
       "home": "Nice",
       "away": "Le Mans",
       "kickoff": "2026-09-05T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-09-05T20:30:26Z",
-      "minute": 87,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-05T20:40:24Z",
+      "minute": null,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -336,7 +336,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T20:30:26Z"
+      "updatedAt": "2026-09-05T20:40:24Z"
     },
     {
       "eventId": 210455,
@@ -348,7 +348,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T20:30:26Z"
+      "updatedAt": "2026-09-05T20:40:24Z"
     },
     {
       "eventId": 210459,
@@ -360,7 +360,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T20:30:26Z"
+      "updatedAt": "2026-09-05T20:40:24Z"
     }
   ]
 }
