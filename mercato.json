@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T04:53:30.358230+00:00",
+  "updated_at": "2026-09-05T10:53:04.565323+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -27,12 +27,6 @@
       "source": "RMC Sport"
     },
     {
-      "title": "Mercato Ligue 1 : Leverkusen passe à l’action pour le Strasbourgeois Guéla Doué - Le Parisien",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNMWZ3eDBvejNTa1RFbjNIQ3p3WEV0WXFmOFRBb05vd0NoREhtLThpbmFOUWpjUEhaWFNnSC1fV0Uxd1oxRVBjam96N3FucGU5Q0dScGphZW1tR1dOakFqdnBMSlk0Nm1Fci1lUGYzYXdsNmZHSE1ERXdsWXVMdWJGampYX3VadUVHc2Z3aDBweVBUUTd0OVRKbDB1b2luX1JYMU9GdncwaFAzVDNKLXBnY3VSSlI5c0lWa0dwYzNxZ0tkcXpKUVhwNURvcHdfZjVQbWhMMnBFdUhSRkdXN25DaDdZVnlKTW43VU5ERmJYdGo0TE9GdGVJdE9wdEE?oc=5",
-      "published": "2026-08-29T06:23:21+00:00",
-      "source": "Le Parisien"
-    },
-    {
       "title": "Ligue 1. Mercato estival terminé à Angers Sco : Yassin Belkhdim et Lilian Raolisoa sont restés - Ouest-France",
       "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNc3BrZzJ4NEFlckRub2FSNjZSbjZrY1ZMUnoyNlhyNkxpc05pMlZvMnp5WHNZTTV6ZmpXckdSdGRpY0R3VzFLLTRRNjhCdGljd3FpcGJOYjV3bGVKUkFYc2RxbGFHa2VrUWNCY0pGYUZBM0FjN0JtRzVfWU9KWE9qRHhITkZyaHViNEFZUlZHWHdRMFJ3S3NuNUZXWGlwelVxN1hReDhCZFIwUkpNdm41Mlp1MjFQYVNhX3RaX0RnLWs4bGNSdXh5VnVCdkZTOXZHcmw3N0wzVmFHT1NzNFRzNFVTbzdDd1g1bkxqTkxpTDJsTEdTcENwdFhNMUZVdmVFT0k5Z0txMUxkczNBNno0?oc=5",
       "published": "2026-09-01T18:01:03+00:00",
@@ -45,10 +39,10 @@
       "source": "Sports.fr"
     },
     {
-      "title": "Mercato | Et malgré tout ça, l'OM est encore loin du compte - eurosport.fr",
+      "title": "Mercato | Et malgré tout ça, l'OM est encore loin du compte - Eurosport",
       "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNFdMeXdYVjl0ZjBjWWN2MHNDNjFwWHctUGt1anNqMVlGOEsxeWxOb0FsbVRtMGJjZkdTYUJyR2dVV2hXbmJqRWQ5Z0FQTHJtNGlaekFEU1ZZYVR3OTlXSE5HSWFuM3pCejAtNVBabXJUczltUDdBMzhkVWJtNHFfUmRGdEZTenNEMEVIWTFqMXVicjRNVXUxYUdrd2FMaEc0REg2NUppMmg1ekYydUkzYUpYQTl4bVpINWFmNm5JbjlTTS0zbk9yMEd1UQ?oc=5",
       "published": "2026-09-03T13:10:00+00:00",
-      "source": "eurosport.fr"
+      "source": "Eurosport"
     },
     {
       "title": "Ligue 1 : le chiffre impressionnant des ventes sur le mercato d’été - Foot Mercato",
@@ -57,10 +51,10 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Ligue 1: après le mercato, Lyon doit repenser son jeu - lefigaro.fr",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTUlvNmdKUHFlMHItNVlaQk0tWHVtbDM0OFIzN3FLOE1lWUIyZ2ZnSURPTE9Fb3JtRWhMTW5DU21uQS1oZFJCQnppYzNLSThXbUFHWV9SbU5ZTl9JTUwzUmo2UmZ5UzRGZzJ0ZGF0My03ZXhvQXdEOE5XRWIzM2t0dEtPSzdSS3lQQ0hucXBROEk2V2MxbW1rVTdVcmVlMjRKeUUxNjFkRVZKTHlP?oc=5",
-      "published": "2026-09-04T09:42:05+00:00",
-      "source": "lefigaro.fr"
+      "title": "Pourquoi la Ligue 1 est condamnée à vendre toujours plus - Le Figaro",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMnpNaTNrNUNLMHRUZmJRTkRQbUtzd0V3QThjeHd2eUtFdnFHZlhlVzVtZjZZVGlIclVmdGdEQ3NleHlXbk9CbXNJbElMUVRhXzdLc3RpOWdBdmZ4ZFpqNGVfRjhwQllWdV9LcHBRUUtoNEtXUW1nc3hqN3NCY2hxaDBhZHNtYVNPNTlvZGpnZGJ4TWpuaWNST3U2R082UTdKWW9nWVFWdGI3dFNYX1V0UnhYS3hHclE?oc=5",
+      "published": "2026-09-04T13:54:06+00:00",
+      "source": "Le Figaro"
     },
     {
       "title": "Comment fonctionnent les jokers, qui permettent aux clubs de Ligue 1 de recruter après la période de mercato ? - L'Équipe",
@@ -73,6 +67,12 @@
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdFlqcGttQVM5QVI5MEVEOUJydzdRNDU4TFlOcmk3ZXNzMlo1M3pjSjFHM2Ffc1MwYnN3TjAzamo0NG9PZG1UZmY5WmJKMEdkWm5RT1E4NWVyWTVSX2lOck5mOE5FdWNKUXhYVTdNMC1sR1pxNElnYUQzZjdOSEItSVFQMnVYb1VrTnc1SU1lY1llZnQ5OS1lVWhES3RrVkttSk9PQkRySF9FbWFITTZNcERycENweTdFQXZUX2pJWk5hV2piOHJacU5NMTVCMEpjU0lVQlZraw?oc=5",
       "published": "2026-09-01T05:48:30+00:00",
       "source": "RMC Sport"
+    },
+    {
+      "title": "Ligue 1 - LOSC - Olivier Létang, le boss ultime du mercato - Eurosport",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNLWs0ejRKZ2hCaERQV2ZQLVp0dTUzT0hiNDRZTVFaTHNEWGtQSTJHRkd0cHUyZkZhOTVkbEx0TldpVE5sQmo0bXB3Tk5Lclk0aHNIb2J3alV6UE43SEdHbE5ha2RzbFpNeUZQNm0yTTJ4X1JSc01hbTZ2Qnhya1ZfN2tvNXF1c1REMFFseWR0QkZwU3kwMVNLaE9DRllOOXFvdVZHQjNBa0F0VXpmd2JJcGE0ZmRMdm81MDBCdEJseTNSV1JYRTZ0Zg?oc=5",
+      "published": "2026-09-02T21:50:00+00:00",
+      "source": "Eurosport"
     }
   ]
 }
