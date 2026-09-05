@@ -355,7 +355,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-09-05T18:52:33Z"
+          "lastLiveUpdate": "2026-09-05T19:00:24Z"
         }
       ],
       [
@@ -370,12 +370,14 @@
           "eventId": 210456,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-05T18:52:33Z",
-          "minute": 7,
+          "lastLiveUpdate": "2026-09-05T19:00:24Z",
+          "minute": 14,
           "period": "1st_half",
           "homeScore": 0,
-          "awayScore": 0,
-          "actualScorers": [],
+          "awayScore": 1,
+          "actualScorers": [
+            "K. Doumbia"
+          ],
           "scorersVerified": true
         }
       ],
@@ -391,7 +393,7 @@
           "eventId": 210461,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T18:52:33Z",
+          "lastLiveUpdate": "2026-09-05T19:00:24Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -413,7 +415,7 @@
           "eventId": 210458,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T18:52:33Z",
+          "lastLiveUpdate": "2026-09-05T19:00:24Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
@@ -438,7 +440,7 @@
           "eventId": 210459,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T18:52:33Z"
+          "lastLiveUpdate": "2026-09-05T19:00:24Z"
         }
       ],
       [
@@ -453,12 +455,14 @@
           "eventId": 210457,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-05T18:52:33Z",
-          "minute": 6,
+          "lastLiveUpdate": "2026-09-05T19:00:24Z",
+          "minute": 14,
           "period": "1st_half",
           "homeScore": 0,
-          "awayScore": 0,
-          "actualScorers": [],
+          "awayScore": 1,
+          "actualScorers": [
+            "A. Bourabaa"
+          ],
           "scorersVerified": true
         }
       ],
@@ -474,7 +478,7 @@
           "eventId": 210460,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T18:52:33Z",
+          "lastLiveUpdate": "2026-09-05T19:00:24Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -498,7 +502,7 @@
           "eventId": 210462,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T18:52:33Z",
+          "lastLiveUpdate": "2026-09-05T19:00:24Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -520,7 +524,7 @@
           "eventId": 210463,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T18:52:33Z"
+          "lastLiveUpdate": "2026-09-05T19:00:24Z"
         }
       ]
     ]
