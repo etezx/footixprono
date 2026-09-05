@@ -440,13 +440,19 @@ function deriveStandingsFromSchedule(schedule){
 }
 function safeLigue1Standings(standing,schedule,bsdStandings){
   const bsdTeams=competitionStandings(bsdStandings,6);
-  if(bsdTeams.length) return bsdTeams;
   const apiTeams=Array.isArray(standing?.teams)?standing.teams:[];
-  const apiPlayed=apiTeams.reduce((sum,t)=>sum+(Number(t.p)||0),0);
   const derived=deriveStandingsFromSchedule(schedule);
+
+  const bsdPlayed=bsdTeams.reduce((sum,t)=>sum+(Number(t.p)||0),0);
+  const apiPlayed=apiTeams.reduce((sum,t)=>sum+(Number(t.p)||0),0);
   const derivedPlayed=derived.reduce((sum,t)=>sum+(Number(t.p)||0),0);
-  if(apiPlayed===0 && derivedPlayed>0) return derived;
-  return apiTeams.length ? apiTeams : derived;
+
+  // On conserve BSD lorsqu'il est au moins aussi à jour que les autres sources.
+  // Si standings.json ou le calendrier contient davantage de matchs joués,
+  // on utilise automatiquement la source la plus récente.
+  if(bsdTeams.length && bsdPlayed>=apiPlayed && bsdPlayed>=derivedPlayed) return bsdTeams;
+  if(apiTeams.length && apiPlayed>=derivedPlayed) return apiTeams;
+  return derived;
 }
 
 async function initLigue1(){
