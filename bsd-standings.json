@@ -23,6 +23,23 @@
       "teams": [
         {
           "position": 1,
+          "club": "AS Monaco",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 9,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 2,
           "club": "Olympique Lyonnais",
           "p": 3,
           "w": 2,
@@ -39,7 +56,7 @@
           }
         },
         {
-          "position": 2,
+          "position": 3,
           "club": "Lille",
           "p": 3,
           "w": 2,
@@ -48,23 +65,6 @@
           "gf": 5,
           "ga": 2,
           "pts": 7,
-          "group": "",
-          "zone": {
-            "key": "cl",
-            "label": "Champions League",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 3,
-          "club": "AS Monaco",
-          "p": 2,
-          "w": 2,
-          "d": 0,
-          "l": 0,
-          "gf": 3,
-          "ga": 0,
-          "pts": 6,
           "group": "",
           "zone": {
             "key": "cl",
@@ -177,7 +177,7 @@
         },
         {
           "position": 11,
-          "club": "Paris Saint-Germain",
+          "club": "Stade Brestois",
           "p": 2,
           "w": 0,
           "d": 2,
@@ -190,13 +190,13 @@
         },
         {
           "position": 12,
-          "club": "Stade Brestois",
-          "p": 2,
+          "club": "Paris Saint-Germain",
+          "p": 3,
           "w": 0,
           "d": 2,
-          "l": 0,
-          "gf": 4,
-          "ga": 4,
+          "l": 1,
+          "gf": 5,
+          "ga": 6,
           "pts": 2,
           "group": "",
           "zone": null
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-04T21:05:44Z",
+  "generatedAt": "2026-09-05T14:30:23Z",
   "source": "BSD"
 }
