@@ -20,6 +20,8 @@ from datetime import datetime, timezone
 
 BSD_BASE = "https://sports.bzzoiro.com/api/v2"
 SUPABASE_URL = os.getenv("SUPABASE_URL", "https://brjwujgtkyxzyytkwftw.supabase.co").rstrip("/")
+ROOT = Path(__file__).resolve().parent
+
 BSD_API_KEY = os.getenv("BSD_API_KEY", "").strip()
 SUPABASE_SERVICE_ROLE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "").strip()
 
@@ -278,6 +280,41 @@ def event_id(event):
     v=first(event,"id","event_id","eventId","fixture_id","match_id")
     return str(v) if v is not None else None
 
+def local_schedule_kickoffs():
+    """Retourne les horaires connus localement, indexés par ID d'événement BSD.
+
+    Sert de secours lorsqu'un événement BSD est présent mais ne contient pas
+    encore son heure de coup d'envoi. schedule.json reste la seule source de
+    secours et ne remplace jamais une heure fournie directement par BSD.
+    """
+    path=ROOT / "schedule.json"
+    if not path.exists():
+        return {}
+    try:
+        schedule=json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+    paris=ZoneInfo("Europe/Paris")
+    out={}
+    for day in schedule if isinstance(schedule,list) else []:
+        for match in day.get("matches",[]) or []:
+            if not isinstance(match,list) or len(match)<3 or not isinstance(match[2],dict):
+                continue
+            fixture=match[2]
+            eid=fixture.get("eventId")
+            date_value=fixture.get("date")
+            time_value=fixture.get("time")
+            if eid is None or not date_value or not time_value:
+                continue
+            try:
+                dt=datetime.fromisoformat(f"{date_value}T{time_value}:00").replace(tzinfo=paris)
+                out[str(eid)]=dt.astimezone(timezone.utc).isoformat()
+            except (TypeError,ValueError):
+                continue
+    return out
+
+
 def diagnostic(event):
     """Return a compact, secret-free look at one BSD event shape."""
     if not isinstance(event,dict):
@@ -291,11 +328,15 @@ def diagnostic(event):
             out[key]=str(value)[:100]
     return out
 
-def normalize(event, competition):
+def normalize(event, competition, schedule_kickoffs=None):
     ext=event_id(event)
     home=team_name(event,"home")
     away=team_name(event,"away")
     kickoff=kickoff_value(event)
+    if not kickoff and schedule_kickoffs and ext:
+        kickoff=schedule_kickoffs.get(str(ext))
+        if kickoff:
+            print(f"[INFO] Horaire de secours schedule.json utilisé pour BSD {ext}: {kickoff}")
     if not ext or not home or not away or not kickoff:
         return None
 
@@ -345,6 +386,7 @@ def main():
 
     supabase_cleanup_ucl_qualifiers()
 
+    schedule_kickoffs=local_schedule_kickoffs()
     total=0
     for league_id,competition in LEAGUES.items():
         events=fetch_all_events(league_id)
@@ -356,7 +398,7 @@ def main():
             if not keep_for_community(e, competition):
                 excluded_qualifiers += 1
                 continue
-            row=normalize(e,competition)
+            row=normalize(e,competition,schedule_kickoffs)
             if row:
                 rows.append(row)
             else:

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Met à jour players.json avec les effectifs Ligue 1 depuis ESPN.
 
-V8.4.6 : récupération plus robuste des effectifs.
+V8.5 : listes de buteurs adaptées au mercato.
 - accepte plusieurs structures de réponse ESPN pour les rosters ;
-- conserve les joueurs ajoutés manuellement ;
-- exclut uniquement les gardiens ;
+- conserve uniquement les milieux et attaquants ;
+- remplace l'effectif d'un club quand ESPN fournit une liste exploitable, afin
+  de retirer automatiquement les joueurs partis au mercato ;
 - refuse d'écraser players.json si ESPN renvoie un résultat manifestement incomplet.
 """
 from __future__ import annotations
@@ -43,6 +44,11 @@ ALIASES = {
 }
 
 GOALKEEPER_CODES = {"G", "GK", "GKP", "GOALKEEPER", "GARDIEN"}
+ATTACKING_POSITION_CODES = {
+    "F", "FW", "FWD", "FORWARD", "FORWARDS", "ATTAQUANT", "ATTAQUANTS",
+    "M", "MF", "MID", "MIDFIELDER", "MIDFIELDERS", "MILIEU", "MILIEUX",
+    "AM", "CAM", "LM", "RM", "LW", "RW", "SS", "ST", "CF",
+}
 
 
 def norm(s):
@@ -108,6 +114,19 @@ def is_goalkeeper(code):
     return n in GOALKEEPER_CODES or "GOALKEEPER" in n or "GARDIEN" in n
 
 
+def is_attacking_position(code):
+    """Garde les profils utiles au sélecteur de buteurs : milieux + attaquants."""
+    n=norm(code).upper().replace(" ","")
+    if not n or is_goalkeeper(code):
+        return False
+    if n in ATTACKING_POSITION_CODES:
+        return True
+    return any(token in n for token in (
+        "FORWARD", "ATTAQUANT", "STRIKER", "WINGER", "AILE",
+        "MIDFIELD", "MILIEU", "ATTACKINGMID",
+    ))
+
+
 def athlete_name(obj):
     if not isinstance(obj,dict):
         return ""
@@ -125,7 +144,7 @@ def extract_players(data):
 
     def add(name, pos=""):
         name=str(name or "").strip()
-        if not name or is_goalkeeper(pos):
+        if not name or not is_attacking_position(pos):
             return
         k=norm(name)
         if k and k not in seen:
@@ -205,15 +224,21 @@ def main():
             diagnostics.append(f"{project}: erreur")
             continue
 
-        staged[project]=merge_names(staged.get(project,[]),names)
+        # Un club doit fournir assez de profils offensifs pour être considéré fiable.
+        # Sinon on conserve sa liste précédente plutôt que de l'effacer.
+        if len(names) < 5:
+            diagnostics.append(f"{project}: seulement {len(names)} profils offensifs, ancienne liste conservée")
+            continue
+
+        staged[project]=sorted(names,key=norm)
         updated += 1
         fetched_total += len(names)
-        diagnostics.append(f"{project}: {len(names)} joueurs ESPN / {len(staged[project])} total")
+        diagnostics.append(f"{project}: {len(names)} milieux/attaquants ESPN, liste remplacée")
         time.sleep(.12)
 
     # Protection contre une réponse ESPN vide/partielle qui effacerait ou validerait
     # à tort un fichier incomplet. Un effectif complet de L1 doit largement dépasser ça.
-    if updated < 10 or fetched_total < 80:
+    if updated < 10 or fetched_total < 70:
         print("\n".join("[INFO] "+x for x in diagnostics))
         raise RuntimeError(
             f"Récupération incomplète ({updated} clubs, {fetched_total} joueurs ESPN). "
@@ -222,7 +247,7 @@ def main():
 
     current["clubs"]=staged
     current["updated_at"]=datetime.now(timezone.utc).isoformat()
-    current["source"]="ESPN rosters + ajouts manuels Footix Prono"
+    current["source"]="ESPN rosters · milieux et attaquants"
     current["clubs_updated"]=updated
     current["players_fetched"]=fetched_total
     OUTPUT.write_text(json.dumps(current,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
