@@ -57,12 +57,12 @@
         },
         {
           "position": 3,
-          "club": "Lille",
+          "club": "Paris FC",
           "p": 3,
           "w": 2,
           "d": 1,
           "l": 0,
-          "gf": 5,
+          "gf": 6,
           "ga": 2,
           "pts": 7,
           "group": "",
@@ -74,13 +74,13 @@
         },
         {
           "position": 4,
-          "club": "Stade Rennais",
+          "club": "Lille",
           "p": 3,
           "w": 2,
           "d": 1,
           "l": 0,
-          "gf": 7,
-          "ga": 5,
+          "gf": 5,
+          "ga": 2,
           "pts": 7,
           "group": "",
           "zone": {
@@ -91,6 +91,23 @@
         },
         {
           "position": 5,
+          "club": "Stade Rennais",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 5,
+          "pts": 7,
+          "group": "",
+          "zone": {
+            "key": "el",
+            "label": "Europa League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 6,
           "club": "RC Strasbourg",
           "p": 3,
           "w": 2,
@@ -101,13 +118,13 @@
           "pts": 6,
           "group": "",
           "zone": {
-            "key": "el",
-            "label": "Europa League",
+            "key": "uecl",
+            "label": "Conference League Qualification",
             "type": "qualification"
           }
         },
         {
-          "position": 6,
+          "position": 7,
           "club": "Stade Brestois",
           "p": 3,
           "w": 1,
@@ -116,23 +133,6 @@
           "gf": 6,
           "ga": 5,
           "pts": 5,
-          "group": "",
-          "zone": {
-            "key": "uecl",
-            "label": "Conference League Qualification",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 7,
-          "club": "Paris FC",
-          "p": 2,
-          "w": 1,
-          "d": 1,
-          "l": 0,
-          "gf": 3,
-          "ga": 0,
-          "pts": 4,
           "group": "",
           "zone": null
         },
@@ -165,12 +165,12 @@
         {
           "position": 10,
           "club": "Olympique de Marseille",
-          "p": 2,
+          "p": 3,
           "w": 1,
           "d": 0,
-          "l": 1,
-          "gf": 4,
-          "ga": 2,
+          "l": 2,
+          "gf": 6,
+          "ga": 5,
           "pts": 3,
           "group": "",
           "zone": null
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-06T20:30:26Z",
+  "generatedAt": "2026-09-06T20:40:25Z",
   "source": "BSD"
 }
