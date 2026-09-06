@@ -355,7 +355,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-09-06T12:30:31Z",
+          "lastLiveUpdate": "2026-09-06T12:40:26Z",
           "date": "2026-09-06",
           "time": "17:15",
           "official": true,
@@ -374,7 +374,7 @@
           "eventId": 210456,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-06T12:30:31Z",
+          "lastLiveUpdate": "2026-09-06T12:40:26Z",
           "homeScore": 1,
           "awayScore": 2,
           "period": "FT",
@@ -397,7 +397,7 @@
           "eventId": 210461,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-06T12:30:31Z",
+          "lastLiveUpdate": "2026-09-06T12:40:26Z",
           "homeScore": 0,
           "awayScore": 1,
           "period": "FT",
@@ -419,7 +419,7 @@
           "eventId": 210458,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-06T12:30:31Z",
+          "lastLiveUpdate": "2026-09-06T12:40:26Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
@@ -444,7 +444,7 @@
           "eventId": 210459,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-06T12:30:31Z"
+          "lastLiveUpdate": "2026-09-06T12:40:26Z"
         }
       ],
       [
@@ -459,7 +459,7 @@
           "eventId": 210457,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-06T12:30:31Z",
+          "lastLiveUpdate": "2026-09-06T12:40:26Z",
           "homeScore": 1,
           "awayScore": 1,
           "period": "FT",
@@ -482,7 +482,7 @@
           "eventId": 210460,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-06T12:30:31Z",
+          "lastLiveUpdate": "2026-09-06T12:40:26Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -528,7 +528,7 @@
           "eventId": 210463,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-06T12:30:31Z"
+          "lastLiveUpdate": "2026-09-06T12:40:26Z"
         }
       ]
     ]
