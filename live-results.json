@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-06T13:00:37Z",
+  "generatedAt": "2026-09-06T13:10:25Z",
   "events": [
     {
       "eventId": 210448,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T13:00:37Z",
+      "updatedAt": "2026-09-06T13:10:25Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,7 +252,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T13:00:37Z",
+      "updatedAt": "2026-09-06T13:10:25Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -274,7 +274,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T13:00:37Z",
+      "updatedAt": "2026-09-06T13:10:25Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -294,7 +294,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T13:00:37Z",
+      "updatedAt": "2026-09-06T13:10:25Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -315,7 +315,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T13:00:37Z",
+      "updatedAt": "2026-09-06T13:10:25Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -331,12 +331,20 @@
       "leagueId": 6,
       "home": "Troyes",
       "away": "RC Strasbourg",
-      "kickoff": "2026-09-06T13:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-09-06T13:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-06T13:00:37Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-06T13:10:25Z",
+      "minute": 9,
+      "homeScore": 1,
+      "awayScore": 0,
+      "actualScorers": [
+        "A. Mille"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 1
     },
     {
       "eventId": 210455,
@@ -348,7 +356,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T13:00:37Z"
+      "updatedAt": "2026-09-06T13:10:25Z"
     },
     {
       "eventId": 210459,
@@ -360,7 +368,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T13:00:37Z"
+      "updatedAt": "2026-09-06T13:10:25Z"
     },
     {
       "eventId": 601076,
@@ -372,7 +380,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T13:00:37Z"
+      "updatedAt": "2026-09-06T13:10:25Z"
     },
     {
       "eventId": 601108,
@@ -384,7 +392,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T13:00:37Z"
+      "updatedAt": "2026-09-06T13:10:25Z"
     },
     {
       "eventId": 601024,
@@ -396,7 +404,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T13:00:37Z"
+      "updatedAt": "2026-09-06T13:10:25Z"
     },
     {
       "eventId": 601050,
@@ -408,7 +416,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T13:00:37Z"
+      "updatedAt": "2026-09-06T13:10:25Z"
     },
     {
       "eventId": 601071,
@@ -420,7 +428,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T13:00:37Z"
+      "updatedAt": "2026-09-06T13:10:25Z"
     },
     {
       "eventId": 601144,
@@ -432,7 +440,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T13:00:37Z"
+      "updatedAt": "2026-09-06T13:10:25Z"
     }
   ]
 }
