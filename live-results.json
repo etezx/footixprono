@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-06T14:50:34Z",
+  "generatedAt": "2026-09-06T15:00:34Z",
   "events": [
     {
       "eventId": 210448,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T14:50:34Z",
+      "updatedAt": "2026-09-06T15:00:34Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,7 +252,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T14:50:34Z",
+      "updatedAt": "2026-09-06T15:00:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -274,7 +274,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T14:50:34Z",
+      "updatedAt": "2026-09-06T15:00:34Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -294,7 +294,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T14:50:34Z",
+      "updatedAt": "2026-09-06T15:00:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -315,7 +315,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T14:50:34Z",
+      "updatedAt": "2026-09-06T15:00:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -332,15 +332,17 @@
       "home": "Troyes",
       "away": "RC Strasbourg",
       "kickoff": "2026-09-06T13:00:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-09-06T14:50:34Z",
-      "minute": 87,
-      "homeScore": 1,
-      "awayScore": 5,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-06T15:00:34Z",
+      "minute": null,
+      "homeScore": 2,
+      "awayScore": 6,
       "actualScorers": [
+        "J. Le Douaron",
+        "C. Harder",
         "S. Amo-Ameyaw",
         "G. Reyna",
         "D. Lobao",
@@ -348,7 +350,7 @@
         "A. Mille"
       ],
       "scorersVerified": true,
-      "goalIncidents": 6
+      "goalIncidents": 8
     },
     {
       "eventId": 210455,
@@ -360,7 +362,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T14:50:34Z"
+      "updatedAt": "2026-09-06T15:00:34Z"
     },
     {
       "eventId": 210459,
@@ -372,7 +374,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T14:50:34Z"
+      "updatedAt": "2026-09-06T15:00:34Z"
     },
     {
       "eventId": 601076,
@@ -384,7 +386,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T14:50:34Z"
+      "updatedAt": "2026-09-06T15:00:34Z"
     },
     {
       "eventId": 601108,
@@ -396,7 +398,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T14:50:34Z"
+      "updatedAt": "2026-09-06T15:00:34Z"
     },
     {
       "eventId": 601024,
@@ -408,7 +410,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T14:50:34Z"
+      "updatedAt": "2026-09-06T15:00:34Z"
     },
     {
       "eventId": 601050,
@@ -420,7 +422,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T14:50:34Z"
+      "updatedAt": "2026-09-06T15:00:34Z"
     },
     {
       "eventId": 601071,
@@ -432,7 +434,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T14:50:34Z"
+      "updatedAt": "2026-09-06T15:00:34Z"
     },
     {
       "eventId": 601144,
@@ -444,7 +446,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T14:50:34Z"
+      "updatedAt": "2026-09-06T15:00:34Z"
     }
   ]
 }
