@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-06T15:10:31Z",
+  "generatedAt": "2026-09-06T15:20:42Z",
   "events": [
     {
       "eventId": 210448,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:10:31Z",
+      "updatedAt": "2026-09-06T15:20:42Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,7 +252,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:10:31Z",
+      "updatedAt": "2026-09-06T15:20:42Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -274,7 +274,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:10:31Z",
+      "updatedAt": "2026-09-06T15:20:42Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -294,7 +294,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:10:31Z",
+      "updatedAt": "2026-09-06T15:20:42Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -315,7 +315,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:10:31Z",
+      "updatedAt": "2026-09-06T15:20:42Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -331,12 +331,12 @@
       "leagueId": 6,
       "home": "Troyes",
       "away": "RC Strasbourg",
-      "kickoff": "2026-09-06T13:00:00Z",
+      "kickoff": "2026-09-06T13:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:10:31Z",
+      "updatedAt": "2026-09-06T15:20:42Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 6,
@@ -358,11 +358,17 @@
       "home": "Angers",
       "away": "Stade Rennais",
       "kickoff": "2026-09-06T15:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-06T15:10:31Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-06T15:20:42Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210459,
@@ -374,7 +380,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:10:31Z"
+      "updatedAt": "2026-09-06T15:20:42Z"
     },
     {
       "eventId": 601076,
@@ -386,7 +392,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:10:31Z"
+      "updatedAt": "2026-09-06T15:20:42Z"
     },
     {
       "eventId": 601108,
@@ -398,7 +404,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:10:31Z"
+      "updatedAt": "2026-09-06T15:20:42Z"
     },
     {
       "eventId": 601024,
@@ -410,7 +416,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:10:31Z"
+      "updatedAt": "2026-09-06T15:20:42Z"
     },
     {
       "eventId": 601050,
@@ -422,7 +428,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:10:31Z"
+      "updatedAt": "2026-09-06T15:20:42Z"
     },
     {
       "eventId": 601071,
@@ -434,7 +440,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:10:31Z"
+      "updatedAt": "2026-09-06T15:20:42Z"
     },
     {
       "eventId": 601144,
@@ -446,7 +452,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:10:31Z"
+      "updatedAt": "2026-09-06T15:20:42Z"
     }
   ]
 }
