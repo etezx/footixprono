@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T10:56:30.119965+00:00",
+  "updated_at": "2026-09-06T17:03:06.016260+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -39,6 +39,18 @@
       "last5": []
     },
     {
+      "club": "Strasbourg",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
+      "p": 3,
+      "w": 2,
+      "d": 0,
+      "l": 1,
+      "gf": 8,
+      "ga": 7,
+      "pts": 6,
+      "last5": []
+    },
+    {
       "club": "Brest",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
       "p": 3,
@@ -75,18 +87,6 @@
       "last5": []
     },
     {
-      "club": "Troyes",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
-      "p": 2,
-      "w": 1,
-      "d": 1,
-      "l": 0,
-      "gf": 2,
-      "ga": 1,
-      "pts": 4,
-      "last5": []
-    },
-    {
       "club": "Lorient",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
       "p": 3,
@@ -95,6 +95,18 @@
       "l": 1,
       "gf": 2,
       "ga": 2,
+      "pts": 4,
+      "last5": []
+    },
+    {
+      "club": "Troyes",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
+      "p": 3,
+      "w": 1,
+      "d": 1,
+      "l": 1,
+      "gf": 4,
+      "ga": 7,
       "pts": 4,
       "last5": []
     },
@@ -131,18 +143,6 @@
       "l": 1,
       "gf": 3,
       "ga": 3,
-      "pts": 3,
-      "last5": []
-    },
-    {
-      "club": "Strasbourg",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
-      "p": 2,
-      "w": 1,
-      "d": 0,
-      "l": 1,
-      "gf": 2,
-      "ga": 5,
       "pts": 3,
       "last5": []
     },
