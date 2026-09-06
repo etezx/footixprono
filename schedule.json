@@ -355,7 +355,11 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-09-05T20:50:24Z"
+          "lastLiveUpdate": "2026-09-04T21:05:44Z",
+          "date": "2026-09-06",
+          "time": "17:15",
+          "official": true,
+          "scheduleFallback": true
         }
       ],
       [
@@ -366,19 +370,11 @@
           "time": "20:45",
           "official": true,
           "source": "bsd",
-          "completed": true,
+          "completed": false,
           "eventId": 210456,
-          "status": "finished",
+          "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T20:50:24Z",
-          "period": "FT",
-          "homeScore": 1,
-          "awayScore": 2,
-          "actualScorers": [
-            "R. Fofana",
-            "K. Doumbia"
-          ],
-          "scorersVerified": true
+          "lastLiveUpdate": "2026-09-04T21:05:44Z"
         }
       ],
       [
@@ -389,18 +385,11 @@
           "time": "17:15",
           "official": true,
           "source": "bsd",
-          "completed": true,
+          "completed": false,
           "eventId": 210461,
-          "status": "finished",
+          "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T20:50:24Z",
-          "period": "FT",
-          "homeScore": 0,
-          "awayScore": 1,
-          "actualScorers": [
-            "M. Koné"
-          ],
-          "scorersVerified": true
+          "lastLiveUpdate": "2026-09-04T21:05:44Z"
         }
       ],
       [
@@ -415,7 +404,7 @@
           "eventId": 210458,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T20:50:24Z",
+          "lastLiveUpdate": "2026-09-04T21:05:44Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
@@ -440,7 +429,7 @@
           "eventId": 210459,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T20:50:24Z"
+          "lastLiveUpdate": "2026-09-04T21:05:44Z"
         }
       ],
       [
@@ -451,19 +440,11 @@
           "time": "20:45",
           "official": true,
           "source": "bsd",
-          "completed": true,
+          "completed": false,
           "eventId": 210457,
-          "status": "finished",
+          "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T20:50:24Z",
-          "period": "FT",
-          "homeScore": 1,
-          "awayScore": 1,
-          "actualScorers": [
-            "E. Wahi",
-            "A. Bourabaa"
-          ],
-          "scorersVerified": true
+          "lastLiveUpdate": "2026-09-04T21:05:44Z"
         }
       ],
       [
@@ -478,7 +459,7 @@
           "eventId": 210460,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T20:50:24Z",
+          "lastLiveUpdate": "2026-09-04T21:05:44Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -502,7 +483,7 @@
           "eventId": 210462,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T20:50:24Z",
+          "lastLiveUpdate": "2026-09-04T21:05:44Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -524,7 +505,7 @@
           "eventId": 210463,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-05T20:50:24Z"
+          "lastLiveUpdate": "2026-09-04T21:05:44Z"
         }
       ]
     ]
@@ -1027,7 +1008,7 @@
         "LE HAVRE",
         "PARIS SAINT-GERMAIN",
         {
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "time": "19:00",
           "official": true,
           "source": "ESPN public scoreboard",
@@ -1038,8 +1019,8 @@
         "LOSC",
         "RC LENS",
         {
-          "date": "2026-10-30",
-          "time": "21:05",
+          "date": "2026-10-31",
+          "time": "19:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1050,7 +1031,7 @@
         "STADE BRESTOIS 29",
         {
           "date": "2026-10-31",
-          "time": "20:45",
+          "time": "19:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1061,7 +1042,7 @@
         "ANGERS SCO",
         {
           "date": "2026-10-31",
-          "time": "20:45",
+          "time": "19:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1071,8 +1052,8 @@
         "OLYMPIQUE DE MARSEILLE",
         "TOULOUSE FC",
         {
-          "date": "2026-11-01",
-          "time": "20:45",
+          "date": "2026-10-31",
+          "time": "19:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1086,8 +1067,8 @@
         "PARIS FC",
         "AS MONACO",
         {
-          "date": "2026-11-01",
-          "time": "17:15",
+          "date": "2026-10-31",
+          "time": "19:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1097,8 +1078,8 @@
         "RC STRASBOURG ALSACE",
         "AJ AUXERRE",
         {
-          "date": "2026-11-01",
-          "time": "15:00",
+          "date": "2026-10-31",
+          "time": "19:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1109,7 +1090,7 @@
         "LE MANS FC",
         {
           "date": "2026-10-31",
-          "time": "20:45",
+          "time": "19:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1125,8 +1106,8 @@
         "ANGERS SCO",
         "OGC NICE",
         {
-          "date": "2026-11-08",
-          "time": "17:15",
+          "date": "2026-11-07",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1137,7 +1118,7 @@
         "PARIS FC",
         {
           "date": "2026-11-07",
-          "time": "17:15",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1147,8 +1128,8 @@
         "STADE BRESTOIS 29",
         "OLYMPIQUE LYONNAIS",
         {
-          "date": "2026-11-08",
-          "time": "17:15",
+          "date": "2026-11-07",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1158,8 +1139,8 @@
         "LE HAVRE",
         "FC LORIENT",
         {
-          "date": "2026-11-08",
-          "time": "17:15",
+          "date": "2026-11-07",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1169,8 +1150,8 @@
         "LE MANS FC",
         "AS MONACO",
         {
-          "date": "2026-11-08",
-          "time": "17:15",
+          "date": "2026-11-07",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1180,7 +1161,7 @@
         "RC LENS",
         "OLYMPIQUE DE MARSEILLE",
         {
-          "date": "2026-11-08",
+          "date": "2026-11-07",
           "time": "20:45",
           "official": true,
           "source": "ESPN public scoreboard",
@@ -1192,7 +1173,7 @@
         "ESTAC TROYES",
         {
           "date": "2026-11-07",
-          "time": "20:45",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1206,8 +1187,8 @@
         "TOULOUSE FC",
         "RC STRASBOURG ALSACE",
         {
-          "date": "2026-11-06",
-          "time": "20:45",
+          "date": "2026-11-07",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1224,7 +1205,7 @@
         "TOULOUSE FC",
         {
           "date": "2026-11-21",
-          "time": "20:45",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1235,7 +1216,7 @@
         "OLYMPIQUE LYONNAIS",
         {
           "date": "2026-11-21",
-          "time": "20:45",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1249,8 +1230,8 @@
         "OLYMPIQUE DE MARSEILLE",
         "LE MANS FC",
         {
-          "date": "2026-11-22",
-          "time": "20:45",
+          "date": "2026-11-21",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1261,7 +1242,7 @@
         "AJ AUXERRE",
         {
           "date": "2026-11-21",
-          "time": "20:45",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1272,7 +1253,7 @@
         "PARIS SAINT-GERMAIN",
         {
           "date": "2026-11-21",
-          "time": "17:15",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1282,8 +1263,8 @@
         "PARIS FC",
         "ANGERS SCO",
         {
-          "date": "2026-11-22",
-          "time": "15:00",
+          "date": "2026-11-21",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1294,7 +1275,7 @@
         "STADE BRESTOIS 29",
         {
           "date": "2026-11-21",
-          "time": "20:45",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1304,8 +1285,8 @@
         "ESTAC TROYES",
         "LE HAVRE",
         {
-          "date": "2026-11-20",
-          "time": "20:45",
+          "date": "2026-11-21",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1322,7 +1303,7 @@
         "RC LENS",
         {
           "date": "2026-11-28",
-          "time": "17:15",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1332,8 +1313,8 @@
         "AJ AUXERRE",
         "OLYMPIQUE DE MARSEILLE",
         {
-          "date": "2026-11-29",
-          "time": "15:00",
+          "date": "2026-11-28",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1343,8 +1324,8 @@
         "STADE BRESTOIS 29",
         "PARIS FC",
         {
-          "date": "2026-11-27",
-          "time": "20:45",
+          "date": "2026-11-28",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1355,7 +1336,7 @@
         "RC STRASBOURG ALSACE",
         {
           "date": "2026-11-28",
-          "time": "20:45",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1366,7 +1347,7 @@
         "LOSC",
         {
           "date": "2026-11-28",
-          "time": "20:45",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1376,8 +1357,8 @@
         "OLYMPIQUE LYONNAIS",
         "AS MONACO",
         {
-          "date": "2026-11-29",
-          "time": "20:45",
+          "date": "2026-11-28",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1388,7 +1369,7 @@
         "ESTAC TROYES",
         {
           "date": "2026-11-28",
-          "time": "20:45",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
@@ -1399,7 +1380,7 @@
         "FC LORIENT",
         {
           "date": "2026-11-28",
-          "time": "20:45",
+          "time": "21:00",
           "official": true,
           "source": "ESPN public scoreboard",
           "completed": false
