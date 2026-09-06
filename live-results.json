@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-06T20:20:27Z",
+  "generatedAt": "2026-09-06T20:30:26Z",
   "events": [
     {
       "eventId": 210448,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T20:20:27Z",
+      "updatedAt": "2026-09-06T20:30:26Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,7 +252,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T20:20:27Z",
+      "updatedAt": "2026-09-06T20:30:26Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -274,7 +274,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T20:20:27Z",
+      "updatedAt": "2026-09-06T20:30:26Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -294,7 +294,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T20:20:27Z",
+      "updatedAt": "2026-09-06T20:30:26Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -315,7 +315,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T20:20:27Z",
+      "updatedAt": "2026-09-06T20:30:26Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -336,7 +336,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T20:20:27Z",
+      "updatedAt": "2026-09-06T20:30:26Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 6,
@@ -362,7 +362,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T20:20:27Z",
+      "updatedAt": "2026-09-06T20:30:26Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -384,15 +384,15 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-06T20:20:27Z",
-      "minute": 76,
+      "updatedAt": "2026-09-06T20:30:26Z",
+      "minute": 86,
       "homeScore": 2,
-      "awayScore": 2,
+      "awayScore": 3,
       "actualScorers": [
         "A. Gouiri",
         "L. Sinayoko"
       ],
-      "scorersVerified": true,
+      "scorersVerified": false,
       "goalIncidents": 4
     },
     {
@@ -405,7 +405,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:20:27Z"
+      "updatedAt": "2026-09-06T20:30:26Z"
     },
     {
       "eventId": 601108,
@@ -417,7 +417,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:20:27Z"
+      "updatedAt": "2026-09-06T20:30:26Z"
     },
     {
       "eventId": 601024,
@@ -429,7 +429,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:20:27Z"
+      "updatedAt": "2026-09-06T20:30:26Z"
     },
     {
       "eventId": 601050,
@@ -441,7 +441,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:20:27Z"
+      "updatedAt": "2026-09-06T20:30:26Z"
     },
     {
       "eventId": 601071,
@@ -453,7 +453,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:20:27Z"
+      "updatedAt": "2026-09-06T20:30:26Z"
     },
     {
       "eventId": 601144,
@@ -465,7 +465,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:20:27Z"
+      "updatedAt": "2026-09-06T20:30:26Z"
     }
   ]
 }
