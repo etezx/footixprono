@@ -9,6 +9,7 @@ SUPABASE_URL is optional; defaults to Footix Prono public project URL.
 No secret is written to disk.
 """
 from __future__ import annotations
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 import json
