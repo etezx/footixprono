@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-06T15:30:27Z",
+  "generatedAt": "2026-09-06T15:40:39Z",
   "events": [
     {
       "eventId": 210448,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:30:27Z",
+      "updatedAt": "2026-09-06T15:40:39Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,7 +252,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:30:27Z",
+      "updatedAt": "2026-09-06T15:40:39Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -274,7 +274,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:30:27Z",
+      "updatedAt": "2026-09-06T15:40:39Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -294,7 +294,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:30:27Z",
+      "updatedAt": "2026-09-06T15:40:39Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -315,7 +315,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:30:27Z",
+      "updatedAt": "2026-09-06T15:40:39Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -336,7 +336,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T15:30:27Z",
+      "updatedAt": "2026-09-06T15:40:39Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 6,
@@ -362,15 +362,16 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-06T15:30:27Z",
-      "minute": 13,
+      "updatedAt": "2026-09-06T15:40:39Z",
+      "minute": 24,
       "homeScore": 0,
-      "awayScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "J. Lefort",
         "P. Frankowski"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210459,
@@ -382,7 +383,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:30:27Z"
+      "updatedAt": "2026-09-06T15:40:39Z"
     },
     {
       "eventId": 601076,
@@ -394,7 +395,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:30:27Z"
+      "updatedAt": "2026-09-06T15:40:39Z"
     },
     {
       "eventId": 601108,
@@ -406,7 +407,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:30:27Z"
+      "updatedAt": "2026-09-06T15:40:39Z"
     },
     {
       "eventId": 601024,
@@ -418,7 +419,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:30:27Z"
+      "updatedAt": "2026-09-06T15:40:39Z"
     },
     {
       "eventId": 601050,
@@ -430,7 +431,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:30:27Z"
+      "updatedAt": "2026-09-06T15:40:39Z"
     },
     {
       "eventId": 601071,
@@ -442,7 +443,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:30:27Z"
+      "updatedAt": "2026-09-06T15:40:39Z"
     },
     {
       "eventId": 601144,
@@ -454,7 +455,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T15:30:27Z"
+      "updatedAt": "2026-09-06T15:40:39Z"
     }
   ]
 }
