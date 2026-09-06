@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T17:03:06.016260+00:00",
+  "updated_at": "2026-09-06T21:21:14.922518+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -12,6 +12,18 @@
       "gf": 5,
       "ga": 1,
       "pts": 9,
+      "last5": []
+    },
+    {
+      "club": "Paris FC",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
+      "p": 3,
+      "w": 2,
+      "d": 1,
+      "l": 0,
+      "gf": 6,
+      "ga": 2,
+      "pts": 7,
       "last5": []
     },
     {
@@ -39,6 +51,18 @@
       "last5": []
     },
     {
+      "club": "Stade Rennais",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
+      "p": 3,
+      "w": 2,
+      "d": 1,
+      "l": 0,
+      "gf": 7,
+      "ga": 5,
+      "pts": 7,
+      "last5": []
+    },
+    {
       "club": "Strasbourg",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
       "p": 3,
@@ -60,30 +84,6 @@
       "gf": 6,
       "ga": 5,
       "pts": 5,
-      "last5": []
-    },
-    {
-      "club": "Paris FC",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
-      "p": 2,
-      "w": 1,
-      "d": 1,
-      "l": 0,
-      "gf": 3,
-      "ga": 0,
-      "pts": 4,
-      "last5": []
-    },
-    {
-      "club": "Stade Rennais",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
-      "p": 2,
-      "w": 1,
-      "d": 1,
-      "l": 0,
-      "gf": 5,
-      "ga": 4,
-      "pts": 4,
       "last5": []
     },
     {
@@ -113,12 +113,12 @@
     {
       "club": "Marseille",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
-      "p": 2,
+      "p": 3,
       "w": 1,
       "d": 0,
-      "l": 1,
-      "gf": 4,
-      "ga": 2,
+      "l": 2,
+      "gf": 6,
+      "ga": 5,
       "pts": 3,
       "last5": []
     },
@@ -137,12 +137,12 @@
     {
       "club": "Angers",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
-      "p": 2,
+      "p": 3,
       "w": 1,
       "d": 0,
-      "l": 1,
-      "gf": 3,
-      "ga": 3,
+      "l": 2,
+      "gf": 4,
+      "ga": 5,
       "pts": 3,
       "last5": []
     },
