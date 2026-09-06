@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-05T20:50:24Z",
+  "generatedAt": "2026-09-06T12:20:38Z",
   "events": [
     {
       "eventId": 210448,
@@ -229,7 +229,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:50:24Z",
+      "updatedAt": "2026-09-06T12:20:38Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -252,7 +252,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:50:24Z",
+      "updatedAt": "2026-09-06T12:20:38Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -274,7 +274,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:50:24Z",
+      "updatedAt": "2026-09-06T12:20:38Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -285,37 +285,16 @@
       "goalIncidents": 1
     },
     {
-      "eventId": 210457,
+      "eventId": 210456,
       "leagueId": 6,
-      "home": "Nice",
-      "away": "Le Mans",
+      "home": "Le Havre",
+      "away": "Stade Brestois",
       "kickoff": "2026-09-05T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-05T20:50:24Z",
-      "minute": null,
-      "homeScore": 1,
-      "awayScore": 1,
-      "actualScorers": [
-        "E. Wahi",
-        "A. Bourabaa"
-      ],
-      "scorersVerified": true,
-      "goalIncidents": 2
-    },
-    {
-      "eventId": 210456,
-      "leagueId": 6,
-      "home": "Le Havre",
-      "away": "Stade Brestois",
-      "kickoff": "2026-09-05T18:45:00Z",
-      "status": "finished",
-      "live": false,
-      "completed": true,
-      "period": "FT",
-      "updatedAt": "2026-09-05T20:50:24Z",
+      "updatedAt": "2026-09-06T12:20:38Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -327,6 +306,27 @@
       "goalIncidents": 3
     },
     {
+      "eventId": 210457,
+      "leagueId": 6,
+      "home": "Nice",
+      "away": "Le Mans",
+      "kickoff": "2026-09-05T18:45:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-06T12:20:38Z",
+      "minute": null,
+      "homeScore": 1,
+      "awayScore": 1,
+      "actualScorers": [
+        "E. Wahi",
+        "A. Bourabaa"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 2
+    },
+    {
       "eventId": 210463,
       "leagueId": 6,
       "home": "Troyes",
@@ -336,7 +336,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T20:50:24Z"
+      "updatedAt": "2026-09-06T12:20:38Z"
     },
     {
       "eventId": 210455,
@@ -348,7 +348,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T20:50:24Z"
+      "updatedAt": "2026-09-06T12:20:38Z"
     },
     {
       "eventId": 210459,
@@ -360,7 +360,79 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-05T20:50:24Z"
+      "updatedAt": "2026-09-06T12:20:38Z"
+    },
+    {
+      "eventId": 601076,
+      "leagueId": 7,
+      "home": "Club Brugge KV",
+      "away": "Aston Villa",
+      "kickoff": "2026-09-08T16:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-06T12:20:38Z"
+    },
+    {
+      "eventId": 601108,
+      "leagueId": 7,
+      "home": "AEK Athens",
+      "away": "LASK",
+      "kickoff": "2026-09-08T16:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-06T12:20:38Z"
+    },
+    {
+      "eventId": 601024,
+      "leagueId": 7,
+      "home": "Real Madrid",
+      "away": "Inter",
+      "kickoff": "2026-09-08T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-06T12:20:38Z"
+    },
+    {
+      "eventId": 601050,
+      "leagueId": 7,
+      "home": "FC Porto",
+      "away": "Manchester City",
+      "kickoff": "2026-09-08T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-06T12:20:38Z"
+    },
+    {
+      "eventId": 601071,
+      "leagueId": 7,
+      "home": "Borussia Dortmund",
+      "away": "Villarreal",
+      "kickoff": "2026-09-08T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-06T12:20:38Z"
+    },
+    {
+      "eventId": 601144,
+      "leagueId": 7,
+      "home": "Lille",
+      "away": "Real Betis",
+      "kickoff": "2026-09-08T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-06T12:20:38Z"
     }
   ]
 }
