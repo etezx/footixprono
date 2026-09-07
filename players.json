@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T09:37:53.874139+00:00",
+  "updated_at": "2026-09-07T10:40:56.548458+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -12,6 +12,7 @@
       "Igor Paixão",
       "Keyliane Abdallah",
       "Neal Maupay",
+      "Nouhoum Kamissoko",
       "Pierre-Emile Højbjerg",
       "Tadjidine Mmadi",
       "Timothy Weah",
@@ -67,13 +68,11 @@
       "Hákon Haraldsson",
       "Hamza Igmane",
       "Maurits Kjaergaard",
-      "Mohamed Bayo",
       "Nabil Bentaleb",
       "Ngal'ayel Mukau",
       "Olivier Giroud",
       "Osame Sahraoui",
-      "Soriba Diaoune",
-      "Tiago Morais"
+      "Soriba Diaoune"
     ],
     "LE HAVRE": [
       "Abdoulaye Touré",
@@ -163,7 +162,6 @@
       "Mezian Soares",
       "Michaël Cuisance",
       "Michal Skoras",
-      "Moussa Diarra",
       "Odsonne Édouard",
       "Thorgan Hazard",
       "Yassine Titraoui"
@@ -331,5 +329,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 291
+  "players_fetched": 289
 }
