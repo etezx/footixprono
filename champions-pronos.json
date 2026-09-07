@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T19:30:00+02:00",
+  "updated_at": "2026-09-07T22:30:17.153Z",
   "source": "UEFA - calendrier officiel de la phase de ligue 2026/27 publié le 29 août 2026",
   "days": {
     "1": {
@@ -9,84 +9,86 @@
           "away": "LASK",
           "date": "2026-09-08",
           "time": "18:45",
-          "score": "",
-          "pick": "",
+          "score": "2-1",
+          "pick": "1",
           "scorers": [
             "Luka Jović",
             "Barnabás Varga",
             "Răzvan Marin"
           ],
-          "analyse": ""
+          "buteurs": "Luka Jović\nBarnabás Varga\nRăzvan Marin",
+          "analyse": "Je vois une rencontre assez équilibrée, avec deux équipes qui auront surtout envie de ne pas rater leur entrée dans la compétition. À domicile, l’AEK devrait quand même réussir à prendre un peu plus le contrôle du match. Je ne m’attends pas à énormément de buts, mais les Grecs me semblent légèrement au-dessus.\n\n🎯 PRONO : AEK 2-1 LASK"
         },
         {
           "home": "Club Brugge",
           "away": "Aston Villa",
           "date": "2026-09-08",
           "time": "18:45",
-          "score": "",
-          "pick": "",
+          "score": "1-1",
+          "pick": "N",
           "scorers": [
-            "Hans Vanaken",
-            "Christos Tzolis",
-            "Nicolas Jackson"
+            "Tresoldi",
+            "Buendia"
           ],
-          "analyse": ""
+          "buteurs": "Tresoldi\nBuendia",
+          "analyse": "Bruges est toujours compliqué à jouer chez lui et je pense qu’ils peuvent vraiment poser des problèmes à Villa. Les Anglais ont quand même davantage de qualité individuelle et devraient se créer les meilleures occasions. Je vois un match serré, qui finira sur un match nul\n🎯 PRONO : Bruges 1-1 Aston Villa"
         },
         {
           "home": "Borussia Dortmund",
           "away": "Villarreal",
           "date": "2026-09-08",
           "time": "21:00",
-          "score": "",
-          "pick": "",
+          "score": "3-1",
+          "pick": "1",
           "scorers": [
             "Serhou Guirassy",
-            "Karim Adeyemi",
             "Georges Mikautadze"
           ],
-          "analyse": ""
+          "buteurs": "Serhou Guirassy\nGeorges Mikautadze",
+          "analyse": "C’est typiquement le genre de match où je vois Dortmund mettre énormément de rythme à domicile. Villarreal possède largement de quoi répondre offensivement et je serais surpris de les voir repartir sans marquer. Mais avec Guirassy devant, je donne quand même l’avantage aux Allemands.\n\n🎯 PRONO : Dortmund 3-1 Villarreal"
         },
         {
           "home": "Porto",
           "away": "Manchester City",
           "date": "2026-09-08",
           "time": "21:00",
-          "score": "",
-          "pick": "",
+          "score": "1-2",
+          "pick": "2",
           "scorers": [
-            "Samu Aghehowa",
             "Erling Haaland",
-            "Rayan Cherki"
+            "William Gomes"
           ],
-          "analyse": ""
+          "buteurs": "Erling Haaland\nWilliam Gomes",
+          "analyse": "Déplacement jamais évident à Porto, surtout pour une première journée européenne. Je pense que les Portugais peuvent tenir un moment et rendre le match compliqué, mais City possède beaucoup trop d’armes offensives. Haaland aura forcément des occasions.\n\n🎯 PRONO : Porto 1-2 Manchester City"
         },
         {
           "home": "Lille",
           "away": "Real Betis",
           "date": "2026-09-08",
           "time": "21:00",
-          "score": "",
-          "pick": "",
+          "score": "1-1",
+          "pick": "N",
           "scorers": [
             "Olivier Giroud",
-            "Ethan Mbappé",
-            "Antony"
+            "Riquelme"
           ],
-          "analyse": ""
+          "buteurs": "Olivier Giroud\nRiquelme",
+          "analyse": "Un des matchs que je trouve les plus difficiles à pronostiquer. Lille devrait essayer de prendre le jeu à son compte devant son public, mais le Betis possède suffisamment de qualité technique pour leur poser problème. Je vois les deux équipes marquer et finalement se neutraliser.\n\n🎯 PRONO : Lille 1-1 Betis"
         },
         {
           "home": "Real Madrid",
           "away": "Inter",
           "date": "2026-09-08",
           "time": "21:00",
-          "score": "",
-          "pick": "",
+          "score": "2-1",
+          "pick": "1",
           "scorers": [
             "Kylian Mbappé",
             "Vinícius Júnior",
             "Lautaro Martínez"
           ],
-          "analyse": ""
+          "buteurs": "Kylian Mbappé\nVinícius Júnior\nLautaro Martínez",
+          "analyse": "Première énorme affiche de cette Ligue des champions. Je m’attends à un match très tactique au départ avant que les espaces commencent à apparaître. L’Inter peut clairement faire mal au Real, mais au Bernabéu j’ai du mal à aller contre Mbappé et Vinícius.\n\n🎯 PRONO : Real Madrid 2-1 Inter"
         },
         {
           "home": "Barcelona",
@@ -100,6 +102,7 @@
             "Raphinha",
             "Ayase Ueda"
           ],
+          "buteurs": "Lamine Yamal\nRaphinha\nAyase Ueda",
           "analyse": ""
         },
         {
@@ -114,6 +117,7 @@
             "Ermedin Demirović",
             "Zlatko Tripić"
           ],
+          "buteurs": "Deniz Undav\nErmedin Demirović\nZlatko Tripić",
           "analyse": ""
         },
         {
@@ -128,6 +132,7 @@
             "Mohamed Salah",
             "Julián Alvarez"
           ],
+          "buteurs": "Hugo Ekitiké\nMohamed Salah\nJulián Alvarez",
           "analyse": ""
         },
         {
@@ -142,6 +147,7 @@
             "Ousmane Dembélé",
             "Désiré Doué"
           ],
+          "buteurs": "Ferran Torres\nOusmane Dembélé\nDésiré Doué",
           "analyse": ""
         },
         {
@@ -156,6 +162,7 @@
             "Pedro Gonçalves",
             "Victor Osimhen"
           ],
+          "buteurs": "Luis Suárez\nPedro Gonçalves\nVictor Osimhen",
           "analyse": ""
         },
         {
@@ -170,6 +177,7 @@
             "Romelu Lukaku",
             "Bukayo Saka"
           ],
+          "buteurs": "Scott McTominay\nRomelu Lukaku\nBukayo Saka",
           "analyse": ""
         },
         {
@@ -184,11 +192,12 @@
             "Youssef En-Nesyri",
             "Donyell Malen"
           ],
+          "buteurs": "Dorgeles Nene\nYoussef En-Nesyri\nDonyell Malen",
           "analyse": ""
         },
         {
-          "home": "PSV Eindhoven",
-          "away": "Shakhtar Donetsk",
+          "home": "",
+          "away": "",
           "date": "2026-09-10",
           "time": "18:45",
           "score": "",
@@ -198,6 +207,7 @@
             "Ricardo Pepi",
             "Kauã Elias"
           ],
+          "buteurs": "Sven Mijnans\nRicardo Pepi\nKauã Elias",
           "analyse": ""
         },
         {
@@ -212,6 +222,7 @@
             "Assane Diao",
             "Yan Diomande"
           ],
+          "buteurs": "Nico Paz\nAssane Diao\nYan Diomande",
           "analyse": ""
         },
         {
@@ -226,6 +237,7 @@
             "Michael Olise",
             "Andreas Helmersen"
           ],
+          "buteurs": "Harry Kane\nMichael Olise\nAndreas Helmersen",
           "analyse": ""
         },
         {
@@ -240,6 +252,7 @@
             "Matheus Cunha",
             "Veljko Simić"
           ],
+          "buteurs": "Benjamin Šeško\nMatheus Cunha\nVeljko Simić",
           "analyse": ""
         },
         {
@@ -254,6 +267,7 @@
             "Mojmír Chytil",
             "Florian Thauvin"
           ],
+          "buteurs": "Lukáš Provod\nMojmír Chytil\nFlorian Thauvin",
           "analyse": ""
         }
       ]
