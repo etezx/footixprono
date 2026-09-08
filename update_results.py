@@ -52,6 +52,14 @@ ALIASES = {
     "angers": "angers sco", "aj auxerre": "aj auxerre", "auxerre": "aj auxerre",
     "estac troyes": "estac troyes", "troyes": "estac troyes",
     "le mans fc": "le mans fc", "le mans": "le mans fc",
+
+    # Champions League — variantes de noms utilisées par BSD / calendrier Footix
+    "club brugge kv": "club brugge", "club brugge": "club brugge",
+    "club bruges": "club brugge", "brugge": "club brugge", "bruges": "club brugge",
+    "bayern munchen": "bayern munich", "fc bayern munchen": "bayern munich",
+    "bayern munich": "bayern munich", "fc bayern munich": "bayern munich",
+    "slavia praha": "slavia prague", "sk slavia praha": "slavia prague",
+    "slavia prague": "slavia prague", "sk slavia prague": "slavia prague",
 }
 
 
@@ -389,8 +397,9 @@ def normalize_standings(payload: Any, league_id: int, season: dict[str, Any]) ->
     }
 
 
-def update_ligue1_schedule(schedule: list[Any], events: list[dict[str, Any]]) -> int:
-    by_pair = {match_key(e["home"], e["away"]): e for e in events if e.get("leagueId") == 6}
+def update_schedule(schedule: list[Any], events: list[dict[str, Any]]) -> int:
+    # L1 + Champions League : même mécanisme de rattachement au calendrier.
+    by_pair = {match_key(e["home"], e["away"]): e for e in events if e.get("leagueId") in (6, 7)}
     changes = 0
     for day in schedule:
         if not isinstance(day, dict):
@@ -436,7 +445,7 @@ def update_ligue1_schedule(schedule: list[Any], events: list[dict[str, Any]]) ->
             after = json.dumps(fixture, sort_keys=True, ensure_ascii=False)
             if before != after:
                 changes += 1
-                print(f"[L1] {match[0]} - {match[1]}: {fixture.get('status')} {fixture.get('homeScore')}-{fixture.get('awayScore')}")
+                print(f"[LIVE] {match[0]} - {match[1]}: {fixture.get('status')} {fixture.get('homeScore')}-{fixture.get('awayScore')}")
     return changes
 
 
@@ -619,12 +628,12 @@ def main() -> int:
         "events": merged_events,
     }
 
-    # Met à jour schedule.json pour garder les résultats L1 compatibles avec le bilan/statistiques existants.
+    # Met à jour schedule.json pour la Ligue 1 et la Champions League.
     schedule_changes = 0
     if SCHEDULE.exists():
         schedule = load_json(SCHEDULE, [])
         if isinstance(schedule, list):
-            schedule_changes = update_ligue1_schedule(schedule, merged_events)
+            schedule_changes = update_schedule(schedule, merged_events)
             if schedule_changes:
                 write_json(SCHEDULE, schedule)
     else:
