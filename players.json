@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T10:40:56.548458+00:00",
+  "updated_at": "2026-09-08T10:02:41.922663+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -131,7 +131,6 @@
       "Louis Mafouta",
       "Lucas Bretelle",
       "Martin Rossignol",
-      "Milan Robin",
       "William Harhouz"
     ],
     "STADE BRESTOIS 29": [
@@ -152,7 +151,6 @@
     ],
     "RC LENS": [
       "Abdallah Sima",
-      "Alpha Diallo",
       "Amadou Haidara",
       "Andrija Bulatovic",
       "Florian Sotoca",
@@ -162,6 +160,7 @@
       "Mezian Soares",
       "Michaël Cuisance",
       "Michal Skoras",
+      "Moussa Diarra",
       "Odsonne Édouard",
       "Thorgan Hazard",
       "Yassine Titraoui"
@@ -329,5 +328,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 289
+  "players_fetched": 288
 }
