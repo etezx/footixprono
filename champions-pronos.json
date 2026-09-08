@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T22:30:17.153Z",
+  "updated_at": "2026-09-08T23:57:01.233Z",
   "source": "UEFA - calendrier officiel de la phase de ligue 2026/27 publié le 29 août 2026",
   "days": {
     "1": {
@@ -95,90 +95,89 @@
           "away": "Feyenoord",
           "date": "2026-09-09",
           "time": "18:45",
-          "score": "",
-          "pick": "",
+          "score": "3-1",
+          "pick": "1",
           "scorers": [
             "Lamine Yamal",
             "Raphinha",
-            "Ayase Ueda"
+            "Luciano Valente"
           ],
-          "buteurs": "Lamine Yamal\nRaphinha\nAyase Ueda",
-          "analyse": ""
+          "buteurs": "Lamine Yamal\nRaphinha\nLuciano Valente",
+          "analyse": "Sur le papier, le Barça est largement au-dessus et je pense qu'on devrait rapidement le voir sur le terrain. Même sans De Jong et avec Eric García suspendu, il reste énormément de qualité devant avec Lamine Yamal, Raphinha, Fermín et Gordon. Feyenoord a en plus pas mal d'absents, notamment en défense, ce qui n'est vraiment pas idéal pour aller jouer à Barcelone.\n\nJe pense quand même que les Néerlandais peuvent profiter des espaces laissés par le Barça pour se créer quelques occasions. Barcelone n'a d'ailleurs plus réalisé de clean sheet lors de ses 15 derniers matchs de Ligue des champions. Mais sur 90 minutes, j'ai du mal à imaginer Feyenoord résister à la puissance offensive catalane.\n\n🎯 Mon prono : FC Barcelone 3–1 Feyenoord"
         },
         {
           "home": "Stuttgart",
           "away": "Viking",
           "date": "2026-09-09",
           "time": "18:45",
-          "score": "",
-          "pick": "",
+          "score": "2-1",
+          "pick": "1",
           "scorers": [
             "Deniz Undav",
             "Ermedin Demirović",
-            "Zlatko Tripić"
+            "Henrik Bjordal"
           ],
-          "buteurs": "Deniz Undav\nErmedin Demirović\nZlatko Tripić",
-          "analyse": ""
+          "buteurs": "Deniz Undav\nErmedin Demirović\nHenrik Bjordal",
+          "analyse": "C'est typiquement le match où Stuttgart doit faire respecter la hiérarchie. Viking arrive sans énorme pression pour sa première campagne de Ligue des champions, mais le déplacement en Allemagne représente un vrai changement de niveau. Les Norvégiens n'ont d'ailleurs remporté que 2 de leurs 11 rencontres européennes contre des clubs allemands.\n\nStuttgart a quelques absents, mais conserve une équipe très intéressante offensivement avec Leweling, Führich et surtout Undav autour de Pejčinović. À domicile, je les vois prendre progressivement le contrôle et finir par faire craquer Viking, même si ça peut être plus accroché que prévu au départ.\n\n🎯 Mon prono : Stuttgart 2–1 Viking"
         },
         {
           "home": "Liverpool",
           "away": "Atlético de Madrid",
           "date": "2026-09-09",
           "time": "21:00",
-          "score": "",
-          "pick": "",
+          "score": "2-1",
+          "pick": "1",
           "scorers": [
-            "Hugo Ekitiké",
-            "Mohamed Salah",
-            "Julián Alvarez"
+            "Isak",
+            "Bradley Barcola",
+            "Baena"
           ],
-          "buteurs": "Hugo Ekitiké\nMohamed Salah\nJulián Alvarez",
-          "analyse": ""
+          "buteurs": "Isak\nBradley Barcola\nBaena",
+          "analyse": "Pour moi, c'est l'une des affiches les plus intéressantes de la soirée. Liverpool à Anfield en Ligue des champions, ça reste quelque chose de particulier, mais l'Atlético est justement le genre d'équipe capable de rendre ce match extrêmement pénible.\n\nLiverpool devrait avoir le ballon et pousser, avec Wirtz, Barcola et Isak annoncés devant. L'Atlético possède quand même suffisamment de qualité pour punir une erreur, notamment avec Julián Álvarez, même si Sørloth est forfait.\n\nJe vois donc un match beaucoup plus serré que ce que pourrait laisser penser l'écart de talent offensif. Liverpool devrait avoir davantage d'occasions et je pense que l'ambiance d'Anfield peut finir par faire la différence.\n\n🎯 Mon prono : Liverpool 2–1 Atlético de Madrid"
         },
         {
           "home": "Paris Saint-Germain",
           "away": "Slovan Bratislava",
           "date": "2026-09-09",
           "time": "21:00",
-          "score": "",
-          "pick": "",
+          "score": "4-0",
+          "pick": "1",
           "scorers": [
             "Ferran Torres",
             "Ousmane Dembélé",
-            "Désiré Doué"
+            "Khvicha Kvaratskhelia"
           ],
-          "buteurs": "Ferran Torres\nOusmane Dembélé\nDésiré Doué",
-          "analyse": ""
+          "buteurs": "Ferran Torres\nOusmane Dembélé\nKhvicha Kvaratskhelia",
+          "analyse": "Là, je vais avoir du mal à inventer du suspense. Paris est très largement favori et, sauf énorme surprise, le match devrait se jouer essentiellement dans le camp du Slovan.\n\nLuis Enrique dispose en plus d'un groupe quasiment complet : Hakimi, Vitinha, João Neves, Doué, Dembélé et Kvaratskhelia sont tous annoncés dans le onze probable. En face, Bratislava devrait surtout essayer de rester compact et attendre une possibilité de contre.\n\nLe Slovan reste tout de même sur sept rencontres européennes sans défaite, donc ce n'est pas une équipe à prendre complètement à la légère. Mais il avait perdu ses 8 matchs lors de sa précédente participation à la phase de ligue. Face à ce PSG-là au Parc, l'écart me paraît simplement trop important.\n\n🎯 Mon prono : PSG 4–0 Slovan Bratislava"
         },
         {
           "home": "Sporting CP",
           "away": "Galatasaray",
           "date": "2026-09-09",
           "time": "21:00",
-          "score": "",
-          "pick": "",
+          "score": "2-1",
+          "pick": "1",
           "scorers": [
             "Luis Suárez",
-            "Pedro Gonçalves",
-            "Victor Osimhen"
+            "Pedro Gonçalves"
           ],
-          "buteurs": "Luis Suárez\nPedro Gonçalves\nVictor Osimhen",
-          "analyse": ""
+          "buteurs": "Luis Suárez\nPedro Gonçalves",
+          "analyse": "C'est probablement le match sur lequel j'ai le plus de mal à trancher. Les deux équipes ont largement les armes pour marquer et le Sporting arrive en confiance avec quatre victoires consécutives.\n\nCe qui me fait légèrement pencher côté portugais, c'est surtout la situation de Galatasaray. Osimhen est forfait, tout comme Lemina et Singo, ce qui enlève quand même quelques armes importantes. Le Sporting devrait notamment pouvoir compter sur Luis Suárez devant, accompagné de Catamo.\n\nJe m'attends à un match ouvert, avec des occasions des deux côtés. Mais à Lisbonne et avec les absences turques, je donne un petit avantage au Sporting.\n\n🎯 Mon prono : Sporting CP 2–1 Galatasaray"
         },
         {
           "home": "Napoli",
           "away": "Arsenal",
           "date": "2026-09-09",
           "time": "21:00",
-          "score": "",
-          "pick": "",
+          "score": "1-2",
+          "pick": "2",
           "scorers": [
-            "Scott McTominay",
-            "Romelu Lukaku",
-            "Bukayo Saka"
+            "Havertz",
+            "Rasmus Hojlund",
+            "Rice"
           ],
-          "buteurs": "Scott McTominay\nRomelu Lukaku\nBukayo Saka",
-          "analyse": ""
+          "buteurs": "Havertz\nRasmus Hojlund\nRice",
+          "analyse": "Pour moi, c'est le gros piège de la soirée. Naples à domicile en Ligue des champions, ce n'est jamais un déplacement tranquille, et avec De Bruyne derrière Højlund, les Italiens ont largement de quoi faire mal à Arsenal.\n\nMais Naples arrive diminué au milieu avec Anguissa et McTominay absents, tandis que Neres est incertain. Arsenal sera privé de Saliba, ce qui est évidemment important, mais le onze probable reste impressionnant avec Rice, Bruno Guimarães, Ødegaard, Saka et Havertz.\n\nEt Arsenal est devenu extrêmement difficile à battre en Europe : les Gunners n'avaient perdu aucun de leurs 15 matchs de C1 dans le temps réglementaire la saison dernière et n'avaient encaissé que sept buts. Je vois Naples leur poser de vrais problèmes et probablement marquer, mais je donne un petit avantage à Arsenal sur la durée.\n\n🎯 Mon prono : Napoli 1–2 Arsenal"
         },
         {
           "home": "Fenerbahçe",
@@ -187,12 +186,8 @@
           "time": "18:45",
           "score": "",
           "pick": "",
-          "scorers": [
-            "Dorgeles Nene",
-            "Youssef En-Nesyri",
-            "Donyell Malen"
-          ],
-          "buteurs": "Dorgeles Nene\nYoussef En-Nesyri\nDonyell Malen",
+          "scorers": [],
+          "buteurs": "",
           "analyse": ""
         },
         {
@@ -202,12 +197,8 @@
           "time": "18:45",
           "score": "",
           "pick": "",
-          "scorers": [
-            "Sven Mijnans",
-            "Ricardo Pepi",
-            "Kauã Elias"
-          ],
-          "buteurs": "Sven Mijnans\nRicardo Pepi\nKauã Elias",
+          "scorers": [],
+          "buteurs": "",
           "analyse": ""
         },
         {
@@ -217,12 +208,8 @@
           "time": "21:00",
           "score": "",
           "pick": "",
-          "scorers": [
-            "Nico Paz",
-            "Assane Diao",
-            "Yan Diomande"
-          ],
-          "buteurs": "Nico Paz\nAssane Diao\nYan Diomande",
+          "scorers": [],
+          "buteurs": "",
           "analyse": ""
         },
         {
@@ -232,12 +219,8 @@
           "time": "21:00",
           "score": "",
           "pick": "",
-          "scorers": [
-            "Harry Kane",
-            "Michael Olise",
-            "Andreas Helmersen"
-          ],
-          "buteurs": "Harry Kane\nMichael Olise\nAndreas Helmersen",
+          "scorers": [],
+          "buteurs": "",
           "analyse": ""
         },
         {
@@ -247,12 +230,8 @@
           "time": "21:00",
           "score": "",
           "pick": "",
-          "scorers": [
-            "Benjamin Šeško",
-            "Matheus Cunha",
-            "Veljko Simić"
-          ],
-          "buteurs": "Benjamin Šeško\nMatheus Cunha\nVeljko Simić",
+          "scorers": [],
+          "buteurs": "",
           "analyse": ""
         },
         {
@@ -262,12 +241,8 @@
           "time": "21:00",
           "score": "",
           "pick": "",
-          "scorers": [
-            "Lukáš Provod",
-            "Mojmír Chytil",
-            "Florian Thauvin"
-          ],
-          "buteurs": "Lukáš Provod\nMojmír Chytil\nFlorian Thauvin",
+          "scorers": [],
+          "buteurs": "",
           "analyse": ""
         }
       ]
