@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-06T20:40:25Z",
+  "generatedAt": "2026-09-08T16:00:34Z",
   "events": [
     {
       "eventId": 210448,
@@ -336,7 +336,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T20:40:25Z",
+      "updatedAt": "2026-09-08T16:00:34Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 6,
@@ -362,7 +362,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T20:40:25Z",
+      "updatedAt": "2026-09-08T16:00:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -379,12 +379,12 @@
       "leagueId": 6,
       "home": "Olympique de Marseille",
       "away": "Paris FC",
-      "kickoff": "2026-09-06T18:45:00Z",
+      "kickoff": "2026-09-06T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-06T20:40:25Z",
+      "updatedAt": "2026-09-08T16:00:34Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -405,7 +405,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:40:25Z"
+      "updatedAt": "2026-09-08T16:00:34Z"
     },
     {
       "eventId": 601108,
@@ -417,7 +417,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:40:25Z"
+      "updatedAt": "2026-09-08T16:00:34Z"
     },
     {
       "eventId": 601024,
@@ -429,7 +429,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:40:25Z"
+      "updatedAt": "2026-09-08T16:00:34Z"
     },
     {
       "eventId": 601050,
@@ -441,7 +441,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:40:25Z"
+      "updatedAt": "2026-09-08T16:00:34Z"
     },
     {
       "eventId": 601071,
@@ -453,7 +453,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:40:25Z"
+      "updatedAt": "2026-09-08T16:00:34Z"
     },
     {
       "eventId": 601144,
@@ -465,7 +465,151 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-06T20:40:25Z"
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601029,
+      "leagueId": 7,
+      "home": "FC Barcelona",
+      "away": "Feyenoord",
+      "kickoff": "2026-09-09T16:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601165,
+      "leagueId": 7,
+      "home": "VfB Stuttgart",
+      "away": "Viking FK",
+      "kickoff": "2026-09-09T16:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601048,
+      "leagueId": 7,
+      "home": "Liverpool FC",
+      "away": "Atlético Madrid",
+      "kickoff": "2026-09-09T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601065,
+      "leagueId": 7,
+      "home": "Paris Saint-Germain",
+      "away": "ŠK Slovan Bratislava",
+      "kickoff": "2026-09-09T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601086,
+      "leagueId": 7,
+      "home": "SSC Napoli",
+      "away": "Arsenal",
+      "kickoff": "2026-09-09T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601138,
+      "leagueId": 7,
+      "home": "Sporting CP",
+      "away": "Galatasaray",
+      "kickoff": "2026-09-09T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601109,
+      "leagueId": 7,
+      "home": "Fenerbahçe",
+      "away": "AS Roma",
+      "kickoff": "2026-09-10T16:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601149,
+      "leagueId": 7,
+      "home": "PSV Eindhoven",
+      "away": "Shakhtar Donetsk",
+      "kickoff": "2026-09-10T16:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601062,
+      "leagueId": 7,
+      "home": "Manchester United",
+      "away": "Sabah FK",
+      "kickoff": "2026-09-10T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601067,
+      "leagueId": 7,
+      "home": "FC Bayern München",
+      "away": "Bodø/Glimt",
+      "kickoff": "2026-09-10T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601125,
+      "leagueId": 7,
+      "home": "Como",
+      "away": "RB Leipzig",
+      "kickoff": "2026-09-10T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
+    },
+    {
+      "eventId": 601154,
+      "leagueId": 7,
+      "home": "SK Slavia Praha",
+      "away": "RC Lens",
+      "kickoff": "2026-09-10T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-08T16:00:34Z"
     }
   ]
 }
