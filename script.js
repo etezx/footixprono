@@ -1,7 +1,30 @@
 
 const $ = (s,root=document)=>root.querySelector(s);
 const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
-const norm = s => (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
+const TEAM_NAME_ALIASES = {
+  "clubbruggekv":"clubbrugge",
+  "clubbruges":"clubbrugge",
+  "fcporto":"porto",
+  "fcbarcelona":"barcelona",
+  "vfbstuttgart":"stuttgart",
+  "vikingfk":"viking",
+  "liverpoolfc":"liverpool",
+  "atleticomadrid":"atleticodemadrid",
+  "skslovanbratislava":"slovanbratislava",
+  "sscnapoli":"napoli",
+  "asroma":"roma",
+  "psveindhoven":"psv",
+  "shakhtardonetsk":"shakhtar",
+  "rbleipzig":"leipzig",
+  "fcbayernmunchen":"bayernmunchen",
+  "sabahfk":"sabah",
+  "skslaviapraha":"slaviapraha",
+  "rclens":"lens"
+};
+const norm = s => {
+  const key=(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
+  return TEAM_NAME_ALIASES[key] || key;
+};
 
 let clubsCache=null;
 async function getJSON(url){
