@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-09T18:40:54Z",
+  "generatedAt": "2026-09-09T18:51:04Z",
   "events": [
     {
       "eventId": 210448,
@@ -405,7 +405,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T18:40:54Z",
+      "updatedAt": "2026-09-09T18:51:04Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -429,7 +429,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T18:40:54Z",
+      "updatedAt": "2026-09-09T18:51:04Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -449,7 +449,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T18:40:54Z",
+      "updatedAt": "2026-09-09T18:51:04Z",
       "homeScore": 2,
       "awayScore": 1,
       "minute": null,
@@ -471,7 +471,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T18:40:54Z",
+      "updatedAt": "2026-09-09T18:51:04Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -491,7 +491,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T18:40:54Z",
+      "updatedAt": "2026-09-09T18:51:04Z",
       "homeScore": 3,
       "awayScore": 2,
       "minute": null,
@@ -513,7 +513,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T18:40:54Z",
+      "updatedAt": "2026-09-09T18:51:04Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -531,12 +531,12 @@
       "leagueId": 7,
       "home": "FC Barcelona",
       "away": "Feyenoord",
-      "kickoff": "2026-09-09T16:45:00Z",
+      "kickoff": "2026-09-09T16:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T18:40:54Z",
+      "updatedAt": "2026-09-09T18:51:04Z",
       "minute": null,
       "homeScore": 5,
       "awayScore": 1,
@@ -555,12 +555,12 @@
       "leagueId": 7,
       "home": "VfB Stuttgart",
       "away": "Viking FK",
-      "kickoff": "2026-09-09T16:45:00Z",
+      "kickoff": "2026-09-09T16:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T18:40:54Z",
+      "updatedAt": "2026-09-09T18:51:04Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -581,7 +581,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     },
     {
       "eventId": 601065,
@@ -593,7 +593,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     },
     {
       "eventId": 601086,
@@ -605,7 +605,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     },
     {
       "eventId": 601138,
@@ -617,7 +617,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     },
     {
       "eventId": 601109,
@@ -629,7 +629,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     },
     {
       "eventId": 601149,
@@ -641,7 +641,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     },
     {
       "eventId": 601062,
@@ -653,7 +653,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     },
     {
       "eventId": 601067,
@@ -665,7 +665,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     },
     {
       "eventId": 601125,
@@ -677,7 +677,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     },
     {
       "eventId": 601154,
@@ -689,7 +689,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     },
     {
       "eventId": 210472,
@@ -701,7 +701,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T18:40:54Z"
+      "updatedAt": "2026-09-09T18:51:04Z"
     }
   ]
 }
