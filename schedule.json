@@ -646,7 +646,15 @@
       ],
       [
         "STADE RENNAIS FC",
-        "OLYMPIQUE DE MARSEILLE"
+        "OLYMPIQUE DE MARSEILLE",
+        {
+          "source": "bsd",
+          "eventId": 210472,
+          "status": "notstarted",
+          "live": false,
+          "completed": false,
+          "lastLiveUpdate": "2026-09-09T16:00:48Z"
+        }
       ],
       [
         "RC STRASBOURG ALSACE",
