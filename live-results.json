@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-09T19:00:54Z",
+  "generatedAt": "2026-09-09T19:10:47Z",
   "events": [
     {
       "eventId": 210448,
@@ -405,7 +405,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T19:00:54Z",
+      "updatedAt": "2026-09-09T19:10:47Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -429,7 +429,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T19:00:54Z",
+      "updatedAt": "2026-09-09T19:10:47Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -449,7 +449,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T19:00:54Z",
+      "updatedAt": "2026-09-09T19:10:47Z",
       "homeScore": 2,
       "awayScore": 1,
       "minute": null,
@@ -471,7 +471,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T19:00:54Z",
+      "updatedAt": "2026-09-09T19:10:47Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -491,7 +491,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T19:00:54Z",
+      "updatedAt": "2026-09-09T19:10:47Z",
       "homeScore": 3,
       "awayScore": 2,
       "minute": null,
@@ -513,7 +513,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T19:00:54Z",
+      "updatedAt": "2026-09-09T19:10:47Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -536,7 +536,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T19:00:54Z",
+      "updatedAt": "2026-09-09T19:10:47Z",
       "minute": null,
       "homeScore": 5,
       "awayScore": 1,
@@ -560,7 +560,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T19:00:54Z",
+      "updatedAt": "2026-09-09T19:10:47Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -576,48 +576,74 @@
       "leagueId": 7,
       "home": "Liverpool FC",
       "away": "Atlético Madrid",
-      "kickoff": "2026-09-09T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-09-09T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-09T19:10:47Z",
+      "minute": 7,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601065,
       "leagueId": 7,
       "home": "Paris Saint-Germain",
       "away": "ŠK Slovan Bratislava",
-      "kickoff": "2026-09-09T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-09-09T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-09T19:10:47Z",
+      "minute": 7,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601086,
       "leagueId": 7,
       "home": "SSC Napoli",
       "away": "Arsenal",
-      "kickoff": "2026-09-09T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-09-09T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-09T19:10:47Z",
+      "minute": 8,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601138,
       "leagueId": 7,
       "home": "Sporting CP",
       "away": "Galatasaray",
-      "kickoff": "2026-09-09T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-09-09T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-09T19:10:47Z",
+      "minute": 8,
+      "homeScore": 0,
+      "awayScore": 1,
+      "actualScorers": [
+        "L. Torreira"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 1
     },
     {
       "eventId": 601109,
@@ -629,7 +655,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "updatedAt": "2026-09-09T19:10:47Z"
     },
     {
       "eventId": 601149,
@@ -641,7 +667,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "updatedAt": "2026-09-09T19:10:47Z"
     },
     {
       "eventId": 601062,
@@ -653,7 +679,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "updatedAt": "2026-09-09T19:10:47Z"
     },
     {
       "eventId": 601067,
@@ -665,7 +691,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "updatedAt": "2026-09-09T19:10:47Z"
     },
     {
       "eventId": 601125,
@@ -677,7 +703,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "updatedAt": "2026-09-09T19:10:47Z"
     },
     {
       "eventId": 601154,
@@ -689,7 +715,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "updatedAt": "2026-09-09T19:10:47Z"
     },
     {
       "eventId": 210472,
@@ -701,7 +727,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T19:00:54Z"
+      "updatedAt": "2026-09-09T19:10:47Z"
     }
   ]
 }
