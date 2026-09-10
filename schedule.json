@@ -579,7 +579,7 @@
           "eventId": 210464,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-10T18:31:04Z"
+          "lastLiveUpdate": "2026-09-10T18:41:01Z"
         }
       ],
       [
@@ -605,7 +605,7 @@
           "eventId": 210465,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-10T18:31:04Z"
+          "lastLiveUpdate": "2026-09-10T18:41:01Z"
         }
       ],
       [
@@ -642,7 +642,7 @@
           "eventId": 210468,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-10T18:31:04Z"
+          "lastLiveUpdate": "2026-09-10T18:41:01Z"
         }
       ],
       [
@@ -657,7 +657,7 @@
           "eventId": 210469,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-10T18:31:04Z"
+          "lastLiveUpdate": "2026-09-10T18:41:01Z"
         }
       ],
       [
@@ -669,7 +669,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-09-10T18:31:04Z"
+          "lastLiveUpdate": "2026-09-10T18:41:01Z"
         }
       ],
       [
@@ -684,7 +684,7 @@
           "eventId": 210470,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-10T18:31:04Z"
+          "lastLiveUpdate": "2026-09-10T18:41:01Z"
         }
       ]
     ]
