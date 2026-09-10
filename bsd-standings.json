@@ -553,13 +553,13 @@
         {
           "position": 13,
           "club": "AS Roma",
-          "p": 0,
+          "p": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
           "group": "",
           "zone": {
             "key": "playoff",
@@ -569,6 +569,57 @@
         },
         {
           "position": 14,
+          "club": "Fenerbahçe",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "group": "",
+          "zone": {
+            "key": "playoff",
+            "label": "Qualification Playoffs",
+            "type": "playoff"
+          }
+        },
+        {
+          "position": 15,
+          "club": "PSV Eindhoven",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "group": "",
+          "zone": {
+            "key": "playoff",
+            "label": "Qualification Playoffs",
+            "type": "playoff"
+          }
+        },
+        {
+          "position": 16,
+          "club": "Shakhtar Donetsk",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "group": "",
+          "zone": {
+            "key": "playoff",
+            "label": "Qualification Playoffs",
+            "type": "playoff"
+          }
+        },
+        {
+          "position": 17,
           "club": "Bodø/Glimt",
           "p": 0,
           "w": 0,
@@ -585,7 +636,7 @@
           }
         },
         {
-          "position": 15,
+          "position": 18,
           "club": "Como",
           "p": 0,
           "w": 0,
@@ -602,7 +653,7 @@
           }
         },
         {
-          "position": 16,
+          "position": 19,
           "club": "FC Bayern München",
           "p": 0,
           "w": 0,
@@ -619,24 +670,7 @@
           }
         },
         {
-          "position": 17,
-          "club": "Fenerbahçe",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "group": "",
-          "zone": {
-            "key": "playoff",
-            "label": "Qualification Playoffs",
-            "type": "playoff"
-          }
-        },
-        {
-          "position": 18,
+          "position": 20,
           "club": "Manchester United",
           "p": 0,
           "w": 0,
@@ -653,24 +687,7 @@
           }
         },
         {
-          "position": 19,
-          "club": "PSV Eindhoven",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "group": "",
-          "zone": {
-            "key": "playoff",
-            "label": "Qualification Playoffs",
-            "type": "playoff"
-          }
-        },
-        {
-          "position": 20,
+          "position": 21,
           "club": "RB Leipzig",
           "p": 0,
           "w": 0,
@@ -687,7 +704,7 @@
           }
         },
         {
-          "position": 21,
+          "position": 22,
           "club": "RC Lens",
           "p": 0,
           "w": 0,
@@ -704,7 +721,7 @@
           }
         },
         {
-          "position": 22,
+          "position": 23,
           "club": "SK Slavia Praha",
           "p": 0,
           "w": 0,
@@ -721,25 +738,8 @@
           }
         },
         {
-          "position": 23,
-          "club": "Sabah FK",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "group": "",
-          "zone": {
-            "key": "playoff",
-            "label": "Qualification Playoffs",
-            "type": "playoff"
-          }
-        },
-        {
           "position": 24,
-          "club": "Shakhtar Donetsk",
+          "club": "Sabah FK",
           "p": 0,
           "w": 0,
           "d": 0,
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-10T18:41:01Z",
+  "generatedAt": "2026-09-10T18:50:58Z",
   "source": "BSD"
 }
