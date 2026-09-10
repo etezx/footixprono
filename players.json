@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T10:03:51.217092+00:00",
+  "updated_at": "2026-09-10T10:00:25.474541+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -80,7 +80,6 @@
       "Daren Mosengo",
       "Enzo Koffi",
       "Félix Mambimbi",
-      "Godson Kyeremeh",
       "Guy Zohouri",
       "Ismail Bouneb",
       "Joan Tincres",
@@ -327,5 +326,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 287
+  "players_fetched": 286
 }
