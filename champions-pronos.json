@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T23:57:01.233Z",
+  "updated_at": "2026-09-10T05:38:10.597Z",
   "source": "UEFA - calendrier officiel de la phase de ligue 2026/27 publié le 29 août 2026",
   "days": {
     "1": {
@@ -184,66 +184,87 @@
           "away": "Roma",
           "date": "2026-09-10",
           "time": "18:45",
-          "score": "",
-          "pick": "",
-          "scorers": [],
-          "buteurs": "",
-          "analyse": ""
+          "score": "2-1",
+          "pick": "1",
+          "scorers": [
+            "Dybala",
+            "Muriqi"
+          ],
+          "buteurs": "Dybala\nMuriqi",
+          "analyse": "Une des affiches les plus indécises de la soirée. La Roma possède beaucoup de qualité individuelle, notamment dans le secteur offensif, mais se déplacer à Istanbul reste toujours un rendez-vous particulier. Fenerbahçe est invaincu sur ses sept derniers matchs européens et reste particulièrement solide devant son public.\n\nLa Roma dispose néanmoins de suffisamment de talent pour mettre en difficulté la défense turque. Tout semble réuni pour avoir un match animé avec des occasions des deux côtés, mais l'avantage du terrain peut faire basculer cette rencontre en faveur de Fenerbahçe.\n\n🎯 PRONO : Fenerbahçe 2–1 Roma\n⚽ Buteurs : Mason Greenwood – Vedat Muriqi – Paulo Dybala"
         },
         {
           "home": "PSV",
           "away": "Shakhtar",
           "date": "2026-09-10",
           "time": "18:45",
-          "score": "",
-          "pick": "",
-          "scorers": [],
-          "buteurs": "",
-          "analyse": ""
+          "score": "3-1",
+          "pick": "1",
+          "scorers": [
+            "Ricardo Pepi",
+            "Elias"
+          ],
+          "buteurs": "Ricardo Pepi\nElias",
+          "analyse": "Le PSV est particulièrement dangereux à Eindhoven et possède une attaque capable de rapidement faire exploser une rencontre. Les Néerlandais marquent beaucoup, mais laissent également régulièrement des possibilités à leurs adversaires.\n\nLe Shakhtar possède justement suffisamment de qualité offensive pour profiter de ces espaces. La dernière confrontation entre les deux équipes avait offert un spectaculaire 3–2 pour le PSV après avoir été mené 0–2. Un scénario avec plusieurs buts paraît une nouvelle fois crédible, avec un avantage assez net pour le PSV à domicile.\n\n🎯 PRONO : PSV Eindhoven 3–1 Shakhtar\n⚽ Buteurs : Ricardo Pepi – Ivan Perišić – Kauã Elias\n👀 Tendance : victoire PSV + les deux équipes marquent"
         },
         {
           "home": "Como",
           "away": "Leipzig",
           "date": "2026-09-10",
           "time": "21:00",
-          "score": "",
-          "pick": "",
-          "scorers": [],
-          "buteurs": "",
-          "analyse": ""
+          "score": "2-1",
+          "pick": "1",
+          "scorers": [
+            "Nico Paz",
+            "Nkunku"
+          ],
+          "buteurs": "Nico Paz\nNkunku",
+          "analyse": "Attention au nom de Leipzig qui pourrait être trompeur sur cette affiche. Como arrive avec beaucoup d'ambition et possède une équipe particulièrement intéressante offensivement. À domicile, les Italiens ont les qualités nécessaires pour prendre le jeu à leur compte et poser énormément de problèmes aux Allemands.\n\nLeipzig reste toutefois une équipe dangereuse lorsqu'elle dispose d'espaces et devrait avoir plusieurs possibilités en transition. Une rencontre ouverte se profile donc avec des occasions des deux côtés, mais Como possède les arguments pour profiter de l'avantage du terrain et créer l'une des petites surprises de cette première journée.\n\n🎯 PRONO : Como 2–1 RB Leipzig\n⚽ Buteurs : Nico Paz – Assane Diao – Christopher Nkunku\n👀 Tendance : Como ou nul + les deux équipes marquent"
         },
         {
           "home": "Bayern München",
           "away": "Bodø/Glimt",
           "date": "2026-09-10",
           "time": "21:00",
-          "score": "",
-          "pick": "",
-          "scorers": [],
-          "buteurs": "",
-          "analyse": ""
+          "score": "4-1",
+          "pick": "1",
+          "scorers": [
+            "Kane",
+            "Hauge",
+            "Diaz"
+          ],
+          "buteurs": "Kane\nHauge\nDiaz",
+          "analyse": "Bodø/Glimt arrive sans complexe et reste une équipe capable de proposer du jeu, mais le déplacement à Munich représente un changement de dimension. Face à la puissance offensive du Bayern, les Norvégiens risquent de passer une très grande partie de la rencontre à défendre.\n\nLe Bayern possède énormément d'armes pour faire la différence et devrait rapidement imposer son rythme. Bodø/Glimt peut profiter de son audace pour trouver une ouverture, mais sur 90 minutes, l'écart entre les deux effectifs devrait largement se ressentir.\n\n🎯 PRONO : Bayern Munich 4–1 Bodø/Glimt\n⚽ Buteurs : Harry Kane x2 – Michael Olise – Luis Díaz – Jens Petter Hauge\n🔥 Tendance : victoire Bayern avec au moins 2 buts d'écart"
         },
         {
           "home": "Manchester United",
           "away": "Sabah",
           "date": "2026-09-10",
           "time": "21:00",
-          "score": "",
-          "pick": "",
-          "scorers": [],
-          "buteurs": "",
-          "analyse": ""
+          "score": "4-0",
+          "pick": "1",
+          "scorers": [
+            "Bryan Mbeumo",
+            "Bruno Fernandes",
+            "Benjamin Šeško"
+          ],
+          "buteurs": "Bryan Mbeumo\nBruno Fernandes\nBenjamin Šeško",
+          "analyse": "Une soirée historique attend Sabah pour le premier match de Ligue des champions de son histoire, mais le défi est immense à Old Trafford. Manchester United dispose d'une supériorité individuelle considérable et devrait monopoliser le ballon tout en multipliant les situations offensives.\n\nSabah risque surtout de chercher à rester compact le plus longtemps possible. Si United ouvre rapidement le score, la rencontre pourrait devenir très compliquée pour les Azerbaïdjanais et l'écart pourrait rapidement augmenter.\n\n🎯 PRONO : Manchester United 4–0 Sabah\n⚽ Buteurs : Benjamin Šeško x2 – Bryan Mbeumo – Bruno Fernandes\n🔥 Tendance : victoire Manchester United avec au moins 2 buts d'écart"
         },
         {
           "home": "Slavia Praha",
           "away": "Lens",
           "date": "2026-09-10",
           "time": "21:00",
-          "score": "",
-          "pick": "",
-          "scorers": [],
-          "buteurs": "",
-          "analyse": ""
+          "score": "2-2",
+          "pick": "N",
+          "scorers": [
+            "Tomáš Chorý",
+            "Florian Thauvin",
+            "Odsonne Édouard"
+          ],
+          "buteurs": "Tomáš Chorý\nFlorian Thauvin\nOdsonne Édouard",
+          "analyse": "Probablement l'une des rencontres les plus piégeuses de la soirée. Lens possède les qualités nécessaires pour obtenir un résultat à Prague, mais le Slavia est particulièrement difficile à manœuvrer à domicile et arrive en pleine confiance.\n\nLes deux équipes ont également suffisamment d'arguments offensifs pour marquer. Lens peut faire mal avec ses transitions et la qualité de ses attaquants, tandis que le Slavia devrait profiter de son public pour jouer avec beaucoup d'intensité. Un match très équilibré et potentiellement spectaculaire, où le nul reste légèrement plus prudent qu'une victoire sèche lensoise.\n\n🎯 PRONO : Slavia Prague 2–2 Lens\n⚽ Buteurs : Tomáš Chorý – Wiktor Nowak – Florian Thauvin – Odsonne Édouard\n👀 Tendance : Lens ou nul + les deux équipes marquent"
         }
       ]
     },
