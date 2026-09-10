@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-09T21:01:30Z",
+  "generatedAt": "2026-09-10T16:01:11Z",
   "events": [
     {
       "eventId": 210448,
@@ -405,7 +405,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -429,7 +429,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -449,7 +449,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "homeScore": 2,
       "awayScore": 1,
       "minute": null,
@@ -471,7 +471,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -491,7 +491,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "homeScore": 3,
       "awayScore": 2,
       "minute": null,
@@ -513,7 +513,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -536,7 +536,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "minute": null,
       "homeScore": 5,
       "awayScore": 1,
@@ -560,7 +560,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -576,12 +576,12 @@
       "leagueId": 7,
       "home": "Liverpool FC",
       "away": "Atlético Madrid",
-      "kickoff": "2026-09-09T19:00:00Z",
+      "kickoff": "2026-09-09T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -598,12 +598,12 @@
       "leagueId": 7,
       "home": "Paris Saint-Germain",
       "away": "ŠK Slovan Bratislava",
-      "kickoff": "2026-09-09T19:00:00Z",
+      "kickoff": "2026-09-09T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "minute": null,
       "homeScore": 6,
       "awayScore": 1,
@@ -621,12 +621,12 @@
       "leagueId": 7,
       "home": "SSC Napoli",
       "away": "Arsenal",
-      "kickoff": "2026-09-09T19:00:00Z",
+      "kickoff": "2026-09-09T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -641,12 +641,12 @@
       "leagueId": 7,
       "home": "Sporting CP",
       "away": "Galatasaray",
-      "kickoff": "2026-09-09T19:00:00Z",
+      "kickoff": "2026-09-09T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-09T21:01:30Z",
+      "updatedAt": "2026-09-10T16:01:11Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -669,7 +669,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T21:01:30Z"
+      "updatedAt": "2026-09-10T16:01:11Z"
     },
     {
       "eventId": 601149,
@@ -681,7 +681,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T21:01:30Z"
+      "updatedAt": "2026-09-10T16:01:11Z"
     },
     {
       "eventId": 601062,
@@ -693,7 +693,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T21:01:30Z"
+      "updatedAt": "2026-09-10T16:01:11Z"
     },
     {
       "eventId": 601067,
@@ -705,7 +705,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T21:01:30Z"
+      "updatedAt": "2026-09-10T16:01:11Z"
     },
     {
       "eventId": 601125,
@@ -717,7 +717,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T21:01:30Z"
+      "updatedAt": "2026-09-10T16:01:11Z"
     },
     {
       "eventId": 601154,
@@ -729,7 +729,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T21:01:30Z"
+      "updatedAt": "2026-09-10T16:01:11Z"
     },
     {
       "eventId": 210472,
@@ -741,7 +741,67 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-09T21:01:30Z"
+      "updatedAt": "2026-09-10T16:01:11Z"
+    },
+    {
+      "eventId": 210470,
+      "leagueId": 6,
+      "home": "RC Strasbourg",
+      "away": "AS Monaco",
+      "kickoff": "2026-09-12T15:15:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-10T16:01:11Z"
+    },
+    {
+      "eventId": 210464,
+      "leagueId": 6,
+      "home": "Auxerre",
+      "away": "Nice",
+      "kickoff": "2026-09-12T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-10T16:01:11Z"
+    },
+    {
+      "eventId": 210465,
+      "leagueId": 6,
+      "home": "Le Havre",
+      "away": "Angers",
+      "kickoff": "2026-09-12T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-10T16:01:11Z"
+    },
+    {
+      "eventId": 210468,
+      "leagueId": 6,
+      "home": "Lorient",
+      "away": "Toulouse",
+      "kickoff": "2026-09-12T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-10T16:01:11Z"
+    },
+    {
+      "eventId": 210469,
+      "leagueId": 6,
+      "home": "Paris FC",
+      "away": "Olympique Lyonnais",
+      "kickoff": "2026-09-12T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-10T16:01:11Z"
     }
   ]
 }
