@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-09-11T18:33:25.796993+00:00",
+  "updated_at": "2026-09-11T21:44:14.774764+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
+    {
+      "club": "Stade Rennais",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
+      "p": 4,
+      "w": 3,
+      "d": 1,
+      "l": 0,
+      "gf": 8,
+      "ga": 5,
+      "pts": 10,
+      "last5": []
+    },
     {
       "club": "AS Monaco",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
@@ -47,18 +59,6 @@
       "l": 0,
       "gf": 5,
       "ga": 2,
-      "pts": 7,
-      "last5": []
-    },
-    {
-      "club": "Stade Rennais",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
-      "p": 3,
-      "w": 2,
-      "d": 1,
-      "l": 0,
-      "gf": 7,
-      "ga": 5,
       "pts": 7,
       "last5": []
     },
@@ -111,8 +111,8 @@
       "last5": []
     },
     {
-      "club": "Marseille",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+      "club": "Lens",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
       "p": 3,
       "w": 1,
       "d": 0,
@@ -123,14 +123,14 @@
       "last5": []
     },
     {
-      "club": "Lens",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
-      "p": 3,
+      "club": "Marseille",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+      "p": 4,
       "w": 1,
       "d": 0,
-      "l": 2,
+      "l": 3,
       "gf": 6,
-      "ga": 5,
+      "ga": 6,
       "pts": 3,
       "last5": []
     },
