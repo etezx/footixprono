@@ -575,7 +575,7 @@
           "eventId": 210464,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T19:41:14Z"
+          "lastLiveUpdate": "2026-09-11T20:02:06Z"
         }
       ],
       [
@@ -590,7 +590,7 @@
           "eventId": 210471,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T19:41:14Z"
+          "lastLiveUpdate": "2026-09-11T20:02:06Z"
         }
       ],
       [
@@ -605,7 +605,7 @@
           "eventId": 210465,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T19:41:14Z"
+          "lastLiveUpdate": "2026-09-11T20:02:06Z"
         }
       ],
       [
@@ -620,7 +620,7 @@
           "eventId": 210466,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T19:41:14Z"
+          "lastLiveUpdate": "2026-09-11T20:02:06Z"
         }
       ],
       [
@@ -635,7 +635,7 @@
           "eventId": 210467,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T19:41:14Z"
+          "lastLiveUpdate": "2026-09-11T20:02:06Z"
         }
       ],
       [
@@ -650,7 +650,7 @@
           "eventId": 210468,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T19:41:14Z"
+          "lastLiveUpdate": "2026-09-11T20:02:06Z"
         }
       ],
       [
@@ -665,7 +665,7 @@
           "eventId": 210469,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T19:41:14Z"
+          "lastLiveUpdate": "2026-09-11T20:02:06Z"
         }
       ],
       [
@@ -680,12 +680,14 @@
           "eventId": 210472,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-11T19:41:14Z",
-          "minute": 45,
-          "period": "halftime",
-          "homeScore": 0,
+          "lastLiveUpdate": "2026-09-11T20:02:06Z",
+          "minute": 59,
+          "period": "2nd_half",
+          "homeScore": 1,
           "awayScore": 0,
-          "actualScorers": [],
+          "actualScorers": [
+            "A. Thomasson"
+          ],
           "scorersVerified": true
         }
       ],
@@ -701,7 +703,7 @@
           "eventId": 210470,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T19:41:14Z"
+          "lastLiveUpdate": "2026-09-11T20:02:06Z"
         }
       ]
     ]
