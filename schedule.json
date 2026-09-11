@@ -348,7 +348,24 @@
     "matches": [
       [
         "ANGERS SCO",
-        "STADE RENNAIS FC"
+        "STADE RENNAIS FC",
+        {
+          "source": "bsd",
+          "eventId": 210455,
+          "status": "finished",
+          "live": false,
+          "completed": true,
+          "period": "FT",
+          "homeScore": 1,
+          "awayScore": 2,
+          "actualScorers": [
+            "C. Arcus",
+            "J. Lefort",
+            "P. Frankowski"
+          ],
+          "scorersVerified": true,
+          "lastLiveUpdate": "2026-09-08T21:00:33Z"
+        }
       ],
       [
         "LE HAVRE",
@@ -357,8 +374,20 @@
           "date": "2026-09-05",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": true,
+          "eventId": 210456,
+          "status": "finished",
+          "live": false,
+          "period": "FT",
+          "homeScore": 1,
+          "awayScore": 2,
+          "actualScorers": [
+            "R. Fofana",
+            "K. Doumbia"
+          ],
+          "scorersVerified": true,
+          "lastLiveUpdate": "2026-09-06T20:40:25Z"
         }
       ],
       [
@@ -368,8 +397,19 @@
           "date": "2026-09-05",
           "time": "17:15",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": true,
+          "eventId": 210461,
+          "status": "finished",
+          "live": false,
+          "period": "FT",
+          "homeScore": 0,
+          "awayScore": 1,
+          "actualScorers": [
+            "M. Koné"
+          ],
+          "scorersVerified": true,
+          "lastLiveUpdate": "2026-09-06T20:40:25Z"
         }
       ],
       [
@@ -379,8 +419,22 @@
           "date": "2026-09-04",
           "time": "19:00",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": true,
+          "eventId": 210458,
+          "status": "finished",
+          "live": false,
+          "period": "FT",
+          "homeScore": 3,
+          "awayScore": 1,
+          "actualScorers": [
+            "E. Nuamah",
+            "C. Archer",
+            "Z. Athekame",
+            "F. Bacher"
+          ],
+          "scorersVerified": true,
+          "lastLiveUpdate": "2026-09-06T20:40:25Z"
         }
       ],
       [
@@ -390,8 +444,20 @@
           "date": "2026-09-06",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": true,
+          "eventId": 210459,
+          "status": "finished",
+          "live": false,
+          "period": "FT",
+          "homeScore": 2,
+          "awayScore": 3,
+          "actualScorers": [
+            "L. Sinayoko",
+            "A. Gouiri"
+          ],
+          "scorersVerified": true,
+          "lastLiveUpdate": "2026-09-08T21:00:33Z"
         }
       ],
       [
@@ -401,8 +467,20 @@
           "date": "2026-09-05",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": true,
+          "eventId": 210457,
+          "status": "finished",
+          "live": false,
+          "period": "FT",
+          "homeScore": 1,
+          "awayScore": 1,
+          "actualScorers": [
+            "E. Wahi",
+            "A. Bourabaa"
+          ],
+          "scorersVerified": true,
+          "lastLiveUpdate": "2026-09-06T20:40:25Z"
         }
       ],
       [
@@ -412,8 +490,21 @@
           "date": "2026-09-04",
           "time": "21:05",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": true,
+          "eventId": 210460,
+          "status": "finished",
+          "live": false,
+          "period": "FT",
+          "homeScore": 1,
+          "awayScore": 2,
+          "actualScorers": [
+            "S. I. Muzambo",
+            "F. Nazinho",
+            "Marquinhos"
+          ],
+          "scorersVerified": true,
+          "lastLiveUpdate": "2026-09-06T20:40:25Z"
         }
       ],
       [
@@ -423,8 +514,19 @@
           "date": "2026-09-03",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": true,
+          "eventId": 210462,
+          "status": "finished",
+          "live": false,
+          "period": "FT",
+          "homeScore": 0,
+          "awayScore": 1,
+          "actualScorers": [
+            "A. Ueda"
+          ],
+          "scorersVerified": true,
+          "lastLiveUpdate": "2026-09-05T20:50:24Z"
         }
       ],
       [
@@ -434,8 +536,25 @@
           "date": "2026-09-06",
           "time": "15:00",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": true,
+          "eventId": 210463,
+          "status": "finished",
+          "live": false,
+          "period": "FT",
+          "homeScore": 2,
+          "awayScore": 6,
+          "actualScorers": [
+            "J. Le Douaron",
+            "C. Harder",
+            "S. Amo-Ameyaw",
+            "G. Reyna",
+            "D. Lobao",
+            "J. Ortega",
+            "A. Mille"
+          ],
+          "scorersVerified": true,
+          "lastLiveUpdate": "2026-09-08T21:00:33Z"
         }
       ]
     ]
@@ -451,8 +570,12 @@
           "date": "2026-09-12",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210464,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-09-11T18:11:10Z"
         }
       ],
       [
@@ -462,8 +585,12 @@
           "date": "2026-09-13",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210471,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-09-11T18:11:10Z"
         }
       ],
       [
@@ -473,8 +600,12 @@
           "date": "2026-09-12",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210465,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-09-11T18:11:10Z"
         }
       ],
       [
@@ -484,8 +615,12 @@
           "date": "2026-09-13",
           "time": "17:15",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210466,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-09-11T18:11:10Z"
         }
       ],
       [
@@ -495,8 +630,12 @@
           "date": "2026-09-13",
           "time": "15:00",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210467,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-09-11T18:11:10Z"
         }
       ],
       [
@@ -506,8 +645,12 @@
           "date": "2026-09-12",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210468,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-09-11T18:11:10Z"
         }
       ],
       [
@@ -517,8 +660,12 @@
           "date": "2026-09-12",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210469,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-09-11T18:11:10Z"
         }
       ],
       [
@@ -528,8 +675,12 @@
           "date": "2026-09-11",
           "time": "20:45",
           "official": true,
-          "source": "LFP",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210472,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-09-11T18:11:10Z"
         }
       ],
       [
@@ -539,8 +690,12 @@
           "date": "2026-09-12",
           "time": "17:15",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210470,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-09-11T18:11:10Z"
         }
       ]
     ]
