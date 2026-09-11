@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-10T21:01:01Z",
+  "generatedAt": "2026-09-11T18:01:29Z",
   "events": [
     {
       "eventId": 210448,
@@ -536,7 +536,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 5,
       "awayScore": 1,
@@ -560,7 +560,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -581,7 +581,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -603,7 +603,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 6,
       "awayScore": 1,
@@ -626,7 +626,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -646,7 +646,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -669,7 +669,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -690,7 +690,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -706,12 +706,12 @@
       "leagueId": 7,
       "home": "Manchester United",
       "away": "Sabah FK",
-      "kickoff": "2026-09-10T19:00:00Z",
+      "kickoff": "2026-09-10T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -729,12 +729,12 @@
       "leagueId": 7,
       "home": "FC Bayern München",
       "away": "Bodø/Glimt",
-      "kickoff": "2026-09-10T19:00:00Z",
+      "kickoff": "2026-09-10T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 5,
       "awayScore": 0,
@@ -752,12 +752,12 @@
       "leagueId": 7,
       "home": "Como",
       "away": "RB Leipzig",
-      "kickoff": "2026-09-10T19:00:00Z",
+      "kickoff": "2026-09-10T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 1,
@@ -776,12 +776,12 @@
       "leagueId": 7,
       "home": "SK Slavia Praha",
       "away": "RC Lens",
-      "kickoff": "2026-09-10T19:00:00Z",
+      "kickoff": "2026-09-10T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-10T21:01:01Z",
+      "updatedAt": "2026-09-11T18:01:29Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -804,7 +804,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-10T21:01:01Z"
+      "updatedAt": "2026-09-11T18:01:29Z"
     },
     {
       "eventId": 210470,
@@ -816,7 +816,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-10T21:01:01Z"
+      "updatedAt": "2026-09-11T18:01:29Z"
     },
     {
       "eventId": 210464,
@@ -828,7 +828,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-10T21:01:01Z"
+      "updatedAt": "2026-09-11T18:01:29Z"
     },
     {
       "eventId": 210465,
@@ -840,7 +840,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-10T21:01:01Z"
+      "updatedAt": "2026-09-11T18:01:29Z"
     },
     {
       "eventId": 210468,
@@ -852,7 +852,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-10T21:01:01Z"
+      "updatedAt": "2026-09-11T18:01:29Z"
     },
     {
       "eventId": 210469,
@@ -864,7 +864,43 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-10T21:01:01Z"
+      "updatedAt": "2026-09-11T18:01:29Z"
+    },
+    {
+      "eventId": 210467,
+      "leagueId": 6,
+      "home": "Lille",
+      "away": "Troyes",
+      "kickoff": "2026-09-13T13:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-11T18:01:29Z"
+    },
+    {
+      "eventId": 210466,
+      "leagueId": 6,
+      "home": "Le Mans",
+      "away": "RC Lens",
+      "kickoff": "2026-09-13T15:15:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-11T18:01:29Z"
+    },
+    {
+      "eventId": 210471,
+      "leagueId": 6,
+      "home": "Stade Brestois",
+      "away": "Paris Saint-Germain",
+      "kickoff": "2026-09-13T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-11T18:01:29Z"
     }
   ]
 }
