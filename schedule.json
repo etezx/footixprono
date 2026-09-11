@@ -575,7 +575,7 @@
           "eventId": 210464,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:31:45Z"
+          "lastLiveUpdate": "2026-09-11T20:41:16Z"
         }
       ],
       [
@@ -590,7 +590,7 @@
           "eventId": 210471,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:31:45Z"
+          "lastLiveUpdate": "2026-09-11T20:41:16Z"
         }
       ],
       [
@@ -605,7 +605,7 @@
           "eventId": 210465,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:31:45Z"
+          "lastLiveUpdate": "2026-09-11T20:41:16Z"
         }
       ],
       [
@@ -620,7 +620,7 @@
           "eventId": 210466,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:31:45Z"
+          "lastLiveUpdate": "2026-09-11T20:41:16Z"
         }
       ],
       [
@@ -635,7 +635,7 @@
           "eventId": 210467,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:31:45Z"
+          "lastLiveUpdate": "2026-09-11T20:41:16Z"
         }
       ],
       [
@@ -650,7 +650,7 @@
           "eventId": 210468,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:31:45Z"
+          "lastLiveUpdate": "2026-09-11T20:41:16Z"
         }
       ],
       [
@@ -665,7 +665,7 @@
           "eventId": 210469,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:31:45Z"
+          "lastLiveUpdate": "2026-09-11T20:41:16Z"
         }
       ],
       [
@@ -676,13 +676,12 @@
           "time": "20:45",
           "official": true,
           "source": "bsd",
-          "completed": false,
+          "completed": true,
           "eventId": 210472,
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-09-11T20:31:45Z",
-          "minute": 89,
-          "period": "2nd_half",
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-09-11T20:41:16Z",
+          "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
           "actualScorers": [
@@ -703,7 +702,7 @@
           "eventId": 210470,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:31:45Z"
+          "lastLiveUpdate": "2026-09-11T20:41:16Z"
         }
       ]
     ]
