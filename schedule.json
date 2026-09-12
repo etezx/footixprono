@@ -575,9 +575,9 @@
           "eventId": 210464,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-12T19:50:27Z",
-          "minute": 45,
-          "period": "halftime",
+          "lastLiveUpdate": "2026-09-12T20:00:57Z",
+          "minute": 53,
+          "period": "2nd_half",
           "homeScore": 0,
           "awayScore": 0,
           "actualScorers": [],
@@ -596,7 +596,7 @@
           "eventId": 210471,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-12T19:50:27Z"
+          "lastLiveUpdate": "2026-09-12T20:00:57Z"
         }
       ],
       [
@@ -611,8 +611,8 @@
           "eventId": 210465,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-12T19:50:27Z",
-          "minute": 47,
+          "lastLiveUpdate": "2026-09-12T20:00:57Z",
+          "minute": 57,
           "period": "2nd_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -632,7 +632,7 @@
           "eventId": 210466,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-12T19:50:27Z"
+          "lastLiveUpdate": "2026-09-12T20:00:57Z"
         }
       ],
       [
@@ -647,7 +647,7 @@
           "eventId": 210467,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-12T19:50:27Z"
+          "lastLiveUpdate": "2026-09-12T20:00:57Z"
         }
       ],
       [
@@ -662,12 +662,13 @@
           "eventId": 210468,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-12T19:50:27Z",
-          "minute": 46,
+          "lastLiveUpdate": "2026-09-12T20:00:57Z",
+          "minute": 56,
           "period": "2nd_half",
           "homeScore": 2,
-          "awayScore": 0,
+          "awayScore": 1,
           "actualScorers": [
+            "C. Tengstedt",
             "N. Mbamba",
             "I. Baldé"
           ],
@@ -686,8 +687,8 @@
           "eventId": 210469,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-12T19:50:27Z",
-          "minute": 46,
+          "lastLiveUpdate": "2026-09-12T20:00:57Z",
+          "minute": 56,
           "period": "2nd_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -707,7 +708,7 @@
           "eventId": 210472,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-12T19:50:27Z",
+          "lastLiveUpdate": "2026-09-12T20:00:57Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -729,7 +730,7 @@
           "eventId": 210470,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-12T19:50:27Z",
+          "lastLiveUpdate": "2026-09-12T20:00:57Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
