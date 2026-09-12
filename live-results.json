@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-12T16:40:33Z",
+  "generatedAt": "2026-09-12T16:50:34Z",
   "events": [
     {
       "eventId": 210448,
@@ -669,7 +669,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-12T16:40:33Z",
+      "updatedAt": "2026-09-12T16:50:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -690,7 +690,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-12T16:40:33Z",
+      "updatedAt": "2026-09-12T16:50:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -711,7 +711,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-12T16:40:33Z",
+      "updatedAt": "2026-09-12T16:50:34Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -734,7 +734,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-12T16:40:33Z",
+      "updatedAt": "2026-09-12T16:50:34Z",
       "minute": null,
       "homeScore": 5,
       "awayScore": 0,
@@ -757,7 +757,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-12T16:40:33Z",
+      "updatedAt": "2026-09-12T16:50:34Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 1,
@@ -781,7 +781,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-12T16:40:33Z",
+      "updatedAt": "2026-09-12T16:50:34Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -804,7 +804,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-12T16:40:33Z",
+      "updatedAt": "2026-09-12T16:50:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -824,15 +824,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-12T16:40:33Z",
-      "minute": 62,
+      "updatedAt": "2026-09-12T16:50:34Z",
+      "minute": 72,
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 1,
       "actualScorers": [
+        "P. Brunner",
         "S. Sané"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210464,
@@ -844,7 +845,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-12T16:40:33Z"
+      "updatedAt": "2026-09-12T16:50:34Z"
     },
     {
       "eventId": 210465,
@@ -856,7 +857,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-12T16:40:33Z"
+      "updatedAt": "2026-09-12T16:50:34Z"
     },
     {
       "eventId": 210468,
@@ -868,7 +869,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-12T16:40:33Z"
+      "updatedAt": "2026-09-12T16:50:34Z"
     },
     {
       "eventId": 210469,
@@ -880,7 +881,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-12T16:40:33Z"
+      "updatedAt": "2026-09-12T16:50:34Z"
     },
     {
       "eventId": 210467,
@@ -892,7 +893,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-12T16:40:33Z"
+      "updatedAt": "2026-09-12T16:50:34Z"
     },
     {
       "eventId": 210466,
@@ -904,7 +905,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-12T16:40:33Z"
+      "updatedAt": "2026-09-12T16:50:34Z"
     },
     {
       "eventId": 210471,
@@ -916,7 +917,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-12T16:40:33Z"
+      "updatedAt": "2026-09-12T16:50:34Z"
     }
   ]
 }
