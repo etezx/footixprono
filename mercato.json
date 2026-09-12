@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T18:40:44.345270+00:00",
+  "updated_at": "2026-09-12T22:30:35.510318+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -21,22 +21,10 @@
       "source": "ligue1.com"
     },
     {
-      "title": "Ligue 1. Plus de 70 millions d’euros de ventes : le président du TFC se félicite d’un « mercato de tous les records » - Ouest-France",
-      "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxObzREbnlPTzR2bHJ3RG55MDR0cGxHM0Jmal9EY2dfR3NGd0NtQ2E4STFYUVl4N3JKUTZqUTVmaXZ4RHlWQngxNlpyVnpyMkxuYUcxWlFpRjROc0N3N2VZck5TSUx2ckRMY1FCQkZ4YTgyakZPUlJJamhPZnVLMmRROVc0VHdERklSb2F2U0NZWnRXSFZSc3pQZEQwbDB3QVpZWWlfd1ZYQ1o2VlJ0Nm5RWmhVVjF0U1NPVjZaM19KemJibkdnZUNmZ2l5eXl0TDdVZDhMRS1fdXZhdkhUSkVxMGoycENSNUNaa2l2QjVkSUc4bVVPWFBXcHBaOHM0MlE1bHJ1aTVXTDlQQk9jbzZ4MktsRW83VHBVSUdxam5QRWVuajVOUmx3?oc=5",
-      "published": "2026-09-08T13:20:36+00:00",
-      "source": "Ouest-France"
-    },
-    {
       "title": "Ligue 1. En 2026, l’OL possède le 5e effectif de Ligue 1 en termes de coût de transferts - Le Progrès",
       "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMmRRTnk2dFZiWWpsTlZVNUU1eGQxVG5nc2JPX01maHN0emVETHlJSFMxVHBpWl9qSENkVTVIdTUyWHJJVEplYnd3TmxWbmhzLWRhS2xtc1lBLXNEbDVRM0NNY1lNN0ZaLU1RR3NTR3hEdWd0SDJ4c3RkTDJ5ZVhDd0RsYVZITWg2dVowelQtOFRGX2tSczN5OVBVM0YyTzRqb2Y3RzNLd1FSaHdjMXJtcGpYT0VRZW1BRkJyc0FqNnRpN2hxU3FaVg?oc=5",
       "published": "2026-09-09T15:27:00+00:00",
       "source": "Le Progrès"
-    },
-    {
-      "title": "Ligue 1 : Toulouse a «un peu changé de dimension» lors du mercato, se félicite son président - Le Figaro",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMHRQbmFTbEJtdlRtMW5NNUxBcjRqQkpmMVNIeEttQVBjNFg5OUtiVjVjYUJNc2hEWXM2YUlhR1BoTE5ubGxzM2FTNFlBVlhTRDlJUmZod3RPdEk1OEpqdF9VWlVJLUxqMTA3MlFKM2s2QkU0dldqZ0NGbGViRThwbFZ4cjlaOVRiOEdvcnNyRl9NZk1pQm51VUgzZXIxbHg1U0pFNkltN01EdEZvRW9pcXcwZWFWd3BlZnpLOGt0elpTSjhvVlF5a2ltYWZISTkzemplOE9iYzZQZTB0?oc=5",
-      "published": "2026-09-08T15:42:24+00:00",
-      "source": "Le Figaro"
     },
     {
       "title": "Mercato : un club de Ligue 1 et un club de Ligue 2 en concurrence pour un gardien du Paris FC - Foot National",
@@ -57,21 +45,33 @@
       "source": "ici.fr"
     },
     {
-      "title": "Mercato : Anthony Martial snobe deux clubs de Ligue 1 - Score.fr",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcmdoUkNGdnlfa2JRTTFFOF9vODQwTkt6emRXMVNlX1pNdmFzNVhhbEhuT3N4V3VqaGJKdGZLemRMOC1wTWlHS1dSLVJiWGRGMEpHeUVIVHptMjcwTXd6dGYwb2UzOWJTMGlWN25zaENqM1RmZG55ZlZaMVowNW5Tcl9GYVlWZVNxVS03RlV3Tl9uaDdyZ1E?oc=5",
-      "published": "2026-09-07T19:05:00+00:00",
-      "source": "Score.fr"
-    },
-    {
       "title": "TFC : convoité à l'étranger durant le mercato, le jeune Alexis Vossah compte s'imposer avec son club formateur cette saison - ladepeche.fr",
       "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQZjFVeTRXWXVPOVJMTkZ5WGxpWUQ3WVFTMWlPWVZjTlJkSzkxR0FfUEwyTXpBRzI1Tnh3aEdXblNmLWtweFNaTWJYUEV1RnB0VXFaMDFLa045OFNhVGQwX3lmbjZWVFhaOXlGU09ZeVFpaGc5OWtVRUQzcXdTZXJnYTZ5eHhsRFVXeC00NjMxUjczYzAyQzNWeUo3OFhzbUZHTTZfQ3JvUTgxN2Vsd0JkbnZZcHM5eGtOXzVzUkZRV0hscG9WdzRqdEpuZkJyeGpmdEhJbG5kaFJoNWRLTzNGSmJGNUp4TXpWMnZjTTJOcnFrU01ZSUVSeGJKVQ?oc=5",
       "published": "2026-09-09T18:08:00+00:00",
       "source": "ladepeche.fr"
     },
     {
+      "title": "AS Monaco. Lamine Camara tente de rebondir après un « mercato mouvementé et difficile » - Ouest-France",
+      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPLXM4enRydU1mNDRRcmFXbVZlR1pXdlo5Z0pSZ2E0NkxlM1E2SjRZNmZJUHp3YkI3cTB6Y1ZTT0JSVWRSdGNKVC1BN3ZXSDF2ekFPTjRWaV9RR0dBWUYxckpGeE9Eakx3bGVDczBySWtreXYyM3VLamRnUU5GZTRzS1FtSks3SkhnSldIS1pwVGUyT001UURvZ0pfUktjYkxEZ0k0ckhENjItSzZzcFNPay1lSmVaNUdHaXBtWExsbWNMUW5zQVA3V0E0Qjc3Unp1THFDQ0xYeHRYVGxoUWRZU05xSWV0NWhNNlN0UFRNMF9OUm5VOGZaYnFOajkxUQ?oc=5",
+      "published": "2026-09-11T12:45:59+00:00",
+      "source": "Ouest-France"
+    },
+    {
       "title": "Ça commence à sentir très mauvais pour l’OM ! - Foot Mercato",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcElsb2dOTlpyX0dRYUI1cWExX01OTDZHcjBtREFFbEh1amRPTXgwdFBMNmpoMkNhb09Td1UyVmhPV2ZOejBzV0xIYWt1Qm41cWRsUlY5UGxEazlnTnVuVi1OVnFfSlBKZzlXLVZnNTFjSFQtOTF1ZUx5c1hpRUR2N2F3R3RlUmtBUlNWYloyblY3dmZzV3c?oc=5",
       "published": "2026-09-07T06:22:19+00:00",
+      "source": "Foot Mercato"
+    },
+    {
+      "title": "Mercato : Alidu Seidu vers Nice en joker ? - L'Équipe",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMDVnUTFtNEpMNE5OWEdDaC1vRzIwMUpzS3p0V0JfMTdfLWhuSVRNaTNxVFJjRkVhc3EyQWtOOVhGNm13cmtYM0ptNzZsNVJGa25qNjduNkNPdFVtdFFhcWRkNDVZVmpyamNkNE1OWURiOEtNZk1xN2lYR010LWQtcDhJcHBfanNUNzVPbjl1b2hoTk1wdEowc3RQcHg?oc=5",
+      "published": "2026-09-11T09:22:42+00:00",
+      "source": "L'Équipe"
+    },
+    {
+      "title": "Deux clubs de Ligue 1 ont proposé un contrat à Anthony Martial - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNd3pYZVFtTkFXOHpfMTR4cnpqbFBwdG80QWlUa2pfN21rYkZHSjVZWUhXT3lfcmd4d0xDcEtqakgxaWpOUnBEWG1XTmtaZnd0TWRTcGdlUnVGNkh3SWRyQS1YRTRXZ20zMDB2d29MaWREenZQYWEzZFM1SVl6ZWxuU00tZDZXN24tU2FzRGVnUzRXdF9uT1BLQ0VRdDl3MERYMWdoWklReFFRNF9feWg3b0w1MjZqaGk1?oc=5",
+      "published": "2026-09-07T10:45:12+00:00",
       "source": "Foot Mercato"
     }
   ]
