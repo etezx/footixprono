@@ -139,13 +139,13 @@
         {
           "position": 8,
           "club": "Lorient",
-          "p": 3,
+          "p": 4,
           "w": 1,
-          "d": 1,
+          "d": 2,
           "l": 1,
-          "gf": 2,
-          "ga": 2,
-          "pts": 4,
+          "gf": 4,
+          "ga": 4,
+          "pts": 5,
           "group": "",
           "zone": null
         },
@@ -229,6 +229,19 @@
         },
         {
           "position": 15,
+          "club": "Toulouse",
+          "p": 4,
+          "w": 0,
+          "d": 2,
+          "l": 2,
+          "gf": 4,
+          "ga": 7,
+          "pts": 2,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 16,
           "club": "Nice",
           "p": 3,
           "w": 0,
@@ -238,19 +251,6 @@
           "ga": 4,
           "pts": 2,
           "group": "",
-          "zone": null
-        },
-        {
-          "position": 16,
-          "club": "Le Havre",
-          "p": 3,
-          "w": 0,
-          "d": 1,
-          "l": 2,
-          "gf": 2,
-          "ga": 4,
-          "pts": 1,
-          "group": "",
           "zone": {
             "key": "relq",
             "label": "Relegation Playoffs",
@@ -259,13 +259,13 @@
         },
         {
           "position": 17,
-          "club": "Toulouse",
+          "club": "Le Havre",
           "p": 3,
           "w": 0,
           "d": 1,
           "l": 2,
           "gf": 2,
-          "ga": 5,
+          "ga": 4,
           "pts": 1,
           "group": "",
           "zone": {
@@ -905,6 +905,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-12T20:30:44Z",
+  "generatedAt": "2026-09-12T20:45:45Z",
   "source": "BSD"
 }
