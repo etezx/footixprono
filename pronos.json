@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T18:01:39.182256+00:00",
+  "updated_at": "2026-09-12T00:56:43.063Z",
   "days": {
     "1": {
       "OLYMPIQUE DE MARSEILLE|||RC STRASBOURG ALSACE": {
@@ -197,7 +197,7 @@
         "model": "Footix Premium v10.0.6",
         "communityCorrect": 2,
         "communityPredictions": 4,
-        "communityRate": 50.0
+        "communityRate": 50
       }
     },
     "3": {
@@ -322,6 +322,88 @@
         ],
         "buteurs": "Esteban Lepaul\nAmine Gouiri",
         "analyse": "Rennes aborde ce choc dans une dynamique bien plus favorable. Invaincus après trois journées et solides au Roazhon Park, les Bretons ont montré beaucoup de caractère depuis le début de saison. Face à eux, Marseille reste une équipe très dangereuse offensivement, mais traverse une période plus compliquée avec deux défaites consécutives et une défense qui a montré certaines limites.\n\nCette affiche a tout pour offrir un match très ouvert. Rennes a marqué lors de chacune de ses trois premières journées et l'OM possède suffisamment de qualité devant, notamment avec Gouiri, pour trouver également le chemin des filets. Les Marseillais devront aussi composer sans Kondogbia et Nnadi, tous deux forfaits.\n\nEstéban Lepaul sera l'une des principales menaces rennaises. Avec 3 buts en 3 journées, l'attaquant réalise un excellent début de saison et figure bien dans le groupe pour cette rencontre. Dans une rencontre qui devrait laisser des espaces des deux côtés, Rennes semble avoir les arguments pour faire la différence à domicile, sans forcément parvenir à garder sa cage inviolée.\n\n🎯 PRONO : Rennes 2–1 Marseille\n⚽ Buteur : Estéban Lepaul\n👀 Tendance : victoire Rennes + les deux équipes marquent\n🔥 Match attendu : ouvert, avec des occasions des deux côtés"
+      },
+      "AJ AUXERRE|||OGC NICE": {
+        "score": "1-1",
+        "pick": "N",
+        "scorers": [
+          "Cameron Archer",
+          "Elye Wahi"
+        ],
+        "buteurs": "Cameron Archer\nElye Wahi",
+        "analyse": "Deux équipes déjà sous pression après un début de championnat compliqué : Auxerre occupe actuellement la dernière place tandis que Nice pointe à la 15e. Difficile dans ces conditions d'imaginer une rencontre totalement débridée.\n\nLe scénario d'un match longtemps fermé semble crédible, avec deux équipes qui pourraient davantage chercher à éviter la défaite qu'à prendre tous les risques. Un but de chaque côté et un partage des points paraît être un scénario intéressant.\n\n🎯 PRONO : Auxerre 1–1 Nice\n⚽ Buteurs : Cameron Archer & Elye Wahi\n👀 Tendance : match nul + les deux équipes marquent"
+      },
+      "STADE BRESTOIS 29|||PARIS SAINT-GERMAIN": {
+        "score": "0-3",
+        "pick": "2",
+        "scorers": [
+          "Ferran Torres",
+          "Khvicha Kvaratskhelia",
+          "Ousmane Dembélé"
+        ],
+        "buteurs": "Ferran Torres\nKhvicha Kvaratskhelia\nOusmane Dembélé",
+        "analyse": "Le début de saison parisien en championnat n'est pas à la hauteur des attentes, mais le PSG vient peut-être de trouver le déclic attendu : 6-1 contre le Slovan Bratislava en Ligue des Champions, avec notamment un triplé de Ferran Torres et un doublé d'Ousmane Dembélé.\n\nParis doit désormais confirmer en Ligue 1 et reprendre des points. Même si la rotation offensive rend le choix des buteurs particulièrement compliqué, la différence de qualité devrait finir par parler. Si le PSG reproduit l'efficacité affichée mercredi, Brest risque de passer une soirée difficile.\n\n🎯 PRONO : Brest 0–3 PSG\n⚽ Buteurs : Khvicha Kvaratskhelia, Ousmane Dembélé & Ferran Torres\n🔥 Tendance : réveil parisien et victoire sans encaisser"
+      },
+      "LE HAVRE|||ANGERS SCO": {
+        "score": "1-1",
+        "pick": "N",
+        "scorers": [
+          "Rayan Fofana",
+          "Amine El Ouazzani"
+        ],
+        "buteurs": "Rayan Fofana\nAmine El Ouazzani",
+        "analyse": "Une rencontre qui pourrait manquer de rythme entre deux formations qui n'offrent pas énormément de garanties offensives. Le Havre reste notamment sur une défaite 2-1 face à Brest malgré un but de Rayan Fofana, tandis que le dernier Le Havre–Angers s'était justement terminé sur un score de 1-1.\n\nIl pourrait donc falloir peu de choses pour faire basculer ce match. Aucun des deux camps ne semble suffisamment supérieur pour se détacher clairement et le partage des points paraît logique.\n\n🎯 PRONO : Le Havre 1–1 Angers\n⚽ Buteurs : Rayan Fofana & Amine El Ouazzani\n👀 Tendance : match nul"
+      },
+      "LE MANS FC|||RC LENS": {
+        "score": "1-1",
+        "pick": "N",
+        "scorers": [
+          "Louis Mafouta",
+          "Abdallah Sima"
+        ],
+        "buteurs": "Louis Mafouta\nAbdallah Sima",
+        "analyse": "Attention au match piège pour Lens. Les Lensois restent sur une défaite surprise à domicile contre Lorient en championnat et sortent également d'un déplacement européen particulièrement intense à Prague, remporté 3-2.\n\nLe Mans pourrait profiter de cette accumulation et proposer un match très compliqué aux Sang et Or. Lens conserve davantage de qualité individuelle, mais le contexte rend le partage des points particulièrement tentant.\n\n🎯 PRONO : Le Mans 1–1 Lens\n⚽ Buteurs : Louis Mafouta & Abdallah Sima\n⚠️ Match piège pour Lens après la Ligue des Champions"
+      },
+      "LOSC|||ESTAC TROYES": {
+        "score": "2-1",
+        "pick": "1",
+        "scorers": [
+          "Ayase Ueda",
+          "Ethan Mbappé",
+          "Jeremy Le Douaron"
+        ],
+        "buteurs": "Ayase Ueda\nEthan Mbappé\nJeremy Le Douaron",
+        "analyse": "Lille doit rapidement tourner la page européenne et se reconcentrer sur le championnat. Après un match compliqué en Ligue des Champions, cette réception de Troyes offre une bonne occasion de repartir de l'avant.\n\nTroyes peut toutefois profiter de la fatigue lilloise et trouver l'ouverture. Le LOSC devrait conserver suffisamment de maîtrise et de qualité offensive pour éviter le piège, mais pas nécessairement pour vivre une soirée tranquille.\n\n🎯 PRONO : Lille 2–1 Troyes\n⚽ Buteurs : Ayase Ueda, Ethan Mbappé & Jérémy Le Douaron\n👀 Tendance : victoire Lille + les deux équipes marquent"
+      },
+      "FC LORIENT|||TOULOUSE FC": {
+        "score": "2-2",
+        "pick": "N",
+        "scorers": [
+          "Mamadou Koné",
+          "Jacen Russell-Rowe"
+        ],
+        "buteurs": "Mamadou Koné\nJacen Russell-Rowe",
+        "analyse": "Une rencontre assez difficile à lire. Lorient vient de créer la surprise en allant gagner 1-0 à Lens grâce à Mamadou Koné, alors que Toulouse traverse un début de saison plus compliqué et occupe actuellement la 17e place.\n\nToulouse parvient néanmoins à se procurer des situations sans toujours parvenir à les convertir. Cette rencontre peut totalement se fermer, mais elle pourrait aussi être celle où les Toulousains retrouvent enfin de l'efficacité. Dans ce deuxième scénario, on pourrait assister à l'un des matchs les plus animés de la journée.\n\n🎯 PRONO : Lorient 2–2 Toulouse\n⚽ Buteurs : Mamadou Koné & Jacen Russell-Rowe\n🔥 Match à potentiel offensif malgré les apparences"
+      },
+      "PARIS FC|||OLYMPIQUE LYONNAIS": {
+        "score": "2-1",
+        "pick": "1",
+        "scorers": [
+          "Lassine Sinayoko",
+          "Pablo Pagis",
+          "Loïs Openda"
+        ],
+        "buteurs": "Lassine Sinayoko\nPablo Pagis\nLoïs Openda",
+        "analyse": "Probablement l'une des rencontres les plus intéressantes à surveiller. Paris FC et Lyon occupent actuellement les 3e et 4e places du championnat et possèdent tous les deux suffisamment de qualités offensives pour faire basculer la rencontre.\n\nÀ domicile, le Paris FC peut créer une petite surprise. Lyon devrait avoir ses périodes fortes et parvenir à marquer, mais les Parisiens ont les armes pour répondre et aller chercher les trois points dans une rencontre très équilibrée.\n\n🎯 PRONO : Paris FC 2–1 Lyon\n⚽ Buteurs : Lassine Sinayoko, Pablo Pagis & Loïs Openda\n👀 Match à surveiller : deux équipes capables de se répondre"
+      },
+      "RC STRASBOURG ALSACE|||AS MONACO": {
+        "score": "1-2",
+        "pick": "2",
+        "scorers": [
+          "Paris Brunner"
+        ],
+        "buteurs": "Paris Brunner",
+        "analyse": "Très belle affiche entre deux équipes qui ont démarré fort. Strasbourg reste sur deux victoires consécutives et surtout sur un impressionnant 6-2 à Troyes, mais Monaco réalise pour l'instant un parcours parfait avec trois succès en trois journées. Les Monégasques ont également déjà battu Marseille et le PSG et n'ont encaissé qu'un seul but en championnat.\n\nLa Meinau devrait néanmoins permettre aux Strasbourgeois de se créer des situations et de faire trembler cette défense. Monaco semble avoir davantage d'armes pour faire la différence dans un match qui pourrait être beaucoup plus disputé que ne le laisse penser le classement.\n\n🎯 PRONO : Strasbourg 1–2 Monaco\n⚽ Buteur : Paris Brunner\n👀 Tendance : victoire Monaco + les deux équipes marquent"
       }
     }
   }
