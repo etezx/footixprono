@@ -134,7 +134,7 @@
           "official": true,
           "completed": true,
           "eventId": 210447,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -159,7 +159,7 @@
           "official": true,
           "completed": true,
           "eventId": 210453,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -184,7 +184,7 @@
           "official": true,
           "completed": true,
           "eventId": 210448,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "homeScore": 2,
           "awayScore": 2,
           "actualScorers": [
@@ -209,7 +209,7 @@
           "official": true,
           "completed": true,
           "eventId": 210449,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -233,7 +233,7 @@
           "official": true,
           "completed": true,
           "eventId": 210450,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -256,7 +256,7 @@
           "official": true,
           "completed": true,
           "eventId": 210446,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -278,7 +278,7 @@
           "official": true,
           "completed": true,
           "eventId": 210451,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "finished",
           "live": false,
           "lastLiveUpdate": "2026-08-31T13:15:22Z",
@@ -326,7 +326,7 @@
           "official": true,
           "completed": true,
           "eventId": 210452,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "status": "finished",
           "live": false,
           "period": "FT",
@@ -374,7 +374,7 @@
           "date": "2026-09-05",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": true,
           "eventId": 210456,
           "status": "finished",
@@ -397,7 +397,7 @@
           "date": "2026-09-05",
           "time": "17:15",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": true,
           "eventId": 210461,
           "status": "finished",
@@ -419,7 +419,7 @@
           "date": "2026-09-04",
           "time": "19:00",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": true,
           "eventId": 210458,
           "status": "finished",
@@ -444,7 +444,7 @@
           "date": "2026-09-06",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": true,
           "eventId": 210459,
           "status": "finished",
@@ -467,7 +467,7 @@
           "date": "2026-09-05",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": true,
           "eventId": 210457,
           "status": "finished",
@@ -490,7 +490,7 @@
           "date": "2026-09-04",
           "time": "21:05",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": true,
           "eventId": 210460,
           "status": "finished",
@@ -514,7 +514,7 @@
           "date": "2026-09-03",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": true,
           "eventId": 210462,
           "status": "finished",
@@ -536,7 +536,7 @@
           "date": "2026-09-06",
           "time": "15:00",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": true,
           "eventId": 210463,
           "status": "finished",
@@ -570,12 +570,12 @@
           "date": "2026-09-12",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": false,
           "eventId": 210464,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:41:16Z"
+          "lastLiveUpdate": "2026-09-12T14:30:51Z"
         }
       ],
       [
@@ -585,12 +585,12 @@
           "date": "2026-09-13",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": false,
           "eventId": 210471,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:41:16Z"
+          "lastLiveUpdate": "2026-09-12T14:30:51Z"
         }
       ],
       [
@@ -600,12 +600,12 @@
           "date": "2026-09-12",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": false,
           "eventId": 210465,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:41:16Z"
+          "lastLiveUpdate": "2026-09-12T14:30:51Z"
         }
       ],
       [
@@ -615,12 +615,12 @@
           "date": "2026-09-13",
           "time": "17:15",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": false,
           "eventId": 210466,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:41:16Z"
+          "lastLiveUpdate": "2026-09-12T14:30:51Z"
         }
       ],
       [
@@ -630,12 +630,12 @@
           "date": "2026-09-13",
           "time": "15:00",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": false,
           "eventId": 210467,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:41:16Z"
+          "lastLiveUpdate": "2026-09-12T14:30:51Z"
         }
       ],
       [
@@ -645,12 +645,12 @@
           "date": "2026-09-12",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": false,
           "eventId": 210468,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:41:16Z"
+          "lastLiveUpdate": "2026-09-12T14:30:51Z"
         }
       ],
       [
@@ -660,12 +660,12 @@
           "date": "2026-09-12",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": false,
           "eventId": 210469,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:41:16Z"
+          "lastLiveUpdate": "2026-09-12T14:30:51Z"
         }
       ],
       [
@@ -680,7 +680,7 @@
           "eventId": 210472,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:41:16Z",
+          "lastLiveUpdate": "2026-09-12T14:30:51Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -697,12 +697,12 @@
           "date": "2026-09-12",
           "time": "17:15",
           "official": true,
-          "source": "ESPN public scoreboard",
+          "source": "bsd",
           "completed": false,
           "eventId": 210470,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-11T20:41:16Z"
+          "lastLiveUpdate": "2026-09-12T14:30:51Z"
         }
       ]
     ]
