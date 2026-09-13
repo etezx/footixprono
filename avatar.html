@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07101f">
+<title>Choisir mon avatar — Footix Prono</title>
+<meta name="description" content="Choisis ton avatar Footix Prono.">
+<link rel="stylesheet" href="styles.css?v=9.9.2">
+<link rel="icon" type="image/png" href="logo-footix-prono.png">
+</head>
+<body class="page-avatar-gallery">
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><img src="logo-footix-prono.png" alt="Footix Prono"><div><strong>FOOTIX</strong><span>— PRONO —</span></div></a>
+    <div class="side-label">COMPÉTITIONS</div>
+    <a class="competition-link" href="ligue1.html"><span class="comp-mark l1-mark"><img src="logo-l1-option3.png" alt=""></span><span>LIGUE 1</span><b>›</b></a>
+    <a class="competition-link" href="champions.html"><span class="comp-mark ucl-mark"><img src="logo-europe-option3.png" alt=""></span><span>LIGUE DES CHAMPIONS</span><b>›</b></a>
+    <div class="side-label community-side-title">NAVIGATION</div>
+    <a class="side-link site-nav-home" href="index.html"><span class="side-nav-ico">⌂</span><span>Accueil</span></a>
+    <a class="side-link site-nav-votes" href="vos-pronos.html"><span class="side-nav-ico">✓</span><span>Vos pronos</span></a>
+    <a class="side-link site-nav-ranking" href="classement.html"><span class="side-nav-ico">♛</span><span>Classements</span></a>
+    <a class="side-link site-nav-community" href="community.html"><span class="side-nav-ico">▱</span><span>Communauté</span></a>
+    <a class="side-link site-nav-rules" href="reglement.html"><span class="side-nav-ico">▤</span><span>Règlement</span></a>
+    <div class="sidebar-card mascot-card"><img src="logo-footix-prono.png" alt=""><p>ON EST TOUS<br>LE <em>FOOTIX</em><br>DE QUELQU’UN.</p></div>
+  </aside>
+
+  <div class="main-wrap">
+    <header class="topbar"><div class="slogan">ON EST TOUS LE FOOTIX DE QUELQU’UN.</div>
+      <nav class="top-nav v914-auth-nav" aria-label="Compte membre">
+        <a class="top-nav-link account-link" href="profil.html"><span class="nav-user-ico">←</span><span>MON PROFIL</span></a>
+      </nav>
+    </header>
+
+    <main class="avatar-gallery-main">
+      <section class="avatar-gallery-hero">
+        <div>
+          <span class="profile-kicker">PERSONNALISATION</span>
+          <h1>CHOISIS TON <em>FOOTIX</em></h1>
+          <p>Affiche tes couleurs et choisis l'avatar qui te représente. Tu pourras le modifier à tout moment.</p>
+        </div>
+        <a href="profil.html" class="avatar-back-link">← RETOUR AU PROFIL</a>
+      </section>
+
+      <section class="avatar-gallery-panel">
+        <div class="avatar-current-strip">
+          <div class="avatar-current-preview"><img id="avatar-current-image" src="avatars/footix-classique.jpg" alt="Avatar actuel"></div>
+          <div><small>TON AVATAR ACTUEL</small><strong id="avatar-current-name">Classique</strong></div>
+          <span id="avatar-save-status"></span>
+        </div>
+
+        <div class="avatar-tabs" role="tablist" aria-label="Catégories d'avatars">
+          <button type="button" class="active" data-avatar-tab="classic">CLASSIQUES <span>12</span></button>
+          <button type="button" data-avatar-tab="ligue1">LIGUE 1 <span>BIENTÔT</span></button>
+          <button type="button" data-avatar-tab="ucl">LIGUE DES CHAMPIONS <span>BIENTÔT</span></button>
+        </div>
+
+        <div id="avatar-gallery-grid" class="avatar-gallery-grid"></div>
+
+        <div id="avatar-coming" class="avatar-coming" hidden>
+          <span>🐓</span>
+          <div><b>LA COLLECTION ARRIVE !</b><p>Les avatars clubs en style manga seront ajoutés ici.</p></div>
+        </div>
+
+        <div class="avatar-gallery-footer">
+          <div><small>AVATAR SÉLECTIONNÉ</small><strong id="avatar-selected-name">Classique</strong></div>
+          <button id="avatar-save-btn" type="button" class="profile-primary-action">UTILISER CET AVATAR</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Footix Prono — Tous droits réservés.</p>
+      <p><a href="mentions-legales.html">Mentions légales</a> · <a href="reglement.html">Règlement</a> · <a href="confidentialite.html">Confidentialité</a></p>
+    </footer>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
+<script src="avatar.js?v=1.0.0"></script>
+</body>
+</html>

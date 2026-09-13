@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#07101f">
 <title>Mon profil — Footix Prono</title>
 <meta name="description" content="Profil membre Footix Prono.">
-<link rel="stylesheet" href="styles.css?v=9.8.0">
+<link rel="stylesheet" href="styles.css?v=9.9.2">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
 <body class="page-profile-v950">
@@ -102,7 +102,13 @@
     <form id="profile-edit-form">
       <label>PSEUDO<input id="profile-edit-username" maxlength="24" autocomplete="username"></label>
       <label>BIO<textarea id="profile-edit-bio" maxlength="160" rows="3" placeholder="Quelques mots sur toi…"></textarea></label>
-      <div><span class="profile-form-label">AVATAR</span><div id="profile-avatar-picker" class="avatar-picker"></div></div>
+      <div class="profile-avatar-choice-row">
+        <div>
+          <span class="profile-form-label">AVATAR</span>
+          <p class="profile-avatar-choice-help">Ton avatar actuel est affiché en haut de ton profil. Ouvre la galerie pour en choisir un autre.</p>
+        </div>
+        <a href="avatar.html" class="profile-avatar-choice-btn">🐔 CHOISIR MON AVATAR →</a>
+      </div>
       <button type="submit" class="profile-primary-action">ENREGISTRER</button>
       <p id="profile-save-note" class="profile-save-note"></p>
     </form>
@@ -178,7 +184,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
 <script src="auth-community.js?v=9.3.2"></script>
-<script src="profil-premium.js?v=9.5.0"></script>
+<script src="profil-premium.js?v=9.5.1"></script>
 
 <script src="notifications.js?v=9.7.0"></script>
 </body></html>
