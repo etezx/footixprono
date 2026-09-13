@@ -4768,3 +4768,26 @@ body:has(.monthly-ranking-main){
     width:82px!important;height:82px!important;
   }
 }
+
+
+/* ============================================================
+   V9.9.4 — GALERIE AVATARS : CADRAGE SANS COUPE
+   ============================================================ */
+.page-avatar-gallery .avatar-gallery-card img,
+.avatar-gallery-card img{
+  display:block!important;
+  width:100%!important;
+  aspect-ratio:1/1!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:#06172e!important;
+  padding:0!important;
+}
+.page-avatar-gallery .avatar-current-preview img,
+.avatar-current-preview img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:#06172e!important;
+}
