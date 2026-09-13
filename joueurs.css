@@ -294,3 +294,170 @@
   color:#47647f!important;
   font-weight:900!important;
 }
+
+
+/* ============================================================
+   V10.0.4 — JOUEURS / PROFIL PUBLIC : RETOUR DA FOOTIX SOMBRE
+   + avatars plus lisibles
+   ============================================================ */
+
+.page-players-v1000,
+.page-public-player-v1000{
+  background:#020b18!important;
+  color:#eef6ff!important;
+}
+
+.page-players-v1000 .players-main,
+.page-public-player-v1000 .public-player-main{
+  background:
+    radial-gradient(circle at 75% 0%,rgba(28,92,166,.14),transparent 32%),
+    #020b18!important;
+}
+
+/* Barre recherche / tri */
+.page-players-v1000 .players-toolbar label{
+  border-color:#1d4774!important;
+  background:#071b35!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025)!important;
+}
+.page-players-v1000 .players-toolbar label>span{color:#81a4c8!important}
+.page-players-v1000 .players-toolbar input,
+.page-players-v1000 .players-toolbar select{
+  color:#f2f8ff!important;
+  background:transparent!important;
+}
+.page-players-v1000 .players-toolbar select option{
+  color:#eef6ff;
+  background:#071b35;
+}
+
+/* Gros panneaux */
+.page-players-v1000 .players-directory,
+.page-public-player-v1000 .public-player-section{
+  border-color:#173b63!important;
+  background:linear-gradient(155deg,#071a34,#041326)!important;
+  box-shadow:0 14px 38px rgba(0,0,0,.20)!important;
+}
+.page-players-v1000 .players-directory-head h2,
+.page-public-player-v1000 .public-section-head h2{
+  color:#f3f8ff!important;
+}
+.page-players-v1000 .players-directory-head p,
+.page-public-player-v1000 .public-section-head p{
+  color:#88a1bd!important;
+}
+
+/* Cartes joueurs */
+.page-players-v1000 .player-card{
+  border-color:#1a416b!important;
+  background:linear-gradient(180deg,#0a2445,#06172e)!important;
+  color:#eaf4ff!important;
+}
+.page-players-v1000 .player-card:hover{
+  border-color:#3b83cb!important;
+  box-shadow:0 14px 32px rgba(0,0,0,.28),0 0 0 1px rgba(62,143,229,.10)!important;
+}
+.page-players-v1000 .player-card-identity small{color:#7898ba!important}
+.page-players-v1000 .player-card .player-card-identity strong{color:#fff!important}
+.page-players-v1000 .player-card-arrow,
+.page-players-v1000 .player-card-cta{color:#55a9ff!important}
+.page-players-v1000 .player-card-stats div{
+  background:#0d2b50!important;
+  border:1px solid rgba(72,132,191,.16)!important;
+}
+.page-players-v1000 .player-card-stats small{color:#7898ba!important}
+.page-players-v1000 .player-card-stats b{color:#9cff62!important}
+
+/* Avatar joueur plus grand */
+.page-players-v1000 .player-card-avatar{
+  width:76px!important;
+  height:76px!important;
+  flex:0 0 76px!important;
+  border-radius:16px!important;
+  border:2px solid #2a659c!important;
+  background:#07182f!important;
+}
+.page-players-v1000 .player-card-avatar img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  padding:0!important;
+  transform:none!important;
+}
+
+/* Retour profil */
+.page-public-player-v1000 .players-back{color:#63b1ff!important}
+
+/* Profil public : avatar principal réellement visible */
+.page-public-player-v1000 .public-player-avatar{
+  width:128px!important;
+  height:128px!important;
+  flex:0 0 128px!important;
+  border-radius:22px!important;
+  border:2px solid #367bb9!important;
+  background:#07182f!important;
+  box-shadow:0 12px 30px rgba(0,0,0,.26)!important;
+}
+.page-public-player-v1000 .public-player-avatar img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  padding:0!important;
+  transform:none!important;
+}
+
+/* Statistiques compétition */
+.page-public-player-v1000 .public-comp-card{
+  border-color:#21486f!important;
+  background:#09213f!important;
+}
+.page-public-player-v1000 .public-comp-card>span,
+.page-public-player-v1000 .public-comp-card div b{color:#f4f8ff!important}
+.page-public-player-v1000 .public-comp-card>strong{color:#63b1ff!important}
+.page-public-player-v1000 .public-comp-card div small{color:#7f9aba!important}
+
+/* Palmarès */
+.page-public-player-v1000 .public-medal{
+  border-color:#21486f!important;
+  background:#09213f!important;
+}
+.page-public-player-v1000 .public-medal strong{color:#f4f8ff!important}
+.page-public-player-v1000 .public-medal small,
+.page-public-player-v1000 .public-medal-stats span{color:#829bb8!important}
+.page-public-player-v1000 .public-medal-stats b{color:#63b1ff!important}
+
+/* Historique des pronostics */
+.page-public-player-v1000 .public-prediction{
+  border-color:#21486f!important;
+  background:#071d38!important;
+}
+.page-public-player-v1000 .public-pred-match small{color:#7c98b7!important}
+.page-public-player-v1000 .public-pred-match strong,
+.page-public-player-v1000 .public-pred-score b,
+.page-public-player-v1000 .public-pred-old b{color:#f4f8ff!important}
+.page-public-player-v1000 .public-pred-match strong span{color:#63b1ff!important}
+.page-public-player-v1000 .public-pred-score,
+.page-public-player-v1000 .public-pred-old{color:#829db9!important}
+.page-public-player-v1000 .public-pred-old b,
+.page-public-player-v1000 .public-pred-score b{
+  background:#0d3158!important;
+  border:1px solid rgba(84,155,219,.18)!important;
+}
+
+/* États vides */
+.page-players-v1000 .profile-empty-small,
+.page-public-player-v1000 .profile-empty-small{
+  color:#819ab6!important;
+}
+
+/* Responsive */
+@media(max-width:720px){
+  .page-players-v1000 .player-card-avatar{
+    width:66px!important;height:66px!important;flex-basis:66px!important;
+  }
+  .page-public-player-v1000 .public-player-avatar{
+    width:94px!important;height:94px!important;flex-basis:94px!important;
+  }
+}

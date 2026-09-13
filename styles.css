@@ -4720,3 +4720,51 @@ body:has(.monthly-ranking-main){
 
 @media(max-width:1000px){.avatar-gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.profile-avatar-choice-row{align-items:stretch;flex-direction:column}.profile-avatar-choice-btn{width:100%}.avatar-gallery-main{padding:10px 8px 0}.avatar-gallery-hero{align-items:flex-start;flex-direction:column;padding:20px}.avatar-gallery-hero h1{font-size:27px}.avatar-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:10px}.avatar-gallery-card strong{font-size:11px}.avatar-gallery-footer{align-items:stretch;flex-direction:column}.avatar-gallery-footer .profile-primary-action{width:100%;text-align:center}.avatar-current-strip>span{margin-left:0}}
+
+
+/* ============================================================
+   V9.9.3 — CLASSEMENT : AVATARS HD PLUS VISIBLES
+   ============================================================ */
+.page-ranking-v941 .monthly-podium-card .avatar-orb{
+  width:92px!important;
+  height:92px!important;
+  border-radius:18px!important;
+  background:#07182f!important;
+  border:2px solid #2a659c!important;
+}
+.page-ranking-v941 .monthly-podium-card.place-1 .avatar-orb{
+  width:108px!important;
+  height:108px!important;
+}
+.page-ranking-v941 .monthly-podium-card .avatar-orb img,
+.page-ranking-v941 .rank-player .avatar-orb img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  padding:0!important;
+  transform:none!important;
+}
+.page-ranking-v941 .rank-player .avatar-orb{
+  width:52px!important;
+  height:52px!important;
+  flex:0 0 52px!important;
+  border-radius:12px!important;
+  background:#07182f!important;
+  border:1px solid #2b5f90!important;
+}
+.page-ranking-v941 .ranking-table-v941 td{
+  padding-top:10px!important;
+  padding-bottom:10px!important;
+}
+@media(max-width:620px){
+  .page-ranking-v941 .rank-player .avatar-orb{
+    width:44px!important;height:44px!important;flex-basis:44px!important;
+  }
+  .page-ranking-v941 .monthly-podium-card .avatar-orb{
+    width:72px!important;height:72px!important;
+  }
+  .page-ranking-v941 .monthly-podium-card.place-1 .avatar-orb{
+    width:82px!important;height:82px!important;
+  }
+}
