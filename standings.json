@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T16:17:00.717026+00:00",
+  "updated_at": "2026-09-13T18:50:00.664290+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -99,6 +99,18 @@
       "last5": []
     },
     {
+      "club": "Lens",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+      "p": 4,
+      "w": 1,
+      "d": 1,
+      "l": 2,
+      "gf": 8,
+      "ga": 7,
+      "pts": 4,
+      "last5": []
+    },
+    {
       "club": "Angers",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
       "p": 4,
@@ -123,18 +135,6 @@
       "last5": []
     },
     {
-      "club": "Lens",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
-      "p": 3,
-      "w": 1,
-      "d": 0,
-      "l": 2,
-      "gf": 6,
-      "ga": 5,
-      "pts": 3,
-      "last5": []
-    },
-    {
       "club": "Marseille",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
       "p": 4,
@@ -143,6 +143,18 @@
       "l": 3,
       "gf": 6,
       "ga": 6,
+      "pts": 3,
+      "last5": []
+    },
+    {
+      "club": "Le Mans",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
+      "p": 4,
+      "w": 0,
+      "d": 3,
+      "l": 1,
+      "gf": 7,
+      "ga": 8,
       "pts": 3,
       "last5": []
     },
@@ -161,18 +173,6 @@
     {
       "club": "Paris Saint-Germain",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-      "p": 3,
-      "w": 0,
-      "d": 2,
-      "l": 1,
-      "gf": 5,
-      "ga": 6,
-      "pts": 2,
-      "last5": []
-    },
-    {
-      "club": "Le Mans",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
       "p": 3,
       "w": 0,
       "d": 2,
