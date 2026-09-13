@@ -58,13 +58,13 @@
         {
           "position": 3,
           "club": "Olympique Lyonnais",
-          "p": 3,
+          "p": 4,
           "w": 2,
-          "d": 1,
+          "d": 2,
           "l": 0,
           "gf": 6,
           "ga": 2,
-          "pts": 7,
+          "pts": 8,
           "group": "",
           "zone": {
             "key": "cl",
@@ -75,13 +75,13 @@
         {
           "position": 4,
           "club": "Paris FC",
-          "p": 3,
+          "p": 4,
           "w": 2,
-          "d": 1,
+          "d": 2,
           "l": 0,
           "gf": 6,
           "ga": 2,
-          "pts": 7,
+          "pts": 8,
           "group": "",
           "zone": {
             "key": "clq",
@@ -151,6 +151,19 @@
         },
         {
           "position": 9,
+          "club": "Angers",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 5,
+          "pts": 4,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 10,
           "club": "Troyes",
           "p": 3,
           "w": 1,
@@ -163,7 +176,7 @@
           "zone": null
         },
         {
-          "position": 10,
+          "position": 11,
           "club": "RC Lens",
           "p": 3,
           "w": 1,
@@ -176,7 +189,7 @@
           "zone": null
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "Olympique de Marseille",
           "p": 4,
           "w": 1,
@@ -189,20 +202,20 @@
           "zone": null
         },
         {
-          "position": 12,
-          "club": "Angers",
-          "p": 3,
+          "position": 13,
+          "club": "Auxerre",
+          "p": 4,
           "w": 1,
           "d": 0,
-          "l": 2,
-          "gf": 4,
-          "ga": 5,
+          "l": 3,
+          "gf": 5,
+          "ga": 11,
           "pts": 3,
           "group": "",
           "zone": null
         },
         {
-          "position": 13,
+          "position": 14,
           "club": "Le Mans",
           "p": 3,
           "w": 0,
@@ -215,7 +228,7 @@
           "zone": null
         },
         {
-          "position": 14,
+          "position": 15,
           "club": "Paris Saint-Germain",
           "p": 3,
           "w": 0,
@@ -228,26 +241,13 @@
           "zone": null
         },
         {
-          "position": 15,
-          "club": "Toulouse",
+          "position": 16,
+          "club": "Le Havre",
           "p": 4,
           "w": 0,
           "d": 2,
           "l": 2,
-          "gf": 4,
-          "ga": 7,
-          "pts": 2,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 16,
-          "club": "Nice",
-          "p": 3,
-          "w": 0,
-          "d": 2,
-          "l": 1,
-          "gf": 1,
+          "gf": 2,
           "ga": 4,
           "pts": 2,
           "group": "",
@@ -259,14 +259,14 @@
         },
         {
           "position": 17,
-          "club": "Le Havre",
-          "p": 3,
+          "club": "Toulouse",
+          "p": 4,
           "w": 0,
-          "d": 1,
+          "d": 2,
           "l": 2,
-          "gf": 2,
-          "ga": 4,
-          "pts": 1,
+          "gf": 4,
+          "ga": 7,
+          "pts": 2,
           "group": "",
           "zone": {
             "key": "rel",
@@ -276,14 +276,14 @@
         },
         {
           "position": 18,
-          "club": "Auxerre",
-          "p": 3,
+          "club": "Nice",
+          "p": 4,
           "w": 0,
-          "d": 0,
-          "l": 3,
-          "gf": 4,
-          "ga": 11,
-          "pts": 0,
+          "d": 2,
+          "l": 2,
+          "gf": 1,
+          "ga": 5,
+          "pts": 2,
           "group": "",
           "zone": {
             "key": "rel",
@@ -905,6 +905,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-12T20:45:45Z",
+  "generatedAt": "2026-09-13T12:20:35Z",
   "source": "BSD"
 }
