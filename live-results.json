@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-13T14:50:51Z",
+  "generatedAt": "2026-09-13T15:01:02Z",
   "events": [
     {
       "eventId": 210448,
@@ -804,7 +804,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T14:50:51Z",
+      "updatedAt": "2026-09-13T15:01:02Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -824,7 +824,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T14:50:51Z",
+      "updatedAt": "2026-09-13T15:01:02Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -845,7 +845,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T14:50:51Z",
+      "updatedAt": "2026-09-13T15:01:02Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -865,7 +865,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T14:50:51Z",
+      "updatedAt": "2026-09-13T15:01:02Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 0,
@@ -883,7 +883,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T14:50:51Z",
+      "updatedAt": "2026-09-13T15:01:02Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 2,
@@ -906,7 +906,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T14:50:51Z",
+      "updatedAt": "2026-09-13T15:01:02Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 0,
@@ -920,19 +920,20 @@
       "home": "Lille",
       "away": "Troyes",
       "kickoff": "2026-09-13T13:00:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-09-13T14:50:51Z",
-      "minute": 90,
-      "homeScore": 1,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-13T15:01:02Z",
+      "minute": null,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
+        "E. Mbappé",
         "T. Santos"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210466,
@@ -944,7 +945,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-13T14:50:51Z"
+      "updatedAt": "2026-09-13T15:01:02Z"
     },
     {
       "eventId": 210471,
@@ -956,7 +957,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-13T14:50:51Z"
+      "updatedAt": "2026-09-13T15:01:02Z"
     }
   ]
 }
