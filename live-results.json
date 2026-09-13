@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-13T15:10:58Z",
+  "generatedAt": "2026-09-13T15:21:06Z",
   "events": [
     {
       "eventId": 210448,
@@ -804,7 +804,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T15:10:58Z",
+      "updatedAt": "2026-09-13T15:21:06Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -824,7 +824,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T15:10:58Z",
+      "updatedAt": "2026-09-13T15:21:06Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -845,7 +845,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T15:10:58Z",
+      "updatedAt": "2026-09-13T15:21:06Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -865,7 +865,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T15:10:58Z",
+      "updatedAt": "2026-09-13T15:21:06Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 0,
@@ -883,7 +883,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T15:10:58Z",
+      "updatedAt": "2026-09-13T15:21:06Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 2,
@@ -906,7 +906,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T15:10:58Z",
+      "updatedAt": "2026-09-13T15:21:06Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 0,
@@ -924,7 +924,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-13T15:10:58Z",
+      "updatedAt": "2026-09-13T15:21:06Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -941,11 +941,17 @@
       "home": "Le Mans",
       "away": "RC Lens",
       "kickoff": "2026-09-13T15:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-13T15:10:58Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-13T15:21:06Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210471,
@@ -957,7 +963,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-13T15:10:58Z"
+      "updatedAt": "2026-09-13T15:21:06Z"
     }
   ]
 }
