@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T23:23:10.357592+00:00",
+  "updated_at": "2026-09-15T05:14:04.436390+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -21,22 +21,28 @@
       "source": "L'Équipe"
     },
     {
-      "title": "Ligue 1 - Bruno Genesio, Ferran Torres, le LOSC... Les stats marquantes de la 4e journée de L1 - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaEVOcUtfSkRYWUN2RzhaZ3RuZWNfbmlEU0czWnVjems5aEFieHBmTU1WbzdDNERSVm9xNG93a3FMWkpDWWpWdEwxc2tfcTVwZWlZTVItSWdLaFRGbXVjZXA4TE1wQ28yWWlnNUM4ekduVVFER1pOQ3BjZ3B6ZTBuXzlsTmVvaUNjekJadm9ieEM2OGhmWVdUblB4aGdmU0VnSW1RSHhfTUJGd1JkX2RhZEphXzA2bENHYlh5bTFPVGtCZFZlQUJBZzBJNGdvbmZRdVc4NzhqVEctdHZydFdBSHV3?oc=5",
-      "published": "2026-09-14T10:09:00+00:00",
-      "source": "MadeInFOOT"
-    },
-    {
       "title": "Mercato : un club de Ligue 1 et un club de Ligue 2 en concurrence pour un gardien du Paris FC - Foot National",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOakFvdXpRdEZEZHhqNUZ2VVY3YmlMUjgyeFVwRjBaWWFLdnZjcmhVT0RUNmc5UzVJSnB0NV83dF91Q3ZCcjJJR0U3ODBHcDZCTWQ3eU8xODQ3R2JKS09hWVVwQ0dQclB4RmVwRzJCNTdraVpwNjA1TDQ2Y0hZcjlyY1dMQ3Jhc2Rkamk0RllMalNTMHRZal9RVkMwZWc4WmdhOHZhQkZuQUxQeG83Y1VyTW51dk5IY2MzVlhjaml6NDhnYU92N21MZERhbnpHMDdrS0E?oc=5",
       "published": "2026-09-08T13:33:51+00:00",
       "source": "Foot National"
     },
     {
+      "title": "Ligue 1 - Bruno Genesio, Ferran Torres, le LOSC... Les stats marquantes de la 4e journée de L1 - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaEVOcUtfSkRYWUN2RzhaZ3RuZWNfbmlEU0czWnVjems5aEFieHBmTU1WbzdDNERSVm9xNG93a3FMWkpDWWpWdEwxc2tfcTVwZWlZTVItSWdLaFRGbXVjZXA4TE1wQ28yWWlnNUM4ekduVVFER1pOQ3BjZ3B6ZTBuXzlsTmVvaUNjekJadm9ieEM2OGhmWVdUblB4aGdmU0VnSW1RSHhfTUJGd1JkX2RhZEphXzA2bENHYlh5bTFPVGtCZFZlQUJBZzBJNGdvbmZRdVc4NzhqVEctdHZydFdBSHV3?oc=5",
+      "published": "2026-09-14T10:09:00+00:00",
+      "source": "MadeInFOOT"
+    },
+    {
       "title": "Transferts | Un ancien de l’OM affole l’Italie, Arkadiusz Milik vers les Émirats ? Les 5 infos mercato du jour - Eurosport",
       "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQUmZzODVYanZMRjdIdk16NERqV2I4MUlaZ0RjdVppV0JGSjJrZkJMdi1iSllteUNKOUs2TkVNbFJKc0RZMWlaejB0Sm1JSW1zaUdId3MzcHRycVlTMzJINVd4TVlPQU1DOEIxSG95aVc5ZlhlZ1VtR056b29FM3lQY3c4cEIwNFJwcTZzekVDTG9SbDIzM1UzRnAyMVBHM1diZG13ZnVjNmhxVzdhRFJSZGx3MzV0dDlWdnhxMXR2TVRFaTJUSi12X0FTenZpUHFQVEZpRktCNUtBNXd2Rks3MWo5bXhhMmpzOThoMjg2MEFFcV9fSkEzWUxSQkFGZFhQeFdSWVNNZ0g0TWFpTUFN?oc=5",
       "published": "2026-09-14T06:37:00+00:00",
       "source": "Eurosport"
+    },
+    {
+      "title": "Mercato. L’ancien Nantais Rémy Cabella a trouvé un nouveau club surprenant - Ouest-France",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeEJlSEZxQzZSR0VlaF9BdEU3M05tYk9KQnZlZ1hMNmNkeFQ4VkRCN21SZFV4Nkx6RGoyTHFSRWVEOVpselZKTDhIcXM1NEhKRk5xVi1nbmRjRXF5cFdxSHRRcmN3eUEzdXNSNWZYQUQ4ZHpXYWh2UDJZN2JKTWs1aHZ4X3RaVEJwTjlVU1h3aGxyMlk2LThucGNTUWF1eE42N1o3N21pb2NacWY3a01kZGVXd0dyY25vX194SlFjLWR5N2RLQ2F6eW5vYndnMmFjbk1CVUJHVElFXzc5LVNqNg?oc=5",
+      "published": "2026-09-14T15:53:06+00:00",
+      "source": "Ouest-France"
     },
     {
       "title": "Mercato : Alidu Seidu vers Nice en joker ? - L'Équipe",
@@ -51,22 +57,16 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Ligue 1 - Ligue 1+ lance une offre spéciale pour le Classique OM - PSG - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcjI5a1BsRUhac1k2X2xIa2RTTDJTT2dxMkEzQ3hqV2lRREt2cmRZRS1iU1Bxc2Z3ZElzQ1ZPZEZmU3VMVnlTb0tMdFh5NGV3ZVZ3MzQ1V3lxTWNTLVZDeDFKTWkxWF9sQzVoNS15bWRxRFVtV1BTejZzQi10QWRQbGJkam52QjhYS19oRjN1SmJERkU3TnphTmZZMzhKSElMQ0VleTFaR3BKYXNmN1NrM1dsSW8zaHZzSXF0LVpBNVRVTkpz?oc=5",
-      "published": "2026-09-14T14:08:00+00:00",
-      "source": "MadeInFOOT"
-    },
-    {
       "title": "Coutinho n'est pas le seul à rejoindre Neymar : les 5 infos mercato du week-end - Eurosport",
       "link": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQTFl3bnlkTEVlbXBTRWl1SWdNdjNfQ0tnLXV0dFJFTjRENHFhelBCSzVTRURuQ2s2V1BXTWJVVUh5TTVXd284OUxqcVpxTnN0NWRZMmtsRU12Mmp2TW5yV1NJanRidnpyTWl6djJBOFRCTFNoNkxBVDJOSGJqQ01JLUFqaU1XUVlsR3RIOFFNU1NORnVGdHAyc2tiTkxIZUF6NHdqemZWcTJwaFUtb2JkenpLbmNYZ0tuQkR0RkNZUGJEdDlHbC0tLXhSbE5UcXdZcHh3UU5GbF9wV0FUMnJyMUJNQ3Racjd2NnhOUy03T2Z0aVVJVTM3dnZHUHlfUUNtTnVrZFZVVUFnVW13ZjA0aUc2OVIyd19hRUdkeGlva05odEtKZTNJV2tqMXoyMUtRZ3k3MU5GTjJ3RnZ6TkZGd2tlNA?oc=5",
       "published": "2026-09-13T06:34:00+00:00",
       "source": "Eurosport"
     },
     {
-      "title": "Mercato. L’ancien Nantais Rémy Cabella a trouvé un nouveau club surprenant - Ouest-France",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeEJlSEZxQzZSR0VlaF9BdEU3M05tYk9KQnZlZ1hMNmNkeFQ4VkRCN21SZFV4Nkx6RGoyTHFSRWVEOVpselZKTDhIcXM1NEhKRk5xVi1nbmRjRXF5cFdxSHRRcmN3eUEzdXNSNWZYQUQ4ZHpXYWh2UDJZN2JKTWs1aHZ4X3RaVEJwTjlVU1h3aGxyMlk2LThucGNTUWF1eE42N1o3N21pb2NacWY3a01kZGVXd0dyY25vX194SlFjLWR5N2RLQ2F6eW5vYndnMmFjbk1CVUJHVElFXzc5LVNqNg?oc=5",
-      "published": "2026-09-14T15:53:06+00:00",
-      "source": "Ouest-France"
+      "title": "Mercato : un ancien attaquant bien connu de la Ligue 1 change encore de club - Foot National",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMXRVU0VBLVdXR1hfYkMzWjBZaE5TYTI3YmlEbXdzbkdJeW9ucXpzcFliRkVicGhhUEVQQVhQQTFoOUh3VGxSRnZpRTRYQjF5NXNXMno4TUtnQnlVdlB0eENNckhRQ1lWWng2bkMyYklVbWppVnJVTUF4azNsalVrVGdZWDlUSzIzYV9OdkdTRnlUMTJCOElYQ1pBdG1iQWVDaERoUnpLNkRiQTh4ajV3T1RwQW45QTAzaHhv?oc=5",
+      "published": "2026-09-15T04:11:37+00:00",
+      "source": "Foot National"
     },
     {
       "title": "Dernier de Ligue 1, l’OGC Nice est en plein doute ! - Foot Mercato",
