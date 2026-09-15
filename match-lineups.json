@@ -1,0 +1,149 @@
+{
+  "4|||staderennaisfc|||olympiquedemarseille": {
+    "status": "official",
+    "updated_at": "11/09/2026 · avant le coup d’envoi",
+    "note": "XI officiels du match Rennes–Marseille, J4.",
+    "home": {
+      "formation": "4-3-3",
+      "players": [
+        {
+          "name": "B. Samba",
+          "number": 30,
+          "x": 50,
+          "y": 8
+        },
+        {
+          "name": "P. Frankowski",
+          "number": 95,
+          "x": 17,
+          "y": 20
+        },
+        {
+          "name": "C. Cresswell",
+          "number": 4,
+          "x": 39,
+          "y": 20
+        },
+        {
+          "name": "A. Rouault",
+          "number": 24,
+          "x": 61,
+          "y": 20
+        },
+        {
+          "name": "M. Nagida",
+          "number": 18,
+          "x": 83,
+          "y": 20
+        },
+        {
+          "name": "M. Camara",
+          "number": 45,
+          "x": 25,
+          "y": 34
+        },
+        {
+          "name": "V. Rongier",
+          "number": 21,
+          "x": 50,
+          "y": 36
+        },
+        {
+          "name": "A. Thomasson",
+          "number": 28,
+          "x": 75,
+          "y": 34
+        },
+        {
+          "name": "L. Blas",
+          "number": 10,
+          "x": 20,
+          "y": 45
+        },
+        {
+          "name": "E. Lepaul",
+          "number": 9,
+          "x": 50,
+          "y": 46
+        },
+        {
+          "name": "I. Soumaré",
+          "number": 90,
+          "x": 80,
+          "y": 45
+        }
+      ]
+    },
+    "away": {
+      "formation": "4-2-3-1",
+      "players": [
+        {
+          "name": "J. de Lange",
+          "number": 1,
+          "x": 50,
+          "y": 92
+        },
+        {
+          "name": "T. Weah",
+          "number": 22,
+          "x": 17,
+          "y": 80
+        },
+        {
+          "name": "C. Egan-Riley",
+          "number": 4,
+          "x": 39,
+          "y": 80
+        },
+        {
+          "name": "N. Aguerd",
+          "number": 21,
+          "x": 61,
+          "y": 80
+        },
+        {
+          "name": "Emerson",
+          "number": 33,
+          "x": 83,
+          "y": 80
+        },
+        {
+          "name": "H. Abdelli",
+          "number": 8,
+          "x": 37,
+          "y": 69
+        },
+        {
+          "name": "P. Højbjerg",
+          "number": 23,
+          "x": 63,
+          "y": 69
+        },
+        {
+          "name": "A. Harit",
+          "number": 77,
+          "x": 20,
+          "y": 58
+        },
+        {
+          "name": "A. Gomes",
+          "number": 7,
+          "x": 50,
+          "y": 59
+        },
+        {
+          "name": "I. Paixão",
+          "number": 14,
+          "x": 80,
+          "y": 58
+        },
+        {
+          "name": "A. Gouiri",
+          "number": 9,
+          "x": 50,
+          "y": 51
+        }
+      ]
+    }
+  }
+}
