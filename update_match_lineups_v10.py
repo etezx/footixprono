@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Footix V10 — cache des XI officiels (étape 1 Rennes–Marseille).
-Big Balls = XI / banc / formation. TheSportsDB = portraits des 22 titulaires.
+Big Balls = XI / banc / formation + statistiques après-match. TheSportsDB = portraits des 22 titulaires.
 La clé Big Balls reste exclusivement dans BIGBALLS_API_KEY (GitHub Secret).
 """
 from __future__ import annotations
@@ -97,6 +97,76 @@ def build_team(rows,side,formation,cache):
     # Le banc est conservé avec ses données Big Balls, sans appels portrait inutiles.
     return {"formation":formation,"players":[enrich(p,True) for p in starters],"bench":[enrich(p,False) for p in bench]}
 
+STAT_FIELDS = [
+    ("Possession", ["possession_percent", "possession", "ball_possession"], "%"),
+    ("Tirs", ["shots", "total_shots", "shots_total"], ""),
+    ("Tirs cadrés", ["shots_on_target", "shotsontarget", "on_target"], ""),
+    ("Corners", ["corners", "corner_kicks"], ""),
+    ("Fautes", ["fouls", "fouls_committed"], ""),
+    ("Hors-jeu", ["offsides", "off_sides"], ""),
+    ("Cartons jaunes", ["cards_yellow", "yellow_cards"], ""),
+    ("Cartons rouges", ["cards_red", "red_cards"], ""),
+    ("Arrêts", ["saves", "goalkeeper_saves"], ""),
+    ("Passes", ["passes", "total_passes"], ""),
+]
+
+def _keynorm(s):
+    return re.sub(r"[^a-z0-9]", "", str(s or "").lower())
+
+def _num(v):
+    if isinstance(v, bool) or v is None: return None
+    if isinstance(v, (int, float)): return v
+    m=re.search(r"-?\d+(?:[.,]\d+)?", str(v))
+    if not m: return None
+    x=float(m.group(0).replace(",", "."))
+    return int(x) if x.is_integer() else x
+
+def _find_value(obj, aliases):
+    wanted={_keynorm(x) for x in aliases}
+    if isinstance(obj, dict):
+        for k,v in obj.items():
+            if _keynorm(k) in wanted and not isinstance(v,(dict,list)):
+                n=_num(v)
+                if n is not None: return n
+        for v in obj.values():
+            n=_find_value(v, aliases)
+            if n is not None: return n
+    elif isinstance(obj, list):
+        for v in obj:
+            n=_find_value(v, aliases)
+            if n is not None: return n
+    return None
+
+def parse_stats(payload):
+    """Tolère les enveloppes Big Balls actuelles sans inventer de valeurs."""
+    data=payload.get("data", payload) if isinstance(payload,dict) else payload
+    home=away=None
+    if isinstance(data,dict):
+        # Schéma le plus courant: data.home / data.away, éventuellement sous stats/statistics.
+        for box in (data, data.get("stats"), data.get("statistics"), data.get("teams")):
+            if isinstance(box,dict):
+                home=box.get("home") or box.get("home_team")
+                away=box.get("away") or box.get("away_team")
+                if home is not None and away is not None: break
+    if home is None or away is None:
+        # Certains feeds renvoient une liste de deux lignes avec side/team.
+        rows=data if isinstance(data,list) else (data.get("rows") if isinstance(data,dict) else None)
+        if isinstance(rows,list):
+            for row in rows:
+                if not isinstance(row,dict): continue
+                side=_keynorm(row.get("side") or row.get("team_side") or row.get("location"))
+                if side in {"home","h"}: home=row
+                elif side in {"away","a"}: away=row
+    if home is None or away is None:
+        print("STATS: réponse reçue mais structure home/away non reconnue — aucun chiffre inventé.")
+        return []
+    out=[]
+    for label,aliases,suffix in STAT_FIELDS:
+        h=_find_value(home,aliases); a=_find_value(away,aliases)
+        if h is None or a is None: continue
+        out.append({"label":label,"home":h,"away":a,"suffix":suffix})
+    return out
+
 def main():
     key=os.getenv("BIGBALLS_API_KEY","").strip()
     if not key: print("ERREUR: secret BIGBALLS_API_KEY absent."); return 1
@@ -111,12 +181,21 @@ def main():
     key_out=f'{TARGET["day"]}|||{norm(TARGET["home"])}|||{norm(TARGET["away"])}'
     home=build_team(data["home"],"home",form.get("home") or "4-3-3",cache)
     away=build_team(data["away"],"away",form.get("away") or "4-2-3-1",cache)
-    out={"generated_at":datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),"source":"Big Balls + TheSportsDB","matches":{key_out:{"status":"official","bigballs_match_id":match_id,"home":home,"away":away}}}
+    print("V10: récupération des statistiques après-match…")
+    stats=[]
+    try:
+        stats_payload=bb(f"/stored/matches/{match_id}/stats",key)
+        stats=parse_stats(stats_payload)
+        print(f"Big Balls: {len(stats)} statistique(s) exploitable(s) trouvée(s).")
+    except RuntimeError as e:
+        # Les XI restent publiables même si les stats ne sont pas encore disponibles.
+        print(f"STATS indisponibles: {e}")
+    out={"generated_at":datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),"source":"Big Balls + TheSportsDB","matches":{key_out:{"status":"official","bigballs_match_id":match_id,"home":home,"away":away,"stats":stats}}}
     OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     PORTRAIT_CACHE.write_text(json.dumps(cache,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     hp=sum(bool(p.get("portrait")) for p in home["players"]); ap=sum(bool(p.get("portrait")) for p in away["players"])
     print(f"OK: Rennes–Marseille {home['formation']} / {away['formation']} — portraits titulaires {hp+ap}/22")
-    print(f"Cache écrit: {OUT.name} ; portraits mémorisés: {len(cache)}")
+    print(f"Cache écrit: {OUT.name} ; portraits mémorisés: {len(cache)} ; stats: {len(stats)}")
     return 0
 
 if __name__=="__main__":
