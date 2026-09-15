@@ -34,47 +34,29 @@ function status(meta){if(meta?.completed||meta?.status==="finished")return ["TER
 function score(meta){if(meta?.completed||meta?.live)return `${meta.homeScore??0} – ${meta.awayScore??0}`;return "VS"}
 function verdict(meta,p){if(!meta?.completed||!p?.score)return null;const [ph,pa]=String(p.score).split(/[-–]/).map(Number);const ah=Number(meta.homeScore),aa=Number(meta.awayScore);if([ph,pa,ah,aa].some(Number.isNaN))return null;const exact=ph===ah&&pa===aa;const out=(x,y)=>x>y?"1":x<y?"2":"N";const good=out(ph,pa)===out(ah,aa);return exact?["SCORE EXACT · PRONO PARFAIT","good"]:good?["BON RÉSULTAT, SCORE DIFFÉRENT","good"]:["PRONO RATÉ","bad"]}
 function statRows(stats){if(!stats||!stats.length)return `<div class="empty-block">Les statistiques détaillées (tirs, tirs cadrés, possession, corners…) ne sont pas encore reliées à la source de données V10. Aucun chiffre n’est inventé.</div>`;return stats.map(s=>{const total=(+s.home||0)+(+s.away||0)||1,h=Math.round((+s.home||0)/total*100),a=100-h;return `<div class="stat-line"><span class="num">${esc(s.home)}</span><span class="bar"><i style="width:${h}%"></i></span><span class="stat-name">${esc(s.label)}</span><span class="bar away"><i style="width:${a}%"></i></span><span class="num">${esc(s.away)}</span></div>`}).join("")}
-function lineupKey(day,home,away){return `${day}|||${norm(home)}|||${norm(away)}`}
-async function loadLineups(){
-  try{return await json("match-lineups.json")}catch(_){return {}}
-}
-function playerNode(p,side){
-  const number=p.number?`<span class="shirt-number">${esc(p.number)}</span>`:"";
-  return `<div class="pitch-player ${side}" style="left:${Number(p.x)}%;top:${Number(p.y)}%">
-    <div class="player-marker">${number}<span class="player-initials">${esc((p.name||"?").split(/\s+/).map(x=>x[0]).join("").slice(0,2))}</span></div>
-    <span class="player-name">${esc(p.name)}</span>
-  </div>`;
-}
-function lineupBlock(data,home,away,meta){
-  if(!data?.home?.players?.length||!data?.away?.players?.length){
-    return `<div class="pitch"><div class="pitch-lines"><span class="halfway"></span><span class="center-circle"></span><span class="box top"></span><span class="box bottom"></span></div><div class="pitch-message"><div><strong>⚽ COMPOSITION À VENIR</strong><p>Le terrain est prêt. Dès qu’un XI probable ou officiel est disponible dans la source V10, les joueurs sont placés automatiquement ici.</p></div></div></div>
-    <aside class="lineup-info"><div class="info-chip"><small>STATUT</small><strong>En attente des données</strong></div><div class="info-chip"><small>INDICE DE CONFIANCE</small><strong class="confidence">—</strong></div><div class="availability-list"><div class="availability-item">🏥 <span><b>Blessures</b><br>Connexion automatisée prévue</span></div><div class="availability-item">🟥 <span><b>Suspensions</b><br>Connexion automatisée prévue</span></div><div class="availability-item">📰 <span><b>Infos médias</b><br>Connexion automatisée prévue</span></div></div></aside>`;
-  }
-  const official=data.status==="official"||meta?.completed;
-  const players=[...data.home.players.map(p=>playerNode(p,"home")), ...data.away.players.map(p=>playerNode(p,"away"))].join("");
-  return `<div class="pitch-wrap">
-    <div class="pitch-team-label home"><b>${esc(display(home))}</b><span>${esc(data.home.formation||"")}</span></div>
-    <div class="pitch">
-      <div class="pitch-lines"><span class="halfway"></span><span class="center-circle"></span><span class="center-dot"></span><span class="box top"></span><span class="goalbox top"></span><span class="box bottom"></span><span class="goalbox bottom"></span></div>
-      ${players}
-    </div>
-    <div class="pitch-team-label away"><b>${esc(display(away))}</b><span>${esc(data.away.formation||"")}</span></div>
-  </div>
-  <aside class="lineup-info">
-    <div class="lineup-status ${official?"official":"probable"}"><span>${official?"✓":"◌"}</span><div><small>STATUT</small><strong>${official?"COMPOSITIONS OFFICIELLES":"COMPOSITIONS PROBABLES"}</strong></div></div>
-    <div class="info-chip"><small>RENCONTRE</small><strong>${esc(display(home))} · ${esc(data.home.formation||"—")}<br>${esc(display(away))} · ${esc(data.away.formation||"—")}</strong></div>
-    ${!official?`<div class="info-chip"><small>INDICE DE CONFIANCE</small><strong class="confidence">${esc(data.confidence||"À calculer")}</strong></div>`:""}
-    <div class="info-chip"><small>MISE À JOUR</small><strong>${esc(data.updated_at||"—")}</strong></div>
-    <div class="lineup-legend"><span><i class="legend-dot home"></i>${esc(display(home))}</span><span><i class="legend-dot away"></i>${esc(display(away))}</span></div>
-    ${data.note?`<div class="info-chip why-xi"><small>${official?"SOURCE / NOTE":"POURQUOI CE XI ?"}</small><strong>${esc(data.note)}</strong></div>`:""}
-  </aside>`;
-}
-async function init(){try{const [schedule,pronos,standings,clubs,lineups]=await Promise.all([json("schedule.json"),json("pronos.json"),json("standings.json"),json("clubs.json"),loadLineups()]);const q=new URLSearchParams(location.search);let home=q.get("home")||"STADE RENNAIS FC",away=q.get("away")||"OLYMPIQUE DE MARSEILLE",day=q.get("day")||"4";const fixture=findFixture(schedule,home,away,day);if(fixture){home=fixture.home;away=fixture.away;day=fixture.day}else throw Error("Match introuvable");const meta=fixture.meta||{},p=pronoFor(pronos,day,home,away),all=allFixtures(schedule),hf=formFor(home,fixture,all),af=formFor(away,fixture,all),[st,stClass]=status(meta),v=verdict(meta,p),lineup=lineups[lineupKey(day,home,away)]||null;document.title=`${display(home)} – ${display(away)} | Footix Prono`;$("#match-app").innerHTML=`
+const realLineups={
+ "staderennaisfc|olympiquedemarseille|4":{
+  home:{name:"Rennes",formation:"4-3-3",cls:"home",players:[["Brice Samba",30,"G"],["Przemyslaw Frankowski",95,"D"],["Charlie Cresswell",4,"D"],["Anthony Rouault",24,"D"],["Mahamadou Nagida",18,"D"],["Mahdi Camara",45,"M"],["Valentin Rongier",21,"M"],["Adrien Thomasson",28,"M"],["Ludovic Blas",10,"F"],["Esteban Lepaul",9,"F"],["Issa Soumare",90,"F"]]},
+  away:{name:"Marseille",formation:"4-2-3-1",cls:"away",players:[["Jeffrey de Lange",1,"G"],["Timothy Weah",22,"D"],["CJ Egan-Riley",4,"D"],["Nayef Aguerd",21,"D"],["Emerson Palmieri",33,"D"],["Himad Abdelli",8,"M"],["Pierre-Emile Hojbjerg",23,"M"],["Amine Harit",77,"M"],["Angel Gomes",7,"M"],["Igor Paixao",14,"M"],["Amine Gouiri",9,"F"]]}
+ }
+};
+const lineupLayouts={
+ "4-3-3":[[50,88],[16,70],[38,70],[62,70],[84,70],[24,48],[50,48],[76,48],[20,23],[50,19],[80,23]],
+ "4-2-3-1":[[50,88],[16,70],[38,70],[62,70],[84,70],[35,51],[65,51],[18,32],[50,31],[82,32],[50,15]]
+};
+const noAccents=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+const initials=n=>String(n).split(/\s+/).map(x=>x[0]).slice(0,2).join("").toUpperCase();
+async function portrait(name){try{const r=await fetch(`https://www.thesportsdb.com/api/v1/json/123/searchplayers.php?p=${encodeURIComponent(noAccents(name))}`);const j=await r.json();const p=(j.player||[]).find(x=>x.strSport==="Soccer")||(j.player||[])[0];return p?.strCutout||p?.strThumb||null}catch(e){return null}}
+function lineupKey(home,away,day){return `${norm(home)}|${norm(away)}|${day}`}
+function teamPitchHTML(t){const coords=lineupLayouts[t.formation]||lineupLayouts["4-3-3"];return `<article class="lineup-team-card ${t.cls}"><div class="lineup-team-head"><strong>${esc(t.name)}</strong><span>${esc(t.formation)}</span></div><div class="lineup-pitch">${t.players.map((p,i)=>{const [name,num]=p,[x,y]=coords[i];return `<div class="lineup-player" data-player="${esc(name)}" style="left:${x}%;top:${y}%"><div class="lineup-portrait"><span>${initials(name)}</span></div><b class="lineup-number">${num}</b><em title="${esc(name)}">${esc(name)}</em></div>`}).join("")}</div></article>`}
+function lineupBlock(home,away,day,meta){const l=realLineups[lineupKey(home,away,day)];if(!l)return `<div class="lineup-empty"><strong>⚽ COMPOSITION V10</strong><p>La composition de cette rencontre n'est pas encore disponible dans le cache Footix. Aucun XI fictif n'est affiché.</p></div>`;const official=meta?.completed||meta?.status==="finished";return `<div class="lineup-status"><span class="${official?"official":"probable"}">${official?"✓ XI OFFICIELS":"COMPOSITIONS PROBABLES"}</span><small>${official?"Compositions du match":"En attente des XI officiels"}</small></div><div class="double-pitches">${teamPitchHTML(l.home)}${teamPitchHTML(l.away)}</div>`}
+async function hydratePortraits(){await Promise.all([...document.querySelectorAll(".lineup-player")].map(async el=>{const url=await portrait(el.dataset.player);if(!url)return;const img=new Image();img.alt=el.dataset.player;img.onload=()=>{const w=el.querySelector(".lineup-portrait");w.innerHTML="";w.appendChild(img)};img.src=url}))}
+async function init(){try{const [schedule,pronos,standings,clubs]=await Promise.all([json("schedule.json"),json("pronos.json"),json("standings.json"),json("clubs.json")]);const q=new URLSearchParams(location.search);let home=q.get("home")||"STADE RENNAIS FC",away=q.get("away")||"OLYMPIQUE DE MARSEILLE",day=q.get("day")||"4";const fixture=findFixture(schedule,home,away,day);if(fixture){home=fixture.home;away=fixture.away;day=fixture.day}else throw Error("Match introuvable");const meta=fixture.meta||{},p=pronoFor(pronos,day,home,away),all=allFixtures(schedule),hf=formFor(home,fixture,all),af=formFor(away,fixture,all),[st,stClass]=status(meta),v=verdict(meta,p);document.title=`${display(home)} – ${display(away)} | Footix Prono`;$("#match-app").innerHTML=`
 <section class="match-hero"><div class="hero-kicker"><span>LIGUE 1 · JOURNÉE ${esc(day)}</span><span class="status-pill ${stClass}">${esc(st)}</span><span>${esc(fmtDate(meta))}</span></div><div class="hero-teams"><div class="hero-team"><img src="${esc(logo(home,clubs))}" alt=""><div><h1>${esc(display(home))}</h1><div class="team-rank">${esc(rank(home,standings))}</div>${formHTML(hf)}</div></div><div class="hero-score"><strong>${esc(score(meta))}</strong><span>${meta.completed?"SCORE FINAL":"COUP D’ENVOI"}</span></div><div class="hero-team away"><img src="${esc(logo(away,clubs))}" alt=""><div><h1>${esc(display(away))}</h1><div class="team-rank">${esc(rank(away,standings))}</div>${formHTML(af)}</div></div></div></section>
 <div class="v10-grid">
 <section class="v10-card"><div class="card-head"><h2>🧠 ANALYSE FOOTIX</h2><span>AVANT-MATCH</span></div><div class="card-body analysis-text">${esc(p.analyse||"Aucune analyse publiée pour cette rencontre.")}</div></section>
 <aside class="v10-card"><div class="card-head"><h3>🎯 PRONO FOOTIX</h3><span>NOTRE AVIS</span></div><div class="card-body"><div class="prono-box"><div class="prono-metric"><small>SCORE PRÉVU</small><strong>${esc(p.score||"—")}</strong></div><div class="prono-metric scorers"><small>BUTEUR(S)</small><strong>${esc((p.scorers||[]).join(" · ")||p.buteurs||"—")}</strong></div></div></div></aside>
-<section class="v10-card pitch-card"><div class="card-head"><h2>⚽ COMPOSITIONS</h2><span>PROBABLE → OFFICIELLE</span></div><div class="pitch-layout">${lineupBlock(lineup,home,away,meta)}</div></section>
+<section class="v10-card pitch-card"><div class="card-head"><h2>⚽ COMPOSITIONS</h2><span>PROBABLE → OFFICIELLE</span></div><div class="pitch-layout">${lineupBlock(home,away,day,meta)}</div></section>
 <section class="v10-card stats-card"><div class="card-head"><h2>📊 STATISTIQUES DU MATCH</h2><span>${meta.completed?"APRÈS-MATCH":"DISPONIBLES APRÈS LE MATCH"}</span></div><div class="card-body"><div class="stats-list">${statRows(meta.stats)}</div>${v?`<div class="after-prono"><div class="after-prono-title">BILAN DU PRONO FOOTIX</div><div class="after-score-grid"><div class="after-score-card"><small>PRONO FOOTIX</small><strong>${esc(p.score)}</strong></div><div class="after-score-card final"><small>SCORE FINAL</small><strong>${esc(meta.homeScore)}–${esc(meta.awayScore)}</strong></div></div><div class="verdict ${v[1]}">${v[0]}</div></div>`:""}</div></section>
-</div>`}catch(e){console.error(e);$("#match-app").innerHTML=`<div class="empty-block"><b>Impossible de charger cette fiche match.</b><br><span class="muted">Vérifie les paramètres du match ou les fichiers de données.</span></div>`}}
+</div>`;hydratePortraits()}catch(e){console.error(e);$("#match-app").innerHTML=`<div class="empty-block"><b>Impossible de charger cette fiche match.</b><br><span class="muted">Vérifie les paramètres du match ou les fichiers de données.</span></div>`}}
 init();
