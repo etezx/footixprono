@@ -9,8 +9,25 @@ function findStanding(name,standings){return (standings.teams||[]).find(t=>norm(
 function rank(name,standings){const i=(standings.teams||[]).findIndex(t=>norm(t.club)===norm(name)||norm(t.club).includes(norm(name))||norm(name).includes(norm(t.club)));return i>=0?`${i+1}e de Ligue 1`:"Classement indisponible"}
 function allFixtures(schedule){return schedule.flatMap(d=>(d.matches||[]).map(m=>({day:d.journee,home:m[0],away:m[1],meta:m[2]||{}})))}
 function findFixture(schedule,home,away,day){const all=allFixtures(schedule);return all.find(x=>(!day||String(x.day)===String(day))&&norm(x.home)===norm(home)&&norm(x.away)===norm(away))||all.find(x=>norm(x.home)===norm(home)&&norm(x.away)===norm(away))}
-function formFor(team,target,all){const targetDate=target?.meta?.date||"9999-99-99";return all.filter(x=>x.meta?.completed&&x.meta?.date<targetDate&&(norm(x.home)===norm(team)||norm(x.away)===norm(team))).sort((a,b)=>(b.meta.date||"").localeCompare(a.meta.date||"")).slice(0,5).reverse().map(x=>{const home=norm(x.home)===norm(team),gf=Number(home?x.meta.homeScore:x.meta.awayScore),ga=Number(home?x.meta.awayScore:x.meta.homeScore);return gf>ga?"w":gf===ga?"d":"l"})}
-function formHTML(form){return `<div class="form-row">${form.length?form.map(v=>`<span class="form-dot ${v}">${v==="w"?"V":v==="d"?"N":"D"}</span>`).join(""):`<span class="muted">Forme à venir</span>`}</div>`}
+function formFor(team,target,all){
+  const targetDay=Number(target?.day)||999;
+  const targetDate=target?.meta?.date||"";
+  return all.filter(x=>{
+    if(!x.meta?.completed||(norm(x.home)!==norm(team)&&norm(x.away)!==norm(team)))return false;
+    const xDay=Number(x.day)||0;
+    // Certaines journées terminées n'ont pas encore de date dans schedule.json :
+    // on utilise alors le numéro de journée pour ne pas perdre le résultat.
+    if(xDay&&targetDay!==999)return xDay<targetDay;
+    return !!(x.meta?.date&&targetDate&&x.meta.date<targetDate);
+  }).sort((a,b)=>(Number(b.day)||0)-(Number(a.day)||0)).slice(0,5).reverse().map(x=>{
+    const isHome=norm(x.home)===norm(team);
+    const gf=Number(isHome?x.meta.homeScore:x.meta.awayScore),ga=Number(isHome?x.meta.awayScore:x.meta.homeScore);
+    const result=gf>ga?"w":gf===ga?"d":"l";
+    const opponent=isHome?x.away:x.home;
+    return {result,opponent,score:`${x.meta.homeScore}–${x.meta.awayScore}`,day:x.day,home:x.home,away:x.away};
+  });
+}
+function formHTML(form){return `<div class="form-row">${form.length?form.map(m=>{const label=m.result==="w"?"V":m.result==="d"?"N":"D";const tip=`${display(m.home)} ${m.score} ${display(m.away)} · J${m.day}`;return `<span class="form-dot ${m.result}" tabindex="0" aria-label="${esc(tip)}"><span>${label}</span><span class="form-tooltip">${esc(display(m.home))} <b>${esc(m.score)}</b> ${esc(display(m.away))}<small>Ligue 1 · Journée ${esc(m.day)}</small></span></span>`}).join(""):`<span class="muted">Forme à venir</span>`}</div>`}
 function pronoFor(pronos,day,home,away){const d=pronos.days?.[String(day)]||{};return d[`${home}|||${away}`]||Object.entries(d).find(([k])=>{const [h,a]=k.split("|||");return norm(h)===norm(home)&&norm(a)===norm(away)})?.[1]||{}}
 function fmtDate(meta){if(!meta?.date)return "DATE À CONFIRMER";const d=new Date(meta.date+"T12:00:00");return d.toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"}).toUpperCase()+` · ${meta.time||""}`}
 function status(meta){if(meta?.completed||meta?.status==="finished")return ["TERMINÉ","finished"];if(meta?.live)return [`LIVE · ${meta.minute||""}'`,"live"];return ["À VENIR",""]}
@@ -24,6 +41,6 @@ async function init(){try{const [schedule,pronos,standings,clubs]=await Promise.
 <section class="v10-card"><div class="card-head"><h2>🧠 ANALYSE FOOTIX</h2><span>AVANT-MATCH</span></div><div class="card-body analysis-text">${esc(p.analyse||"Aucune analyse publiée pour cette rencontre.")}</div></section>
 <aside class="v10-card"><div class="card-head"><h3>🎯 PRONO FOOTIX</h3><span>NOTRE AVIS</span></div><div class="card-body"><div class="prono-box"><div class="prono-metric"><small>SCORE PRÉVU</small><strong>${esc(p.score||"—")}</strong></div><div class="prono-metric scorers"><small>BUTEUR(S)</small><strong>${esc((p.scorers||[]).join(" · ")||p.buteurs||"—")}</strong></div></div></div></aside>
 <section class="v10-card pitch-card"><div class="card-head"><h2>⚽ COMPOSITIONS</h2><span>PROBABLE → OFFICIELLE</span></div><div class="pitch-layout">${lineupBlock()}</div></section>
-<section class="v10-card stats-card"><div class="card-head"><h2>📊 STATISTIQUES DU MATCH</h2><span>${meta.completed?"APRÈS-MATCH":"DISPONIBLES APRÈS LE MATCH"}</span></div><div class="card-body"><div class="stats-list">${statRows(meta.stats)}</div>${v?`<div class="after-prono" style="margin-top:18px"><div><small class="muted">BILAN DU PRONO FOOTIX</small><div>Prono ${esc(p.score)} · Score final ${esc(meta.homeScore)}–${esc(meta.awayScore)}</div></div><div class="verdict ${v[1]}">${v[0]}</div></div>`:""}</div></section>
+<section class="v10-card stats-card"><div class="card-head"><h2>📊 STATISTIQUES DU MATCH</h2><span>${meta.completed?"APRÈS-MATCH":"DISPONIBLES APRÈS LE MATCH"}</span></div><div class="card-body"><div class="stats-list">${statRows(meta.stats)}</div>${v?`<div class="after-prono"><div class="after-prono-title">BILAN DU PRONO FOOTIX</div><div class="after-score-grid"><div class="after-score-card"><small>PRONO FOOTIX</small><strong>${esc(p.score)}</strong></div><div class="after-score-card final"><small>SCORE FINAL</small><strong>${esc(meta.homeScore)}–${esc(meta.awayScore)}</strong></div></div><div class="verdict ${v[1]}">${v[0]}</div></div>`:""}</div></section>
 </div>`}catch(e){console.error(e);$("#match-app").innerHTML=`<div class="empty-block"><b>Impossible de charger cette fiche match.</b><br><span class="muted">Vérifie les paramètres du match ou les fichiers de données.</span></div>`}}
 init();
