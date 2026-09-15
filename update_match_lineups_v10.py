@@ -1,203 +1,163 @@
 #!/usr/bin/env python3
-"""Footix V10 — cache des XI officiels (étape 1 Rennes–Marseille).
-Big Balls = XI / banc / formation + statistiques après-match. TheSportsDB = portraits des 22 titulaires.
-La clé Big Balls reste exclusivement dans BIGBALLS_API_KEY (GitHub Secret).
+"""Footix Prono V10 — cache automatique des compositions Ligue 1.
+
+Sources:
+- Big Balls (secret BIGBALLS_API_KEY): matches, XI, bancs, formations.
+- TheSportsDB (clé publique v1 123): portraits et statistiques d'événement disponibles.
+
+Aucune clé privée n'est écrite dans les fichiers publics. Le script ne fabrique jamais de XI/stat.
 """
 from __future__ import annotations
-import datetime, json, os, random, re, sys, time, unicodedata
+import datetime as dt, json, os, random, re, time, unicodedata
 import urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-OUT = ROOT / "lineups-v10.json"
-PORTRAIT_CACHE = ROOT / "portraits-v10-cache.json"
-BB_BASE = "https://api.bigballsdata.com/v1"
-TSDB = "https://www.thesportsdb.com/api/v1/json/123/searchplayers.php"
-TARGET = {"day":4,"date":"2026-09-11","home":"STADE RENNAIS FC","away":"OLYMPIQUE DE MARSEILLE"}
-TSDB_MIN_INTERVAL = 2.2  # Free: 30 req/min. On reste volontairement sous la limite.
-_last_tsdb_call = 0.0
-
-FULL_NAMES = {
- "home": {30:"Brice Samba",95:"Przemyslaw Frankowski",4:"Charlie Cresswell",24:"Anthony Rouault",18:"Mahamadou Nagida",45:"Mahdi Camara",21:"Valentin Rongier",28:"Adrien Thomasson",10:"Ludovic Blas",9:"Esteban Lepaul",90:"Issa Soumare"},
- "away": {1:"Jeffrey de Lange",22:"Timothy Weah",4:"CJ Egan-Riley",21:"Nayef Aguerd",33:"Emerson Palmieri",8:"Himad Abdelli",23:"Pierre-Emile Hojbjerg",77:"Amine Harit",7:"Angel Gomes",14:"Igor Paixao",9:"Amine Gouiri"},
-}
+ROOT=Path(__file__).resolve().parent
+SCHEDULE=ROOT/'schedule.json'; OUT=ROOT/'lineups-v10.json'; PCACHE=ROOT/'portraits-v10-cache.json'
+BB='https://api.bigballsdata.com/v1'; TS='https://www.thesportsdb.com/api/v1/json/123'
+PAST_DAYS=int(os.getenv('V10_PAST_DAYS','4')); FUTURE_DAYS=int(os.getenv('V10_FUTURE_DAYS','3'))
+TS_MIN=2.2; _last_ts=0.0
 
 def norm(s):
-    s=unicodedata.normalize("NFD",str(s or "")); s="".join(c for c in s if unicodedata.category(c)!="Mn")
-    return re.sub(r"[^a-z0-9]","",s.lower())
+ s=unicodedata.normalize('NFD',str(s or '')); s=''.join(c for c in s if unicodedata.category(c)!='Mn')
+ return re.sub(r'[^a-z0-9]','',s.lower())
 
-def get_json(url, headers=None, label="API", retries=4):
-    for attempt in range(retries+1):
-        req=urllib.request.Request(url,headers=headers or {"User-Agent":"FootixProno/1.0"})
-        try:
-            with urllib.request.urlopen(req,timeout=30) as r:
-                return json.load(r)
-        except urllib.error.HTTPError as e:
-            if e.code != 429 or attempt >= retries:
-                raise RuntimeError(f"{label}: HTTP {e.code} sur {url.split('?')[0]}") from e
-            retry_after=e.headers.get("Retry-After")
-            try: wait=max(float(retry_after),5.0) if retry_after else min(60.0,8.0*(2**attempt))
-            except ValueError: wait=min(60.0,8.0*(2**attempt))
-            wait += random.uniform(0.5,1.5)
-            print(f"ATTENTE: {label} limite 429 — nouvel essai dans {wait:.1f}s ({attempt+1}/{retries})")
-            time.sleep(wait)
-        except urllib.error.URLError as e:
-            if attempt >= retries: raise RuntimeError(f"{label}: erreur réseau {e.reason}") from e
-            wait=min(20.0,2.0*(2**attempt))+random.uniform(0.2,0.8)
-            print(f"ATTENTE: {label} erreur réseau — nouvel essai dans {wait:.1f}s")
-            time.sleep(wait)
-    raise RuntimeError(f"{label}: échec après plusieurs essais")
+def request_json(url,headers=None,label='API',retries=5):
+ for n in range(retries+1):
+  try:
+   req=urllib.request.Request(url,headers=headers or {'User-Agent':'FootixProno/1.0'})
+   with urllib.request.urlopen(req,timeout=35) as r:return json.load(r)
+  except urllib.error.HTTPError as e:
+   if e.code!=429 or n>=retries: raise RuntimeError(f'{label}: HTTP {e.code}') from e
+   try:w=float(e.headers.get('Retry-After') or 0)
+   except:w=0
+   w=max(w,min(75,8*(2**n)))+random.uniform(.5,1.5); print(f'ATTENTE {label}: 429, retry {w:.1f}s');time.sleep(w)
+  except urllib.error.URLError as e:
+   if n>=retries: raise RuntimeError(f'{label}: réseau {e.reason}') from e
+   w=min(30,2*(2**n))+random.random();print(f'ATTENTE {label}: réseau, retry {w:.1f}s');time.sleep(w)
 
-def bb(path,key):
-    return get_json(BB_BASE+path,{"Authorization":f"Bearer {key}","Accept":"application/json","User-Agent":"FootixProno/1.0"},"Big Balls")
+def bb(path,key):return request_json(BB+path,{'Authorization':f'Bearer {key}','Accept':'application/json','User-Agent':'FootixProno/1.0'},'Big Balls')
+def ts(path,params):
+ global _last_ts
+ wait=TS_MIN-(time.monotonic()-_last_ts)
+ if wait>0:time.sleep(wait)
+ try:return request_json(TS+path+'?'+urllib.parse.urlencode(params),label='TheSportsDB')
+ finally:_last_ts=time.monotonic()
 
-def find_match(key):
-    data=bb("/stored/matches?date="+TARGET["date"],key).get("data") or []
-    for m in data:
-        if m.get("sport")!="football": continue
-        h=norm((m.get("home") or {}).get("name")); a=norm((m.get("away") or {}).get("name"))
-        if ("rennais" in h or "rennes" in h) and "marseille" in a: return m
-    raise RuntimeError("Rennes–Marseille introuvable chez Big Balls pour le 11/09/2026")
+def load(path,default):
+ try:return json.loads(path.read_text(encoding='utf-8'))
+ except:return default
 
-def load_portrait_cache():
-    try:
-        raw=json.loads(PORTRAIT_CACHE.read_text(encoding="utf-8"))
-        return raw if isinstance(raw,dict) else {}
-    except (FileNotFoundError,json.JSONDecodeError): return {}
+def fixtures():
+ raw=load(SCHEDULE,[]); out=[]
+ for block in raw:
+  day=block.get('journee')
+  for m in block.get('matches',[]):
+   if len(m)<3 or not isinstance(m[2],dict) or not m[2].get('date'):continue
+   try:d=dt.date.fromisoformat(m[2]['date'])
+   except:continue
+   out.append({'day':day,'home':m[0],'away':m[1],'meta':m[2],'date':d})
+ return out
 
-def tsdb_portrait(full_name, cache):
-    global _last_tsdb_call
-    ck=norm(full_name)
-    if ck in cache:
-        print(f"CACHE portrait: {full_name}")
-        return cache[ck]
-    elapsed=time.monotonic()-_last_tsdb_call
-    if elapsed < TSDB_MIN_INTERVAL: time.sleep(TSDB_MIN_INTERVAL-elapsed)
-    url=TSDB+"?"+urllib.parse.urlencode({"p":full_name})
-    try:
-        rows=get_json(url,label="TheSportsDB").get("player") or []
-    finally:
-        _last_tsdb_call=time.monotonic()
-    rows=[p for p in rows if p.get("strSport")=="Soccer"] or rows
-    if not rows: pic={"id":None,"cutout":None,"thumb":None}
-    else:
-        p=rows[0]; pic={"id":p.get("idPlayer"),"cutout":p.get("strCutout"),"thumb":p.get("strThumb")}
-    cache[ck]=pic
-    print(f"Portrait: {full_name} — {'OK' if pic.get('cutout') or pic.get('thumb') else 'absent'}")
-    return pic
+def team_match(a,b):
+ a,b=norm(a),norm(b)
+ if not a or not b:return False
+ if a==b or a in b or b in a:return True
+ aliases={'olympiquedemarseille':'marseille','staderennaisfc':'rennes','staderennais':'rennes','parissaintgermain':'psg','parissg':'psg','losc':'lille','lilleosc':'lille','rcstrasbourgalsace':'strasbourg','stadebretois29':'brest','stadebrestois29':'brest','ajauxerre':'auxerre','angerssco':'angers','ogcnice':'nice','fclorient':'lorient','asm Monaco':'monaco','asmonaco':'monaco','rcLens':'lens','rclens':'lens','toulousefc':'toulouse','parisfc':'parisfc','lehac':'lehavre','lehavre':'lehavre','lemansfc':'lemans','estac':'troyes','estactroyes':'troyes'}
+ def canon(x):return norm(aliases.get(x,x))
+ return canon(a)==canon(b)
 
-def build_team(rows,side,formation,cache):
-    starters=[p for p in rows if p.get("starter") is True]
-    bench=[p for p in rows if p.get("starter") is False]
-    def enrich(p, portrait=True):
-        num=p.get("jersey_number"); full=FULL_NAMES[side].get(num) or p.get("name")
-        pic=tsdb_portrait(full,cache) if portrait else {"id":None,"cutout":None,"thumb":None}
-        return {"bigballs_player_id":p.get("player_id"),"name":full,"source_name":p.get("name"),"number":num,"position":p.get("position"),"portrait":pic.get("cutout") or pic.get("thumb"),"cutout":pic.get("cutout"),"thumb":pic.get("thumb"),"thesportsdb_player_id":pic.get("id")}
-    # Les portraits ne servent actuellement qu'au double terrain: 22 appels max au premier run.
-    # Le banc est conservé avec ses données Big Balls, sans appels portrait inutiles.
-    return {"formation":formation,"players":[enrich(p,True) for p in starters],"bench":[enrich(p,False) for p in bench]}
+def find_bb_match(key,f):
+ payload=bb('/stored/matches?date='+f['date'].isoformat(),key); rows=payload.get('data') or []
+ for m in rows:
+  if str(m.get('sport','')).lower()!='football':continue
+  h=(m.get('home') or {}).get('name');a=(m.get('away') or {}).get('name')
+  if team_match(f['home'],h) and team_match(f['away'],a):return m
+ return None
 
-STAT_FIELDS = [
-    ("Possession", ["possession_percent", "possession", "ball_possession"], "%"),
-    ("Tirs", ["shots", "total_shots", "shots_total"], ""),
-    ("Tirs cadrés", ["shots_on_target", "shotsontarget", "on_target"], ""),
-    ("Corners", ["corners", "corner_kicks"], ""),
-    ("Fautes", ["fouls", "fouls_committed"], ""),
-    ("Hors-jeu", ["offsides", "off_sides"], ""),
-    ("Cartons jaunes", ["cards_yellow", "yellow_cards"], ""),
-    ("Cartons rouges", ["cards_red", "red_cards"], ""),
-    ("Arrêts", ["saves", "goalkeeper_saves"], ""),
-    ("Passes", ["passes", "total_passes"], ""),
-]
+def full_name(key,p):
+ name=p.get('name') or 'Joueur'; pid=p.get('player_id')
+ if not pid or not re.search(r'(^|\s)[A-ZÀ-ÖØ-Ý]\.?\s',name):return name
+ try:
+  d=bb(f'/players/{pid}?sport=football',key).get('data') or {}
+  for candidate in (d.get('name'),(d.get('player') or {}).get('name'),d.get('full_name')):
+   if candidate and len(str(candidate))>len(name):return str(candidate)
+ except Exception:pass
+ return name
 
-def _keynorm(s):
-    return re.sub(r"[^a-z0-9]", "", str(s or "").lower())
+def portrait(name,cache):
+ ck=norm(name)
+ if ck in cache:return cache[ck]
+ queries=[name]
+ if re.match(r'^[A-ZÀ-ÖØ-Ý]\.?\s+',name):queries.append(re.sub(r'^[A-ZÀ-ÖØ-Ý]\.?\s+','',name))
+ pic={'id':None,'cutout':None,'thumb':None}
+ for q in queries:
+  try:rows=ts('/searchplayers.php',{'p':q}).get('player') or []
+  except Exception:rows=[]
+  rows=[x for x in rows if x.get('strSport')=='Soccer'] or rows
+  if rows:
+   x=rows[0];pic={'id':x.get('idPlayer'),'cutout':x.get('strCutout'),'thumb':x.get('strThumb')};break
+ cache[ck]=pic; print(f"Portrait {name}: {'OK' if pic['cutout'] or pic['thumb'] else 'absent'}")
+ return pic
 
-def _num(v):
-    if isinstance(v, bool) or v is None: return None
-    if isinstance(v, (int, float)): return v
-    m=re.search(r"-?\d+(?:[.,]\d+)?", str(v))
-    if not m: return None
-    x=float(m.group(0).replace(",", "."))
-    return int(x) if x.is_integer() else x
+def team(rows,formation,key,cache):
+ def enrich(p,with_pic):
+  name=full_name(key,p);pic=portrait(name,cache) if with_pic else {'id':None,'cutout':None,'thumb':None}
+  return {'bigballs_player_id':p.get('player_id'),'name':name,'source_name':p.get('name'),'number':p.get('jersey_number'),'position':p.get('position'),'portrait':pic.get('cutout') or pic.get('thumb'),'cutout':pic.get('cutout'),'thumb':pic.get('thumb'),'thesportsdb_player_id':pic.get('id')}
+ starters=[enrich(p,True) for p in rows if p.get('starter') is True]
+ bench=[enrich(p,False) for p in rows if p.get('starter') is False]
+ return {'formation':formation or None,'players':starters,'bench':bench}
 
-def _find_value(obj, aliases):
-    wanted={_keynorm(x) for x in aliases}
-    if isinstance(obj, dict):
-        for k,v in obj.items():
-            if _keynorm(k) in wanted and not isinstance(v,(dict,list)):
-                n=_num(v)
-                if n is not None: return n
-        for v in obj.values():
-            n=_find_value(v, aliases)
-            if n is not None: return n
-    elif isinstance(obj, list):
-        for v in obj:
-            n=_find_value(v, aliases)
-            if n is not None: return n
-    return None
-
-def parse_stats(payload):
-    """Tolère les enveloppes Big Balls actuelles sans inventer de valeurs."""
-    data=payload.get("data", payload) if isinstance(payload,dict) else payload
-    home=away=None
-    if isinstance(data,dict):
-        # Schéma le plus courant: data.home / data.away, éventuellement sous stats/statistics.
-        for box in (data, data.get("stats"), data.get("statistics"), data.get("teams")):
-            if isinstance(box,dict):
-                home=box.get("home") or box.get("home_team")
-                away=box.get("away") or box.get("away_team")
-                if home is not None and away is not None: break
-    if home is None or away is None:
-        # Certains feeds renvoient une liste de deux lignes avec side/team.
-        rows=data if isinstance(data,list) else (data.get("rows") if isinstance(data,dict) else None)
-        if isinstance(rows,list):
-            for row in rows:
-                if not isinstance(row,dict): continue
-                side=_keynorm(row.get("side") or row.get("team_side") or row.get("location"))
-                if side in {"home","h"}: home=row
-                elif side in {"away","a"}: away=row
-    if home is None or away is None:
-        print("STATS: réponse reçue mais structure home/away non reconnue — aucun chiffre inventé.")
-        return []
-    out=[]
-    for label,aliases,suffix in STAT_FIELDS:
-        h=_find_value(home,aliases); a=_find_value(away,aliases)
-        if h is None or a is None: continue
-        out.append({"label":label,"home":h,"away":a,"suffix":suffix})
-    return out
+def ts_stats(home,away,season='2026-2027'):
+ # Optionnel: TheSportsDB peut n'exposer qu'une partie des stats selon le match.
+ candidates=[f'{home}_vs_{away}',f'{home} vs {away}']
+ event=None
+ for q in candidates:
+  try:rows=ts('/searchevents.php',{'e':q,'s':season}).get('event') or []
+  except Exception:rows=[]
+  if rows:event=rows[0];break
+ if not event:return [],None
+ eid=event.get('idEvent')
+ try:rows=ts('/lookupeventstats.php',{'id':eid}).get('eventstats') or []
+ except Exception:return [],eid
+ labels={'passes accurate':'Passes réussies','shots insidebox':'Tirs dans la surface','shots outsidebox':'Tirs hors surface','blocked shots':'Tirs bloqués','free kicks':'Coups francs','ball possession':'Possession','total shots':'Tirs','shots on goal':'Tirs cadrés','corner kicks':'Corners','yellow cards':'Cartons jaunes','red cards':'Cartons rouges'}
+ out=[]
+ for x in rows:
+  k=str(x.get('strStat') or '').strip().lower();h=x.get('intHome');a=x.get('intAway')
+  if k not in labels or h in (None,'') or a in (None,''):continue
+  suf='%' if k=='ball possession' else ''
+  out.append({'label':labels[k],'home':h,'away':a,'suffix':suf,'source':'TheSportsDB'})
+ return out,eid
 
 def main():
-    key=os.getenv("BIGBALLS_API_KEY","").strip()
-    if not key: print("ERREUR: secret BIGBALLS_API_KEY absent."); return 1
-    print("V10: recherche du match chez Big Balls…")
-    match=find_match(key); match_id=match["id"]
-    print(f"Big Balls: match trouvé {match_id}")
-    payload=bb(f"/stored/matches/{match_id}/lineups",key)
-    data=payload.get("data") or {}; meta=payload.get("meta") or {}; form=meta.get("formation") or {}
-    if len([p for p in data.get("home",[]) if p.get("starter")])!=11 or len([p for p in data.get("away",[]) if p.get("starter")])!=11:
-        raise RuntimeError("Big Balls n'a pas retourné 11 titulaires de chaque côté; cache inchangé.")
-    cache=load_portrait_cache()
-    key_out=f'{TARGET["day"]}|||{norm(TARGET["home"])}|||{norm(TARGET["away"])}'
-    home=build_team(data["home"],"home",form.get("home") or "4-3-3",cache)
-    away=build_team(data["away"],"away",form.get("away") or "4-2-3-1",cache)
-    print("V10: récupération des statistiques après-match…")
-    stats=[]
-    try:
-        stats_payload=bb(f"/stored/matches/{match_id}/stats",key)
-        stats=parse_stats(stats_payload)
-        print(f"Big Balls: {len(stats)} statistique(s) exploitable(s) trouvée(s).")
-    except RuntimeError as e:
-        # Les XI restent publiables même si les stats ne sont pas encore disponibles.
-        print(f"STATS indisponibles: {e}")
-    out={"generated_at":datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),"source":"Big Balls + TheSportsDB","matches":{key_out:{"status":"official","bigballs_match_id":match_id,"home":home,"away":away,"stats":stats}}}
-    OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    PORTRAIT_CACHE.write_text(json.dumps(cache,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    hp=sum(bool(p.get("portrait")) for p in home["players"]); ap=sum(bool(p.get("portrait")) for p in away["players"])
-    print(f"OK: Rennes–Marseille {home['formation']} / {away['formation']} — portraits titulaires {hp+ap}/22")
-    print(f"Cache écrit: {OUT.name} ; portraits mémorisés: {len(cache)} ; stats: {len(stats)}")
-    return 0
-
-if __name__=="__main__":
-    try: sys.exit(main())
-    except Exception as e: print(f"ERREUR: {e}"); sys.exit(1)
+ key=os.getenv('BIGBALLS_API_KEY','').strip()
+ if not key:raise SystemExit('ERREUR: secret BIGBALLS_API_KEY absent')
+ today=dt.datetime.now(dt.timezone.utc).date();lo=today-dt.timedelta(days=PAST_DAYS);hi=today+dt.timedelta(days=FUTURE_DAYS)
+ targets=[f for f in fixtures() if lo<=f['date']<=hi]
+ print(f'V10 Ligue 1: fenêtre {lo} → {hi}, {len(targets)} match(s) Footix')
+ old=load(OUT,{'matches':{}}); matches=old.get('matches',{}) if isinstance(old,dict) else {}
+ cache=load(PCACHE,{})
+ ok=0
+ for f in targets:
+  print(f"\nJ{f['day']} {f['home']} – {f['away']} ({f['date']})")
+  try:m=find_bb_match(key,f)
+  except Exception as e:print('  Big Balls:',e);continue
+  if not m:print('  Match Big Balls non trouvé, on conserve le cache existant.');continue
+  mid=m.get('id');ck=f"{f['day']}|||{norm(f['home'])}|||{norm(f['away'])}"
+  try:lp=bb(f'/stored/matches/{mid}/lineups',key);data=lp.get('data') or {};meta=lp.get('meta') or {};forms=meta.get('formation') or {}
+  except Exception as e:print('  Lineups indisponibles:',e);continue
+  hs=[p for p in data.get('home',[]) if p.get('starter') is True];as_=[p for p in data.get('away',[]) if p.get('starter') is True]
+  if len(hs)!=11 or len(as_)!=11:
+   print(f'  XI pas encore officiels ({len(hs)}/11, {len(as_)}/11). Aucun XI fictif.');continue
+  home=team(data.get('home',[]),forms.get('home'),key,cache);away=team(data.get('away',[]),forms.get('away'),key,cache)
+  stats=[];eid=None
+  if f['meta'].get('completed') or f['meta'].get('status')=='finished':
+   stats,eid=ts_stats(f['home'],f['away'])
+  matches[ck]={'day':f['day'],'date':f['date'].isoformat(),'home_name':f['home'],'away_name':f['away'],'bigballs_match_id':mid,'thesportsdb_event_id':eid,'official':True,'home':home,'away':away,'stats':stats}
+  print(f"  OK: {home['formation'] or '?'} / {away['formation'] or '?'} · portraits {sum(bool(p.get('portrait')) for p in home['players']+away['players'])}/22 · stats {len(stats)}")
+  ok+=1
+ out={'generated_at':dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),'competition':'Ligue 1','season':'2026-2027','source':'Big Balls + TheSportsDB','matches':matches}
+ OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');PCACHE.write_text(json.dumps(cache,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print(f'\nCache écrit: {len(matches)} match(s) total, {ok} actualisé(s), {len(cache)} portrait(s) mémorisé(s).')
+ return 0
+if __name__=='__main__':raise SystemExit(main())
