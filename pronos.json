@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T20:50:41.393056+00:00",
+  "updated_at": "2026-09-16T05:53:08.326Z",
   "days": {
     "1": {
       "OLYMPIQUE DE MARSEILLE|||RC STRASBOURG ALSACE": {
@@ -417,6 +417,19 @@
         "communityCorrect": 22,
         "communityPredictions": 48,
         "communityRate": 45.8
+      }
+    },
+    "5": {
+      "mustWatch": [
+        "OLYMPIQUE DE MARSEILLE|||PARIS SAINT-GERMAIN",
+        "AS MONACO|||RC LENS"
+      ],
+      "AS MONACO|||RC LENS": {
+        "score": "2-1",
+        "pick": "1",
+        "scorers": [],
+        "buteurs": "",
+        "analyse": ""
       }
     }
   }
