@@ -433,5 +433,80 @@
     "id": "34163487",
     "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/tn1y8q1724525279.png",
     "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/qesln41724525017.jpg"
+  },
+  "lhradecky": {
+    "id": "34152968",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/mjr8ep1766238077.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/7aag3g1578225981.jpg"
+  },
+  "vanderson": {
+    "id": "34196429",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/51sbyv1766238350.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/zvd0xv1741323701.jpg"
+  },
+  "dzakaria": {
+    "id": "34155722",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/8zhxy71701203287.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/z4rjor1534328883.jpg"
+  },
+  "lcamara": {
+    "id": "34146666",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/zkzvgj1671713794.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/5vhmxm1551712387.jpg"
+  },
+  "agolovin": {
+    "id": "34163685",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/ljnuwy1766238045.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/b06ij91534021981.jpg"
+  },
+  "mabline": {
+    "id": "34192549",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/dlr6yc1765876800.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/1iwtkl1631108547.jpg"
+  },
+  "edier": {
+    "id": "34146235",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/dswb3i1766238015.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/gh39fm1770542823.jpg"
+  },
+  "flavionazinho": {
+    "id": "34191410",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/jqwk631767799910.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/gv36bs1767801889.jpg"
+  },
+  "parisjosuabrunner": {
+    "id": null,
+    "cutout": null,
+    "thumb": null
+  },
+  "ediop": {
+    "id": "34149547",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/g4pu161603220023.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/6elp581515415333.jpg"
+  },
+  "sadibousane": {
+    "id": "34220321",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/f28rno1766164136.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/qmdpg21714075261.jpg"
+  },
+  "jtodibo": {
+    "id": "34165400",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/2azc1l1756984568.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/n3vhvw1772134007.jpg"
+  },
+  "ahaidara": {
+    "id": "34146069",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/98k1gb1702307233.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/jc61gm1502447498.jpg"
+  },
+  "jkadile": {
+    "id": "34217298",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/wnr4lh1728505381.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/kdzic81726603365.jpg"
+  },
+  "mezianmesloub": {
+    "id": null,
+    "cutout": null,
+    "thumb": null
   }
 }
