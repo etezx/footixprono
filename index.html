@@ -7,6 +7,7 @@
 <title>Footix Prono — Pronostics & communauté football</title>
 <meta name="description" content="Footix Prono : pronostics Ligue 1 et Ligue des Champions, communauté, classements et profils membres.">
 <link rel="stylesheet" href="styles.css?v=9.9.1">
+<link rel="stylesheet" href="home-v10.css?v=10.0.0">
 <link rel="icon" type="image/png" href="logo-footix-prono.png">
 </head>
 <body class="v912-home">
@@ -71,80 +72,73 @@
 
     </header>
 
-    <main class="v912-dashboard">
-      <section class="v912-hero">
-        <div class="v912-hero-copy">
-          <h1>LA COMMUNAUTÉ<br>DES <em>VRAIS PASSIONNÉS</em></h1>
-          <p>Pronostique les matchs, défie la communauté, grimpe au classement et partage ta passion du football.</p>
+    <main class="home-v10">
+      <section class="home-v10-hero">
+        <div class="home-v10-hero-copy">
+          <span class="home-v10-kicker">FOOTIX PRONO · SAISON 2026/27</span>
+          <h1>LE FOOT SE VIT.<br><em>LES PRONOS SE PARTAGENT.</em></h1>
+          <p>Analyses, scores exacts, buteurs et compétition communautaire. Suis la Ligue 1 et la Ligue des Champions avec la communauté Footix.</p>
           <div class="hero-actions">
-            <button class="v912-primary signup-trigger" type="button">♙ &nbsp; S'inscrire gratuitement</button>
-            <a class="v912-secondary" href="classement.html">♜ &nbsp; Voir le classement</a>
+            <a class="v10-primary" href="vos-pronos.html">FAIRE MES PRONOS <span>›</span></a>
+            <a class="v10-secondary" href="ligue1.html">VOIR LA LIGUE 1</a>
           </div>
+          <div class="home-v10-signature">On est tous le Footix de quelqu’un.</div>
         </div>
+        <div class="home-v10-hero-mark" aria-hidden="true"><img src="logo-footix-prono.png" alt=""></div>
       </section>
 
-      <aside class="v912-top3">
-        <div class="v912-card-title">🏆 <b>TOP 3 DU MOIS</b></div>
-        <div id="home-podium" class="home-podium">
-          <div class="podium-mini place2"><span>2</span><img src="avatars/footix-capitaine.jpg" alt=""><b>—</b><small>0 pts</small></div>
-          <div class="podium-mini place1"><span>1</span><img src="avatars/footix-champion.jpg" alt=""><b>—</b><small>0 pts</small></div>
-          <div class="podium-mini place3"><span>3</span><img src="avatars/footix-tacticien.jpg" alt=""><b>—</b><small>0 pts</small></div>
-        </div>
-        <a class="v912-outline-button" href="classement.html">Voir le classement complet <span>›</span></a>
-      </aside>
-
-      <section class="v912-prono-guide">
-        <div class="v912-card-title">
-          <span>🎯</span><b>COMMENT ÇA MARCHE ?</b><small>Simple, gratuit et 100% foot</small>
-        </div>
-        <div class="prono-guide-body">
-          <div class="prono-guide-intro">
-            <span class="eyebrow">TES PRONOS, TES POINTS</span>
-            <h2>PRONOSTIQUE LE SCORE.<br><em>GRIMPE AU CLASSEMENT.</em></h2>
-            <p>Avant le coup d’envoi, donne ton score exact. Ton choix 1 / N / 2 est automatiquement déduit de ton score.</p>
-          </div>
-          <div class="prono-steps">
-            <article><span>01</span><div><b>CHOISIS TON MATCH</b><p>Ligue 1 ou Ligue des Champions.</p></div></article>
-            <article><span>02</span><div><b>DONNE TON SCORE</b><p>Exemple : Toulouse 2–1 Lille.</p></div></article>
-            <article><span>03</span><div><b>MARQUE DES POINTS</b><p>Le résultat final détermine ton score.</p></div></article>
-          </div>
-          <div class="prono-points">
-            <div class="points-card exact"><strong>+3</strong><span>SCORE EXACT</span><small>Tu trouves le résultat parfait.</small></div>
-            <div class="points-card good"><strong>+1</strong><span>BON RÉSULTAT</span><small>Bon 1 / N / 2, score différent.</small></div>
-            <div class="points-card miss"><strong>0</strong><span>MAUVAIS RÉSULTAT</span><small>Ton issue 1 / N / 2 est incorrecte.</small></div>
-          </div>
-          <div class="prono-example">
-            <div><small>EXEMPLE</small><b>TON PRONO&nbsp;: 2–1</b></div>
-            <span>→</span>
-            <div><small>SCORE FINAL&nbsp;: 2–1</small><strong>+3 POINTS</strong></div>
-          </div>
-          <a class="prono-guide-cta" href="vos-pronos.html">FAIRE MES PRONOS <span>›</span></a>
-        </div>
+      <section class="home-v10-livebar">
+        <div><span class="pulse"></span><b>À L'AFFICHE</b><small id="home-current-round">Ligue 1</small></div>
+        <a href="ligue1.html">Tous les matchs <span>›</span></a>
       </section>
 
-      <aside class="v912-community-card">
-        <div class="v912-card-title">💬 <b>LA COMMUNAUTÉ</b></div>
-        <a href="community.html" class="v912-community-entry">
-          <span class="entry-icon">●●●</span>
-          <div>
-            <b>ESPACE COMMUNAUTÉ</b>
-            <p>Discute, partage ta passion et propose tes idées pour faire évoluer Footix Prono.</p>
-            <small>Livre d'or · Suggestions</small>
-          </div>
-          <strong>›</strong>
-        </a>
-        <div class="v912-community-note">
-          <b>Ta voix compte.</b>
-          <p>Retrouve toutes les discussions au même endroit.</p>
-          <a href="community.html">Entrer dans la communauté <span>›</span></a>
-        </div>
-      </aside>
+      <section class="home-v10-matches" id="home-v10-matches" aria-live="polite">
+        <article class="v10-match-skeleton"></article><article class="v10-match-skeleton"></article><article class="v10-match-skeleton"></article>
+      </section>
 
-      <section class="v912-benefits">
-        <article><span>✓</span><div><b>100% GRATUIT</b><p>Aucun pari, aucune mise. Uniquement du fun !</p></div></article>
-        <article><span>♙♙</span><div><b>COMMUNAUTÉ ACTIVE</b><p>Compare tes pronostics aux autres passionnés.</p></div></article>
-        <article><span>🎁</span><div><b>RÉCOMPENSES</b><p>Des lots peuvent être proposés selon le règlement.</p></div></article>
-        <article><span>✓</span><div><b>JEU ÉQUITABLE</b><p>Un seul compte par personne, contrôles anti-fraude.</p></div></article>
+      <section class="home-v10-grid">
+        <div class="home-v10-maincol">
+          <section class="v10-panel v10-competitions">
+            <div class="v10-panel-head"><div><span>COMPÉTITIONS</span><h2>CHOISIS TON TERRAIN</h2></div></div>
+            <div class="competition-tiles">
+              <a href="ligue1.html" class="competition-tile l1"><img src="logo-l1-option3.png" alt=""><div><small>FRANCE</small><b>LIGUE 1</b><span>Pronostics · analyses · classement</span></div><strong>›</strong></a>
+              <a href="champions.html" class="competition-tile ucl"><img src="logo-europe-option3.png" alt=""><div><small>EUROPE</small><b>CHAMPIONS LEAGUE</b><span>Les grandes soirées européennes</span></div><strong>›</strong></a>
+            </div>
+          </section>
+
+          <section class="v10-panel v10-guide">
+            <div class="v10-panel-head"><div><span>🎯 COMMENT ÇA MARCHE ?</span><h2>UN SCORE. DES POINTS. LE CLASSEMENT.</h2></div><a href="reglement.html">Règlement ›</a></div>
+            <p class="guide-lead">Avant le coup d’envoi, donne ton score exact. Ton choix 1 / N / 2 est automatiquement déduit.</p>
+            <div class="v10-points"><article class="exact"><strong>+3</strong><div><b>SCORE EXACT</b><small>Le résultat parfait.</small></div></article><article class="good"><strong>+1</strong><div><b>BON RÉSULTAT</b><small>Bon 1 / N / 2.</small></div></article><article class="miss"><strong>0</strong><div><b>PRONO RATÉ</b><small>Mauvaise issue.</small></div></article></div>
+            <a class="v10-wide-cta" href="vos-pronos.html">PRONOSTIQUER MAINTENANT <span>›</span></a>
+          </section>
+        </div>
+
+        <aside class="home-v10-sidecol">
+          <section class="v10-panel v10-ranking">
+            <div class="v10-panel-head"><div><span>🏆 COMMUNAUTÉ</span><h2>TOP DU MOIS</h2></div><a href="classement.html">Complet ›</a></div>
+            <div id="home-podium" class="home-podium">
+              <div class="podium-mini place2"><span>2</span><img src="avatars/footix-capitaine.jpg" alt=""><b>—</b><small>0 pts</small></div>
+              <div class="podium-mini place1"><span>1</span><img src="avatars/footix-champion.jpg" alt=""><b>—</b><small>0 pts</small></div>
+              <div class="podium-mini place3"><span>3</span><img src="avatars/footix-tacticien.jpg" alt=""><b>—</b><small>0 pts</small></div>
+            </div>
+          </section>
+
+          <section class="v10-panel v10-standings">
+            <div class="v10-panel-head"><div><span>🇫🇷 LIGUE 1</span><h2>CLASSEMENT</h2></div><a href="ligue1.html">Voir ›</a></div>
+            <div id="home-v10-standings" class="mini-standings"><div class="mini-loading">Chargement…</div></div>
+          </section>
+        </aside>
+      </section>
+
+      <section class="home-v10-bottom-grid">
+        <section class="v10-panel v10-mercato">
+          <div class="v10-panel-head"><div><span>📰 ACTUALITÉ</span><h2>MERCATO</h2></div><a href="ligue1.html">Ligue 1 ›</a></div>
+          <div id="home-v10-mercato" class="mercato-list"><div class="mini-loading">Chargement…</div></div>
+        </section>
+        <section class="v10-community-cta">
+          <span>● COMMUNAUTÉ FOOTIX</span><h2>LE FOOT, ÇA SE DISCUTE.</h2><p>Partage tes pronos, tes idées et retrouve les autres passionnés.</p><a href="community.html">REJOINDRE LA COMMUNAUTÉ <strong>›</strong></a>
+        </section>
       </section>
     </main>
 
@@ -216,6 +210,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>window.FOOTIX_SUPABASE={url:"https://brjwujgtkyxzyytkwftw.supabase.co",key:"sb_publishable_iX8rHg-1NSkNU3tqsOl3jQ_osnxc1qs"};</script>
 <script src="auth-community.js?v=9.9.0"></script>
+<script src="home-v10.js?v=10.0.0"></script>
 <script src="notifications.js?v=9.8.2"></script>
 </body>
 </html>
