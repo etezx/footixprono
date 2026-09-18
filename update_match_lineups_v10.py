@@ -59,70 +59,54 @@ def fixtures():
    out.append({'day':day,'home':m[0],'away':m[1],'meta':m[2],'date':d})
  return out
 
-TEAM_ALIASES={
- 'olympiquedemarseille':'marseille','om':'marseille','marseille':'marseille',
- 'staderennaisfc':'rennes','staderennais':'rennes','rennes':'rennes',
- 'parissaintgermain':'psg','parissg':'psg','psg':'psg',
- 'olympiquelyonnais':'lyon','olympiquelyon':'lyon','lyon':'lyon',
- 'losc':'lille','lilleosc':'lille','lille':'lille',
- 'rcstrasbourgalsace':'strasbourg','rcstrasbourg':'strasbourg','strasbourg':'strasbourg',
- 'stadebrestois29':'brest','stadebrestois':'brest','brest':'brest',
- 'ajauxerre':'auxerre','auxerre':'auxerre',
- 'angerssco':'angers','angers':'angers',
- 'ogcnice':'nice','nice':'nice',
- 'fclorient':'lorient','lorient':'lorient',
- 'asmonaco':'monaco','monaco':'monaco',
- 'rclens':'lens','lens':'lens',
- 'toulousefc':'toulouse','toulouse':'toulouse',
- 'parisfc':'parisfc',
- 'lehac':'lehavre','havreac':'lehavre','lehavreac':'lehavre','lehavre':'lehavre',
- 'lemansfc':'lemans','lemans':'lemans',
- 'estactroyes':'troyes','estac':'troyes','troyes':'troyes',
-}
-
-def canon_team(s):
- n=norm(s)
- if n in TEAM_ALIASES:return TEAM_ALIASES[n]
- # Retire uniquement les préfixes/suffixes football les plus courants.
- for x in ('footballclub','clubdefootball'):
-  n=n.replace(x,'')
- return TEAM_ALIASES.get(n,n)
-
 def team_match(a,b):
- a,b=canon_team(a),canon_team(b)
+ a,b=norm(a),norm(b)
  if not a or not b:return False
- if a==b:return True
- # Tolérance uniquement pour les noms suffisamment longs, afin d'éviter Paris FC/PSG etc.
- return min(len(a),len(b))>=6 and (a in b or b in a)
-
-def _team_name(m,side):
- # Big Balls a déjà exposé plusieurs formes de payload : on les accepte sans deviner le match.
- for key in (side,side+'_team',side+'Team'):
-  v=m.get(key)
-  if isinstance(v,dict):
-   for nk in ('name','team_name','display_name','short_name'):
-    if v.get(nk):return str(v[nk])
-  elif isinstance(v,str) and v:return v
- for key in (side+'_name',side+'Name'):
-  if m.get(key):return str(m[key])
- return ''
+ aliases={
+  'angerssco':'angers','angers':'angers',
+  'ajauxerre':'auxerre','auxerre':'auxerre',
+  'stadebrestois29':'brest','stadebretois29':'brest','brest':'brest',
+  'lehavre':'lehavre','lehavreac':'lehavre','hac':'lehavre','lehac':'lehavre',
+  'rclens':'lens','lens':'lens',
+  'losc':'lille','lilleosc':'lille','lille':'lille',
+  'fclorient':'lorient','lorient':'lorient',
+  'olympiquelyonnais':'lyon','olympiquelyon':'lyon','lyon':'lyon',
+  'olympiquedemarseille':'marseille','olympiquemarseille':'marseille','marseille':'marseille','om':'marseille',
+  'asmonaco':'monaco','monaco':'monaco',
+  'ogcnice':'nice','nice':'nice',
+  'parisfc':'parisfc',
+  'parissaintgermain':'psg','parissg':'psg','psg':'psg',
+  'staderennaisfc':'rennes','staderennais':'rennes','rennes':'rennes',
+  'rcstrasbourgalsace':'strasbourg','rcstrasbourg':'strasbourg','strasbourg':'strasbourg',
+  'toulousefc':'toulouse','toulouse':'toulouse',
+  'estactroyes':'troyes','estac':'troyes','troyes':'troyes',
+  'lemansfc':'lemans','lemans':'lemans'
+ }
+ def canon(x):return aliases.get(x,x)
+ a,b=canon(a),canon(b)
+ return a==b or (len(a)>=5 and len(b)>=5 and (a in b or b in a))
 
 def find_bb_match(key,f):
- # Cherche le jour Footix puis +/- 1 jour : utile si l'API stocke l'événement dans un autre fuseau.
- seen=[]
- for delta in (0,-1,1):
-  day=f['date']+dt.timedelta(days=delta)
-  payload=bb('/stored/matches?date='+day.isoformat(),key); rows=payload.get('data') or []
-  for m in rows:
-   sport=str(m.get('sport','')).lower()
-   if sport and sport not in ('football','soccer'):continue
-   h=_team_name(m,'home');a=_team_name(m,'away')
-   if h or a:seen.append((day.isoformat(),h,a))
-   if team_match(f['home'],h) and team_match(f['away'],a):return m
- # Diagnostic compact : permettra de voir immédiatement les noms réellement renvoyés par Big Balls.
- nearby=[f"{d}: {h} – {a}" for d,h,a in seen if h and a]
- if nearby:
-  print('  Candidats Big Balls vus: '+ ' | '.join(nearby[:12]))
+ # IMPORTANT: /stored/matches est paginé et mélange toutes les compétitions si
+ # league n'est pas fourni. On cible donc explicitement la Ligue 1 et on prend
+ # jusqu'à 200 lignes pour ne plus perdre des rencontres derrière la pagination.
+ params=urllib.parse.urlencode({
+  'sport':'football','league':'Ligue 1','date':f['date'].isoformat(),
+  'limit':200,'offset':0,'sort':'asc'
+ })
+ payload=bb('/stored/matches?'+params,key); rows=payload.get('data') or []
+ for m in rows:
+  h=(m.get('home') or {}).get('name');a=(m.get('away') or {}).get('name')
+  if team_match(f['home'],h) and team_match(f['away'],a):return m
+ # Diagnostic volontairement limité à la Ligue 1 ciblée.
+ if rows:
+  seen=[]
+  for m in rows[:20]:
+   h=(m.get('home') or {}).get('name') or '?';a=(m.get('away') or {}).get('name') or '?'
+   seen.append(f'{h} – {a}')
+  print('  Candidats Ligue 1 Big Balls: '+' | '.join(seen))
+ else:
+  print('  Aucun candidat Ligue 1 renvoyé par Big Balls pour cette date.')
  return None
 
 def full_name(key,p):
