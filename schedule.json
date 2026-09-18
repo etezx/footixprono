@@ -783,7 +783,7 @@
           "eventId": 210474,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-18T19:11:12Z"
+          "lastLiveUpdate": "2026-09-18T19:21:18Z"
         }
       ],
       [
@@ -798,7 +798,7 @@
           "eventId": 210475,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-18T19:11:12Z"
+          "lastLiveUpdate": "2026-09-18T19:21:18Z"
         }
       ],
       [
@@ -813,7 +813,7 @@
           "eventId": 210476,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-18T19:11:12Z"
+          "lastLiveUpdate": "2026-09-18T19:21:18Z"
         }
       ],
       [
@@ -828,7 +828,7 @@
           "eventId": 210478,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-18T19:11:12Z"
+          "lastLiveUpdate": "2026-09-18T19:21:18Z"
         }
       ],
       [
@@ -843,7 +843,7 @@
           "eventId": 210479,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-18T19:11:12Z"
+          "lastLiveUpdate": "2026-09-18T19:21:18Z"
         }
       ],
       [
@@ -858,12 +858,14 @@
           "eventId": 210473,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-18T19:11:12Z",
-          "minute": 25,
+          "lastLiveUpdate": "2026-09-18T19:21:18Z",
+          "minute": 35,
           "period": "1st_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 0,
-          "actualScorers": [],
+          "actualScorers": [
+            "P. Brunner"
+          ],
           "scorersVerified": true
         }
       ],
@@ -879,7 +881,7 @@
           "eventId": 210477,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-18T19:11:12Z"
+          "lastLiveUpdate": "2026-09-18T19:21:18Z"
         }
       ],
       [
@@ -894,7 +896,7 @@
           "eventId": 210480,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-18T19:11:12Z"
+          "lastLiveUpdate": "2026-09-18T19:21:18Z"
         }
       ],
       [
@@ -909,7 +911,7 @@
           "eventId": 210481,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-18T19:11:12Z"
+          "lastLiveUpdate": "2026-09-18T19:21:18Z"
         }
       ]
     ]

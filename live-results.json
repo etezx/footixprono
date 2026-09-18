@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-18T19:11:12Z",
+  "generatedAt": "2026-09-18T19:21:18Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,13 +988,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-18T19:11:12Z",
-      "minute": 25,
-      "homeScore": 0,
+      "updatedAt": "2026-09-18T19:21:18Z",
+      "minute": 35,
+      "homeScore": 1,
       "awayScore": 0,
-      "actualScorers": [],
+      "actualScorers": [
+        "P. Brunner"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210480,
@@ -1006,7 +1008,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T19:11:12Z"
+      "updatedAt": "2026-09-18T19:21:18Z"
     },
     {
       "eventId": 210474,
@@ -1018,7 +1020,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T19:11:12Z"
+      "updatedAt": "2026-09-18T19:21:18Z"
     },
     {
       "eventId": 210476,
@@ -1030,7 +1032,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T19:11:12Z"
+      "updatedAt": "2026-09-18T19:21:18Z"
     },
     {
       "eventId": 210478,
@@ -1042,7 +1044,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T19:11:12Z"
+      "updatedAt": "2026-09-18T19:21:18Z"
     },
     {
       "eventId": 210481,
@@ -1054,7 +1056,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T19:11:12Z"
+      "updatedAt": "2026-09-18T19:21:18Z"
     },
     {
       "eventId": 210475,
@@ -1066,7 +1068,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T19:11:12Z"
+      "updatedAt": "2026-09-18T19:21:18Z"
     },
     {
       "eventId": 210477,
@@ -1078,7 +1080,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T19:11:12Z"
+      "updatedAt": "2026-09-18T19:21:18Z"
     },
     {
       "eventId": 210479,
@@ -1090,7 +1092,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T19:11:12Z"
+      "updatedAt": "2026-09-18T19:21:18Z"
     }
   ]
 }
