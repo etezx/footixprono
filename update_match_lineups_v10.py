@@ -9,6 +9,7 @@ Aucune clé privée n'est écrite dans les fichiers publics. Le script ne fabriq
 """
 from __future__ import annotations
 import datetime as dt, json, os, random, re, time, unicodedata
+from difflib import SequenceMatcher
 import urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
@@ -59,21 +60,54 @@ def fixtures():
    out.append({'day':day,'home':m[0],'away':m[1],'meta':m[2],'date':d})
  return out
 
+def team_canon(s):
+ x=norm(s)
+ aliases={
+  'olympiquedemarseille':'marseille','om':'marseille','marseille':'marseille',
+  'staderennaisfc':'rennes','staderennais':'rennes','rennes':'rennes',
+  'parissaintgermain':'psg','parissg':'psg','psg':'psg',
+  'losclille':'lille','lilleosc':'lille','losc':'lille','lille':'lille',
+  'rcstrasbourgalsace':'strasbourg','rcstrasbourg':'strasbourg','strasbourg':'strasbourg',
+  'stadebrestois29':'brest','stadebretois29':'brest','stadebrestois':'brest','brest':'brest',
+  'ajauxerre':'auxerre','auxerre':'auxerre',
+  'angerssco':'angers','angers':'angers',
+  'ogcnice':'nice','nice':'nice',
+  'fclorient':'lorient','lorient':'lorient',
+  'asmonaco':'monaco','monaco':'monaco',
+  'rclens':'lens','lens':'lens',
+  'toulousefc':'toulouse','toulouse':'toulouse',
+  'parisfc':'parisfc',
+  'lehavreac':'lehavre','lehac':'lehavre','lehavre':'lehavre',
+  'lemansfc':'lemans','lemans':'lemans',
+  'estactroyes':'troyes','estac':'troyes','troyes':'troyes',
+  'olympiquelyonnais':'lyon','ol':'lyon','lyon':'lyon'
+ }
+ return aliases.get(x,x)
+
 def team_match(a,b):
- a,b=norm(a),norm(b)
+ a,b=team_canon(a),team_canon(b)
  if not a or not b:return False
- if a==b or a in b or b in a:return True
- aliases={'olympiquedemarseille':'marseille','staderennaisfc':'rennes','staderennais':'rennes','parissaintgermain':'psg','parissg':'psg','losc':'lille','lilleosc':'lille','rcstrasbourgalsace':'strasbourg','stadebretois29':'brest','stadebrestois29':'brest','ajauxerre':'auxerre','angerssco':'angers','ogcnice':'nice','fclorient':'lorient','asm Monaco':'monaco','asmonaco':'monaco','rcLens':'lens','rclens':'lens','toulousefc':'toulouse','parisfc':'parisfc','lehac':'lehavre','lehavre':'lehavre','lemansfc':'lemans','estac':'troyes','estactroyes':'troyes'}
- def canon(x):return norm(aliases.get(x,x))
- return canon(a)==canon(b)
+ if a==b:return True
+ # Garde-fou: le fuzzy ne sert qu'aux variantes longues d'un même nom.
+ if len(a)>=6 and len(b)>=6 and (a in b or b in a):return True
+ return len(a)>=6 and len(b)>=6 and SequenceMatcher(None,a,b).ratio()>=0.84
 
 def find_bb_match(key,f):
  payload=bb('/stored/matches?date='+f['date'].isoformat(),key); rows=payload.get('data') or []
+ candidates=[]
+ fh,fa=team_canon(f['home']),team_canon(f['away'])
  for m in rows:
   if str(m.get('sport','')).lower()!='football':continue
   h=(m.get('home') or {}).get('name');a=(m.get('away') or {}).get('name')
-  if team_match(f['home'],h) and team_match(f['away'],a):return m
- return None
+  if not (team_match(f['home'],h) and team_match(f['away'],a)):continue
+  score=SequenceMatcher(None,fh,team_canon(h)).ratio()+SequenceMatcher(None,fa,team_canon(a)).ratio()
+  candidates.append((score,m))
+ if not candidates:return None
+ candidates.sort(key=lambda x:x[0],reverse=True)
+ if len(candidates)>1 and candidates[0][0]-candidates[1][0]<0.08:
+  print('  Matching ambigu Big Balls: aucun rapprochement automatique.')
+  return None
+ return candidates[0][1]
 
 def full_name(key,p):
  name=p.get('name') or 'Joueur'; pid=p.get('player_id')
@@ -88,15 +122,31 @@ def full_name(key,p):
 def portrait(name,cache):
  ck=norm(name)
  if ck in cache:return cache[ck]
- queries=[name]
- if re.match(r'^[A-ZÀ-ÖØ-Ý]\.?\s+',name):queries.append(re.sub(r'^[A-ZÀ-ÖØ-Ý]\.?\s+','',name))
- pic={'id':None,'cutout':None,'thumb':None}
+ clean=str(name or '').strip(); initial=None; surname=clean
+ m=re.match(r'^([A-ZÀ-ÖØ-Ý])\.?\s+(.+)$',clean)
+ if m:initial=m.group(1).lower();surname=m.group(2).strip()
+ queries=[clean]
+ if surname and norm(surname)!=norm(clean):queries.append(surname)
+ pic={'id':None,'cutout':None,'thumb':None}; best=None
  for q in queries:
   try:rows=ts('/searchplayers.php',{'p':q}).get('player') or []
   except Exception:rows=[]
-  rows=[x for x in rows if x.get('strSport')=='Soccer'] or rows
-  if rows:
-   x=rows[0];pic={'id':x.get('idPlayer'),'cutout':x.get('strCutout'),'thumb':x.get('strThumb')};break
+  rows=[x for x in rows if str(x.get('strSport') or '').lower()=='soccer'] or rows
+  for x in rows:
+   candidate=str(x.get('strPlayer') or x.get('strPlayerAlternate') or '')
+   if not candidate:continue
+   cn=norm(candidate);sn=norm(surname)
+   score=0
+   if norm(clean)==cn:score=100
+   elif sn and (cn.endswith(sn) or sn in cn):score=70
+   else:score=int(45*SequenceMatcher(None,norm(clean),cn).ratio())
+   if initial and candidate[:1].lower()==initial:score+=20
+   if x.get('strCutout'):score+=5
+   elif x.get('strThumb'):score+=2
+   if best is None or score>best[0]:best=(score,x)
+  if best and best[0]>=90:break
+ if best and best[0]>=65:
+  x=best[1];pic={'id':x.get('idPlayer'),'cutout':x.get('strCutout'),'thumb':x.get('strThumb')}
  cache[ck]=pic; print(f"Portrait {name}: {'OK' if pic['cutout'] or pic['thumb'] else 'absent'}")
  return pic
 
