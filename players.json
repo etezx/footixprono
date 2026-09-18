@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T10:21:49.607322+00:00",
+  "updated_at": "2026-09-18T10:01:07.305451+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -121,7 +121,7 @@
       "Adil Bourabaa",
       "Alexandre Lauray",
       "Antoine Rabillard",
-      "Brahimi Bilal",
+      "Bilal Brahimi",
       "Dame Guèye",
       "Daouda Traoré",
       "Edwin Quarshie",
@@ -175,6 +175,7 @@
       "Eros Maddy",
       "Kévin Danois",
       "Lamfia Dioubaté",
+      "Mamadou Diop",
       "Naouirou Ahamada",
       "Pierre Ekwah",
       "Remy Labeau Lascary",
@@ -326,5 +327,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 286
+  "players_fetched": 287
 }
