@@ -531,8 +531,13 @@ async function initLigue1(){
     after.innerHTML=dayAfterMatchHTML(pronos,current);
     $$("#l1-match-list .prono-open-btn").forEach(btn=>btn.addEventListener("click",()=>{
       const idx=Number(btn.dataset.pronoIndex),m=sorted[idx];if(!m)return;
-      const p=pronoForMatch(pronos,current,m[0],m[1],idx),f=withLegacyScorers(effectiveFixture(m),current,m[0],m[1]);
-      openPronoPanel({home:m[0],away:m[1],homeLogo:clubLogo(m[0],clubmap),awayLogo:clubLogo(m[1],clubmap),meta:fmtDayMeta(m[2]||{}),score:p.score||p.scorePrevu||"—",pick:normalizePick(p.pick),analysis:p.analyse||p.analysis||"",fixture:f,p});
+      const params=new URLSearchParams({
+        competition:"ligue1",
+        day:String(current),
+        home:String(m[0]||""),
+        away:String(m[1]||"")
+      });
+      window.location.href=`match.html?${params.toString()}`;
     }));
     renderStandings();
   }
