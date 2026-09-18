@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T05:53:08.326Z",
+  "updated_at": "2026-09-18T04:35:14.160Z",
   "days": {
     "1": {
       "OLYMPIQUE DE MARSEILLE|||RC STRASBOURG ALSACE": {
@@ -427,9 +427,92 @@
       "AS MONACO|||RC LENS": {
         "score": "2-1",
         "pick": "1",
-        "scorers": [],
-        "buteurs": "",
-        "analyse": ""
+        "scorers": [
+          "Paris Brunner",
+          "Florian Thauvin"
+        ],
+        "buteurs": "Paris Brunner\nFlorian Thauvin",
+        "analyse": "🔥 Le match à sensations de cette J5 ! Monaco réalise un très bon début de saison et part avec un avantage à domicile, mais Lens possède suffisamment d’armes offensives pour faire mal. Je m’attends à une rencontre ouverte, avec des occasions des deux côtés. Paris Brunner devrait encore être la principale menace monégasque, tandis que Florian Thauvin reste l’homme à surveiller côté lensois. 🎯 PRONO : Monaco 2-1 Lens"
+      },
+      "ANGERS SCO|||ESTAC TROYES": {
+        "score": "1-1",
+        "pick": "N",
+        "scorers": [
+          "Amine El Ouazzani",
+          "Jeremy Le Douaron"
+        ],
+        "buteurs": "Amine El Ouazzani\nJeremy Le Douaron",
+        "analyse": "🔒 Une rencontre qui pourrait être beaucoup plus fermée. Angers reste sur un 0-0 au Havre et semble capable de poser un bloc difficile à contourner, tandis que Troyes cherchera surtout à retrouver de la stabilité après sa défaite à Lille. Peu d’écart entre les deux équipes : le partage des points me paraît plausible. 🎯 PRONO : Angers 1-1 Troyes"
+      },
+      "AJ AUXERRE|||STADE BRESTOIS 29": {
+        "score": "2-1",
+        "pick": "1",
+        "scorers": [
+          "Cameron Archer",
+          "Ludovic Ajorque"
+        ],
+        "buteurs": "Cameron Archer\nLudovic Ajorque",
+        "analyse": "⚡ Auxerre vient enfin de débloquer son compteur en battant Nice et pourrait profiter de cette confiance retrouvée. Brest a posé des problèmes au PSG malgré sa défaite et possède les armes pour marquer. Je vois donc une rencontre assez offensive, mais avec l’AJA capable de profiter de l’avantage du terrain. 🎯 PRONO : Auxerre 2-1 Brest"
+      },
+      "LE MANS FC|||FC LORIENT": {
+        "score": "2-2",
+        "pick": "N",
+        "scorers": [
+          "Louis Mafouta",
+          "Mama Baldé"
+        ],
+        "buteurs": "Louis Mafouta\nMama Baldé",
+        "analyse": "🎢 Ça pourrait bouger au Mans ! Les Manceaux viennent déjà de faire 2-2 contre Lens, tandis que Lorient sort également d’un 2-2 face à Toulouse. Deux équipes capables de créer du danger mais qui laissent aussi des possibilités à leur adversaire. Je pars sur un nouveau match animé avec des buts. 🎯 PRONO : Le Mans 2-2 Lorient"
+      },
+      "OLYMPIQUE LYONNAIS|||STADE RENNAIS FC": {
+        "score": "1-2",
+        "pick": "2",
+        "scorers": [
+          "Loïs Openda",
+          "Esteban Lepaul"
+        ],
+        "buteurs": "Loïs Openda\nEsteban Lepaul",
+        "analyse": "⚔️ Gros duel entre deux équipes qui arrivent avec la fatigue de leur rendez-vous européen. Lyon possède suffisamment de qualité pour se créer des situations à domicile, mais Rennes arrive avec de la confiance après sa victoire contre Marseille. Je m’attends à des occasions des deux côtés et je donne un léger avantage aux Rennais pour faire la différence. 🎯 PRONO : Lyon 1-2 Rennes"
+      },
+      "OLYMPIQUE DE MARSEILLE|||PARIS SAINT-GERMAIN": {
+        "score": "1-3",
+        "pick": "2",
+        "scorers": [
+          "Amine Gouiri",
+          "Ferran Torres",
+          "Maghnes Akliouche"
+        ],
+        "buteurs": "Amine Gouiri\nFerran Torres\nMaghnes Akliouche",
+        "analyse": "🔥 Le Classique au Vélodrome ! Marseille devra rapidement digérer son rendez-vous européen avant d’affronter un PSG qui commence à retrouver de l’efficacité. L’ambiance marseillaise peut pousser l’OM à se créer des occasions, mais Paris possède énormément de qualité pour punir les espaces. Je vois les Parisiens prendre progressivement le dessus et s’imposer dans un match spectaculaire. 🎯 PRONO : Marseille 1-3 PSG"
+      },
+      "OGC NICE|||LOSC": {
+        "score": "1-2",
+        "pick": "2",
+        "scorers": [
+          "Elye Wahi",
+          "Ayase Ueda"
+        ],
+        "buteurs": "Elye Wahi\nAyase Ueda",
+        "analyse": "📉 Nice connaît un début de saison très compliqué et doit rapidement réagir. Lille arrive dans une dynamique bien différente, même si l’enchaînement avec son match européen peut peser physiquement. Les Niçois devraient avoir leurs opportunités à domicile, mais le LOSC me semble actuellement mieux armé pour les convertir. 🎯 PRONO : Nice 1-2 Lille"
+      },
+      "PARIS FC|||RC STRASBOURG ALSACE": {
+        "score": "2-1",
+        "pick": "1",
+        "scorers": [
+          "Lassine Sinayoko",
+          "Sebastian Nanasi"
+        ],
+        "buteurs": "Lassine Sinayoko\nSebastian Nanasi",
+        "analyse": "⚡ Deux équipes capables de proposer beaucoup de choses offensivement. Le Paris FC a montré un visage solide depuis le début de saison, tandis que Strasbourg peut rapidement devenir dangereux lorsqu’il trouve des espaces. À Jean-Bouin, je donne un léger avantage aux Parisiens dans un match où les deux équipes pourraient marquer. 🎯 PRONO : Paris FC 2-1 Strasbourg"
+      },
+      "TOULOUSE FC|||LE HAVRE": {
+        "score": "1-0",
+        "pick": "1",
+        "scorers": [
+          "Casper Tengstedt"
+        ],
+        "buteurs": "Casper Tengstedt",
+        "analyse": "🧱 Je m’attends à un match plutôt fermé au Stadium. Toulouse a montré du caractère pour revenir de 0-2 à 2-2 contre Lorient, alors que Le Havre reste sur un 0-0 contre Angers. À domicile, le TFC me paraît légèrement supérieur, mais probablement sans énorme marge. 🎯 PRONO : Toulouse 1-0 Le Havre"
       }
     }
   }
