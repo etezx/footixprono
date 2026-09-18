@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-13T20:50:34Z",
+  "generatedAt": "2026-09-18T18:07:44Z",
   "events": [
     {
       "eventId": 210448,
@@ -977,6 +977,114 @@
       ],
       "scorersVerified": true,
       "goalIncidents": 1
+    },
+    {
+      "eventId": 210473,
+      "leagueId": 6,
+      "home": "AS Monaco",
+      "away": "RC Lens",
+      "kickoff": "2026-09-18T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-18T18:07:44Z"
+    },
+    {
+      "eventId": 210480,
+      "leagueId": 6,
+      "home": "Paris FC",
+      "away": "RC Strasbourg",
+      "kickoff": "2026-09-19T15:15:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-18T18:07:44Z"
+    },
+    {
+      "eventId": 210474,
+      "leagueId": 6,
+      "home": "Angers",
+      "away": "Troyes",
+      "kickoff": "2026-09-19T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-18T18:07:44Z"
+    },
+    {
+      "eventId": 210476,
+      "leagueId": 6,
+      "home": "Le Mans",
+      "away": "Lorient",
+      "kickoff": "2026-09-19T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-18T18:07:44Z"
+    },
+    {
+      "eventId": 210478,
+      "leagueId": 6,
+      "home": "Olympique Lyonnais",
+      "away": "Stade Rennais",
+      "kickoff": "2026-09-19T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-18T18:07:44Z"
+    },
+    {
+      "eventId": 210481,
+      "leagueId": 6,
+      "home": "Toulouse",
+      "away": "Le Havre",
+      "kickoff": "2026-09-19T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-18T18:07:44Z"
+    },
+    {
+      "eventId": 210475,
+      "leagueId": 6,
+      "home": "Auxerre",
+      "away": "Stade Brestois",
+      "kickoff": "2026-09-20T13:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-18T18:07:44Z"
+    },
+    {
+      "eventId": 210477,
+      "leagueId": 6,
+      "home": "Nice",
+      "away": "Lille",
+      "kickoff": "2026-09-20T15:15:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-18T18:07:44Z"
+    },
+    {
+      "eventId": 210479,
+      "leagueId": 6,
+      "home": "Olympique de Marseille",
+      "away": "Paris Saint-Germain",
+      "kickoff": "2026-09-20T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-09-18T18:07:44Z"
     }
   ]
 }
