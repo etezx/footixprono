@@ -806,7 +806,14 @@
       ],
       [
         "OLYMPIQUE LYONNAIS",
-        "STADE RENNAIS FC"
+        "STADE RENNAIS FC",
+        {
+          "date": "2026-09-19",
+          "time": "20:45",
+          "official": true,
+          "source": "LFP / clubs officiels",
+          "completed": false
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
