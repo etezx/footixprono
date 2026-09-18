@@ -5,3 +5,159 @@ body.v912-home{background:#020b18}.v912-home .app-shell{background:#020b18}.v912
 @media(max-width:1500px){.home-v10-matches{grid-template-columns:repeat(5,1fr)}.home-v10-matches .v10-match-card:nth-child(n+6){display:none}}
 @media(max-width:1100px){.v912-home .sidebar{width:190px}.v912-home .main-wrap{margin-left:190px}.home-v10-grid,.home-v10-bottom-grid{grid-template-columns:1fr}.home-v10-sidecol{grid-template-columns:1fr 1fr}.home-v10-matches{grid-template-columns:repeat(3,1fr)}.home-v10-matches .v10-match-card:nth-child(n+4){display:none}.home-v10-hero{background-position:60% 45%}}
 @media(max-width:760px){.v912-home .main-wrap{margin-left:0}.home-v10{padding:9px 7px 22px}.home-v10-hero{min-height:390px;padding:25px 18px;align-items:flex-start;background-position:63% center}.home-v10-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,14,29,.96),rgba(3,14,29,.68))}.home-v10-hero-copy{z-index:2}.home-v10-hero h1{font-size:39px}.home-v10-hero p{font-size:11px}.home-v10-hero .hero-actions{flex-direction:column;align-items:stretch}.home-v10-matches{grid-template-columns:1fr}.home-v10-matches .v10-match-card:nth-child(n+4){display:flex}.home-v10-sidecol,.competition-tiles,.v10-points{grid-template-columns:1fr}.home-v10-grid,.home-v10-bottom-grid{margin-top:9px}.match-crests{grid-template-columns:1fr 42px 1fr}.match-crests img{width:52px;height:52px}.match-crests b{font-size:9px}.v10-panel-head{padding:12px}.v10-community-cta{padding:19px}}
+
+
+/* === V10.2 — correctifs visuels depuis contrôle réel === */
+
+/* Sidebar plus proche de la maquette et logo réellement lisible */
+.v912-home .sidebar{
+  width:218px!important;
+  padding:14px 14px 18px!important;
+  overflow-x:hidden!important;
+}
+.v912-home .main-wrap{margin-left:218px!important}
+.v912-home .home-brand-v10{
+  min-height:128px!important;
+  margin:0 0 8px!important;
+  padding:4px 4px 10px!important;
+  overflow:visible!important;
+}
+.v912-home .home-brand-v10 img{
+  display:block!important;
+  width:145px!important;
+  height:100px!important;
+  max-width:145px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+.v912-home .home-brand-v10 small{
+  display:block!important;
+  font-size:8px!important;
+  color:#8fa8c5!important;
+  letter-spacing:.13em!important;
+}
+.v912-home .side-label{margin:8px 8px 7px!important}
+.v912-home .side-link,
+.v912-home .competition-link{
+  min-height:42px!important;
+  height:42px!important;
+  padding:0 11px!important;
+  margin:3px 0!important;
+  border-radius:7px!important;
+  font-size:11px!important;
+  font-weight:750!important;
+}
+.v912-home .side-link.active{
+  border-color:#168cff!important;
+  box-shadow:inset 4px 0 #168cff,0 0 18px rgba(22,140,255,.07)!important;
+}
+.v912-home .side-nav-ico{
+  width:25px!important;
+  color:#dcecff!important;
+  text-align:center!important;
+}
+.v912-home .v912-join-card{
+  margin:18px 4px 8px!important;
+  padding:16px!important;
+}
+.v912-home .sidebar-mascot-art{
+  min-height:210px!important;
+  height:210px!important;
+  background-size:cover!important;
+  background-position:center 18%!important;
+}
+
+/* Hero : ne plus zoomer l'image source. On garde le coq entier sur la droite. */
+.home-v10-hero{
+  min-height:350px!important;
+  padding:42px 48px!important;
+  isolation:isolate;
+  background:
+    radial-gradient(circle at 76% 15%,rgba(27,119,255,.28),transparent 28%),
+    radial-gradient(circle at 95% 65%,rgba(239,37,82,.12),transparent 24%),
+    linear-gradient(110deg,#06172f 0%,#071c3a 48%,#06234b 100%)!important;
+}
+.home-v10-hero:before{
+  content:""!important;
+  position:absolute!important;
+  z-index:-1!important;
+  top:0!important;
+  right:0!important;
+  bottom:0!important;
+  width:56%!important;
+  background:
+    linear-gradient(90deg,#071a35 0%,rgba(7,26,53,.15) 22%,rgba(7,26,53,0) 45%),
+    url('community-hero.jpg') center center/contain no-repeat!important;
+  opacity:.98!important;
+  pointer-events:none!important;
+}
+.home-v10-hero:after{
+  z-index:-1!important;
+  background:
+    linear-gradient(90deg,rgba(3,15,31,.25),transparent 58%),
+    linear-gradient(180deg,transparent 72%,rgba(2,9,20,.30))!important;
+}
+.home-v10-hero-copy{max-width:650px!important}
+.home-v10-hero h1{font-size:clamp(44px,3.55vw,66px)!important;max-width:650px!important}
+.home-v10-hero p{max-width:520px!important}
+
+/* Matchs : logos plus gros, aucun logo Footix utilisé si le club est connu */
+.home-v10-matches{gap:8px!important}
+.v10-match-card{padding:10px 8px 8px!important;min-height:156px!important}
+.match-crests{grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr)!important;min-height:103px!important}
+.match-crests img{
+  width:44px!important;
+  height:44px!important;
+  margin:2px auto 6px!important;
+}
+.match-crests b{
+  font-size:7px!important;
+  line-height:1.18!important;
+  min-height:18px!important;
+}
+.match-crests strong{font-size:14px!important}
+.match-foot em{font-size:7px!important;padding:7px 3px!important}
+
+/* Plus de respiration : la page réelle était trop tassée verticalement */
+.home-v10-grid{margin-top:14px!important;gap:12px!important}
+.home-v10-maincol,.home-v10-sidecol{gap:12px!important}
+.v10-panel-head{padding:15px 16px!important}
+.competition-tiles{padding:12px!important}
+.competition-tile{min-height:92px!important}
+.home-v10-bottom-grid{gap:12px!important;margin-top:12px!important}
+
+/* Topbar compacte mais premium */
+.v912-home .topbar{
+  min-height:64px!important;
+  height:64px!important;
+  padding:0 18px!important;
+  border-bottom-color:#174a78!important;
+}
+.v912-home .top-nav-link{
+  min-height:40px!important;
+  border:1px solid #183b60!important;
+  background:#06172d!important;
+}
+.v912-home .logout-link{
+  background:#ed2550!important;
+  border-color:#ff496e!important;
+}
+
+/* Responsive */
+@media(max-width:1180px){
+  .v912-home .sidebar{width:196px!important}
+  .v912-home .main-wrap{margin-left:196px!important}
+  .home-v10-hero:before{width:60%!important;opacity:.78!important}
+}
+@media(max-width:760px){
+  .v912-home .main-wrap{margin-left:0!important}
+  .home-v10-hero{min-height:420px!important;padding:26px 19px!important}
+  .home-v10-hero:before{
+    width:100%!important;
+    opacity:.32!important;
+    background:url('community-hero.jpg') 70% center/cover no-repeat!important;
+  }
+  .home-v10-hero:after{
+    background:linear-gradient(90deg,rgba(3,14,29,.96),rgba(3,14,29,.58))!important;
+  }
+}

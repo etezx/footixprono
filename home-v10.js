@@ -5,6 +5,17 @@
  const prettyDate=(date,time)=>{if(!date)return time||'';try{const d=new Date(`${date}T12:00:00`);return `${new Intl.DateTimeFormat('fr-FR',{weekday:'short',day:'2-digit',month:'short'}).format(d)}${time?` · ${time}`:''}`;}catch{return `${date}${time?` · ${time}`:''}`}};
  Promise.all([j('schedule.json'),j('pronos.json'),j('clubs.json')]).then(([schedule,pronos,clubData])=>{
    const logos=clubData.clubs||{};
+   const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+   const logoIndex=Object.fromEntries(Object.entries(logos).map(([k,v])=>[norm(k),v]));
+   const clubLogo=name=>{
+     const direct=logos[name];
+     if(direct) return direct;
+     const n=norm(name);
+     if(logoIndex[n]) return logoIndex[n];
+     // Flexible containment fallback for schedule names written in uppercase/full official form.
+     const hit=Object.entries(logoIndex).find(([k])=>k.includes(n)||n.includes(k));
+     return hit ? hit[1] : '';
+   };
    const now=new Date();
    let round=schedule.find(d=>(d.matches||[]).some(m=>{const x=m[2]||{};return x.date && new Date(`${x.date}T${x.time||'12:00'}:00`)>=new Date(now.getTime()-6*3600000)})) || schedule[schedule.length-1];
    if(!round)return;
@@ -16,9 +27,9 @@
      return `<a class="v10-match-card" href="${matchLink(round.journee,h,a)}">
        <div class="match-meta"><span>${esc(prettyDate(x.date,x.time))}</span></div>
        <div class="match-crests">
-         <div><img src="${esc(logos[h]||'logo-footix-prono.png')}" alt=""><b>${esc(h)}</b></div>
+         <div><img src="${esc(clubLogo(h)||'logo-footix-prono.png')}" alt=""><b>${esc(h)}</b></div>
          <strong>${x.completed?`${esc(hs)}<i>-</i>${esc(as)}`:(p.score?`${esc(hs)}<i>-</i>${esc(as)}`:'VS')}</strong>
-         <div><img src="${esc(logos[a]||'logo-footix-prono.png')}" alt=""><b>${esc(a)}</b></div>
+         <div><img src="${esc(clubLogo(a)||'logo-footix-prono.png')}" alt=""><b>${esc(a)}</b></div>
        </div>
        <div class="match-foot"><span>${x.completed?'SCORE FINAL':(p.score?'PRONO FOOTIX':'À VENIR')}</span><em>Analyse du match →</em></div>
      </a>`;
