@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-18T18:11:56Z",
+  "generatedAt": "2026-09-18T18:21:11Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T18:11:56Z"
+      "updatedAt": "2026-09-18T18:21:11Z"
     },
     {
       "eventId": 210480,
@@ -1000,7 +1000,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T18:11:56Z"
+      "updatedAt": "2026-09-18T18:21:11Z"
     },
     {
       "eventId": 210474,
@@ -1012,7 +1012,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T18:11:56Z"
+      "updatedAt": "2026-09-18T18:21:11Z"
     },
     {
       "eventId": 210476,
@@ -1024,7 +1024,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T18:11:56Z"
+      "updatedAt": "2026-09-18T18:21:11Z"
     },
     {
       "eventId": 210478,
@@ -1036,7 +1036,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T18:11:56Z"
+      "updatedAt": "2026-09-18T18:21:11Z"
     },
     {
       "eventId": 210481,
@@ -1048,7 +1048,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T18:11:56Z"
+      "updatedAt": "2026-09-18T18:21:11Z"
     },
     {
       "eventId": 210475,
@@ -1060,7 +1060,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T18:11:56Z"
+      "updatedAt": "2026-09-18T18:21:11Z"
     },
     {
       "eventId": 210477,
@@ -1072,7 +1072,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T18:11:56Z"
+      "updatedAt": "2026-09-18T18:21:11Z"
     },
     {
       "eventId": 210479,
@@ -1084,7 +1084,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T18:11:56Z"
+      "updatedAt": "2026-09-18T18:21:11Z"
     }
   ]
 }
