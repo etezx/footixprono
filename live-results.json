@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-18T20:41:15Z",
+  "generatedAt": "2026-09-18T20:51:08Z",
   "events": [
     {
       "eventId": 210448,
@@ -984,20 +984,21 @@
       "home": "AS Monaco",
       "away": "RC Lens",
       "kickoff": "2026-09-18T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-09-18T20:41:15Z",
-      "minute": 94,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-18T20:51:08Z",
+      "minute": null,
       "homeScore": 2,
       "awayScore": 1,
       "actualScorers": [
+        "J. Gradit",
         "M. Udol",
         "P. Brunner"
       ],
-      "scorersVerified": false,
-      "goalIncidents": 2
+      "scorersVerified": true,
+      "goalIncidents": 3
     },
     {
       "eventId": 210480,
@@ -1009,7 +1010,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T20:41:15Z"
+      "updatedAt": "2026-09-18T20:51:08Z"
     },
     {
       "eventId": 210474,
@@ -1021,7 +1022,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T20:41:15Z"
+      "updatedAt": "2026-09-18T20:51:08Z"
     },
     {
       "eventId": 210476,
@@ -1033,7 +1034,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T20:41:15Z"
+      "updatedAt": "2026-09-18T20:51:08Z"
     },
     {
       "eventId": 210478,
@@ -1045,7 +1046,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T20:41:15Z"
+      "updatedAt": "2026-09-18T20:51:08Z"
     },
     {
       "eventId": 210481,
@@ -1057,7 +1058,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T20:41:15Z"
+      "updatedAt": "2026-09-18T20:51:08Z"
     },
     {
       "eventId": 210475,
@@ -1069,7 +1070,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T20:41:15Z"
+      "updatedAt": "2026-09-18T20:51:08Z"
     },
     {
       "eventId": 210477,
@@ -1081,7 +1082,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T20:41:15Z"
+      "updatedAt": "2026-09-18T20:51:08Z"
     },
     {
       "eventId": 210479,
@@ -1093,7 +1094,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-18T20:41:15Z"
+      "updatedAt": "2026-09-18T20:51:08Z"
     }
   ]
 }
