@@ -23,14 +23,14 @@
       "teams": [
         {
           "position": 1,
-          "club": "Lille",
-          "p": 4,
-          "w": 3,
+          "club": "AS Monaco",
+          "p": 5,
+          "w": 4,
           "d": 1,
           "l": 0,
-          "gf": 7,
-          "ga": 2,
-          "pts": 10,
+          "gf": 8,
+          "ga": 3,
+          "pts": 13,
           "group": "",
           "zone": {
             "key": "cl",
@@ -40,12 +40,12 @@
         },
         {
           "position": 2,
-          "club": "AS Monaco",
+          "club": "Lille",
           "p": 4,
           "w": 3,
           "d": 1,
           "l": 0,
-          "gf": 6,
+          "gf": 7,
           "ga": 2,
           "pts": 10,
           "group": "",
@@ -165,12 +165,12 @@
         {
           "position": 10,
           "club": "RC Lens",
-          "p": 4,
+          "p": 5,
           "w": 1,
           "d": 1,
-          "l": 2,
-          "gf": 8,
-          "ga": 7,
+          "l": 3,
+          "gf": 9,
+          "ga": 9,
           "pts": 4,
           "group": "",
           "zone": null
@@ -905,6 +905,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-18T20:51:08Z",
+  "generatedAt": "2026-09-19T14:31:18Z",
   "source": "BSD"
 }
