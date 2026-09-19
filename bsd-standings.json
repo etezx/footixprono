@@ -40,6 +40,23 @@
         },
         {
           "position": 2,
+          "club": "Paris FC",
+          "p": 5,
+          "w": 3,
+          "d": 2,
+          "l": 0,
+          "gf": 8,
+          "ga": 3,
+          "pts": 11,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 3,
           "club": "Lille",
           "p": 4,
           "w": 3,
@@ -56,7 +73,7 @@
           }
         },
         {
-          "position": 3,
+          "position": 4,
           "club": "Stade Rennais",
           "p": 4,
           "w": 3,
@@ -67,23 +84,6 @@
           "pts": 10,
           "group": "",
           "zone": {
-            "key": "cl",
-            "label": "Champions League",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 4,
-          "club": "Olympique Lyonnais",
-          "p": 4,
-          "w": 2,
-          "d": 2,
-          "l": 0,
-          "gf": 6,
-          "ga": 2,
-          "pts": 8,
-          "group": "",
-          "zone": {
             "key": "clq",
             "label": "Champions League Qualification",
             "type": "qualification"
@@ -91,7 +91,7 @@
         },
         {
           "position": 5,
-          "club": "Paris FC",
+          "club": "Olympique Lyonnais",
           "p": 4,
           "w": 2,
           "d": 2,
@@ -109,12 +109,12 @@
         {
           "position": 6,
           "club": "RC Strasbourg",
-          "p": 4,
+          "p": 5,
           "w": 2,
           "d": 1,
-          "l": 1,
-          "gf": 9,
-          "ga": 8,
+          "l": 2,
+          "gf": 10,
+          "ga": 10,
           "pts": 7,
           "group": "",
           "zone": {
@@ -905,6 +905,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-19T17:11:12Z",
+  "generatedAt": "2026-09-19T17:21:13Z",
   "source": "BSD"
 }
