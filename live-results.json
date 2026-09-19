@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T19:11:13Z",
+  "generatedAt": "2026-09-19T19:21:07Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T19:11:13Z",
+      "updatedAt": "2026-09-19T19:21:07Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T19:11:13Z",
+      "updatedAt": "2026-09-19T19:21:07Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,8 +1032,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-19T19:11:13Z",
-      "minute": 25,
+      "updatedAt": "2026-09-19T19:21:07Z",
+      "minute": 35,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -1050,8 +1050,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-19T19:11:13Z",
-      "minute": 25,
+      "updatedAt": "2026-09-19T19:21:07Z",
+      "minute": 34,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -1070,15 +1070,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-19T19:11:13Z",
-      "minute": 24,
-      "homeScore": 1,
+      "updatedAt": "2026-09-19T19:21:07Z",
+      "minute": 34,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
         "E. Nuamah"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210481,
@@ -1090,8 +1090,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-19T19:11:13Z",
-      "minute": 24,
+      "updatedAt": "2026-09-19T19:21:07Z",
+      "minute": 34,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -1108,7 +1108,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T19:11:13Z"
+      "updatedAt": "2026-09-19T19:21:07Z"
     },
     {
       "eventId": 210477,
@@ -1120,7 +1120,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T19:11:13Z"
+      "updatedAt": "2026-09-19T19:21:07Z"
     },
     {
       "eventId": 210479,
@@ -1132,7 +1132,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T19:11:13Z"
+      "updatedAt": "2026-09-19T19:21:07Z"
     }
   ]
 }
