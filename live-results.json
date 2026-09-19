@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T14:41:08Z",
+  "generatedAt": "2026-09-19T14:51:11Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T14:41:08Z",
+      "updatedAt": "2026-09-19T14:51:11Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T14:41:08Z"
+      "updatedAt": "2026-09-19T14:51:11Z"
     },
     {
       "eventId": 210474,
@@ -1022,7 +1022,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T14:41:08Z"
+      "updatedAt": "2026-09-19T14:51:11Z"
     },
     {
       "eventId": 210476,
@@ -1034,7 +1034,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T14:41:08Z"
+      "updatedAt": "2026-09-19T14:51:11Z"
     },
     {
       "eventId": 210478,
@@ -1046,7 +1046,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T14:41:08Z"
+      "updatedAt": "2026-09-19T14:51:11Z"
     },
     {
       "eventId": 210481,
@@ -1058,7 +1058,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T14:41:08Z"
+      "updatedAt": "2026-09-19T14:51:11Z"
     },
     {
       "eventId": 210475,
@@ -1070,7 +1070,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T14:41:08Z"
+      "updatedAt": "2026-09-19T14:51:11Z"
     },
     {
       "eventId": 210477,
@@ -1082,7 +1082,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T14:41:08Z"
+      "updatedAt": "2026-09-19T14:51:11Z"
     },
     {
       "eventId": 210479,
@@ -1094,7 +1094,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T14:41:08Z"
+      "updatedAt": "2026-09-19T14:51:11Z"
     }
   ]
 }
