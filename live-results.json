@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T17:01:40Z",
+  "generatedAt": "2026-09-19T17:11:12Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T17:01:40Z",
+      "updatedAt": "2026-09-19T17:11:12Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,16 +1010,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T17:01:40Z",
-      "minute": 85,
+      "updatedAt": "2026-09-19T17:11:12Z",
+      "minute": 94,
       "homeScore": 2,
-      "awayScore": 0,
+      "awayScore": 1,
       "actualScorers": [
+        "M. Mbow",
         "P. Pagis",
         "I. Kebbal"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 210474,
@@ -1031,7 +1032,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:01:40Z"
+      "updatedAt": "2026-09-19T17:11:12Z"
     },
     {
       "eventId": 210476,
@@ -1043,7 +1044,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:01:40Z"
+      "updatedAt": "2026-09-19T17:11:12Z"
     },
     {
       "eventId": 210478,
@@ -1055,7 +1056,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:01:40Z"
+      "updatedAt": "2026-09-19T17:11:12Z"
     },
     {
       "eventId": 210481,
@@ -1067,7 +1068,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:01:40Z"
+      "updatedAt": "2026-09-19T17:11:12Z"
     },
     {
       "eventId": 210475,
@@ -1079,7 +1080,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:01:40Z"
+      "updatedAt": "2026-09-19T17:11:12Z"
     },
     {
       "eventId": 210477,
@@ -1091,7 +1092,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:01:40Z"
+      "updatedAt": "2026-09-19T17:11:12Z"
     },
     {
       "eventId": 210479,
@@ -1103,7 +1104,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:01:40Z"
+      "updatedAt": "2026-09-19T17:11:12Z"
     }
   ]
 }
