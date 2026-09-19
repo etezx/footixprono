@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T19:21:07Z",
+  "generatedAt": "2026-09-19T19:31:14Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T19:21:07Z",
+      "updatedAt": "2026-09-19T19:31:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T19:21:07Z",
+      "updatedAt": "2026-09-19T19:31:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,13 +1032,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-19T19:21:07Z",
-      "minute": 35,
-      "homeScore": 0,
+      "updatedAt": "2026-09-19T19:31:14Z",
+      "minute": 45,
+      "homeScore": 1,
       "awayScore": 0,
-      "actualScorers": [],
+      "actualScorers": [
+        "P. Peter"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210476,
@@ -1050,8 +1052,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-19T19:21:07Z",
-      "minute": 34,
+      "updatedAt": "2026-09-19T19:31:14Z",
+      "minute": 44,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -1070,8 +1072,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-19T19:21:07Z",
-      "minute": 34,
+      "updatedAt": "2026-09-19T19:31:14Z",
+      "minute": 44,
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1090,8 +1092,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-19T19:21:07Z",
-      "minute": 34,
+      "updatedAt": "2026-09-19T19:31:14Z",
+      "minute": 45,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -1108,7 +1110,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T19:21:07Z"
+      "updatedAt": "2026-09-19T19:31:14Z"
     },
     {
       "eventId": 210477,
@@ -1120,7 +1122,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T19:21:07Z"
+      "updatedAt": "2026-09-19T19:31:14Z"
     },
     {
       "eventId": 210479,
@@ -1132,7 +1134,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T19:21:07Z"
+      "updatedAt": "2026-09-19T19:31:14Z"
     }
   ]
 }
