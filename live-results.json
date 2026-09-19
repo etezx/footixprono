@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T17:21:13Z",
+  "generatedAt": "2026-09-19T18:01:42Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T17:21:13Z",
+      "updatedAt": "2026-09-19T18:01:42Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1005,12 +1005,12 @@
       "leagueId": 6,
       "home": "Paris FC",
       "away": "RC Strasbourg",
-      "kickoff": "2026-09-19T15:15:00Z",
+      "kickoff": "2026-09-19T15:15:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T17:21:13Z",
+      "updatedAt": "2026-09-19T18:01:42Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,7 +1032,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:21:13Z"
+      "updatedAt": "2026-09-19T18:01:42Z"
     },
     {
       "eventId": 210476,
@@ -1044,7 +1044,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:21:13Z"
+      "updatedAt": "2026-09-19T18:01:42Z"
     },
     {
       "eventId": 210478,
@@ -1056,7 +1056,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:21:13Z"
+      "updatedAt": "2026-09-19T18:01:42Z"
     },
     {
       "eventId": 210481,
@@ -1068,7 +1068,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:21:13Z"
+      "updatedAt": "2026-09-19T18:01:42Z"
     },
     {
       "eventId": 210475,
@@ -1080,7 +1080,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:21:13Z"
+      "updatedAt": "2026-09-19T18:01:42Z"
     },
     {
       "eventId": 210477,
@@ -1092,7 +1092,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:21:13Z"
+      "updatedAt": "2026-09-19T18:01:42Z"
     },
     {
       "eventId": 210479,
@@ -1104,7 +1104,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T17:21:13Z"
+      "updatedAt": "2026-09-19T18:01:42Z"
     }
   ]
 }
