@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T18:01:47.000167+00:00",
+  "updated_at": "2026-09-19T20:40:32.560655+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -111,6 +111,18 @@
       "last5": []
     },
     {
+      "club": "Toulouse",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
+      "p": 5,
+      "w": 1,
+      "d": 2,
+      "l": 2,
+      "gf": 7,
+      "ga": 9,
+      "pts": 5,
+      "last5": []
+    },
+    {
       "club": "Lens",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
       "p": 5,
@@ -185,22 +197,10 @@
     {
       "club": "Le Havre AC",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
-      "p": 4,
+      "p": 5,
       "w": 0,
       "d": 2,
-      "l": 2,
-      "gf": 2,
-      "ga": 4,
-      "pts": 2,
-      "last5": []
-    },
-    {
-      "club": "Toulouse",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
-      "p": 4,
-      "w": 0,
-      "d": 2,
-      "l": 2,
+      "l": 3,
       "gf": 4,
       "ga": 7,
       "pts": 2,
