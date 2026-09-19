@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T19:51:08Z",
+  "generatedAt": "2026-09-19T20:01:36Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T19:51:08Z",
+      "updatedAt": "2026-09-19T20:01:36Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T19:51:08Z",
+      "updatedAt": "2026-09-19T20:01:36Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,15 +1032,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T19:51:08Z",
-      "minute": 48,
-      "homeScore": 1,
+      "updatedAt": "2026-09-19T20:01:36Z",
+      "minute": 60,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
+        "A. Sbai",
         "P. Peter"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210476,
@@ -1052,15 +1053,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T19:51:08Z",
-      "minute": 46,
-      "homeScore": 1,
+      "updatedAt": "2026-09-19T20:01:36Z",
+      "minute": 57,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
+        "H. Diallo",
         "A. Bourabaa"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210478,
@@ -1072,7 +1074,7 @@
       "live": true,
       "completed": false,
       "period": "halftime",
-      "updatedAt": "2026-09-19T19:51:08Z",
+      "updatedAt": "2026-09-19T20:01:36Z",
       "minute": 45,
       "homeScore": 2,
       "awayScore": 0,
@@ -1092,15 +1094,15 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T19:51:08Z",
-      "minute": 50,
-      "homeScore": 1,
+      "updatedAt": "2026-09-19T20:01:36Z",
+      "minute": 61,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
         "C. Tengstedt"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210475,
@@ -1112,7 +1114,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T19:51:08Z"
+      "updatedAt": "2026-09-19T20:01:36Z"
     },
     {
       "eventId": 210477,
@@ -1124,7 +1126,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T19:51:08Z"
+      "updatedAt": "2026-09-19T20:01:36Z"
     },
     {
       "eventId": 210479,
@@ -1136,7 +1138,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T19:51:08Z"
+      "updatedAt": "2026-09-19T20:01:36Z"
     }
   ]
 }
