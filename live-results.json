@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T20:01:36Z",
+  "generatedAt": "2026-09-19T20:11:08Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T20:01:36Z",
+      "updatedAt": "2026-09-19T20:11:08Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T20:01:36Z",
+      "updatedAt": "2026-09-19T20:11:08Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,8 +1032,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:01:36Z",
-      "minute": 60,
+      "updatedAt": "2026-09-19T20:11:08Z",
+      "minute": 69,
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1053,8 +1053,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:01:36Z",
-      "minute": 57,
+      "updatedAt": "2026-09-19T20:11:08Z",
+      "minute": 66,
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1073,16 +1073,17 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-09-19T20:01:36Z",
-      "minute": 45,
-      "homeScore": 2,
+      "period": "2nd_half",
+      "updatedAt": "2026-09-19T20:11:08Z",
+      "minute": 53,
+      "homeScore": 3,
       "awayScore": 0,
       "actualScorers": [
+        "Z. Athekame",
         "E. Nuamah"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 210481,
@@ -1094,8 +1095,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:01:36Z",
-      "minute": 61,
+      "updatedAt": "2026-09-19T20:11:08Z",
+      "minute": 70,
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1114,7 +1115,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:01:36Z"
+      "updatedAt": "2026-09-19T20:11:08Z"
     },
     {
       "eventId": 210477,
@@ -1126,7 +1127,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:01:36Z"
+      "updatedAt": "2026-09-19T20:11:08Z"
     },
     {
       "eventId": 210479,
@@ -1138,7 +1139,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:01:36Z"
+      "updatedAt": "2026-09-19T20:11:08Z"
     }
   ]
 }
