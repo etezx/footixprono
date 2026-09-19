@@ -783,8 +783,8 @@
           "eventId": 210474,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-19T20:21:07Z",
-          "minute": 79,
+          "lastLiveUpdate": "2026-09-19T20:31:16Z",
+          "minute": 89,
           "period": "2nd_half",
           "homeScore": 2,
           "awayScore": 0,
@@ -807,7 +807,7 @@
           "eventId": 210475,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T20:21:07Z"
+          "lastLiveUpdate": "2026-09-19T20:31:16Z"
         }
       ],
       [
@@ -822,12 +822,13 @@
           "eventId": 210476,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-19T20:21:07Z",
-          "minute": 76,
+          "lastLiveUpdate": "2026-09-19T20:31:16Z",
+          "minute": 86,
           "period": "2nd_half",
           "homeScore": 2,
-          "awayScore": 0,
+          "awayScore": 1,
           "actualScorers": [
+            "I. S. Jensen",
             "H. Diallo",
             "A. Bourabaa"
           ],
@@ -846,8 +847,8 @@
           "eventId": 210478,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-19T20:21:07Z",
-          "minute": 63,
+          "lastLiveUpdate": "2026-09-19T20:31:16Z",
+          "minute": 73,
           "period": "2nd_half",
           "homeScore": 3,
           "awayScore": 0,
@@ -870,7 +871,7 @@
           "eventId": 210479,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T20:21:07Z"
+          "lastLiveUpdate": "2026-09-19T20:31:16Z"
         }
       ],
       [
@@ -885,7 +886,7 @@
           "eventId": 210473,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T20:21:07Z",
+          "lastLiveUpdate": "2026-09-19T20:31:16Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -909,7 +910,7 @@
           "eventId": 210477,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T20:21:07Z"
+          "lastLiveUpdate": "2026-09-19T20:31:16Z"
         }
       ],
       [
@@ -924,7 +925,7 @@
           "eventId": 210480,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T20:21:07Z",
+          "lastLiveUpdate": "2026-09-19T20:31:16Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -948,12 +949,13 @@
           "eventId": 210481,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-19T20:21:07Z",
-          "minute": 80,
+          "lastLiveUpdate": "2026-09-19T20:31:16Z",
+          "minute": 90,
           "period": "2nd_half",
           "homeScore": 3,
-          "awayScore": 1,
+          "awayScore": 2,
           "actualScorers": [
+            "A. Samatta",
             "T. Jørgensen",
             "J. Maja",
             "C. Tengstedt"
