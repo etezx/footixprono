@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T20:31:16Z",
+  "generatedAt": "2026-09-19T20:41:04Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T20:31:16Z",
+      "updatedAt": "2026-09-19T20:41:04Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T20:31:16Z",
+      "updatedAt": "2026-09-19T20:41:04Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1028,12 +1028,12 @@
       "home": "Angers",
       "away": "Troyes",
       "kickoff": "2026-09-19T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:31:16Z",
-      "minute": 89,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-19T20:41:04Z",
+      "minute": null,
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1053,8 +1053,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:31:16Z",
-      "minute": 86,
+      "updatedAt": "2026-09-19T20:41:04Z",
+      "minute": 96,
       "homeScore": 2,
       "awayScore": 1,
       "actualScorers": [
@@ -1075,16 +1075,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:31:16Z",
-      "minute": 73,
-      "homeScore": 3,
+      "updatedAt": "2026-09-19T20:41:04Z",
+      "minute": 83,
+      "homeScore": 4,
       "awayScore": 0,
       "actualScorers": [
+        "C. Tolisso",
         "Z. Athekame",
         "E. Nuamah"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 210481,
@@ -1092,12 +1093,12 @@
       "home": "Toulouse",
       "away": "Le Havre",
       "kickoff": "2026-09-19T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:31:16Z",
-      "minute": 90,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-19T20:41:04Z",
+      "minute": null,
       "homeScore": 3,
       "awayScore": 2,
       "actualScorers": [
@@ -1119,7 +1120,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:31:16Z"
+      "updatedAt": "2026-09-19T20:41:04Z"
     },
     {
       "eventId": 210477,
@@ -1131,7 +1132,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:31:16Z"
+      "updatedAt": "2026-09-19T20:41:04Z"
     },
     {
       "eventId": 210479,
@@ -1143,7 +1144,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:31:16Z"
+      "updatedAt": "2026-09-19T20:41:04Z"
     }
   ]
 }

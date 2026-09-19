@@ -108,13 +108,13 @@
         },
         {
           "position": 6,
-          "club": "RC Strasbourg",
+          "club": "Angers",
           "p": 5,
           "w": 2,
           "d": 1,
           "l": 2,
-          "gf": 10,
-          "ga": 10,
+          "gf": 6,
+          "ga": 5,
           "pts": 7,
           "group": "",
           "zone": {
@@ -125,6 +125,19 @@
         },
         {
           "position": 7,
+          "club": "RC Strasbourg",
+          "p": 5,
+          "w": 2,
+          "d": 1,
+          "l": 2,
+          "gf": 10,
+          "ga": 10,
+          "pts": 7,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 8,
           "club": "Paris Saint-Germain",
           "p": 4,
           "w": 1,
@@ -137,7 +150,7 @@
           "zone": null
         },
         {
-          "position": 8,
+          "position": 9,
           "club": "Stade Brestois",
           "p": 4,
           "w": 1,
@@ -150,7 +163,7 @@
           "zone": null
         },
         {
-          "position": 9,
+          "position": 10,
           "club": "Lorient",
           "p": 4,
           "w": 1,
@@ -163,7 +176,20 @@
           "zone": null
         },
         {
-          "position": 10,
+          "position": 11,
+          "club": "Toulouse",
+          "p": 5,
+          "w": 1,
+          "d": 2,
+          "l": 2,
+          "gf": 7,
+          "ga": 9,
+          "pts": 5,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 12,
           "club": "RC Lens",
           "p": 5,
           "w": 1,
@@ -176,33 +202,20 @@
           "zone": null
         },
         {
-          "position": 11,
-          "club": "Angers",
-          "p": 4,
-          "w": 1,
-          "d": 1,
-          "l": 2,
-          "gf": 4,
-          "ga": 5,
-          "pts": 4,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 12,
-          "club": "Troyes",
-          "p": 4,
-          "w": 1,
-          "d": 1,
-          "l": 2,
-          "gf": 4,
-          "ga": 9,
-          "pts": 4,
-          "group": "",
-          "zone": null
-        },
-        {
           "position": 13,
+          "club": "Troyes",
+          "p": 5,
+          "w": 1,
+          "d": 1,
+          "l": 3,
+          "gf": 4,
+          "ga": 11,
+          "pts": 4,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 14,
           "club": "Olympique de Marseille",
           "p": 4,
           "w": 1,
@@ -215,7 +228,7 @@
           "zone": null
         },
         {
-          "position": 14,
+          "position": 15,
           "club": "Le Mans",
           "p": 4,
           "w": 0,
@@ -228,7 +241,7 @@
           "zone": null
         },
         {
-          "position": 15,
+          "position": 16,
           "club": "Auxerre",
           "p": 4,
           "w": 1,
@@ -238,19 +251,6 @@
           "ga": 11,
           "pts": 3,
           "group": "",
-          "zone": null
-        },
-        {
-          "position": 16,
-          "club": "Le Havre",
-          "p": 4,
-          "w": 0,
-          "d": 2,
-          "l": 2,
-          "gf": 2,
-          "ga": 4,
-          "pts": 2,
-          "group": "",
           "zone": {
             "key": "relq",
             "label": "Relegation Playoffs",
@@ -259,11 +259,11 @@
         },
         {
           "position": 17,
-          "club": "Toulouse",
-          "p": 4,
+          "club": "Le Havre",
+          "p": 5,
           "w": 0,
           "d": 2,
-          "l": 2,
+          "l": 3,
           "gf": 4,
           "ga": 7,
           "pts": 2,
@@ -905,6 +905,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-19T20:31:16Z",
+  "generatedAt": "2026-09-19T20:41:04Z",
   "source": "BSD"
 }
