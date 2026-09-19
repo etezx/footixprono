@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T20:11:08Z",
+  "generatedAt": "2026-09-19T20:21:07Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T20:11:08Z",
+      "updatedAt": "2026-09-19T20:21:07Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T20:11:08Z",
+      "updatedAt": "2026-09-19T20:21:07Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,8 +1032,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:11:08Z",
-      "minute": 69,
+      "updatedAt": "2026-09-19T20:21:07Z",
+      "minute": 79,
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1053,8 +1053,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:11:08Z",
-      "minute": 66,
+      "updatedAt": "2026-09-19T20:21:07Z",
+      "minute": 76,
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1074,8 +1074,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:11:08Z",
-      "minute": 53,
+      "updatedAt": "2026-09-19T20:21:07Z",
+      "minute": 63,
       "homeScore": 3,
       "awayScore": 0,
       "actualScorers": [
@@ -1095,15 +1095,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:11:08Z",
-      "minute": 70,
-      "homeScore": 2,
-      "awayScore": 0,
+      "updatedAt": "2026-09-19T20:21:07Z",
+      "minute": 80,
+      "homeScore": 3,
+      "awayScore": 1,
       "actualScorers": [
+        "T. Jørgensen",
+        "J. Maja",
         "C. Tengstedt"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 4
     },
     {
       "eventId": 210475,
@@ -1115,7 +1117,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:11:08Z"
+      "updatedAt": "2026-09-19T20:21:07Z"
     },
     {
       "eventId": 210477,
@@ -1127,7 +1129,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:11:08Z"
+      "updatedAt": "2026-09-19T20:21:07Z"
     },
     {
       "eventId": 210479,
@@ -1139,7 +1141,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:11:08Z"
+      "updatedAt": "2026-09-19T20:21:07Z"
     }
   ]
 }
