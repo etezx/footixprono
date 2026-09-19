@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T16:51:13Z",
+  "generatedAt": "2026-09-19T17:01:40Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T16:51:13Z",
+      "updatedAt": "2026-09-19T17:01:40Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,8 +1010,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-19T16:51:13Z",
-      "minute": 74,
+      "updatedAt": "2026-09-19T17:01:40Z",
+      "minute": 85,
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1031,7 +1031,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T16:51:13Z"
+      "updatedAt": "2026-09-19T17:01:40Z"
     },
     {
       "eventId": 210476,
@@ -1043,7 +1043,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T16:51:13Z"
+      "updatedAt": "2026-09-19T17:01:40Z"
     },
     {
       "eventId": 210478,
@@ -1055,7 +1055,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T16:51:13Z"
+      "updatedAt": "2026-09-19T17:01:40Z"
     },
     {
       "eventId": 210481,
@@ -1067,7 +1067,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T16:51:13Z"
+      "updatedAt": "2026-09-19T17:01:40Z"
     },
     {
       "eventId": 210475,
@@ -1079,7 +1079,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T16:51:13Z"
+      "updatedAt": "2026-09-19T17:01:40Z"
     },
     {
       "eventId": 210477,
@@ -1091,7 +1091,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T16:51:13Z"
+      "updatedAt": "2026-09-19T17:01:40Z"
     },
     {
       "eventId": 210479,
@@ -1103,7 +1103,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T16:51:13Z"
+      "updatedAt": "2026-09-19T17:01:40Z"
     }
   ]
 }
