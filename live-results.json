@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T18:41:17Z",
+  "generatedAt": "2026-09-19T18:46:51Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T18:41:17Z",
+      "updatedAt": "2026-09-19T18:46:51Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T18:41:17Z",
+      "updatedAt": "2026-09-19T18:46:51Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1028,11 +1028,17 @@
       "home": "Angers",
       "away": "Troyes",
       "kickoff": "2026-09-19T18:45:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-19T18:41:17Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-19T18:46:51Z",
+      "minute": 1,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210476,
@@ -1040,11 +1046,17 @@
       "home": "Le Mans",
       "away": "Lorient",
       "kickoff": "2026-09-19T18:45:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-19T18:41:17Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-19T18:46:51Z",
+      "minute": 1,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210478,
@@ -1052,11 +1064,17 @@
       "home": "Olympique Lyonnais",
       "away": "Stade Rennais",
       "kickoff": "2026-09-19T18:45:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-19T18:41:17Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-19T18:46:51Z",
+      "minute": 1,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210481,
@@ -1064,11 +1082,17 @@
       "home": "Toulouse",
       "away": "Le Havre",
       "kickoff": "2026-09-19T18:45:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-19T18:41:17Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-19T18:46:51Z",
+      "minute": 1,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210475,
@@ -1080,7 +1104,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T18:41:17Z"
+      "updatedAt": "2026-09-19T18:46:51Z"
     },
     {
       "eventId": 210477,
@@ -1092,7 +1116,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T18:41:17Z"
+      "updatedAt": "2026-09-19T18:46:51Z"
     },
     {
       "eventId": 210479,
@@ -1104,7 +1128,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T18:41:17Z"
+      "updatedAt": "2026-09-19T18:46:51Z"
     }
   ]
 }
