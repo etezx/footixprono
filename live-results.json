@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T20:51:02Z",
+  "generatedAt": "2026-09-19T21:01:33Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T20:51:02Z",
+      "updatedAt": "2026-09-19T21:01:33Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T20:51:02Z",
+      "updatedAt": "2026-09-19T21:01:33Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1023,39 +1023,16 @@
       "goalIncidents": 3
     },
     {
-      "eventId": 210481,
+      "eventId": 210474,
       "leagueId": 6,
-      "home": "Toulouse",
-      "away": "Le Havre",
+      "home": "Angers",
+      "away": "Troyes",
       "kickoff": "2026-09-19T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T20:51:02Z",
-      "minute": null,
-      "homeScore": 3,
-      "awayScore": 2,
-      "actualScorers": [
-        "A. Samatta",
-        "T. Jørgensen",
-        "J. Maja",
-        "C. Tengstedt"
-      ],
-      "scorersVerified": true,
-      "goalIncidents": 5
-    },
-    {
-      "eventId": 210474,
-      "leagueId": 6,
-      "home": "Angers",
-      "away": "Troyes",
-      "kickoff": "2026-09-19T18:45:00Z",
-      "status": "finished",
-      "live": false,
-      "completed": true,
-      "period": "FT",
-      "updatedAt": "2026-09-19T20:51:02Z",
+      "updatedAt": "2026-09-19T21:01:33Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1071,12 +1048,12 @@
       "leagueId": 6,
       "home": "Le Mans",
       "away": "Lorient",
-      "kickoff": "2026-09-19T18:45:00Z",
+      "kickoff": "2026-09-19T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T20:51:02Z",
+      "updatedAt": "2026-09-19T21:01:33Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1089,17 +1066,40 @@
       "goalIncidents": 3
     },
     {
+      "eventId": 210481,
+      "leagueId": 6,
+      "home": "Toulouse",
+      "away": "Le Havre",
+      "kickoff": "2026-09-19T18:45:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-19T21:01:33Z",
+      "minute": null,
+      "homeScore": 3,
+      "awayScore": 2,
+      "actualScorers": [
+        "A. Samatta",
+        "T. Jørgensen",
+        "J. Maja",
+        "C. Tengstedt"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 5
+    },
+    {
       "eventId": 210478,
       "leagueId": 6,
       "home": "Olympique Lyonnais",
       "away": "Stade Rennais",
       "kickoff": "2026-09-19T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-09-19T20:51:02Z",
-      "minute": 92,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-19T21:01:33Z",
+      "minute": null,
       "homeScore": 4,
       "awayScore": 0,
       "actualScorers": [
@@ -1120,7 +1120,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:51:02Z"
+      "updatedAt": "2026-09-19T21:01:33Z"
     },
     {
       "eventId": 210477,
@@ -1132,7 +1132,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:51:02Z"
+      "updatedAt": "2026-09-19T21:01:33Z"
     },
     {
       "eventId": 210479,
@@ -1144,7 +1144,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T20:51:02Z"
+      "updatedAt": "2026-09-19T21:01:33Z"
     }
   ]
 }
