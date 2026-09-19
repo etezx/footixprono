@@ -783,7 +783,7 @@
           "eventId": 210474,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T15:31:23Z"
+          "lastLiveUpdate": "2026-09-19T15:41:08Z"
         }
       ],
       [
@@ -798,7 +798,7 @@
           "eventId": 210475,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T15:31:23Z"
+          "lastLiveUpdate": "2026-09-19T15:41:08Z"
         }
       ],
       [
@@ -813,7 +813,7 @@
           "eventId": 210476,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T15:31:23Z"
+          "lastLiveUpdate": "2026-09-19T15:41:08Z"
         }
       ],
       [
@@ -828,7 +828,7 @@
           "eventId": 210478,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T15:31:23Z"
+          "lastLiveUpdate": "2026-09-19T15:41:08Z"
         }
       ],
       [
@@ -843,7 +843,7 @@
           "eventId": 210479,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T15:31:23Z"
+          "lastLiveUpdate": "2026-09-19T15:41:08Z"
         }
       ],
       [
@@ -858,7 +858,7 @@
           "eventId": 210473,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T15:31:23Z",
+          "lastLiveUpdate": "2026-09-19T15:41:08Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -882,7 +882,7 @@
           "eventId": 210477,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T15:31:23Z"
+          "lastLiveUpdate": "2026-09-19T15:41:08Z"
         }
       ],
       [
@@ -897,12 +897,14 @@
           "eventId": 210480,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-19T15:31:23Z",
-          "minute": 14,
+          "lastLiveUpdate": "2026-09-19T15:41:08Z",
+          "minute": 24,
           "period": "1st_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 0,
-          "actualScorers": [],
+          "actualScorers": [
+            "I. Kebbal"
+          ],
           "scorersVerified": true
         }
       ],
@@ -918,7 +920,7 @@
           "eventId": 210481,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-19T15:31:23Z"
+          "lastLiveUpdate": "2026-09-19T15:41:08Z"
         }
       ]
     ]
