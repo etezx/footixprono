@@ -783,7 +783,7 @@
           "eventId": 210474,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T14:42:48Z",
+          "lastLiveUpdate": "2026-09-20T14:51:14Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 0,
@@ -806,12 +806,13 @@
           "eventId": 210475,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-09-20T14:42:48Z",
-          "minute": 83,
+          "lastLiveUpdate": "2026-09-20T14:51:14Z",
+          "minute": 94,
           "period": "2nd_half",
-          "homeScore": 1,
+          "homeScore": 2,
           "awayScore": 1,
           "actualScorers": [
+            "R. L. Guen",
             "C. Archer",
             "P. Mboup"
           ],
@@ -830,7 +831,7 @@
           "eventId": 210476,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T14:42:48Z",
+          "lastLiveUpdate": "2026-09-20T14:51:14Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -854,7 +855,7 @@
           "eventId": 210478,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T14:42:48Z",
+          "lastLiveUpdate": "2026-09-20T14:51:14Z",
           "period": "FT",
           "homeScore": 4,
           "awayScore": 0,
@@ -878,7 +879,7 @@
           "eventId": 210479,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T14:42:48Z"
+          "lastLiveUpdate": "2026-09-20T14:51:14Z"
         }
       ],
       [
@@ -893,7 +894,7 @@
           "eventId": 210473,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T14:42:48Z",
+          "lastLiveUpdate": "2026-09-20T14:51:14Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -917,7 +918,7 @@
           "eventId": 210477,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T14:42:48Z"
+          "lastLiveUpdate": "2026-09-20T14:51:14Z"
         }
       ],
       [
@@ -932,7 +933,7 @@
           "eventId": 210480,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T14:42:48Z",
+          "lastLiveUpdate": "2026-09-20T14:51:14Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -956,7 +957,7 @@
           "eventId": 210481,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T14:42:48Z",
+          "lastLiveUpdate": "2026-09-20T14:51:14Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 2,
