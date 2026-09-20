@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-20T17:11:16Z",
+  "generatedAt": "2026-09-20T17:21:14Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T17:11:16Z",
+      "updatedAt": "2026-09-20T17:21:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T17:11:16Z",
+      "updatedAt": "2026-09-20T17:21:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,7 +1032,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T17:11:16Z",
+      "updatedAt": "2026-09-20T17:21:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1053,7 +1053,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T17:11:16Z",
+      "updatedAt": "2026-09-20T17:21:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1075,7 +1075,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T17:11:16Z",
+      "updatedAt": "2026-09-20T17:21:14Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -1097,7 +1097,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T17:11:16Z",
+      "updatedAt": "2026-09-20T17:21:14Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -1120,7 +1120,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T17:11:16Z",
+      "updatedAt": "2026-09-20T17:21:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1138,12 +1138,12 @@
       "home": "Nice",
       "away": "Lille",
       "kickoff": "2026-09-20T15:15:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-09-20T17:11:16Z",
-      "minute": 95,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-20T17:21:14Z",
+      "minute": null,
       "homeScore": 2,
       "awayScore": 1,
       "actualScorers": [
@@ -1164,7 +1164,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-20T17:11:16Z"
+      "updatedAt": "2026-09-20T17:21:14Z"
     }
   ]
 }

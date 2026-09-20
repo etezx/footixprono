@@ -75,12 +75,12 @@
         {
           "position": 4,
           "club": "Lille",
-          "p": 4,
+          "p": 5,
           "w": 3,
           "d": 1,
-          "l": 0,
-          "gf": 7,
-          "ga": 2,
+          "l": 1,
+          "gf": 8,
+          "ga": 4,
           "pts": 10,
           "group": "",
           "zone": {
@@ -216,6 +216,19 @@
         },
         {
           "position": 14,
+          "club": "Nice",
+          "p": 5,
+          "w": 1,
+          "d": 2,
+          "l": 2,
+          "gf": 3,
+          "ga": 6,
+          "pts": 5,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 15,
           "club": "RC Lens",
           "p": 5,
           "w": 1,
@@ -228,7 +241,7 @@
           "zone": null
         },
         {
-          "position": 15,
+          "position": 16,
           "club": "Troyes",
           "p": 5,
           "w": 1,
@@ -238,10 +251,14 @@
           "ga": 11,
           "pts": 4,
           "group": "",
-          "zone": null
+          "zone": {
+            "key": "relq",
+            "label": "Relegation Playoffs",
+            "type": "relegation"
+          }
         },
         {
-          "position": 16,
+          "position": 17,
           "club": "Olympique de Marseille",
           "p": 4,
           "w": 1,
@@ -252,23 +269,6 @@
           "pts": 3,
           "group": "",
           "zone": {
-            "key": "relq",
-            "label": "Relegation Playoffs",
-            "type": "relegation"
-          }
-        },
-        {
-          "position": 17,
-          "club": "Le Havre",
-          "p": 5,
-          "w": 0,
-          "d": 2,
-          "l": 3,
-          "gf": 4,
-          "ga": 7,
-          "pts": 2,
-          "group": "",
-          "zone": {
             "key": "rel",
             "label": "Relegation",
             "type": "relegation"
@@ -276,13 +276,13 @@
         },
         {
           "position": 18,
-          "club": "Nice",
-          "p": 4,
+          "club": "Le Havre",
+          "p": 5,
           "w": 0,
           "d": 2,
-          "l": 2,
-          "gf": 1,
-          "ga": 5,
+          "l": 3,
+          "gf": 4,
+          "ga": 7,
           "pts": 2,
           "group": "",
           "zone": {
@@ -905,6 +905,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-20T17:11:16Z",
+  "generatedAt": "2026-09-20T17:21:14Z",
   "source": "BSD"
 }
