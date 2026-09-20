@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-20T15:01:51Z",
+  "generatedAt": "2026-09-20T15:11:14Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:01:51Z",
+      "updatedAt": "2026-09-20T15:11:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:01:51Z",
+      "updatedAt": "2026-09-20T15:11:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,7 +1032,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:01:51Z",
+      "updatedAt": "2026-09-20T15:11:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1053,7 +1053,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:01:51Z",
+      "updatedAt": "2026-09-20T15:11:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1075,7 +1075,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:01:51Z",
+      "updatedAt": "2026-09-20T15:11:14Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -1097,7 +1097,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:01:51Z",
+      "updatedAt": "2026-09-20T15:11:14Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -1115,12 +1115,12 @@
       "leagueId": 6,
       "home": "Auxerre",
       "away": "Stade Brestois",
-      "kickoff": "2026-09-20T13:00:00Z",
+      "kickoff": "2026-09-20T13:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:01:51Z",
+      "updatedAt": "2026-09-20T15:11:14Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1137,12 +1137,12 @@
       "leagueId": 6,
       "home": "Nice",
       "away": "Lille",
-      "kickoff": "2026-09-20T15:15:00+00:00",
+      "kickoff": "2026-09-20T15:15:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-20T15:01:51Z"
+      "updatedAt": "2026-09-20T15:11:14Z"
     },
     {
       "eventId": 210479,
@@ -1154,7 +1154,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-20T15:01:51Z"
+      "updatedAt": "2026-09-20T15:11:14Z"
     }
   ]
 }
