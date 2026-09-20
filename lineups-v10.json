@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T00:11:50Z",
+  "generated_at": "2026-09-20T16:08:29Z",
   "competition": "Ligue 1",
   "season": "2026-2027",
   "source": "Big Balls + TheSportsDB",
@@ -4094,6 +4094,923 @@
             "source_name": "D. Mosengo",
             "number": 78,
             "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          }
+        ]
+      },
+      "stats": []
+    },
+    "5|||ajauxerre|||stadebrestois29": {
+      "day": 5,
+      "date": "2026-09-20",
+      "home_name": "AJ AUXERRE",
+      "away_name": "STADE BRESTOIS 29",
+      "bigballs_match_id": "5df626e4-ca3f-47a7-a294-db1d533f33bf",
+      "thesportsdb_event_id": null,
+      "official": true,
+      "home": {
+        "formation": "3-4-3",
+        "players": [
+          {
+            "bigballs_player_id": "0729db85-bfbf-40b7-a9a6-b9db3f8312c9",
+            "name": "R. Labeau Lascary",
+            "source_name": "R. Labeau Lascary",
+            "number": 3,
+            "position": "F",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/8wau1o1765982734.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/8wau1o1765982734.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/tvrzy21681124526.jpg",
+            "thesportsdb_player_id": "34215664"
+          },
+          {
+            "bigballs_player_id": "e9bc8b47-8322-4022-9915-c370ed0b4b74",
+            "name": "A. Tuanzebe",
+            "source_name": "A. Tuanzebe",
+            "number": 4,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/4u651u1765971647.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/4u651u1765971647.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/2bnmdq1772370161.jpg",
+            "thesportsdb_player_id": "34160942"
+          },
+          {
+            "bigballs_player_id": "bb95a7cb-0aa5-423f-bd00-83024240e2be",
+            "name": "K. Danois",
+            "source_name": "K. Danois",
+            "number": 5,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/ekouta1765920374.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/ekouta1765920374.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/85z4il1765915805.jpg",
+            "thesportsdb_player_id": "34248758"
+          },
+          {
+            "bigballs_player_id": null,
+            "name": "C. Archer",
+            "source_name": "C. Archer",
+            "number": 9,
+            "position": "F",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/y63r191761565164.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/y63r191761565164.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/b6dqlk1507728827.jpg",
+            "thesportsdb_player_id": "34146192"
+          },
+          {
+            "bigballs_player_id": "7288bd16-c2fb-4ce3-aaf1-20eae451bf62",
+            "name": "D. Namaso",
+            "source_name": "D. Namaso",
+            "number": 10,
+            "position": "F",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/y87bpz1765920491.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/y87bpz1765920491.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/8qsn6g1679050694.jpg",
+            "thesportsdb_player_id": "34201830"
+          },
+          {
+            "bigballs_player_id": "67436694-8b2b-4b7e-97a4-8305e4ca2289",
+            "name": "C. Makosso",
+            "source_name": "C. Makosso",
+            "number": 15,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/wza3yh1766071197.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/wza3yh1766071197.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/6tuds61759955324.jpg",
+            "thesportsdb_player_id": "34230043"
+          },
+          {
+            "bigballs_player_id": "217d60ac-a593-4f89-bf85-0a8d6383d530",
+            "name": "F. Oppegård",
+            "source_name": "F. Oppegård",
+            "number": 22,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/e3yfnh1765920649.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/e3yfnh1765920649.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/o0jwoz1679497248.jpg",
+            "thesportsdb_player_id": "34197249"
+          },
+          {
+            "bigballs_player_id": "7e8d6777-5dbf-4293-a83f-b589e2aa8a28",
+            "name": "M. Diop",
+            "source_name": "M. Diop",
+            "number": 23,
+            "position": "G",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/g4pu161603220023.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/g4pu161603220023.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/6elp581515415333.jpg",
+            "thesportsdb_player_id": "34149547"
+          },
+          {
+            "bigballs_player_id": "6257caa9-4c7f-4eb2-85a8-b87700129f4b",
+            "name": "L. Sy",
+            "source_name": "L. Sy",
+            "number": 27,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "43c2ba45-c524-42d2-8cbf-891cab8e3533",
+            "name": "A. Piedfort",
+            "source_name": "A. Piedfort",
+            "number": 46,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/ys7yeh1767097727.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/ys7yeh1767097727.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/ukuyja1733506453.jpg",
+            "thesportsdb_player_id": "34226025"
+          },
+          {
+            "bigballs_player_id": "b07bd6ff-0af7-4367-acd4-c31046c531f1",
+            "name": "C. Akpa",
+            "source_name": "C. Akpa",
+            "number": 92,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/28016409.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/28016409.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/1savbw1506525817.jpg",
+            "thesportsdb_player_id": "34146257"
+          }
+        ],
+        "bench": [
+          {
+            "bigballs_player_id": "66ad451b-53ae-4a28-9eea-b11a603b211b",
+            "name": "P. Nardi",
+            "source_name": "P. Nardi",
+            "number": 1,
+            "position": "G",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "6c6f7d94-4152-4c3e-9a17-e2361410f02d",
+            "name": "N. Ahamada",
+            "source_name": "N. Ahamada",
+            "number": 8,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": null,
+            "name": "P. Ekwah",
+            "source_name": "P. Ekwah",
+            "number": 17,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "0a542ea4-7360-4531-9ebd-3b567b4401a8",
+            "name": "S. Diomandé",
+            "source_name": "S. Diomandé",
+            "number": 20,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "df1fa5ac-f268-4398-ba92-763f53847f06",
+            "name": "R. Faivre",
+            "source_name": "R. Faivre",
+            "number": 21,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": null,
+            "name": "R. Mandengue",
+            "source_name": "R. Mandengue",
+            "number": 32,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": null,
+            "name": "L. Dioubate",
+            "source_name": "L. Dioubate",
+            "number": 34,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "9468addf-95be-4ca8-a104-3e21ab2a7d14",
+            "name": "E. Legros",
+            "source_name": "E. Legros",
+            "number": 35,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          }
+        ]
+      },
+      "away": {
+        "formation": "4-2-3-1",
+        "players": [
+          {
+            "bigballs_player_id": "5c7bd28b-34dc-475b-b0f8-d53f11a0a1fc",
+            "name": "E. Selvik",
+            "source_name": "E. Selvik",
+            "number": 1,
+            "position": "G",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/ozeg7h1761216738.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/ozeg7h1761216738.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/k9bzoa1739973004.jpg",
+            "thesportsdb_player_id": "34218150"
+          },
+          {
+            "bigballs_player_id": "6040ac31-fc8f-4f79-8404-e0d1db3a9e9b",
+            "name": "B. Locko",
+            "source_name": "B. Locko",
+            "number": 2,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/o6lrb91765982763.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/o6lrb91765982763.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/tirkdr1653486170.jpg",
+            "thesportsdb_player_id": "34192550"
+          },
+          {
+            "bigballs_player_id": "02509d9e-85bd-4901-8e58-0b0ae2112a8f",
+            "name": "G. Lloris",
+            "source_name": "G. Lloris",
+            "number": 4,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/u9nk5p1750910221.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/u9nk5p1750910221.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/j4e0io1670753259.jpg",
+            "thesportsdb_player_id": "34146191"
+          },
+          {
+            "bigballs_player_id": "f05f31cc-e582-4856-9a1b-1ba0382b5fab",
+            "name": "H. Magnetti",
+            "source_name": "H. Magnetti",
+            "number": 8,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/yeam2j1765982779.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/yeam2j1765982779.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/w9dfra1653486477.jpg",
+            "thesportsdb_player_id": "34179079"
+          },
+          {
+            "bigballs_player_id": "cd2e33e9-5dce-40b1-a442-d2d7a9a6f9ba",
+            "name": "P. Mboup",
+            "source_name": "P. Mboup",
+            "number": 9,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/hytite1765982825.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/hytite1765982825.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/xmg6r41765979618.jpg",
+            "thesportsdb_player_id": "34230046"
+          },
+          {
+            "bigballs_player_id": null,
+            "name": "G. Versini",
+            "source_name": "G. Versini",
+            "number": 10,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": "34240890"
+          },
+          {
+            "bigballs_player_id": "7dd0ef19-0903-4c3c-818a-cebf69818b5c",
+            "name": "J. Chotard",
+            "source_name": "J. Chotard",
+            "number": 13,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/bi32d91765982575.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/bi32d91765982575.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/gu5ahn1608590990.jpg",
+            "thesportsdb_player_id": "34173515"
+          },
+          {
+            "bigballs_player_id": "8cb9887c-3e71-4292-95d7-48ce2297fa17",
+            "name": "L. Ajorque",
+            "source_name": "L. Ajorque",
+            "number": 19,
+            "position": "F",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/e2hba61765982480.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/e2hba61765982480.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/p42zci1607871058.jpg",
+            "thesportsdb_player_id": "34173377"
+          },
+          {
+            "bigballs_player_id": "456dbfb6-fd57-45be-9d04-d21a3e1e1e92",
+            "name": "K. Doumbia",
+            "source_name": "K. Doumbia",
+            "number": 23,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": "34152701"
+          },
+          {
+            "bigballs_player_id": "906bb733-3dee-4d77-85ca-4b05737154d0",
+            "name": "K. Lala",
+            "source_name": "K. Lala",
+            "number": 70,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": "34152454"
+          },
+          {
+            "bigballs_player_id": "0307b9ad-d81b-48a6-acf3-83a3443bb0f5",
+            "name": "R. Le Guen",
+            "source_name": "R. Le Guen",
+            "number": 71,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/thumb/a88ht71756723549.jpg",
+            "cutout": null,
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/a88ht71756723549.jpg",
+            "thesportsdb_player_id": "34160257"
+          }
+        ],
+        "bench": [
+          {
+            "bigballs_player_id": "b6342e00-5bdc-4066-b9d8-888a38ed3135",
+            "name": "J. Nonge Boende",
+            "source_name": "J. Nonge Boende",
+            "number": 7,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "ebbc8ff0-5d2a-4120-b5a2-87be6e774341",
+            "name": "Mama Baldé",
+            "source_name": "Mama Baldé",
+            "number": 17,
+            "position": "F",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "83ed0108-b4db-4dbe-a32f-bb75b3a6b296",
+            "name": "J. Bourgault",
+            "source_name": "J. Bourgault",
+            "number": 18,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "f066ef66-c078-47d9-a2f8-cc411d8acd9d",
+            "name": "L. Zogbe",
+            "source_name": "L. Zogbe",
+            "number": 20,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "5f425f6c-e92e-4e5b-b311-543353dd77f0",
+            "name": "Ibrahim Yayiya Kante",
+            "source_name": "Ibrahim Yayiya Kante",
+            "number": 21,
+            "position": "F",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "2eef4345-b68b-45b9-af04-e3add34f4909",
+            "name": "L. Tousart",
+            "source_name": "L. Tousart",
+            "number": 29,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": null,
+            "name": "M. Patouillet",
+            "source_name": "M. Patouillet",
+            "number": 30,
+            "position": "G",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": null,
+            "name": "L. C. Laine M.",
+            "source_name": "L. C. Laine M.",
+            "number": 32,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": null,
+            "name": "D. N´Guessan",
+            "source_name": "D. N´Guessan",
+            "number": 39,
+            "position": "F",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          }
+        ]
+      },
+      "stats": []
+    },
+    "5|||ogcnice|||losc": {
+      "day": 5,
+      "date": "2026-09-20",
+      "home_name": "OGC NICE",
+      "away_name": "LOSC",
+      "bigballs_match_id": "2a161606-9e83-4162-b2d8-2ab9abd62765",
+      "thesportsdb_event_id": null,
+      "official": true,
+      "home": {
+        "formation": "3-4-2-1",
+        "players": [
+          {
+            "bigballs_player_id": "2ef85ac8-1bc0-4896-8bdc-407ab2dbbf13",
+            "name": "Mohamed Abdelmonem",
+            "source_name": "Mohamed Abdelmonem",
+            "number": 5,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/v3aiug1766319519.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/v3aiug1766319519.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/3teppl1705484933.jpg",
+            "thesportsdb_player_id": "34196914"
+          },
+          {
+            "bigballs_player_id": "443d0b3e-cfd4-4cc6-bba5-da6f89a3df5f",
+            "name": "G. Hein",
+            "source_name": "G. Hein",
+            "number": 7,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/thumb/s0iurc1542813650.jpg",
+            "cutout": null,
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/s0iurc1542813650.jpg",
+            "thesportsdb_player_id": "34155337"
+          },
+          {
+            "bigballs_player_id": "b6c67364-a049-442e-af99-d430080f5daf",
+            "name": "M. Amoura",
+            "source_name": "M. Amoura",
+            "number": 9,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/exqyvl1763669195.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/exqyvl1763669195.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/h7s5iz1717950981.jpg",
+            "thesportsdb_player_id": "34221973"
+          },
+          {
+            "bigballs_player_id": "5856f9b0-932c-4fab-b0a1-c6edbf491f3c",
+            "name": "E. Wahi",
+            "source_name": "E. Wahi",
+            "number": 11,
+            "position": "F",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/uuqh371762287642.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/uuqh371762287642.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/mqn7ty1609261791.jpg",
+            "thesportsdb_player_id": "34173526"
+          },
+          {
+            "bigballs_player_id": "82223108-ff27-4ab9-b8d0-afc971ffb089",
+            "name": "Y. Diouf",
+            "source_name": "Y. Diouf",
+            "number": 23,
+            "position": "G",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/53016763.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/53016763.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/wwttwx1452726949.jpg",
+            "thesportsdb_player_id": "34145973"
+          },
+          {
+            "bigballs_player_id": "d00b5cfc-8ae8-4f4d-bf46-9f8d0afbd22b",
+            "name": "N. Nkounkou",
+            "source_name": "N. Nkounkou",
+            "number": 27,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/dcb1f81764099911.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/dcb1f81764099911.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/7z451g1660736089.jpg",
+            "thesportsdb_player_id": "34198577"
+          },
+          {
+            "bigballs_player_id": "1f354ef7-d8da-4a95-8818-0ff2c0949699",
+            "name": "A. Witsel",
+            "source_name": "A. Witsel",
+            "number": 28,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/13uvke1762457461.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/13uvke1762457461.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/gex6yt1706956962.jpg",
+            "thesportsdb_player_id": "34146809"
+          },
+          {
+            "bigballs_player_id": null,
+            "name": "X. Mandza Tsiendi",
+            "source_name": "X. Mandza Tsiendi",
+            "number": 35,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "6db9037b-5339-46e8-b62c-02ff004b1d40",
+            "name": "D. Coulibaly",
+            "source_name": "D. Coulibaly",
+            "number": 39,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/rrvpqs1424827568.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/rrvpqs1424827568.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/uyturr1431565848.jpg",
+            "thesportsdb_player_id": "34146216"
+          },
+          {
+            "bigballs_player_id": "9b8f02e1-071a-45e9-9594-6921a8075a12",
+            "name": "Y. Ndayishimiye",
+            "source_name": "Y. Ndayishimiye",
+            "number": 55,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/k0ku531766319844.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/k0ku531766319844.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/fib0if1681394385.jpg",
+            "thesportsdb_player_id": "34192845"
+          },
+          {
+            "bigballs_player_id": "3f94821b-3671-4df6-aad7-397e67cf0330",
+            "name": "J. Clauss",
+            "source_name": "J. Clauss",
+            "number": 92,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/lmb4f41766319695.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/lmb4f41766319695.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/kh6hty1608328774.jpg",
+            "thesportsdb_player_id": "34173400"
+          }
+        ],
+        "bench": [
+          {
+            "bigballs_player_id": "b960b355-0607-4e76-b86f-c2a29a73fa2d",
+            "name": "A. Abdi",
+            "source_name": "A. Abdi",
+            "number": 2,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "4eac5ec4-660a-4223-9bf0-c0894efe42d5",
+            "name": "H. Boudaoui",
+            "source_name": "H. Boudaoui",
+            "number": 6,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "8421bf0c-3d4a-42f1-a861-9b71952543f2",
+            "name": "S. Diop",
+            "source_name": "S. Diop",
+            "number": 10,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "ed30b8ab-203e-466e-8f83-5cf32c5ba8c9",
+            "name": "I. Jansson",
+            "source_name": "I. Jansson",
+            "number": 21,
+            "position": "F",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "501823f8-4141-40de-a521-75668d1fe503",
+            "name": "N. Ngoumou",
+            "source_name": "N. Ngoumou",
+            "number": 29,
+            "position": "F",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "03f59d05-d1e9-486f-b478-96457b04de9f",
+            "name": "A. Seidu",
+            "source_name": "A. Seidu",
+            "number": 36,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "490402f0-9a19-4520-9e80-a0ab4f68cbb5",
+            "name": "T. Boulhendi",
+            "source_name": "T. Boulhendi",
+            "number": 77,
+            "position": "G",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "73b73489-8d40-4cd4-85f2-2bf5e0616119",
+            "name": "H. Koutoune",
+            "source_name": "H. Koutoune",
+            "number": 84,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "3949c4cf-51b1-40fe-a9ad-0e2dec042604",
+            "name": "E. Pereira",
+            "source_name": "E. Pereira",
+            "number": 87,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          }
+        ]
+      },
+      "away": {
+        "formation": "4-2-3-1",
+        "players": [
+          {
+            "bigballs_player_id": "85e6020d-6608-40c3-9b7c-6ba64261ab1a",
+            "name": "B. Özer",
+            "source_name": "B. Özer",
+            "number": 1,
+            "position": "G",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/23zoe31766077654.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/23zoe31766077654.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/yi51jb1766058522.jpg",
+            "thesportsdb_player_id": "34194485"
+          },
+          {
+            "bigballs_player_id": "608c52f4-22c1-48d3-886f-5cc9980dd9cf",
+            "name": "N. Ngoy",
+            "source_name": "N. Ngoy",
+            "number": 3,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/thumb/uzlopv1509657290.jpg",
+            "cutout": null,
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/uzlopv1509657290.jpg",
+            "thesportsdb_player_id": "34161590"
+          },
+          {
+            "bigballs_player_id": "77e64e5d-40e2-4ad3-80b2-311764bbefd0",
+            "name": "Alexsandro Ribeiro",
+            "source_name": "Alexsandro Ribeiro",
+            "number": 4,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/7ldspy1766077352.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/7ldspy1766077352.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/5sfb821674738822.jpg",
+            "thesportsdb_player_id": "34200125"
+          },
+          {
+            "bigballs_player_id": "ca0ea443-69c4-4a29-b10b-9005199d8308",
+            "name": "N. Bentaleb",
+            "source_name": "N. Bentaleb",
+            "number": 6,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/ryrkw41766077386.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/ryrkw41766077386.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/kluyu41578151803.jpg",
+            "thesportsdb_player_id": "34146211"
+          },
+          {
+            "bigballs_player_id": "151a86cd-7666-4fdb-9164-d021da0c77dd",
+            "name": "E. Mbappé",
+            "source_name": "E. Mbappé",
+            "number": 8,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/cxrmkm1788114306.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/cxrmkm1788114306.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/v08cj31778816426.jpg",
+            "thesportsdb_player_id": "34162098"
+          },
+          {
+            "bigballs_player_id": "301d9169-c079-439c-9b95-2a5127339557",
+            "name": "H. Haraldsson",
+            "source_name": "H. Haraldsson",
+            "number": 10,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/vul2om1766077518.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/vul2om1766077518.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/ecrf2c1663233424.jpg",
+            "thesportsdb_player_id": "34200560"
+          },
+          {
+            "bigballs_player_id": "0c4cb2eb-9aff-425f-a3db-f9ed232cd785",
+            "name": "R. Perraud",
+            "source_name": "R. Perraud",
+            "number": 15,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/i8bqez1766077669.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/i8bqez1766077669.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/lhzl7k1570043019.jpg",
+            "thesportsdb_player_id": "34168137"
+          },
+          {
+            "bigballs_player_id": "0d34d3d5-a02d-4ed5-a1f3-29c0970bc2af",
+            "name": "A. Ueda",
+            "source_name": "A. Ueda",
+            "number": 18,
+            "position": "F",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": "34175569"
+          },
+          {
+            "bigballs_player_id": "dbd07a23-a080-43f0-ae17-1db9c0020564",
+            "name": "B. Önal",
+            "source_name": "B. Önal",
+            "number": 19,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/wxi7wr1759759363.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/wxi7wr1759759363.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/h1s4lf1723318878.jpg",
+            "thesportsdb_player_id": "34245707"
+          },
+          {
+            "bigballs_player_id": "73a3925d-8f32-469d-999d-f8a4a72d27e3",
+            "name": "B. André",
+            "source_name": "B. André",
+            "number": 21,
+            "position": "M",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/thumb/5yzh2j1771665641.jpg",
+            "cutout": null,
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/5yzh2j1771665641.jpg",
+            "thesportsdb_player_id": "34191720"
+          },
+          {
+            "bigballs_player_id": "4f8515de-93e7-4343-9b35-1ea411431588",
+            "name": "Tiago Santos",
+            "source_name": "Tiago Santos",
+            "number": 22,
+            "position": "D",
+            "portrait": "https://r2.thesportsdb.com/images/media/player/cutout/lh5qbg1766077705.png",
+            "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/lh5qbg1766077705.png",
+            "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/siff9a1702307973.jpg",
+            "thesportsdb_player_id": "34217363"
+          }
+        ],
+        "bench": [
+          {
+            "bigballs_player_id": "cc44e366-6cbc-48cf-8240-9b6ca807a52c",
+            "name": "D. Bakwa",
+            "source_name": "D. Bakwa",
+            "number": 7,
+            "position": "F",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "2d8102e0-d78a-4a8d-b51d-ba8e23fde6f2",
+            "name": "O. Giroud",
+            "source_name": "O. Giroud",
+            "number": 9,
+            "position": "F",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "e38c15a5-90bf-4bb4-87df-cd49410659fb",
+            "name": "O. Sahraoui",
+            "source_name": "O. Sahraoui",
+            "number": 11,
+            "position": "F",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "032e1c19-a1ee-4a4f-ae4c-ff13e59308da",
+            "name": "O. Gill",
+            "source_name": "O. Gill",
+            "number": 12,
+            "position": "G",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": null,
+            "name": "M. Kjærgaard",
+            "source_name": "M. Kjærgaard",
+            "number": 14,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "6eed82b8-f0a4-41ce-9be1-98086d23e226",
+            "name": "N. Mukau",
+            "source_name": "N. Mukau",
+            "number": 17,
+            "position": "M",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "0c1f7201-eb76-45b3-aa43-5b49b2a213a1",
+            "name": "C. Verdonk",
+            "source_name": "C. Verdonk",
+            "number": 24,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "e9372ed1-9745-4c93-817b-be73bee9e6de",
+            "name": "I. Cossier",
+            "source_name": "I. Cossier",
+            "number": 26,
+            "position": "D",
+            "portrait": null,
+            "cutout": null,
+            "thumb": null,
+            "thesportsdb_player_id": null
+          },
+          {
+            "bigballs_player_id": "50304c9d-8390-4947-9106-aafaf0716407",
+            "name": "G. Perrin",
+            "source_name": "G. Perrin",
+            "number": 28,
+            "position": "F",
             "portrait": null,
             "cutout": null,
             "thumb": null,
