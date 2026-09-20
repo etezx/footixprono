@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-20T16:51:13Z",
+  "generatedAt": "2026-09-20T17:01:46Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T16:51:13Z",
+      "updatedAt": "2026-09-20T17:01:46Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T16:51:13Z",
+      "updatedAt": "2026-09-20T17:01:46Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,7 +1032,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T16:51:13Z",
+      "updatedAt": "2026-09-20T17:01:46Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1053,7 +1053,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T16:51:13Z",
+      "updatedAt": "2026-09-20T17:01:46Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1075,7 +1075,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T16:51:13Z",
+      "updatedAt": "2026-09-20T17:01:46Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -1097,7 +1097,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T16:51:13Z",
+      "updatedAt": "2026-09-20T17:01:46Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -1120,7 +1120,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T16:51:13Z",
+      "updatedAt": "2026-09-20T17:01:46Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1142,16 +1142,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-09-20T16:51:13Z",
-      "minute": 75,
+      "updatedAt": "2026-09-20T17:01:46Z",
+      "minute": 86,
       "homeScore": 2,
-      "awayScore": 0,
+      "awayScore": 1,
       "actualScorers": [
+        "A. Ueda",
         "M. E. A. Amoura",
         "N. Ngoy"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 210479,
@@ -1163,7 +1164,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-20T16:51:13Z"
+      "updatedAt": "2026-09-20T17:01:46Z"
     }
   ]
 }
