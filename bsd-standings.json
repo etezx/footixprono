@@ -151,6 +151,19 @@
         },
         {
           "position": 9,
+          "club": "Auxerre",
+          "p": 5,
+          "w": 2,
+          "d": 0,
+          "l": 3,
+          "gf": 7,
+          "ga": 12,
+          "pts": 6,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 10,
           "club": "Paris Saint-Germain",
           "p": 4,
           "w": 1,
@@ -163,20 +176,20 @@
           "zone": null
         },
         {
-          "position": 10,
+          "position": 11,
           "club": "Stade Brestois",
-          "p": 4,
+          "p": 5,
           "w": 1,
           "d": 2,
-          "l": 1,
-          "gf": 6,
-          "ga": 6,
+          "l": 2,
+          "gf": 7,
+          "ga": 8,
           "pts": 5,
           "group": "",
           "zone": null
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "Lorient",
           "p": 5,
           "w": 1,
@@ -189,7 +202,7 @@
           "zone": null
         },
         {
-          "position": 12,
+          "position": 13,
           "club": "Toulouse",
           "p": 5,
           "w": 1,
@@ -202,7 +215,7 @@
           "zone": null
         },
         {
-          "position": 13,
+          "position": 14,
           "club": "RC Lens",
           "p": 5,
           "w": 1,
@@ -215,7 +228,7 @@
           "zone": null
         },
         {
-          "position": 14,
+          "position": 15,
           "club": "Troyes",
           "p": 5,
           "w": 1,
@@ -228,7 +241,7 @@
           "zone": null
         },
         {
-          "position": 15,
+          "position": 16,
           "club": "Olympique de Marseille",
           "p": 4,
           "w": 1,
@@ -236,19 +249,6 @@
           "l": 3,
           "gf": 6,
           "ga": 6,
-          "pts": 3,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 16,
-          "club": "Auxerre",
-          "p": 4,
-          "w": 1,
-          "d": 0,
-          "l": 3,
-          "gf": 5,
-          "ga": 11,
           "pts": 3,
           "group": "",
           "zone": {
@@ -905,6 +905,6 @@
       ]
     }
   },
-  "generatedAt": "2026-09-20T14:51:14Z",
+  "generatedAt": "2026-09-20T15:01:51Z",
   "source": "BSD"
 }
