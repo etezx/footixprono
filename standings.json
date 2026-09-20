@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T11:31:01.570341+00:00",
+  "updated_at": "2026-09-20T16:06:41.791495+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -99,15 +99,15 @@
       "last5": []
     },
     {
-      "club": "Brest",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
-      "p": 4,
-      "w": 1,
-      "d": 2,
-      "l": 1,
-      "gf": 6,
-      "ga": 6,
-      "pts": 5,
+      "club": "AJ Auxerre",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
+      "p": 5,
+      "w": 2,
+      "d": 0,
+      "l": 3,
+      "gf": 7,
+      "ga": 12,
+      "pts": 6,
       "last5": []
     },
     {
@@ -119,6 +119,18 @@
       "l": 1,
       "gf": 6,
       "ga": 6,
+      "pts": 5,
+      "last5": []
+    },
+    {
+      "club": "Brest",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+      "p": 5,
+      "w": 1,
+      "d": 2,
+      "l": 2,
+      "gf": 7,
+      "ga": 8,
       "pts": 5,
       "last5": []
     },
@@ -179,18 +191,6 @@
       "l": 3,
       "gf": 6,
       "ga": 6,
-      "pts": 3,
-      "last5": []
-    },
-    {
-      "club": "AJ Auxerre",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
-      "p": 4,
-      "w": 1,
-      "d": 0,
-      "l": 3,
-      "gf": 5,
-      "ga": 11,
       "pts": 3,
       "last5": []
     },
