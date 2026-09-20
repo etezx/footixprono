@@ -1123,5 +1123,65 @@
     "id": "34191720",
     "cutout": null,
     "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/5yzh2j1771665641.jpg"
+  },
+  "nmaupay": {
+    "id": "34152846",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/gn9rkt1766152487.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/b9cysn1506261441.jpg"
+  },
+  "marquinhos": {
+    "id": "34152561",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/7x9gtl1766335348.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/sejelk1770217582.jpg"
+  },
+  "kkvaratskhelia": {
+    "id": "34178205",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/n4iv5t1766335312.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/l1gq7e1770217076.jpg"
+  },
+  "fabianruiz": {
+    "id": "34163617",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/wq4dxd1766335227.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/5wv1ys1786386239.jpg"
+  },
+  "odembele": {
+    "id": "34146208",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/1q8v7z1715491823.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/n5804m1548096753.jpg"
+  },
+  "ddoue": {
+    "id": "34170508",
+    "cutout": null,
+    "thumb": null
+  },
+  "vitinha": {
+    "id": "34173911",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/q6mw6n1766335544.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/a0b12b1770218109.jpg"
+  },
+  "nunomendes": {
+    "id": "34178483",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/zhdk3h1766335452.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/ocycug1770217690.jpg"
+  },
+  "wzaireemery": {
+    "id": "34202661",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/fjxbac1766335583.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/6mbhc51778818488.jpg"
+  },
+  "msafonov": {
+    "id": "34178661",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/j9y7db1766335525.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/6u5q2q1718383125.jpg"
+  },
+  "wpacho": {
+    "id": "34170608",
+    "cutout": null,
+    "thumb": null
+  },
+  "joaoneves": {
+    "id": "34217442",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/2q9ahn1766335473.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/463f8a1770217760.jpg"
   }
 }
