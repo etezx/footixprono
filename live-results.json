@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-20T15:31:48Z",
+  "generatedAt": "2026-09-20T15:41:13Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:31:48Z",
+      "updatedAt": "2026-09-20T15:41:13Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:31:48Z",
+      "updatedAt": "2026-09-20T15:41:13Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,7 +1032,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:31:48Z",
+      "updatedAt": "2026-09-20T15:41:13Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1053,7 +1053,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:31:48Z",
+      "updatedAt": "2026-09-20T15:41:13Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1075,7 +1075,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:31:48Z",
+      "updatedAt": "2026-09-20T15:41:13Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -1097,7 +1097,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:31:48Z",
+      "updatedAt": "2026-09-20T15:41:13Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -1120,7 +1120,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T15:31:48Z",
+      "updatedAt": "2026-09-20T15:41:13Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1142,13 +1142,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-09-20T15:31:48Z",
-      "minute": 15,
-      "homeScore": 0,
+      "updatedAt": "2026-09-20T15:41:13Z",
+      "minute": 25,
+      "homeScore": 1,
       "awayScore": 0,
-      "actualScorers": [],
+      "actualScorers": [
+        "N. Ngoy"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210479,
@@ -1160,7 +1162,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-20T15:31:48Z"
+      "updatedAt": "2026-09-20T15:41:13Z"
     }
   ]
 }
