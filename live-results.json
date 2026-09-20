@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-20T13:01:46Z",
+  "generatedAt": "2026-09-20T13:11:08Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T13:01:46Z",
+      "updatedAt": "2026-09-20T13:11:08Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T13:01:46Z",
+      "updatedAt": "2026-09-20T13:11:08Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,7 +1032,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T13:01:46Z",
+      "updatedAt": "2026-09-20T13:11:08Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1053,7 +1053,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T13:01:46Z",
+      "updatedAt": "2026-09-20T13:11:08Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1075,7 +1075,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T13:01:46Z",
+      "updatedAt": "2026-09-20T13:11:08Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -1097,7 +1097,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-20T13:01:46Z",
+      "updatedAt": "2026-09-20T13:11:08Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -1115,12 +1115,18 @@
       "leagueId": 6,
       "home": "Auxerre",
       "away": "Stade Brestois",
-      "kickoff": "2026-09-20T13:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-09-20T13:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-09-20T13:01:46Z"
+      "period": "1st_half",
+      "updatedAt": "2026-09-20T13:11:08Z",
+      "minute": 9,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210477,
@@ -1132,7 +1138,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-20T13:01:46Z"
+      "updatedAt": "2026-09-20T13:11:08Z"
     },
     {
       "eventId": 210479,
@@ -1144,7 +1150,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-20T13:01:46Z"
+      "updatedAt": "2026-09-20T13:11:08Z"
     }
   ]
 }

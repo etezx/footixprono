@@ -783,7 +783,7 @@
           "eventId": 210474,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T13:01:46Z",
+          "lastLiveUpdate": "2026-09-20T13:11:08Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 0,
@@ -804,9 +804,15 @@
           "source": "bsd",
           "completed": false,
           "eventId": 210475,
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-09-20T13:01:46Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-09-20T13:11:08Z",
+          "minute": 9,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -821,7 +827,7 @@
           "eventId": 210476,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T13:01:46Z",
+          "lastLiveUpdate": "2026-09-20T13:11:08Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -845,7 +851,7 @@
           "eventId": 210478,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T13:01:46Z",
+          "lastLiveUpdate": "2026-09-20T13:11:08Z",
           "period": "FT",
           "homeScore": 4,
           "awayScore": 0,
@@ -869,7 +875,7 @@
           "eventId": 210479,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T13:01:46Z"
+          "lastLiveUpdate": "2026-09-20T13:11:08Z"
         }
       ],
       [
@@ -884,7 +890,7 @@
           "eventId": 210473,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T13:01:46Z",
+          "lastLiveUpdate": "2026-09-20T13:11:08Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -908,7 +914,7 @@
           "eventId": 210477,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T13:01:46Z"
+          "lastLiveUpdate": "2026-09-20T13:11:08Z"
         }
       ],
       [
@@ -923,7 +929,7 @@
           "eventId": 210480,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T13:01:46Z",
+          "lastLiveUpdate": "2026-09-20T13:11:08Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -947,7 +953,7 @@
           "eventId": 210481,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-09-20T13:01:46Z",
+          "lastLiveUpdate": "2026-09-20T13:11:08Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 2,
