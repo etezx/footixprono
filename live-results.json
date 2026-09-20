@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-09-19T21:01:33Z",
+  "generatedAt": "2026-09-20T12:21:11Z",
   "events": [
     {
       "eventId": 210448,
@@ -988,7 +988,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T21:01:33Z",
+      "updatedAt": "2026-09-20T12:21:11Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1010,7 +1010,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T21:01:33Z",
+      "updatedAt": "2026-09-20T12:21:11Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1032,7 +1032,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T21:01:33Z",
+      "updatedAt": "2026-09-20T12:21:11Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1053,7 +1053,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T21:01:33Z",
+      "updatedAt": "2026-09-20T12:21:11Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1066,6 +1066,28 @@
       "goalIncidents": 3
     },
     {
+      "eventId": 210478,
+      "leagueId": 6,
+      "home": "Olympique Lyonnais",
+      "away": "Stade Rennais",
+      "kickoff": "2026-09-19T18:45:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-09-20T12:21:11Z",
+      "minute": null,
+      "homeScore": 4,
+      "awayScore": 0,
+      "actualScorers": [
+        "C. Tolisso",
+        "Z. Athekame",
+        "E. Nuamah"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 4
+    },
+    {
       "eventId": 210481,
       "leagueId": 6,
       "home": "Toulouse",
@@ -1075,7 +1097,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-09-19T21:01:33Z",
+      "updatedAt": "2026-09-20T12:21:11Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -1089,28 +1111,6 @@
       "goalIncidents": 5
     },
     {
-      "eventId": 210478,
-      "leagueId": 6,
-      "home": "Olympique Lyonnais",
-      "away": "Stade Rennais",
-      "kickoff": "2026-09-19T18:45:00Z",
-      "status": "finished",
-      "live": false,
-      "completed": true,
-      "period": "FT",
-      "updatedAt": "2026-09-19T21:01:33Z",
-      "minute": null,
-      "homeScore": 4,
-      "awayScore": 0,
-      "actualScorers": [
-        "C. Tolisso",
-        "Z. Athekame",
-        "E. Nuamah"
-      ],
-      "scorersVerified": true,
-      "goalIncidents": 4
-    },
-    {
       "eventId": 210475,
       "leagueId": 6,
       "home": "Auxerre",
@@ -1120,7 +1120,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T21:01:33Z"
+      "updatedAt": "2026-09-20T12:21:11Z"
     },
     {
       "eventId": 210477,
@@ -1132,7 +1132,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T21:01:33Z"
+      "updatedAt": "2026-09-20T12:21:11Z"
     },
     {
       "eventId": 210479,
@@ -1144,7 +1144,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-09-19T21:01:33Z"
+      "updatedAt": "2026-09-20T12:21:11Z"
     }
   ]
 }
