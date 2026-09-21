@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T10:03:23.075031+00:00",
+  "updated_at": "2026-09-21T11:03:01.492649+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -175,7 +175,6 @@
       "Eros Maddy",
       "Kévin Danois",
       "Lamfia Dioubaté",
-      "Mamadou Diop",
       "Naouirou Ahamada",
       "Pierre Ekwah",
       "Remy Labeau Lascary",
@@ -327,5 +326,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 287
+  "players_fetched": 286
 }
