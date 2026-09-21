@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T22:40:02.213724+00:00",
+  "updated_at": "2026-09-21T05:22:40.447015+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -39,22 +39,10 @@
       "source": "Le Parisien"
     },
     {
-      "title": "Mercato : le défenseur Alidu Seidu prêté à Nice par Rennes jusqu’à la fin de la saison - Le Figaro",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPQUEzV0FrazBhYktuUFdQNGxFZGNMNmRUTnFrMEJ2TjQ1V05KU1NCU2xtSk52TXJZTF9zVEFWOG1lZHFfaWJEMldURUQ2anVwUWxxVDZHMnpQYmI2WUI2SUJFalIzTXRFd1lwdkRXaVJOcFdFQ0ZTeUhRMG1kclh5VC1LT2RtV3o5NW5RbWFLVGNFWlBhVkd2eTNEOGhYbklHYVlYRm14dF9KRUVIWGx6dUl2LVVqeTUtNE5MWFpkSnBrNVY0YVd4RHFVeGZzcEhYeXRpUVFRbVlfZjBW?oc=5",
-      "published": "2026-09-18T17:17:48+00:00",
-      "source": "Le Figaro"
-    },
-    {
       "title": "Ligue 1 : l’OL s’offre un récital contre Rennes et monte sur le podium, premier succès pour Toulouse et Le Mans - Foot Mercato",
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTVBfMHBoOHdvbE84VWVQVm5qRUcwejhMZURuTG1UMVBBT3VDNmJkODBvX0ZSOGFHQ3E0V2l6azFIX0k2Y0VxU0hfVnI0MTMwai1PRVRQZGowS0xrNTd5eFBxSGs2NjZsbnRKbVZSQUFIMmx0dGR2bjRKVWQ2aFdFdWdlc0lFd2hGTGl5Y1RMLWhDMzkzeVBpXzc2WjdxNlYxSTRraEpMcUNEU2MtZHo5Zjh2dzhTdmZKMUZCQTZCUnBFZExIRzBEdXdSYzRRN2Z3bE10QzUySjI5cl9yeUFhMFFvNXVHa3pQQlRF?oc=5",
       "published": "2026-09-19T20:51:44+00:00",
       "source": "Foot Mercato"
-    },
-    {
-      "title": "Mercato : le PSG prête Ornella Graziani à la Juventus Turin - L'Équipe",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcUJsenpOYWMyTmJrQXczZnRWMEE1RzBGeEdtRDBZOFFmeUR0UUhjZE5VUGx6bTVBUXZkMjk1YlloMGplQkhtSDBILW50MENCRHdzQURlYk5qNHF1TUFrWEFEaTJtQmRjNjFZSDdLYURMNHN4VTNmU2tMUkxCNEFVRDNtVTJkWlc2N19YOG5heTRJYUpaaVFLZXBMdl9RUDhhSkEwTUhsTUJFLVNY?oc=5",
-      "published": "2026-09-17T17:06:40+00:00",
-      "source": "L'Équipe"
     },
     {
       "title": "Ligue 1 - TFC - Le Havre AC : les compos probables - MadeInFOOT",
@@ -63,15 +51,27 @@
       "source": "MadeInFOOT"
     },
     {
+      "title": "Les 4 infos mercato de vendredi - Eurosport",
+      "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPVjlIU1Q0d1dYR2N5eVpSWEd0OVRLUmxuUVh2YXdjMEtUMzBqemxBeXdkbUc2U0hjd1NQMkliX0p6RzZGWWF2clFwUkxiMDZ0bm9vOWVEekpTTEluR2t3RTlWSXI3b0RZd0I4MGxGbjhoVk1aX1ZnTkpXMERGZEpYVS1hMG1ESld5LWxXUm4zd2JmRlVKclNlWG9rQkMwM0U4R29WdWdNNHlDXzV2czRSY2MtVHRGbENBM2FFTTJwUVl6aXFNdW5tc09xcTl1R3dvS24yNUJBY2VvcTlkY1ZmSWp6V0swVFN5X0hLV3I4TkNIZ0l6U1ZQSkFSd1ktX0VkTzZ0ZnYySDR3MEJtcEgtMy1xUzNIOFgtby1ZcG9FX0o?oc=5",
+      "published": "2026-09-18T07:32:00+00:00",
+      "source": "Eurosport"
+    },
+    {
+      "title": "Mercato : le PSG prête Ornella Graziani à la Juventus Turin - L'Équipe",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcUJsenpOYWMyTmJrQXczZnRWMEE1RzBGeEdtRDBZOFFmeUR0UUhjZE5VUGx6bTVBUXZkMjk1YlloMGplQkhtSDBILW50MENCRHdzQURlYk5qNHF1TUFrWEFEaTJtQmRjNjFZSDdLYURMNHN4VTNmU2tMUkxCNEFVRDNtVTJkWlc2N19YOG5heTRJYUpaaVFLZXBMdl9RUDhhSkEwTUhsTUJFLVNY?oc=5",
+      "published": "2026-09-17T17:06:40+00:00",
+      "source": "L'Équipe"
+    },
+    {
       "title": "Dernier de Ligue 1, l’OGC Nice est en plein doute ! - Foot Mercato",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTFBVODVqblo3cDBZanZLRWNCMTNheXRQTFlwVXFLQ3EzQVNtaTYwZmFqNmI0YUJzVlNTRWVGN2hnTzF2R1V5ZEFxeGQ1bVJzUFZBbUUzcmNwMnNTbFhvanFGLVVDZTNaY1ZlLW9fTDQyclEtdmhwM3Fad1NHVmRqZmtwUUkwazNQSjNubG9yeUtKT1FhaVFqeFZ5alk?oc=5",
       "published": "2026-09-14T10:39:02+00:00",
       "source": "Foot Mercato"
     },
     {
-      "title": "Mercato OM - La sortie très inquiétante de Bruno Genesio sur son avenir après la défaite face au PSG - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxObXQ2SmNUYzNOUG40MVhUTF9RMms1UHpSNHhHNmFDSGpEUmx2MDlqM0FKYTIta3QxMGN5SWh3eXlOUW9IdWFYajdzNHpPTGx0YnBORWtUU1VKNDBoUE81UDgwRWZIOVBxUElKNGZKNFBvVGNNLWZxZHlBUWdfZ0xvU3FpMHIwd21SWDZTdjBmLUlhbGg5TmhzOUtMQ2RteFlvcjk1R3lzRnNLaUtBM2hUU29nTGNYRk9HdVVZN0o5enZKVmxfNlYwOHFQRXg4T3JqMnhKNHRJalhWNnByVmk3ajhjMzNIZl9EaFNIeUcyMG8?oc=5",
-      "published": "2026-09-20T21:30:00+00:00",
+      "title": "Ligue 1 - PSG - Stade Rennais au Parc des Princes : le club breton saisit le CNOSF ! - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb3Zpd1ltZ3psS2g2RmtCVHpGdlk3dlZtTWo0Vlo1MU5zU0thNEllaFhhOFdKcGtaSmhfcWxFLW5pNVZxS2pVR2h5NThNd0piMHh0enBZb1MxVUMzTmFZYXJFaHpkdmptbmRsUnJ6bnZ6OXVMWlhWNGxjc014OXp6NHRJbXphTXNfdlVlSnhpZmRVSXlrbjY5aVNMZzN5bFR1MVM5VFhBVzFCSE90ZHkxYjJ5eWhiVTBPLWktT2c4WGhFekhMQ2Jaa0VYWndtT3IzRUtN?oc=5",
+      "published": "2026-09-15T17:30:00+00:00",
       "source": "MadeInFOOT"
     }
   ]
