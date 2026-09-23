@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T18:34:35.305680+00:00",
+  "updated_at": "2026-09-23T21:44:24.943871+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -27,10 +27,16 @@
       "source": "La Tribune"
     },
     {
-      "title": "Ligue 1 - L'équipe-type de la 5ème journée de L1 - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSTZJdlpYbEF0TkVJY0RHQVV0RS1FNUM3ek93aklzTDRaYUs0RmlzakNXMUU1OHJjUmVSOGRaQkRKZjk0VUpwTlFiZ3VLS1cwMnFKYkltMGNMSnJRZjRzUmVsOU4wQmlhZi05QXBhdzhTSG85YmhrWUxuVTNobzhsSlVpZjBfRmhwQjhxYW1vNkt6SV9ZV1EwQWtsbWpLbzJHVFZHZHdjaVRyWXc?oc=5",
-      "published": "2026-09-21T13:01:00+00:00",
-      "source": "MadeInFOOT"
+      "title": "Ligue 1 - L'OL sur le podium, l'OM hors de l'Europe, l'OGC Nice barragiste... les projections sur le classement final de L1 - madeingones.ouest-france.fr",
+      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPZFc4VkdVb2E0eEVnYzFyVUcyS3VBNUxsWXlHd09MNHc0eTZqR0IyemVnUno1Wk8yMGRZUnN3MXBySU9nZXNuRFk0MG9GSUZpYnYzM2xaQ1A3alozUDhFOUdwcXVjUjNZTzEzQ0xJQ1FBUkk2R3JuWS02Q0w2MEVkdUFLaHE0aWhBS2h3MVgtekZlUDJUdEY1X0tnMlAyNWk2OFVBaXhaLUpncWlzb2xoZE1yTDIwNmJYcl9tdjlkNnEtWTZ5LWoxUmJPbGNQQjFNZFRmdTJYRVVNdjJnRnRIVWs3RlpsdUtQNlVYTFlIVk1DMXJ5Qy1jQW1kRnNQVnZvZjB3a1hUV25OUQ?oc=5",
+      "published": "2026-09-21T12:43:00+00:00",
+      "source": "madeingones.ouest-france.fr"
+    },
+    {
+      "title": "Mercato OM : snobé par Genesio, l’espoir offensif Antoine Valero plaît à une top équipe de Ligue 1 - TOP Mercato",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTG1kTnFlZHJYWmF5TlhmbS1tS01QWEl4RVdoUi1qS3BFRzFxQngxMUhoS0VQX1Rmalkyc0RjS0NTQ2RIeS15cTJFSkI5RTE0RXFBbEdQQWx6NHo0N3R0LVR4NGJYX3hUVUFjU1dPWnYwclFTbHVDVV9GSzRCbm1ialhTYWwyN2hJczJlSXJ0eGFib0xXTk55Mm96R1c5VE13ZlFzcDdBdXBDcjUyMWswSlE3a0R1N0ZTV0NDYlZ5bUFpR1pjc1F4Nk5n?oc=5",
+      "published": "2026-09-23T20:03:00+00:00",
+      "source": "TOP Mercato"
     },
     {
       "title": "Mercato : le Rennais Alidu Seidu débarque à Nice - Le Parisien",
@@ -45,16 +51,16 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Raphinha, Juve, Kroupi : les 5 infos mercato du week-end - Eurosport",
+      "title": "Transferts | Barça, Raphinha, Juve, Kroupi... les 5 infos mercato du week-end - Eurosport",
       "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNdTFlWWowVUpZSy1yMy1ENkVCTWJOZEtCQUtWYlNycUlLN19raWszbjV3cFdYODd6SGdjSmpkWnBzVmU1Wm9hTmEyOWwzc0VaVVRYZ0w2cFlBaUdPcDR2UTdaSTVzVHoxbVY1LVg0QnFoN2gxWW1fTmZEekxOdGJmaDdaZ21yczZlOEQwRzR4a1ZWVy1wSXBWeWtuV2JXeWc2aHROOU5TRngyNWFLeE5OVFRvdEFhc1NUV1RaR0RNZFFESUJySUc2SFFXeGt3RnlrSEVUVWJkdXRCUHk0Y2dsZ2pzLWZvdw?oc=5",
-      "published": "2026-09-18T17:27:17+00:00",
+      "published": "2026-09-20T07:19:00+00:00",
       "source": "Eurosport"
     },
     {
-      "title": "Ligue 1 - L'OL sur le podium, l'OM hors de l'Europe, l'OGC Nice barragiste... les projections sur le classement final de L1 - MadeInGones",
-      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPZFc4VkdVb2E0eEVnYzFyVUcyS3VBNUxsWXlHd09MNHc0eTZqR0IyemVnUno1Wk8yMGRZUnN3MXBySU9nZXNuRFk0MG9GSUZpYnYzM2xaQ1A3alozUDhFOUdwcXVjUjNZTzEzQ0xJQ1FBUkk2R3JuWS02Q0w2MEVkdUFLaHE0aWhBS2h3MVgtekZlUDJUdEY1X0tnMlAyNWk2OFVBaXhaLUpncWlzb2xoZE1yTDIwNmJYcl9tdjlkNnEtWTZ5LWoxUmJPbGNQQjFNZFRmdTJYRVVNdjJnRnRIVWs3RlpsdUtQNlVYTFlIVk1DMXJ5Qy1jQW1kRnNQVnZvZjB3a1hUV25OUQ?oc=5",
-      "published": "2026-09-21T12:43:00+00:00",
-      "source": "MadeInGones"
+      "title": "Ligue 1 - L'équipe-type de la 5ème journée de L1 - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSTZJdlpYbEF0TkVJY0RHQVV0RS1FNUM3ek93aklzTDRaYUs0RmlzakNXMUU1OHJjUmVSOGRaQkRKZjk0VUpwTlFiZ3VLS1cwMnFKYkltMGNMSnJRZjRzUmVsOU4wQmlhZi05QXBhdzhTSG85YmhrWUxuVTNobzhsSlVpZjBfRmhwQjhxYW1vNkt6SV9ZV1EwQWtsbWpLbzJHVFZHZHdjaVRyWXc?oc=5",
+      "published": "2026-09-21T13:01:00+00:00",
+      "source": "MadeInFOOT"
     },
     {
       "title": "Ligue 1 : Monaco enfonce Lens et reprend provisoirement la tête du championnat - Foot Mercato",
@@ -67,12 +73,6 @@
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPa3g3TnhqUnp5NkxqQndNdGF5R04wVmZaNy1UYnBQSDN4VGtOTGE2M3Q5M0M2UnNoNFVKQzlfVE5kYmJGN2FSdnJCRUJuV3JUdk9OWGtfUkpHem5pTEtkUTRnbWVSWFJkajVpeFludko2TUszNFFRZmRTalNKa25fazU1TkVDRTBDUG52bDhBeFIyakhfX25mVnFxWEhQeHBVQ1dUUWdQWWF2TnlsSy1ZcnVkSkJlVmY3VXloNmlBTkRta2Y1aHltY25LYmQwc2hOUElvd0Z5cGtWcmJOQnk3WS1lZDE?oc=5",
       "published": "2026-09-22T07:27:00+00:00",
       "source": "Eurosport"
-    },
-    {
-      "title": "Ligue 1 - Les cotes et pronostics de OM - PSG : notre analyse complète - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZGNkamVHWGIzLXJ3OVdjakd6NFQxZGlYZFFCWTRuN3JPbjU1TXdheU5EYWRBeXZjdUdOSDIwNWQ4RURpUzdjZUk0SnM2TURzWWxNZ2F2SEVBTjMxaWVqdDVpRHdTZExvZWdkZldZUTNPOFRsaU9wTE1IQWlUVDBpVEhoSWZncHViVmt1VjZPNVBWMV9IQndJUUpkRVNOTUdJWXpNakpnUDF4N1IyeEFUYmRUSTUwMnNEZEwyMDRNdTVzWjQ?oc=5",
-      "published": "2026-09-19T12:20:00+00:00",
-      "source": "MadeInFOOT"
     }
   ]
 }
