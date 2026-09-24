@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T10:15:04.926557+00:00",
+  "updated_at": "2026-09-24T10:28:02.502429+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -135,7 +135,6 @@
       "William Harhouz"
     ],
     "STADE BRESTOIS 29": [
-      "Djylian N'Guessan",
       "Enzo Monchatre",
       "Giovani Versini",
       "Hugo Magnetti",
@@ -326,5 +325,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 286
+  "players_fetched": 285
 }
