@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T10:30:26.309994+00:00",
+  "updated_at": "2026-09-26T10:10:48.982757+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -31,6 +31,7 @@
       "Giovanni Reyna",
       "Jacobo Ortega Conde",
       "Joaquín Panichelli",
+      "Kingsley Olufade",
       "Martial Godo",
       "Maximillian Oyedele",
       "Omari Kellyman",
@@ -325,5 +326,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 285
+  "players_fetched": 286
 }
