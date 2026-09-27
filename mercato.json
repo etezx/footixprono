@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T18:37:35.500043+00:00",
+  "updated_at": "2026-09-27T23:21:47.759520+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -27,10 +27,16 @@
       "source": "Score.fr"
     },
     {
-      "title": "Transferts | Barça, Juve, Mesloub, Manchester United, Mastantuono et Naples : les 4 infos mercato de lundi - Eurosport",
+      "title": "Transferts | Barça, Juve, Mesloub, Manchester United, Mastantuono et Naples : les 4 infos mercato de lundi - eurosport.fr",
       "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxORXc1OUNLZHZ3TzExZEppWjBOQ1dhdkhPQWZNY1JVaHdYRnRfRDRmQTVMRnc4T2dLUl83WGlvbHJnMFNyVjFMSFRkRWVEbG53VDZidzI0MVdZSEdrOVVUcXEzZVlsekdraTRiZnFzdmo1MlZUbzVUcjhfeDZNYVB4d3VXNUVnTVEtTmVuOW5xZjlEb2hmUlpBdnpLZzlNZ3JadU1jYnRYdVZhN3QwQl81VXVGcklRWUw3eGlCaWlsWmZnbko5em5nd1hzRTRTZjQ4VTZyWFRlV3Q3eVh5Y3pJdEZBa0t3UXdCaVNnUDVtWkJMTVhjNWhuVmcyMmRJUDNKbGo4LWFNX1Q?oc=5",
       "published": "2026-09-21T08:50:00+00:00",
-      "source": "Eurosport"
+      "source": "eurosport.fr"
+    },
+    {
+      "title": "Ligue 1 - L'équipe-type de la 5ème journée de L1 - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSTZJdlpYbEF0TkVJY0RHQVV0RS1FNUM3ek93aklzTDRaYUs0RmlzakNXMUU1OHJjUmVSOGRaQkRKZjk0VUpwTlFiZ3VLS1cwMnFKYkltMGNMSnJRZjRzUmVsOU4wQmlhZi05QXBhdzhTSG85YmhrWUxuVTNobzhsSlVpZjBfRmhwQjhxYW1vNkt6SV9ZV1EwQWtsbWpLbzJHVFZHZHdjaVRyWXc?oc=5",
+      "published": "2026-09-21T13:01:00+00:00",
+      "source": "MadeInFOOT"
     },
     {
       "title": "Hatem Ben Arfa, l’incroyable retour en Ligue 1 ? - Sports.fr",
@@ -45,33 +51,27 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Ligue 1 - Les stats marquantes de la 5ème journée de L1 - madeinfoot.ouest-france.fr",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQc1RDcF9IemljOF8zaERxWlBCUU0wMUJDYm5OSXc0N2tWOGFuRDM5R01mNXZiTFUyVURUaXNBTGw5UGU5LTdWdEhpLVZvWmxUYUVFWVozWFUtVENIZWdjdTRaWWctNXVVdWQ5LVJybzU5TTZVYkYzTVc5VlJEUDdUMnJ6dnJPWDd3WjJPMmZuR2RTandIRG9tMDRUaU53alVSTjQxN2VXcm51WnJjNU1wcGZYVmY?oc=5",
-      "published": "2026-09-21T11:30:00+00:00",
-      "source": "madeinfoot.ouest-france.fr"
-    },
-    {
-      "title": "Mercato : L'OGC Nice a tenté de recruter Hatem Ben Arfa - les-transferts.com",
+      "title": "Mercato : L'OGC Nice a tenté de recruter Hatem Ben Arfa - Les Transferts",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZnQtbFlEMnNvZ2VFaG5HREN5LS1KUVYzeUlrSnFqZkVYc2tpakpEb2dkMmg0SHYxNHdGNkdmeG5BRU4tSTJQVHhyZnV3dUwwZm5kdGFsMllPMUFTUmtCcGR6WlFyQWkzejZxeF84S281OUhiQjNqVGU1VHphTG9pZUpmS3Q5WmdvbDlrUDBHbmwwbFBKdHktQUlFSDgtcVJlTXR2UlFlX0pWMmlPbDlwbWtEWQ?oc=5",
       "published": "2026-09-25T02:25:48+00:00",
-      "source": "les-transferts.com"
+      "source": "Les Transferts"
     },
     {
-      "title": "Le chiffre est vertigineux : ce transfert bat un record historique en Ligue 1 Mobilis - La Gazette du Fennec",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZUlHVThnMUpDa2RESTRNdnNDTjEyRnBSVGwxMUxJMFpuMElVUm9rQ1NqRko0bkdCdFlzYlRIN0pCYzl0d3Rzdm1URnRpNGdBODZHdE13QnZJblM0MmdCaUxXcWtybU5PN1BETXFLNDktNUQ1b0hzQTd0bUI5U1JTWEFxU1BsTUVKNjljZDdkRGU2WGp0ekRBRF80ODFXcFR0TFBuTTBQaEhQNnNuTTlFWUlqTkE?oc=5",
-      "published": "2026-09-22T09:47:16+00:00",
-      "source": "La Gazette du Fennec"
-    },
-    {
-      "title": "La Roma fixe un (sacré) prix pour Manu Koné : les 5 infos mercato du week-end - Eurosport",
+      "title": "La Roma fixe un (sacré) prix pour Manu Koné : les 5 infos mercato du week-end - eurosport.fr",
       "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQTkpFT184NTgxMW0wM0tKbk8zcktLWGVzenB5c292aXBMQWxfTG5wOG90ek1SSTFBVzVMblV2ZTgwdTdyV1VoZEp5TFhoQk1jSUw1SjVHeHAzbi1PVFdUNkFOLWFlSEJZWDNHdG5kNTkxa0Etc2VFdXgtSXhfUTlfd0lvX1NuRjRNNTgyUlpLZU9TTnFQVHZKSW5iQmp5MFJPdnlrdVQzYjhfcXNMRW9wcFNnY1ExVTRtaDg3RGhNakhDakFZTXVYVG14NFRiZ1JxVHhXSmFjakIySG8wNXM5TElhVGxUSTh0eElsNHdn?oc=5",
-      "published": "2026-09-27T07:01:00+00:00",
-      "source": "Eurosport"
+      "published": "2026-09-27T07:03:00+00:00",
+      "source": "eurosport.fr"
     },
     {
-      "title": "Mercato : le PSG avance ses pions pour JJ Gabriel - Foot Mercato",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRXd6T1JYckZ6MHlqUjRIT0UzN3RUbnVuSENGTkF0VDVQT180WDhqVTFST3dZRXlOQUswRXBXajZQZ3ZOdHRseURSSUJDZnFETUNqQm96eVJvVmt3b2dzNmNSUEZIMGxub3Y2R2FIem9VX1doaXlfV29NV0xLaWpCMzRESWhKeFdfRWZnSzVreHNwMmZ0UEFWdU82TFg?oc=5",
-      "published": "2026-09-27T11:36:54+00:00",
+      "title": "Mercato - Adrien Rabiot se rapproche d'une prolongation XXL avec l'AC Milan - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPN2dmemUzREhDbUJhYmRqdW9RWFV2X1JYNTVScnNoMW5JYWQ4OTZwdkdXTng5WEJ6OG03WEEyR25kZEJ6WldDSS15YUR2WGZndWpLOFkyMEFIOWhfVDFVbU11RjNlazNRVXB5cjZhTnpYcnJMaEVjMkdjNVZGZmtLbzgyRXhxRHAzTHNLME1LMHdDX296Q1JBR0NZS1ZudzB0SVpIQ3RSN0JTMmVTQW9BTEIxT1NVemh6dWRDbkE1YVU1QTFGRGJMWGxubG5XUUE?oc=5",
+      "published": "2026-09-24T08:32:00+00:00",
+      "source": "MadeInFOOT"
+    },
+    {
+      "title": "AS Monaco : l’agent d’Aleksandr Golovin revient sur son transfert avorté - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSnFOZGpCd0Q5S0FBOFlaYklLRFg4ZXZQcy1rSmp4Wml0TlJWWHdpNDRra3hmYmJKdE14Z2ZocWFGSEFCUVQ2Z0VLc01kTFRVd0NZQ0dkNmJWYWdkMllHMlJtV2k5WmExNFI4dXIxd2JiOHFkSEhuY1VKeFVjcnVDb2tiZUZZUVAzOHF5REY4VUk5RE1vbmg3dWZUWFROSi1jRll2REdUYXN2R25PeFRDZldfVGduOUNC?oc=5",
+      "published": "2026-09-24T13:01:22+00:00",
       "source": "Foot Mercato"
     }
   ]
