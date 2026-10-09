@@ -1000,8 +1000,12 @@
           "date": "2026-10-10",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210488,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-09T18:00:49Z"
         }
       ],
       [
@@ -1011,8 +1015,12 @@
           "date": "2026-10-09",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210487,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-09T18:00:49Z"
         }
       ],
       [
@@ -1022,8 +1030,12 @@
           "date": "2026-10-10",
           "time": "17:15",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210483,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-09T18:00:49Z"
         }
       ],
       [
@@ -1033,8 +1045,12 @@
           "date": "2026-10-10",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210484,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-09T18:00:49Z"
         }
       ],
       [
@@ -1044,8 +1060,12 @@
           "date": "2026-10-10",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210482,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-09T18:00:49Z"
         }
       ],
       [
@@ -1055,8 +1075,12 @@
           "date": "2026-10-11",
           "time": "15:00",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210485,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-09T18:00:49Z"
         }
       ],
       [
@@ -1066,13 +1090,25 @@
           "date": "2026-10-10",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210486,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-09T18:00:49Z"
         }
       ],
       [
         "STADE RENNAIS FC",
-        "AJ AUXERRE"
+        "AJ AUXERRE",
+        {
+          "source": "bsd",
+          "eventId": 210489,
+          "status": "notstarted",
+          "live": false,
+          "completed": false,
+          "lastLiveUpdate": "2026-10-09T18:00:49Z"
+        }
       ],
       [
         "ESTAC TROYES",
@@ -1081,8 +1117,12 @@
           "date": "2026-10-11",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210490,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-09T18:00:49Z"
         }
       ]
     ]
