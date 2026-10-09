@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T16:12:08.936997+00:00",
+  "updated_at": "2026-10-09T20:54:05.680473+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -17,12 +17,12 @@
     {
       "club": "Lyon",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
-      "p": 5,
+      "p": 6,
       "w": 3,
       "d": 2,
-      "l": 0,
-      "gf": 10,
-      "ga": 2,
+      "l": 1,
+      "gf": 11,
+      "ga": 4,
       "pts": 11,
       "last5": []
     },
@@ -72,6 +72,18 @@
       "gf": 8,
       "ga": 7,
       "pts": 8,
+      "last5": []
+    },
+    {
+      "club": "Lens",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+      "p": 6,
+      "w": 2,
+      "d": 1,
+      "l": 3,
+      "gf": 11,
+      "ga": 10,
+      "pts": 7,
       "last5": []
     },
     {
@@ -168,18 +180,6 @@
       "gf": 3,
       "ga": 6,
       "pts": 5,
-      "last5": []
-    },
-    {
-      "club": "Lens",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
-      "p": 5,
-      "w": 1,
-      "d": 1,
-      "l": 3,
-      "gf": 9,
-      "ga": 9,
-      "pts": 4,
       "last5": []
     },
     {
