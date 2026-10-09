@@ -1005,7 +1005,7 @@
           "eventId": 210488,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T19:20:30Z"
+          "lastLiveUpdate": "2026-10-09T19:31:34Z"
         }
       ],
       [
@@ -1020,12 +1020,14 @@
           "eventId": 210487,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-09T19:20:30Z",
-          "minute": 34,
+          "lastLiveUpdate": "2026-10-09T19:31:34Z",
+          "minute": 45,
           "period": "1st_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 0,
-          "actualScorers": [],
+          "actualScorers": [
+            "F. Sotoca"
+          ],
           "scorersVerified": true
         }
       ],
@@ -1041,7 +1043,7 @@
           "eventId": 210483,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T19:20:30Z"
+          "lastLiveUpdate": "2026-10-09T19:31:34Z"
         }
       ],
       [
@@ -1056,7 +1058,7 @@
           "eventId": 210484,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T19:20:30Z"
+          "lastLiveUpdate": "2026-10-09T19:31:34Z"
         }
       ],
       [
@@ -1071,7 +1073,7 @@
           "eventId": 210482,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T19:20:30Z"
+          "lastLiveUpdate": "2026-10-09T19:31:34Z"
         }
       ],
       [
@@ -1086,7 +1088,7 @@
           "eventId": 210485,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T19:20:30Z"
+          "lastLiveUpdate": "2026-10-09T19:31:34Z"
         }
       ],
       [
@@ -1101,7 +1103,7 @@
           "eventId": 210486,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T19:20:30Z"
+          "lastLiveUpdate": "2026-10-09T19:31:34Z"
         }
       ],
       [
@@ -1113,7 +1115,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-09T19:20:30Z"
+          "lastLiveUpdate": "2026-10-09T19:31:34Z"
         }
       ],
       [
@@ -1128,7 +1130,7 @@
           "eventId": 210490,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T19:20:30Z"
+          "lastLiveUpdate": "2026-10-09T19:31:34Z"
         }
       ]
     ]
