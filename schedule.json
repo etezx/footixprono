@@ -1005,7 +1005,7 @@
           "eventId": 210488,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T20:20:40Z"
+          "lastLiveUpdate": "2026-10-09T20:31:07Z"
         }
       ],
       [
@@ -1020,12 +1020,14 @@
           "eventId": 210487,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-09T20:20:40Z",
-          "minute": 75,
+          "lastLiveUpdate": "2026-10-09T20:31:07Z",
+          "minute": 85,
           "period": "2nd_half",
-          "homeScore": 1,
-          "awayScore": 0,
+          "homeScore": 2,
+          "awayScore": 1,
           "actualScorers": [
+            "K. Merah",
+            "M. Udol",
             "F. Sotoca"
           ],
           "scorersVerified": true
@@ -1043,7 +1045,7 @@
           "eventId": 210483,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T20:20:40Z"
+          "lastLiveUpdate": "2026-10-09T20:31:07Z"
         }
       ],
       [
@@ -1058,7 +1060,7 @@
           "eventId": 210484,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T20:20:40Z"
+          "lastLiveUpdate": "2026-10-09T20:31:07Z"
         }
       ],
       [
@@ -1073,7 +1075,7 @@
           "eventId": 210482,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T20:20:40Z"
+          "lastLiveUpdate": "2026-10-09T20:31:07Z"
         }
       ],
       [
@@ -1088,7 +1090,7 @@
           "eventId": 210485,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T20:20:40Z"
+          "lastLiveUpdate": "2026-10-09T20:31:07Z"
         }
       ],
       [
@@ -1103,7 +1105,7 @@
           "eventId": 210486,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T20:20:40Z"
+          "lastLiveUpdate": "2026-10-09T20:31:07Z"
         }
       ],
       [
@@ -1115,7 +1117,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-09T20:20:40Z"
+          "lastLiveUpdate": "2026-10-09T20:31:07Z"
         }
       ],
       [
@@ -1130,7 +1132,7 @@
           "eventId": 210490,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-09T20:20:40Z"
+          "lastLiveUpdate": "2026-10-09T20:31:07Z"
         }
       ]
     ]
