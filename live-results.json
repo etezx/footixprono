@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-09T18:40:55Z",
+  "generatedAt": "2026-10-09T18:50:52Z",
   "events": [
     {
       "eventId": 210448,
@@ -1182,11 +1182,17 @@
       "home": "RC Lens",
       "away": "Olympique Lyonnais",
       "kickoff": "2026-10-09T18:45:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-09T18:40:55Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-09T18:50:52Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210483,
@@ -1198,7 +1204,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T18:40:55Z"
+      "updatedAt": "2026-10-09T18:50:52Z"
     },
     {
       "eventId": 210482,
@@ -1210,7 +1216,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T18:40:55Z"
+      "updatedAt": "2026-10-09T18:50:52Z"
     },
     {
       "eventId": 210484,
@@ -1222,7 +1228,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T18:40:55Z"
+      "updatedAt": "2026-10-09T18:50:52Z"
     },
     {
       "eventId": 210486,
@@ -1234,7 +1240,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T18:40:55Z"
+      "updatedAt": "2026-10-09T18:50:52Z"
     },
     {
       "eventId": 210488,
@@ -1246,7 +1252,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T18:40:55Z"
+      "updatedAt": "2026-10-09T18:50:52Z"
     },
     {
       "eventId": 210485,
@@ -1258,7 +1264,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T18:40:55Z"
+      "updatedAt": "2026-10-09T18:50:52Z"
     },
     {
       "eventId": 210489,
@@ -1270,7 +1276,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T18:40:55Z"
+      "updatedAt": "2026-10-09T18:50:52Z"
     },
     {
       "eventId": 210490,
@@ -1282,7 +1288,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T18:40:55Z"
+      "updatedAt": "2026-10-09T18:50:52Z"
     }
   ]
 }
