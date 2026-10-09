@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-09T19:40:29Z",
+  "generatedAt": "2026-10-09T19:50:33Z",
   "events": [
     {
       "eventId": 210448,
@@ -1185,8 +1185,8 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-09T19:40:29Z",
+      "period": "2nd_half",
+      "updatedAt": "2026-10-09T19:50:33Z",
       "minute": 45,
       "homeScore": 1,
       "awayScore": 0,
@@ -1206,7 +1206,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T19:40:29Z"
+      "updatedAt": "2026-10-09T19:50:33Z"
     },
     {
       "eventId": 210482,
@@ -1218,7 +1218,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T19:40:29Z"
+      "updatedAt": "2026-10-09T19:50:33Z"
     },
     {
       "eventId": 210484,
@@ -1230,7 +1230,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T19:40:29Z"
+      "updatedAt": "2026-10-09T19:50:33Z"
     },
     {
       "eventId": 210486,
@@ -1242,7 +1242,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T19:40:29Z"
+      "updatedAt": "2026-10-09T19:50:33Z"
     },
     {
       "eventId": 210488,
@@ -1254,7 +1254,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T19:40:29Z"
+      "updatedAt": "2026-10-09T19:50:33Z"
     },
     {
       "eventId": 210485,
@@ -1266,7 +1266,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T19:40:29Z"
+      "updatedAt": "2026-10-09T19:50:33Z"
     },
     {
       "eventId": 210489,
@@ -1278,7 +1278,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T19:40:29Z"
+      "updatedAt": "2026-10-09T19:50:33Z"
     },
     {
       "eventId": 210490,
@@ -1290,7 +1290,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-09T19:40:29Z"
+      "updatedAt": "2026-10-09T19:50:33Z"
     }
   ]
 }
