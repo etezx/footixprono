@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-10T19:00:47Z",
+  "generatedAt": "2026-10-10T19:10:57Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T19:00:47Z",
+      "updatedAt": "2026-10-10T19:10:57Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1208,7 +1208,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T19:00:47Z",
+      "updatedAt": "2026-10-10T19:10:57Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1228,8 +1228,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-10T19:00:47Z",
-      "minute": 12,
+      "updatedAt": "2026-10-10T19:10:57Z",
+      "minute": 22,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -1246,8 +1246,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-10T19:00:47Z",
-      "minute": 15,
+      "updatedAt": "2026-10-10T19:10:57Z",
+      "minute": 25,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -1264,13 +1264,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-10T19:00:47Z",
-      "minute": 15,
-      "homeScore": 0,
+      "updatedAt": "2026-10-10T19:10:57Z",
+      "minute": 25,
+      "homeScore": 1,
       "awayScore": 0,
-      "actualScorers": [],
+      "actualScorers": [
+        "L. Beraldo"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210488,
@@ -1282,15 +1284,16 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-10T19:00:47Z",
-      "minute": 15,
-      "homeScore": 1,
+      "updatedAt": "2026-10-10T19:10:57Z",
+      "minute": 25,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
+        "L. Tousart",
         "L. Ajorque"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210485,
@@ -1302,7 +1305,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T19:00:47Z"
+      "updatedAt": "2026-10-10T19:10:57Z"
     },
     {
       "eventId": 210489,
@@ -1314,7 +1317,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T19:00:47Z"
+      "updatedAt": "2026-10-10T19:10:57Z"
     },
     {
       "eventId": 210490,
@@ -1326,7 +1329,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T19:00:47Z"
+      "updatedAt": "2026-10-10T19:10:57Z"
     }
   ]
 }
