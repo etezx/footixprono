@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-10-10T18:35:16.318080+00:00",
+  "updated_at": "2026-10-10T22:31:28.845322+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
+    {
+      "club": "AS Monaco",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
+      "p": 6,
+      "w": 4,
+      "d": 2,
+      "l": 0,
+      "gf": 10,
+      "ga": 5,
+      "pts": 14,
+      "last5": []
+    },
     {
       "club": "Lille",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
@@ -11,18 +23,6 @@
       "l": 1,
       "gf": 9,
       "ga": 4,
-      "pts": 13,
-      "last5": []
-    },
-    {
-      "club": "AS Monaco",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
-      "p": 5,
-      "w": 4,
-      "d": 1,
-      "l": 0,
-      "gf": 8,
-      "ga": 3,
       "pts": 13,
       "last5": []
     },
@@ -41,12 +41,24 @@
     {
       "club": "Paris FC",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
-      "p": 5,
+      "p": 6,
       "w": 3,
       "d": 2,
-      "l": 0,
+      "l": 1,
       "gf": 8,
-      "ga": 3,
+      "ga": 4,
+      "pts": 11,
+      "last5": []
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+      "p": 6,
+      "w": 3,
+      "d": 2,
+      "l": 1,
+      "gf": 11,
+      "ga": 8,
       "pts": 11,
       "last5": []
     },
@@ -63,14 +75,26 @@
       "last5": []
     },
     {
-      "club": "Paris Saint-Germain",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-      "p": 5,
+      "club": "Brest",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+      "p": 6,
       "w": 2,
       "d": 2,
-      "l": 1,
-      "gf": 8,
-      "ga": 7,
+      "l": 2,
+      "gf": 12,
+      "ga": 9,
+      "pts": 8,
+      "last5": []
+    },
+    {
+      "club": "Lorient",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+      "p": 6,
+      "w": 2,
+      "d": 2,
+      "l": 2,
+      "gf": 6,
+      "ga": 6,
       "pts": 8,
       "last5": []
     },
@@ -87,18 +111,6 @@
       "last5": []
     },
     {
-      "club": "Angers",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
-      "p": 5,
-      "w": 2,
-      "d": 1,
-      "l": 2,
-      "gf": 6,
-      "ga": 5,
-      "pts": 7,
-      "last5": []
-    },
-    {
       "club": "Strasbourg",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
       "p": 5,
@@ -111,14 +123,38 @@
       "last5": []
     },
     {
+      "club": "Angers",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
+      "p": 6,
+      "w": 2,
+      "d": 1,
+      "l": 3,
+      "gf": 7,
+      "ga": 10,
+      "pts": 7,
+      "last5": []
+    },
+    {
       "club": "Le Mans",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
-      "p": 5,
+      "p": 6,
       "w": 1,
       "d": 3,
-      "l": 1,
+      "l": 2,
+      "gf": 10,
+      "ga": 12,
+      "pts": 6,
+      "last5": []
+    },
+    {
+      "club": "Toulouse",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
+      "p": 6,
+      "w": 1,
+      "d": 3,
+      "l": 2,
       "gf": 9,
-      "ga": 9,
+      "ga": 11,
       "pts": 6,
       "last5": []
     },
@@ -132,42 +168,6 @@
       "gf": 7,
       "ga": 12,
       "pts": 6,
-      "last5": []
-    },
-    {
-      "club": "Brest",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
-      "p": 5,
-      "w": 1,
-      "d": 2,
-      "l": 2,
-      "gf": 7,
-      "ga": 8,
-      "pts": 5,
-      "last5": []
-    },
-    {
-      "club": "Lorient",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
-      "p": 5,
-      "w": 1,
-      "d": 2,
-      "l": 2,
-      "gf": 5,
-      "ga": 6,
-      "pts": 5,
-      "last5": []
-    },
-    {
-      "club": "Toulouse",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
-      "p": 5,
-      "w": 1,
-      "d": 2,
-      "l": 2,
-      "gf": 7,
-      "ga": 9,
-      "pts": 5,
       "last5": []
     },
     {
