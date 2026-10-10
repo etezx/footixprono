@@ -1005,12 +1005,13 @@
           "eventId": 210488,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T19:10:57Z",
-          "minute": 25,
+          "lastLiveUpdate": "2026-10-10T19:20:25Z",
+          "minute": 34,
           "period": "1st_half",
-          "homeScore": 2,
+          "homeScore": 3,
           "awayScore": 0,
           "actualScorers": [
+            "K. Lala",
             "L. Tousart",
             "L. Ajorque"
           ],
@@ -1029,7 +1030,7 @@
           "eventId": 210487,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T19:10:57Z",
+          "lastLiveUpdate": "2026-10-10T19:20:25Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -1053,7 +1054,7 @@
           "eventId": 210483,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T19:10:57Z",
+          "lastLiveUpdate": "2026-10-10T19:20:25Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -1075,8 +1076,8 @@
           "eventId": 210484,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T19:10:57Z",
-          "minute": 25,
+          "lastLiveUpdate": "2026-10-10T19:20:25Z",
+          "minute": 34,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -1096,12 +1097,14 @@
           "eventId": 210482,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T19:10:57Z",
-          "minute": 22,
+          "lastLiveUpdate": "2026-10-10T19:20:25Z",
+          "minute": 31,
           "period": "1st_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 0,
-          "actualScorers": [],
+          "actualScorers": [
+            "E. Diop"
+          ],
           "scorersVerified": true
         }
       ],
@@ -1117,7 +1120,7 @@
           "eventId": 210485,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T19:10:57Z"
+          "lastLiveUpdate": "2026-10-10T19:20:25Z"
         }
       ],
       [
@@ -1132,8 +1135,8 @@
           "eventId": 210486,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T19:10:57Z",
-          "minute": 25,
+          "lastLiveUpdate": "2026-10-10T19:20:25Z",
+          "minute": 33,
           "period": "1st_half",
           "homeScore": 1,
           "awayScore": 0,
@@ -1152,7 +1155,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-10T19:10:57Z"
+          "lastLiveUpdate": "2026-10-10T19:20:25Z"
         }
       ],
       [
@@ -1167,7 +1170,7 @@
           "eventId": 210490,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T19:10:57Z"
+          "lastLiveUpdate": "2026-10-10T19:20:25Z"
         }
       ]
     ]
