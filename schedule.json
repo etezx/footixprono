@@ -1005,12 +1005,14 @@
           "eventId": 210488,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T19:50:29Z",
-          "minute": 45,
-          "period": "halftime",
-          "homeScore": 4,
-          "awayScore": 0,
+          "lastLiveUpdate": "2026-10-10T20:00:50Z",
+          "minute": 54,
+          "period": "2nd_half",
+          "homeScore": 5,
+          "awayScore": 1,
           "actualScorers": [
+            "P. Peter",
+            "M. Baldé",
             "K. Lala",
             "L. Tousart",
             "L. Ajorque"
@@ -1030,7 +1032,7 @@
           "eventId": 210487,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T19:50:29Z",
+          "lastLiveUpdate": "2026-10-10T20:00:50Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -1054,7 +1056,7 @@
           "eventId": 210483,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T19:50:29Z",
+          "lastLiveUpdate": "2026-10-10T20:00:50Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -1076,8 +1078,8 @@
           "eventId": 210484,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T19:50:29Z",
-          "minute": 48,
+          "lastLiveUpdate": "2026-10-10T20:00:50Z",
+          "minute": 58,
           "period": "2nd_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -1097,12 +1099,13 @@
           "eventId": 210482,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T19:50:29Z",
-          "minute": 45,
-          "period": "halftime",
+          "lastLiveUpdate": "2026-10-10T20:00:50Z",
+          "minute": 53,
+          "period": "2nd_half",
           "homeScore": 2,
-          "awayScore": 0,
+          "awayScore": 1,
           "actualScorers": [
+            "C. Tengstedt",
             "M. Abline",
             "E. Diop"
           ],
@@ -1121,7 +1124,7 @@
           "eventId": 210485,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T19:50:29Z"
+          "lastLiveUpdate": "2026-10-10T20:00:50Z"
         }
       ],
       [
@@ -1136,9 +1139,9 @@
           "eventId": 210486,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T19:50:29Z",
-          "minute": 45,
-          "period": "halftime",
+          "lastLiveUpdate": "2026-10-10T20:00:50Z",
+          "minute": 53,
+          "period": "2nd_half",
           "homeScore": 1,
           "awayScore": 0,
           "actualScorers": [
@@ -1156,7 +1159,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-10T19:50:29Z"
+          "lastLiveUpdate": "2026-10-10T20:00:50Z"
         }
       ],
       [
@@ -1171,7 +1174,7 @@
           "eventId": 210490,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T19:50:29Z"
+          "lastLiveUpdate": "2026-10-10T20:00:50Z"
         }
       ]
     ]

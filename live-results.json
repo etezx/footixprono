@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-10T19:50:29Z",
+  "generatedAt": "2026-10-10T20:00:50Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T19:50:29Z",
+      "updatedAt": "2026-10-10T20:00:50Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1208,7 +1208,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T19:50:29Z",
+      "updatedAt": "2026-10-10T20:00:50Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1227,17 +1227,18 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-10T19:50:29Z",
-      "minute": 45,
+      "period": "2nd_half",
+      "updatedAt": "2026-10-10T20:00:50Z",
+      "minute": 53,
       "homeScore": 2,
-      "awayScore": 0,
+      "awayScore": 1,
       "actualScorers": [
+        "C. Tengstedt",
         "M. Abline",
         "E. Diop"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 210484,
@@ -1249,8 +1250,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T19:50:29Z",
-      "minute": 48,
+      "updatedAt": "2026-10-10T20:00:50Z",
+      "minute": 58,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -1266,9 +1267,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-10T19:50:29Z",
-      "minute": 45,
+      "period": "2nd_half",
+      "updatedAt": "2026-10-10T20:00:50Z",
+      "minute": 53,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -1286,18 +1287,20 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-10T19:50:29Z",
-      "minute": 45,
-      "homeScore": 4,
-      "awayScore": 0,
+      "period": "2nd_half",
+      "updatedAt": "2026-10-10T20:00:50Z",
+      "minute": 54,
+      "homeScore": 5,
+      "awayScore": 1,
       "actualScorers": [
+        "P. Peter",
+        "M. Baldé",
         "K. Lala",
         "L. Tousart",
         "L. Ajorque"
       ],
       "scorersVerified": false,
-      "goalIncidents": 3
+      "goalIncidents": 5
     },
     {
       "eventId": 210485,
@@ -1309,7 +1312,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T19:50:29Z"
+      "updatedAt": "2026-10-10T20:00:50Z"
     },
     {
       "eventId": 210489,
@@ -1321,7 +1324,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T19:50:29Z"
+      "updatedAt": "2026-10-10T20:00:50Z"
     },
     {
       "eventId": 210490,
@@ -1333,7 +1336,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T19:50:29Z"
+      "updatedAt": "2026-10-10T20:00:50Z"
     }
   ]
 }
