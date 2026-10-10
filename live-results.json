@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-10T20:30:53Z",
+  "generatedAt": "2026-10-10T20:40:24Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:30:53Z",
+      "updatedAt": "2026-10-10T20:40:24Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1208,7 +1208,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:30:53Z",
+      "updatedAt": "2026-10-10T20:40:24Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1228,8 +1228,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:30:53Z",
-      "minute": 83,
+      "updatedAt": "2026-10-10T20:40:24Z",
+      "minute": 93,
       "homeScore": 2,
       "awayScore": 2,
       "actualScorers": [
@@ -1247,17 +1247,19 @@
       "home": "Lorient",
       "away": "Paris FC",
       "kickoff": "2026-10-10T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:30:53Z",
-      "minute": 88,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-10T20:40:24Z",
+      "minute": null,
       "homeScore": 1,
       "awayScore": 0,
-      "actualScorers": [],
-      "scorersVerified": false,
-      "goalIncidents": 0
+      "actualScorers": [
+        "G. Bernardeau"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 1
     },
     {
       "eventId": 210486,
@@ -1269,8 +1271,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:30:53Z",
-      "minute": 83,
+      "updatedAt": "2026-10-10T20:40:24Z",
+      "minute": 93,
       "homeScore": 3,
       "awayScore": 1,
       "actualScorers": [
@@ -1292,8 +1294,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:30:53Z",
-      "minute": 84,
+      "updatedAt": "2026-10-10T20:40:24Z",
+      "minute": 94,
       "homeScore": 5,
       "awayScore": 1,
       "actualScorers": [
@@ -1316,7 +1318,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:30:53Z"
+      "updatedAt": "2026-10-10T20:40:24Z"
     },
     {
       "eventId": 210489,
@@ -1328,7 +1330,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:30:53Z"
+      "updatedAt": "2026-10-10T20:40:24Z"
     },
     {
       "eventId": 210490,
@@ -1340,7 +1342,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:30:53Z"
+      "updatedAt": "2026-10-10T20:40:24Z"
     }
   ]
 }
