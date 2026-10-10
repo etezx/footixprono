@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-10T20:40:24Z",
+  "generatedAt": "2026-10-10T20:43:03Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:40:24Z",
+      "updatedAt": "2026-10-10T20:43:03Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1208,7 +1208,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:40:24Z",
+      "updatedAt": "2026-10-10T20:43:03Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1228,8 +1228,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:40:24Z",
-      "minute": 93,
+      "updatedAt": "2026-10-10T20:43:03Z",
+      "minute": 95,
       "homeScore": 2,
       "awayScore": 2,
       "actualScorers": [
@@ -1251,7 +1251,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:40:24Z",
+      "updatedAt": "2026-10-10T20:43:03Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1271,8 +1271,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:40:24Z",
-      "minute": 93,
+      "updatedAt": "2026-10-10T20:43:03Z",
+      "minute": 95,
       "homeScore": 3,
       "awayScore": 1,
       "actualScorers": [
@@ -1294,8 +1294,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:40:24Z",
-      "minute": 94,
+      "updatedAt": "2026-10-10T20:43:03Z",
+      "minute": 96,
       "homeScore": 5,
       "awayScore": 1,
       "actualScorers": [
@@ -1318,7 +1318,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:40:24Z"
+      "updatedAt": "2026-10-10T20:43:03Z"
     },
     {
       "eventId": 210489,
@@ -1330,7 +1330,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:40:24Z"
+      "updatedAt": "2026-10-10T20:43:03Z"
     },
     {
       "eventId": 210490,
@@ -1342,7 +1342,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:40:24Z"
+      "updatedAt": "2026-10-10T20:43:03Z"
     }
   ]
 }
