@@ -1003,9 +1003,15 @@
           "source": "bsd",
           "completed": false,
           "eventId": 210488,
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-10-10T18:40:32Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-10-10T18:50:32Z",
+          "minute": 5,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -1020,7 +1026,7 @@
           "eventId": 210487,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T18:40:32Z",
+          "lastLiveUpdate": "2026-10-10T18:50:32Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -1044,7 +1050,7 @@
           "eventId": 210483,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T18:40:32Z",
+          "lastLiveUpdate": "2026-10-10T18:50:32Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -1064,9 +1070,15 @@
           "source": "bsd",
           "completed": false,
           "eventId": 210484,
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-10-10T18:40:32Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-10-10T18:50:32Z",
+          "minute": 5,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -1079,9 +1091,15 @@
           "source": "bsd",
           "completed": false,
           "eventId": 210482,
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-10-10T18:40:32Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-10-10T18:50:32Z",
+          "minute": 2,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -1096,7 +1114,7 @@
           "eventId": 210485,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T18:40:32Z"
+          "lastLiveUpdate": "2026-10-10T18:50:32Z"
         }
       ],
       [
@@ -1109,9 +1127,15 @@
           "source": "bsd",
           "completed": false,
           "eventId": 210486,
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-10-10T18:40:32Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-10-10T18:50:32Z",
+          "minute": 5,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -1123,7 +1147,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-10T18:40:32Z"
+          "lastLiveUpdate": "2026-10-10T18:50:32Z"
         }
       ],
       [
@@ -1138,7 +1162,7 @@
           "eventId": 210490,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T18:40:32Z"
+          "lastLiveUpdate": "2026-10-10T18:50:32Z"
         }
       ]
     ]

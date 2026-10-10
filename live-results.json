@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-10T18:40:32Z",
+  "generatedAt": "2026-10-10T18:50:32Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T18:40:32Z",
+      "updatedAt": "2026-10-10T18:50:32Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1208,7 +1208,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T18:40:32Z",
+      "updatedAt": "2026-10-10T18:50:32Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1224,11 +1224,17 @@
       "home": "AS Monaco",
       "away": "Toulouse",
       "kickoff": "2026-10-10T18:45:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-10T18:40:32Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-10T18:50:32Z",
+      "minute": 2,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210484,
@@ -1236,11 +1242,17 @@
       "home": "Lorient",
       "away": "Paris FC",
       "kickoff": "2026-10-10T18:45:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-10T18:40:32Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-10T18:50:32Z",
+      "minute": 5,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210486,
@@ -1248,11 +1260,17 @@
       "home": "Paris Saint-Germain",
       "away": "Le Mans",
       "kickoff": "2026-10-10T18:45:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-10T18:40:32Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-10T18:50:32Z",
+      "minute": 5,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210488,
@@ -1260,11 +1278,17 @@
       "home": "Stade Brestois",
       "away": "Angers",
       "kickoff": "2026-10-10T18:45:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-10T18:40:32Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-10T18:50:32Z",
+      "minute": 5,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210485,
@@ -1276,7 +1300,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T18:40:32Z"
+      "updatedAt": "2026-10-10T18:50:32Z"
     },
     {
       "eventId": 210489,
@@ -1288,7 +1312,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T18:40:32Z"
+      "updatedAt": "2026-10-10T18:50:32Z"
     },
     {
       "eventId": 210490,
@@ -1300,7 +1324,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T18:40:32Z"
+      "updatedAt": "2026-10-10T18:50:32Z"
     }
   ]
 }
