@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-10T19:20:25Z",
+  "generatedAt": "2026-10-10T19:31:09Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T19:20:25Z",
+      "updatedAt": "2026-10-10T19:31:09Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1208,7 +1208,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T19:20:25Z",
+      "updatedAt": "2026-10-10T19:31:09Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1228,15 +1228,16 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-10T19:20:25Z",
-      "minute": 31,
-      "homeScore": 1,
+      "updatedAt": "2026-10-10T19:31:09Z",
+      "minute": 42,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
+        "M. Abline",
         "E. Diop"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210484,
@@ -1248,8 +1249,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-10T19:20:25Z",
-      "minute": 34,
+      "updatedAt": "2026-10-10T19:31:09Z",
+      "minute": 45,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -1266,8 +1267,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-10T19:20:25Z",
-      "minute": 33,
+      "updatedAt": "2026-10-10T19:31:09Z",
+      "minute": 45,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -1286,16 +1287,16 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-10T19:20:25Z",
-      "minute": 34,
-      "homeScore": 3,
+      "updatedAt": "2026-10-10T19:31:09Z",
+      "minute": 45,
+      "homeScore": 4,
       "awayScore": 0,
       "actualScorers": [
         "K. Lala",
         "L. Tousart",
         "L. Ajorque"
       ],
-      "scorersVerified": true,
+      "scorersVerified": false,
       "goalIncidents": 3
     },
     {
@@ -1308,7 +1309,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T19:20:25Z"
+      "updatedAt": "2026-10-10T19:31:09Z"
     },
     {
       "eventId": 210489,
@@ -1320,7 +1321,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T19:20:25Z"
+      "updatedAt": "2026-10-10T19:31:09Z"
     },
     {
       "eventId": 210490,
@@ -1332,7 +1333,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T19:20:25Z"
+      "updatedAt": "2026-10-10T19:31:09Z"
     }
   ]
 }
