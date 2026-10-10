@@ -1005,8 +1005,8 @@
           "eventId": 210488,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T20:00:50Z",
-          "minute": 54,
+          "lastLiveUpdate": "2026-10-10T20:10:25Z",
+          "minute": 64,
           "period": "2nd_half",
           "homeScore": 5,
           "awayScore": 1,
@@ -1032,7 +1032,7 @@
           "eventId": 210487,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T20:00:50Z",
+          "lastLiveUpdate": "2026-10-10T20:10:25Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -1056,7 +1056,7 @@
           "eventId": 210483,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T20:00:50Z",
+          "lastLiveUpdate": "2026-10-10T20:10:25Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -1078,13 +1078,13 @@
           "eventId": 210484,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T20:00:50Z",
-          "minute": 58,
+          "lastLiveUpdate": "2026-10-10T20:10:25Z",
+          "minute": 68,
           "period": "2nd_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 0,
           "actualScorers": [],
-          "scorersVerified": true
+          "scorersVerified": false
         }
       ],
       [
@@ -1099,12 +1099,13 @@
           "eventId": 210482,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T20:00:50Z",
-          "minute": 53,
+          "lastLiveUpdate": "2026-10-10T20:10:25Z",
+          "minute": 63,
           "period": "2nd_half",
           "homeScore": 2,
-          "awayScore": 1,
+          "awayScore": 2,
           "actualScorers": [
+            "S. Oppong",
             "C. Tengstedt",
             "M. Abline",
             "E. Diop"
@@ -1124,7 +1125,7 @@
           "eventId": 210485,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T20:00:50Z"
+          "lastLiveUpdate": "2026-10-10T20:10:25Z"
         }
       ],
       [
@@ -1139,12 +1140,14 @@
           "eventId": 210486,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-10T20:00:50Z",
-          "minute": 53,
+          "lastLiveUpdate": "2026-10-10T20:10:25Z",
+          "minute": 63,
           "period": "2nd_half",
-          "homeScore": 1,
-          "awayScore": 0,
+          "homeScore": 2,
+          "awayScore": 1,
           "actualScorers": [
+            "K. Kvaratskhelia",
+            "L. Mafouta",
             "L. Beraldo"
           ],
           "scorersVerified": true
@@ -1159,7 +1162,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-10T20:00:50Z"
+          "lastLiveUpdate": "2026-10-10T20:10:25Z"
         }
       ],
       [
@@ -1174,7 +1177,7 @@
           "eventId": 210490,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-10T20:00:50Z"
+          "lastLiveUpdate": "2026-10-10T20:10:25Z"
         }
       ]
     ]

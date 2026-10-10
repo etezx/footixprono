@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-10T20:00:50Z",
+  "generatedAt": "2026-10-10T20:10:25Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:00:50Z",
+      "updatedAt": "2026-10-10T20:10:25Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1208,7 +1208,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:00:50Z",
+      "updatedAt": "2026-10-10T20:10:25Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1228,17 +1228,18 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:00:50Z",
-      "minute": 53,
+      "updatedAt": "2026-10-10T20:10:25Z",
+      "minute": 63,
       "homeScore": 2,
-      "awayScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "S. Oppong",
         "C. Tengstedt",
         "M. Abline",
         "E. Diop"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 210484,
@@ -1250,12 +1251,12 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:00:50Z",
-      "minute": 58,
-      "homeScore": 0,
+      "updatedAt": "2026-10-10T20:10:25Z",
+      "minute": 68,
+      "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [],
-      "scorersVerified": true,
+      "scorersVerified": false,
       "goalIncidents": 0
     },
     {
@@ -1268,15 +1269,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:00:50Z",
-      "minute": 53,
-      "homeScore": 1,
-      "awayScore": 0,
+      "updatedAt": "2026-10-10T20:10:25Z",
+      "minute": 63,
+      "homeScore": 2,
+      "awayScore": 1,
       "actualScorers": [
+        "K. Kvaratskhelia",
+        "L. Mafouta",
         "L. Beraldo"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 3
     },
     {
       "eventId": 210488,
@@ -1288,8 +1291,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:00:50Z",
-      "minute": 54,
+      "updatedAt": "2026-10-10T20:10:25Z",
+      "minute": 64,
       "homeScore": 5,
       "awayScore": 1,
       "actualScorers": [
@@ -1312,7 +1315,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:00:50Z"
+      "updatedAt": "2026-10-10T20:10:25Z"
     },
     {
       "eventId": 210489,
@@ -1324,7 +1327,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:00:50Z"
+      "updatedAt": "2026-10-10T20:10:25Z"
     },
     {
       "eventId": 210490,
@@ -1336,7 +1339,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:00:50Z"
+      "updatedAt": "2026-10-10T20:10:25Z"
     }
   ]
 }
