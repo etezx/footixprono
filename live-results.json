@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-10T20:10:25Z",
+  "generatedAt": "2026-10-10T20:20:23Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:10:25Z",
+      "updatedAt": "2026-10-10T20:20:23Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1208,7 +1208,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:10:25Z",
+      "updatedAt": "2026-10-10T20:20:23Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1228,8 +1228,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:10:25Z",
-      "minute": 63,
+      "updatedAt": "2026-10-10T20:20:23Z",
+      "minute": 72,
       "homeScore": 2,
       "awayScore": 2,
       "actualScorers": [
@@ -1251,8 +1251,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:10:25Z",
-      "minute": 68,
+      "updatedAt": "2026-10-10T20:20:23Z",
+      "minute": 77,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [],
@@ -1269,17 +1269,18 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:10:25Z",
-      "minute": 63,
-      "homeScore": 2,
+      "updatedAt": "2026-10-10T20:20:23Z",
+      "minute": 72,
+      "homeScore": 3,
       "awayScore": 1,
       "actualScorers": [
+        "M. Akliouche",
         "K. Kvaratskhelia",
         "L. Mafouta",
         "L. Beraldo"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 210488,
@@ -1291,8 +1292,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:10:25Z",
-      "minute": 64,
+      "updatedAt": "2026-10-10T20:20:23Z",
+      "minute": 73,
       "homeScore": 5,
       "awayScore": 1,
       "actualScorers": [
@@ -1315,7 +1316,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:10:25Z"
+      "updatedAt": "2026-10-10T20:20:23Z"
     },
     {
       "eventId": 210489,
@@ -1327,7 +1328,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:10:25Z"
+      "updatedAt": "2026-10-10T20:20:23Z"
     },
     {
       "eventId": 210490,
@@ -1339,7 +1340,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:10:25Z"
+      "updatedAt": "2026-10-10T20:20:23Z"
     }
   ]
 }
