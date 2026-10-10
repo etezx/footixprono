@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-10T17:10:41Z",
+  "generatedAt": "2026-10-10T17:20:36Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T17:10:41Z",
+      "updatedAt": "2026-10-10T17:20:36Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1204,12 +1204,12 @@
       "home": "Lille",
       "away": "Le Havre",
       "kickoff": "2026-10-10T15:15:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-10T17:10:41Z",
-      "minute": 90,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-10T17:20:36Z",
+      "minute": null,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -1228,7 +1228,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T17:10:41Z"
+      "updatedAt": "2026-10-10T17:20:36Z"
     },
     {
       "eventId": 210484,
@@ -1240,7 +1240,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T17:10:41Z"
+      "updatedAt": "2026-10-10T17:20:36Z"
     },
     {
       "eventId": 210486,
@@ -1252,7 +1252,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T17:10:41Z"
+      "updatedAt": "2026-10-10T17:20:36Z"
     },
     {
       "eventId": 210488,
@@ -1264,7 +1264,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T17:10:41Z"
+      "updatedAt": "2026-10-10T17:20:36Z"
     },
     {
       "eventId": 210485,
@@ -1276,7 +1276,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T17:10:41Z"
+      "updatedAt": "2026-10-10T17:20:36Z"
     },
     {
       "eventId": 210489,
@@ -1288,7 +1288,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T17:10:41Z"
+      "updatedAt": "2026-10-10T17:20:36Z"
     },
     {
       "eventId": 210490,
@@ -1300,7 +1300,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T17:10:41Z"
+      "updatedAt": "2026-10-10T17:20:36Z"
     }
   ]
 }
