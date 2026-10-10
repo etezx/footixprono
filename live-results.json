@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-10T20:43:03Z",
+  "generatedAt": "2026-10-10T20:50:43Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:43:03Z",
+      "updatedAt": "2026-10-10T20:50:43Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1208,7 +1208,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:43:03Z",
+      "updatedAt": "2026-10-10T20:50:43Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1224,12 +1224,12 @@
       "home": "AS Monaco",
       "away": "Toulouse",
       "kickoff": "2026-10-10T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:43:03Z",
-      "minute": 95,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-10T20:50:43Z",
+      "minute": null,
       "homeScore": 2,
       "awayScore": 2,
       "actualScorers": [
@@ -1251,7 +1251,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-10T20:43:03Z",
+      "updatedAt": "2026-10-10T20:50:43Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1267,12 +1267,12 @@
       "home": "Paris Saint-Germain",
       "away": "Le Mans",
       "kickoff": "2026-10-10T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:43:03Z",
-      "minute": 95,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-10T20:50:43Z",
+      "minute": null,
       "homeScore": 3,
       "awayScore": 1,
       "actualScorers": [
@@ -1290,23 +1290,24 @@
       "home": "Stade Brestois",
       "away": "Angers",
       "kickoff": "2026-10-10T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-10T20:43:03Z",
-      "minute": 96,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-10T20:50:43Z",
+      "minute": null,
       "homeScore": 5,
       "awayScore": 1,
       "actualScorers": [
+        "P. Mboup",
         "P. Peter",
         "M. Baldé",
         "K. Lala",
         "L. Tousart",
         "L. Ajorque"
       ],
-      "scorersVerified": false,
-      "goalIncidents": 5
+      "scorersVerified": true,
+      "goalIncidents": 6
     },
     {
       "eventId": 210485,
@@ -1318,7 +1319,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:43:03Z"
+      "updatedAt": "2026-10-10T20:50:43Z"
     },
     {
       "eventId": 210489,
@@ -1330,7 +1331,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:43:03Z"
+      "updatedAt": "2026-10-10T20:50:43Z"
     },
     {
       "eventId": 210490,
@@ -1342,7 +1343,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-10T20:43:03Z"
+      "updatedAt": "2026-10-10T20:50:43Z"
     }
   ]
 }
