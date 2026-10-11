@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T20:16:08.235049+00:00",
+  "updated_at": "2026-10-11T23:43:00.304311+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -147,6 +147,18 @@
       "last5": []
     },
     {
+      "club": "Marseille",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+      "p": 6,
+      "w": 2,
+      "d": 0,
+      "l": 4,
+      "gf": 9,
+      "ga": 8,
+      "pts": 6,
+      "last5": []
+    },
+    {
       "club": "Le Mans",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
       "p": 6,
@@ -185,25 +197,13 @@
     {
       "club": "Troyes",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
-      "p": 5,
+      "p": 6,
       "w": 1,
       "d": 1,
-      "l": 3,
-      "gf": 4,
-      "ga": 11,
-      "pts": 4,
-      "last5": []
-    },
-    {
-      "club": "Marseille",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
-      "p": 5,
-      "w": 1,
-      "d": 0,
       "l": 4,
-      "gf": 7,
-      "ga": 8,
-      "pts": 3,
+      "gf": 4,
+      "ga": 13,
+      "pts": 4,
       "last5": []
     },
     {
