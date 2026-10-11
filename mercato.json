@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T06:20:34.502896+00:00",
+  "updated_at": "2026-10-11T13:25:16.374637+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -9,10 +9,16 @@
       "source": "Ouest-France"
     },
     {
-      "title": "LOSC : les mots forts de Davide Ancelotti sur Olivier Létang - Foot Mercato",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWnh4Y3FfSDhSaEdPQmd1dTROUEROQmhXNkRGUURDbjJqdkJqMFl6RzZEOTBzbnBkaDBCazJVTVNHV0stM0FGbnV3Nk84LVNyQlRqdmJ3UnRrbU41Z0REb05adXZDOGtqLTlQMlh6eEMwSkthNDlhcDQ4X3g4Z2hfVFJnNTFuU29DaVRrQ2lvYUR1Q0NLRklRZXZXUEgtOUtyNGxyR1hjNjQ0VjA?oc=5",
-      "published": "2026-10-04T06:42:41+00:00",
+      "title": "PSG : le drôle de onze que prépare Luis Enrique en Ligue 1 - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcmNQdV9ZTFpUXzV1N2lqbUhWY2NoQ25pVXZmZHkyNFhsamRrZUVRTnc1cU5OUW1ZWm9vNzdKMFcxc251ZTRXQk5VQU42NmpjeE83dm10cjB2MU0yMTRWN1BSNUdyWTdEN1lKa09MaUJHTFZZNUlPS2g3T2x5WVRmcnFwcTJVczN4TWxWZzBTbzJabGd1WFMyZXFGVWZ5VWQtRmE0?oc=5",
+      "published": "2026-10-08T17:59:26+00:00",
       "source": "Foot Mercato"
+    },
+    {
+      "title": "Strasbourg : le mercato a fait tomber deux records historiques - Sport.fr",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOOHlXNGp1TllnRkFselZwOUlsRzZHTE9TblJ6bzhMNzhZVTBnNDM0aGRjbzhFcngtck9jamI4MjRLUHZabHRHaDZUTlFkeGNUT0dCWHotVk1XSUQyQXU4cUp0NXFEYnFQTTl1Q3JmeXFtck84LXpfXzBiNTRoZ01oTmFsZzVEMzBuTXd3cVZaQjlOdmY1QTZxb3NhUGM1b2tSSjZOVXp3?oc=5",
+      "published": "2026-10-09T04:50:00+00:00",
+      "source": "Sport.fr"
     },
     {
       "title": "Mercato : sans club depuis son départ de Palerme, Alexis Blin se relance à Lausanne-Sport où il retrouve Luka Elsner - L'Équipe",
@@ -27,21 +33,15 @@
       "source": "Eurosport"
     },
     {
-      "title": "Strasbourg : le mercato a fait tomber deux records historiques - Sport.fr",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOOHlXNGp1TllnRkFselZwOUlsRzZHTE9TblJ6bzhMNzhZVTBnNDM0aGRjbzhFcngtck9jamI4MjRLUHZabHRHaDZUTlFkeGNUT0dCWHotVk1XSUQyQXU4cUp0NXFEYnFQTTl1Q3JmeXFtck84LXpfXzBiNTRoZ01oTmFsZzVEMzBuTXd3cVZaQjlOdmY1QTZxb3NhUGM1b2tSSjZOVXp3?oc=5",
-      "published": "2026-10-09T04:51:01+00:00",
-      "source": "Sport.fr"
-    },
-    {
       "title": "“L’OL était intéressé, l’OM aussi” : bourreau de Réveillère en 2007, Amantino Mancini raconte ses transferts ratés en Ligue 1 - TOP Mercato",
       "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQUHJiUEVvYUNCcVByRW9xaFZmTzJMamtsUWt6a0hMMTE4eVR0WUJxREFuZlpPbXJlUkZ5SjZlM0E5d3VvT2hnZ2NBTTEwUzBkcWVuZTdhNDlRNXUxLU5oREVLRWxHZzFHY0FOb0VKOHA3dmVxSWpCSFFya3dRVG1qSnRUYUN6eFNrREJnVmN0cEZEX1BwSW95ZjZ6SDk0eTZaakxhc1B3ajQwZFc5RW11RGxweXhiZFpadHpkNUhmQU8wTTV3X1JENTVSSFNPakF3UUsxNWRNWDF2eThPZlZpRTRlUjBvTktW?oc=5",
       "published": "2026-10-07T15:30:00+00:00",
       "source": "TOP Mercato"
     },
     {
-      "title": "\"Vous avez vu ce que donne la L1 quand Canal+ n’est pas là\" : la très grosse menace du patron Maxime Saada - Foot Mercato",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMWFwdHlrN2VKczVmUmU4LThvQmUtT2o5dzhwY05BanMxYjRhMkJjY3c2TmJOSXlYN25kWFhHbmpwLS1rQ0Fwb2h6aGRFV29NZmdLYlVVOS1ZV1AyS2lWWHVMbzRmZXhCVnZsQzFIdTNyQTlMUE9IZm5OQkt1cXlLbDh1WUZGTjdDTGZZcEN3Zkp6QW1Qc0Z0eEhEN25yUXN6ZFNKQ3U0WUtHSFo3SXA2WEo5T3BXdGRFM2twTlJvdnpxOGJQTE5hclNTdEl4d0JjM2NFNlhUc01jQWF1YUtSa0NZQQ?oc=5",
-      "published": "2026-10-07T08:16:31+00:00",
+      "title": "Le PSG vise une nouvelle pépite - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPclZpMm1yQjlPSE91bXZEWENkdC00T1hsZGxVMmFjekdyeVB4OVVVLVJOY1ptcVhZV0lxUkhmQUtYekE1TG5oV1JQdS1LdFRVeUEzUWtNYnRhNUluS2xIWmxUV3pRM3JfdVVZUTM2aFEwUmRXRFlCakt2cnZKMnMyOTNQVUk1UUp2dzN6YzFodG9VOXd3Zko2c2Z4dnI?oc=5",
+      "published": "2026-10-08T14:53:10+00:00",
       "source": "Foot Mercato"
     },
     {
@@ -51,28 +51,28 @@
       "source": "MadeInFOOT"
     },
     {
-      "title": "Transferts I Iliman Ndiaye et l'OM, Quansah et Yildiz dans le viseur du Real Madrid... Les 5 infos mercato du week-end - Eurosport",
-      "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQdmtLb2RQeW1RY3FFY2JQOXpsSDhkbTB6Qmh3U0pqalhpR0E0VGkzd3JWNkxFazB6R2dtWWY2OWxWR0xkRUl2U1JoajdkeEdCbzZNOUxaWjJxMzVqOHNaSlRRbGQ2MXh0UXY4NGxGeGVsanM1ZTlLTHpWMEhveC1uS3pqZllWRktXLWh0aWxDak9GTUp5THdVYnJsb2pkVVZYZXMyaUU1NWJYQkpfemFrRTVDLVJyU3Fyblc4TkpWeTZRUGhLVlVhMG9fVVh0Z1h3aUxlSy1jSlVIWjY3dHFBbEt0SHQ3WkxSM0FlNG85Rm53bkVSM1hDczVEeC1pUnY3aWVYUHpiZlVSS0tGTzVybC1JQm1SbUthamg2YzhXWUQ?oc=5",
-      "published": "2026-10-04T16:24:00+00:00",
-      "source": "Eurosport"
-    },
-    {
       "title": "Après l'OL, le jeune attaquant brésilien du Real Madrid Endrick prêté à l'AC Milan en janvier ? - L'Équipe",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWnQxRUZaRG5RS1V5bXl2QkxmMEFCa05raWFvRWU4Z1RZN0tpb1VvTjljTXNfZVlzU2YxdVBobWdxSnhMWVZ2aTA3RHBWdXFMazBJTGJTOHJiMGNtdmZwTFdYb2llZi1wN3B6VXBycUtPYUV6ejJYd09Ud1R3WG4yQUgwcjJjZWUxRHM1TTRUN0g5QnEweEJKcUlrWVhJRVJCQklMVHZVTm1EbGc?oc=5",
       "published": "2026-10-09T08:01:02+00:00",
       "source": "L'Équipe"
     },
     {
-      "title": "PSG : le drôle de onze que prépare Luis Enrique en Ligue 1 - Foot Mercato",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcmNQdV9ZTFpUXzV1N2lqbUhWY2NoQ25pVXZmZHkyNFhsamRrZUVRTnc1cU5OUW1ZWm9vNzdKMFcxc251ZTRXQk5VQU42NmpjeE83dm10cjB2MU0yMTRWN1BSNUdyWTdEN1lKa09MaUJHTFZZNUlPS2g3T2x5WVRmcnFwcTJVczN4TWxWZzBTbzJabGd1WFMyZXFGVWZ5VWQtRmE0?oc=5",
-      "published": "2026-10-08T17:59:26+00:00",
-      "source": "Foot Mercato"
+      "title": "Le Bayern en pince pour Olmo : Les 5 infos mercato de jeudi - Eurosport",
+      "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNbEM2QlRwRGJtQlo2Vm9LdWZJNjFJeTFyMVBuWHJKdDdPcUJmOElsbm1uaUJ1NHpRck5uYjUtTXRzM0VUX1hrRUQ5cjFQcDV3LUlKbHk5dm55VjFWZG5HUjlxWUJMa3hOMS1lQjVGdThCcGFjNEhXREJ2V2FZWC1qOGpPRXBwWllIbzl2ODVieWRDQkNmd3lHYkpFUTdPYUw0TWdVemxCS2lZbXlzbjJRY1hSWmlkY1dlOFNwZ3lLSnRsbU4tVnRselBsZ3FPSG5NNG5aeHdkb1ZTOUVkN3c5R2FsRHQxZ3J6UGNPc3FJblhycW1xT2VIR3FzdXdCU3VIZzBseFVaMnN4SGJidEFFWnBOMjY?oc=5",
+      "published": "2026-10-08T06:18:00+00:00",
+      "source": "Eurosport"
     },
     {
       "title": "Droits TV - Bientôt la fin de Ligue 1+ ? La LFP va lancer un nouvel appel d'offres - MadeInFOOT",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNYVNBenZKYmdKaGxqOWpYal83RkhURHgxVUROYzUzSUZQNEsySlNhVzJLZVdkSExuSnZJWnNjc3RVVVVHck1LNnFLT00zX2FaeTJfcFV1alRpaTZvaFNvc1JZS1JGbXBFR3o4c0t3b0FkM2ZGQ0ZaNm1zcnZZcnVpZEplQXotQUItaXVIV2RJVlltcGw3WGpIUDZZczY2a0VJNHZ1a2tPcTltLW03UDBoOXVHanZZb0VQTDZ2WDFjaHNZM29QOE5oTENhQ3ZQRE1kcW1ObQ?oc=5",
       "published": "2026-10-06T13:11:00+00:00",
       "source": "MadeInFOOT"
+    },
+    {
+      "title": "L’avenir de Genesio, le mercato hivernal : Grégory Lorenzi lâche ses vérités sur le futur proche de l’OM - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPck9ybklDMHU2Z2NmRS00c202cGQxd19oNlROTnh5ZXlhdHZ6dmw3MC1nc3JLV2Q5S2VJOHVtOXJNNjNoX1R1dGZlbFVkcDJ5aktmOERYZ0x5UUo3VUYyU3ZxSXZndXBFdE51aXpHeWZOdWFCTGtUOVhOZy1VR3lVbmhpTG9JU3FHM1VMWWxBbEVBU09PNVkzOHFnRUdPOEM0Q0RWV3MxR3JRejc5RHYxYVN3dlczT3ZvME9xd3RxaUgyUkthZnhDWTROeGdCM0FuT3paWnAya0tqRTNFSUFsaFBn?oc=5",
+      "published": "2026-10-07T06:27:00+00:00",
+      "source": "Foot Mercato"
     }
   ]
 }
