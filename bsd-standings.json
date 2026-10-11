@@ -57,14 +57,14 @@
         },
         {
           "position": 3,
-          "club": "Olympique Lyonnais",
+          "club": "Stade Rennais",
           "p": 6,
-          "w": 3,
-          "d": 2,
+          "w": 4,
+          "d": 1,
           "l": 1,
-          "gf": 11,
-          "ga": 4,
-          "pts": 11,
+          "gf": 12,
+          "ga": 10,
+          "pts": 13,
           "group": "",
           "zone": {
             "key": "cl",
@@ -74,12 +74,12 @@
         },
         {
           "position": 4,
-          "club": "Paris FC",
+          "club": "Olympique Lyonnais",
           "p": 6,
           "w": 3,
           "d": 2,
           "l": 1,
-          "gf": 8,
+          "gf": 11,
           "ga": 4,
           "pts": 11,
           "group": "",
@@ -91,13 +91,13 @@
         },
         {
           "position": 5,
-          "club": "Paris Saint-Germain",
+          "club": "Paris FC",
           "p": 6,
           "w": 3,
           "d": 2,
           "l": 1,
-          "gf": 11,
-          "ga": 8,
+          "gf": 8,
+          "ga": 4,
           "pts": 11,
           "group": "",
           "zone": {
@@ -108,14 +108,14 @@
         },
         {
           "position": 6,
-          "club": "Stade Rennais",
-          "p": 5,
+          "club": "Paris Saint-Germain",
+          "p": 6,
           "w": 3,
-          "d": 1,
+          "d": 2,
           "l": 1,
-          "gf": 8,
-          "ga": 9,
-          "pts": 10,
+          "gf": 11,
+          "ga": 8,
+          "pts": 11,
           "group": "",
           "zone": {
             "key": "uecl",
@@ -230,12 +230,12 @@
         {
           "position": 15,
           "club": "Auxerre",
-          "p": 5,
+          "p": 6,
           "w": 2,
           "d": 0,
-          "l": 3,
-          "gf": 7,
-          "ga": 12,
+          "l": 4,
+          "gf": 8,
+          "ga": 16,
           "pts": 6,
           "group": "",
           "zone": null
@@ -905,6 +905,6 @@
       ]
     }
   },
-  "generatedAt": "2026-10-11T17:01:14Z",
+  "generatedAt": "2026-10-11T17:10:31Z",
   "source": "BSD"
 }
