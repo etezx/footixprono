@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T11:20:13.464916+00:00",
+  "updated_at": "2026-10-11T11:34:02.106087+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -218,6 +218,7 @@
       "Mohamed Bamba",
       "Noah Cadiou",
       "Noah Mbamba",
+      "Samir Said Haribou",
       "Souleymane Faye",
       "Théo Le Bris",
       "Tosin Aiyegun"
@@ -326,5 +327,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 286
+  "players_fetched": 287
 }
