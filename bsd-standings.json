@@ -203,6 +203,19 @@
         },
         {
           "position": 13,
+          "club": "Olympique de Marseille",
+          "p": 6,
+          "w": 2,
+          "d": 0,
+          "l": 4,
+          "gf": 9,
+          "ga": 8,
+          "pts": 6,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 14,
           "club": "Le Mans",
           "p": 6,
           "w": 1,
@@ -215,7 +228,7 @@
           "zone": null
         },
         {
-          "position": 14,
+          "position": 15,
           "club": "Toulouse",
           "p": 6,
           "w": 1,
@@ -228,7 +241,7 @@
           "zone": null
         },
         {
-          "position": 15,
+          "position": 16,
           "club": "Auxerre",
           "p": 6,
           "w": 2,
@@ -238,19 +251,6 @@
           "ga": 16,
           "pts": 6,
           "group": "",
-          "zone": null
-        },
-        {
-          "position": 16,
-          "club": "Troyes",
-          "p": 5,
-          "w": 1,
-          "d": 1,
-          "l": 3,
-          "gf": 4,
-          "ga": 11,
-          "pts": 4,
-          "group": "",
           "zone": {
             "key": "relq",
             "label": "Relegation Playoffs",
@@ -259,14 +259,14 @@
         },
         {
           "position": 17,
-          "club": "Olympique de Marseille",
-          "p": 5,
+          "club": "Troyes",
+          "p": 6,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 4,
-          "gf": 7,
-          "ga": 8,
-          "pts": 3,
+          "gf": 4,
+          "ga": 13,
+          "pts": 4,
           "group": "",
           "zone": {
             "key": "rel",
@@ -905,6 +905,6 @@
       ]
     }
   },
-  "generatedAt": "2026-10-11T20:37:02Z",
+  "generatedAt": "2026-10-11T20:40:44Z",
   "source": "BSD"
 }
