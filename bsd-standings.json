@@ -151,6 +151,19 @@
         },
         {
           "position": 9,
+          "club": "Nice",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 5,
+          "ga": 7,
+          "pts": 8,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 10,
           "club": "RC Lens",
           "p": 6,
           "w": 2,
@@ -163,20 +176,20 @@
           "zone": null
         },
         {
-          "position": 10,
+          "position": 11,
           "club": "RC Strasbourg",
-          "p": 5,
+          "p": 6,
           "w": 2,
           "d": 1,
-          "l": 2,
-          "gf": 10,
-          "ga": 10,
+          "l": 3,
+          "gf": 11,
+          "ga": 12,
           "pts": 7,
           "group": "",
           "zone": null
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "Angers",
           "p": 6,
           "w": 2,
@@ -189,7 +202,7 @@
           "zone": null
         },
         {
-          "position": 12,
+          "position": 13,
           "club": "Le Mans",
           "p": 6,
           "w": 1,
@@ -202,7 +215,7 @@
           "zone": null
         },
         {
-          "position": 13,
+          "position": 14,
           "club": "Toulouse",
           "p": 6,
           "w": 1,
@@ -215,7 +228,7 @@
           "zone": null
         },
         {
-          "position": 14,
+          "position": 15,
           "club": "Auxerre",
           "p": 5,
           "w": 2,
@@ -224,19 +237,6 @@
           "gf": 7,
           "ga": 12,
           "pts": 6,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 15,
-          "club": "Nice",
-          "p": 5,
-          "w": 1,
-          "d": 2,
-          "l": 2,
-          "gf": 3,
-          "ga": 6,
-          "pts": 5,
           "group": "",
           "zone": null
         },
@@ -905,6 +905,6 @@
       ]
     }
   },
-  "generatedAt": "2026-10-11T14:50:28Z",
+  "generatedAt": "2026-10-11T15:00:41Z",
   "source": "BSD"
 }
