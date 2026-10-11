@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T15:40:19.800377+00:00",
+  "updated_at": "2026-10-11T20:16:08.235049+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -23,6 +23,18 @@
       "l": 1,
       "gf": 9,
       "ga": 4,
+      "pts": 13,
+      "last5": []
+    },
+    {
+      "club": "Stade Rennais",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
+      "p": 6,
+      "w": 4,
+      "d": 1,
+      "l": 1,
+      "gf": 12,
+      "ga": 10,
       "pts": 13,
       "last5": []
     },
@@ -60,18 +72,6 @@
       "gf": 11,
       "ga": 8,
       "pts": 11,
-      "last5": []
-    },
-    {
-      "club": "Stade Rennais",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
-      "p": 5,
-      "w": 3,
-      "d": 1,
-      "l": 1,
-      "gf": 8,
-      "ga": 9,
-      "pts": 10,
       "last5": []
     },
     {
@@ -173,12 +173,12 @@
     {
       "club": "AJ Auxerre",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
-      "p": 5,
+      "p": 6,
       "w": 2,
       "d": 0,
-      "l": 3,
-      "gf": 7,
-      "ga": 12,
+      "l": 4,
+      "gf": 8,
+      "ga": 16,
       "pts": 6,
       "last5": []
     },
