@@ -1308,5 +1308,30 @@
     "id": "34245377",
     "cutout": null,
     "thumb": null
+  },
+  "samoameyaw": {
+    "id": "34221336",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/atrz701766053905.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/32icn41695740027.jpg"
+  },
+  "darioessugo": {
+    "id": "34191417",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/sgwvhr1787727807.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/usgaou1771427059.jpg"
+  },
+  "pdiop": {
+    "id": "34149547",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/g4pu161603220023.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/6elp581515415333.jpg"
+  },
+  "abdoulkarimcoulibaly": {
+    "id": "34349297",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/660umx1763666005.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/k09j3y1763644356.jpg"
+  },
+  "charder": {
+    "id": "34154880",
+    "cutout": null,
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/md6mfc1531062415.jpg"
   }
 }
