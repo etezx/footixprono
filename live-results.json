@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-11T13:01:11Z",
+  "generatedAt": "2026-10-11T13:10:34Z",
   "events": [
     {
       "eventId": 210448,
@@ -1186,7 +1186,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-11T13:01:11Z",
+      "updatedAt": "2026-10-11T13:10:34Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1208,7 +1208,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-11T13:01:11Z",
+      "updatedAt": "2026-10-11T13:10:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1228,7 +1228,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-11T13:01:11Z",
+      "updatedAt": "2026-10-11T13:10:34Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 2,
@@ -1251,7 +1251,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-11T13:01:11Z",
+      "updatedAt": "2026-10-11T13:10:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1271,7 +1271,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-11T13:01:11Z",
+      "updatedAt": "2026-10-11T13:10:34Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -1294,7 +1294,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-11T13:01:11Z",
+      "updatedAt": "2026-10-11T13:10:34Z",
       "minute": null,
       "homeScore": 5,
       "awayScore": 1,
@@ -1314,12 +1314,18 @@
       "leagueId": 6,
       "home": "Nice",
       "away": "RC Strasbourg",
-      "kickoff": "2026-10-11T13:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-11T13:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-11T13:10:34Z",
+      "minute": 8,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210489,
@@ -1331,7 +1337,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     },
     {
       "eventId": 210490,
@@ -1343,7 +1349,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     },
     {
       "eventId": 601153,
@@ -1355,7 +1361,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     },
     {
       "eventId": 601157,
@@ -1367,7 +1373,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     },
     {
       "eventId": 601032,
@@ -1379,7 +1385,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     },
     {
       "eventId": 601040,
@@ -1391,7 +1397,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     },
     {
       "eventId": 601061,
@@ -1403,7 +1409,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     },
     {
       "eventId": 601083,
@@ -1415,7 +1421,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     },
     {
       "eventId": 601103,
@@ -1427,7 +1433,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     },
     {
       "eventId": 601147,
@@ -1439,7 +1445,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     },
     {
       "eventId": 601158,
@@ -1451,7 +1457,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-11T13:01:11Z"
+      "updatedAt": "2026-10-11T13:10:34Z"
     }
   ]
 }
