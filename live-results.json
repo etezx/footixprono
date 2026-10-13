@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-13T18:32:58Z",
+  "generatedAt": "2026-10-13T19:03:23Z",
   "events": [
     {
       "eventId": 210448,
@@ -1319,7 +1319,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T18:32:58Z",
+      "updatedAt": "2026-10-13T19:03:23Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1341,7 +1341,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T18:32:58Z",
+      "updatedAt": "2026-10-13T19:03:23Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 1,
@@ -1364,7 +1364,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T18:32:58Z",
+      "updatedAt": "2026-10-13T19:03:23Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -1380,13 +1380,13 @@
       "leagueId": 7,
       "home": "RC Lens",
       "away": "Sporting CP",
-      "kickoff": "2026-10-13T16:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-13T18:32:58Z",
-      "minute": 85,
+      "kickoff": "2026-10-13T16:45:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-13T19:03:23Z",
+      "minute": null,
       "homeScore": 0,
       "awayScore": 2,
       "actualScorers": [
@@ -1401,104 +1401,148 @@
       "leagueId": 7,
       "home": "Sabah FK",
       "away": "SK Slavia Praha",
-      "kickoff": "2026-10-13T16:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-13T18:32:58Z",
-      "minute": 87,
-      "homeScore": 1,
+      "kickoff": "2026-10-13T16:45:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-13T19:03:23Z",
+      "minute": null,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
+        "J. Mickels",
         "K. Parris"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 601032,
       "leagueId": 7,
       "home": "Atlético Madrid",
       "away": "Manchester United",
-      "kickoff": "2026-10-13T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-13T19:03:23Z",
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601040,
       "leagueId": 7,
       "home": "Inter",
       "away": "Club Brugge KV",
-      "kickoff": "2026-10-13T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-13T19:03:23Z",
+      "minute": 2,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601061,
       "leagueId": 7,
       "home": "Arsenal",
       "away": "Lille",
-      "kickoff": "2026-10-13T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-13T19:03:23Z",
+      "minute": 2,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601083,
       "leagueId": 7,
       "home": "Galatasaray",
       "away": "FC Barcelona",
-      "kickoff": "2026-10-13T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-13T19:03:23Z",
+      "minute": 1,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601103,
       "leagueId": 7,
       "home": "Viking FK",
       "away": "FC Bayern München",
-      "kickoff": "2026-10-13T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-13T19:03:23Z",
+      "minute": 2,
+      "homeScore": 1,
+      "awayScore": 0,
+      "actualScorers": [
+        "G. Stensness"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 1
     },
     {
       "eventId": 601147,
       "leagueId": 7,
       "home": "RB Leipzig",
       "away": "PSV Eindhoven",
-      "kickoff": "2026-10-13T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-13T19:03:23Z",
+      "minute": 1,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601158,
       "leagueId": 7,
       "home": "Villarreal",
       "away": "SSC Napoli",
-      "kickoff": "2026-10-13T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-13T19:03:23Z",
+      "minute": 2,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601101,
@@ -1510,7 +1554,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "updatedAt": "2026-10-13T19:03:23Z"
     },
     {
       "eventId": 601126,
@@ -1522,7 +1566,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "updatedAt": "2026-10-13T19:03:23Z"
     },
     {
       "eventId": 601031,
@@ -1534,7 +1578,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "updatedAt": "2026-10-13T19:03:23Z"
     },
     {
       "eventId": 601045,
@@ -1546,7 +1590,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "updatedAt": "2026-10-13T19:03:23Z"
     },
     {
       "eventId": 601073,
@@ -1558,7 +1602,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "updatedAt": "2026-10-13T19:03:23Z"
     },
     {
       "eventId": 601077,
@@ -1570,7 +1614,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "updatedAt": "2026-10-13T19:03:23Z"
     },
     {
       "eventId": 601107,
@@ -1582,7 +1626,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "updatedAt": "2026-10-13T19:03:23Z"
     },
     {
       "eventId": 601114,
@@ -1594,7 +1638,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "updatedAt": "2026-10-13T19:03:23Z"
     },
     {
       "eventId": 601166,
@@ -1606,7 +1650,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T18:32:58Z"
+      "updatedAt": "2026-10-13T19:03:23Z"
     }
   ]
 }
