@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-13T17:09:03Z",
+  "generatedAt": "2026-10-13T17:42:16Z",
   "events": [
     {
       "eventId": 210448,
@@ -1319,7 +1319,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T17:09:03Z",
+      "updatedAt": "2026-10-13T17:42:16Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1341,7 +1341,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T17:09:03Z",
+      "updatedAt": "2026-10-13T17:42:16Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 1,
@@ -1364,7 +1364,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T17:09:03Z",
+      "updatedAt": "2026-10-13T17:42:16Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -1384,14 +1384,16 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-10-13T17:09:03Z",
-      "minute": 21,
+      "period": "halftime",
+      "updatedAt": "2026-10-13T17:42:16Z",
+      "minute": 45,
       "homeScore": 0,
-      "awayScore": 0,
-      "actualScorers": [],
+      "awayScore": 1,
+      "actualScorers": [
+        "L. J. Suárez"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 601157,
@@ -1402,9 +1404,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-10-13T17:09:03Z",
-      "minute": 21,
+      "period": "halftime",
+      "updatedAt": "2026-10-13T17:42:16Z",
+      "minute": 45,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -1421,7 +1423,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601040,
@@ -1433,7 +1435,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601061,
@@ -1445,7 +1447,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601083,
@@ -1457,7 +1459,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601103,
@@ -1469,7 +1471,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601147,
@@ -1481,7 +1483,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601158,
@@ -1493,7 +1495,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601101,
@@ -1505,7 +1507,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601126,
@@ -1517,7 +1519,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601031,
@@ -1529,7 +1531,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601045,
@@ -1541,7 +1543,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601073,
@@ -1553,7 +1555,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601077,
@@ -1565,7 +1567,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601107,
@@ -1577,7 +1579,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601114,
@@ -1589,7 +1591,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     },
     {
       "eventId": 601166,
@@ -1601,7 +1603,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T17:09:03Z"
+      "updatedAt": "2026-10-13T17:42:16Z"
     }
   ]
 }
