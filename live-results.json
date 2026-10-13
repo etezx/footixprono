@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-13T19:53:32Z",
+  "generatedAt": "2026-10-13T20:05:10Z",
   "events": [
     {
       "eventId": 210448,
@@ -1319,7 +1319,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T19:53:32Z",
+      "updatedAt": "2026-10-13T20:05:10Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1341,7 +1341,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T19:53:32Z",
+      "updatedAt": "2026-10-13T20:05:10Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 1,
@@ -1364,7 +1364,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T19:53:32Z",
+      "updatedAt": "2026-10-13T20:05:10Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -1385,7 +1385,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T19:53:32Z",
+      "updatedAt": "2026-10-13T20:05:10Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -1406,7 +1406,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T19:53:32Z",
+      "updatedAt": "2026-10-13T20:05:10Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1427,7 +1427,7 @@
       "live": true,
       "completed": false,
       "period": "halftime",
-      "updatedAt": "2026-10-13T19:53:32Z",
+      "updatedAt": "2026-10-13T20:05:10Z",
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -1446,8 +1446,8 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-13T19:53:32Z",
+      "period": "2nd_half",
+      "updatedAt": "2026-10-13T20:05:10Z",
       "minute": 45,
       "homeScore": 1,
       "awayScore": 1,
@@ -1467,9 +1467,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-13T19:53:32Z",
-      "minute": 45,
+      "period": "2nd_half",
+      "updatedAt": "2026-10-13T20:05:10Z",
+      "minute": 46,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -1486,7 +1486,7 @@
       "live": true,
       "completed": false,
       "period": "halftime",
-      "updatedAt": "2026-10-13T19:53:32Z",
+      "updatedAt": "2026-10-13T20:05:10Z",
       "minute": 45,
       "homeScore": 1,
       "awayScore": 1,
@@ -1506,8 +1506,8 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-13T19:53:32Z",
+      "period": "2nd_half",
+      "updatedAt": "2026-10-13T20:05:10Z",
       "minute": 45,
       "homeScore": 2,
       "awayScore": 0,
@@ -1528,7 +1528,7 @@
       "live": true,
       "completed": false,
       "period": "halftime",
-      "updatedAt": "2026-10-13T19:53:32Z",
+      "updatedAt": "2026-10-13T20:05:10Z",
       "minute": 45,
       "homeScore": 0,
       "awayScore": 0,
@@ -1545,9 +1545,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-13T19:53:32Z",
-      "minute": 45,
+      "period": "2nd_half",
+      "updatedAt": "2026-10-13T20:05:10Z",
+      "minute": 46,
       "homeScore": 2,
       "awayScore": 1,
       "actualScorers": [
@@ -1568,7 +1568,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T19:53:32Z"
+      "updatedAt": "2026-10-13T20:05:10Z"
     },
     {
       "eventId": 601126,
@@ -1580,7 +1580,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T19:53:32Z"
+      "updatedAt": "2026-10-13T20:05:10Z"
     },
     {
       "eventId": 601031,
@@ -1592,7 +1592,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T19:53:32Z"
+      "updatedAt": "2026-10-13T20:05:10Z"
     },
     {
       "eventId": 601045,
@@ -1604,7 +1604,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T19:53:32Z"
+      "updatedAt": "2026-10-13T20:05:10Z"
     },
     {
       "eventId": 601073,
@@ -1616,7 +1616,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T19:53:32Z"
+      "updatedAt": "2026-10-13T20:05:10Z"
     },
     {
       "eventId": 601077,
@@ -1628,7 +1628,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T19:53:32Z"
+      "updatedAt": "2026-10-13T20:05:10Z"
     },
     {
       "eventId": 601107,
@@ -1640,7 +1640,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T19:53:32Z"
+      "updatedAt": "2026-10-13T20:05:10Z"
     },
     {
       "eventId": 601114,
@@ -1652,7 +1652,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T19:53:32Z"
+      "updatedAt": "2026-10-13T20:05:10Z"
     },
     {
       "eventId": 601166,
@@ -1664,7 +1664,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T19:53:32Z"
+      "updatedAt": "2026-10-13T20:05:10Z"
     }
   ]
 }
