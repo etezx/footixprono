@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-13T20:34:11Z",
+  "generatedAt": "2026-10-13T20:41:51Z",
   "events": [
     {
       "eventId": 210448,
@@ -1319,7 +1319,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T20:34:11Z",
+      "updatedAt": "2026-10-13T20:41:51Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1341,7 +1341,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T20:34:11Z",
+      "updatedAt": "2026-10-13T20:41:51Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 1,
@@ -1364,7 +1364,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T20:34:11Z",
+      "updatedAt": "2026-10-13T20:41:51Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -1385,7 +1385,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T20:34:11Z",
+      "updatedAt": "2026-10-13T20:41:51Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -1406,7 +1406,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T20:34:11Z",
+      "updatedAt": "2026-10-13T20:41:51Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1427,15 +1427,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-13T20:34:11Z",
-      "homeScore": 1,
+      "updatedAt": "2026-10-13T20:41:51Z",
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
+        "A. Lookman",
         "P. Barrios"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1,
-      "minute": 73
+      "goalIncidents": 2,
+      "minute": 81
     },
     {
       "eventId": 601040,
@@ -1447,16 +1448,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-13T20:34:11Z",
-      "minute": 74,
-      "homeScore": 1,
+      "updatedAt": "2026-10-13T20:41:51Z",
+      "minute": 82,
+      "homeScore": 2,
       "awayScore": 3,
       "actualScorers": [
-        "N. Tresoldi",
-        "L. Martínez"
+        "L. Martínez",
+        "N. Tresoldi"
       ],
-      "scorersVerified": false,
-      "goalIncidents": 3
+      "scorersVerified": true,
+      "goalIncidents": 5
     },
     {
       "eventId": 601061,
@@ -1468,8 +1469,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-13T20:34:11Z",
-      "minute": 75,
+      "updatedAt": "2026-10-13T20:41:51Z",
+      "minute": 83,
       "homeScore": 3,
       "awayScore": 0,
       "actualScorers": [
@@ -1490,8 +1491,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-13T20:34:11Z",
-      "minute": 72,
+      "updatedAt": "2026-10-13T20:41:51Z",
+      "minute": 80,
       "homeScore": 1,
       "awayScore": 4,
       "actualScorers": [
@@ -1514,8 +1515,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-13T20:34:11Z",
-      "minute": 74,
+      "updatedAt": "2026-10-13T20:41:51Z",
+      "minute": 82,
       "homeScore": 2,
       "awayScore": 3,
       "actualScorers": [
@@ -1537,13 +1538,15 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-13T20:34:11Z",
-      "minute": 72,
-      "homeScore": 0,
+      "updatedAt": "2026-10-13T20:41:51Z",
+      "minute": 80,
+      "homeScore": 1,
       "awayScore": 0,
-      "actualScorers": [],
+      "actualScorers": [
+        "B. Gruda"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 601158,
@@ -1555,8 +1558,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-13T20:34:11Z",
-      "minute": 75,
+      "updatedAt": "2026-10-13T20:41:51Z",
+      "minute": 83,
       "homeScore": 2,
       "awayScore": 1,
       "actualScorers": [
@@ -1577,7 +1580,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T20:34:11Z"
+      "updatedAt": "2026-10-13T20:41:51Z"
     },
     {
       "eventId": 601126,
@@ -1589,7 +1592,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T20:34:11Z"
+      "updatedAt": "2026-10-13T20:41:51Z"
     },
     {
       "eventId": 601031,
@@ -1601,7 +1604,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T20:34:11Z"
+      "updatedAt": "2026-10-13T20:41:51Z"
     },
     {
       "eventId": 601045,
@@ -1613,7 +1616,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T20:34:11Z"
+      "updatedAt": "2026-10-13T20:41:51Z"
     },
     {
       "eventId": 601073,
@@ -1625,7 +1628,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T20:34:11Z"
+      "updatedAt": "2026-10-13T20:41:51Z"
     },
     {
       "eventId": 601077,
@@ -1637,7 +1640,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T20:34:11Z"
+      "updatedAt": "2026-10-13T20:41:51Z"
     },
     {
       "eventId": 601107,
@@ -1649,7 +1652,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T20:34:11Z"
+      "updatedAt": "2026-10-13T20:41:51Z"
     },
     {
       "eventId": 601114,
@@ -1661,7 +1664,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T20:34:11Z"
+      "updatedAt": "2026-10-13T20:41:51Z"
     },
     {
       "eventId": 601166,
@@ -1673,7 +1676,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T20:34:11Z"
+      "updatedAt": "2026-10-13T20:41:51Z"
     }
   ]
 }
