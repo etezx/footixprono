@@ -365,6 +365,23 @@
         },
         {
           "position": 2,
+          "club": "Liverpool FC",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 8,
+          "ga": 4,
+          "pts": 6,
+          "group": "",
+          "zone": {
+            "key": "playoff",
+            "label": "Playoffs",
+            "type": "playoff"
+          }
+        },
+        {
+          "position": 3,
           "club": "Sporting CP",
           "p": 2,
           "w": 2,
@@ -381,7 +398,7 @@
           }
         },
         {
-          "position": 3,
+          "position": 4,
           "club": "Arsenal",
           "p": 2,
           "w": 2,
@@ -398,7 +415,7 @@
           }
         },
         {
-          "position": 4,
+          "position": 5,
           "club": "FC Bayern München",
           "p": 2,
           "w": 1,
@@ -415,7 +432,7 @@
           }
         },
         {
-          "position": 5,
+          "position": 6,
           "club": "Paris Saint-Germain",
           "p": 1,
           "w": 1,
@@ -432,7 +449,7 @@
           }
         },
         {
-          "position": 6,
+          "position": 7,
           "club": "Como",
           "p": 1,
           "w": 1,
@@ -449,7 +466,7 @@
           }
         },
         {
-          "position": 7,
+          "position": 8,
           "club": "Manchester United",
           "p": 2,
           "w": 1,
@@ -466,7 +483,7 @@
           }
         },
         {
-          "position": 8,
+          "position": 9,
           "club": "VfB Stuttgart",
           "p": 1,
           "w": 1,
@@ -478,12 +495,12 @@
           "group": "",
           "zone": {
             "key": "playoff",
-            "label": "Playoffs",
+            "label": "Qualification Playoffs",
             "type": "playoff"
           }
         },
         {
-          "position": 9,
+          "position": 10,
           "club": "Manchester City",
           "p": 1,
           "w": 1,
@@ -500,7 +517,7 @@
           }
         },
         {
-          "position": 10,
+          "position": 11,
           "club": "Villarreal",
           "p": 2,
           "w": 1,
@@ -517,7 +534,7 @@
           }
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "Aston Villa",
           "p": 1,
           "w": 1,
@@ -534,7 +551,7 @@
           }
         },
         {
-          "position": 12,
+          "position": 13,
           "club": "Atlético Madrid",
           "p": 2,
           "w": 1,
@@ -551,7 +568,7 @@
           }
         },
         {
-          "position": 13,
+          "position": 14,
           "club": "Borussia Dortmund",
           "p": 1,
           "w": 1,
@@ -568,7 +585,7 @@
           }
         },
         {
-          "position": 14,
+          "position": 15,
           "club": "Real Betis",
           "p": 1,
           "w": 1,
@@ -576,23 +593,6 @@
           "l": 0,
           "gf": 3,
           "ga": 2,
-          "pts": 3,
-          "group": "",
-          "zone": {
-            "key": "playoff",
-            "label": "Qualification Playoffs",
-            "type": "playoff"
-          }
-        },
-        {
-          "position": 15,
-          "club": "Liverpool FC",
-          "p": 1,
-          "w": 1,
-          "d": 0,
-          "l": 0,
-          "gf": 2,
-          "ga": 1,
           "pts": 3,
           "group": "",
           "zone": {
@@ -782,19 +782,6 @@
         },
         {
           "position": 27,
-          "club": "LASK",
-          "p": 1,
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "gf": 0,
-          "ga": 1,
-          "pts": 0,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 28,
           "club": "Inter",
           "p": 2,
           "w": 0,
@@ -807,7 +794,7 @@
           "zone": null
         },
         {
-          "position": 29,
+          "position": 28,
           "club": "FC Porto",
           "p": 1,
           "w": 0,
@@ -820,7 +807,7 @@
           "zone": null
         },
         {
-          "position": 30,
+          "position": 29,
           "club": "SK Slavia Praha",
           "p": 2,
           "w": 0,
@@ -833,7 +820,7 @@
           "zone": null
         },
         {
-          "position": 31,
+          "position": 30,
           "club": "SSC Napoli",
           "p": 2,
           "w": 0,
@@ -841,6 +828,19 @@
           "l": 2,
           "gf": 1,
           "ga": 4,
+          "pts": 0,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 31,
+          "club": "LASK",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 7,
           "pts": 0,
           "group": "",
           "zone": null
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-10-14T18:31:06Z",
+  "generatedAt": "2026-10-14T18:41:07Z",
   "source": "BSD"
 }
