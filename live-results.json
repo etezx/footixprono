@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-14T20:42:16Z",
+  "generatedAt": "2026-10-14T20:51:06Z",
   "events": [
     {
       "eventId": 210448,
@@ -1385,7 +1385,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -1406,7 +1406,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1427,7 +1427,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1448,7 +1448,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 4,
@@ -1471,7 +1471,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 0,
@@ -1493,7 +1493,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 4,
@@ -1517,7 +1517,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 3,
@@ -1541,7 +1541,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1561,7 +1561,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -1584,7 +1584,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 6,
@@ -1609,7 +1609,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -1633,8 +1633,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:42:16Z",
-      "minute": 80,
+      "updatedAt": "2026-10-14T20:51:06Z",
+      "minute": 89,
       "homeScore": 2,
       "awayScore": 4,
       "actualScorers": [
@@ -1657,17 +1657,20 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:42:16Z",
+      "updatedAt": "2026-10-14T20:51:06Z",
       "homeScore": 3,
-      "awayScore": 1,
-      "minute": 82,
+      "awayScore": 4,
+      "minute": 91,
       "actualScorers": [
+        "A. Rüdiger",
+        "Endrick",
+        "C. Espí",
         "D. Malen",
         "K. Mbappé",
         "M. de Roon"
       ],
       "scorersVerified": true,
-      "goalIncidents": 4
+      "goalIncidents": 7
     },
     {
       "eventId": 601073,
@@ -1675,21 +1678,22 @@
       "home": "Aston Villa",
       "away": "Fenerbahçe",
       "kickoff": "2026-10-14T19:00:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:42:16Z",
-      "minute": 83,
-      "homeScore": 5,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-14T20:51:06Z",
+      "minute": null,
+      "homeScore": 6,
       "awayScore": 0,
       "actualScorers": [
+        "T. Abraham",
         "R. Barkley",
         "N. Jackson",
         "J. Manzambi"
       ],
       "scorersVerified": true,
-      "goalIncidents": 5
+      "goalIncidents": 6
     },
     {
       "eventId": 601077,
@@ -1701,18 +1705,19 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:42:16Z",
-      "homeScore": 2,
+      "updatedAt": "2026-10-14T20:51:06Z",
+      "homeScore": 3,
       "awayScore": 2,
-      "minute": 79,
+      "minute": 88,
       "actualScorers": [
+        "Isco",
         "C. Hernández",
         "S. Aghehowa",
         "G. Veiga",
         "A. Ezzalzouli"
       ],
       "scorersVerified": true,
-      "goalIncidents": 4
+      "goalIncidents": 5
     },
     {
       "eventId": 601107,
@@ -1724,17 +1729,18 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:42:16Z",
-      "minute": 82,
-      "homeScore": 2,
+      "updatedAt": "2026-10-14T20:51:06Z",
+      "minute": 91,
+      "homeScore": 3,
       "awayScore": 1,
       "actualScorers": [
-        "A. Brignoli",
+        "G. Mendoza",
+        "V. Tobias",
         "Pedrinho",
         "L. Majer"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 601114,
@@ -1742,12 +1748,12 @@
       "home": "Bodø/Glimt",
       "away": "Borussia Dortmund",
       "kickoff": "2026-10-14T19:00:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:42:16Z",
-      "minute": 85,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-14T20:51:06Z",
+      "minute": null,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -1766,16 +1772,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:42:16Z",
-      "minute": 84,
+      "updatedAt": "2026-10-14T20:51:06Z",
+      "minute": 93,
       "homeScore": 0,
-      "awayScore": 2,
+      "awayScore": 3,
       "actualScorers": [
+        "E. Demirović",
         "S. Cruz",
         "D. Undav"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 210493,
@@ -1787,7 +1794,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-14T20:42:16Z"
+      "updatedAt": "2026-10-14T20:51:06Z"
     }
   ]
 }
