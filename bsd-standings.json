@@ -680,7 +680,11 @@
           "ga": 4,
           "pts": 3,
           "group": "",
-          "zone": null
+          "zone": {
+            "key": "playoff",
+            "label": "Qualification Playoffs",
+            "type": "playoff"
+          }
         },
         {
           "position": 21,
@@ -744,7 +748,11 @@
           "ga": 1,
           "pts": 1,
           "group": "",
-          "zone": null
+          "zone": {
+            "key": "playoff",
+            "label": "Qualification Playoffs",
+            "type": "playoff"
+          }
         },
         {
           "position": 25,
@@ -905,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-10-13T21:01:31Z",
+  "generatedAt": "2026-10-14T16:01:09Z",
   "source": "BSD"
 }

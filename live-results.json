@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-13T21:01:31Z",
+  "generatedAt": "2026-10-14T16:01:09Z",
   "events": [
     {
       "eventId": 210448,
@@ -1385,7 +1385,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T21:01:31Z",
+      "updatedAt": "2026-10-14T16:01:09Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -1406,7 +1406,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T21:01:31Z",
+      "updatedAt": "2026-10-14T16:01:09Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1422,12 +1422,12 @@
       "leagueId": 7,
       "home": "Atlético Madrid",
       "away": "Manchester United",
-      "kickoff": "2026-10-13T19:00:00Z",
+      "kickoff": "2026-10-13T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T21:01:31Z",
+      "updatedAt": "2026-10-14T16:01:09Z",
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1443,12 +1443,12 @@
       "leagueId": 7,
       "home": "Inter",
       "away": "Club Brugge KV",
-      "kickoff": "2026-10-13T19:00:00Z",
+      "kickoff": "2026-10-13T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T21:01:31Z",
+      "updatedAt": "2026-10-14T16:01:09Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 4,
@@ -1466,12 +1466,12 @@
       "leagueId": 7,
       "home": "Arsenal",
       "away": "Lille",
-      "kickoff": "2026-10-13T19:00:00Z",
+      "kickoff": "2026-10-13T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T21:01:31Z",
+      "updatedAt": "2026-10-14T16:01:09Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 0,
@@ -1488,12 +1488,12 @@
       "leagueId": 7,
       "home": "Galatasaray",
       "away": "FC Barcelona",
-      "kickoff": "2026-10-13T19:00:00Z",
+      "kickoff": "2026-10-13T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T21:01:31Z",
+      "updatedAt": "2026-10-14T16:01:09Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 4,
@@ -1512,12 +1512,12 @@
       "leagueId": 7,
       "home": "Viking FK",
       "away": "FC Bayern München",
-      "kickoff": "2026-10-13T19:00:00Z",
+      "kickoff": "2026-10-13T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T21:01:31Z",
+      "updatedAt": "2026-10-14T16:01:09Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 3,
@@ -1536,12 +1536,12 @@
       "leagueId": 7,
       "home": "RB Leipzig",
       "away": "PSV Eindhoven",
-      "kickoff": "2026-10-13T19:00:00Z",
+      "kickoff": "2026-10-13T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T21:01:31Z",
+      "updatedAt": "2026-10-14T16:01:09Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1556,12 +1556,12 @@
       "leagueId": 7,
       "home": "Villarreal",
       "away": "SSC Napoli",
-      "kickoff": "2026-10-13T19:00:00Z",
+      "kickoff": "2026-10-13T19:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-13T21:01:31Z",
+      "updatedAt": "2026-10-14T16:01:09Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -1584,7 +1584,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T21:01:31Z"
+      "updatedAt": "2026-10-14T16:01:09Z"
     },
     {
       "eventId": 601126,
@@ -1596,7 +1596,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T21:01:31Z"
+      "updatedAt": "2026-10-14T16:01:09Z"
     },
     {
       "eventId": 601031,
@@ -1608,7 +1608,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T21:01:31Z"
+      "updatedAt": "2026-10-14T16:01:09Z"
     },
     {
       "eventId": 601045,
@@ -1620,7 +1620,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T21:01:31Z"
+      "updatedAt": "2026-10-14T16:01:09Z"
     },
     {
       "eventId": 601073,
@@ -1632,7 +1632,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T21:01:31Z"
+      "updatedAt": "2026-10-14T16:01:09Z"
     },
     {
       "eventId": 601077,
@@ -1644,7 +1644,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T21:01:31Z"
+      "updatedAt": "2026-10-14T16:01:09Z"
     },
     {
       "eventId": 601107,
@@ -1656,7 +1656,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T21:01:31Z"
+      "updatedAt": "2026-10-14T16:01:09Z"
     },
     {
       "eventId": 601114,
@@ -1668,7 +1668,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T21:01:31Z"
+      "updatedAt": "2026-10-14T16:01:09Z"
     },
     {
       "eventId": 601166,
@@ -1680,7 +1680,19 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-13T21:01:31Z"
+      "updatedAt": "2026-10-14T16:01:09Z"
+    },
+    {
+      "eventId": 210493,
+      "leagueId": 6,
+      "home": "Le Mans",
+      "away": "Toulouse",
+      "kickoff": "2026-10-16T18:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-14T16:01:09Z"
     }
   ]
 }
