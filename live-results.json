@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-14T20:21:06Z",
+  "generatedAt": "2026-10-14T20:31:08Z",
   "events": [
     {
       "eventId": 210448,
@@ -1385,7 +1385,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -1406,7 +1406,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1427,7 +1427,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1448,7 +1448,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 4,
@@ -1471,7 +1471,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 0,
@@ -1493,7 +1493,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 4,
@@ -1517,7 +1517,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 3,
@@ -1541,7 +1541,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1561,7 +1561,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -1584,7 +1584,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 6,
@@ -1609,7 +1609,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -1633,18 +1633,19 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:21:06Z",
-      "minute": 60,
+      "updatedAt": "2026-10-14T20:31:08Z",
+      "minute": 68,
       "homeScore": 1,
-      "awayScore": 3,
+      "awayScore": 4,
       "actualScorers": [
+        "M. Akliouche",
         "E. Haaland",
         "Vitinha",
         "O. Dembélé",
         "D. Doué"
       ],
       "scorersVerified": true,
-      "goalIncidents": 4
+      "goalIncidents": 5
     },
     {
       "eventId": 601045,
@@ -1656,10 +1657,10 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "homeScore": 3,
       "awayScore": 1,
-      "minute": 61,
+      "minute": 70,
       "actualScorers": [
         "D. Malen",
         "K. Mbappé",
@@ -1678,16 +1679,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:21:06Z",
-      "minute": 62,
-      "homeScore": 3,
+      "updatedAt": "2026-10-14T20:31:08Z",
+      "minute": 71,
+      "homeScore": 4,
       "awayScore": 0,
       "actualScorers": [
+        "R. Barkley",
         "N. Jackson",
         "J. Manzambi"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 5
     },
     {
       "eventId": 601077,
@@ -1699,16 +1701,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:21:06Z",
+      "updatedAt": "2026-10-14T20:31:08Z",
       "homeScore": 1,
-      "awayScore": 1,
-      "minute": 58,
+      "awayScore": 2,
+      "minute": 67,
       "actualScorers": [
+        "S. Aghehowa",
         "G. Veiga",
         "A. Ezzalzouli"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 601107,
@@ -1720,8 +1723,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:21:06Z",
-      "minute": 61,
+      "updatedAt": "2026-10-14T20:31:08Z",
+      "minute": 70,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -1741,8 +1744,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:21:06Z",
-      "minute": 64,
+      "updatedAt": "2026-10-14T20:31:08Z",
+      "minute": 73,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -1761,15 +1764,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:21:06Z",
-      "minute": 63,
+      "updatedAt": "2026-10-14T20:31:08Z",
+      "minute": 72,
       "homeScore": 0,
-      "awayScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "S. Cruz",
         "D. Undav"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210493,
@@ -1781,7 +1785,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-14T20:21:06Z"
+      "updatedAt": "2026-10-14T20:31:08Z"
     }
   ]
 }
