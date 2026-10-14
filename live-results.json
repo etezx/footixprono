@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-14T20:11:07Z",
+  "generatedAt": "2026-10-14T20:21:06Z",
   "events": [
     {
       "eventId": 210448,
@@ -1385,7 +1385,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -1406,7 +1406,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -1427,7 +1427,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -1448,7 +1448,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 4,
@@ -1471,7 +1471,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 0,
@@ -1493,7 +1493,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 4,
@@ -1517,7 +1517,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 3,
@@ -1541,7 +1541,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1561,7 +1561,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -1584,7 +1584,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 6,
@@ -1609,7 +1609,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -1633,17 +1633,18 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:11:07Z",
-      "minute": 49,
-      "homeScore": 0,
+      "updatedAt": "2026-10-14T20:21:06Z",
+      "minute": 60,
+      "homeScore": 1,
       "awayScore": 3,
       "actualScorers": [
+        "E. Haaland",
         "Vitinha",
         "O. Dembélé",
         "D. Doué"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 601045,
@@ -1655,17 +1656,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:11:07Z",
-      "homeScore": 2,
+      "updatedAt": "2026-10-14T20:21:06Z",
+      "homeScore": 3,
       "awayScore": 1,
-      "minute": 51,
+      "minute": 61,
       "actualScorers": [
         "D. Malen",
         "K. Mbappé",
         "M. de Roon"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 601073,
@@ -1677,8 +1678,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:11:07Z",
-      "minute": 52,
+      "updatedAt": "2026-10-14T20:21:06Z",
+      "minute": 62,
       "homeScore": 3,
       "awayScore": 0,
       "actualScorers": [
@@ -1698,15 +1699,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:11:07Z",
+      "updatedAt": "2026-10-14T20:21:06Z",
       "homeScore": 1,
-      "awayScore": 0,
-      "minute": 48,
+      "awayScore": 1,
+      "minute": 58,
       "actualScorers": [
+        "G. Veiga",
         "A. Ezzalzouli"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 601107,
@@ -1718,8 +1720,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:11:07Z",
-      "minute": 51,
+      "updatedAt": "2026-10-14T20:21:06Z",
+      "minute": 61,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -1739,8 +1741,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:11:07Z",
-      "minute": 54,
+      "updatedAt": "2026-10-14T20:21:06Z",
+      "minute": 64,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -1759,8 +1761,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-14T20:11:07Z",
-      "minute": 53,
+      "updatedAt": "2026-10-14T20:21:06Z",
+      "minute": 63,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -1779,7 +1781,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-14T20:11:07Z"
+      "updatedAt": "2026-10-14T20:21:06Z"
     }
   ]
 }
