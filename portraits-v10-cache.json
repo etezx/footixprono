@@ -1333,5 +1333,25 @@
     "id": "34154880",
     "cutout": null,
     "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/md6mfc1531062415.jpg"
+  },
+  "lbuades": {
+    "id": "34231288",
+    "cutout": null,
+    "thumb": null
+  },
+  "dtraore": {
+    "id": "34146115",
+    "cutout": null,
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/6s8q9i1506516862.jpg"
+  },
+  "rnicolaisen": {
+    "id": "34176437",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/vze8r51765967536.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/f0m74b1659969014.jpg"
+  },
+  "adnnum": {
+    "id": "34217999",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/n7b1xn1765968347.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/1k0k971697547963.jpg"
   }
 }
