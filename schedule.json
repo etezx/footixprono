@@ -1225,7 +1225,7 @@
           "eventId": 210491,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T19:31:04Z"
+          "lastLiveUpdate": "2026-10-16T19:41:05Z"
         }
       ],
       [
@@ -1240,7 +1240,7 @@
           "eventId": 210492,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T19:31:04Z"
+          "lastLiveUpdate": "2026-10-16T19:41:05Z"
         }
       ],
       [
@@ -1255,9 +1255,9 @@
           "eventId": 210493,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-16T19:31:04Z",
+          "lastLiveUpdate": "2026-10-16T19:41:05Z",
           "minute": 45,
-          "period": "1st_half",
+          "period": "halftime",
           "homeScore": 0,
           "awayScore": 0,
           "actualScorers": [],
@@ -1276,7 +1276,7 @@
           "eventId": 210494,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T19:31:04Z"
+          "lastLiveUpdate": "2026-10-16T19:41:05Z"
         }
       ],
       [
@@ -1291,7 +1291,7 @@
           "eventId": 210495,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T19:31:04Z"
+          "lastLiveUpdate": "2026-10-16T19:41:05Z"
         }
       ],
       [
@@ -1306,7 +1306,7 @@
           "eventId": 210496,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T19:31:04Z"
+          "lastLiveUpdate": "2026-10-16T19:41:05Z"
         }
       ],
       [
@@ -1318,7 +1318,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-16T19:31:04Z"
+          "lastLiveUpdate": "2026-10-16T19:41:05Z"
         }
       ],
       [
@@ -1333,7 +1333,7 @@
           "eventId": 210498,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T19:31:04Z"
+          "lastLiveUpdate": "2026-10-16T19:41:05Z"
         }
       ],
       [
@@ -1348,7 +1348,7 @@
           "eventId": 210499,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T19:31:04Z"
+          "lastLiveUpdate": "2026-10-16T19:41:05Z"
         }
       ]
     ]
