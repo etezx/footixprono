@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T19:57:41.428413+00:00",
+  "updated_at": "2026-10-16T22:51:30.959556+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -72,6 +72,18 @@
       "gf": 11,
       "ga": 8,
       "pts": 11,
+      "last5": []
+    },
+    {
+      "club": "Toulouse",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
+      "p": 7,
+      "w": 2,
+      "d": 3,
+      "l": 2,
+      "gf": 12,
+      "ga": 11,
+      "pts": 9,
       "last5": []
     },
     {
@@ -161,24 +173,12 @@
     {
       "club": "Le Mans",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
-      "p": 6,
+      "p": 7,
       "w": 1,
       "d": 3,
-      "l": 2,
+      "l": 3,
       "gf": 10,
-      "ga": 12,
-      "pts": 6,
-      "last5": []
-    },
-    {
-      "club": "Toulouse",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
-      "p": 6,
-      "w": 1,
-      "d": 3,
-      "l": 2,
-      "gf": 9,
-      "ga": 11,
+      "ga": 15,
       "pts": 6,
       "last5": []
     },
