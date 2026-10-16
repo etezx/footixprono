@@ -1225,7 +1225,7 @@
           "eventId": 210491,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T20:01:06Z"
+          "lastLiveUpdate": "2026-10-16T20:11:04Z"
         }
       ],
       [
@@ -1240,7 +1240,7 @@
           "eventId": 210492,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T20:01:06Z"
+          "lastLiveUpdate": "2026-10-16T20:11:04Z"
         }
       ],
       [
@@ -1255,12 +1255,13 @@
           "eventId": 210493,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-16T20:01:06Z",
-          "minute": 57,
+          "lastLiveUpdate": "2026-10-16T20:11:04Z",
+          "minute": 67,
           "period": "2nd_half",
           "homeScore": 0,
-          "awayScore": 1,
+          "awayScore": 2,
           "actualScorers": [
+            "A. Dønnum",
             "J. Russell Rowe"
           ],
           "scorersVerified": true
@@ -1278,7 +1279,7 @@
           "eventId": 210494,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T20:01:06Z"
+          "lastLiveUpdate": "2026-10-16T20:11:04Z"
         }
       ],
       [
@@ -1293,7 +1294,7 @@
           "eventId": 210495,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T20:01:06Z"
+          "lastLiveUpdate": "2026-10-16T20:11:04Z"
         }
       ],
       [
@@ -1308,7 +1309,7 @@
           "eventId": 210496,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T20:01:06Z"
+          "lastLiveUpdate": "2026-10-16T20:11:04Z"
         }
       ],
       [
@@ -1320,7 +1321,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-16T20:01:06Z"
+          "lastLiveUpdate": "2026-10-16T20:11:04Z"
         }
       ],
       [
@@ -1335,7 +1336,7 @@
           "eventId": 210498,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T20:01:06Z"
+          "lastLiveUpdate": "2026-10-16T20:11:04Z"
         }
       ],
       [
@@ -1350,7 +1351,7 @@
           "eventId": 210499,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-16T20:01:06Z"
+          "lastLiveUpdate": "2026-10-16T20:11:04Z"
         }
       ]
     ]
