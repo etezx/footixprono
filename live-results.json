@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-17T19:30:45Z",
+  "generatedAt": "2026-10-17T19:40:44Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T19:30:45Z",
+      "updatedAt": "2026-10-17T19:40:44Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,7 +1816,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T19:30:45Z",
+      "updatedAt": "2026-10-17T19:40:44Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1838,8 +1838,8 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-10-17T19:30:45Z",
+      "period": "halftime",
+      "updatedAt": "2026-10-17T19:40:44Z",
       "minute": 45,
       "homeScore": 0,
       "awayScore": 1,
@@ -1858,17 +1858,18 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-10-17T19:30:45Z",
+      "period": "halftime",
+      "updatedAt": "2026-10-17T19:40:44Z",
       "minute": 45,
       "homeScore": 1,
-      "awayScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "O. Édouard",
         "T. Nkada",
         "A. Monfray"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 210491,
@@ -1880,7 +1881,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T19:30:45Z"
+      "updatedAt": "2026-10-17T19:40:44Z"
     },
     {
       "eventId": 210492,
@@ -1892,7 +1893,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T19:30:45Z"
+      "updatedAt": "2026-10-17T19:40:44Z"
     },
     {
       "eventId": 210495,
@@ -1904,7 +1905,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T19:30:45Z"
+      "updatedAt": "2026-10-17T19:40:44Z"
     },
     {
       "eventId": 210497,
@@ -1916,7 +1917,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T19:30:45Z"
+      "updatedAt": "2026-10-17T19:40:44Z"
     },
     {
       "eventId": 210496,
@@ -1928,7 +1929,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T19:30:45Z"
+      "updatedAt": "2026-10-17T19:40:44Z"
     }
   ]
 }
