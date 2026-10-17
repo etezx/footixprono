@@ -125,6 +125,19 @@
         },
         {
           "position": 7,
+          "club": "Toulouse",
+          "p": 7,
+          "w": 2,
+          "d": 3,
+          "l": 2,
+          "gf": 12,
+          "ga": 11,
+          "pts": 9,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 8,
           "club": "Stade Brestois",
           "p": 6,
           "w": 2,
@@ -137,7 +150,7 @@
           "zone": null
         },
         {
-          "position": 8,
+          "position": 9,
           "club": "Lorient",
           "p": 6,
           "w": 2,
@@ -150,7 +163,7 @@
           "zone": null
         },
         {
-          "position": 9,
+          "position": 10,
           "club": "Nice",
           "p": 6,
           "w": 2,
@@ -163,7 +176,7 @@
           "zone": null
         },
         {
-          "position": 10,
+          "position": 11,
           "club": "RC Lens",
           "p": 6,
           "w": 2,
@@ -176,7 +189,7 @@
           "zone": null
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "RC Strasbourg",
           "p": 6,
           "w": 2,
@@ -189,7 +202,7 @@
           "zone": null
         },
         {
-          "position": 12,
+          "position": 13,
           "club": "Angers",
           "p": 6,
           "w": 2,
@@ -202,7 +215,7 @@
           "zone": null
         },
         {
-          "position": 13,
+          "position": 14,
           "club": "Olympique de Marseille",
           "p": 6,
           "w": 2,
@@ -215,27 +228,14 @@
           "zone": null
         },
         {
-          "position": 14,
-          "club": "Le Mans",
-          "p": 6,
-          "w": 1,
-          "d": 3,
-          "l": 2,
-          "gf": 10,
-          "ga": 12,
-          "pts": 6,
-          "group": "",
-          "zone": null
-        },
-        {
           "position": 15,
-          "club": "Toulouse",
-          "p": 6,
+          "club": "Le Mans",
+          "p": 7,
           "w": 1,
           "d": 3,
-          "l": 2,
-          "gf": 9,
-          "ga": 11,
+          "l": 3,
+          "gf": 10,
+          "ga": 15,
           "pts": 6,
           "group": "",
           "zone": null
@@ -365,7 +365,7 @@
         },
         {
           "position": 2,
-          "club": "Aston Villa",
+          "club": "FC Barcelona",
           "p": 2,
           "w": 2,
           "d": 0,
@@ -382,7 +382,7 @@
         },
         {
           "position": 3,
-          "club": "FC Barcelona",
+          "club": "Aston Villa",
           "p": 2,
           "w": 2,
           "d": 0,
@@ -467,7 +467,7 @@
         },
         {
           "position": 8,
-          "club": "Real Betis",
+          "club": "Real Madrid",
           "p": 2,
           "w": 2,
           "d": 0,
@@ -484,7 +484,7 @@
         },
         {
           "position": 9,
-          "club": "Real Madrid",
+          "club": "Real Betis",
           "p": 2,
           "w": 2,
           "d": 0,
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-10-16T20:41:04Z",
+  "generatedAt": "2026-10-17T14:30:44Z",
   "source": "BSD"
 }
