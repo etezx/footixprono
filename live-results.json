@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-17T16:58:20Z",
+  "generatedAt": "2026-10-17T17:00:46Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T16:58:20Z",
+      "updatedAt": "2026-10-17T17:00:46Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,16 +1816,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-17T16:58:20Z",
-      "minute": 84,
+      "updatedAt": "2026-10-17T17:00:46Z",
+      "minute": 87,
       "homeScore": 1,
-      "awayScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "O. Dembélé",
         "I. Zabarnyi",
         "G. Reyna"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 210494,
@@ -1837,7 +1838,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T16:58:20Z"
+      "updatedAt": "2026-10-17T17:00:46Z"
     },
     {
       "eventId": 210499,
@@ -1849,7 +1850,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T16:58:20Z"
+      "updatedAt": "2026-10-17T17:00:46Z"
     },
     {
       "eventId": 210491,
@@ -1861,7 +1862,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T16:58:20Z"
+      "updatedAt": "2026-10-17T17:00:46Z"
     },
     {
       "eventId": 210492,
@@ -1873,7 +1874,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T16:58:20Z"
+      "updatedAt": "2026-10-17T17:00:46Z"
     },
     {
       "eventId": 210495,
@@ -1885,7 +1886,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T16:58:20Z"
+      "updatedAt": "2026-10-17T17:00:46Z"
     },
     {
       "eventId": 210497,
@@ -1897,7 +1898,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T16:58:20Z"
+      "updatedAt": "2026-10-17T17:00:46Z"
     },
     {
       "eventId": 210496,
@@ -1909,7 +1910,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T16:58:20Z"
+      "updatedAt": "2026-10-17T17:00:46Z"
     }
   ]
 }
