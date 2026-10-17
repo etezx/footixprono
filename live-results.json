@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-17T19:20:44Z",
+  "generatedAt": "2026-10-17T19:30:45Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T19:20:44Z",
+      "updatedAt": "2026-10-17T19:30:45Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,7 +1816,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T19:20:44Z",
+      "updatedAt": "2026-10-17T19:30:45Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1839,8 +1839,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-17T19:20:44Z",
-      "minute": 34,
+      "updatedAt": "2026-10-17T19:30:45Z",
+      "minute": 45,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -1859,8 +1859,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-17T19:20:44Z",
-      "minute": 34,
+      "updatedAt": "2026-10-17T19:30:45Z",
+      "minute": 45,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -1880,7 +1880,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T19:20:44Z"
+      "updatedAt": "2026-10-17T19:30:45Z"
     },
     {
       "eventId": 210492,
@@ -1892,7 +1892,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T19:20:44Z"
+      "updatedAt": "2026-10-17T19:30:45Z"
     },
     {
       "eventId": 210495,
@@ -1904,7 +1904,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T19:20:44Z"
+      "updatedAt": "2026-10-17T19:30:45Z"
     },
     {
       "eventId": 210497,
@@ -1916,7 +1916,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T19:20:44Z"
+      "updatedAt": "2026-10-17T19:30:45Z"
     },
     {
       "eventId": 210496,
@@ -1928,7 +1928,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T19:20:44Z"
+      "updatedAt": "2026-10-17T19:30:45Z"
     }
   ]
 }
