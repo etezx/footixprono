@@ -23,6 +23,23 @@
       "teams": [
         {
           "position": 1,
+          "club": "Paris Saint-Germain",
+          "p": 7,
+          "w": 4,
+          "d": 2,
+          "l": 1,
+          "gf": 14,
+          "ga": 9,
+          "pts": 14,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 2,
           "club": "AS Monaco",
           "p": 6,
           "w": 4,
@@ -39,7 +56,7 @@
           }
         },
         {
-          "position": 2,
+          "position": 3,
           "club": "Lille",
           "p": 6,
           "w": 4,
@@ -56,7 +73,7 @@
           }
         },
         {
-          "position": 3,
+          "position": 4,
           "club": "Stade Rennais",
           "p": 6,
           "w": 4,
@@ -67,23 +84,6 @@
           "pts": 13,
           "group": "",
           "zone": {
-            "key": "cl",
-            "label": "Champions League",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 4,
-          "club": "Olympique Lyonnais",
-          "p": 6,
-          "w": 3,
-          "d": 2,
-          "l": 1,
-          "gf": 11,
-          "ga": 4,
-          "pts": 11,
-          "group": "",
-          "zone": {
             "key": "clq",
             "label": "Champions League Qualification",
             "type": "qualification"
@@ -91,12 +91,12 @@
         },
         {
           "position": 5,
-          "club": "Paris FC",
+          "club": "Olympique Lyonnais",
           "p": 6,
           "w": 3,
           "d": 2,
           "l": 1,
-          "gf": 8,
+          "gf": 11,
           "ga": 4,
           "pts": 11,
           "group": "",
@@ -108,13 +108,13 @@
         },
         {
           "position": 6,
-          "club": "Paris Saint-Germain",
+          "club": "Paris FC",
           "p": 6,
           "w": 3,
           "d": 2,
           "l": 1,
-          "gf": 11,
-          "ga": 8,
+          "gf": 8,
+          "ga": 4,
           "pts": 11,
           "group": "",
           "zone": {
@@ -191,12 +191,12 @@
         {
           "position": 12,
           "club": "RC Strasbourg",
-          "p": 6,
+          "p": 7,
           "w": 2,
           "d": 1,
-          "l": 3,
-          "gf": 11,
-          "ga": 12,
+          "l": 4,
+          "gf": 12,
+          "ga": 15,
           "pts": 7,
           "group": "",
           "zone": null
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-10-17T17:00:46Z",
+  "generatedAt": "2026-10-17T18:00:44Z",
   "source": "BSD"
 }
