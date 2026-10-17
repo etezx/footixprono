@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-17T18:50:47Z",
+  "generatedAt": "2026-10-17T19:00:43Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T18:50:47Z",
+      "updatedAt": "2026-10-17T19:00:43Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,7 +1816,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T18:50:47Z",
+      "updatedAt": "2026-10-17T19:00:43Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1839,13 +1839,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-17T18:50:47Z",
-      "minute": 5,
+      "updatedAt": "2026-10-17T19:00:43Z",
+      "minute": 15,
       "homeScore": 0,
-      "awayScore": 0,
-      "actualScorers": [],
+      "awayScore": 1,
+      "actualScorers": [
+        "M. Baldé"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210499,
@@ -1857,13 +1859,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-17T18:50:47Z",
-      "minute": 5,
+      "updatedAt": "2026-10-17T19:00:43Z",
+      "minute": 15,
       "homeScore": 0,
-      "awayScore": 0,
-      "actualScorers": [],
+      "awayScore": 1,
+      "actualScorers": [
+        "A. Monfray"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210491,
@@ -1875,7 +1879,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T18:50:47Z"
+      "updatedAt": "2026-10-17T19:00:43Z"
     },
     {
       "eventId": 210492,
@@ -1887,7 +1891,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T18:50:47Z"
+      "updatedAt": "2026-10-17T19:00:43Z"
     },
     {
       "eventId": 210495,
@@ -1899,7 +1903,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T18:50:47Z"
+      "updatedAt": "2026-10-17T19:00:43Z"
     },
     {
       "eventId": 210497,
@@ -1911,7 +1915,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T18:50:47Z"
+      "updatedAt": "2026-10-17T19:00:43Z"
     },
     {
       "eventId": 210496,
@@ -1923,7 +1927,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T18:50:47Z"
+      "updatedAt": "2026-10-17T19:00:43Z"
     }
   ]
 }
