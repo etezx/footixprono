@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-17T20:10:45Z",
+  "generatedAt": "2026-10-17T20:20:44Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T20:10:45Z",
+      "updatedAt": "2026-10-17T20:20:44Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,7 +1816,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T20:10:45Z",
+      "updatedAt": "2026-10-17T20:20:44Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1839,15 +1839,15 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-17T20:10:45Z",
-      "minute": 67,
-      "homeScore": 2,
+      "updatedAt": "2026-10-17T20:20:44Z",
+      "minute": 78,
+      "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
         "O. Giroud",
         "M. Baldé"
       ],
-      "scorersVerified": false,
+      "scorersVerified": true,
       "goalIncidents": 2
     },
     {
@@ -1860,8 +1860,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-17T20:10:45Z",
-      "minute": 62,
+      "updatedAt": "2026-10-17T20:20:44Z",
+      "minute": 73,
       "homeScore": 1,
       "awayScore": 3,
       "actualScorers": [
@@ -1883,7 +1883,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:10:45Z"
+      "updatedAt": "2026-10-17T20:20:44Z"
     },
     {
       "eventId": 210492,
@@ -1895,7 +1895,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:10:45Z"
+      "updatedAt": "2026-10-17T20:20:44Z"
     },
     {
       "eventId": 210495,
@@ -1907,7 +1907,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:10:45Z"
+      "updatedAt": "2026-10-17T20:20:44Z"
     },
     {
       "eventId": 210497,
@@ -1919,7 +1919,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:10:45Z"
+      "updatedAt": "2026-10-17T20:20:44Z"
     },
     {
       "eventId": 210496,
@@ -1931,7 +1931,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:10:45Z"
+      "updatedAt": "2026-10-17T20:20:44Z"
     }
   ]
 }
