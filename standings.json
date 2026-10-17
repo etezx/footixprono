@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-10-17T15:34:04.657155+00:00",
+  "updated_at": "2026-10-17T18:30:22.287559+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
+    {
+      "club": "Paris Saint-Germain",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+      "p": 7,
+      "w": 4,
+      "d": 2,
+      "l": 1,
+      "gf": 14,
+      "ga": 9,
+      "pts": 14,
+      "last5": []
+    },
     {
       "club": "AS Monaco",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
@@ -59,18 +71,6 @@
       "l": 1,
       "gf": 8,
       "ga": 4,
-      "pts": 11,
-      "last5": []
-    },
-    {
-      "club": "Paris Saint-Germain",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-      "p": 6,
-      "w": 3,
-      "d": 2,
-      "l": 1,
-      "gf": 11,
-      "ga": 8,
       "pts": 11,
       "last5": []
     },
@@ -137,12 +137,12 @@
     {
       "club": "Strasbourg",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
-      "p": 6,
+      "p": 7,
       "w": 2,
       "d": 1,
-      "l": 3,
-      "gf": 11,
-      "ga": 12,
+      "l": 4,
+      "gf": 12,
+      "ga": 15,
       "pts": 7,
       "last5": []
     },
