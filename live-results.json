@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-17T15:10:44Z",
+  "generatedAt": "2026-10-17T15:20:44Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T15:10:44Z",
+      "updatedAt": "2026-10-17T15:20:44Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1812,11 +1812,17 @@
       "home": "RC Strasbourg",
       "away": "Paris Saint-Germain",
       "kickoff": "2026-10-17T15:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-17T15:10:44Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-17T15:20:44Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210494,
@@ -1828,7 +1834,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:10:44Z"
+      "updatedAt": "2026-10-17T15:20:44Z"
     },
     {
       "eventId": 210499,
@@ -1840,7 +1846,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:10:44Z"
+      "updatedAt": "2026-10-17T15:20:44Z"
     },
     {
       "eventId": 210491,
@@ -1852,7 +1858,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:10:44Z"
+      "updatedAt": "2026-10-17T15:20:44Z"
     },
     {
       "eventId": 210492,
@@ -1864,7 +1870,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:10:44Z"
+      "updatedAt": "2026-10-17T15:20:44Z"
     },
     {
       "eventId": 210495,
@@ -1876,7 +1882,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:10:44Z"
+      "updatedAt": "2026-10-17T15:20:44Z"
     },
     {
       "eventId": 210497,
@@ -1888,7 +1894,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:10:44Z"
+      "updatedAt": "2026-10-17T15:20:44Z"
     },
     {
       "eventId": 210496,
@@ -1900,7 +1906,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:10:44Z"
+      "updatedAt": "2026-10-17T15:20:44Z"
     }
   ]
 }
