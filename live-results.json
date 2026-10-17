@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-17T20:30:46Z",
+  "generatedAt": "2026-10-17T20:40:43Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T20:30:46Z",
+      "updatedAt": "2026-10-17T20:40:43Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,7 +1816,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T20:30:46Z",
+      "updatedAt": "2026-10-17T20:40:43Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1835,12 +1835,12 @@
       "home": "Lille",
       "away": "Stade Brestois",
       "kickoff": "2026-10-17T18:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-17T20:30:46Z",
-      "minute": 88,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-17T20:40:43Z",
+      "minute": null,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -1860,8 +1860,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-17T20:30:46Z",
-      "minute": 83,
+      "updatedAt": "2026-10-17T20:40:43Z",
+      "minute": 93,
       "homeScore": 1,
       "awayScore": 3,
       "actualScorers": [
@@ -1883,7 +1883,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:30:46Z"
+      "updatedAt": "2026-10-17T20:40:43Z"
     },
     {
       "eventId": 210492,
@@ -1895,7 +1895,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:30:46Z"
+      "updatedAt": "2026-10-17T20:40:43Z"
     },
     {
       "eventId": 210495,
@@ -1907,7 +1907,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:30:46Z"
+      "updatedAt": "2026-10-17T20:40:43Z"
     },
     {
       "eventId": 210497,
@@ -1919,7 +1919,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:30:46Z"
+      "updatedAt": "2026-10-17T20:40:43Z"
     },
     {
       "eventId": 210496,
@@ -1931,7 +1931,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:30:46Z"
+      "updatedAt": "2026-10-17T20:40:43Z"
     }
   ]
 }
