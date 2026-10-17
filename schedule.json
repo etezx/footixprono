@@ -1225,7 +1225,7 @@
           "eventId": 210491,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-17T16:00:44Z"
+          "lastLiveUpdate": "2026-10-17T16:10:46Z"
         }
       ],
       [
@@ -1240,7 +1240,7 @@
           "eventId": 210492,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-17T16:00:44Z"
+          "lastLiveUpdate": "2026-10-17T16:10:46Z"
         }
       ],
       [
@@ -1255,7 +1255,7 @@
           "eventId": 210493,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-17T16:00:44Z",
+          "lastLiveUpdate": "2026-10-17T16:10:46Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 3,
@@ -1279,7 +1279,7 @@
           "eventId": 210494,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-17T16:00:44Z"
+          "lastLiveUpdate": "2026-10-17T16:10:46Z"
         }
       ],
       [
@@ -1294,7 +1294,7 @@
           "eventId": 210495,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-17T16:00:44Z"
+          "lastLiveUpdate": "2026-10-17T16:10:46Z"
         }
       ],
       [
@@ -1309,7 +1309,7 @@
           "eventId": 210496,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-17T16:00:44Z"
+          "lastLiveUpdate": "2026-10-17T16:10:46Z"
         }
       ],
       [
@@ -1321,7 +1321,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-17T16:00:44Z"
+          "lastLiveUpdate": "2026-10-17T16:10:46Z"
         }
       ],
       [
@@ -1336,9 +1336,9 @@
           "eventId": 210498,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-17T16:00:44Z",
-          "minute": 44,
-          "period": "1st_half",
+          "lastLiveUpdate": "2026-10-17T16:10:46Z",
+          "minute": 45,
+          "period": "halftime",
           "homeScore": 1,
           "awayScore": 0,
           "actualScorers": [
@@ -1359,7 +1359,7 @@
           "eventId": 210499,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-17T16:00:44Z"
+          "lastLiveUpdate": "2026-10-17T16:10:46Z"
         }
       ]
     ]
