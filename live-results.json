@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-17T15:20:44Z",
+  "generatedAt": "2026-10-17T15:30:46Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T15:20:44Z",
+      "updatedAt": "2026-10-17T15:30:46Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,8 +1816,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-17T15:20:44Z",
-      "minute": 4,
+      "updatedAt": "2026-10-17T15:30:46Z",
+      "minute": 14,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -1834,7 +1834,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:20:44Z"
+      "updatedAt": "2026-10-17T15:30:46Z"
     },
     {
       "eventId": 210499,
@@ -1846,7 +1846,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:20:44Z"
+      "updatedAt": "2026-10-17T15:30:46Z"
     },
     {
       "eventId": 210491,
@@ -1858,7 +1858,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:20:44Z"
+      "updatedAt": "2026-10-17T15:30:46Z"
     },
     {
       "eventId": 210492,
@@ -1870,7 +1870,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:20:44Z"
+      "updatedAt": "2026-10-17T15:30:46Z"
     },
     {
       "eventId": 210495,
@@ -1882,7 +1882,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:20:44Z"
+      "updatedAt": "2026-10-17T15:30:46Z"
     },
     {
       "eventId": 210497,
@@ -1894,7 +1894,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:20:44Z"
+      "updatedAt": "2026-10-17T15:30:46Z"
     },
     {
       "eventId": 210496,
@@ -1906,7 +1906,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T15:20:44Z"
+      "updatedAt": "2026-10-17T15:30:46Z"
     }
   ]
 }
