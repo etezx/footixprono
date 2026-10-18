@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-18T15:00:40Z",
+  "generatedAt": "2026-10-18T15:10:41Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T15:00:40Z",
+      "updatedAt": "2026-10-18T15:10:41Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,7 +1816,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T15:00:40Z",
+      "updatedAt": "2026-10-18T15:10:41Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1839,7 +1839,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T15:00:40Z",
+      "updatedAt": "2026-10-18T15:10:41Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -1860,7 +1860,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T15:00:40Z",
+      "updatedAt": "2026-10-18T15:10:41Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1883,7 +1883,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T15:00:40Z",
+      "updatedAt": "2026-10-18T15:10:41Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 5,
@@ -1904,36 +1904,36 @@
       "leagueId": 6,
       "home": "Le Havre",
       "away": "Auxerre",
-      "kickoff": "2026-10-18T15:15:00+00:00",
+      "kickoff": "2026-10-18T15:15:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 210495,
       "leagueId": 6,
       "home": "Lorient",
       "away": "AS Monaco",
-      "kickoff": "2026-10-18T15:15:00+00:00",
+      "kickoff": "2026-10-18T15:15:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 210497,
       "leagueId": 6,
       "home": "Paris FC",
       "away": "Stade Rennais",
-      "kickoff": "2026-10-18T15:15:00+00:00",
+      "kickoff": "2026-10-18T15:15:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 210496,
@@ -1945,7 +1945,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 601120,
@@ -1957,7 +1957,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 601133,
@@ -1969,7 +1969,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 601037,
@@ -1981,7 +1981,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 601044,
@@ -1993,7 +1993,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 601056,
@@ -2005,7 +2005,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 601078,
@@ -2017,7 +2017,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 601110,
@@ -2029,7 +2029,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 601113,
@@ -2041,7 +2041,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     },
     {
       "eventId": 601115,
@@ -2053,7 +2053,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T15:00:40Z"
+      "updatedAt": "2026-10-18T15:10:41Z"
     }
   ]
 }
