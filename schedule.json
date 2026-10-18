@@ -1225,12 +1225,13 @@
           "eventId": 210491,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-18T13:40:41Z",
-          "minute": 39,
-          "period": "1st_half",
+          "lastLiveUpdate": "2026-10-18T13:50:39Z",
+          "minute": 45,
+          "period": "halftime",
           "homeScore": 1,
-          "awayScore": 1,
+          "awayScore": 2,
           "actualScorers": [
+            "N. Kamissoko",
             "H. Abdelli",
             "L. Raolisoa"
           ],
@@ -1249,7 +1250,7 @@
           "eventId": 210492,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:40:41Z"
+          "lastLiveUpdate": "2026-10-18T13:50:39Z"
         }
       ],
       [
@@ -1264,7 +1265,7 @@
           "eventId": 210493,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:40:41Z",
+          "lastLiveUpdate": "2026-10-18T13:50:39Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 3,
@@ -1288,7 +1289,7 @@
           "eventId": 210494,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:40:41Z",
+          "lastLiveUpdate": "2026-10-18T13:50:39Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -1311,7 +1312,7 @@
           "eventId": 210495,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:40:41Z"
+          "lastLiveUpdate": "2026-10-18T13:50:39Z"
         }
       ],
       [
@@ -1326,7 +1327,7 @@
           "eventId": 210496,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:40:41Z"
+          "lastLiveUpdate": "2026-10-18T13:50:39Z"
         }
       ],
       [
@@ -1338,7 +1339,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-18T13:40:41Z"
+          "lastLiveUpdate": "2026-10-18T13:50:39Z"
         }
       ],
       [
@@ -1353,7 +1354,7 @@
           "eventId": 210498,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:40:41Z",
+          "lastLiveUpdate": "2026-10-18T13:50:39Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 3,
@@ -1378,7 +1379,7 @@
           "eventId": 210499,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:40:41Z",
+          "lastLiveUpdate": "2026-10-18T13:50:39Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 3,
