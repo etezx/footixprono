@@ -1225,7 +1225,7 @@
           "eventId": 210491,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T16:00:42Z",
+          "lastLiveUpdate": "2026-10-18T16:10:41Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 5,
@@ -1253,9 +1253,9 @@
           "eventId": 210492,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-18T16:00:42Z",
+          "lastLiveUpdate": "2026-10-18T16:10:41Z",
           "minute": 45,
-          "period": "1st_half",
+          "period": "halftime",
           "homeScore": 0,
           "awayScore": 1,
           "actualScorers": [
@@ -1276,7 +1276,7 @@
           "eventId": 210493,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T16:00:42Z",
+          "lastLiveUpdate": "2026-10-18T16:10:41Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 3,
@@ -1300,7 +1300,7 @@
           "eventId": 210494,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T16:00:42Z",
+          "lastLiveUpdate": "2026-10-18T16:10:41Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -1323,9 +1323,9 @@
           "eventId": 210495,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-18T16:00:42Z",
+          "lastLiveUpdate": "2026-10-18T16:10:41Z",
           "minute": 45,
-          "period": "1st_half",
+          "period": "halftime",
           "homeScore": 0,
           "awayScore": 0,
           "actualScorers": [],
@@ -1344,7 +1344,7 @@
           "eventId": 210496,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T16:00:42Z"
+          "lastLiveUpdate": "2026-10-18T16:10:41Z"
         }
       ],
       [
@@ -1356,16 +1356,16 @@
           "status": "live",
           "live": true,
           "completed": false,
-          "lastLiveUpdate": "2026-10-18T16:00:42Z",
-          "minute": 40,
-          "period": "1st_half",
-          "homeScore": 1,
+          "lastLiveUpdate": "2026-10-18T16:10:41Z",
+          "minute": 45,
+          "period": "halftime",
+          "homeScore": 2,
           "awayScore": 1,
           "actualScorers": [
             "E. Lepaul",
             "M. López"
           ],
-          "scorersVerified": true
+          "scorersVerified": false
         }
       ],
       [
@@ -1380,7 +1380,7 @@
           "eventId": 210498,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T16:00:42Z",
+          "lastLiveUpdate": "2026-10-18T16:10:41Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 3,
@@ -1405,7 +1405,7 @@
           "eventId": 210499,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T16:00:42Z",
+          "lastLiveUpdate": "2026-10-18T16:10:41Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 3,
