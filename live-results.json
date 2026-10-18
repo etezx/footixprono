@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-18T14:50:41Z",
+  "generatedAt": "2026-10-18T15:00:40Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T14:50:41Z",
+      "updatedAt": "2026-10-18T15:00:40Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,7 +1816,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T14:50:41Z",
+      "updatedAt": "2026-10-18T15:00:40Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1839,7 +1839,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T14:50:41Z",
+      "updatedAt": "2026-10-18T15:00:40Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -1860,7 +1860,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T14:50:41Z",
+      "updatedAt": "2026-10-18T15:00:40Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1879,12 +1879,12 @@
       "home": "Angers",
       "away": "Olympique de Marseille",
       "kickoff": "2026-10-18T13:00:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-18T14:50:41Z",
-      "minute": 94,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-18T15:00:40Z",
+      "minute": null,
       "homeScore": 2,
       "awayScore": 5,
       "actualScorers": [
@@ -1909,7 +1909,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 210495,
@@ -1921,7 +1921,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 210497,
@@ -1933,7 +1933,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 210496,
@@ -1945,7 +1945,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 601120,
@@ -1957,7 +1957,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 601133,
@@ -1969,7 +1969,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 601037,
@@ -1981,7 +1981,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 601044,
@@ -1993,7 +1993,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 601056,
@@ -2005,7 +2005,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 601078,
@@ -2017,7 +2017,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 601110,
@@ -2029,7 +2029,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 601113,
@@ -2041,7 +2041,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     },
     {
       "eventId": 601115,
@@ -2053,7 +2053,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T14:50:41Z"
+      "updatedAt": "2026-10-18T15:00:40Z"
     }
   ]
 }
