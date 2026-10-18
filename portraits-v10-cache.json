@@ -1393,5 +1393,20 @@
     "id": "34173381",
     "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/te6co81674742579.png",
     "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/sxk5e31609095801.jpg"
+  },
+  "tminamino": {
+    "id": "34169113",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/a6g0551766238256.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/qt6elx1578067918.jpg"
+  },
+  "msalisu": {
+    "id": "34170330",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/lrp4yl1766238308.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/zh2ofu1615403132.jpg"
+  },
+  "ansufati": {
+    "id": "34172242",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/54v6h91766238031.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/gtose41659989447.jpg"
   }
 }
