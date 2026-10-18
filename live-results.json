@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-17T20:50:45Z",
+  "generatedAt": "2026-10-18T12:20:40Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T20:50:45Z",
+      "updatedAt": "2026-10-18T12:20:40Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,7 +1816,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T20:50:45Z",
+      "updatedAt": "2026-10-18T12:20:40Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1834,12 +1834,12 @@
       "leagueId": 6,
       "home": "Lille",
       "away": "Stade Brestois",
-      "kickoff": "2026-10-17T18:45:00Z",
+      "kickoff": "2026-10-17T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T20:50:45Z",
+      "updatedAt": "2026-10-18T12:20:40Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -1855,12 +1855,12 @@
       "leagueId": 6,
       "home": "Troyes",
       "away": "RC Lens",
-      "kickoff": "2026-10-17T18:45:00Z",
+      "kickoff": "2026-10-17T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-17T20:50:45Z",
+      "updatedAt": "2026-10-18T12:20:40Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1883,7 +1883,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:50:45Z"
+      "updatedAt": "2026-10-18T12:20:40Z"
     },
     {
       "eventId": 210492,
@@ -1895,7 +1895,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:50:45Z"
+      "updatedAt": "2026-10-18T12:20:40Z"
     },
     {
       "eventId": 210495,
@@ -1907,7 +1907,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:50:45Z"
+      "updatedAt": "2026-10-18T12:20:40Z"
     },
     {
       "eventId": 210497,
@@ -1919,7 +1919,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:50:45Z"
+      "updatedAt": "2026-10-18T12:20:40Z"
     },
     {
       "eventId": 210496,
@@ -1931,7 +1931,115 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-17T20:50:45Z"
+      "updatedAt": "2026-10-18T12:20:40Z"
+    },
+    {
+      "eventId": 601120,
+      "leagueId": 7,
+      "home": "Sabah FK",
+      "away": "Borussia Dortmund",
+      "kickoff": "2026-10-20T16:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-18T12:20:40Z"
+    },
+    {
+      "eventId": 601133,
+      "leagueId": 7,
+      "home": "Fenerbahçe",
+      "away": "SK Slavia Praha",
+      "kickoff": "2026-10-20T16:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-18T12:20:40Z"
+    },
+    {
+      "eventId": 601037,
+      "leagueId": 7,
+      "home": "Manchester City",
+      "away": "AEK Athens",
+      "kickoff": "2026-10-20T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-18T12:20:40Z"
+    },
+    {
+      "eventId": 601044,
+      "leagueId": 7,
+      "home": "Paris Saint-Germain",
+      "away": "FC Barcelona",
+      "kickoff": "2026-10-20T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-18T12:20:40Z"
+    },
+    {
+      "eventId": 601056,
+      "leagueId": 7,
+      "home": "Liverpool FC",
+      "away": "Villarreal",
+      "kickoff": "2026-10-20T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-18T12:20:40Z"
+    },
+    {
+      "eventId": 601078,
+      "leagueId": 7,
+      "home": "FC Porto",
+      "away": "PSV Eindhoven",
+      "kickoff": "2026-10-20T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-18T12:20:40Z"
+    },
+    {
+      "eventId": 601110,
+      "leagueId": 7,
+      "home": "AS Roma",
+      "away": "ŠK Slovan Bratislava",
+      "kickoff": "2026-10-20T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-18T12:20:40Z"
+    },
+    {
+      "eventId": 601113,
+      "leagueId": 7,
+      "home": "VfB Stuttgart",
+      "away": "Atlético Madrid",
+      "kickoff": "2026-10-20T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-18T12:20:40Z"
+    },
+    {
+      "eventId": 601115,
+      "leagueId": 7,
+      "home": "SSC Napoli",
+      "away": "Bodø/Glimt",
+      "kickoff": "2026-10-20T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-18T12:20:40Z"
     }
   ]
 }
