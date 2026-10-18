@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-18T16:30:39Z",
+  "generatedAt": "2026-10-18T16:40:39Z",
   "events": [
     {
       "eventId": 210448,
@@ -1794,7 +1794,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T16:30:39Z",
+      "updatedAt": "2026-10-18T16:40:39Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 3,
@@ -1816,7 +1816,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T16:30:39Z",
+      "updatedAt": "2026-10-18T16:40:39Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1839,7 +1839,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T16:30:39Z",
+      "updatedAt": "2026-10-18T16:40:39Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -1860,7 +1860,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T16:30:39Z",
+      "updatedAt": "2026-10-18T16:40:39Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1883,7 +1883,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T16:30:39Z",
+      "updatedAt": "2026-10-18T16:40:39Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 5,
@@ -1909,15 +1909,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-18T16:30:39Z",
-      "minute": 57,
-      "homeScore": 0,
-      "awayScore": 1,
+      "updatedAt": "2026-10-18T16:40:39Z",
+      "minute": 67,
+      "homeScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "R. Fofana",
         "D. Namaso"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 3
     },
     {
       "eventId": 210495,
@@ -1929,13 +1930,15 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-18T16:30:39Z",
-      "minute": 57,
-      "homeScore": 0,
+      "updatedAt": "2026-10-18T16:40:39Z",
+      "minute": 67,
+      "homeScore": 1,
       "awayScore": 0,
-      "actualScorers": [],
+      "actualScorers": [
+        "N. Cadiou"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210497,
@@ -1947,8 +1950,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-18T16:30:39Z",
-      "minute": 48,
+      "updatedAt": "2026-10-18T16:40:39Z",
+      "minute": 58,
       "homeScore": 2,
       "awayScore": 1,
       "actualScorers": [
@@ -1968,7 +1971,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T16:30:39Z"
+      "updatedAt": "2026-10-18T16:40:39Z"
     },
     {
       "eventId": 601120,
@@ -1980,7 +1983,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T16:30:39Z"
+      "updatedAt": "2026-10-18T16:40:39Z"
     },
     {
       "eventId": 601133,
@@ -1992,7 +1995,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T16:30:39Z"
+      "updatedAt": "2026-10-18T16:40:39Z"
     },
     {
       "eventId": 601037,
@@ -2004,7 +2007,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T16:30:39Z"
+      "updatedAt": "2026-10-18T16:40:39Z"
     },
     {
       "eventId": 601044,
@@ -2016,7 +2019,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T16:30:39Z"
+      "updatedAt": "2026-10-18T16:40:39Z"
     },
     {
       "eventId": 601056,
@@ -2028,7 +2031,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T16:30:39Z"
+      "updatedAt": "2026-10-18T16:40:39Z"
     },
     {
       "eventId": 601078,
@@ -2040,7 +2043,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T16:30:39Z"
+      "updatedAt": "2026-10-18T16:40:39Z"
     },
     {
       "eventId": 601110,
@@ -2052,7 +2055,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T16:30:39Z"
+      "updatedAt": "2026-10-18T16:40:39Z"
     },
     {
       "eventId": 601113,
@@ -2064,7 +2067,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T16:30:39Z"
+      "updatedAt": "2026-10-18T16:40:39Z"
     },
     {
       "eventId": 601115,
@@ -2076,7 +2079,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T16:30:39Z"
+      "updatedAt": "2026-10-18T16:40:39Z"
     }
   ]
 }
