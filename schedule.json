@@ -1225,8 +1225,8 @@
           "eventId": 210491,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-18T13:20:41Z",
-          "minute": 20,
+          "lastLiveUpdate": "2026-10-18T13:30:41Z",
+          "minute": 30,
           "period": "1st_half",
           "homeScore": 1,
           "awayScore": 0,
@@ -1248,7 +1248,7 @@
           "eventId": 210492,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:20:41Z"
+          "lastLiveUpdate": "2026-10-18T13:30:41Z"
         }
       ],
       [
@@ -1263,7 +1263,7 @@
           "eventId": 210493,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:20:41Z",
+          "lastLiveUpdate": "2026-10-18T13:30:41Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 3,
@@ -1287,7 +1287,7 @@
           "eventId": 210494,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:20:41Z",
+          "lastLiveUpdate": "2026-10-18T13:30:41Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -1310,7 +1310,7 @@
           "eventId": 210495,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:20:41Z"
+          "lastLiveUpdate": "2026-10-18T13:30:41Z"
         }
       ],
       [
@@ -1325,7 +1325,7 @@
           "eventId": 210496,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:20:41Z"
+          "lastLiveUpdate": "2026-10-18T13:30:41Z"
         }
       ],
       [
@@ -1337,7 +1337,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-18T13:20:41Z"
+          "lastLiveUpdate": "2026-10-18T13:30:41Z"
         }
       ],
       [
@@ -1352,7 +1352,7 @@
           "eventId": 210498,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:20:41Z",
+          "lastLiveUpdate": "2026-10-18T13:30:41Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 3,
@@ -1377,7 +1377,7 @@
           "eventId": 210499,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-18T13:20:41Z",
+          "lastLiveUpdate": "2026-10-18T13:30:41Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 3,
