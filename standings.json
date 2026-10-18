@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T14:01:23.014531+00:00",
+  "updated_at": "2026-10-18T17:23:07.028620+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -11,6 +11,18 @@
       "l": 1,
       "gf": 14,
       "ga": 9,
+      "pts": 14,
+      "last5": []
+    },
+    {
+      "club": "Paris FC",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
+      "p": 7,
+      "w": 4,
+      "d": 2,
+      "l": 1,
+      "gf": 12,
+      "ga": 7,
       "pts": 14,
       "last5": []
     },
@@ -29,24 +41,24 @@
     {
       "club": "AS Monaco",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
-      "p": 6,
+      "p": 7,
       "w": 4,
       "d": 2,
-      "l": 0,
+      "l": 1,
       "gf": 10,
-      "ga": 5,
+      "ga": 6,
       "pts": 14,
       "last5": []
     },
     {
       "club": "Stade Rennais",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
-      "p": 6,
+      "p": 7,
       "w": 4,
       "d": 1,
-      "l": 1,
-      "gf": 12,
-      "ga": 10,
+      "l": 2,
+      "gf": 15,
+      "ga": 14,
       "pts": 13,
       "last5": []
     },
@@ -63,14 +75,14 @@
       "last5": []
     },
     {
-      "club": "Paris FC",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
-      "p": 6,
+      "club": "Lorient",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+      "p": 7,
       "w": 3,
       "d": 2,
-      "l": 1,
-      "gf": 8,
-      "ga": 4,
+      "l": 2,
+      "gf": 7,
+      "ga": 6,
       "pts": 11,
       "last5": []
     },
@@ -84,6 +96,18 @@
       "gf": 14,
       "ga": 11,
       "pts": 10,
+      "last5": []
+    },
+    {
+      "club": "Marseille",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+      "p": 7,
+      "w": 3,
+      "d": 0,
+      "l": 4,
+      "gf": 14,
+      "ga": 10,
+      "pts": 9,
       "last5": []
     },
     {
@@ -111,15 +135,15 @@
       "last5": []
     },
     {
-      "club": "Lorient",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
-      "p": 6,
-      "w": 2,
-      "d": 2,
-      "l": 2,
-      "gf": 6,
-      "ga": 6,
-      "pts": 8,
+      "club": "AJ Auxerre",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
+      "p": 7,
+      "w": 3,
+      "d": 0,
+      "l": 4,
+      "gf": 11,
+      "ga": 17,
+      "pts": 9,
       "last5": []
     },
     {
@@ -149,25 +173,13 @@
     {
       "club": "Angers",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
-      "p": 6,
+      "p": 7,
       "w": 2,
       "d": 1,
-      "l": 3,
-      "gf": 7,
-      "ga": 10,
-      "pts": 7,
-      "last5": []
-    },
-    {
-      "club": "Marseille",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
-      "p": 6,
-      "w": 2,
-      "d": 0,
       "l": 4,
       "gf": 9,
-      "ga": 8,
-      "pts": 6,
+      "ga": 15,
+      "pts": 7,
       "last5": []
     },
     {
@@ -179,18 +191,6 @@
       "l": 3,
       "gf": 10,
       "ga": 15,
-      "pts": 6,
-      "last5": []
-    },
-    {
-      "club": "AJ Auxerre",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
-      "p": 6,
-      "w": 2,
-      "d": 0,
-      "l": 4,
-      "gf": 8,
-      "ga": 16,
       "pts": 6,
       "last5": []
     },
@@ -209,12 +209,12 @@
     {
       "club": "Le Havre AC",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
-      "p": 6,
+      "p": 7,
       "w": 0,
       "d": 2,
-      "l": 4,
-      "gf": 4,
-      "ga": 8,
+      "l": 5,
+      "gf": 5,
+      "ga": 11,
       "pts": 2,
       "last5": []
     }
