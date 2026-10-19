@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T05:12:21.401887+00:00",
+  "updated_at": "2026-10-19T13:51:19.867698+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -21,9 +21,15 @@
       "source": "Eurosport"
     },
     {
-      "title": "Ligue 1 - Paul Seixas a donné le coup d'envoi fictif de OL - OGC Nice ! - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTEdHZW5rX1AxLW1hYlh5aXQzTllJQnRBSTg1NjFRWUZnRzYtWjEyZ1l4YVVRWVJRTW1DQWNHdENHWkw5SWJuVjc5TkVyRnRmOVlaMFpRUjQyT1RMSGpKZnB1azdoMDdQNFFndEwwVWxiMk1kclJmYUZ2YmsxdVNKZ3JmS2swaUZnRUxVemhaXzh6czBSWmU0LWh2YV83aFFfdTlsZHVlWlE2eTZ5bDZONEhQajhfYVpFMGNkUFFyblZ3QkR1?oc=5",
-      "published": "2026-10-18T19:30:00+00:00",
+      "title": "Le foot anglais au bord de la crise économique : quelles conséquences pour la Ligue 1 et le TFC - LesViolets.Com",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQd25UZHZEc3NMcjVSOHhNUTNCYjNFMFR0aDV5MC1MN1Y4VV9fSE02ODNQczBsckZBZDFQb2ljS1dVZTg2NDdsZDhIRkd6cUhVdjlXLTM0X0RKVlNJUzF0ODFsVmNuSGZoeDlsOHlzampGTU10MWtrRXJCODVNYUZ3Qk5heEdqTmgtLXB5dE8ydnFoQkhsZnNESzJFQWtFaGFNNVlMcnJpQVdCdE9GcXA2ajliZzNJR0VnOTZTS2NyVThHd1hmbzNEMkhIUjBYZWVJeGc?oc=5",
+      "published": "2026-10-13T22:25:00+00:00",
+      "source": "LesViolets.Com"
+    },
+    {
+      "title": "Ligue 1 - Paris FC - Stade Rennais : les compos officielles - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaFRfM0x3RW9RMVdCTUdjcGdqcnM3U29KU2pRTDQwXzVIZlk2VC1nbktCTFNQMUFJa0RwZE42TFBXUEJ3TWtLN1djVjlwam5NQ3JEUU5BdDBrSk5wTEFHTGkwVjNSblZSekdXSS0xd0J3ZFdLUGxKaGpPRTlfU0VHU0dxTmh0c2tCdW1ucWItNWVBdkNPTFJuR2dLMERXclpqaXF4aHZvRml1SmJFOXdXR2dNOG0?oc=5",
+      "published": "2026-10-18T14:20:00+00:00",
       "source": "MadeInFOOT"
     },
     {
@@ -33,9 +39,9 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Transferts - Igor Paixao (OM) \"n'a pas complètement digéré\" son départ manqué à Sunderland selon Bruno Genesio - Eurosport",
-      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPTGh5ak1aVUFyak00dmhSNUxwalp5bE9nZnc5dTZlUjdNMFByUDg5RWpNOVZDSXVydFlua0FvdTFSMEF5OF9qdVpQTjNlVHNuWGdGWDE4ZlJXNm92NmVRM2FRWEJHc1ZRZUhvdWp3U3N0NHRLajZ4SjVFeUpRMVZVenNYMHpHN3E4bmE0cnJ5NUl0Q2lvUk1vc3BiemlTa3VKcE96NXBFZU9oUFpRXzN1V2N3bEIzWXpfNmpONW13QXNQM0ppbXItTWxNS05QalBrMjVRQmlIWUtXdVhIdGJiMC1CWVBvY3VzSHhGbnJRemdaMTR4LWVLYlVXc1NNdHJLNDBlQTRSYS1PUHcyZDJj?oc=5",
-      "published": "2026-10-14T15:31:00+00:00",
+      "title": "Le Bayern confiant pour Kane : les 5 infos mercato du week-end - Eurosport",
+      "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPSmJSRW1QNFRLRllzcG9GdzlVTnYxMmtNTnN1VFhhb1NGS2F6S0hLdGdnY21tYmFIUklzRU52UDFfWjFkSUVhaHJ4LXNIbU5qWGxlTXRSWE9waFQ2SmcwUGNTOUJWVXZFMk9qSDdQcXdvakxfNjFYTjVjZGtDQ2lMa0J1eU9pemtncE92WWJoUlNSaGxSUTZEYnI1SmhPYzFCNUNCd2Z1Z0Uwb1FKVnhvc0FNQlVUMjVYN0pPNnUwU1NHeEV5TXc4dzJZcV85by1DZG9kWDUySkRWaTZYTGhIaUxmMmNMR09aRERfdTVPNVZ2c1ZtSnIySGl2YldyS3pyRzI3ekItQmRvQXhZMWgyaWEwMWtNUDdZTU5lY2dHVk1yU25JTTJJ?oc=5",
+      "published": "2026-10-18T06:18:00+00:00",
       "source": "Eurosport"
     },
     {
@@ -45,9 +51,9 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Le Bayern confiant pour Kane : les 5 infos mercato du week-end - Eurosport",
-      "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPSmJSRW1QNFRLRllzcG9GdzlVTnYxMmtNTnN1VFhhb1NGS2F6S0hLdGdnY21tYmFIUklzRU52UDFfWjFkSUVhaHJ4LXNIbU5qWGxlTXRSWE9waFQ2SmcwUGNTOUJWVXZFMk9qSDdQcXdvakxfNjFYTjVjZGtDQ2lMa0J1eU9pemtncE92WWJoUlNSaGxSUTZEYnI1SmhPYzFCNUNCd2Z1Z0Uwb1FKVnhvc0FNQlVUMjVYN0pPNnUwU1NHeEV5TXc4dzJZcV85by1DZG9kWDUySkRWaTZYTGhIaUxmMmNMR09aRERfdTVPNVZ2c1ZtSnIySGl2YldyS3pyRzI3ekItQmRvQXhZMWgyaWEwMWtNUDdZTU5lY2dHVk1yU25JTTJJ?oc=5",
-      "published": "2026-10-18T06:18:00+00:00",
+      "title": "L'avenir de Kane est fixé : les 4 infos mercato de jeudi - Eurosport",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNa3NRMEtMWjNpZmU0T0VQZk9seGxwWFc3aVI2UTdOelAybnJsb3FFR2xLWkVfTFBzeUdGQkZjZzZVQVVCU1NybEdvdVJSVUNQRWNEQmMtZTV5MlAxVXJMOC1HS3VmSzlXeUV3Snk0T2ZPdTFiRk5LYWZvUFFFb3p1aFJRVHZTbDM3Z01wMWtCNlAtWnZFUG5uLXJvNVd4b0NRRVZNejBOcHR4TUlCQ3dkRl8xNERpam91MWlIclZMYk9ib2xnZl9TNEFHdzFucUdYb0lwc1pZOWJfLV9sV1VUQ0pqRjVoWFlUUE1fMG5vdVM?oc=5",
+      "published": "2026-10-16T06:53:00+00:00",
       "source": "Eurosport"
     },
     {
@@ -57,9 +63,9 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Le Real a tranché pour Endrick : les 5 infos mercato de mercredi - Eurosport",
-      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQdEM3Z1k5LWxvQURNclJwNXh6MEhsTGlUVFZFMTl3V191VHA4aFZjRXVpc3ZiTzY0bjE0WndQRVBpNTJ2TzdDcTZtY2VKM0FNWEVkRFBWeUhSWkhtWkVLclNVMmtSWFpHLW9pMEN2RWYtOU1oUGdIeGZYczNuMWNQVl9yemhjQnVzMUdDWl83dVhreEpVMVZYeW80SmJaalRNbmJCTGFITDRvd2o0aVM1REtfcTh2ZGh5QVZSWmJKZzdlSlhpVlBLWWRvWll4RGJOOFZrdHpRYjRDd3Y3cG9Xc2VQMVE3aGhhY2VEQ0RRQXZuLU1jSkg1ZlN3?oc=5",
-      "published": "2026-10-14T06:57:00+00:00",
+      "title": "\"Ça pouvait être catastrophique\" : Ben Arfa a failli revenir à Nice en janvier - Eurosport",
+      "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPYXB6TUk3NXdCMGZtWGxNUlp5N3g0MU80SS1Ea0FfSEpzTkI3R0NqOGVMT1BCeVM1d2lOUDhUNnRBRGFWUjVsMnlmYWJoSFI4cG9MbktnN2tsZGhlQzljZFBFTzNVVEV3OGlkM2xxN0lXYjEzcEgyWC1pUDlaLXB4eW5Mc05pMHgxQy1KV25iWU5CMzU5WC1RRXlic0I1endRQ0pNRTNOTm1NeGZXTkhmeld4b3RYQ043SjN0ODZsYmU4c3dsWlJuR09hbi1oU2Jhc1FCZ1VsaS1Xdk8tb2xIQWN5clpBUE9VcmxMVTdRbXNSOURrZE9BUXlLb3hraEJ5N0JLOGc4WmdlV3AxZGtOVXI1SUJiUEE0YW41eDBPNA?oc=5",
+      "published": "2026-10-16T15:20:00+00:00",
       "source": "Eurosport"
     },
     {
@@ -67,12 +73,6 @@
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNT3pwZnJ0ZW9neFdGLUdXUzhNanVSMlptTEdPdlZENWRiN3A0SFY5SlNELTN3eFVHUzg5N2pjZ2phWFZiblRMT19mTTUxTm1kTlUyMXpjV1FEaU9wV1VUMDJQRzZDZW9yMkZmSUV3RE10dHBEUnc0dElLeHRUa04zeG13TC0wNXgzdVhhYzhISGt1WUQyLUttTzd4QksxREZ6aTNycmYwVURBd01qMDNZSGJDU1FNMkVK?oc=5",
       "published": "2026-10-13T17:41:02+00:00",
       "source": "Foot Mercato"
-    },
-    {
-      "title": "Mahrez a retrouvé un club : les 4 infos mercato de jeudi - Eurosport",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZFI2aFhzNVJmcmpsNFdsSDFrRlA5ZGd0M21mNXdqX3NMVms5SC0zM29DTWktV081SG5sMXZ3djRfTmppY1V5LUMxVDZaVjVuZGtDY1lXUkE5eWJMenEtMUxNVTNIVy14MEd5d05ZcUhHb0dRb3k0dTZGQl9XNFVvZl9UdGZUMmk5bnEya3NvRTA1Z2t3c1lOZW5KWlFjdHZfOHM2alJWQzk2MWhWTUpsbmFGVGVKRWYwTDl4bnlOQXpfUzhUa0xNbEFQZGJudVJWRDJGRnU1TGQ?oc=5",
-      "published": "2026-10-15T06:42:00+00:00",
-      "source": "Eurosport"
     }
   ]
 }
