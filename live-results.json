@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-20T16:50:39Z",
+  "generatedAt": "2026-10-20T17:00:41Z",
   "events": [
     {
       "eventId": 210448,
@@ -1883,7 +1883,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T16:50:39Z",
+      "updatedAt": "2026-10-20T17:00:41Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 5,
@@ -1909,7 +1909,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T16:50:39Z",
+      "updatedAt": "2026-10-20T17:00:41Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1931,7 +1931,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T16:50:39Z",
+      "updatedAt": "2026-10-20T17:00:41Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1951,7 +1951,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T16:50:39Z",
+      "updatedAt": "2026-10-20T17:00:41Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 3,
@@ -1973,7 +1973,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T16:50:39Z",
+      "updatedAt": "2026-10-20T17:00:41Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1995,13 +1995,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-20T16:50:39Z",
-      "minute": 4,
+      "updatedAt": "2026-10-20T17:00:41Z",
+      "minute": 15,
       "homeScore": 0,
-      "awayScore": 0,
-      "actualScorers": [],
+      "awayScore": 1,
+      "actualScorers": [
+        "S. Guirassy"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 601133,
@@ -2013,13 +2015,16 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-20T16:50:39Z",
-      "minute": 4,
-      "homeScore": 1,
-      "awayScore": 0,
-      "actualScorers": [],
+      "updatedAt": "2026-10-20T17:00:41Z",
+      "minute": 14,
+      "homeScore": 2,
+      "awayScore": 1,
+      "actualScorers": [
+        "M. Greenwood",
+        "O. Aydın"
+      ],
       "scorersVerified": false,
-      "goalIncidents": 0
+      "goalIncidents": 2
     },
     {
       "eventId": 601037,
@@ -2031,7 +2036,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601044,
@@ -2043,7 +2048,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601056,
@@ -2055,7 +2060,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601078,
@@ -2067,7 +2072,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601110,
@@ -2079,7 +2084,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601113,
@@ -2091,7 +2096,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601115,
@@ -2103,7 +2108,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601100,
@@ -2115,7 +2120,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601139,
@@ -2127,7 +2132,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601027,
@@ -2139,7 +2144,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601042,
@@ -2151,7 +2156,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601047,
@@ -2163,7 +2168,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601079,
@@ -2175,7 +2180,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601081,
@@ -2187,7 +2192,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601124,
@@ -2199,7 +2204,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     },
     {
       "eventId": 601142,
@@ -2211,7 +2216,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T16:50:39Z"
+      "updatedAt": "2026-10-20T17:00:41Z"
     }
   ]
 }
