@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-18T20:50:41Z",
+  "generatedAt": "2026-10-20T16:00:47Z",
   "events": [
     {
       "eventId": 210448,
@@ -1883,7 +1883,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T20:50:41Z",
+      "updatedAt": "2026-10-20T16:00:47Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 5,
@@ -1909,7 +1909,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T20:50:41Z",
+      "updatedAt": "2026-10-20T16:00:47Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1931,7 +1931,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T20:50:41Z",
+      "updatedAt": "2026-10-20T16:00:47Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1951,7 +1951,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T20:50:41Z",
+      "updatedAt": "2026-10-20T16:00:47Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 3,
@@ -1968,12 +1968,12 @@
       "leagueId": 6,
       "home": "Olympique Lyonnais",
       "away": "Nice",
-      "kickoff": "2026-10-18T18:45:00Z",
+      "kickoff": "2026-10-18T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-18T20:50:41Z",
+      "updatedAt": "2026-10-20T16:00:47Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1995,7 +1995,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T20:50:41Z"
+      "updatedAt": "2026-10-20T16:00:47Z"
     },
     {
       "eventId": 601133,
@@ -2007,7 +2007,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T20:50:41Z"
+      "updatedAt": "2026-10-20T16:00:47Z"
     },
     {
       "eventId": 601037,
@@ -2019,7 +2019,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T20:50:41Z"
+      "updatedAt": "2026-10-20T16:00:47Z"
     },
     {
       "eventId": 601044,
@@ -2031,7 +2031,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T20:50:41Z"
+      "updatedAt": "2026-10-20T16:00:47Z"
     },
     {
       "eventId": 601056,
@@ -2043,7 +2043,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T20:50:41Z"
+      "updatedAt": "2026-10-20T16:00:47Z"
     },
     {
       "eventId": 601078,
@@ -2055,7 +2055,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T20:50:41Z"
+      "updatedAt": "2026-10-20T16:00:47Z"
     },
     {
       "eventId": 601110,
@@ -2067,7 +2067,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T20:50:41Z"
+      "updatedAt": "2026-10-20T16:00:47Z"
     },
     {
       "eventId": 601113,
@@ -2079,7 +2079,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T20:50:41Z"
+      "updatedAt": "2026-10-20T16:00:47Z"
     },
     {
       "eventId": 601115,
@@ -2091,7 +2091,115 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-18T20:50:41Z"
+      "updatedAt": "2026-10-20T16:00:47Z"
+    },
+    {
+      "eventId": 601100,
+      "leagueId": 7,
+      "home": "Como",
+      "away": "Manchester United",
+      "kickoff": "2026-10-21T16:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-20T16:00:47Z"
+    },
+    {
+      "eventId": 601139,
+      "leagueId": 7,
+      "home": "Lille",
+      "away": "Galatasaray",
+      "kickoff": "2026-10-21T16:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-20T16:00:47Z"
+    },
+    {
+      "eventId": 601027,
+      "leagueId": 7,
+      "home": "Real Madrid",
+      "away": "RB Leipzig",
+      "kickoff": "2026-10-21T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-20T16:00:47Z"
+    },
+    {
+      "eventId": 601042,
+      "leagueId": 7,
+      "home": "Inter",
+      "away": "Shakhtar Donetsk",
+      "kickoff": "2026-10-21T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-20T16:00:47Z"
+    },
+    {
+      "eventId": 601047,
+      "leagueId": 7,
+      "home": "FC Bayern München",
+      "away": "Arsenal",
+      "kickoff": "2026-10-21T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-20T16:00:47Z"
+    },
+    {
+      "eventId": 601079,
+      "leagueId": 7,
+      "home": "Aston Villa",
+      "away": "Viking FK",
+      "kickoff": "2026-10-21T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-20T16:00:47Z"
+    },
+    {
+      "eventId": 601081,
+      "leagueId": 7,
+      "home": "Real Betis",
+      "away": "Feyenoord",
+      "kickoff": "2026-10-21T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-20T16:00:47Z"
+    },
+    {
+      "eventId": 601124,
+      "leagueId": 7,
+      "home": "Club Brugge KV",
+      "away": "RC Lens",
+      "kickoff": "2026-10-21T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-20T16:00:47Z"
+    },
+    {
+      "eventId": 601142,
+      "leagueId": 7,
+      "home": "Sporting CP",
+      "away": "LASK",
+      "kickoff": "2026-10-21T19:00:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-20T16:00:47Z"
     }
   ]
 }
