@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-20T19:00:43Z",
+  "generatedAt": "2026-10-20T19:10:44Z",
   "events": [
     {
       "eventId": 210448,
@@ -1883,7 +1883,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T19:00:43Z",
+      "updatedAt": "2026-10-20T19:10:44Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 5,
@@ -1909,7 +1909,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T19:00:43Z",
+      "updatedAt": "2026-10-20T19:10:44Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 3,
@@ -1931,7 +1931,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T19:00:43Z",
+      "updatedAt": "2026-10-20T19:10:44Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -1951,7 +1951,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T19:00:43Z",
+      "updatedAt": "2026-10-20T19:10:44Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 3,
@@ -1973,7 +1973,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T19:00:43Z",
+      "updatedAt": "2026-10-20T19:10:44Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -1995,7 +1995,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T19:00:43Z",
+      "updatedAt": "2026-10-20T19:10:44Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -2016,7 +2016,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-20T19:00:43Z",
+      "updatedAt": "2026-10-20T19:10:44Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 2,
@@ -2034,74 +2034,71 @@
       "leagueId": 7,
       "home": "Manchester City",
       "away": "AEK Athens",
-      "kickoff": "2026-10-20T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-20T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-20T19:10:44Z",
+      "minute": 9,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601044,
       "leagueId": 7,
       "home": "Paris Saint-Germain",
       "away": "FC Barcelona",
-      "kickoff": "2026-10-20T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-20T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z",
+      "period": "1st_half",
+      "updatedAt": "2026-10-20T19:10:44Z",
       "homeScore": 0,
-      "awayScore": 0
+      "awayScore": 0,
+      "minute": 7
     },
     {
       "eventId": 601056,
       "leagueId": 7,
       "home": "Liverpool FC",
       "away": "Villarreal",
-      "kickoff": "2026-10-20T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-20T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-20T19:10:44Z",
+      "minute": 9,
+      "homeScore": 0,
+      "awayScore": 1,
+      "actualScorers": [
+        "G. Mikautadze"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 1
     },
     {
       "eventId": 601078,
       "leagueId": 7,
       "home": "FC Porto",
       "away": "PSV Eindhoven",
-      "kickoff": "2026-10-20T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-10-20T19:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
-    },
-    {
-      "eventId": 601113,
-      "leagueId": 7,
-      "home": "VfB Stuttgart",
-      "away": "Atlético Madrid",
-      "kickoff": "2026-10-20T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
-      "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
-    },
-    {
-      "eventId": 601115,
-      "leagueId": 7,
-      "home": "SSC Napoli",
-      "away": "Bodø/Glimt",
-      "kickoff": "2026-10-20T19:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
-      "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-20T19:10:44Z",
+      "minute": 9,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601110,
@@ -2113,12 +2110,51 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-20T19:00:43Z",
+      "updatedAt": "2026-10-20T19:10:44Z",
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0,
+      "minute": 10
+    },
+    {
+      "eventId": 601113,
+      "leagueId": 7,
+      "home": "VfB Stuttgart",
+      "away": "Atlético Madrid",
+      "kickoff": "2026-10-20T19:00:00Z",
+      "status": "live",
+      "live": true,
+      "completed": false,
+      "period": "1st_half",
+      "updatedAt": "2026-10-20T19:10:44Z",
+      "minute": 10,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
       "scorersVerified": true,
       "goalIncidents": 0
+    },
+    {
+      "eventId": 601115,
+      "leagueId": 7,
+      "home": "SSC Napoli",
+      "away": "Bodø/Glimt",
+      "kickoff": "2026-10-20T19:00:00Z",
+      "status": "live",
+      "live": true,
+      "completed": false,
+      "period": "1st_half",
+      "updatedAt": "2026-10-20T19:10:44Z",
+      "minute": 7,
+      "homeScore": 1,
+      "awayScore": 0,
+      "actualScorers": [
+        "M. Politano"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 1
     },
     {
       "eventId": 601100,
@@ -2130,7 +2166,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "updatedAt": "2026-10-20T19:10:44Z"
     },
     {
       "eventId": 601139,
@@ -2142,7 +2178,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "updatedAt": "2026-10-20T19:10:44Z"
     },
     {
       "eventId": 601027,
@@ -2154,7 +2190,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "updatedAt": "2026-10-20T19:10:44Z"
     },
     {
       "eventId": 601042,
@@ -2166,7 +2202,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "updatedAt": "2026-10-20T19:10:44Z"
     },
     {
       "eventId": 601047,
@@ -2178,7 +2214,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "updatedAt": "2026-10-20T19:10:44Z"
     },
     {
       "eventId": 601079,
@@ -2190,7 +2226,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "updatedAt": "2026-10-20T19:10:44Z"
     },
     {
       "eventId": 601081,
@@ -2202,7 +2238,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "updatedAt": "2026-10-20T19:10:44Z"
     },
     {
       "eventId": 601124,
@@ -2214,7 +2250,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "updatedAt": "2026-10-20T19:10:44Z"
     },
     {
       "eventId": 601142,
@@ -2226,7 +2262,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-20T19:00:43Z"
+      "updatedAt": "2026-10-20T19:10:44Z"
     }
   ]
 }
