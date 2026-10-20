@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T11:10:33.656320+00:00",
+  "updated_at": "2026-10-20T10:22:20.965186+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -77,7 +77,6 @@
       "Soriba Diaoune"
     ],
     "LE HAVRE": [
-      "Abdoulaye Touré",
       "Amir Richardson",
       "Daren Mosengo",
       "Enzo Koffi",
@@ -136,7 +135,6 @@
       "William Harhouz"
     ],
     "STADE BRESTOIS 29": [
-      "Djylian N'Guessan",
       "Enzo Monchatre",
       "Giovani Versini",
       "Hugo Magnetti",
@@ -329,5 +327,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 289
+  "players_fetched": 287
 }
