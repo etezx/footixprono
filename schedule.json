@@ -1464,8 +1464,12 @@
           "date": "2026-10-23",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210506,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-21T16:00:42Z"
         }
       ],
       [
