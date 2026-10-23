@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T07:53:07.556603+00:00",
+  "updated_at": "2026-10-23T13:45:26.973293+00:00",
   "query": "mercato Ligue 1 when:7d",
   "items": [
     {
@@ -9,15 +9,9 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Mercato: Hatem Ben Arfa proche d’un retour en Ligue 1, c’est confirmé - Sports.fr",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNc3ZaRVQ4ZGpkdVl2U29oZkxlZjB5TUJkNUNXRVozUXBBV1YzbHdLZndWLUdqOGFSVFJxQ3N4WFYyZkpBMzdUZF9uWWFkZDRldlBldW14ZEctckdWZnpuSDZDX28yT2ktRGsxS3Fkdm1HS2syeUJ0MmdZT3NzMHZaVzdyWVJlazRIYzdBR0c2dEYtV1ZUQUNZcFB0cHg5QWR1TTB2UllxZ2xaMURQZmc?oc=5",
-      "published": "2026-10-16T10:41:59+00:00",
-      "source": "Sports.fr"
-    },
-    {
-      "title": "Ligue 1 - Le programme TV de la 18ème journée de Ligue 1 - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdllsYkdZWE9QN1B2VFVKbUlnR0pMTk92bjltVHNjekhZdHZtY3d3Y1BHWjQyQ2VHTTl4TXkzT213X3p6VGdlV2xzcnR1WkItVEJsVUxyQmtmd2cwa05lM09lb3lBS1h6ekVBNlBRTEF6aThSNGc2cURscHJwTU1ZVVZWbnl1Q2g3ZlBOMzBUM1Q2VkREX2k2RjhmbnVRbW9YVno5VEg5TDlGcXRRQUY4R2lyUUpvdw?oc=5",
-      "published": "2026-10-20T12:00:00+00:00",
+      "title": "Ligue 1 - Le programme TV de la 16ème journée de la Ligue 1 - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbDRFWFctRjc1dExlVS1hZTgyako1ekxGNlJiOEZ3eC1IYW5XMXpHTlIyaDZFM3hFTExfMldPX1JzaXZPbU5Ca2kzNjRyYzRnbUpSTWlwTWF0dHpMQXFEM1dZaU9lWl8xdkJ4cVBPQkNWRXdQR0RGbWpUSGRGOWJsbEU0OVJJY09odTFGWU1veWxvWTB0TXNnblYyNF9mX0wzeklmOHczTmswY0Zub1YzZWRpWmFleXZRcUE?oc=5",
+      "published": "2026-10-20T11:20:00+00:00",
       "source": "MadeInFOOT"
     },
     {
@@ -27,22 +21,28 @@
       "source": "Eurosport"
     },
     {
+      "title": "Droits TV, Ligue 1 : Canal+ répond au lancement de l’appel d’offres - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSnNCcml1dzlKUExRV1ZSX05NTXpYQk9jU1Jpb0tRUjZxLXBqQkJsV0xPNlpBWTNpYU5TTm05NHFsWTRvSTBCa3pQbXBTTFZwSi01bnVnYmdIMzRHRlpiSkt0UlljeXAwcnU2U1lQeDZGcGJrZjNSOHdhaW5YWUdpU2oxWkNmVFNNM3N4UmJXZjh5VHZGR1ZfTFNTa2dqaVlGUWcwdWNPZ3NEcy1vclhV?oc=5",
+      "published": "2026-10-23T10:48:03+00:00",
+      "source": "Foot Mercato"
+    },
+    {
+      "title": "Ligue 1 - Le programme TV de la 14ème journée de Ligue 1 - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSDhkZGtKOXdWV1RUVUZmNWRNWURRWjJZWlIxX2JTM1JrTlBsdUxoaDF3VV9VUGJBX3A4bFU4bGZrZG9ocDVEeThQWFZkNmoxbDdTSjhNZ0xvdXhFMS1zb2Z3cW5jbDVmb2E2a19iWVg4LVNuWjVjbGlka1pyNmJ2cUNraFNwbkE3aWhyVzd3V21BeU9aV2ZqWmhRNUUzRVVCbWtrQXI2anJSUmdOalJibWJrMjAxZw?oc=5",
+      "published": "2026-10-20T10:40:00+00:00",
+      "source": "MadeInFOOT"
+    },
+    {
       "title": "Un match de Ligue 1 prévu samedi déjà reporté - Foot Mercato",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaDRKWk9ZMmx3TDJ4NlVDNEdYcUhRZDRsaC1jV0xxS0ZweDBiWUlXTjZhbU96V3NhSHNUR3hoOGh5dlA3NzJsZy1oQV91NmhqdDY0TXZWS2JGVnZWVDd3LWRGMXo4MEI5MWlwYXRIOTFBWWpvUTNaUno5ZUNxU2pMSWRES1NBeWF4WWYzdW9VNG9wN3FuOTdheXd3?oc=5",
       "published": "2026-10-21T08:58:10+00:00",
       "source": "Foot Mercato"
     },
     {
-      "title": "Ligue 1 - Le programme TV de la 16ème journée de la Ligue 1 - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbDRFWFctRjc1dExlVS1hZTgyako1ekxGNlJiOEZ3eC1IYW5XMXpHTlIyaDZFM3hFTExfMldPX1JzaXZPbU5Ca2kzNjRyYzRnbUpSTWlwTWF0dHpMQXFEM1dZaU9lWl8xdkJ4cVBPQkNWRXdQR0RGbWpUSGRGOWJsbEU0OVJJY09odTFGWU1veWxvWTB0TXNnblYyNF9mX0wzeklmOHczTmswY0Zub1YzZWRpWmFleXZRcUE?oc=5",
-      "published": "2026-10-20T11:20:00+00:00",
+      "title": "Ligue 1 - Le programme TV de la 17ème journée de Ligue 1 - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNldLV0dDU3Z6Nk4zQko5Wlg5U3R3aG42VkhGSEhRZHhreG1DYUpKaFEyOU5lZ0ZzbGZBT29WRUJKNHE0Z1dvOWZjYXFPMC1UUWhBMGRmNXAyaGZYMElUV3JjMTl0ZTdKWWhSQWVaY2RYWjdjWk8wVmVNbF9TSGptNkN5a3NyOG8xS2VoTVB2SXdtTHo0bkVfbGVETnlMU05LZnlaZFdzTUV1YkFwY3pDTU9uN18zUQ?oc=5",
+      "published": "2026-10-20T11:40:00+00:00",
       "source": "MadeInFOOT"
-    },
-    {
-      "title": "Mercato: Une recrue espérée à l’OM - Sports.fr",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNR05oQ0p6S2ZTUWJKZGs2WTZIbUFRWlFXQmJRenhkVWN1dGxZSmliTmJXSklJcm5DV1YxT2ktVGh0S2RmY3MyZjFzOHVBaTY4c3BiZnYwOUFtQnJhY3BGWTFNWWxoaUhUb01zeVBXYlU2VFhpZTV0OVA5aC1qUzQwQ2VvU3lyVF80cVRCZA?oc=5",
-      "published": "2026-10-20T11:23:36+00:00",
-      "source": "Sports.fr"
     },
     {
       "title": "La Ligue 1 bat un record inattendu ! - Foot Mercato",
@@ -51,9 +51,9 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Ligue 1 - Le programme TV de la 15ème journée de Ligue 1 - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRUhjckU4bmpEeG83SVJJclBqa2Nrb09peWNicFNUbHl3MnpIaFVTalBKMmw4NGxPMnNMeldNekM3QXZPZGdlbVpLVWxxWlRCc0JtSzZwR254OFV6anVCcHpGd0otSV9UY2hrT196SjZtUW1Odkx1bGhyQ2NYUmQwN3hTUVQ3R2huOGhXaHdQeDhaaVd0UmJoX3VmbzE0UWlKbFlyMUVEQ3loZ0VJNGhpNVlfUnF4Zw?oc=5",
-      "published": "2026-10-20T11:00:00+00:00",
+      "title": "Ligue 1 - Le programme TV de la 18ème journée de Ligue 1 - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdllsYkdZWE9QN1B2VFVKbUlnR0pMTk92bjltVHNjekhZdHZtY3d3Y1BHWjQyQ2VHTTl4TXkzT213X3p6VGdlV2xzcnR1WkItVEJsVUxyQmtmd2cwa05lM09lb3lBS1h6ekVBNlBRTEF6aThSNGc2cURscHJwTU1ZVVZWbnl1Q2g3ZlBOMzBUM1Q2VkREX2k2RjhmbnVRbW9YVno5VEg5TDlGcXRRQUY4R2lyUUpvdw?oc=5",
+      "published": "2026-10-20T12:00:00+00:00",
       "source": "MadeInFOOT"
     },
     {
@@ -63,16 +63,16 @@
       "source": "Foot Mercato"
     },
     {
-      "title": "Ligue 1 - Les arbitres des matches de la 8ème journée de Ligue 1 - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNVNyY2w3dnRvMndhTEs5Q3FSYVRlOFpMdXVjSmtzV1UySGRuY0tfYmgtNE95b2NJVVNEYWZLZjYxSkVMVGVsajdDd0J1T19SeE9NcWdTUXFTZjc2SURTT1dlVGRnVG1BQ3VqUTI2SEZmZE1JU0FaTWRBX1ZSWHVVNU1oVjRnSndMczN0YWhtNnZXZXR3dG82MzZWU0YwTnVZU3gtdmJOV3Fnc2pwM3NrWm16MTdNaDU2bU9VbTYtY00?oc=5",
-      "published": "2026-10-20T13:05:00+00:00",
+      "title": "Ligue 1 - Le programme TV de la 15ème journée de Ligue 1 - MadeInFOOT",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRUhjckU4bmpEeG83SVJJclBqa2Nrb09peWNicFNUbHl3MnpIaFVTalBKMmw4NGxPMnNMeldNekM3QXZPZGdlbVpLVWxxWlRCc0JtSzZwR254OFV6anVCcHpGd0otSV9UY2hrT196SjZtUW1Odkx1bGhyQ2NYUmQwN3hTUVQ3R2huOGhXaHdQeDhaaVd0UmJoX3VmbzE0UWlKbFlyMUVEQ3loZ0VJNGhpNVlfUnF4Zw?oc=5",
+      "published": "2026-10-20T11:00:00+00:00",
       "source": "MadeInFOOT"
     },
     {
-      "title": "Ligue 1 - Le programme TV de la 14ème journée de Ligue 1 - MadeInFOOT",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSDhkZGtKOXdWV1RUVUZmNWRNWURRWjJZWlIxX2JTM1JrTlBsdUxoaDF3VV9VUGJBX3A4bFU4bGZrZG9ocDVEeThQWFZkNmoxbDdTSjhNZ0xvdXhFMS1zb2Z3cW5jbDVmb2E2a19iWVg4LVNuWjVjbGlka1pyNmJ2cUNraFNwbkE3aWhyVzd3V21BeU9aV2ZqWmhRNUUzRVVCbWtrQXI2anJSUmdOalJibWJrMjAxZw?oc=5",
-      "published": "2026-10-20T10:40:00+00:00",
-      "source": "MadeInFOOT"
+      "title": "Ligue 1 : la LFP annonce le report du match PSG - OL ! - Foot Mercato",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPV3MyVGJCdXBVZWM3TDllbWFYMGJVQWtNbTRITFJMd1RIN0I1RUY5UXJ1TFl6c3lNWkNBSzNQSGQ2RThUSTZvbFF2cVI1LV9Mano5Y2l1OFJUNlJCMXNGalFNM1dKdnZLbl9QakhscmZSV09qOGw2Ymt5XzdKYWN5dGZNLWFPMWZaYzRpeGx1aUdqWXA4aHRkdF9sS3llZw?oc=5",
+      "published": "2026-10-23T12:09:02+00:00",
+      "source": "Foot Mercato"
     }
   ]
 }
