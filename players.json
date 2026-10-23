@@ -1,11 +1,12 @@
 {
-  "updated_at": "2026-10-22T10:33:54.148518+00:00",
+  "updated_at": "2026-10-23T10:27:16.271537+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
       "Amine Gouiri",
       "Amine Harit",
       "Angel Gomes",
+      "Antoine Dominique Henri Valero",
       "Faris Moumbagna",
       "Geoffrey Kondogbia",
       "Himad Abdelli",
@@ -327,5 +328,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 287
+  "players_fetched": 288
 }
