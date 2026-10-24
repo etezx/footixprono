@@ -1448,5 +1448,30 @@
     "id": "34174962",
     "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/cb7p4h1766137895.png",
     "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/l81x0t1631706928.jpg"
+  },
+  "sbaidoo": {
+    "id": "34220792",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/m41uua1766006836.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/9dquxn1750706670.jpg"
+  },
+  "saudabdulhamid": {
+    "id": "34202736",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/37g75w1766004681.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/opcqpo1668712724.jpg"
+  },
+  "fivanovic": {
+    "id": "34145495",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/5terqn1603140254.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/95nu2q1708606967.jpg"
+  },
+  "otavio": {
+    "id": "34163530",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/dkg4cz1679049726.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/1wpf9a1704365399.jpg"
+  },
+  "onkambadio": {
+    "id": "34231229",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/ffpwqx1766329312.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/2q42aw1727973893.jpg"
   }
 }
