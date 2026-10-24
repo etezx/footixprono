@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T10:27:16.271537+00:00",
+  "updated_at": "2026-10-24T09:45:00.170882+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -136,6 +136,7 @@
       "William Harhouz"
     ],
     "STADE BRESTOIS 29": [
+      "Djylian N'Guessan",
       "Enzo Monchatre",
       "Giovani Versini",
       "Hugo Magnetti",
@@ -174,6 +175,7 @@
       "Danny Namaso",
       "Kévin Danois",
       "Lamfia Dioubaté",
+      "Mamadou Diop",
       "Mamoudou Cissokho",
       "Naouirou Ahamada",
       "Pierre Ekwah",
@@ -328,5 +330,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 288
+  "players_fetched": 290
 }
