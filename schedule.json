@@ -1447,7 +1447,7 @@
           "eventId": 210501,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-23T20:50:35Z"
+          "lastLiveUpdate": "2026-10-24T18:00:21Z"
         }
       ],
       [
@@ -1462,7 +1462,7 @@
           "eventId": 210502,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-23T20:50:35Z"
+          "lastLiveUpdate": "2026-10-24T18:00:21Z"
         }
       ],
       [
@@ -1477,7 +1477,7 @@
           "eventId": 210506,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-23T20:50:35Z",
+          "lastLiveUpdate": "2026-10-24T18:00:21Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -1501,7 +1501,7 @@
           "eventId": 210505,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-23T20:50:35Z"
+          "lastLiveUpdate": "2026-10-24T18:00:21Z"
         }
       ],
       [
@@ -1516,7 +1516,7 @@
           "eventId": 210503,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-23T20:50:35Z"
+          "lastLiveUpdate": "2026-10-24T18:00:21Z"
         }
       ],
       [
@@ -1531,7 +1531,7 @@
           "eventId": 210500,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-23T20:50:35Z"
+          "lastLiveUpdate": "2026-10-24T18:00:21Z"
         }
       ],
       [
@@ -1541,8 +1541,12 @@
           "date": "2026-10-25",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210504,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-24T18:00:21Z"
         }
       ],
       [
@@ -1554,7 +1558,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-23T20:50:35Z"
+          "lastLiveUpdate": "2026-10-24T18:00:21Z"
         }
       ],
       [
@@ -1569,7 +1573,7 @@
           "eventId": 210508,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-23T20:50:35Z"
+          "lastLiveUpdate": "2026-10-24T18:00:21Z"
         }
       ]
     ]
