@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-24T20:30:23Z",
+  "generatedAt": "2026-10-24T20:40:19Z",
   "events": [
     {
       "eventId": 210448,
@@ -2403,7 +2403,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-24T20:30:23Z",
+      "updatedAt": "2026-10-24T20:40:19Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -2425,16 +2425,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-24T20:30:23Z",
-      "minute": 81,
-      "homeScore": 1,
+      "updatedAt": "2026-10-24T20:40:19Z",
+      "minute": 91,
+      "homeScore": 2,
       "awayScore": 1,
       "actualScorers": [
+        "T. Hazard",
         "F. Thauvin",
         "L. Koleosho"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 210500,
@@ -2446,7 +2447,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:30:23Z"
+      "updatedAt": "2026-10-24T20:40:19Z"
     },
     {
       "eventId": 210501,
@@ -2458,7 +2459,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:30:23Z"
+      "updatedAt": "2026-10-24T20:40:19Z"
     },
     {
       "eventId": 210502,
@@ -2470,7 +2471,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:30:23Z"
+      "updatedAt": "2026-10-24T20:40:19Z"
     },
     {
       "eventId": 210503,
@@ -2482,7 +2483,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:30:23Z"
+      "updatedAt": "2026-10-24T20:40:19Z"
     },
     {
       "eventId": 210507,
@@ -2494,7 +2495,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:30:23Z"
+      "updatedAt": "2026-10-24T20:40:19Z"
     },
     {
       "eventId": 210508,
@@ -2506,7 +2507,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:30:23Z"
+      "updatedAt": "2026-10-24T20:40:19Z"
     },
     {
       "eventId": 210504,
@@ -2518,7 +2519,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:30:23Z"
+      "updatedAt": "2026-10-24T20:40:19Z"
     }
   ]
 }

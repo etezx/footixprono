@@ -1447,7 +1447,7 @@
           "eventId": 210501,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T20:30:23Z"
+          "lastLiveUpdate": "2026-10-24T20:40:19Z"
         }
       ],
       [
@@ -1462,7 +1462,7 @@
           "eventId": 210502,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T20:30:23Z"
+          "lastLiveUpdate": "2026-10-24T20:40:19Z"
         }
       ],
       [
@@ -1477,7 +1477,7 @@
           "eventId": 210506,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T20:30:23Z",
+          "lastLiveUpdate": "2026-10-24T20:40:19Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -1501,12 +1501,13 @@
           "eventId": 210505,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-24T20:30:23Z",
-          "minute": 81,
+          "lastLiveUpdate": "2026-10-24T20:40:19Z",
+          "minute": 91,
           "period": "2nd_half",
-          "homeScore": 1,
+          "homeScore": 2,
           "awayScore": 1,
           "actualScorers": [
+            "T. Hazard",
             "F. Thauvin",
             "L. Koleosho"
           ],
@@ -1525,7 +1526,7 @@
           "eventId": 210503,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T20:30:23Z"
+          "lastLiveUpdate": "2026-10-24T20:40:19Z"
         }
       ],
       [
@@ -1540,7 +1541,7 @@
           "eventId": 210500,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T20:30:23Z"
+          "lastLiveUpdate": "2026-10-24T20:40:19Z"
         }
       ],
       [
@@ -1555,7 +1556,7 @@
           "eventId": 210504,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T20:30:23Z"
+          "lastLiveUpdate": "2026-10-24T20:40:19Z"
         }
       ],
       [
@@ -1567,7 +1568,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-24T20:30:23Z"
+          "lastLiveUpdate": "2026-10-24T20:40:19Z"
         }
       ],
       [
@@ -1582,7 +1583,7 @@
           "eventId": 210508,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T20:30:23Z"
+          "lastLiveUpdate": "2026-10-24T20:40:19Z"
         }
       ]
     ]
