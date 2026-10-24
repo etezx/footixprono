@@ -1447,7 +1447,7 @@
           "eventId": 210501,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T19:30:15Z"
+          "lastLiveUpdate": "2026-10-24T19:40:15Z"
         }
       ],
       [
@@ -1462,7 +1462,7 @@
           "eventId": 210502,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T19:30:15Z"
+          "lastLiveUpdate": "2026-10-24T19:40:15Z"
         }
       ],
       [
@@ -1477,7 +1477,7 @@
           "eventId": 210506,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T19:30:15Z",
+          "lastLiveUpdate": "2026-10-24T19:40:15Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -1501,12 +1501,14 @@
           "eventId": 210505,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-24T19:30:15Z",
-          "minute": 44,
-          "period": "1st_half",
+          "lastLiveUpdate": "2026-10-24T19:40:15Z",
+          "minute": 45,
+          "period": "halftime",
           "homeScore": 0,
-          "awayScore": 0,
-          "actualScorers": [],
+          "awayScore": 1,
+          "actualScorers": [
+            "L. Koleosho"
+          ],
           "scorersVerified": true
         }
       ],
@@ -1522,7 +1524,7 @@
           "eventId": 210503,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T19:30:15Z"
+          "lastLiveUpdate": "2026-10-24T19:40:15Z"
         }
       ],
       [
@@ -1537,7 +1539,7 @@
           "eventId": 210500,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T19:30:15Z"
+          "lastLiveUpdate": "2026-10-24T19:40:15Z"
         }
       ],
       [
@@ -1552,7 +1554,7 @@
           "eventId": 210504,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T19:30:15Z"
+          "lastLiveUpdate": "2026-10-24T19:40:15Z"
         }
       ],
       [
@@ -1564,7 +1566,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-24T19:30:15Z"
+          "lastLiveUpdate": "2026-10-24T19:40:15Z"
         }
       ],
       [
@@ -1579,7 +1581,7 @@
           "eventId": 210508,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-24T19:30:15Z"
+          "lastLiveUpdate": "2026-10-24T19:40:15Z"
         }
       ]
     ]
