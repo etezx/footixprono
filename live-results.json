@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-24T19:10:18Z",
+  "generatedAt": "2026-10-24T19:20:17Z",
   "events": [
     {
       "eventId": 210448,
@@ -2403,7 +2403,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-24T19:10:18Z",
+      "updatedAt": "2026-10-24T19:20:17Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -2425,8 +2425,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-24T19:10:18Z",
-      "minute": 24,
+      "updatedAt": "2026-10-24T19:20:17Z",
+      "minute": 34,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2443,7 +2443,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T19:10:18Z"
+      "updatedAt": "2026-10-24T19:20:17Z"
     },
     {
       "eventId": 210501,
@@ -2455,7 +2455,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T19:10:18Z"
+      "updatedAt": "2026-10-24T19:20:17Z"
     },
     {
       "eventId": 210502,
@@ -2467,7 +2467,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T19:10:18Z"
+      "updatedAt": "2026-10-24T19:20:17Z"
     },
     {
       "eventId": 210503,
@@ -2479,7 +2479,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T19:10:18Z"
+      "updatedAt": "2026-10-24T19:20:17Z"
     },
     {
       "eventId": 210507,
@@ -2491,7 +2491,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T19:10:18Z"
+      "updatedAt": "2026-10-24T19:20:17Z"
     },
     {
       "eventId": 210508,
@@ -2503,7 +2503,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T19:10:18Z"
+      "updatedAt": "2026-10-24T19:20:17Z"
     },
     {
       "eventId": 210504,
@@ -2515,7 +2515,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T19:10:18Z"
+      "updatedAt": "2026-10-24T19:20:17Z"
     }
   ]
 }
