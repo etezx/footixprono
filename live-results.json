@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-25T16:10:16Z",
+  "generatedAt": "2026-10-25T16:20:16Z",
   "events": [
     {
       "eventId": 210448,
@@ -2403,7 +2403,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:10:16Z",
+      "updatedAt": "2026-10-25T16:20:16Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -2425,7 +2425,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:10:16Z",
+      "updatedAt": "2026-10-25T16:20:16Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -2442,12 +2442,12 @@
       "leagueId": 6,
       "home": "AS Monaco",
       "away": "Lille",
-      "kickoff": "2026-10-25T14:00:00Z",
+      "kickoff": "2026-10-25T14:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:10:16Z",
+      "updatedAt": "2026-10-25T16:20:16Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -2464,11 +2464,17 @@
       "home": "Angers",
       "away": "Lorient",
       "kickoff": "2026-10-25T16:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-25T16:10:16Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-25T16:20:16Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210502,
@@ -2476,11 +2482,17 @@
       "home": "Auxerre",
       "away": "Le Mans",
       "kickoff": "2026-10-25T16:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-25T16:10:16Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-25T16:20:16Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210503,
@@ -2488,11 +2500,17 @@
       "home": "Olympique de Marseille",
       "away": "Le Havre",
       "kickoff": "2026-10-25T16:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-25T16:10:16Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-25T16:20:16Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210507,
@@ -2500,11 +2518,17 @@
       "home": "Stade Rennais",
       "away": "RC Strasbourg",
       "kickoff": "2026-10-25T16:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-25T16:10:16Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-25T16:20:16Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210508,
@@ -2512,11 +2536,17 @@
       "home": "Toulouse",
       "away": "Troyes",
       "kickoff": "2026-10-25T16:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-10-25T16:10:16Z"
+      "period": "1st_half",
+      "updatedAt": "2026-10-25T16:20:16Z",
+      "minute": 3,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210504,
@@ -2528,7 +2558,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-25T16:10:16Z"
+      "updatedAt": "2026-10-25T16:20:16Z"
     }
   ]
 }
