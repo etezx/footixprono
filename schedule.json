@@ -1447,7 +1447,7 @@
           "eventId": 210501,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T15:40:20Z"
+          "lastLiveUpdate": "2026-10-25T15:50:17Z"
         }
       ],
       [
@@ -1462,7 +1462,7 @@
           "eventId": 210502,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T15:40:20Z"
+          "lastLiveUpdate": "2026-10-25T15:50:17Z"
         }
       ],
       [
@@ -1477,7 +1477,7 @@
           "eventId": 210506,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T15:40:20Z",
+          "lastLiveUpdate": "2026-10-25T15:50:17Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -1501,7 +1501,7 @@
           "eventId": 210505,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T15:40:20Z",
+          "lastLiveUpdate": "2026-10-25T15:50:17Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -1525,7 +1525,7 @@
           "eventId": 210503,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T15:40:20Z"
+          "lastLiveUpdate": "2026-10-25T15:50:17Z"
         }
       ],
       [
@@ -1540,8 +1540,8 @@
           "eventId": 210500,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-25T15:40:20Z",
-          "minute": 80,
+          "lastLiveUpdate": "2026-10-25T15:50:17Z",
+          "minute": 90,
           "period": "2nd_half",
           "homeScore": 1,
           "awayScore": 1,
@@ -1564,7 +1564,7 @@
           "eventId": 210504,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T15:40:20Z"
+          "lastLiveUpdate": "2026-10-25T15:50:17Z"
         }
       ],
       [
@@ -1576,7 +1576,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-25T15:40:20Z"
+          "lastLiveUpdate": "2026-10-25T15:50:17Z"
         }
       ],
       [
@@ -1591,7 +1591,7 @@
           "eventId": 210508,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T15:40:20Z"
+          "lastLiveUpdate": "2026-10-25T15:50:17Z"
         }
       ]
     ]
