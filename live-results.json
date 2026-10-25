@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-25T16:50:20Z",
+  "generatedAt": "2026-10-25T17:00:22Z",
   "events": [
     {
       "eventId": 210448,
@@ -2403,7 +2403,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:50:20Z",
+      "updatedAt": "2026-10-25T17:00:22Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -2425,7 +2425,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:50:20Z",
+      "updatedAt": "2026-10-25T17:00:22Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -2447,7 +2447,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:50:20Z",
+      "updatedAt": "2026-10-25T17:00:22Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -2468,8 +2468,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-25T16:50:20Z",
-      "minute": 34,
+      "updatedAt": "2026-10-25T17:00:22Z",
+      "minute": 44,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2486,8 +2486,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-25T16:50:20Z",
-      "minute": 34,
+      "updatedAt": "2026-10-25T17:00:22Z",
+      "minute": 44,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2504,8 +2504,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-25T16:50:20Z",
-      "minute": 34,
+      "updatedAt": "2026-10-25T17:00:22Z",
+      "minute": 44,
       "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
@@ -2524,13 +2524,16 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-25T16:50:20Z",
-      "minute": 34,
-      "homeScore": 1,
+      "updatedAt": "2026-10-25T17:00:22Z",
+      "minute": 44,
+      "homeScore": 2,
       "awayScore": 0,
-      "actualScorers": [],
-      "scorersVerified": false,
-      "goalIncidents": 0
+      "actualScorers": [
+        "S. Szymański",
+        "B. Dia"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 2
     },
     {
       "eventId": 210508,
@@ -2542,8 +2545,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-25T16:50:20Z",
-      "minute": 33,
+      "updatedAt": "2026-10-25T17:00:22Z",
+      "minute": 43,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2560,7 +2563,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-25T16:50:20Z"
+      "updatedAt": "2026-10-25T17:00:22Z"
     }
   ]
 }
