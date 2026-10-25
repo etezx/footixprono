@@ -1447,7 +1447,7 @@
           "eventId": 210501,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T14:20:17Z"
+          "lastLiveUpdate": "2026-10-25T14:30:23Z"
         }
       ],
       [
@@ -1462,7 +1462,7 @@
           "eventId": 210502,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T14:20:17Z"
+          "lastLiveUpdate": "2026-10-25T14:30:23Z"
         }
       ],
       [
@@ -1477,7 +1477,7 @@
           "eventId": 210506,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T14:20:17Z",
+          "lastLiveUpdate": "2026-10-25T14:30:23Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -1501,7 +1501,7 @@
           "eventId": 210505,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T14:20:17Z",
+          "lastLiveUpdate": "2026-10-25T14:30:23Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -1525,7 +1525,7 @@
           "eventId": 210503,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T14:20:17Z"
+          "lastLiveUpdate": "2026-10-25T14:30:23Z"
         }
       ],
       [
@@ -1540,12 +1540,14 @@
           "eventId": 210500,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-25T14:20:17Z",
-          "minute": 19,
+          "lastLiveUpdate": "2026-10-25T14:30:23Z",
+          "minute": 29,
           "period": "1st_half",
           "homeScore": 0,
-          "awayScore": 0,
-          "actualScorers": [],
+          "awayScore": 1,
+          "actualScorers": [
+            "E. Mbappé"
+          ],
           "scorersVerified": true
         }
       ],
@@ -1561,7 +1563,7 @@
           "eventId": 210504,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T14:20:17Z"
+          "lastLiveUpdate": "2026-10-25T14:30:23Z"
         }
       ],
       [
@@ -1573,7 +1575,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-25T14:20:17Z"
+          "lastLiveUpdate": "2026-10-25T14:30:23Z"
         }
       ],
       [
@@ -1588,7 +1590,7 @@
           "eventId": 210508,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T14:20:17Z"
+          "lastLiveUpdate": "2026-10-25T14:30:23Z"
         }
       ]
     ]
