@@ -23,6 +23,40 @@
       "teams": [
         {
           "position": 1,
+          "club": "Lille",
+          "p": 8,
+          "w": 4,
+          "d": 3,
+          "l": 1,
+          "gf": 11,
+          "ga": 6,
+          "pts": 15,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 2,
+          "club": "AS Monaco",
+          "p": 8,
+          "w": 4,
+          "d": 3,
+          "l": 1,
+          "gf": 11,
+          "ga": 7,
+          "pts": 15,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 3,
           "club": "Olympique Lyonnais",
           "p": 7,
           "w": 4,
@@ -39,47 +73,13 @@
           }
         },
         {
-          "position": 2,
+          "position": 4,
           "club": "Paris Saint-Germain",
           "p": 7,
           "w": 4,
           "d": 2,
           "l": 1,
           "gf": 14,
-          "ga": 9,
-          "pts": 14,
-          "group": "",
-          "zone": {
-            "key": "cl",
-            "label": "Champions League",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 3,
-          "club": "Lille",
-          "p": 7,
-          "w": 4,
-          "d": 2,
-          "l": 1,
-          "gf": 10,
-          "ga": 5,
-          "pts": 14,
-          "group": "",
-          "zone": {
-            "key": "cl",
-            "label": "Champions League",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 4,
-          "club": "Paris FC",
-          "p": 8,
-          "w": 4,
-          "d": 2,
-          "l": 2,
-          "gf": 13,
           "ga": 9,
           "pts": 14,
           "group": "",
@@ -91,13 +91,13 @@
         },
         {
           "position": 5,
-          "club": "AS Monaco",
-          "p": 7,
+          "club": "Paris FC",
+          "p": 8,
           "w": 4,
           "d": 2,
-          "l": 1,
-          "gf": 10,
-          "ga": 6,
+          "l": 2,
+          "gf": 13,
+          "ga": 9,
           "pts": 14,
           "group": "",
           "zone": {
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-10-25T16:00:28Z",
+  "generatedAt": "2026-10-25T16:10:16Z",
   "source": "BSD"
 }

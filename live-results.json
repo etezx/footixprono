@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-25T16:00:28Z",
+  "generatedAt": "2026-10-25T16:10:16Z",
   "events": [
     {
       "eventId": 210448,
@@ -2403,7 +2403,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:00:28Z",
+      "updatedAt": "2026-10-25T16:10:16Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -2425,7 +2425,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:00:28Z",
+      "updatedAt": "2026-10-25T16:10:16Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -2447,7 +2447,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:00:28Z",
+      "updatedAt": "2026-10-25T16:10:16Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -2463,60 +2463,60 @@
       "leagueId": 6,
       "home": "Angers",
       "away": "Lorient",
-      "kickoff": "2026-10-25T16:15:00+00:00",
+      "kickoff": "2026-10-25T16:15:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-25T16:00:28Z"
+      "updatedAt": "2026-10-25T16:10:16Z"
     },
     {
       "eventId": 210502,
       "leagueId": 6,
       "home": "Auxerre",
       "away": "Le Mans",
-      "kickoff": "2026-10-25T16:15:00+00:00",
+      "kickoff": "2026-10-25T16:15:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-25T16:00:28Z"
+      "updatedAt": "2026-10-25T16:10:16Z"
     },
     {
       "eventId": 210503,
       "leagueId": 6,
       "home": "Olympique de Marseille",
       "away": "Le Havre",
-      "kickoff": "2026-10-25T16:15:00+00:00",
+      "kickoff": "2026-10-25T16:15:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-25T16:00:28Z"
+      "updatedAt": "2026-10-25T16:10:16Z"
     },
     {
       "eventId": 210507,
       "leagueId": 6,
       "home": "Stade Rennais",
       "away": "RC Strasbourg",
-      "kickoff": "2026-10-25T16:15:00+00:00",
+      "kickoff": "2026-10-25T16:15:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-25T16:00:28Z"
+      "updatedAt": "2026-10-25T16:10:16Z"
     },
     {
       "eventId": 210508,
       "leagueId": 6,
       "home": "Toulouse",
       "away": "Troyes",
-      "kickoff": "2026-10-25T16:15:00+00:00",
+      "kickoff": "2026-10-25T16:15:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-25T16:00:28Z"
+      "updatedAt": "2026-10-25T16:10:16Z"
     },
     {
       "eventId": 210504,
@@ -2528,7 +2528,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-25T16:00:28Z"
+      "updatedAt": "2026-10-25T16:10:16Z"
     }
   ]
 }
