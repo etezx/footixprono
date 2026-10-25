@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-24T20:50:18Z",
+  "generatedAt": "2026-10-25T13:20:18Z",
   "events": [
     {
       "eventId": 210448,
@@ -2403,7 +2403,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-24T20:50:18Z",
+      "updatedAt": "2026-10-25T13:20:18Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -2420,12 +2420,12 @@
       "leagueId": 6,
       "home": "RC Lens",
       "away": "Paris FC",
-      "kickoff": "2026-10-24T18:45:00Z",
+      "kickoff": "2026-10-24T18:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-24T20:50:18Z",
+      "updatedAt": "2026-10-25T13:20:18Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -2447,7 +2447,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:50:18Z"
+      "updatedAt": "2026-10-25T13:20:18Z"
     },
     {
       "eventId": 210501,
@@ -2459,7 +2459,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:50:18Z"
+      "updatedAt": "2026-10-25T13:20:18Z"
     },
     {
       "eventId": 210502,
@@ -2471,7 +2471,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:50:18Z"
+      "updatedAt": "2026-10-25T13:20:18Z"
     },
     {
       "eventId": 210503,
@@ -2483,7 +2483,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:50:18Z"
+      "updatedAt": "2026-10-25T13:20:18Z"
     },
     {
       "eventId": 210507,
@@ -2495,7 +2495,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:50:18Z"
+      "updatedAt": "2026-10-25T13:20:18Z"
     },
     {
       "eventId": 210508,
@@ -2507,7 +2507,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:50:18Z"
+      "updatedAt": "2026-10-25T13:20:18Z"
     },
     {
       "eventId": 210504,
@@ -2519,7 +2519,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-24T20:50:18Z"
+      "updatedAt": "2026-10-25T13:20:18Z"
     }
   ]
 }
