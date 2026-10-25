@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-25T16:20:16Z",
+  "generatedAt": "2026-10-25T16:30:22Z",
   "events": [
     {
       "eventId": 210448,
@@ -2403,7 +2403,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:20:16Z",
+      "updatedAt": "2026-10-25T16:30:22Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -2425,7 +2425,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:20:16Z",
+      "updatedAt": "2026-10-25T16:30:22Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -2447,7 +2447,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-25T16:20:16Z",
+      "updatedAt": "2026-10-25T16:30:22Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -2468,8 +2468,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-25T16:20:16Z",
-      "minute": 4,
+      "updatedAt": "2026-10-25T16:30:22Z",
+      "minute": 14,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2486,8 +2486,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-25T16:20:16Z",
-      "minute": 4,
+      "updatedAt": "2026-10-25T16:30:22Z",
+      "minute": 14,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2504,13 +2504,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-25T16:20:16Z",
-      "minute": 4,
-      "homeScore": 0,
+      "updatedAt": "2026-10-25T16:30:22Z",
+      "minute": 14,
+      "homeScore": 1,
       "awayScore": 0,
-      "actualScorers": [],
+      "actualScorers": [
+        "C. Egan-Riley"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210507,
@@ -2522,8 +2524,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-25T16:20:16Z",
-      "minute": 4,
+      "updatedAt": "2026-10-25T16:30:22Z",
+      "minute": 14,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2540,8 +2542,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-25T16:20:16Z",
-      "minute": 3,
+      "updatedAt": "2026-10-25T16:30:22Z",
+      "minute": 13,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2558,7 +2560,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-25T16:20:16Z"
+      "updatedAt": "2026-10-25T16:30:22Z"
     }
   ]
 }
