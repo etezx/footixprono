@@ -1447,8 +1447,8 @@
           "eventId": 210501,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-25T16:42:52Z",
-          "minute": 27,
+          "lastLiveUpdate": "2026-10-25T16:50:20Z",
+          "minute": 34,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -1468,8 +1468,8 @@
           "eventId": 210502,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-25T16:42:52Z",
-          "minute": 27,
+          "lastLiveUpdate": "2026-10-25T16:50:20Z",
+          "minute": 34,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -1489,7 +1489,7 @@
           "eventId": 210506,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T16:42:52Z",
+          "lastLiveUpdate": "2026-10-25T16:50:20Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 2,
@@ -1513,7 +1513,7 @@
           "eventId": 210505,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T16:42:52Z",
+          "lastLiveUpdate": "2026-10-25T16:50:20Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 1,
@@ -1537,15 +1537,15 @@
           "eventId": 210503,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-25T16:42:52Z",
-          "minute": 27,
+          "lastLiveUpdate": "2026-10-25T16:50:20Z",
+          "minute": 34,
           "period": "1st_half",
-          "homeScore": 1,
+          "homeScore": 2,
           "awayScore": 0,
           "actualScorers": [
             "C. Egan-Riley"
           ],
-          "scorersVerified": true
+          "scorersVerified": false
         }
       ],
       [
@@ -1560,7 +1560,7 @@
           "eventId": 210500,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T16:42:52Z",
+          "lastLiveUpdate": "2026-10-25T16:50:20Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -1583,7 +1583,7 @@
           "eventId": 210504,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-25T16:42:52Z"
+          "lastLiveUpdate": "2026-10-25T16:50:20Z"
         }
       ],
       [
@@ -1595,13 +1595,13 @@
           "status": "live",
           "live": true,
           "completed": false,
-          "lastLiveUpdate": "2026-10-25T16:42:52Z",
-          "minute": 27,
+          "lastLiveUpdate": "2026-10-25T16:50:20Z",
+          "minute": 34,
           "period": "1st_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 0,
           "actualScorers": [],
-          "scorersVerified": true
+          "scorersVerified": false
         }
       ],
       [
@@ -1616,8 +1616,8 @@
           "eventId": 210508,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-25T16:42:52Z",
-          "minute": 27,
+          "lastLiveUpdate": "2026-10-25T16:50:20Z",
+          "minute": 33,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 0,
