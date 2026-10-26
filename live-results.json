@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-26T20:30:26Z",
+  "generatedAt": "2026-10-26T20:40:19Z",
   "events": [
     {
       "eventId": 210448,
@@ -2425,7 +2425,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T20:30:26Z",
+      "updatedAt": "2026-10-26T20:40:19Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -2447,7 +2447,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T20:30:26Z",
+      "updatedAt": "2026-10-26T20:40:19Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -2468,7 +2468,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T20:30:26Z",
+      "updatedAt": "2026-10-26T20:40:19Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 0,
@@ -2486,7 +2486,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T20:30:26Z",
+      "updatedAt": "2026-10-26T20:40:19Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -2507,7 +2507,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T20:30:26Z",
+      "updatedAt": "2026-10-26T20:40:19Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 3,
@@ -2532,7 +2532,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T20:30:26Z",
+      "updatedAt": "2026-10-26T20:40:19Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 0,
@@ -2553,7 +2553,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T20:30:26Z",
+      "updatedAt": "2026-10-26T20:40:19Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 0,
@@ -2570,11 +2570,11 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-26T20:30:26Z",
+      "period": "2nd_half",
+      "updatedAt": "2026-10-26T20:40:19Z",
       "homeScore": 0,
       "awayScore": 0,
-      "minute": 45
+      "minute": 53
     }
   ]
 }
