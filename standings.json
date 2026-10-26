@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-10-26T19:18:40.901304+00:00",
+  "updated_at": "2026-10-26T23:52:37.300345+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
+    {
+      "club": "Paris Saint-Germain",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+      "p": 8,
+      "w": 5,
+      "d": 2,
+      "l": 1,
+      "gf": 16,
+      "ga": 9,
+      "pts": 17,
+      "last5": []
+    },
     {
       "club": "Stade Rennais",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
@@ -41,24 +53,12 @@
     {
       "club": "Lyon",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
-      "p": 7,
+      "p": 8,
       "w": 4,
       "d": 2,
-      "l": 1,
+      "l": 2,
       "gf": 13,
-      "ga": 5,
-      "pts": 14,
-      "last5": []
-    },
-    {
-      "club": "Paris Saint-Germain",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-      "p": 7,
-      "w": 4,
-      "d": 2,
-      "l": 1,
-      "gf": 14,
-      "ga": 9,
+      "ga": 7,
       "pts": 14,
       "last5": []
     },
