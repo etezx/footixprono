@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-26T19:20:20Z",
+  "generatedAt": "2026-10-26T19:30:26Z",
   "events": [
     {
       "eventId": 210448,
@@ -2425,7 +2425,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T19:20:20Z",
+      "updatedAt": "2026-10-26T19:30:26Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -2447,7 +2447,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T19:20:20Z",
+      "updatedAt": "2026-10-26T19:30:26Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -2468,7 +2468,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T19:20:20Z",
+      "updatedAt": "2026-10-26T19:30:26Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 0,
@@ -2486,7 +2486,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T19:20:20Z",
+      "updatedAt": "2026-10-26T19:30:26Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -2507,7 +2507,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T19:20:20Z",
+      "updatedAt": "2026-10-26T19:30:26Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 3,
@@ -2532,7 +2532,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T19:20:20Z",
+      "updatedAt": "2026-10-26T19:30:26Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 0,
@@ -2553,7 +2553,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-26T19:20:20Z",
+      "updatedAt": "2026-10-26T19:30:26Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 0,
@@ -2571,7 +2571,9 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-26T19:20:20Z"
+      "updatedAt": "2026-10-26T19:30:26Z",
+      "homeScore": 0,
+      "awayScore": 0
     }
   ]
 }
