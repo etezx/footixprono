@@ -1657,16 +1657,17 @@
           "eventId": 210509,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-30T19:10:55Z",
-          "minute": 51,
+          "lastLiveUpdate": "2026-10-30T19:20:51Z",
+          "minute": 60,
           "period": "2nd_half",
           "homeScore": 1,
-          "awayScore": 2,
+          "awayScore": 3,
           "actualScorers": [
+            "A. Hakimi",
             "M. Godts",
             "J. Maja"
           ],
-          "scorersVerified": false
+          "scorersVerified": true
         }
       ],
       [
@@ -1681,7 +1682,7 @@
           "eventId": 210510,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:10:55Z"
+          "lastLiveUpdate": "2026-10-30T19:20:51Z"
         }
       ],
       [
@@ -1707,7 +1708,7 @@
           "eventId": 210513,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:10:55Z"
+          "lastLiveUpdate": "2026-10-30T19:20:51Z"
         }
       ],
       [
@@ -1722,7 +1723,7 @@
           "eventId": 210514,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:10:55Z"
+          "lastLiveUpdate": "2026-10-30T19:20:51Z"
         }
       ],
       [
@@ -1734,12 +1735,14 @@
           "status": "live",
           "live": true,
           "completed": false,
-          "lastLiveUpdate": "2026-10-30T19:10:55Z",
-          "homeScore": 3,
-          "awayScore": 1,
-          "minute": 50,
+          "lastLiveUpdate": "2026-10-30T19:20:51Z",
+          "homeScore": 4,
+          "awayScore": 2,
+          "minute": 59,
           "period": "2nd_half",
           "actualScorers": [
+            "B. Dia",
+            "M. E. A. Amoura",
             "J. Clauss",
             "E. Wahi",
             "S. Szymański"
@@ -1759,7 +1762,7 @@
           "eventId": 210515,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:10:55Z"
+          "lastLiveUpdate": "2026-10-30T19:20:51Z"
         }
       ],
       [
@@ -1774,7 +1777,7 @@
           "eventId": 210516,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:10:55Z"
+          "lastLiveUpdate": "2026-10-30T19:20:51Z"
         }
       ],
       [
@@ -1789,7 +1792,7 @@
           "eventId": 210517,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:10:55Z"
+          "lastLiveUpdate": "2026-10-30T19:20:51Z"
         }
       ]
     ]
