@@ -1657,7 +1657,7 @@
           "eventId": 210509,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-30T18:50:56Z",
+          "lastLiveUpdate": "2026-10-30T19:00:54Z",
           "minute": 45,
           "period": "halftime",
           "homeScore": 1,
@@ -1681,7 +1681,7 @@
           "eventId": 210510,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T18:50:56Z"
+          "lastLiveUpdate": "2026-10-30T19:00:54Z"
         }
       ],
       [
@@ -1707,7 +1707,7 @@
           "eventId": 210513,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T18:50:56Z"
+          "lastLiveUpdate": "2026-10-30T19:00:54Z"
         }
       ],
       [
@@ -1722,7 +1722,7 @@
           "eventId": 210514,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T18:50:56Z"
+          "lastLiveUpdate": "2026-10-30T19:00:54Z"
         }
       ],
       [
@@ -1734,7 +1734,7 @@
           "status": "live",
           "live": true,
           "completed": false,
-          "lastLiveUpdate": "2026-10-30T18:50:56Z",
+          "lastLiveUpdate": "2026-10-30T19:00:54Z",
           "homeScore": 3,
           "awayScore": 1,
           "minute": 45,
@@ -1759,7 +1759,7 @@
           "eventId": 210515,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T18:50:56Z"
+          "lastLiveUpdate": "2026-10-30T19:00:54Z"
         }
       ],
       [
@@ -1774,7 +1774,7 @@
           "eventId": 210516,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T18:50:56Z"
+          "lastLiveUpdate": "2026-10-30T19:00:54Z"
         }
       ],
       [
@@ -1789,7 +1789,7 @@
           "eventId": 210517,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T18:50:56Z"
+          "lastLiveUpdate": "2026-10-30T19:00:54Z"
         }
       ]
     ]
