@@ -1657,9 +1657,9 @@
           "eventId": 210509,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-30T19:00:54Z",
-          "minute": 45,
-          "period": "halftime",
+          "lastLiveUpdate": "2026-10-30T19:10:55Z",
+          "minute": 51,
+          "period": "2nd_half",
           "homeScore": 1,
           "awayScore": 2,
           "actualScorers": [
@@ -1681,7 +1681,7 @@
           "eventId": 210510,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:00:54Z"
+          "lastLiveUpdate": "2026-10-30T19:10:55Z"
         }
       ],
       [
@@ -1707,7 +1707,7 @@
           "eventId": 210513,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:00:54Z"
+          "lastLiveUpdate": "2026-10-30T19:10:55Z"
         }
       ],
       [
@@ -1722,7 +1722,7 @@
           "eventId": 210514,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:00:54Z"
+          "lastLiveUpdate": "2026-10-30T19:10:55Z"
         }
       ],
       [
@@ -1734,11 +1734,11 @@
           "status": "live",
           "live": true,
           "completed": false,
-          "lastLiveUpdate": "2026-10-30T19:00:54Z",
+          "lastLiveUpdate": "2026-10-30T19:10:55Z",
           "homeScore": 3,
           "awayScore": 1,
-          "minute": 45,
-          "period": "halftime",
+          "minute": 50,
+          "period": "2nd_half",
           "actualScorers": [
             "J. Clauss",
             "E. Wahi",
@@ -1759,7 +1759,7 @@
           "eventId": 210515,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:00:54Z"
+          "lastLiveUpdate": "2026-10-30T19:10:55Z"
         }
       ],
       [
@@ -1774,7 +1774,7 @@
           "eventId": 210516,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:00:54Z"
+          "lastLiveUpdate": "2026-10-30T19:10:55Z"
         }
       ],
       [
@@ -1789,7 +1789,7 @@
           "eventId": 210517,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:00:54Z"
+          "lastLiveUpdate": "2026-10-30T19:10:55Z"
         }
       ]
     ]

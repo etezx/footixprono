@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T19:00:54Z",
+  "generatedAt": "2026-10-30T19:10:55Z",
   "events": [
     {
       "eventId": 210448,
@@ -2591,9 +2591,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-30T19:00:54Z",
-      "minute": 45,
+      "period": "2nd_half",
+      "updatedAt": "2026-10-30T19:10:55Z",
+      "minute": 51,
       "homeScore": 1,
       "awayScore": 2,
       "actualScorers": [
@@ -2612,11 +2612,11 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-30T19:00:54Z",
+      "period": "2nd_half",
+      "updatedAt": "2026-10-30T19:10:55Z",
       "homeScore": 3,
       "awayScore": 1,
-      "minute": 45,
+      "minute": 50,
       "actualScorers": [
         "J. Clauss",
         "E. Wahi",
@@ -2635,7 +2635,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:00:54Z"
+      "updatedAt": "2026-10-30T19:10:55Z"
     },
     {
       "eventId": 210517,
@@ -2647,7 +2647,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:00:54Z"
+      "updatedAt": "2026-10-30T19:10:55Z"
     },
     {
       "eventId": 210516,
@@ -2659,7 +2659,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:00:54Z"
+      "updatedAt": "2026-10-30T19:10:55Z"
     },
     {
       "eventId": 210513,
@@ -2671,7 +2671,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:00:54Z"
+      "updatedAt": "2026-10-30T19:10:55Z"
     },
     {
       "eventId": 210515,
@@ -2683,7 +2683,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:00:54Z"
+      "updatedAt": "2026-10-30T19:10:55Z"
     },
     {
       "eventId": 210514,
@@ -2695,7 +2695,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:00:54Z"
+      "updatedAt": "2026-10-30T19:10:55Z"
     }
   ]
 }
