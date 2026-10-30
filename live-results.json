@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T20:50:51Z",
+  "generatedAt": "2026-10-30T21:00:58Z",
   "events": [
     {
       "eventId": 210448,
@@ -2592,7 +2592,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T20:50:51Z",
+      "updatedAt": "2026-10-30T21:00:58Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 5,
@@ -2615,7 +2615,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T20:50:51Z",
+      "updatedAt": "2026-10-30T21:00:58Z",
       "homeScore": 5,
       "awayScore": 2,
       "minute": null,
@@ -2638,8 +2638,8 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-10-30T20:50:51Z",
+      "period": "halftime",
+      "updatedAt": "2026-10-30T21:00:58Z",
       "minute": 45,
       "homeScore": 0,
       "awayScore": 0,
@@ -2657,7 +2657,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T20:50:51Z"
+      "updatedAt": "2026-10-30T21:00:58Z"
     },
     {
       "eventId": 210516,
@@ -2669,7 +2669,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T20:50:51Z"
+      "updatedAt": "2026-10-30T21:00:58Z"
     },
     {
       "eventId": 210513,
@@ -2681,7 +2681,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T20:50:51Z"
+      "updatedAt": "2026-10-30T21:00:58Z"
     },
     {
       "eventId": 210515,
@@ -2693,7 +2693,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T20:50:51Z"
+      "updatedAt": "2026-10-30T21:00:58Z"
     },
     {
       "eventId": 210514,
@@ -2705,7 +2705,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T20:50:51Z"
+      "updatedAt": "2026-10-30T21:00:58Z"
     }
   ]
 }
