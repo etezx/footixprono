@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T21:40:50Z",
+  "generatedAt": "2026-10-30T21:50:54Z",
   "events": [
     {
       "eventId": 210448,
@@ -2592,7 +2592,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T21:40:50Z",
+      "updatedAt": "2026-10-30T21:50:54Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 5,
@@ -2615,7 +2615,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T21:40:50Z",
+      "updatedAt": "2026-10-30T21:50:54Z",
       "homeScore": 5,
       "awayScore": 2,
       "minute": null,
@@ -2639,13 +2639,15 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-30T21:40:50Z",
-      "minute": 78,
-      "homeScore": 0,
+      "updatedAt": "2026-10-30T21:50:54Z",
+      "minute": 88,
+      "homeScore": 1,
       "awayScore": 0,
-      "actualScorers": [],
+      "actualScorers": [
+        "O. Giroud"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210517,
@@ -2657,7 +2659,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:40:50Z"
+      "updatedAt": "2026-10-30T21:50:54Z"
     },
     {
       "eventId": 210516,
@@ -2669,7 +2671,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:40:50Z"
+      "updatedAt": "2026-10-30T21:50:54Z"
     },
     {
       "eventId": 210513,
@@ -2681,7 +2683,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:40:50Z"
+      "updatedAt": "2026-10-30T21:50:54Z"
     },
     {
       "eventId": 210515,
@@ -2693,7 +2695,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:40:50Z"
+      "updatedAt": "2026-10-30T21:50:54Z"
     },
     {
       "eventId": 210514,
@@ -2705,7 +2707,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:40:50Z"
+      "updatedAt": "2026-10-30T21:50:54Z"
     }
   ]
 }

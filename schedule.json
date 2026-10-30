@@ -1657,7 +1657,7 @@
           "eventId": 210509,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T21:40:50Z",
+          "lastLiveUpdate": "2026-10-30T21:50:54Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 5,
@@ -1682,12 +1682,14 @@
           "eventId": 210510,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-30T21:40:50Z",
-          "minute": 78,
+          "lastLiveUpdate": "2026-10-30T21:50:54Z",
+          "minute": 88,
           "period": "2nd_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 0,
-          "actualScorers": [],
+          "actualScorers": [
+            "O. Giroud"
+          ],
           "scorersVerified": true
         }
       ],
@@ -1714,7 +1716,7 @@
           "eventId": 210513,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T21:40:50Z"
+          "lastLiveUpdate": "2026-10-30T21:50:54Z"
         }
       ],
       [
@@ -1729,7 +1731,7 @@
           "eventId": 210514,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T21:40:50Z"
+          "lastLiveUpdate": "2026-10-30T21:50:54Z"
         }
       ],
       [
@@ -1741,7 +1743,7 @@
           "status": "finished",
           "live": false,
           "completed": true,
-          "lastLiveUpdate": "2026-10-30T21:40:50Z",
+          "lastLiveUpdate": "2026-10-30T21:50:54Z",
           "homeScore": 5,
           "awayScore": 2,
           "period": "FT",
@@ -1767,7 +1769,7 @@
           "eventId": 210515,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T21:40:50Z"
+          "lastLiveUpdate": "2026-10-30T21:50:54Z"
         }
       ],
       [
@@ -1782,7 +1784,7 @@
           "eventId": 210516,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T21:40:50Z"
+          "lastLiveUpdate": "2026-10-30T21:50:54Z"
         }
       ],
       [
@@ -1797,7 +1799,7 @@
           "eventId": 210517,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T21:40:50Z"
+          "lastLiveUpdate": "2026-10-30T21:50:54Z"
         }
       ]
     ]
