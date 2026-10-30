@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T18:30:55Z",
+  "generatedAt": "2026-10-30T18:40:53Z",
   "events": [
     {
       "eventId": 210448,
@@ -2592,8 +2592,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-30T18:30:55Z",
-      "minute": 29,
+      "updatedAt": "2026-10-30T18:40:53Z",
+      "minute": 39,
       "homeScore": 1,
       "awayScore": 2,
       "actualScorers": [
@@ -2613,16 +2613,16 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-30T18:30:55Z",
-      "homeScore": 1,
+      "updatedAt": "2026-10-30T18:40:53Z",
+      "homeScore": 2,
       "awayScore": 1,
-      "minute": 30,
+      "minute": 40,
       "actualScorers": [
-        "S. Szymański",
-        "E. Wahi"
+        "E. Wahi",
+        "S. Szymański"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 210510,
@@ -2634,7 +2634,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:30:55Z"
+      "updatedAt": "2026-10-30T18:40:53Z"
     },
     {
       "eventId": 210517,
@@ -2646,7 +2646,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:30:55Z"
+      "updatedAt": "2026-10-30T18:40:53Z"
     },
     {
       "eventId": 210516,
@@ -2658,7 +2658,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:30:55Z"
+      "updatedAt": "2026-10-30T18:40:53Z"
     },
     {
       "eventId": 210513,
@@ -2670,7 +2670,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:30:55Z"
+      "updatedAt": "2026-10-30T18:40:53Z"
     },
     {
       "eventId": 210515,
@@ -2682,7 +2682,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:30:55Z"
+      "updatedAt": "2026-10-30T18:40:53Z"
     },
     {
       "eventId": 210514,
@@ -2694,7 +2694,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:30:55Z"
+      "updatedAt": "2026-10-30T18:40:53Z"
     }
   ]
 }
