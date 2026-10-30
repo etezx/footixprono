@@ -1657,8 +1657,8 @@
           "eventId": 210509,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-10-30T19:40:52Z",
-          "minute": 81,
+          "lastLiveUpdate": "2026-10-30T19:50:52Z",
+          "minute": 91,
           "period": "2nd_half",
           "homeScore": 1,
           "awayScore": 5,
@@ -1683,7 +1683,7 @@
           "eventId": 210510,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:40:52Z"
+          "lastLiveUpdate": "2026-10-30T19:50:52Z"
         }
       ],
       [
@@ -1709,7 +1709,7 @@
           "eventId": 210513,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:40:52Z"
+          "lastLiveUpdate": "2026-10-30T19:50:52Z"
         }
       ],
       [
@@ -1724,7 +1724,7 @@
           "eventId": 210514,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:40:52Z"
+          "lastLiveUpdate": "2026-10-30T19:50:52Z"
         }
       ],
       [
@@ -1736,10 +1736,10 @@
           "status": "live",
           "live": true,
           "completed": false,
-          "lastLiveUpdate": "2026-10-30T19:40:52Z",
+          "lastLiveUpdate": "2026-10-30T19:50:52Z",
           "homeScore": 5,
           "awayScore": 2,
-          "minute": 80,
+          "minute": 90,
           "period": "2nd_half",
           "actualScorers": [
             "B. Dia",
@@ -1763,7 +1763,7 @@
           "eventId": 210515,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:40:52Z"
+          "lastLiveUpdate": "2026-10-30T19:50:52Z"
         }
       ],
       [
@@ -1778,7 +1778,7 @@
           "eventId": 210516,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:40:52Z"
+          "lastLiveUpdate": "2026-10-30T19:50:52Z"
         }
       ],
       [
@@ -1793,7 +1793,7 @@
           "eventId": 210517,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T19:40:52Z"
+          "lastLiveUpdate": "2026-10-30T19:50:52Z"
         }
       ]
     ]
