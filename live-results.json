@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T18:40:53Z",
+  "generatedAt": "2026-10-30T18:50:56Z",
   "events": [
     {
       "eventId": 210448,
@@ -2591,9 +2591,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-10-30T18:40:53Z",
-      "minute": 39,
+      "period": "halftime",
+      "updatedAt": "2026-10-30T18:50:56Z",
+      "minute": 45,
       "homeScore": 1,
       "awayScore": 2,
       "actualScorers": [
@@ -2612,17 +2612,18 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-10-30T18:40:53Z",
-      "homeScore": 2,
+      "period": "halftime",
+      "updatedAt": "2026-10-30T18:50:56Z",
+      "homeScore": 3,
       "awayScore": 1,
-      "minute": 40,
+      "minute": 45,
       "actualScorers": [
+        "J. Clauss",
         "E. Wahi",
         "S. Szymański"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 210510,
@@ -2634,7 +2635,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:40:53Z"
+      "updatedAt": "2026-10-30T18:50:56Z"
     },
     {
       "eventId": 210517,
@@ -2646,7 +2647,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:40:53Z"
+      "updatedAt": "2026-10-30T18:50:56Z"
     },
     {
       "eventId": 210516,
@@ -2658,7 +2659,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:40:53Z"
+      "updatedAt": "2026-10-30T18:50:56Z"
     },
     {
       "eventId": 210513,
@@ -2670,7 +2671,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:40:53Z"
+      "updatedAt": "2026-10-30T18:50:56Z"
     },
     {
       "eventId": 210515,
@@ -2682,7 +2683,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:40:53Z"
+      "updatedAt": "2026-10-30T18:50:56Z"
     },
     {
       "eventId": 210514,
@@ -2694,7 +2695,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T18:40:53Z"
+      "updatedAt": "2026-10-30T18:50:56Z"
     }
   ]
 }
