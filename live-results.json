@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T21:00:58Z",
+  "generatedAt": "2026-10-30T21:10:52Z",
   "events": [
     {
       "eventId": 210448,
@@ -2592,7 +2592,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T21:00:58Z",
+      "updatedAt": "2026-10-30T21:10:52Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 5,
@@ -2615,7 +2615,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T21:00:58Z",
+      "updatedAt": "2026-10-30T21:10:52Z",
       "homeScore": 5,
       "awayScore": 2,
       "minute": null,
@@ -2638,9 +2638,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-10-30T21:00:58Z",
-      "minute": 45,
+      "period": "2nd_half",
+      "updatedAt": "2026-10-30T21:10:52Z",
+      "minute": 47,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2657,7 +2657,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:00:58Z"
+      "updatedAt": "2026-10-30T21:10:52Z"
     },
     {
       "eventId": 210516,
@@ -2669,7 +2669,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:00:58Z"
+      "updatedAt": "2026-10-30T21:10:52Z"
     },
     {
       "eventId": 210513,
@@ -2681,7 +2681,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:00:58Z"
+      "updatedAt": "2026-10-30T21:10:52Z"
     },
     {
       "eventId": 210515,
@@ -2693,7 +2693,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:00:58Z"
+      "updatedAt": "2026-10-30T21:10:52Z"
     },
     {
       "eventId": 210514,
@@ -2705,7 +2705,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:00:58Z"
+      "updatedAt": "2026-10-30T21:10:52Z"
     }
   ]
 }
