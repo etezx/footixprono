@@ -1657,7 +1657,7 @@
           "eventId": 210509,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T17:51:01Z"
+          "lastLiveUpdate": "2026-10-30T18:00:56Z"
         }
       ],
       [
@@ -1672,7 +1672,7 @@
           "eventId": 210510,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T17:51:01Z"
+          "lastLiveUpdate": "2026-10-30T18:00:56Z"
         }
       ],
       [
@@ -1698,7 +1698,7 @@
           "eventId": 210513,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T17:51:01Z"
+          "lastLiveUpdate": "2026-10-30T18:00:56Z"
         }
       ],
       [
@@ -1713,7 +1713,7 @@
           "eventId": 210514,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T17:51:01Z"
+          "lastLiveUpdate": "2026-10-30T18:00:56Z"
         }
       ],
       [
@@ -1725,7 +1725,9 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-10-30T17:51:01Z"
+          "lastLiveUpdate": "2026-10-30T18:00:56Z",
+          "homeScore": 0,
+          "awayScore": 0
         }
       ],
       [
@@ -1740,7 +1742,7 @@
           "eventId": 210515,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T17:51:01Z"
+          "lastLiveUpdate": "2026-10-30T18:00:56Z"
         }
       ],
       [
@@ -1755,7 +1757,7 @@
           "eventId": 210516,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T17:51:01Z"
+          "lastLiveUpdate": "2026-10-30T18:00:56Z"
         }
       ],
       [
@@ -1770,7 +1772,7 @@
           "eventId": 210517,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-10-30T17:51:01Z"
+          "lastLiveUpdate": "2026-10-30T18:00:56Z"
         }
       ]
     ]
