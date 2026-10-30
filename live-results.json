@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T19:30:55Z",
+  "generatedAt": "2026-10-30T19:37:23Z",
   "events": [
     {
       "eventId": 210448,
@@ -2592,8 +2592,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-30T19:30:55Z",
-      "minute": 71,
+      "updatedAt": "2026-10-30T19:37:23Z",
+      "minute": 78,
       "homeScore": 1,
       "awayScore": 5,
       "actualScorers": [
@@ -2615,10 +2615,10 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-30T19:30:55Z",
-      "homeScore": 4,
-      "awayScore": 3,
-      "minute": 70,
+      "updatedAt": "2026-10-30T19:37:23Z",
+      "homeScore": 5,
+      "awayScore": 2,
+      "minute": 77,
       "actualScorers": [
         "B. Dia",
         "M. E. A. Amoura",
@@ -2639,7 +2639,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:30:55Z"
+      "updatedAt": "2026-10-30T19:37:23Z"
     },
     {
       "eventId": 210517,
@@ -2651,7 +2651,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:30:55Z"
+      "updatedAt": "2026-10-30T19:37:23Z"
     },
     {
       "eventId": 210516,
@@ -2663,7 +2663,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:30:55Z"
+      "updatedAt": "2026-10-30T19:37:23Z"
     },
     {
       "eventId": 210513,
@@ -2675,7 +2675,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:30:55Z"
+      "updatedAt": "2026-10-30T19:37:23Z"
     },
     {
       "eventId": 210515,
@@ -2687,7 +2687,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:30:55Z"
+      "updatedAt": "2026-10-30T19:37:23Z"
     },
     {
       "eventId": 210514,
@@ -2699,7 +2699,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:30:55Z"
+      "updatedAt": "2026-10-30T19:37:23Z"
     }
   ]
 }
