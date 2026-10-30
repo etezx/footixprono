@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T20:10:53Z",
+  "generatedAt": "2026-10-30T20:20:53Z",
   "events": [
     {
       "eventId": 210448,
@@ -2587,12 +2587,12 @@
       "leagueId": 6,
       "home": "Le Havre",
       "away": "Paris Saint-Germain",
-      "kickoff": "2026-10-30T18:00:00Z",
+      "kickoff": "2026-10-30T18:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T20:10:53Z",
+      "updatedAt": "2026-10-30T20:20:53Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 5,
@@ -2610,12 +2610,12 @@
       "leagueId": 6,
       "home": "Nice",
       "away": "Stade Rennais",
-      "kickoff": "2026-10-30T18:00:00Z",
+      "kickoff": "2026-10-30T18:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T20:10:53Z",
+      "updatedAt": "2026-10-30T20:20:53Z",
       "homeScore": 5,
       "awayScore": 2,
       "minute": null,
@@ -2639,8 +2639,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-10-30T20:10:53Z",
-      "minute": 5,
+      "updatedAt": "2026-10-30T20:20:53Z",
+      "minute": 15,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2657,7 +2657,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T20:10:53Z"
+      "updatedAt": "2026-10-30T20:20:53Z"
     },
     {
       "eventId": 210516,
@@ -2669,7 +2669,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T20:10:53Z"
+      "updatedAt": "2026-10-30T20:20:53Z"
     },
     {
       "eventId": 210513,
@@ -2681,7 +2681,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T20:10:53Z"
+      "updatedAt": "2026-10-30T20:20:53Z"
     },
     {
       "eventId": 210515,
@@ -2693,7 +2693,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T20:10:53Z"
+      "updatedAt": "2026-10-30T20:20:53Z"
     },
     {
       "eventId": 210514,
@@ -2705,7 +2705,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T20:10:53Z"
+      "updatedAt": "2026-10-30T20:20:53Z"
     }
   ]
 }
