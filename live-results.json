@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T19:50:52Z",
+  "generatedAt": "2026-10-30T20:00:54Z",
   "events": [
     {
       "eventId": 210448,
@@ -2588,12 +2588,12 @@
       "home": "Le Havre",
       "away": "Paris Saint-Germain",
       "kickoff": "2026-10-30T18:00:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-30T19:50:52Z",
-      "minute": 91,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-30T20:00:54Z",
+      "minute": null,
       "homeScore": 1,
       "awayScore": 5,
       "actualScorers": [
@@ -2611,35 +2611,35 @@
       "home": "Nice",
       "away": "Stade Rennais",
       "kickoff": "2026-10-30T18:00:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-30T19:50:52Z",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-30T20:00:54Z",
       "homeScore": 5,
       "awayScore": 2,
-      "minute": 90,
+      "minute": null,
       "actualScorers": [
+        "E. Wahi",
         "B. Dia",
         "M. E. A. Amoura",
         "J. Clauss",
-        "E. Wahi",
         "S. Szymański"
       ],
-      "scorersVerified": false,
-      "goalIncidents": 6
+      "scorersVerified": true,
+      "goalIncidents": 7
     },
     {
       "eventId": 210510,
       "leagueId": 6,
       "home": "Lille",
       "away": "RC Lens",
-      "kickoff": "2026-10-30T20:05:00+00:00",
+      "kickoff": "2026-10-30T20:05:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:50:52Z"
+      "updatedAt": "2026-10-30T20:00:54Z"
     },
     {
       "eventId": 210517,
@@ -2651,7 +2651,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:50:52Z"
+      "updatedAt": "2026-10-30T20:00:54Z"
     },
     {
       "eventId": 210516,
@@ -2663,7 +2663,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:50:52Z"
+      "updatedAt": "2026-10-30T20:00:54Z"
     },
     {
       "eventId": 210513,
@@ -2675,7 +2675,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:50:52Z"
+      "updatedAt": "2026-10-30T20:00:54Z"
     },
     {
       "eventId": 210515,
@@ -2687,7 +2687,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:50:52Z"
+      "updatedAt": "2026-10-30T20:00:54Z"
     },
     {
       "eventId": 210514,
@@ -2699,7 +2699,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T19:50:52Z"
+      "updatedAt": "2026-10-30T20:00:54Z"
     }
   ]
 }

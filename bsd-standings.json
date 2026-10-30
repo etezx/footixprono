@@ -24,13 +24,13 @@
         {
           "position": 1,
           "club": "Paris Saint-Germain",
-          "p": 8,
-          "w": 5,
+          "p": 9,
+          "w": 6,
           "d": 2,
           "l": 1,
-          "gf": 16,
-          "ga": 9,
-          "pts": 17,
+          "gf": 21,
+          "ga": 10,
+          "pts": 20,
           "group": "",
           "zone": {
             "key": "cl",
@@ -41,12 +41,12 @@
         {
           "position": 2,
           "club": "Stade Rennais",
-          "p": 8,
+          "p": 9,
           "w": 5,
           "d": 1,
-          "l": 2,
-          "gf": 18,
-          "ga": 14,
+          "l": 3,
+          "gf": 20,
+          "ga": 19,
           "pts": 16,
           "group": "",
           "zone": {
@@ -125,6 +125,19 @@
         },
         {
           "position": 7,
+          "club": "Nice",
+          "p": 9,
+          "w": 4,
+          "d": 2,
+          "l": 3,
+          "gf": 13,
+          "ga": 12,
+          "pts": 14,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 8,
           "club": "RC Lens",
           "p": 8,
           "w": 4,
@@ -137,7 +150,7 @@
           "zone": null
         },
         {
-          "position": 8,
+          "position": 9,
           "club": "Olympique de Marseille",
           "p": 8,
           "w": 4,
@@ -150,7 +163,7 @@
           "zone": null
         },
         {
-          "position": 9,
+          "position": 10,
           "club": "Lorient",
           "p": 8,
           "w": 3,
@@ -159,19 +172,6 @@
           "gf": 7,
           "ga": 6,
           "pts": 12,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 10,
-          "club": "Nice",
-          "p": 8,
-          "w": 3,
-          "d": 2,
-          "l": 3,
-          "gf": 8,
-          "ga": 10,
-          "pts": 11,
           "group": "",
           "zone": null
         },
@@ -277,12 +277,12 @@
         {
           "position": 18,
           "club": "Le Havre",
-          "p": 8,
+          "p": 9,
           "w": 0,
           "d": 2,
-          "l": 6,
-          "gf": 8,
-          "ga": 15,
+          "l": 7,
+          "gf": 9,
+          "ga": 20,
           "pts": 2,
           "group": "",
           "zone": {
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-10-30T19:50:52Z",
+  "generatedAt": "2026-10-30T20:00:54Z",
   "source": "BSD"
 }
