@@ -1,41 +1,41 @@
 {
-  "updated_at": "2026-10-30T18:37:04.180200+00:00",
+  "updated_at": "2026-10-30T22:58:15.052354+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
       "club": "Paris Saint-Germain",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-      "p": 8,
-      "w": 5,
+      "p": 9,
+      "w": 6,
       "d": 2,
       "l": 1,
-      "gf": 16,
-      "ga": 9,
-      "pts": 17,
-      "last5": []
-    },
-    {
-      "club": "Stade Rennais",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
-      "p": 8,
-      "w": 5,
-      "d": 1,
-      "l": 2,
-      "gf": 18,
-      "ga": 14,
-      "pts": 16,
+      "gf": 21,
+      "ga": 10,
+      "pts": 20,
       "last5": []
     },
     {
       "club": "Lille",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
-      "p": 8,
-      "w": 4,
+      "p": 9,
+      "w": 5,
       "d": 3,
       "l": 1,
-      "gf": 11,
+      "gf": 12,
       "ga": 6,
-      "pts": 15,
+      "pts": 18,
+      "last5": []
+    },
+    {
+      "club": "Stade Rennais",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
+      "p": 9,
+      "w": 5,
+      "d": 1,
+      "l": 3,
+      "gf": 20,
+      "ga": 19,
+      "pts": 16,
       "last5": []
     },
     {
@@ -75,14 +75,26 @@
       "last5": []
     },
     {
+      "club": "Nice",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
+      "p": 9,
+      "w": 4,
+      "d": 2,
+      "l": 3,
+      "gf": 13,
+      "ga": 12,
+      "pts": 14,
+      "last5": []
+    },
+    {
       "club": "Lens",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
-      "p": 8,
+      "p": 9,
       "w": 4,
       "d": 1,
-      "l": 3,
+      "l": 4,
       "gf": 16,
-      "ga": 12,
+      "ga": 13,
       "pts": 13,
       "last5": []
     },
@@ -108,18 +120,6 @@
       "gf": 7,
       "ga": 6,
       "pts": 12,
-      "last5": []
-    },
-    {
-      "club": "Nice",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
-      "p": 8,
-      "w": 3,
-      "d": 2,
-      "l": 3,
-      "gf": 8,
-      "ga": 10,
-      "pts": 11,
       "last5": []
     },
     {
@@ -209,12 +209,12 @@
     {
       "club": "Le Havre AC",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
-      "p": 8,
+      "p": 9,
       "w": 0,
       "d": 2,
-      "l": 6,
-      "gf": 8,
-      "ga": 15,
+      "l": 7,
+      "gf": 9,
+      "ga": 20,
       "pts": 2,
       "last5": []
     }
