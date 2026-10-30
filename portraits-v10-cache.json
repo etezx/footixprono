@@ -1543,5 +1543,10 @@
     "id": "34433301",
     "cutout": null,
     "thumb": "https://www.thesportsdb.com/images/media/player/thumb/36mcj71792578234.jpg"
+  },
+  "thazard": {
+    "id": "34145508",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/dyclc01632218884.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/m19tff1698248613.jpg"
   }
 }
