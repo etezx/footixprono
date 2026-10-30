@@ -1652,8 +1652,12 @@
           "date": "2026-10-30",
           "time": "19:00",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210509,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-30T17:20:54Z"
         }
       ],
       [
@@ -1663,8 +1667,12 @@
           "date": "2026-10-30",
           "time": "21:05",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210510,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-30T17:20:54Z"
         }
       ],
       [
@@ -1685,8 +1693,12 @@
           "date": "2026-10-31",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210513,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-30T17:20:54Z"
         }
       ],
       [
@@ -1696,13 +1708,25 @@
           "date": "2026-11-01",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210514,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-30T17:20:54Z"
         }
       ],
       [
         "OGC NICE",
-        "STADE RENNAIS FC"
+        "STADE RENNAIS FC",
+        {
+          "source": "bsd",
+          "eventId": 210512,
+          "status": "notstarted",
+          "live": false,
+          "completed": false,
+          "lastLiveUpdate": "2026-10-30T17:20:54Z"
+        }
       ],
       [
         "PARIS FC",
@@ -1711,8 +1735,12 @@
           "date": "2026-11-01",
           "time": "17:15",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210515,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-30T17:20:54Z"
         }
       ],
       [
@@ -1722,8 +1750,12 @@
           "date": "2026-11-01",
           "time": "15:00",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210516,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-30T17:20:54Z"
         }
       ],
       [
@@ -1733,8 +1765,12 @@
           "date": "2026-10-31",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210517,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-10-30T17:20:54Z"
         }
       ]
     ]
