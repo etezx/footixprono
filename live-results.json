@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T21:50:54Z",
+  "generatedAt": "2026-10-30T22:00:55Z",
   "events": [
     {
       "eventId": 210448,
@@ -2592,7 +2592,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T21:50:54Z",
+      "updatedAt": "2026-10-30T22:00:55Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 5,
@@ -2615,7 +2615,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T21:50:54Z",
+      "updatedAt": "2026-10-30T22:00:55Z",
       "homeScore": 5,
       "awayScore": 2,
       "minute": null,
@@ -2635,12 +2635,12 @@
       "home": "Lille",
       "away": "RC Lens",
       "kickoff": "2026-10-30T20:05:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-10-30T21:50:54Z",
-      "minute": 88,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-10-30T22:00:55Z",
+      "minute": null,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -2659,7 +2659,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:50:54Z"
+      "updatedAt": "2026-10-30T22:00:55Z"
     },
     {
       "eventId": 210516,
@@ -2671,7 +2671,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:50:54Z"
+      "updatedAt": "2026-10-30T22:00:55Z"
     },
     {
       "eventId": 210513,
@@ -2683,7 +2683,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:50:54Z"
+      "updatedAt": "2026-10-30T22:00:55Z"
     },
     {
       "eventId": 210515,
@@ -2695,7 +2695,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:50:54Z"
+      "updatedAt": "2026-10-30T22:00:55Z"
     },
     {
       "eventId": 210514,
@@ -2707,7 +2707,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T21:50:54Z"
+      "updatedAt": "2026-10-30T22:00:55Z"
     }
   ]
 }
