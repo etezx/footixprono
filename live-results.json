@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-31T21:10:57Z",
+  "generatedAt": "2026-10-31T21:21:22Z",
   "events": [
     {
       "eventId": 210448,
@@ -2592,7 +2592,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-31T21:10:57Z",
+      "updatedAt": "2026-10-31T21:21:22Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 5,
@@ -2615,7 +2615,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-31T21:10:57Z",
+      "updatedAt": "2026-10-31T21:21:22Z",
       "homeScore": 5,
       "awayScore": 2,
       "minute": null,
@@ -2639,7 +2639,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-31T21:10:57Z",
+      "updatedAt": "2026-10-31T21:21:22Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -2659,15 +2659,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-10-31T21:10:57Z",
-      "minute": 66,
-      "homeScore": 1,
+      "updatedAt": "2026-10-31T21:21:22Z",
+      "minute": 77,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
+        "I. Boura",
         "M. Diop"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210516,
@@ -2679,7 +2680,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-31T21:10:57Z"
+      "updatedAt": "2026-10-31T21:21:22Z"
     },
     {
       "eventId": 210513,
@@ -2691,7 +2692,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-31T21:10:57Z"
+      "updatedAt": "2026-10-31T21:21:22Z"
     },
     {
       "eventId": 210515,
@@ -2703,7 +2704,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-31T21:10:57Z"
+      "updatedAt": "2026-10-31T21:21:22Z"
     },
     {
       "eventId": 210514,
@@ -2715,7 +2716,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-31T21:10:57Z"
+      "updatedAt": "2026-10-31T21:21:22Z"
     },
     {
       "eventId": 210511,
@@ -2727,7 +2728,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-31T21:10:57Z"
+      "updatedAt": "2026-10-31T21:21:22Z"
     }
   ]
 }
