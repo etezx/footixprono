@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-10-30T22:00:55Z",
+  "generatedAt": "2026-10-31T19:00:56Z",
   "events": [
     {
       "eventId": 210448,
@@ -2592,7 +2592,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T22:00:55Z",
+      "updatedAt": "2026-10-31T19:00:56Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 5,
@@ -2615,7 +2615,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T22:00:55Z",
+      "updatedAt": "2026-10-31T19:00:56Z",
       "homeScore": 5,
       "awayScore": 2,
       "minute": null,
@@ -2634,12 +2634,12 @@
       "leagueId": 6,
       "home": "Lille",
       "away": "RC Lens",
-      "kickoff": "2026-10-30T20:05:00Z",
+      "kickoff": "2026-10-30T20:05:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-10-30T22:00:55Z",
+      "updatedAt": "2026-10-31T19:00:56Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -2659,7 +2659,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T22:00:55Z"
+      "updatedAt": "2026-10-31T19:00:56Z"
     },
     {
       "eventId": 210516,
@@ -2671,7 +2671,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T22:00:55Z"
+      "updatedAt": "2026-10-31T19:00:56Z"
     },
     {
       "eventId": 210513,
@@ -2683,7 +2683,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T22:00:55Z"
+      "updatedAt": "2026-10-31T19:00:56Z"
     },
     {
       "eventId": 210515,
@@ -2695,7 +2695,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T22:00:55Z"
+      "updatedAt": "2026-10-31T19:00:56Z"
     },
     {
       "eventId": 210514,
@@ -2707,7 +2707,19 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-10-30T22:00:55Z"
+      "updatedAt": "2026-10-31T19:00:56Z"
+    },
+    {
+      "eventId": 210511,
+      "leagueId": 6,
+      "home": "Lorient",
+      "away": "Stade Brestois",
+      "kickoff": "2026-11-02T19:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-10-31T19:00:56Z"
     }
   ]
 }
