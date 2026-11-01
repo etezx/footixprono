@@ -57,6 +57,40 @@
         },
         {
           "position": 3,
+          "club": "Olympique Lyonnais",
+          "p": 9,
+          "w": 5,
+          "d": 2,
+          "l": 2,
+          "gf": 15,
+          "ga": 7,
+          "pts": 17,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 4,
+          "club": "Paris FC",
+          "p": 9,
+          "w": 5,
+          "d": 2,
+          "l": 2,
+          "gf": 16,
+          "ga": 10,
+          "pts": 17,
+          "group": "",
+          "zone": {
+            "key": "clq",
+            "label": "Champions League Qualification",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 5,
           "club": "Stade Rennais",
           "p": 9,
           "w": 5,
@@ -67,40 +101,6 @@
           "pts": 16,
           "group": "",
           "zone": {
-            "key": "cl",
-            "label": "Champions League",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 4,
-          "club": "AS Monaco",
-          "p": 8,
-          "w": 4,
-          "d": 3,
-          "l": 1,
-          "gf": 11,
-          "ga": 7,
-          "pts": 15,
-          "group": "",
-          "zone": {
-            "key": "clq",
-            "label": "Champions League Qualification",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 5,
-          "club": "Olympique Lyonnais",
-          "p": 8,
-          "w": 4,
-          "d": 2,
-          "l": 2,
-          "gf": 13,
-          "ga": 7,
-          "pts": 14,
-          "group": "",
-          "zone": {
             "key": "el",
             "label": "Europa League",
             "type": "qualification"
@@ -108,14 +108,14 @@
         },
         {
           "position": 6,
-          "club": "Paris FC",
-          "p": 8,
+          "club": "AS Monaco",
+          "p": 9,
           "w": 4,
-          "d": 2,
+          "d": 3,
           "l": 2,
-          "gf": 13,
-          "ga": 9,
-          "pts": 14,
+          "gf": 12,
+          "ga": 10,
+          "pts": 15,
           "group": "",
           "zone": {
             "key": "uecl",
@@ -230,12 +230,12 @@
         {
           "position": 15,
           "club": "Angers",
-          "p": 8,
+          "p": 9,
           "w": 2,
           "d": 2,
-          "l": 4,
+          "l": 5,
           "gf": 9,
-          "ga": 15,
+          "ga": 17,
           "pts": 8,
           "group": "",
           "zone": null
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-01T18:10:33Z",
+  "generatedAt": "2026-11-01T18:20:32Z",
   "source": "BSD"
 }

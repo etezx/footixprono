@@ -1657,7 +1657,7 @@
           "eventId": 210509,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-01T18:10:33Z",
+          "lastLiveUpdate": "2026-11-01T18:20:32Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 5,
@@ -1682,7 +1682,7 @@
           "eventId": 210510,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-01T18:10:33Z",
+          "lastLiveUpdate": "2026-11-01T18:20:32Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -1704,7 +1704,7 @@
           "eventId": 210511,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-01T18:10:33Z"
+          "lastLiveUpdate": "2026-11-01T18:20:32Z"
         }
       ],
       [
@@ -1719,7 +1719,7 @@
           "eventId": 210513,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-01T18:10:33Z",
+          "lastLiveUpdate": "2026-11-01T18:20:32Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 0,
@@ -1742,7 +1742,7 @@
           "eventId": 210514,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-01T18:10:33Z"
+          "lastLiveUpdate": "2026-11-01T18:20:32Z"
         }
       ],
       [
@@ -1754,7 +1754,7 @@
           "status": "finished",
           "live": false,
           "completed": true,
-          "lastLiveUpdate": "2026-11-01T18:10:33Z",
+          "lastLiveUpdate": "2026-11-01T18:20:32Z",
           "homeScore": 5,
           "awayScore": 2,
           "period": "FT",
@@ -1776,13 +1776,12 @@
           "time": "17:15",
           "official": true,
           "source": "bsd",
-          "completed": false,
+          "completed": true,
           "eventId": 210515,
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-11-01T18:10:33Z",
-          "minute": 96,
-          "period": "2nd_half",
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-11-01T18:20:32Z",
+          "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
           "actualScorers": [
@@ -1805,7 +1804,7 @@
           "eventId": 210516,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-01T18:10:33Z",
+          "lastLiveUpdate": "2026-11-01T18:20:32Z",
           "homeScore": 5,
           "awayScore": 1,
           "period": "FT",
@@ -1831,7 +1830,7 @@
           "eventId": 210517,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-01T18:10:33Z",
+          "lastLiveUpdate": "2026-11-01T18:20:32Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 0,
