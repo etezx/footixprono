@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T11:09:17.638218+00:00",
+  "updated_at": "2026-11-01T11:59:14.621426+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -177,7 +177,6 @@
       "Danny Namaso",
       "Kévin Danois",
       "Lamfia Dioubaté",
-      "Mamadou Diop",
       "Mamoudou Cissokho",
       "Naouirou Ahamada",
       "Pierre Ekwah",
@@ -312,7 +311,7 @@
       "Renaud Ripart",
       "Roman Murcy",
       "Timothé Nkada",
-      "Yacouba Kone"
+      "Yacouba Koné"
     ],
     "PARIS FC": [
       "Adama Camara",
@@ -332,5 +331,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 292
+  "players_fetched": 291
 }
