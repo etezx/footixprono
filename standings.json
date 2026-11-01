@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T13:23:14.914674+00:00",
+  "updated_at": "2026-11-01T18:56:08.866645+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -27,6 +27,30 @@
       "last5": []
     },
     {
+      "club": "Lyon",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
+      "p": 9,
+      "w": 5,
+      "d": 2,
+      "l": 2,
+      "gf": 15,
+      "ga": 7,
+      "pts": 17,
+      "last5": []
+    },
+    {
+      "club": "Paris FC",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
+      "p": 9,
+      "w": 5,
+      "d": 2,
+      "l": 2,
+      "gf": 16,
+      "ga": 10,
+      "pts": 17,
+      "last5": []
+    },
+    {
       "club": "Stade Rennais",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
       "p": 9,
@@ -41,37 +65,13 @@
     {
       "club": "AS Monaco",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
-      "p": 8,
+      "p": 9,
       "w": 4,
       "d": 3,
-      "l": 1,
-      "gf": 11,
-      "ga": 7,
+      "l": 2,
+      "gf": 12,
+      "ga": 10,
       "pts": 15,
-      "last5": []
-    },
-    {
-      "club": "Lyon",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
-      "p": 8,
-      "w": 4,
-      "d": 2,
-      "l": 2,
-      "gf": 13,
-      "ga": 7,
-      "pts": 14,
-      "last5": []
-    },
-    {
-      "club": "Paris FC",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
-      "p": 8,
-      "w": 4,
-      "d": 2,
-      "l": 2,
-      "gf": 13,
-      "ga": 9,
-      "pts": 14,
       "last5": []
     },
     {
@@ -135,14 +135,26 @@
       "last5": []
     },
     {
-      "club": "AJ Auxerre",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
-      "p": 8,
+      "club": "Strasbourg",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
+      "p": 9,
       "w": 3,
       "d": 1,
-      "l": 4,
-      "gf": 12,
-      "ga": 18,
+      "l": 5,
+      "gf": 17,
+      "ga": 19,
+      "pts": 10,
+      "last5": []
+    },
+    {
+      "club": "AJ Auxerre",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
+      "p": 9,
+      "w": 3,
+      "d": 1,
+      "l": 5,
+      "gf": 13,
+      "ga": 23,
       "pts": 10,
       "last5": []
     },
@@ -161,12 +173,12 @@
     {
       "club": "Angers",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
-      "p": 8,
+      "p": 9,
       "w": 2,
       "d": 2,
-      "l": 4,
+      "l": 5,
       "gf": 9,
-      "ga": 15,
+      "ga": 17,
       "pts": 8,
       "last5": []
     },
@@ -180,18 +192,6 @@
       "gf": 7,
       "ga": 16,
       "pts": 8,
-      "last5": []
-    },
-    {
-      "club": "Strasbourg",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
-      "p": 8,
-      "w": 2,
-      "d": 1,
-      "l": 5,
-      "gf": 12,
-      "ga": 18,
-      "pts": 7,
       "last5": []
     },
     {
