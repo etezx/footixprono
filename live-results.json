@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-01T13:40:31Z",
+  "generatedAt": "2026-11-01T13:50:32Z",
   "events": [
     {
       "eventId": 210448,
@@ -2592,7 +2592,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-01T13:40:31Z",
+      "updatedAt": "2026-11-01T13:50:32Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 5,
@@ -2615,7 +2615,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-01T13:40:31Z",
+      "updatedAt": "2026-11-01T13:50:32Z",
       "homeScore": 5,
       "awayScore": 2,
       "minute": null,
@@ -2639,7 +2639,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-01T13:40:31Z",
+      "updatedAt": "2026-11-01T13:50:32Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -2659,7 +2659,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-01T13:40:31Z",
+      "updatedAt": "2026-11-01T13:50:32Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -2680,7 +2680,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 210513,
@@ -2692,7 +2692,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 210515,
@@ -2704,7 +2704,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 210514,
@@ -2716,7 +2716,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 210511,
@@ -2728,7 +2728,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 601140,
@@ -2740,7 +2740,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 601163,
@@ -2752,7 +2752,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 601025,
@@ -2764,7 +2764,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 601034,
@@ -2776,7 +2776,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 601051,
@@ -2788,7 +2788,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 601093,
@@ -2800,7 +2800,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 601097,
@@ -2812,7 +2812,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 601117,
@@ -2824,7 +2824,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     },
     {
       "eventId": 601143,
@@ -2836,7 +2836,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T13:40:31Z"
+      "updatedAt": "2026-11-01T13:50:32Z"
     }
   ]
 }
