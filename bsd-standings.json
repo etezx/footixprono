@@ -190,19 +190,32 @@
         },
         {
           "position": 12,
-          "club": "Auxerre",
-          "p": 8,
+          "club": "RC Strasbourg",
+          "p": 9,
           "w": 3,
           "d": 1,
-          "l": 4,
-          "gf": 12,
-          "ga": 18,
+          "l": 5,
+          "gf": 17,
+          "ga": 19,
           "pts": 10,
           "group": "",
           "zone": null
         },
         {
           "position": 13,
+          "club": "Auxerre",
+          "p": 9,
+          "w": 3,
+          "d": 1,
+          "l": 5,
+          "gf": 13,
+          "ga": 23,
+          "pts": 10,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 14,
           "club": "Stade Brestois",
           "p": 8,
           "w": 2,
@@ -215,7 +228,7 @@
           "zone": null
         },
         {
-          "position": 14,
+          "position": 15,
           "club": "Angers",
           "p": 8,
           "w": 2,
@@ -228,7 +241,7 @@
           "zone": null
         },
         {
-          "position": 15,
+          "position": 16,
           "club": "Troyes",
           "p": 9,
           "w": 2,
@@ -237,19 +250,6 @@
           "gf": 7,
           "ga": 16,
           "pts": 8,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 16,
-          "club": "RC Strasbourg",
-          "p": 8,
-          "w": 2,
-          "d": 1,
-          "l": 5,
-          "gf": 12,
-          "ga": 18,
-          "pts": 7,
           "group": "",
           "zone": {
             "key": "relq",
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-01T16:00:33Z",
+  "generatedAt": "2026-11-01T16:10:32Z",
   "source": "BSD"
 }
