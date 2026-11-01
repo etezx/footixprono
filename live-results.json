@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-01T15:10:33Z",
+  "generatedAt": "2026-11-01T15:20:32Z",
   "events": [
     {
       "eventId": 210448,
@@ -2592,7 +2592,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-01T15:10:33Z",
+      "updatedAt": "2026-11-01T15:20:32Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 5,
@@ -2615,7 +2615,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-01T15:10:33Z",
+      "updatedAt": "2026-11-01T15:20:32Z",
       "homeScore": 5,
       "awayScore": 2,
       "minute": null,
@@ -2639,7 +2639,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-01T15:10:33Z",
+      "updatedAt": "2026-11-01T15:20:32Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -2659,7 +2659,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-01T15:10:33Z",
+      "updatedAt": "2026-11-01T15:20:32Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -2680,15 +2680,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-01T15:10:33Z",
-      "homeScore": 1,
+      "updatedAt": "2026-11-01T15:20:32Z",
+      "homeScore": 2,
       "awayScore": 0,
-      "minute": 49,
+      "minute": 59,
       "actualScorers": [
+        "M. Godo",
         "D. Essugo"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210513,
@@ -2700,7 +2701,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 210515,
@@ -2712,7 +2713,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 210514,
@@ -2724,7 +2725,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 210511,
@@ -2736,7 +2737,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 601140,
@@ -2748,7 +2749,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 601163,
@@ -2760,7 +2761,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 601025,
@@ -2772,7 +2773,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 601034,
@@ -2784,7 +2785,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 601051,
@@ -2796,7 +2797,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 601093,
@@ -2808,7 +2809,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 601097,
@@ -2820,7 +2821,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 601117,
@@ -2832,7 +2833,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     },
     {
       "eventId": 601143,
@@ -2844,7 +2845,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-01T15:10:33Z"
+      "updatedAt": "2026-11-01T15:20:32Z"
     }
   ]
 }
