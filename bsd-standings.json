@@ -229,14 +229,14 @@
         },
         {
           "position": 15,
-          "club": "Le Mans",
-          "p": 8,
-          "w": 1,
-          "d": 4,
-          "l": 3,
-          "gf": 11,
+          "club": "Troyes",
+          "p": 9,
+          "w": 2,
+          "d": 2,
+          "l": 5,
+          "gf": 7,
           "ga": 16,
-          "pts": 7,
+          "pts": 8,
           "group": "",
           "zone": null
         },
@@ -259,14 +259,14 @@
         },
         {
           "position": 17,
-          "club": "Troyes",
-          "p": 8,
+          "club": "Le Mans",
+          "p": 9,
           "w": 1,
-          "d": 2,
-          "l": 5,
-          "gf": 5,
-          "ga": 16,
-          "pts": 5,
+          "d": 4,
+          "l": 4,
+          "gf": 11,
+          "ga": 18,
+          "pts": 7,
           "group": "",
           "zone": {
             "key": "rel",
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-10-31T21:40:56Z",
+  "generatedAt": "2026-11-01T13:20:32Z",
   "source": "BSD"
 }
