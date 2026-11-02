@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T11:59:14.621426+00:00",
+  "updated_at": "2026-11-02T13:47:40.186974+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -280,6 +280,8 @@
     ],
     "OLYMPIQUE LYONNAIS": [
       "Adil Hamdani",
+      "Alejandro Rodríguez",
+      "Cluver Sambi Mbungu",
       "Corentin Tolisso",
       "Ernest Nuamah",
       "Julien Duranville",
@@ -331,5 +333,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 291
+  "players_fetched": 293
 }
