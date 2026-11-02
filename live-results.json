@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-02T21:30:34Z",
+  "generatedAt": "2026-11-02T21:40:38Z",
   "events": [
     {
       "eventId": 210448,
@@ -2659,7 +2659,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-02T21:30:34Z",
+      "updatedAt": "2026-11-02T21:40:38Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -2680,7 +2680,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-02T21:30:34Z",
+      "updatedAt": "2026-11-02T21:40:38Z",
       "homeScore": 5,
       "awayScore": 1,
       "minute": null,
@@ -2704,7 +2704,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-02T21:30:34Z",
+      "updatedAt": "2026-11-02T21:40:38Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -2725,7 +2725,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-02T21:30:34Z",
+      "updatedAt": "2026-11-02T21:40:38Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -2747,7 +2747,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-02T21:30:34Z",
+      "updatedAt": "2026-11-02T21:40:38Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -2764,17 +2764,20 @@
       "home": "Lorient",
       "away": "Stade Brestois",
       "kickoff": "2026-11-02T19:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-11-02T21:30:34Z",
-      "minute": 88,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-02T21:40:38Z",
+      "minute": null,
       "homeScore": 0,
-      "awayScore": 1,
-      "actualScorers": [],
-      "scorersVerified": false,
-      "goalIncidents": 0
+      "awayScore": 2,
+      "actualScorers": [
+        "N. Edjouma",
+        "L. Ajorque"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 2
     },
     {
       "eventId": 601140,
@@ -2786,7 +2789,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601163,
@@ -2798,7 +2801,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601025,
@@ -2810,7 +2813,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601034,
@@ -2822,7 +2825,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601051,
@@ -2834,7 +2837,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601093,
@@ -2846,7 +2849,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601097,
@@ -2858,7 +2861,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601117,
@@ -2870,7 +2873,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601143,
@@ -2882,7 +2885,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601089,
@@ -2894,7 +2897,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601098,
@@ -2906,7 +2909,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601070,
@@ -2918,7 +2921,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601072,
@@ -2930,7 +2933,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601087,
@@ -2942,7 +2945,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601092,
@@ -2954,7 +2957,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601122,
@@ -2966,7 +2969,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601127,
@@ -2978,7 +2981,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     },
     {
       "eventId": 601162,
@@ -2990,7 +2993,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-02T21:30:34Z"
+      "updatedAt": "2026-11-02T21:40:38Z"
     }
   ]
 }
