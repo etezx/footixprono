@@ -671,6 +671,23 @@
         },
         {
           "position": 20,
+          "club": "Bodø/Glimt",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 9,
+          "pts": 4,
+          "group": "",
+          "zone": {
+            "key": "playoff",
+            "label": "Qualification Playoffs",
+            "type": "playoff"
+          }
+        },
+        {
+          "position": 21,
           "club": "Villarreal",
           "p": 3,
           "w": 1,
@@ -687,7 +704,7 @@
           }
         },
         {
-          "position": 21,
+          "position": 22,
           "club": "Inter",
           "p": 3,
           "w": 1,
@@ -704,7 +721,7 @@
           }
         },
         {
-          "position": 22,
+          "position": 23,
           "club": "Manchester United",
           "p": 3,
           "w": 1,
@@ -721,7 +738,7 @@
           }
         },
         {
-          "position": 23,
+          "position": 24,
           "club": "SSC Napoli",
           "p": 3,
           "w": 1,
@@ -738,7 +755,7 @@
           }
         },
         {
-          "position": 24,
+          "position": 25,
           "club": "LASK",
           "p": 3,
           "w": 1,
@@ -748,14 +765,10 @@
           "ga": 9,
           "pts": 3,
           "group": "",
-          "zone": {
-            "key": "playoff",
-            "label": "Qualification Playoffs",
-            "type": "playoff"
-          }
+          "zone": null
         },
         {
-          "position": 25,
+          "position": 26,
           "club": "Sabah FK",
           "p": 3,
           "w": 1,
@@ -768,7 +781,7 @@
           "zone": null
         },
         {
-          "position": 26,
+          "position": 27,
           "club": "Feyenoord",
           "p": 3,
           "w": 1,
@@ -781,7 +794,7 @@
           "zone": null
         },
         {
-          "position": 27,
+          "position": 28,
           "club": "RC Lens",
           "p": 3,
           "w": 1,
@@ -789,19 +802,6 @@
           "l": 2,
           "gf": 3,
           "ga": 7,
-          "pts": 3,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 28,
-          "club": "Bodø/Glimt",
-          "p": 3,
-          "w": 1,
-          "d": 0,
-          "l": 2,
-          "gf": 4,
-          "ga": 9,
           "pts": 3,
           "group": "",
           "zone": null
@@ -873,6 +873,19 @@
         },
         {
           "position": 34,
+          "club": "LOSC Lille",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 4,
+          "ga": 10,
+          "pts": 1,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 35,
           "club": "FC Porto",
           "p": 3,
           "w": 0,
@@ -880,19 +893,6 @@
           "l": 3,
           "gf": 2,
           "ga": 6,
-          "pts": 0,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 35,
-          "club": "LOSC Lille",
-          "p": 3,
-          "w": 0,
-          "d": 0,
-          "l": 3,
-          "gf": 4,
-          "ga": 10,
           "pts": 0,
           "group": "",
           "zone": null
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-03T21:51:26Z",
+  "generatedAt": "2026-11-03T22:00:42Z",
   "source": "BSD"
 }
