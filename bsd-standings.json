@@ -164,19 +164,32 @@
         },
         {
           "position": 10,
-          "club": "Lorient",
-          "p": 8,
+          "club": "Stade Brestois",
+          "p": 9,
           "w": 3,
           "d": 3,
-          "l": 2,
-          "gf": 7,
-          "ga": 6,
+          "l": 3,
+          "gf": 16,
+          "ga": 12,
           "pts": 12,
           "group": "",
           "zone": null
         },
         {
           "position": 11,
+          "club": "Lorient",
+          "p": 9,
+          "w": 3,
+          "d": 3,
+          "l": 3,
+          "gf": 7,
+          "ga": 8,
+          "pts": 12,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 12,
           "club": "Toulouse",
           "p": 9,
           "w": 2,
@@ -189,7 +202,7 @@
           "zone": null
         },
         {
-          "position": 12,
+          "position": 13,
           "club": "RC Strasbourg",
           "p": 9,
           "w": 3,
@@ -202,7 +215,7 @@
           "zone": null
         },
         {
-          "position": 13,
+          "position": 14,
           "club": "AJ Auxerre",
           "p": 9,
           "w": 3,
@@ -211,19 +224,6 @@
           "gf": 13,
           "ga": 23,
           "pts": 10,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 14,
-          "club": "Stade Brestois",
-          "p": 8,
-          "w": 2,
-          "d": 3,
-          "l": 3,
-          "gf": 14,
-          "ga": 12,
-          "pts": 9,
           "group": "",
           "zone": null
         },
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-02T21:40:38Z",
+  "generatedAt": "2026-11-03T17:00:46Z",
   "source": "BSD"
 }
