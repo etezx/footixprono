@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:46:26.394025+00:00",
+  "updated_at": "2026-11-03T02:54:50.607921+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -111,14 +111,26 @@
       "last5": []
     },
     {
-      "club": "Lorient",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
-      "p": 8,
+      "club": "Brest",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+      "p": 9,
       "w": 3,
       "d": 3,
-      "l": 2,
+      "l": 3,
+      "gf": 16,
+      "ga": 12,
+      "pts": 12,
+      "last5": []
+    },
+    {
+      "club": "Lorient",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+      "p": 9,
+      "w": 3,
+      "d": 3,
+      "l": 3,
       "gf": 7,
-      "ga": 6,
+      "ga": 8,
       "pts": 12,
       "last5": []
     },
@@ -156,18 +168,6 @@
       "gf": 13,
       "ga": 23,
       "pts": 10,
-      "last5": []
-    },
-    {
-      "club": "Brest",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
-      "p": 8,
-      "w": 2,
-      "d": 3,
-      "l": 3,
-      "gf": 14,
-      "ga": 12,
-      "pts": 9,
       "last5": []
     },
     {
