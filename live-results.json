@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-03T21:01:12Z",
+  "generatedAt": "2026-11-03T21:10:57Z",
   "events": [
     {
       "eventId": 210448,
@@ -2680,7 +2680,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T21:01:12Z",
+      "updatedAt": "2026-11-03T21:10:57Z",
       "homeScore": 5,
       "awayScore": 1,
       "minute": null,
@@ -2704,7 +2704,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T21:01:12Z",
+      "updatedAt": "2026-11-03T21:10:57Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -2725,7 +2725,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T21:01:12Z",
+      "updatedAt": "2026-11-03T21:10:57Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -2747,7 +2747,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T21:01:12Z",
+      "updatedAt": "2026-11-03T21:10:57Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -2768,7 +2768,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T21:01:12Z",
+      "updatedAt": "2026-11-03T21:10:57Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -2789,7 +2789,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T21:01:12Z",
+      "updatedAt": "2026-11-03T21:10:57Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -2809,7 +2809,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T21:01:12Z",
+      "updatedAt": "2026-11-03T21:10:57Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -2828,9 +2828,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-11-03T21:01:12Z",
-      "minute": 45,
+      "period": "2nd_half",
+      "updatedAt": "2026-11-03T21:10:57Z",
+      "minute": 49,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -2848,11 +2848,11 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-11-03T21:01:12Z",
+      "period": "2nd_half",
+      "updatedAt": "2026-11-03T21:10:57Z",
       "homeScore": 0,
       "awayScore": 0,
-      "minute": 45
+      "minute": 51
     },
     {
       "eventId": 601051,
@@ -2863,11 +2863,11 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-11-03T21:01:12Z",
+      "period": "2nd_half",
+      "updatedAt": "2026-11-03T21:10:57Z",
       "homeScore": 0,
       "awayScore": 2,
-      "minute": 45,
+      "minute": 50,
       "actualScorers": [
         "D. Malen",
         "M. Soulé"
@@ -2884,11 +2884,11 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-11-03T21:01:12Z",
-      "minute": 45,
+      "period": "2nd_half",
+      "updatedAt": "2026-11-03T21:10:57Z",
+      "minute": 50,
       "homeScore": 0,
-      "awayScore": 4,
+      "awayScore": 5,
       "actualScorers": [
         "F. Ruiz",
         "S. Mayulu",
@@ -2896,7 +2896,7 @@
         "J. Neves"
       ],
       "scorersVerified": true,
-      "goalIncidents": 4
+      "goalIncidents": 5
     },
     {
       "eventId": 601097,
@@ -2907,11 +2907,11 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-11-03T21:01:12Z",
+      "period": "2nd_half",
+      "updatedAt": "2026-11-03T21:10:57Z",
       "homeScore": 0,
       "awayScore": 2,
-      "minute": 45,
+      "minute": 49,
       "actualScorers": [
         "F. P. Esposito",
         "Y. Bisseck"
@@ -2928,9 +2928,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-11-03T21:01:12Z",
-      "minute": 45,
+      "period": "2nd_half",
+      "updatedAt": "2026-11-03T21:10:57Z",
+      "minute": 54,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -2946,17 +2946,18 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "halftime",
-      "updatedAt": "2026-11-03T21:01:12Z",
-      "homeScore": 3,
+      "period": "2nd_half",
+      "updatedAt": "2026-11-03T21:10:57Z",
+      "homeScore": 4,
       "awayScore": 0,
-      "minute": 45,
+      "minute": 50,
       "actualScorers": [
+        "S. Adeniran",
         "R. Ljubičić",
         "K. Jørgensen"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 601089,
@@ -2968,7 +2969,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T21:01:12Z"
+      "updatedAt": "2026-11-03T21:10:57Z"
     },
     {
       "eventId": 601098,
@@ -2980,7 +2981,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T21:01:12Z"
+      "updatedAt": "2026-11-03T21:10:57Z"
     },
     {
       "eventId": 601070,
@@ -2992,7 +2993,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T21:01:12Z"
+      "updatedAt": "2026-11-03T21:10:57Z"
     },
     {
       "eventId": 601072,
@@ -3004,7 +3005,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T21:01:12Z"
+      "updatedAt": "2026-11-03T21:10:57Z"
     },
     {
       "eventId": 601087,
@@ -3016,7 +3017,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T21:01:12Z"
+      "updatedAt": "2026-11-03T21:10:57Z"
     },
     {
       "eventId": 601092,
@@ -3028,7 +3029,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T21:01:12Z"
+      "updatedAt": "2026-11-03T21:10:57Z"
     },
     {
       "eventId": 601122,
@@ -3040,7 +3041,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T21:01:12Z"
+      "updatedAt": "2026-11-03T21:10:57Z"
     },
     {
       "eventId": 601127,
@@ -3052,7 +3053,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T21:01:12Z"
+      "updatedAt": "2026-11-03T21:10:57Z"
     },
     {
       "eventId": 601162,
@@ -3064,7 +3065,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T21:01:12Z"
+      "updatedAt": "2026-11-03T21:10:57Z"
     }
   ]
 }
