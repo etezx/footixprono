@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T12:57:50.864754+00:00",
+  "updated_at": "2026-11-04T13:13:43.647534+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -75,7 +75,8 @@
       "Ngal'ayel Mukau",
       "Olivier Giroud",
       "Osame Sahraoui",
-      "Soriba Diaoune"
+      "Soriba Diaoune",
+      "Yéli Traoré"
     ],
     "LE HAVRE": [
       "Amir Richardson",
@@ -333,5 +334,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 293
+  "players_fetched": 294
 }
