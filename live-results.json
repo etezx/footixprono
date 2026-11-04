@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-04T21:30:35Z",
+  "generatedAt": "2026-11-04T21:40:35Z",
   "events": [
     {
       "eventId": 210448,
@@ -2768,7 +2768,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -2789,7 +2789,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -2809,7 +2809,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -2829,7 +2829,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 0,
@@ -2850,7 +2850,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "homeScore": 0,
       "awayScore": 2,
       "minute": null,
@@ -2871,7 +2871,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "homeScore": 3,
       "awayScore": 2,
       "minute": null,
@@ -2894,7 +2894,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 6,
@@ -2918,7 +2918,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "homeScore": 0,
       "awayScore": 3,
       "minute": null,
@@ -2940,7 +2940,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 0,
@@ -2958,7 +2958,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "homeScore": 4,
       "awayScore": 0,
       "minute": null,
@@ -2980,7 +2980,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -3004,7 +3004,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3028,15 +3028,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-04T21:30:35Z",
-      "minute": 67,
-      "homeScore": 1,
+      "updatedAt": "2026-11-04T21:40:35Z",
+      "minute": 77,
+      "homeScore": 2,
       "awayScore": 1,
       "actualScorers": [
+        "K. Karetsas",
+        "A. Ruibal",
         "F. Silva"
       ],
-      "scorersVerified": false,
-      "goalIncidents": 1
+      "scorersVerified": true,
+      "goalIncidents": 3
     },
     {
       "eventId": 601072,
@@ -3048,16 +3050,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-04T21:30:35Z",
-      "minute": 70,
-      "homeScore": 2,
+      "updatedAt": "2026-11-04T21:40:35Z",
+      "minute": 80,
+      "homeScore": 3,
       "awayScore": 1,
       "actualScorers": [
+        "G. Veiga",
         "S. McTominay",
         "J. Bednarek"
       ],
       "scorersVerified": false,
-      "goalIncidents": 2
+      "goalIncidents": 3
     },
     {
       "eventId": 601087,
@@ -3069,18 +3072,19 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "homeScore": 2,
-      "awayScore": 2,
-      "minute": 70,
+      "awayScore": 3,
+      "minute": 80,
       "actualScorers": [
+        "E. Haaland",
         "A. Nusa",
         "E. Fernández",
         "R. Baku",
         "C. Lukeba"
       ],
       "scorersVerified": true,
-      "goalIncidents": 4
+      "goalIncidents": 5
     },
     {
       "eventId": 601092,
@@ -3092,8 +3096,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-04T21:30:35Z",
-      "minute": 72,
+      "updatedAt": "2026-11-04T21:40:35Z",
+      "minute": 82,
       "homeScore": 0,
       "awayScore": 2,
       "actualScorers": [
@@ -3112,8 +3116,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-04T21:30:35Z",
-      "minute": 69,
+      "updatedAt": "2026-11-04T21:40:35Z",
+      "minute": 79,
       "homeScore": 1,
       "awayScore": 2,
       "actualScorers": [
@@ -3134,11 +3138,12 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-04T21:30:35Z",
+      "updatedAt": "2026-11-04T21:40:35Z",
       "homeScore": 1,
-      "awayScore": 7,
-      "minute": 68,
+      "awayScore": 8,
+      "minute": 78,
       "actualScorers": [
+        "M. Baturina",
         "R. Aguilar",
         "M. Liberali",
         "A. Douvikas",
@@ -3147,7 +3152,7 @@
         "N. Paz"
       ],
       "scorersVerified": true,
-      "goalIncidents": 8
+      "goalIncidents": 9
     },
     {
       "eventId": 601162,
@@ -3159,16 +3164,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-04T21:30:35Z",
-      "minute": 71,
-      "homeScore": 2,
+      "updatedAt": "2026-11-04T21:40:35Z",
+      "minute": 81,
+      "homeScore": 3,
       "awayScore": 1,
       "actualScorers": [
         "Z. Tripić",
         "E. Botheim",
         "P. O. M'Bina"
       ],
-      "scorersVerified": true,
+      "scorersVerified": false,
       "goalIncidents": 3
     },
     {
@@ -3181,7 +3186,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-04T21:30:35Z"
+      "updatedAt": "2026-11-04T21:40:35Z"
     }
   ]
 }
