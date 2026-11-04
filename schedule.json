@@ -1704,7 +1704,7 @@
           "eventId": 210511,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-04T20:40:34Z",
+          "lastLiveUpdate": "2026-11-04T20:50:33Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 2,
@@ -1956,7 +1956,7 @@
           "eventId": 210526,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-04T20:40:34Z"
+          "lastLiveUpdate": "2026-11-04T20:50:33Z"
         }
       ]
     ]
