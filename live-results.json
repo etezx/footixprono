@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-03T22:00:42Z",
+  "generatedAt": "2026-11-04T17:00:36Z",
   "events": [
     {
       "eventId": 210448,
@@ -2768,7 +2768,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T22:00:42Z",
+      "updatedAt": "2026-11-04T17:00:36Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -2789,7 +2789,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T22:00:42Z",
+      "updatedAt": "2026-11-04T17:00:36Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -2809,7 +2809,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T22:00:42Z",
+      "updatedAt": "2026-11-04T17:00:36Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -2824,12 +2824,12 @@
       "leagueId": 7,
       "home": "FC Barcelona",
       "away": "Aston Villa",
-      "kickoff": "2026-11-03T20:00:00Z",
+      "kickoff": "2026-11-03T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T22:00:42Z",
+      "updatedAt": "2026-11-04T17:00:36Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 0,
@@ -2845,12 +2845,12 @@
       "leagueId": 7,
       "home": "Atlético Madrid",
       "away": "FC Bayern München",
-      "kickoff": "2026-11-03T20:00:00Z",
+      "kickoff": "2026-11-03T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T22:00:42Z",
+      "updatedAt": "2026-11-04T17:00:36Z",
       "homeScore": 0,
       "awayScore": 2,
       "minute": null,
@@ -2866,12 +2866,12 @@
       "leagueId": 7,
       "home": "Manchester United",
       "away": "AS Roma",
-      "kickoff": "2026-11-03T20:00:00Z",
+      "kickoff": "2026-11-03T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T22:00:42Z",
+      "updatedAt": "2026-11-04T17:00:36Z",
       "homeScore": 3,
       "awayScore": 2,
       "minute": null,
@@ -2889,12 +2889,12 @@
       "leagueId": 7,
       "home": "Villarreal",
       "away": "Paris Saint-Germain",
-      "kickoff": "2026-11-03T20:00:00Z",
+      "kickoff": "2026-11-03T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T22:00:42Z",
+      "updatedAt": "2026-11-04T17:00:36Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 6,
@@ -2913,12 +2913,12 @@
       "leagueId": 7,
       "home": "Feyenoord",
       "away": "Inter",
-      "kickoff": "2026-11-03T20:00:00Z",
+      "kickoff": "2026-11-03T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T22:00:42Z",
+      "updatedAt": "2026-11-04T17:00:36Z",
       "homeScore": 0,
       "awayScore": 3,
       "minute": null,
@@ -2935,12 +2935,12 @@
       "leagueId": 7,
       "home": "Bodø/Glimt",
       "away": "LOSC Lille",
-      "kickoff": "2026-11-03T20:00:00Z",
+      "kickoff": "2026-11-03T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T22:00:42Z",
+      "updatedAt": "2026-11-04T17:00:36Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 0,
@@ -2953,12 +2953,12 @@
       "leagueId": 7,
       "home": "LASK",
       "away": "ŠK Slovan Bratislava",
-      "kickoff": "2026-11-03T20:00:00Z",
+      "kickoff": "2026-11-03T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-03T22:00:42Z",
+      "updatedAt": "2026-11-04T17:00:36Z",
       "homeScore": 4,
       "awayScore": 0,
       "minute": null,
@@ -2980,7 +2980,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T22:00:42Z"
+      "updatedAt": "2026-11-04T17:00:36Z"
     },
     {
       "eventId": 601098,
@@ -2992,7 +2992,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T22:00:42Z"
+      "updatedAt": "2026-11-04T17:00:36Z"
     },
     {
       "eventId": 601070,
@@ -3004,7 +3004,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T22:00:42Z"
+      "updatedAt": "2026-11-04T17:00:36Z"
     },
     {
       "eventId": 601072,
@@ -3016,7 +3016,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T22:00:42Z"
+      "updatedAt": "2026-11-04T17:00:36Z"
     },
     {
       "eventId": 601087,
@@ -3028,7 +3028,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T22:00:42Z"
+      "updatedAt": "2026-11-04T17:00:36Z"
     },
     {
       "eventId": 601092,
@@ -3040,7 +3040,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T22:00:42Z"
+      "updatedAt": "2026-11-04T17:00:36Z"
     },
     {
       "eventId": 601122,
@@ -3052,7 +3052,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T22:00:42Z"
+      "updatedAt": "2026-11-04T17:00:36Z"
     },
     {
       "eventId": 601127,
@@ -3064,7 +3064,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T22:00:42Z"
+      "updatedAt": "2026-11-04T17:00:36Z"
     },
     {
       "eventId": 601162,
@@ -3076,7 +3076,19 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-03T22:00:42Z"
+      "updatedAt": "2026-11-04T17:00:36Z"
+    },
+    {
+      "eventId": 210526,
+      "leagueId": 6,
+      "home": "Toulouse",
+      "away": "RC Strasbourg",
+      "kickoff": "2026-11-06T19:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-11-04T17:00:36Z"
     }
   ]
 }
