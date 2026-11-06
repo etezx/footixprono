@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-06T19:40:32Z",
+  "generatedAt": "2026-11-06T19:50:34Z",
   "events": [
     {
       "eventId": 210448,
@@ -2980,7 +2980,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-06T19:40:32Z",
+      "updatedAt": "2026-11-06T19:50:34Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 2,
@@ -3004,7 +3004,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-06T19:40:32Z",
+      "updatedAt": "2026-11-06T19:50:34Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3028,7 +3028,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-06T19:40:32Z",
+      "updatedAt": "2026-11-06T19:50:34Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 1,
@@ -3050,7 +3050,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-06T19:40:32Z",
+      "updatedAt": "2026-11-06T19:50:34Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 1,
@@ -3074,7 +3074,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-06T19:40:32Z",
+      "updatedAt": "2026-11-06T19:50:34Z",
       "homeScore": 2,
       "awayScore": 3,
       "minute": null,
@@ -3098,7 +3098,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-06T19:40:32Z",
+      "updatedAt": "2026-11-06T19:50:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -3120,7 +3120,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-06T19:40:32Z",
+      "updatedAt": "2026-11-06T19:50:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -3142,7 +3142,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-06T19:40:32Z",
+      "updatedAt": "2026-11-06T19:50:34Z",
       "homeScore": 1,
       "awayScore": 9,
       "minute": null,
@@ -3169,7 +3169,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-06T19:40:32Z",
+      "updatedAt": "2026-11-06T19:50:34Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 1,
@@ -3188,11 +3188,17 @@
       "home": "Toulouse",
       "away": "RC Strasbourg",
       "kickoff": "2026-11-06T19:45:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-06T19:40:32Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-06T19:50:34Z",
+      "minute": 3,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210519,
@@ -3204,7 +3210,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-06T19:40:32Z"
+      "updatedAt": "2026-11-06T19:50:34Z"
     },
     {
       "eventId": 210522,
@@ -3216,7 +3222,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-06T19:40:32Z"
+      "updatedAt": "2026-11-06T19:50:34Z"
     },
     {
       "eventId": 210525,
@@ -3228,7 +3234,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-06T19:40:32Z"
+      "updatedAt": "2026-11-06T19:50:34Z"
     },
     {
       "eventId": 210518,
@@ -3240,7 +3246,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-06T19:40:32Z"
+      "updatedAt": "2026-11-06T19:50:34Z"
     },
     {
       "eventId": 210520,
@@ -3252,7 +3258,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-06T19:40:32Z"
+      "updatedAt": "2026-11-06T19:50:34Z"
     },
     {
       "eventId": 210521,
@@ -3264,7 +3270,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-06T19:40:32Z"
+      "updatedAt": "2026-11-06T19:50:34Z"
     },
     {
       "eventId": 210524,
@@ -3276,7 +3282,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-06T19:40:32Z"
+      "updatedAt": "2026-11-06T19:50:34Z"
     },
     {
       "eventId": 210523,
@@ -3288,7 +3294,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-06T19:40:32Z"
+      "updatedAt": "2026-11-06T19:50:34Z"
     }
   ]
 }
