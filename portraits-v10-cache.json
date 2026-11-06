@@ -1573,5 +1573,15 @@
     "id": "34433806",
     "cutout": null,
     "thumb": null
+  },
+  "shidalgo": {
+    "id": "34176830",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/6lakrh1611832462.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/n61rah1611831644.jpg"
+  },
+  "soppong": {
+    "id": "34274085",
+    "cutout": null,
+    "thumb": null
   }
 }
