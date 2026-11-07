@@ -164,6 +164,19 @@
         },
         {
           "position": 10,
+          "club": "Toulouse",
+          "p": 10,
+          "w": 3,
+          "d": 4,
+          "l": 3,
+          "gf": 15,
+          "ga": 14,
+          "pts": 13,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 11,
           "club": "Stade Brestois",
           "p": 9,
           "w": 3,
@@ -176,7 +189,7 @@
           "zone": null
         },
         {
-          "position": 11,
+          "position": 12,
           "club": "Lorient",
           "p": 9,
           "w": 3,
@@ -189,27 +202,14 @@
           "zone": null
         },
         {
-          "position": 12,
-          "club": "Toulouse",
-          "p": 9,
-          "w": 2,
-          "d": 4,
-          "l": 3,
-          "gf": 12,
-          "ga": 13,
-          "pts": 10,
-          "group": "",
-          "zone": null
-        },
-        {
           "position": 13,
           "club": "RC Strasbourg",
-          "p": 9,
+          "p": 10,
           "w": 3,
           "d": 1,
-          "l": 5,
-          "gf": 17,
-          "ga": 19,
+          "l": 6,
+          "gf": 18,
+          "ga": 22,
           "pts": 10,
           "group": "",
           "zone": null
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-06T21:40:32Z",
+  "generatedAt": "2026-11-07T17:20:32Z",
   "source": "BSD"
 }
