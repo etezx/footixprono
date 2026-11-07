@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-07T18:00:32Z",
+  "generatedAt": "2026-11-07T18:10:32Z",
   "events": [
     {
       "eventId": 210448,
@@ -3192,7 +3192,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-07T18:00:32Z",
+      "updatedAt": "2026-11-07T18:10:32Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3210,12 +3210,18 @@
       "leagueId": 6,
       "home": "AJ Auxerre",
       "away": "Paris FC",
-      "kickoff": "2026-11-07T18:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-11-07T18:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-07T18:00:32Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-07T18:10:32Z",
+      "minute": 8,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210522,
@@ -3227,7 +3233,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T18:00:32Z"
+      "updatedAt": "2026-11-07T18:10:32Z"
     },
     {
       "eventId": 210525,
@@ -3239,7 +3245,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T18:00:32Z"
+      "updatedAt": "2026-11-07T18:10:32Z"
     },
     {
       "eventId": 210518,
@@ -3251,7 +3257,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T18:00:32Z"
+      "updatedAt": "2026-11-07T18:10:32Z"
     },
     {
       "eventId": 210520,
@@ -3263,7 +3269,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T18:00:32Z"
+      "updatedAt": "2026-11-07T18:10:32Z"
     },
     {
       "eventId": 210521,
@@ -3275,7 +3281,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T18:00:32Z"
+      "updatedAt": "2026-11-07T18:10:32Z"
     },
     {
       "eventId": 210524,
@@ -3287,7 +3293,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T18:00:32Z"
+      "updatedAt": "2026-11-07T18:10:32Z"
     },
     {
       "eventId": 210523,
@@ -3299,7 +3305,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T18:00:32Z"
+      "updatedAt": "2026-11-07T18:10:32Z"
     }
   ]
 }
