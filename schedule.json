@@ -1875,7 +1875,7 @@
           "eventId": 210518,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-07T19:20:33Z"
+          "lastLiveUpdate": "2026-11-07T19:27:26Z"
         }
       ],
       [
@@ -1890,12 +1890,14 @@
           "eventId": 210519,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-07T19:20:33Z",
-          "minute": 61,
+          "lastLiveUpdate": "2026-11-07T19:27:26Z",
+          "minute": 68,
           "period": "2nd_half",
           "homeScore": 0,
-          "awayScore": 0,
-          "actualScorers": [],
+          "awayScore": 1,
+          "actualScorers": [
+            "L. Sinayoko"
+          ],
           "scorersVerified": true
         }
       ],
@@ -1911,7 +1913,7 @@
           "eventId": 210524,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-07T19:20:33Z"
+          "lastLiveUpdate": "2026-11-07T19:27:26Z"
         }
       ],
       [
@@ -1926,7 +1928,7 @@
           "eventId": 210520,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-07T19:20:33Z"
+          "lastLiveUpdate": "2026-11-07T19:27:26Z"
         }
       ],
       [
@@ -1941,7 +1943,7 @@
           "eventId": 210521,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-07T19:20:33Z"
+          "lastLiveUpdate": "2026-11-07T19:27:26Z"
         }
       ],
       [
@@ -1956,7 +1958,7 @@
           "eventId": 210523,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-07T19:20:33Z"
+          "lastLiveUpdate": "2026-11-07T19:27:26Z"
         }
       ],
       [
@@ -1971,7 +1973,7 @@
           "eventId": 210522,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-07T19:20:33Z"
+          "lastLiveUpdate": "2026-11-07T19:27:26Z"
         }
       ],
       [
@@ -1990,7 +1992,7 @@
           "eventId": 210526,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-07T19:20:33Z",
+          "lastLiveUpdate": "2026-11-07T19:27:26Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
