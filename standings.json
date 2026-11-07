@@ -1,15 +1,27 @@
 {
-  "updated_at": "2026-11-07T18:47:18.490028+00:00",
+  "updated_at": "2026-11-07T22:45:15.307700+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
       "club": "Paris Saint-Germain",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-      "p": 9,
-      "w": 6,
+      "p": 10,
+      "w": 7,
       "d": 2,
       "l": 1,
-      "gf": 21,
+      "gf": 22,
+      "ga": 10,
+      "pts": 23,
+      "last5": []
+    },
+    {
+      "club": "Paris FC",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
+      "p": 10,
+      "w": 6,
+      "d": 2,
+      "l": 2,
+      "gf": 17,
       "ga": 10,
       "pts": 20,
       "last5": []
@@ -35,18 +47,6 @@
       "l": 2,
       "gf": 15,
       "ga": 7,
-      "pts": 17,
-      "last5": []
-    },
-    {
-      "club": "Paris FC",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
-      "p": 9,
-      "w": 5,
-      "d": 2,
-      "l": 2,
-      "gf": 16,
-      "ga": 10,
       "pts": 17,
       "last5": []
     },
@@ -161,12 +161,12 @@
     {
       "club": "AJ Auxerre",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
-      "p": 9,
+      "p": 10,
       "w": 3,
       "d": 1,
-      "l": 5,
+      "l": 6,
       "gf": 13,
-      "ga": 23,
+      "ga": 24,
       "pts": 10,
       "last5": []
     },
@@ -185,12 +185,12 @@
     {
       "club": "Troyes",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
-      "p": 9,
+      "p": 10,
       "w": 2,
       "d": 2,
-      "l": 5,
+      "l": 6,
       "gf": 7,
-      "ga": 16,
+      "ga": 17,
       "pts": 8,
       "last5": []
     },
