@@ -40,6 +40,23 @@
         },
         {
           "position": 2,
+          "club": "Paris FC",
+          "p": 10,
+          "w": 6,
+          "d": 2,
+          "l": 2,
+          "gf": 17,
+          "ga": 10,
+          "pts": 20,
+          "group": "",
+          "zone": {
+            "key": "cl",
+            "label": "Champions League",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 3,
           "club": "LOSC Lille",
           "p": 9,
           "w": 5,
@@ -56,7 +73,7 @@
           }
         },
         {
-          "position": 3,
+          "position": 4,
           "club": "Olympique Lyonnais",
           "p": 9,
           "w": 5,
@@ -64,23 +81,6 @@
           "l": 2,
           "gf": 15,
           "ga": 7,
-          "pts": 17,
-          "group": "",
-          "zone": {
-            "key": "cl",
-            "label": "Champions League",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 4,
-          "club": "Paris FC",
-          "p": 9,
-          "w": 5,
-          "d": 2,
-          "l": 2,
-          "gf": 16,
-          "ga": 10,
           "pts": 17,
           "group": "",
           "zone": {
@@ -217,12 +217,12 @@
         {
           "position": 14,
           "club": "AJ Auxerre",
-          "p": 9,
+          "p": 10,
           "w": 3,
           "d": 1,
-          "l": 5,
+          "l": 6,
           "gf": 13,
-          "ga": 23,
+          "ga": 24,
           "pts": 10,
           "group": "",
           "zone": null
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-07T19:50:34Z",
+  "generatedAt": "2026-11-07T20:00:30Z",
   "source": "BSD"
 }
