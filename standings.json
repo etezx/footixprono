@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T20:53:42.424353+00:00",
+  "updated_at": "2026-11-07T00:56:09.565915+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -111,6 +111,18 @@
       "last5": []
     },
     {
+      "club": "Toulouse",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
+      "p": 10,
+      "w": 3,
+      "d": 4,
+      "l": 3,
+      "gf": 15,
+      "ga": 14,
+      "pts": 13,
+      "last5": []
+    },
+    {
       "club": "Brest",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
       "p": 9,
@@ -135,26 +147,14 @@
       "last5": []
     },
     {
-      "club": "Toulouse",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
-      "p": 9,
-      "w": 2,
-      "d": 4,
-      "l": 3,
-      "gf": 12,
-      "ga": 13,
-      "pts": 10,
-      "last5": []
-    },
-    {
       "club": "Strasbourg",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
-      "p": 9,
+      "p": 10,
       "w": 3,
       "d": 1,
-      "l": 5,
-      "gf": 17,
-      "ga": 19,
+      "l": 6,
+      "gf": 18,
+      "ga": 22,
       "pts": 10,
       "last5": []
     },
