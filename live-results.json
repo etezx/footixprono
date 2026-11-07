@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-07T20:30:31Z",
+  "generatedAt": "2026-11-07T20:40:30Z",
   "events": [
     {
       "eventId": 210448,
@@ -3192,7 +3192,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-07T20:30:31Z",
+      "updatedAt": "2026-11-07T20:40:30Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3215,7 +3215,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-07T20:30:31Z",
+      "updatedAt": "2026-11-07T20:40:30Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -3235,8 +3235,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-07T20:30:31Z",
-      "minute": 25,
+      "updatedAt": "2026-11-07T20:40:30Z",
+      "minute": 34,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -3253,7 +3253,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T20:30:31Z"
+      "updatedAt": "2026-11-07T20:40:30Z"
     },
     {
       "eventId": 210518,
@@ -3265,7 +3265,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T20:30:31Z"
+      "updatedAt": "2026-11-07T20:40:30Z"
     },
     {
       "eventId": 210520,
@@ -3277,7 +3277,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T20:30:31Z"
+      "updatedAt": "2026-11-07T20:40:30Z"
     },
     {
       "eventId": 210521,
@@ -3289,7 +3289,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T20:30:31Z"
+      "updatedAt": "2026-11-07T20:40:30Z"
     },
     {
       "eventId": 210524,
@@ -3301,7 +3301,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T20:30:31Z"
+      "updatedAt": "2026-11-07T20:40:30Z"
     },
     {
       "eventId": 210523,
@@ -3313,7 +3313,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-07T20:30:31Z"
+      "updatedAt": "2026-11-07T20:40:30Z"
     }
   ]
 }
