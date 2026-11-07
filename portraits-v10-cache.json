@@ -1583,5 +1583,40 @@
     "id": "34274085",
     "cutout": null,
     "thumb": null
+  },
+  "tsiwe": {
+    "id": "34179445",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/2r1jc41756020748.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/u6u1q31756020784.jpg"
+  },
+  "pekwah": {
+    "id": "34215703",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/39fric1727952405.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/w4ki0m1695925683.jpg"
+  },
+  "sdiomande": {
+    "id": "34152472",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/uvwsxu1424733776.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/sweq311549733768.jpg"
+  },
+  "msenaya": {
+    "id": "34200204",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/scdnlk1765920733.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/a9wwjo1660839704.jpg"
+  },
+  "rmatondo": {
+    "id": "34169297",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/dd85c41717919972.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/n6p3gm1578167157.jpg"
+  },
+  "sennymayulu": {
+    "id": "34230025",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/5kz2aa1766335365.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/6xmqya1770217473.jpg"
+  },
+  "iboura": {
+    "id": "34153490",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/cwf96r1612794261.png",
+    "thumb": null
   }
 }
