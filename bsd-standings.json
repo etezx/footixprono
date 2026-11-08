@@ -40,14 +40,14 @@
         },
         {
           "position": 2,
-          "club": "Paris FC",
+          "club": "LOSC Lille",
           "p": 10,
           "w": 6,
-          "d": 2,
-          "l": 2,
-          "gf": 17,
-          "ga": 10,
-          "pts": 20,
+          "d": 3,
+          "l": 1,
+          "gf": 14,
+          "ga": 7,
+          "pts": 21,
           "group": "",
           "zone": {
             "key": "cl",
@@ -57,14 +57,14 @@
         },
         {
           "position": 3,
-          "club": "LOSC Lille",
-          "p": 9,
-          "w": 5,
-          "d": 3,
-          "l": 1,
-          "gf": 12,
-          "ga": 6,
-          "pts": 18,
+          "club": "Paris FC",
+          "p": 10,
+          "w": 6,
+          "d": 2,
+          "l": 2,
+          "gf": 17,
+          "ga": 10,
+          "pts": 20,
           "group": "",
           "zone": {
             "key": "cl",
@@ -92,12 +92,12 @@
         {
           "position": 5,
           "club": "Stade Rennais",
-          "p": 9,
+          "p": 10,
           "w": 5,
           "d": 1,
-          "l": 3,
-          "gf": 20,
-          "ga": 19,
+          "l": 4,
+          "gf": 21,
+          "ga": 21,
           "pts": 16,
           "group": "",
           "zone": {
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-08T15:54:29Z",
+  "generatedAt": "2026-11-08T16:00:32Z",
   "source": "BSD"
 }
