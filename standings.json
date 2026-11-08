@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T17:03:17.446662+00:00",
+  "updated_at": "2026-11-08T21:10:47.345499+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -41,13 +41,37 @@
     {
       "club": "Lyon",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
-      "p": 9,
+      "p": 10,
       "w": 5,
       "d": 2,
-      "l": 2,
+      "l": 3,
       "gf": 15,
-      "ga": 7,
+      "ga": 9,
       "pts": 17,
+      "last5": []
+    },
+    {
+      "club": "Nice",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
+      "p": 10,
+      "w": 5,
+      "d": 2,
+      "l": 3,
+      "gf": 15,
+      "ga": 12,
+      "pts": 17,
+      "last5": []
+    },
+    {
+      "club": "AS Monaco",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
+      "p": 10,
+      "w": 4,
+      "d": 4,
+      "l": 2,
+      "gf": 13,
+      "ga": 11,
+      "pts": 16,
       "last5": []
     },
     {
@@ -75,27 +99,27 @@
       "last5": []
     },
     {
-      "club": "AS Monaco",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
-      "p": 9,
+      "club": "Brest",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+      "p": 10,
       "w": 4,
       "d": 3,
-      "l": 2,
-      "gf": 12,
-      "ga": 10,
+      "l": 3,
+      "gf": 18,
+      "ga": 12,
       "pts": 15,
       "last5": []
     },
     {
-      "club": "Nice",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
-      "p": 9,
+      "club": "Lorient",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
+      "p": 10,
       "w": 4,
-      "d": 2,
+      "d": 3,
       "l": 3,
-      "gf": 13,
-      "ga": 12,
-      "pts": 14,
+      "gf": 9,
+      "ga": 8,
+      "pts": 15,
       "last5": []
     },
     {
@@ -123,30 +147,6 @@
       "last5": []
     },
     {
-      "club": "Brest",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
-      "p": 9,
-      "w": 3,
-      "d": 3,
-      "l": 3,
-      "gf": 16,
-      "ga": 12,
-      "pts": 12,
-      "last5": []
-    },
-    {
-      "club": "Lorient",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
-      "p": 9,
-      "w": 3,
-      "d": 3,
-      "l": 3,
-      "gf": 7,
-      "ga": 8,
-      "pts": 12,
-      "last5": []
-    },
-    {
       "club": "Strasbourg",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
       "p": 10,
@@ -171,14 +171,26 @@
       "last5": []
     },
     {
+      "club": "Le Mans",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
+      "p": 10,
+      "w": 1,
+      "d": 5,
+      "l": 4,
+      "gf": 12,
+      "ga": 19,
+      "pts": 8,
+      "last5": []
+    },
+    {
       "club": "Angers",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
-      "p": 9,
+      "p": 10,
       "w": 2,
       "d": 2,
-      "l": 5,
+      "l": 6,
       "gf": 9,
-      "ga": 17,
+      "ga": 19,
       "pts": 8,
       "last5": []
     },
@@ -195,26 +207,14 @@
       "last5": []
     },
     {
-      "club": "Le Mans",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
-      "p": 9,
-      "w": 1,
-      "d": 4,
-      "l": 4,
-      "gf": 11,
-      "ga": 18,
-      "pts": 7,
-      "last5": []
-    },
-    {
       "club": "Le Havre AC",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
-      "p": 9,
+      "p": 10,
       "w": 0,
       "d": 2,
-      "l": 7,
+      "l": 8,
       "gf": 9,
-      "ga": 20,
+      "ga": 22,
       "pts": 2,
       "last5": []
     }
