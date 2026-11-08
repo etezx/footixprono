@@ -1875,8 +1875,8 @@
           "eventId": 210518,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-08T16:30:31Z",
-          "minute": 14,
+          "lastLiveUpdate": "2026-11-08T16:40:33Z",
+          "minute": 23,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 1,
@@ -1898,7 +1898,7 @@
           "eventId": 210519,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T16:30:31Z",
+          "lastLiveUpdate": "2026-11-08T16:40:33Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -1920,12 +1920,14 @@
           "eventId": 210524,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-08T16:30:31Z",
-          "minute": 14,
+          "lastLiveUpdate": "2026-11-08T16:40:33Z",
+          "minute": 23,
           "period": "1st_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 0,
-          "actualScorers": [],
+          "actualScorers": [
+            "N. Edjouma"
+          ],
           "scorersVerified": true
         }
       ],
@@ -1941,12 +1943,14 @@
           "eventId": 210520,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-08T16:30:31Z",
-          "minute": 14,
+          "lastLiveUpdate": "2026-11-08T16:40:33Z",
+          "minute": 23,
           "period": "1st_half",
           "homeScore": 0,
-          "awayScore": 0,
-          "actualScorers": [],
+          "awayScore": 1,
+          "actualScorers": [
+            "S. I. Touré"
+          ],
           "scorersVerified": true
         }
       ],
@@ -1962,8 +1966,8 @@
           "eventId": 210521,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-08T16:30:31Z",
-          "minute": 14,
+          "lastLiveUpdate": "2026-11-08T16:40:33Z",
+          "minute": 23,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -1983,7 +1987,7 @@
           "eventId": 210523,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T16:30:31Z"
+          "lastLiveUpdate": "2026-11-08T16:40:33Z"
         }
       ],
       [
@@ -1998,7 +2002,7 @@
           "eventId": 210522,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T16:30:31Z",
+          "lastLiveUpdate": "2026-11-08T16:40:33Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -2024,7 +2028,7 @@
           "eventId": 210526,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T16:30:31Z",
+          "lastLiveUpdate": "2026-11-08T16:40:33Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
