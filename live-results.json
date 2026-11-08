@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-08T14:20:30Z",
+  "generatedAt": "2026-11-08T14:30:33Z",
   "events": [
     {
       "eventId": 210448,
@@ -3192,7 +3192,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T14:20:30Z",
+      "updatedAt": "2026-11-08T14:30:33Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3215,7 +3215,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T14:20:30Z",
+      "updatedAt": "2026-11-08T14:30:33Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -3235,7 +3235,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T14:20:30Z",
+      "updatedAt": "2026-11-08T14:30:33Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3255,13 +3255,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-08T14:20:30Z",
-      "minute": 19,
+      "updatedAt": "2026-11-08T14:30:33Z",
+      "minute": 29,
       "homeScore": 0,
-      "awayScore": 0,
-      "actualScorers": [],
+      "awayScore": 1,
+      "actualScorers": [
+        "S. Diaoune"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210518,
@@ -3273,7 +3275,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-08T14:20:30Z"
+      "updatedAt": "2026-11-08T14:30:33Z"
     },
     {
       "eventId": 210520,
@@ -3285,7 +3287,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-08T14:20:30Z"
+      "updatedAt": "2026-11-08T14:30:33Z"
     },
     {
       "eventId": 210521,
@@ -3297,7 +3299,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-08T14:20:30Z"
+      "updatedAt": "2026-11-08T14:30:33Z"
     },
     {
       "eventId": 210524,
@@ -3309,7 +3311,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-08T14:20:30Z"
+      "updatedAt": "2026-11-08T14:30:33Z"
     },
     {
       "eventId": 210523,
@@ -3321,7 +3323,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-08T14:20:30Z"
+      "updatedAt": "2026-11-08T14:30:33Z"
     }
   ]
 }
