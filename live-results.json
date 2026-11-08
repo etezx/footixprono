@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-08T21:20:32Z",
+  "generatedAt": "2026-11-08T21:30:33Z",
   "events": [
     {
       "eventId": 210448,
@@ -3192,7 +3192,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T21:20:32Z",
+      "updatedAt": "2026-11-08T21:30:33Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3215,7 +3215,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T21:20:32Z",
+      "updatedAt": "2026-11-08T21:30:33Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -3235,7 +3235,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T21:20:32Z",
+      "updatedAt": "2026-11-08T21:30:33Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3255,7 +3255,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T21:20:32Z",
+      "updatedAt": "2026-11-08T21:30:33Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -3277,7 +3277,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T21:20:32Z",
+      "updatedAt": "2026-11-08T21:30:33Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -3298,7 +3298,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T21:20:32Z",
+      "updatedAt": "2026-11-08T21:30:33Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -3319,7 +3319,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T21:20:32Z",
+      "updatedAt": "2026-11-08T21:30:33Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -3340,7 +3340,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T21:20:32Z",
+      "updatedAt": "2026-11-08T21:30:33Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 0,
@@ -3361,16 +3361,17 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-08T21:20:32Z",
-      "minute": 76,
+      "updatedAt": "2026-11-08T21:30:33Z",
+      "minute": 85,
       "homeScore": 1,
-      "awayScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "K. Abdallah",
         "F. Thauvin",
         "A. Gouiri"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 3
     }
   ]
 }
