@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T11:53:42.679523+00:00",
+  "updated_at": "2026-11-08T12:08:24.022685+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -241,7 +241,8 @@
       "Quentin Ndjantou",
       "Senny Mayulu",
       "Vitinha",
-      "Warren Zaïre-Emery"
+      "Warren Zaïre-Emery",
+      "Younes Idder"
     ],
     "STADE RENNAIS FC": [
       "Adrien Thomasson",
@@ -333,5 +334,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 293
+  "players_fetched": 294
 }
