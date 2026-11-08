@@ -1875,8 +1875,8 @@
           "eventId": 210518,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-08T18:00:32Z",
-          "minute": 84,
+          "lastLiveUpdate": "2026-11-08T18:10:34Z",
+          "minute": 94,
           "period": "2nd_half",
           "homeScore": 0,
           "awayScore": 2,
@@ -1899,7 +1899,7 @@
           "eventId": 210519,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T18:00:32Z",
+          "lastLiveUpdate": "2026-11-08T18:10:34Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -1917,16 +1917,16 @@
           "time": "17:15",
           "official": true,
           "source": "bsd",
-          "completed": false,
+          "completed": true,
           "eventId": 210524,
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-11-08T18:00:32Z",
-          "minute": 87,
-          "period": "2nd_half",
-          "homeScore": 1,
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-11-08T18:10:34Z",
+          "period": "FT",
+          "homeScore": 2,
           "awayScore": 0,
           "actualScorers": [
+            "L. Ajorque",
             "N. Edjouma"
           ],
           "scorersVerified": true
@@ -1944,12 +1944,13 @@
           "eventId": 210520,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-08T18:00:32Z",
-          "minute": 85,
+          "lastLiveUpdate": "2026-11-08T18:10:34Z",
+          "minute": 95,
           "period": "2nd_half",
           "homeScore": 0,
-          "awayScore": 1,
+          "awayScore": 2,
           "actualScorers": [
+            "J. Makengo",
             "S. I. Touré"
           ],
           "scorersVerified": true
@@ -1967,12 +1968,13 @@
           "eventId": 210521,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-08T18:00:32Z",
-          "minute": 85,
+          "lastLiveUpdate": "2026-11-08T18:10:34Z",
+          "minute": 95,
           "period": "2nd_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 1,
           "actualScorers": [
+            "E. Colas",
             "M. Coulibaly"
           ],
           "scorersVerified": true
@@ -1990,7 +1992,7 @@
           "eventId": 210523,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T18:00:32Z"
+          "lastLiveUpdate": "2026-11-08T18:10:34Z"
         }
       ],
       [
@@ -2005,7 +2007,7 @@
           "eventId": 210522,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T18:00:32Z",
+          "lastLiveUpdate": "2026-11-08T18:10:34Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -2031,7 +2033,7 @@
           "eventId": 210526,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T18:00:32Z",
+          "lastLiveUpdate": "2026-11-08T18:10:34Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,

@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-08T18:00:32Z",
+  "generatedAt": "2026-11-08T18:10:34Z",
   "events": [
     {
       "eventId": 210448,
@@ -3192,7 +3192,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T18:00:32Z",
+      "updatedAt": "2026-11-08T18:10:34Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3215,7 +3215,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T18:00:32Z",
+      "updatedAt": "2026-11-08T18:10:34Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -3235,7 +3235,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T18:00:32Z",
+      "updatedAt": "2026-11-08T18:10:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3255,7 +3255,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T18:00:32Z",
+      "updatedAt": "2026-11-08T18:10:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -3277,8 +3277,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-08T18:00:32Z",
-      "minute": 84,
+      "updatedAt": "2026-11-08T18:10:34Z",
+      "minute": 94,
       "homeScore": 0,
       "awayScore": 2,
       "actualScorers": [
@@ -3298,15 +3298,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-08T18:00:32Z",
-      "minute": 85,
+      "updatedAt": "2026-11-08T18:10:34Z",
+      "minute": 95,
       "homeScore": 0,
-      "awayScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "J. Makengo",
         "S. I. Touré"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210521,
@@ -3318,15 +3319,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-08T18:00:32Z",
-      "minute": 85,
-      "homeScore": 0,
+      "updatedAt": "2026-11-08T18:10:34Z",
+      "minute": 95,
+      "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
+        "E. Colas",
         "M. Coulibaly"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210524,
@@ -3334,19 +3336,20 @@
       "home": "Stade Brestois",
       "away": "Olympique Lyonnais",
       "kickoff": "2026-11-08T16:15:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-11-08T18:00:32Z",
-      "minute": 87,
-      "homeScore": 1,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-08T18:10:34Z",
+      "minute": null,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
+        "L. Ajorque",
         "N. Edjouma"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210523,
@@ -3358,7 +3361,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-08T18:00:32Z"
+      "updatedAt": "2026-11-08T18:10:34Z"
     }
   ]
 }
