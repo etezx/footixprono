@@ -1618,5 +1618,45 @@
     "id": "34153490",
     "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/cwf96r1612794261.png",
     "thumb": null
+  },
+  "sdiop": {
+    "id": "34149547",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/g4pu161603220023.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/6elp581515415333.jpg"
+  },
+  "nedjouma": {
+    "id": "34232787",
+    "cutout": null,
+    "thumb": null
+  },
+  "ntagliafico": {
+    "id": "34167125",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/4z43fy1766146600.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/do0e5w1780011317.jpg"
+  },
+  "keitonakamura": {
+    "id": "34170429",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/rvg6ub1678454947.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/6blhf21678454876.jpg"
+  },
+  "kmerah": {
+    "id": "34419754",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/qwomuq1766146466.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/mi6f9s1766088630.jpg"
+  },
+  "abodart": {
+    "id": "34175578",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/lyge411766077401.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/jxc6uj1636765244.jpg"
+  },
+  "kmizuta": {
+    "id": "34265007",
+    "cutout": null,
+    "thumb": null
+  },
+  "atosin": {
+    "id": "34161601",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/lvjopj1789547963.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/589sp21510522011.jpg"
   }
 }
