@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-08T17:40:33Z",
+  "generatedAt": "2026-11-08T17:50:32Z",
   "events": [
     {
       "eventId": 210448,
@@ -3192,7 +3192,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T17:40:33Z",
+      "updatedAt": "2026-11-08T17:50:32Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3215,7 +3215,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T17:40:33Z",
+      "updatedAt": "2026-11-08T17:50:32Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -3235,7 +3235,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T17:40:33Z",
+      "updatedAt": "2026-11-08T17:50:32Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3255,7 +3255,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T17:40:33Z",
+      "updatedAt": "2026-11-08T17:50:32Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -3277,8 +3277,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-08T17:40:33Z",
-      "minute": 64,
+      "updatedAt": "2026-11-08T17:50:32Z",
+      "minute": 74,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3297,8 +3297,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-08T17:40:33Z",
-      "minute": 65,
+      "updatedAt": "2026-11-08T17:50:32Z",
+      "minute": 75,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3317,8 +3317,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-08T17:40:33Z",
-      "minute": 65,
+      "updatedAt": "2026-11-08T17:50:32Z",
+      "minute": 75,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3337,8 +3337,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-08T17:40:33Z",
-      "minute": 67,
+      "updatedAt": "2026-11-08T17:50:32Z",
+      "minute": 77,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -3357,7 +3357,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-08T17:40:33Z"
+      "updatedAt": "2026-11-08T17:50:32Z"
     }
   ]
 }
