@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-08T16:50:35Z",
+  "generatedAt": "2026-11-08T17:00:32Z",
   "events": [
     {
       "eventId": 210448,
@@ -3192,7 +3192,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T16:50:35Z",
+      "updatedAt": "2026-11-08T17:00:32Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3215,7 +3215,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T16:50:35Z",
+      "updatedAt": "2026-11-08T17:00:32Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -3235,7 +3235,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T16:50:35Z",
+      "updatedAt": "2026-11-08T17:00:32Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3255,7 +3255,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T16:50:35Z",
+      "updatedAt": "2026-11-08T17:00:32Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -3277,8 +3277,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-08T16:50:35Z",
-      "minute": 34,
+      "updatedAt": "2026-11-08T17:00:32Z",
+      "minute": 44,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3297,8 +3297,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-08T16:50:35Z",
-      "minute": 34,
+      "updatedAt": "2026-11-08T17:00:32Z",
+      "minute": 44,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3317,13 +3317,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-08T16:50:35Z",
-      "minute": 34,
+      "updatedAt": "2026-11-08T17:00:32Z",
+      "minute": 44,
       "homeScore": 0,
-      "awayScore": 0,
-      "actualScorers": [],
+      "awayScore": 1,
+      "actualScorers": [
+        "M. Coulibaly"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210524,
@@ -3335,8 +3337,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-08T16:50:35Z",
-      "minute": 34,
+      "updatedAt": "2026-11-08T17:00:32Z",
+      "minute": 44,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -3355,7 +3357,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-08T16:50:35Z"
+      "updatedAt": "2026-11-08T17:00:32Z"
     }
   ]
 }
