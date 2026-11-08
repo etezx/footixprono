@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-08T16:10:31Z",
+  "generatedAt": "2026-11-08T16:20:34Z",
   "events": [
     {
       "eventId": 210448,
@@ -3192,7 +3192,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T16:10:31Z",
+      "updatedAt": "2026-11-08T16:20:34Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3215,7 +3215,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T16:10:31Z",
+      "updatedAt": "2026-11-08T16:20:34Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -3235,7 +3235,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T16:10:31Z",
+      "updatedAt": "2026-11-08T16:20:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3250,12 +3250,12 @@
       "leagueId": 6,
       "home": "Stade Rennais",
       "away": "LOSC Lille",
-      "kickoff": "2026-11-08T14:00:00Z",
+      "kickoff": "2026-11-08T14:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-08T16:10:31Z",
+      "updatedAt": "2026-11-08T16:20:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 2,
@@ -3273,11 +3273,19 @@
       "home": "Angers",
       "away": "OGC Nice",
       "kickoff": "2026-11-08T16:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-08T16:10:31Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-08T16:20:34Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 1,
+      "actualScorers": [
+        "S. Diop"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 1
     },
     {
       "eventId": 210520,
@@ -3285,11 +3293,17 @@
       "home": "Le Havre",
       "away": "Lorient",
       "kickoff": "2026-11-08T16:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-08T16:10:31Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-08T16:20:34Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210521,
@@ -3297,11 +3311,17 @@
       "home": "Le Mans",
       "away": "AS Monaco",
       "kickoff": "2026-11-08T16:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-08T16:10:31Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-08T16:20:34Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210524,
@@ -3309,11 +3329,17 @@
       "home": "Stade Brestois",
       "away": "Olympique Lyonnais",
       "kickoff": "2026-11-08T16:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-08T16:10:31Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-08T16:20:34Z",
+      "minute": 4,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210523,
@@ -3325,7 +3351,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-08T16:10:31Z"
+      "updatedAt": "2026-11-08T16:20:34Z"
     }
   ]
 }

@@ -1873,9 +1873,17 @@
           "source": "bsd",
           "completed": false,
           "eventId": 210518,
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-11-08T16:10:31Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-11-08T16:20:34Z",
+          "minute": 4,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 1,
+          "actualScorers": [
+            "S. Diop"
+          ],
+          "scorersVerified": true
         }
       ],
       [
@@ -1890,7 +1898,7 @@
           "eventId": 210519,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T16:10:31Z",
+          "lastLiveUpdate": "2026-11-08T16:20:34Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -1910,9 +1918,15 @@
           "source": "bsd",
           "completed": false,
           "eventId": 210524,
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-11-08T16:10:31Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-11-08T16:20:34Z",
+          "minute": 4,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -1925,9 +1939,15 @@
           "source": "bsd",
           "completed": false,
           "eventId": 210520,
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-11-08T16:10:31Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-11-08T16:20:34Z",
+          "minute": 4,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -1940,9 +1960,15 @@
           "source": "bsd",
           "completed": false,
           "eventId": 210521,
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-11-08T16:10:31Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-11-08T16:20:34Z",
+          "minute": 4,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -1957,7 +1983,7 @@
           "eventId": 210523,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T16:10:31Z"
+          "lastLiveUpdate": "2026-11-08T16:20:34Z"
         }
       ],
       [
@@ -1972,7 +1998,7 @@
           "eventId": 210522,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T16:10:31Z",
+          "lastLiveUpdate": "2026-11-08T16:20:34Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -1998,7 +2024,7 @@
           "eventId": 210526,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-08T16:10:31Z",
+          "lastLiveUpdate": "2026-11-08T16:20:34Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
