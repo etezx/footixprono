@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T12:08:24.022685+00:00",
+  "updated_at": "2026-11-09T14:15:54.261706+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -95,7 +95,8 @@
       "Rassoul Ndiaye",
       "Rayan Fofana",
       "Simon Ebonog",
-      "Sota Nakamura"
+      "Sota Nakamura",
+      "Thomas Rousseau"
     ],
     "AS MONACO": [
       "Aleksandr Golovin",
@@ -111,7 +112,6 @@
       "Mathys Detourbet",
       "Matthis Abline",
       "Mika Biereth",
-      "Oumar Konaté",
       "Pape Cabral",
       "Paris Brunner",
       "Safouane Benzahra",
@@ -121,9 +121,10 @@
     ],
     "LE MANS FC": [
       "Adil Bourabaa",
+      "Adnane Hamza Kharroubi",
       "Alexandre Lauray",
       "Antoine Rabillard",
-      "Brahimi Bilal",
+      "Bilal Brahimi",
       "Dame Guèye",
       "Daouda Traoré",
       "Edwin Quarshie",
@@ -334,5 +335,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 294
+  "players_fetched": 295
 }
