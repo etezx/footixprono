@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T21:10:47.345499+00:00",
+  "updated_at": "2026-11-09T00:54:13.392356+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -36,6 +36,18 @@
       "gf": 17,
       "ga": 10,
       "pts": 20,
+      "last5": []
+    },
+    {
+      "club": "Marseille",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+      "p": 10,
+      "w": 6,
+      "d": 0,
+      "l": 4,
+      "gf": 22,
+      "ga": 14,
+      "pts": 18,
       "last5": []
     },
     {
@@ -87,18 +99,6 @@
       "last5": []
     },
     {
-      "club": "Marseille",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
-      "p": 9,
-      "w": 5,
-      "d": 0,
-      "l": 4,
-      "gf": 20,
-      "ga": 13,
-      "pts": 15,
-      "last5": []
-    },
-    {
       "club": "Brest",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
       "p": 10,
@@ -125,12 +125,12 @@
     {
       "club": "Lens",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
-      "p": 9,
+      "p": 10,
       "w": 4,
       "d": 1,
-      "l": 4,
-      "gf": 16,
-      "ga": 13,
+      "l": 5,
+      "gf": 17,
+      "ga": 15,
       "pts": 13,
       "last5": []
     },
