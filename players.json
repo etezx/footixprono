@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T13:57:02.721745+00:00",
+  "updated_at": "2026-11-13T13:23:11.757430+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -166,6 +166,7 @@
       "Mezian Soares",
       "Michaël Cuisance",
       "Michal Skoras",
+      "Moussa Diarra",
       "Odsonne Édouard",
       "Thorgan Hazard",
       "Yassine Titraoui"
@@ -334,5 +335,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 294
+  "players_fetched": 295
 }
