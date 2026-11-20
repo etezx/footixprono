@@ -2065,8 +2065,12 @@
           "date": "2026-11-21",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210533,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-20T19:00:34Z"
         }
       ],
       [
@@ -2082,7 +2086,15 @@
       ],
       [
         "FC LORIENT",
-        "STADE RENNAIS FC"
+        "STADE RENNAIS FC",
+        {
+          "source": "bsd",
+          "eventId": 210529,
+          "status": "notstarted",
+          "live": false,
+          "completed": false,
+          "lastLiveUpdate": "2026-11-20T19:00:34Z"
+        }
       ],
       [
         "OLYMPIQUE DE MARSEILLE",
@@ -2091,8 +2103,12 @@
           "date": "2026-11-22",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210531,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-20T19:00:34Z"
         }
       ],
       [
@@ -2102,8 +2118,12 @@
           "date": "2026-11-21",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210527,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-20T19:00:34Z"
         }
       ],
       [
@@ -2113,8 +2133,12 @@
           "date": "2026-11-21",
           "time": "17:15",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210530,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-20T19:00:34Z"
         }
       ],
       [
@@ -2124,8 +2148,12 @@
           "date": "2026-11-22",
           "time": "15:00",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210532,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-20T19:00:34Z"
         }
       ],
       [
@@ -2135,8 +2163,12 @@
           "date": "2026-11-21",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210534,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-20T19:00:34Z"
         }
       ],
       [
@@ -2146,8 +2178,12 @@
           "date": "2026-11-20",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210535,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-20T19:00:34Z"
         }
       ]
     ]
