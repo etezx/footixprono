@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-21T21:30:33Z",
+  "generatedAt": "2026-11-21T21:40:35Z",
   "events": [
     {
       "eventId": 210448,
@@ -3383,7 +3383,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T21:30:33Z",
+      "updatedAt": "2026-11-21T21:40:35Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3405,7 +3405,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T21:30:33Z",
+      "updatedAt": "2026-11-21T21:40:35Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3429,15 +3429,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-21T21:30:33Z",
-      "minute": 81,
-      "homeScore": 0,
+      "updatedAt": "2026-11-21T21:40:35Z",
+      "minute": 91,
+      "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
+        "E. Diop",
         "R. Faivre"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 210528,
@@ -3449,8 +3450,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-21T21:30:33Z",
-      "minute": 85,
+      "updatedAt": "2026-11-21T21:40:35Z",
+      "minute": 94,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3465,19 +3466,20 @@
       "home": "RC Lens",
       "away": "Toulouse",
       "kickoff": "2026-11-21T19:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-11-21T21:30:33Z",
-      "minute": 87,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-21T21:40:35Z",
+      "minute": null,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
+        "M. Cuisance",
         "J. Russell Rowe"
       ],
-      "scorersVerified": false,
-      "goalIncidents": 1
+      "scorersVerified": true,
+      "goalIncidents": 2
     },
     {
       "eventId": 210534,
@@ -3489,8 +3491,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-21T21:30:33Z",
-      "minute": 87,
+      "updatedAt": "2026-11-21T21:40:35Z",
+      "minute": 96,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3509,7 +3511,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T21:30:33Z"
+      "updatedAt": "2026-11-21T21:40:35Z"
     },
     {
       "eventId": 210529,
@@ -3521,7 +3523,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T21:30:33Z"
+      "updatedAt": "2026-11-21T21:40:35Z"
     },
     {
       "eventId": 210531,
@@ -3533,7 +3535,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T21:30:33Z"
+      "updatedAt": "2026-11-21T21:40:35Z"
     }
   ]
 }

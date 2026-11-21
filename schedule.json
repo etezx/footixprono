@@ -2066,19 +2066,19 @@
           "time": "20:45",
           "official": true,
           "source": "bsd",
-          "completed": false,
+          "completed": true,
           "eventId": 210533,
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-11-21T21:30:33Z",
-          "minute": 87,
-          "period": "2nd_half",
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-11-21T21:40:35Z",
+          "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
           "actualScorers": [
+            "M. Cuisance",
             "J. Russell Rowe"
           ],
-          "scorersVerified": false
+          "scorersVerified": true
         }
       ],
       [
@@ -2101,7 +2101,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-11-21T21:30:33Z"
+          "lastLiveUpdate": "2026-11-21T21:40:35Z"
         }
       ],
       [
@@ -2116,7 +2116,7 @@
           "eventId": 210531,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T21:30:33Z"
+          "lastLiveUpdate": "2026-11-21T21:40:35Z"
         }
       ],
       [
@@ -2131,12 +2131,13 @@
           "eventId": 210527,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-21T21:30:33Z",
-          "minute": 81,
+          "lastLiveUpdate": "2026-11-21T21:40:35Z",
+          "minute": 91,
           "period": "2nd_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 1,
           "actualScorers": [
+            "E. Diop",
             "R. Faivre"
           ],
           "scorersVerified": true
@@ -2154,7 +2155,7 @@
           "eventId": 210530,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T21:30:33Z",
+          "lastLiveUpdate": "2026-11-21T21:40:35Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 3,
@@ -2180,7 +2181,7 @@
           "eventId": 210532,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T21:30:33Z"
+          "lastLiveUpdate": "2026-11-21T21:40:35Z"
         }
       ],
       [
@@ -2195,8 +2196,8 @@
           "eventId": 210534,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-21T21:30:33Z",
-          "minute": 87,
+          "lastLiveUpdate": "2026-11-21T21:40:35Z",
+          "minute": 96,
           "period": "2nd_half",
           "homeScore": 0,
           "awayScore": 1,
@@ -2218,7 +2219,7 @@
           "eventId": 210535,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T21:30:33Z",
+          "lastLiveUpdate": "2026-11-21T21:40:35Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
