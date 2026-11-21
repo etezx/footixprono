@@ -2070,12 +2070,14 @@
           "eventId": 210533,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-21T20:20:31Z",
-          "minute": 35,
+          "lastLiveUpdate": "2026-11-21T20:30:37Z",
+          "minute": 45,
           "period": "1st_half",
           "homeScore": 0,
-          "awayScore": 0,
-          "actualScorers": [],
+          "awayScore": 1,
+          "actualScorers": [
+            "J. Russell Rowe"
+          ],
           "scorersVerified": true
         }
       ],
@@ -2099,7 +2101,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-11-21T20:20:31Z"
+          "lastLiveUpdate": "2026-11-21T20:30:37Z"
         }
       ],
       [
@@ -2114,7 +2116,7 @@
           "eventId": 210531,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T20:20:31Z"
+          "lastLiveUpdate": "2026-11-21T20:30:37Z"
         }
       ],
       [
@@ -2129,8 +2131,8 @@
           "eventId": 210527,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-21T20:20:31Z",
-          "minute": 35,
+          "lastLiveUpdate": "2026-11-21T20:30:37Z",
+          "minute": 45,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 1,
@@ -2152,7 +2154,7 @@
           "eventId": 210530,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T20:20:31Z",
+          "lastLiveUpdate": "2026-11-21T20:30:37Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 3,
@@ -2178,7 +2180,7 @@
           "eventId": 210532,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T20:20:31Z"
+          "lastLiveUpdate": "2026-11-21T20:30:37Z"
         }
       ],
       [
@@ -2193,8 +2195,8 @@
           "eventId": 210534,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-21T20:20:31Z",
-          "minute": 35,
+          "lastLiveUpdate": "2026-11-21T20:30:37Z",
+          "minute": 45,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 1,
@@ -2216,7 +2218,7 @@
           "eventId": 210535,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T20:20:31Z",
+          "lastLiveUpdate": "2026-11-21T20:30:37Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
