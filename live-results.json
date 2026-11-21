@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-21T17:40:39Z",
+  "generatedAt": "2026-11-21T17:50:32Z",
   "events": [
     {
       "eventId": 210448,
@@ -3383,7 +3383,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T17:40:39Z",
+      "updatedAt": "2026-11-21T17:50:32Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3405,8 +3405,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-21T17:40:39Z",
-      "minute": 58,
+      "updatedAt": "2026-11-21T17:50:32Z",
+      "minute": 68,
       "homeScore": 1,
       "awayScore": 2,
       "actualScorers": [
@@ -3427,7 +3427,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T17:40:39Z"
+      "updatedAt": "2026-11-21T17:50:32Z"
     },
     {
       "eventId": 210528,
@@ -3439,7 +3439,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T17:40:39Z"
+      "updatedAt": "2026-11-21T17:50:32Z"
     },
     {
       "eventId": 210533,
@@ -3451,7 +3451,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T17:40:39Z"
+      "updatedAt": "2026-11-21T17:50:32Z"
     },
     {
       "eventId": 210534,
@@ -3463,7 +3463,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T17:40:39Z"
+      "updatedAt": "2026-11-21T17:50:32Z"
     },
     {
       "eventId": 210532,
@@ -3475,7 +3475,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T17:40:39Z"
+      "updatedAt": "2026-11-21T17:50:32Z"
     },
     {
       "eventId": 210529,
@@ -3487,7 +3487,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T17:40:39Z"
+      "updatedAt": "2026-11-21T17:50:32Z"
     },
     {
       "eventId": 210531,
@@ -3499,7 +3499,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T17:40:39Z"
+      "updatedAt": "2026-11-21T17:50:32Z"
     }
   ]
 }

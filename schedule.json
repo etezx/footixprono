@@ -2070,7 +2070,7 @@
           "eventId": 210533,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:40:39Z"
+          "lastLiveUpdate": "2026-11-21T17:50:32Z"
         }
       ],
       [
@@ -2093,7 +2093,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-11-21T17:40:39Z"
+          "lastLiveUpdate": "2026-11-21T17:50:32Z"
         }
       ],
       [
@@ -2108,7 +2108,7 @@
           "eventId": 210531,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:40:39Z"
+          "lastLiveUpdate": "2026-11-21T17:50:32Z"
         }
       ],
       [
@@ -2123,7 +2123,7 @@
           "eventId": 210527,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:40:39Z"
+          "lastLiveUpdate": "2026-11-21T17:50:32Z"
         }
       ],
       [
@@ -2138,8 +2138,8 @@
           "eventId": 210530,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-21T17:40:39Z",
-          "minute": 58,
+          "lastLiveUpdate": "2026-11-21T17:50:32Z",
+          "minute": 68,
           "period": "2nd_half",
           "homeScore": 1,
           "awayScore": 2,
@@ -2163,7 +2163,7 @@
           "eventId": 210532,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:40:39Z"
+          "lastLiveUpdate": "2026-11-21T17:50:32Z"
         }
       ],
       [
@@ -2178,7 +2178,7 @@
           "eventId": 210534,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:40:39Z"
+          "lastLiveUpdate": "2026-11-21T17:50:32Z"
         }
       ],
       [
@@ -2193,7 +2193,7 @@
           "eventId": 210535,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:40:39Z",
+          "lastLiveUpdate": "2026-11-21T17:50:32Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
