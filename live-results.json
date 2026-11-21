@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-21T20:30:37Z",
+  "generatedAt": "2026-11-21T20:40:35Z",
   "events": [
     {
       "eventId": 210448,
@@ -3383,7 +3383,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T20:30:37Z",
+      "updatedAt": "2026-11-21T20:40:35Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3405,7 +3405,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T20:30:37Z",
+      "updatedAt": "2026-11-21T20:40:35Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3428,8 +3428,8 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-21T20:30:37Z",
+      "period": "halftime",
+      "updatedAt": "2026-11-21T20:40:35Z",
       "minute": 45,
       "homeScore": 0,
       "awayScore": 1,
@@ -3448,16 +3448,16 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-21T20:30:37Z",
+      "period": "halftime",
+      "updatedAt": "2026-11-21T20:40:35Z",
       "minute": 45,
       "homeScore": 0,
-      "awayScore": 2,
+      "awayScore": 1,
       "actualScorers": [
         "M. Bidstrup"
       ],
       "scorersVerified": true,
-      "goalIncidents": 2
+      "goalIncidents": 1
     },
     {
       "eventId": 210533,
@@ -3468,8 +3468,8 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-21T20:30:37Z",
+      "period": "halftime",
+      "updatedAt": "2026-11-21T20:40:35Z",
       "minute": 45,
       "homeScore": 0,
       "awayScore": 1,
@@ -3488,8 +3488,8 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-21T20:30:37Z",
+      "period": "halftime",
+      "updatedAt": "2026-11-21T20:40:35Z",
       "minute": 45,
       "homeScore": 0,
       "awayScore": 1,
@@ -3509,7 +3509,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T20:30:37Z"
+      "updatedAt": "2026-11-21T20:40:35Z"
     },
     {
       "eventId": 210529,
@@ -3521,7 +3521,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T20:30:37Z"
+      "updatedAt": "2026-11-21T20:40:35Z"
     },
     {
       "eventId": 210531,
@@ -3533,7 +3533,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T20:30:37Z"
+      "updatedAt": "2026-11-21T20:40:35Z"
     }
   ]
 }
