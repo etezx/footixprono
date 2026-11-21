@@ -24,13 +24,13 @@
         {
           "position": 1,
           "club": "Paris Saint-Germain",
-          "p": 10,
-          "w": 7,
+          "p": 11,
+          "w": 8,
           "d": 2,
           "l": 1,
-          "gf": 22,
-          "ga": 10,
-          "pts": 23,
+          "gf": 25,
+          "ga": 12,
+          "pts": 26,
           "group": "",
           "zone": {
             "key": "cl",
@@ -109,12 +109,12 @@
         {
           "position": 6,
           "club": "OGC Nice",
-          "p": 10,
+          "p": 11,
           "w": 5,
           "d": 2,
-          "l": 3,
-          "gf": 15,
-          "ga": 12,
+          "l": 4,
+          "gf": 17,
+          "ga": 15,
           "pts": 17,
           "group": "",
           "zone": {
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-21T18:20:34Z",
+  "generatedAt": "2026-11-21T19:00:37Z",
   "source": "BSD"
 }
