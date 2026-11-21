@@ -203,6 +203,19 @@
         },
         {
           "position": 13,
+          "club": "Troyes",
+          "p": 11,
+          "w": 3,
+          "d": 2,
+          "l": 6,
+          "gf": 10,
+          "ga": 18,
+          "pts": 11,
+          "group": "",
+          "zone": null
+        },
+        {
+          "position": 14,
           "club": "RC Strasbourg",
           "p": 10,
           "w": 3,
@@ -215,7 +228,7 @@
           "zone": null
         },
         {
-          "position": 14,
+          "position": 15,
           "club": "AJ Auxerre",
           "p": 10,
           "w": 3,
@@ -228,26 +241,13 @@
           "zone": null
         },
         {
-          "position": 15,
+          "position": 16,
           "club": "Le Mans",
           "p": 10,
           "w": 1,
           "d": 5,
           "l": 4,
           "gf": 12,
-          "ga": 19,
-          "pts": 8,
-          "group": "",
-          "zone": null
-        },
-        {
-          "position": 16,
-          "club": "Angers",
-          "p": 10,
-          "w": 2,
-          "d": 2,
-          "l": 6,
-          "gf": 9,
           "ga": 19,
           "pts": 8,
           "group": "",
@@ -259,13 +259,13 @@
         },
         {
           "position": 17,
-          "club": "Troyes",
+          "club": "Angers",
           "p": 10,
           "w": 2,
           "d": 2,
           "l": 6,
-          "gf": 7,
-          "ga": 17,
+          "gf": 9,
+          "ga": 19,
           "pts": 8,
           "group": "",
           "zone": {
@@ -277,12 +277,12 @@
         {
           "position": 18,
           "club": "Le Havre",
-          "p": 10,
+          "p": 11,
           "w": 0,
           "d": 2,
-          "l": 8,
-          "gf": 9,
-          "ga": 22,
+          "l": 9,
+          "gf": 10,
+          "ga": 25,
           "pts": 2,
           "group": "",
           "zone": {
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-20T21:50:35Z",
+  "generatedAt": "2026-11-21T15:30:33Z",
   "source": "BSD"
 }

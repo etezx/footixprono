@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-20T21:50:35Z",
+  "generatedAt": "2026-11-21T15:30:33Z",
   "events": [
     {
       "eventId": 210448,
@@ -3378,12 +3378,12 @@
       "leagueId": 6,
       "home": "Troyes",
       "away": "Le Havre",
-      "kickoff": "2026-11-20T19:45:00Z",
+      "kickoff": "2026-11-20T19:45:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-20T21:50:35Z",
+      "updatedAt": "2026-11-21T15:30:33Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3405,7 +3405,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-20T21:50:35Z"
+      "updatedAt": "2026-11-21T15:30:33Z"
     },
     {
       "eventId": 210527,
@@ -3417,7 +3417,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-20T21:50:35Z"
+      "updatedAt": "2026-11-21T15:30:33Z"
     },
     {
       "eventId": 210528,
@@ -3429,7 +3429,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-20T21:50:35Z"
+      "updatedAt": "2026-11-21T15:30:33Z"
     },
     {
       "eventId": 210533,
@@ -3441,7 +3441,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-20T21:50:35Z"
+      "updatedAt": "2026-11-21T15:30:33Z"
     },
     {
       "eventId": 210534,
@@ -3453,7 +3453,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-20T21:50:35Z"
+      "updatedAt": "2026-11-21T15:30:33Z"
     },
     {
       "eventId": 210532,
@@ -3465,7 +3465,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-20T21:50:35Z"
+      "updatedAt": "2026-11-21T15:30:33Z"
     },
     {
       "eventId": 210529,
@@ -3477,7 +3477,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-20T21:50:35Z"
+      "updatedAt": "2026-11-21T15:30:33Z"
     },
     {
       "eventId": 210531,
@@ -3489,7 +3489,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-20T21:50:35Z"
+      "updatedAt": "2026-11-21T15:30:33Z"
     }
   ]
 }
