@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-21T21:40:35Z",
+  "generatedAt": "2026-11-21T21:49:11Z",
   "events": [
     {
       "eventId": 210448,
@@ -3383,7 +3383,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T21:40:35Z",
+      "updatedAt": "2026-11-21T21:49:11Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3405,7 +3405,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T21:40:35Z",
+      "updatedAt": "2026-11-21T21:49:11Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3420,17 +3420,38 @@
       "goalIncidents": 5
     },
     {
+      "eventId": 210533,
+      "leagueId": 6,
+      "home": "RC Lens",
+      "away": "Toulouse",
+      "kickoff": "2026-11-21T19:45:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-21T21:49:11Z",
+      "minute": null,
+      "homeScore": 1,
+      "awayScore": 1,
+      "actualScorers": [
+        "M. Cuisance",
+        "J. Russell Rowe"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 2
+    },
+    {
       "eventId": 210527,
       "leagueId": 6,
       "home": "AS Monaco",
       "away": "AJ Auxerre",
       "kickoff": "2026-11-21T19:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-11-21T21:40:35Z",
-      "minute": 91,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-21T21:49:11Z",
+      "minute": null,
       "homeScore": 1,
       "awayScore": 1,
       "actualScorers": [
@@ -3446,12 +3467,12 @@
       "home": "LOSC Lille",
       "away": "Olympique Lyonnais",
       "kickoff": "2026-11-21T19:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-11-21T21:40:35Z",
-      "minute": 94,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-21T21:49:11Z",
+      "minute": null,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3461,38 +3482,17 @@
       "goalIncidents": 1
     },
     {
-      "eventId": 210533,
-      "leagueId": 6,
-      "home": "RC Lens",
-      "away": "Toulouse",
-      "kickoff": "2026-11-21T19:45:00Z",
-      "status": "finished",
-      "live": false,
-      "completed": true,
-      "period": "FT",
-      "updatedAt": "2026-11-21T21:40:35Z",
-      "minute": null,
-      "homeScore": 1,
-      "awayScore": 1,
-      "actualScorers": [
-        "M. Cuisance",
-        "J. Russell Rowe"
-      ],
-      "scorersVerified": true,
-      "goalIncidents": 2
-    },
-    {
       "eventId": 210534,
       "leagueId": 6,
       "home": "RC Strasbourg",
       "away": "Stade Brestois",
       "kickoff": "2026-11-21T19:45:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-11-21T21:40:35Z",
-      "minute": 96,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-21T21:49:11Z",
+      "minute": null,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3511,7 +3511,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T21:40:35Z"
+      "updatedAt": "2026-11-21T21:49:11Z"
     },
     {
       "eventId": 210529,
@@ -3523,7 +3523,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T21:40:35Z"
+      "updatedAt": "2026-11-21T21:49:11Z"
     },
     {
       "eventId": 210531,
@@ -3535,7 +3535,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T21:40:35Z"
+      "updatedAt": "2026-11-21T21:49:11Z"
     }
   ]
 }
