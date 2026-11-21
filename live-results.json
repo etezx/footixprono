@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-21T18:00:38Z",
+  "generatedAt": "2026-11-21T18:10:33Z",
   "events": [
     {
       "eventId": 210448,
@@ -3383,7 +3383,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T18:00:38Z",
+      "updatedAt": "2026-11-21T18:10:33Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3405,17 +3405,18 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-21T18:00:38Z",
-      "minute": 78,
+      "updatedAt": "2026-11-21T18:10:33Z",
+      "minute": 88,
       "homeScore": 1,
-      "awayScore": 2,
+      "awayScore": 3,
       "actualScorers": [
+        "F. Torres",
         "D. Doué",
         "S. Mayulu",
         "M. E. A. Amoura"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 210527,
@@ -3427,7 +3428,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T18:00:38Z"
+      "updatedAt": "2026-11-21T18:10:33Z"
     },
     {
       "eventId": 210528,
@@ -3439,7 +3440,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T18:00:38Z"
+      "updatedAt": "2026-11-21T18:10:33Z"
     },
     {
       "eventId": 210533,
@@ -3451,7 +3452,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T18:00:38Z"
+      "updatedAt": "2026-11-21T18:10:33Z"
     },
     {
       "eventId": 210534,
@@ -3463,7 +3464,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T18:00:38Z"
+      "updatedAt": "2026-11-21T18:10:33Z"
     },
     {
       "eventId": 210532,
@@ -3475,7 +3476,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T18:00:38Z"
+      "updatedAt": "2026-11-21T18:10:33Z"
     },
     {
       "eventId": 210529,
@@ -3487,7 +3488,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T18:00:38Z"
+      "updatedAt": "2026-11-21T18:10:33Z"
     },
     {
       "eventId": 210531,
@@ -3499,7 +3500,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T18:00:38Z"
+      "updatedAt": "2026-11-21T18:10:33Z"
     }
   ]
 }
