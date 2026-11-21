@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-21T20:10:33Z",
+  "generatedAt": "2026-11-21T20:20:31Z",
   "events": [
     {
       "eventId": 210448,
@@ -3383,7 +3383,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T20:10:33Z",
+      "updatedAt": "2026-11-21T20:20:31Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3405,7 +3405,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T20:10:33Z",
+      "updatedAt": "2026-11-21T20:20:31Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3429,13 +3429,15 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-21T20:10:33Z",
-      "minute": 25,
+      "updatedAt": "2026-11-21T20:20:31Z",
+      "minute": 35,
       "homeScore": 0,
-      "awayScore": 0,
-      "actualScorers": [],
+      "awayScore": 1,
+      "actualScorers": [
+        "R. Faivre"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 210528,
@@ -3447,8 +3449,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-21T20:10:33Z",
-      "minute": 25,
+      "updatedAt": "2026-11-21T20:20:31Z",
+      "minute": 35,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -3465,8 +3467,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-21T20:10:33Z",
-      "minute": 25,
+      "updatedAt": "2026-11-21T20:20:31Z",
+      "minute": 35,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -3483,8 +3485,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-21T20:10:33Z",
-      "minute": 25,
+      "updatedAt": "2026-11-21T20:20:31Z",
+      "minute": 35,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3503,7 +3505,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T20:10:33Z"
+      "updatedAt": "2026-11-21T20:20:31Z"
     },
     {
       "eventId": 210529,
@@ -3515,7 +3517,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T20:10:33Z"
+      "updatedAt": "2026-11-21T20:20:31Z"
     },
     {
       "eventId": 210531,
@@ -3527,7 +3529,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T20:10:33Z"
+      "updatedAt": "2026-11-21T20:20:31Z"
     }
   ]
 }
