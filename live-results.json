@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-21T19:30:32Z",
+  "generatedAt": "2026-11-21T19:40:36Z",
   "events": [
     {
       "eventId": 210448,
@@ -3383,7 +3383,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T19:30:32Z",
+      "updatedAt": "2026-11-21T19:40:36Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3405,7 +3405,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T19:30:32Z",
+      "updatedAt": "2026-11-21T19:40:36Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3424,48 +3424,48 @@
       "leagueId": 6,
       "home": "AS Monaco",
       "away": "AJ Auxerre",
-      "kickoff": "2026-11-21T19:45:00+00:00",
+      "kickoff": "2026-11-21T19:45:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T19:30:32Z"
+      "updatedAt": "2026-11-21T19:40:36Z"
     },
     {
       "eventId": 210528,
       "leagueId": 6,
       "home": "LOSC Lille",
       "away": "Olympique Lyonnais",
-      "kickoff": "2026-11-21T19:45:00+00:00",
+      "kickoff": "2026-11-21T19:45:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T19:30:32Z"
+      "updatedAt": "2026-11-21T19:40:36Z"
     },
     {
       "eventId": 210533,
       "leagueId": 6,
       "home": "RC Lens",
       "away": "Toulouse",
-      "kickoff": "2026-11-21T19:45:00+00:00",
+      "kickoff": "2026-11-21T19:45:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T19:30:32Z"
+      "updatedAt": "2026-11-21T19:40:36Z"
     },
     {
       "eventId": 210534,
       "leagueId": 6,
       "home": "RC Strasbourg",
       "away": "Stade Brestois",
-      "kickoff": "2026-11-21T19:45:00+00:00",
+      "kickoff": "2026-11-21T19:45:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T19:30:32Z"
+      "updatedAt": "2026-11-21T19:40:36Z"
     },
     {
       "eventId": 210532,
@@ -3477,7 +3477,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T19:30:32Z"
+      "updatedAt": "2026-11-21T19:40:36Z"
     },
     {
       "eventId": 210529,
@@ -3489,7 +3489,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T19:30:32Z"
+      "updatedAt": "2026-11-21T19:40:36Z"
     },
     {
       "eventId": 210531,
@@ -3501,7 +3501,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T19:30:32Z"
+      "updatedAt": "2026-11-21T19:40:36Z"
     }
   ]
 }
