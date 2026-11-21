@@ -2070,7 +2070,7 @@
           "eventId": 210533,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:20:32Z"
+          "lastLiveUpdate": "2026-11-21T17:30:33Z"
         }
       ],
       [
@@ -2093,7 +2093,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-11-21T17:20:32Z"
+          "lastLiveUpdate": "2026-11-21T17:30:33Z"
         }
       ],
       [
@@ -2108,7 +2108,7 @@
           "eventId": 210531,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:20:32Z"
+          "lastLiveUpdate": "2026-11-21T17:30:33Z"
         }
       ],
       [
@@ -2123,7 +2123,7 @@
           "eventId": 210527,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:20:32Z"
+          "lastLiveUpdate": "2026-11-21T17:30:33Z"
         }
       ],
       [
@@ -2138,9 +2138,9 @@
           "eventId": 210530,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-21T17:20:32Z",
-          "minute": 45,
-          "period": "halftime",
+          "lastLiveUpdate": "2026-11-21T17:30:33Z",
+          "minute": 48,
+          "period": "2nd_half",
           "homeScore": 1,
           "awayScore": 2,
           "actualScorers": [
@@ -2163,7 +2163,7 @@
           "eventId": 210532,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:20:32Z"
+          "lastLiveUpdate": "2026-11-21T17:30:33Z"
         }
       ],
       [
@@ -2178,7 +2178,7 @@
           "eventId": 210534,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:20:32Z"
+          "lastLiveUpdate": "2026-11-21T17:30:33Z"
         }
       ],
       [
@@ -2193,7 +2193,7 @@
           "eventId": 210535,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-21T17:20:32Z",
+          "lastLiveUpdate": "2026-11-21T17:30:33Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
