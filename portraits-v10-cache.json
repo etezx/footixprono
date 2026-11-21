@@ -1668,5 +1668,20 @@
     "id": "34180848",
     "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/1d0pyw1621806662.png",
     "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/xm0bng1621806461.jpg"
+  },
+  "jchavez": {
+    "id": "34183923",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/1mevjr1680719627.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/ziw2ev1661435381.jpg"
+  },
+  "msoares": {
+    "id": "34146612",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/k37zu41767887869.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/i40dr71705918561.jpg"
+  },
+  "jnongeboende": {
+    "id": "34228933",
+    "cutout": null,
+    "thumb": null
   }
 }
