@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-21T16:00:35Z",
+  "generatedAt": "2026-11-21T16:10:34Z",
   "events": [
     {
       "eventId": 210448,
@@ -3383,7 +3383,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-21T16:00:35Z",
+      "updatedAt": "2026-11-21T16:10:34Z",
       "minute": null,
       "homeScore": 3,
       "awayScore": 1,
@@ -3400,12 +3400,12 @@
       "leagueId": 6,
       "home": "OGC Nice",
       "away": "Paris Saint-Germain",
-      "kickoff": "2026-11-21T16:15:00+00:00",
+      "kickoff": "2026-11-21T16:15:00Z",
       "status": "notstarted",
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T16:00:35Z"
+      "updatedAt": "2026-11-21T16:10:34Z"
     },
     {
       "eventId": 210527,
@@ -3417,7 +3417,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T16:00:35Z"
+      "updatedAt": "2026-11-21T16:10:34Z"
     },
     {
       "eventId": 210528,
@@ -3429,7 +3429,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T16:00:35Z"
+      "updatedAt": "2026-11-21T16:10:34Z"
     },
     {
       "eventId": 210533,
@@ -3441,7 +3441,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T16:00:35Z"
+      "updatedAt": "2026-11-21T16:10:34Z"
     },
     {
       "eventId": 210534,
@@ -3453,7 +3453,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T16:00:35Z"
+      "updatedAt": "2026-11-21T16:10:34Z"
     },
     {
       "eventId": 210532,
@@ -3465,7 +3465,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T16:00:35Z"
+      "updatedAt": "2026-11-21T16:10:34Z"
     },
     {
       "eventId": 210529,
@@ -3477,7 +3477,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T16:00:35Z"
+      "updatedAt": "2026-11-21T16:10:34Z"
     },
     {
       "eventId": 210531,
@@ -3489,7 +3489,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-21T16:00:35Z"
+      "updatedAt": "2026-11-21T16:10:34Z"
     }
   ]
 }
