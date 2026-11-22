@@ -152,26 +152,26 @@
         {
           "position": 9,
           "club": "Stade Rennais",
-          "p": 10,
+          "p": 11,
           "w": 5,
-          "d": 1,
+          "d": 2,
           "l": 4,
-          "gf": 21,
-          "ga": 21,
-          "pts": 16,
+          "gf": 22,
+          "ga": 22,
+          "pts": 17,
           "group": "",
           "zone": null
         },
         {
           "position": 10,
           "club": "Lorient",
-          "p": 10,
+          "p": 11,
           "w": 4,
-          "d": 3,
+          "d": 4,
           "l": 3,
-          "gf": 9,
-          "ga": 8,
-          "pts": 15,
+          "gf": 10,
+          "ga": 9,
+          "pts": 16,
           "group": "",
           "zone": null
         },
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-22T18:10:36Z",
+  "generatedAt": "2026-11-22T19:00:37Z",
   "source": "BSD"
 }
