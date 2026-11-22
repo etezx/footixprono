@@ -2070,7 +2070,7 @@
           "eventId": 210533,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T14:30:32Z",
+          "lastLiveUpdate": "2026-11-22T14:40:34Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -2101,7 +2101,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-11-22T14:30:32Z"
+          "lastLiveUpdate": "2026-11-22T14:40:34Z"
         }
       ],
       [
@@ -2116,7 +2116,7 @@
           "eventId": 210531,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T14:30:32Z"
+          "lastLiveUpdate": "2026-11-22T14:40:34Z"
         }
       ],
       [
@@ -2131,7 +2131,7 @@
           "eventId": 210527,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T14:30:32Z",
+          "lastLiveUpdate": "2026-11-22T14:40:34Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -2154,7 +2154,7 @@
           "eventId": 210530,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T14:30:32Z",
+          "lastLiveUpdate": "2026-11-22T14:40:34Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 3,
@@ -2180,8 +2180,8 @@
           "eventId": 210532,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-22T14:30:32Z",
-          "minute": 28,
+          "lastLiveUpdate": "2026-11-22T14:40:34Z",
+          "minute": 39,
           "period": "1st_half",
           "homeScore": 0,
           "awayScore": 0,
@@ -2201,7 +2201,7 @@
           "eventId": 210534,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T14:30:32Z",
+          "lastLiveUpdate": "2026-11-22T14:40:34Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -2223,7 +2223,7 @@
           "eventId": 210535,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T14:30:32Z",
+          "lastLiveUpdate": "2026-11-22T14:40:34Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
