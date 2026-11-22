@@ -1683,5 +1683,25 @@
     "id": "34228933",
     "cutout": null,
     "thumb": null
+  },
+  "ezabi": {
+    "id": "34243480",
+    "cutout": null,
+    "thumb": null
+  },
+  "usimbakoli": {
+    "id": "34278827",
+    "cutout": null,
+    "thumb": null
+  },
+  "abermont": {
+    "id": "34298152",
+    "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/kkb8hf1766004760.png",
+    "thumb": "https://r2.thesportsdb.com/images/media/player/thumb/my609p1766003892.jpg"
+  },
+  "mgernigon": {
+    "id": "34439107",
+    "cutout": null,
+    "thumb": null
   }
 }
