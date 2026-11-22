@@ -2070,7 +2070,7 @@
           "eventId": 210533,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:20:31Z",
+          "lastLiveUpdate": "2026-11-22T15:30:33Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -2101,7 +2101,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-11-22T15:20:31Z"
+          "lastLiveUpdate": "2026-11-22T15:30:33Z"
         }
       ],
       [
@@ -2116,7 +2116,7 @@
           "eventId": 210531,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:20:31Z"
+          "lastLiveUpdate": "2026-11-22T15:30:33Z"
         }
       ],
       [
@@ -2131,7 +2131,7 @@
           "eventId": 210527,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:20:31Z",
+          "lastLiveUpdate": "2026-11-22T15:30:33Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -2154,7 +2154,7 @@
           "eventId": 210530,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:20:31Z",
+          "lastLiveUpdate": "2026-11-22T15:30:33Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 3,
@@ -2180,16 +2180,16 @@
           "eventId": 210532,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-22T15:20:31Z",
-          "minute": 62,
+          "lastLiveUpdate": "2026-11-22T15:30:33Z",
+          "minute": 71,
           "period": "2nd_half",
-          "homeScore": 2,
+          "homeScore": 4,
           "awayScore": 0,
           "actualScorers": [
             "L. Koleosho",
             "Zabi"
           ],
-          "scorersVerified": true
+          "scorersVerified": false
         }
       ],
       [
@@ -2204,7 +2204,7 @@
           "eventId": 210534,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:20:31Z",
+          "lastLiveUpdate": "2026-11-22T15:30:33Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -2226,7 +2226,7 @@
           "eventId": 210535,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:20:31Z",
+          "lastLiveUpdate": "2026-11-22T15:30:33Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
