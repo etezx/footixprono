@@ -2070,7 +2070,7 @@
           "eventId": 210533,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:50:32Z",
+          "lastLiveUpdate": "2026-11-22T16:00:31Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -2101,7 +2101,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-11-22T15:50:32Z"
+          "lastLiveUpdate": "2026-11-22T16:00:31Z"
         }
       ],
       [
@@ -2116,7 +2116,7 @@
           "eventId": 210531,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:50:32Z"
+          "lastLiveUpdate": "2026-11-22T16:00:31Z"
         }
       ],
       [
@@ -2131,7 +2131,7 @@
           "eventId": 210527,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:50:32Z",
+          "lastLiveUpdate": "2026-11-22T16:00:31Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -2154,7 +2154,7 @@
           "eventId": 210530,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:50:32Z",
+          "lastLiveUpdate": "2026-11-22T16:00:31Z",
           "period": "FT",
           "homeScore": 2,
           "awayScore": 3,
@@ -2176,21 +2176,21 @@
           "time": "15:00",
           "official": true,
           "source": "bsd",
-          "completed": false,
+          "completed": true,
           "eventId": 210532,
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-11-22T15:50:32Z",
-          "minute": 91,
-          "period": "2nd_half",
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-11-22T16:00:31Z",
+          "period": "FT",
           "homeScore": 4,
           "awayScore": 0,
           "actualScorers": [
+            "D. Coppola",
             "M. López",
             "L. Koleosho",
             "Zabi"
           ],
-          "scorersVerified": false
+          "scorersVerified": true
         }
       ],
       [
@@ -2205,7 +2205,7 @@
           "eventId": 210534,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:50:32Z",
+          "lastLiveUpdate": "2026-11-22T16:00:31Z",
           "period": "FT",
           "homeScore": 0,
           "awayScore": 1,
@@ -2227,7 +2227,7 @@
           "eventId": 210535,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T15:50:32Z",
+          "lastLiveUpdate": "2026-11-22T16:00:31Z",
           "period": "FT",
           "homeScore": 3,
           "awayScore": 1,
