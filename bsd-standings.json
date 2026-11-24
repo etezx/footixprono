@@ -586,6 +586,23 @@
         },
         {
           "position": 15,
+          "club": "Bodø/Glimt",
+          "p": 5,
+          "w": 2,
+          "d": 1,
+          "l": 2,
+          "gf": 5,
+          "ga": 9,
+          "pts": 7,
+          "group": "",
+          "zone": {
+            "key": "playoff",
+            "label": "Qualification Playoffs",
+            "type": "playoff"
+          }
+        },
+        {
+          "position": 16,
           "club": "Inter",
           "p": 4,
           "w": 2,
@@ -602,14 +619,14 @@
           }
         },
         {
-          "position": 16,
+          "position": 17,
           "club": "LASK",
-          "p": 4,
+          "p": 5,
           "w": 2,
           "d": 0,
-          "l": 2,
+          "l": 3,
           "gf": 10,
-          "ga": 9,
+          "ga": 10,
           "pts": 6,
           "group": "",
           "zone": {
@@ -619,7 +636,7 @@
           }
         },
         {
-          "position": 17,
+          "position": 18,
           "club": "Manchester United",
           "p": 4,
           "w": 2,
@@ -636,7 +653,7 @@
           }
         },
         {
-          "position": 18,
+          "position": 19,
           "club": "Galatasaray",
           "p": 4,
           "w": 2,
@@ -653,7 +670,7 @@
           }
         },
         {
-          "position": 19,
+          "position": 20,
           "club": "Fenerbahçe",
           "p": 4,
           "w": 1,
@@ -670,7 +687,7 @@
           }
         },
         {
-          "position": 20,
+          "position": 21,
           "club": "AS Roma",
           "p": 4,
           "w": 1,
@@ -687,7 +704,7 @@
           }
         },
         {
-          "position": 21,
+          "position": 22,
           "club": "Shakhtar Donetsk",
           "p": 4,
           "w": 1,
@@ -704,7 +721,7 @@
           }
         },
         {
-          "position": 22,
+          "position": 23,
           "club": "Viking FK",
           "p": 4,
           "w": 1,
@@ -721,7 +738,7 @@
           }
         },
         {
-          "position": 23,
+          "position": 24,
           "club": "Atlético Madrid",
           "p": 4,
           "w": 1,
@@ -738,7 +755,7 @@
           }
         },
         {
-          "position": 24,
+          "position": 25,
           "club": "PSV Eindhoven",
           "p": 4,
           "w": 1,
@@ -746,23 +763,6 @@
           "l": 2,
           "gf": 3,
           "ga": 4,
-          "pts": 4,
-          "group": "",
-          "zone": {
-            "key": "playoff",
-            "label": "Qualification Playoffs",
-            "type": "playoff"
-          }
-        },
-        {
-          "position": 25,
-          "club": "Bodø/Glimt",
-          "p": 4,
-          "w": 1,
-          "d": 1,
-          "l": 2,
-          "gf": 4,
-          "ga": 9,
           "pts": 4,
           "group": "",
           "zone": null
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-24T19:30:33Z",
+  "generatedAt": "2026-11-24T19:40:34Z",
   "source": "BSD"
 }
