@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-24T21:40:36Z",
+  "generatedAt": "2026-11-24T21:50:35Z",
   "events": [
     {
       "eventId": 210448,
@@ -3511,7 +3511,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T21:40:36Z",
+      "updatedAt": "2026-11-24T21:50:35Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -3534,7 +3534,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T21:40:36Z",
+      "updatedAt": "2026-11-24T21:50:35Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -3555,7 +3555,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T21:40:36Z",
+      "updatedAt": "2026-11-24T21:50:35Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3579,7 +3579,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T21:40:36Z",
+      "updatedAt": "2026-11-24T21:50:35Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3599,7 +3599,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T21:40:36Z",
+      "updatedAt": "2026-11-24T21:50:35Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3619,18 +3619,19 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-24T21:40:36Z",
-      "minute": 81,
-      "homeScore": 3,
+      "updatedAt": "2026-11-24T21:50:35Z",
+      "minute": 91,
+      "homeScore": 5,
       "awayScore": 1,
       "actualScorers": [
+        "Vinícius Jr.",
         "K. Mbappé",
         "J. Bellingham",
         "F. Valverde",
         "I. Perišić"
       ],
       "scorersVerified": true,
-      "goalIncidents": 4
+      "goalIncidents": 6
     },
     {
       "eventId": 601035,
@@ -3638,21 +3639,22 @@
       "home": "Manchester City",
       "away": "SSC Napoli",
       "kickoff": "2026-11-24T20:00:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-11-24T21:40:36Z",
-      "minute": 82,
-      "homeScore": 1,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-24T21:50:35Z",
+      "minute": null,
+      "homeScore": 2,
       "awayScore": 2,
       "actualScorers": [
+        "R. Cherki",
         "N. Lang",
         "A. Bouaddi",
         "R. Højlund"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 601049,
@@ -3664,10 +3666,10 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-24T21:40:36Z",
+      "updatedAt": "2026-11-24T21:50:35Z",
       "homeScore": 1,
       "awayScore": 1,
-      "minute": 84,
+      "minute": 94,
       "actualScorers": [
         "M. Beier",
         "V. Gyökeres"
@@ -3685,8 +3687,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-24T21:40:36Z",
-      "minute": 79,
+      "updatedAt": "2026-11-24T21:50:35Z",
+      "minute": 89,
       "homeScore": 1,
       "awayScore": 0,
       "actualScorers": [
@@ -3705,8 +3707,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-24T21:40:36Z",
-      "minute": 80,
+      "updatedAt": "2026-11-24T21:50:35Z",
+      "minute": 90,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3725,16 +3727,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-24T21:40:36Z",
-      "homeScore": 2,
+      "updatedAt": "2026-11-24T21:50:35Z",
+      "homeScore": 3,
       "awayScore": 1,
-      "minute": 83,
+      "minute": 93,
       "actualScorers": [
         "M. Udol",
         "A. Nusa",
         "D. Raum"
       ],
-      "scorersVerified": true,
+      "scorersVerified": false,
       "goalIncidents": 3
     },
     {
@@ -3743,12 +3745,12 @@
       "home": "ŠK Slovan Bratislava",
       "away": "Real Betis",
       "kickoff": "2026-11-24T20:00:00Z",
-      "status": "live",
-      "live": true,
-      "completed": false,
-      "period": "2nd_half",
-      "updatedAt": "2026-11-24T21:40:36Z",
-      "minute": 84,
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-24T21:50:35Z",
+      "minute": null,
       "homeScore": 0,
       "awayScore": 2,
       "actualScorers": [
@@ -3767,7 +3769,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T21:40:36Z"
+      "updatedAt": "2026-11-24T21:50:35Z"
     },
     {
       "eventId": 601156,
@@ -3779,7 +3781,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T21:40:36Z"
+      "updatedAt": "2026-11-24T21:50:35Z"
     },
     {
       "eventId": 601039,
@@ -3791,7 +3793,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T21:40:36Z"
+      "updatedAt": "2026-11-24T21:50:35Z"
     },
     {
       "eventId": 601041,
@@ -3803,7 +3805,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T21:40:36Z"
+      "updatedAt": "2026-11-24T21:50:35Z"
     },
     {
       "eventId": 601058,
@@ -3815,7 +3817,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T21:40:36Z"
+      "updatedAt": "2026-11-24T21:50:35Z"
     },
     {
       "eventId": 601059,
@@ -3827,7 +3829,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T21:40:36Z"
+      "updatedAt": "2026-11-24T21:50:35Z"
     },
     {
       "eventId": 601088,
@@ -3839,7 +3841,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T21:40:36Z"
+      "updatedAt": "2026-11-24T21:50:35Z"
     },
     {
       "eventId": 601094,
@@ -3851,7 +3853,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T21:40:36Z"
+      "updatedAt": "2026-11-24T21:50:35Z"
     },
     {
       "eventId": 601132,
@@ -3863,7 +3865,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T21:40:36Z"
+      "updatedAt": "2026-11-24T21:50:35Z"
     }
   ]
 }
