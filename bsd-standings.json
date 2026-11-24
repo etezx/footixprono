@@ -434,12 +434,12 @@
         {
           "position": 6,
           "club": "Aston Villa",
-          "p": 4,
+          "p": 5,
           "w": 3,
           "d": 0,
-          "l": 1,
+          "l": 2,
           "gf": 12,
-          "ga": 6,
+          "ga": 7,
           "pts": 9,
           "group": "",
           "zone": {
@@ -552,6 +552,23 @@
         },
         {
           "position": 13,
+          "club": "Galatasaray",
+          "p": 5,
+          "w": 3,
+          "d": 0,
+          "l": 2,
+          "gf": 9,
+          "ga": 9,
+          "pts": 9,
+          "group": "",
+          "zone": {
+            "key": "playoff",
+            "label": "Qualification Playoffs",
+            "type": "playoff"
+          }
+        },
+        {
+          "position": 14,
           "club": "FC Bayern München",
           "p": 4,
           "w": 2,
@@ -568,7 +585,7 @@
           }
         },
         {
-          "position": 14,
+          "position": 15,
           "club": "VfB Stuttgart",
           "p": 4,
           "w": 2,
@@ -585,7 +602,7 @@
           }
         },
         {
-          "position": 15,
+          "position": 16,
           "club": "Bodø/Glimt",
           "p": 5,
           "w": 2,
@@ -602,7 +619,7 @@
           }
         },
         {
-          "position": 16,
+          "position": 17,
           "club": "Inter",
           "p": 4,
           "w": 2,
@@ -619,7 +636,7 @@
           }
         },
         {
-          "position": 17,
+          "position": 18,
           "club": "LASK",
           "p": 5,
           "w": 2,
@@ -636,7 +653,7 @@
           }
         },
         {
-          "position": 18,
+          "position": 19,
           "club": "Manchester United",
           "p": 4,
           "w": 2,
@@ -644,23 +661,6 @@
           "l": 2,
           "gf": 8,
           "ga": 8,
-          "pts": 6,
-          "group": "",
-          "zone": {
-            "key": "playoff",
-            "label": "Qualification Playoffs",
-            "type": "playoff"
-          }
-        },
-        {
-          "position": 19,
-          "club": "Galatasaray",
-          "p": 4,
-          "w": 2,
-          "d": 0,
-          "l": 2,
-          "gf": 8,
-          "ga": 9,
           "pts": 6,
           "group": "",
           "zone": {
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-24T19:40:34Z",
+  "generatedAt": "2026-11-24T19:50:46Z",
   "source": "BSD"
 }
