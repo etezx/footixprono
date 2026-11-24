@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-24T20:10:34Z",
+  "generatedAt": "2026-11-24T20:22:13Z",
   "events": [
     {
       "eventId": 210448,
@@ -3511,7 +3511,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:10:34Z",
+      "updatedAt": "2026-11-24T20:22:13Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -3534,7 +3534,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:10:34Z",
+      "updatedAt": "2026-11-24T20:22:13Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -3555,7 +3555,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:10:34Z",
+      "updatedAt": "2026-11-24T20:22:13Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3579,7 +3579,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:10:34Z",
+      "updatedAt": "2026-11-24T20:22:13Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3599,7 +3599,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:10:34Z",
+      "updatedAt": "2026-11-24T20:22:13Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3619,8 +3619,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-24T20:10:34Z",
-      "minute": 10,
+      "updatedAt": "2026-11-24T20:22:13Z",
+      "minute": 21,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -3637,8 +3637,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-24T20:10:34Z",
-      "minute": 8,
+      "updatedAt": "2026-11-24T20:22:13Z",
+      "minute": 19,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -3655,10 +3655,10 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-24T20:10:34Z",
+      "updatedAt": "2026-11-24T20:22:13Z",
       "homeScore": 1,
       "awayScore": 0,
-      "minute": 10,
+      "minute": 20,
       "actualScorers": [],
       "scorersVerified": false,
       "goalIncidents": 0
@@ -3673,8 +3673,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-24T20:10:34Z",
-      "minute": 7,
+      "updatedAt": "2026-11-24T20:22:13Z",
+      "minute": 18,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -3691,8 +3691,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-24T20:10:34Z",
-      "minute": 8,
+      "updatedAt": "2026-11-24T20:22:13Z",
+      "minute": 19,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3711,10 +3711,10 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-24T20:10:34Z",
+      "updatedAt": "2026-11-24T20:22:13Z",
       "homeScore": 2,
       "awayScore": 0,
-      "minute": 10,
+      "minute": 20,
       "actualScorers": [
         "D. Raum"
       ],
@@ -3731,8 +3731,8 @@
       "live": true,
       "completed": false,
       "period": "1st_half",
-      "updatedAt": "2026-11-24T20:10:34Z",
-      "minute": 10,
+      "updatedAt": "2026-11-24T20:22:13Z",
+      "minute": 21,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -3749,7 +3749,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:10:34Z"
+      "updatedAt": "2026-11-24T20:22:13Z"
     },
     {
       "eventId": 601156,
@@ -3761,7 +3761,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:10:34Z"
+      "updatedAt": "2026-11-24T20:22:13Z"
     },
     {
       "eventId": 601039,
@@ -3773,7 +3773,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:10:34Z"
+      "updatedAt": "2026-11-24T20:22:13Z"
     },
     {
       "eventId": 601041,
@@ -3785,7 +3785,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:10:34Z"
+      "updatedAt": "2026-11-24T20:22:13Z"
     },
     {
       "eventId": 601058,
@@ -3797,7 +3797,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:10:34Z"
+      "updatedAt": "2026-11-24T20:22:13Z"
     },
     {
       "eventId": 601059,
@@ -3809,7 +3809,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:10:34Z"
+      "updatedAt": "2026-11-24T20:22:13Z"
     },
     {
       "eventId": 601088,
@@ -3821,7 +3821,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:10:34Z"
+      "updatedAt": "2026-11-24T20:22:13Z"
     },
     {
       "eventId": 601094,
@@ -3833,7 +3833,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:10:34Z"
+      "updatedAt": "2026-11-24T20:22:13Z"
     },
     {
       "eventId": 601132,
@@ -3845,7 +3845,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:10:34Z"
+      "updatedAt": "2026-11-24T20:22:13Z"
     }
   ]
 }
