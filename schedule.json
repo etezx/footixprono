@@ -2101,7 +2101,7 @@
           "status": "finished",
           "live": false,
           "completed": true,
-          "lastLiveUpdate": "2026-11-22T21:40:31Z",
+          "lastLiveUpdate": "2026-11-24T17:00:38Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 1,
@@ -2120,22 +2120,22 @@
           "time": "20:45",
           "official": true,
           "source": "bsd",
-          "completed": false,
+          "completed": true,
           "eventId": 210531,
-          "status": "live",
-          "live": true,
-          "lastLiveUpdate": "2026-11-22T21:40:31Z",
-          "minute": 95,
-          "period": "2nd_half",
+          "status": "finished",
+          "live": false,
+          "lastLiveUpdate": "2026-11-24T17:00:38Z",
+          "period": "FT",
           "homeScore": 2,
           "awayScore": 3,
           "actualScorers": [
+            "J. Vercruysse",
             "E. Colas",
             "L. Mafouta",
             "I. Paixão",
             "A. Gouiri"
           ],
-          "scorersVerified": false
+          "scorersVerified": true
         }
       ],
       [
@@ -2199,7 +2199,7 @@
           "eventId": 210532,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-22T21:40:31Z",
+          "lastLiveUpdate": "2026-11-24T17:00:38Z",
           "period": "FT",
           "homeScore": 4,
           "awayScore": 0,
