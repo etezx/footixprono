@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-24T20:40:37Z",
+  "generatedAt": "2026-11-24T20:50:39Z",
   "events": [
     {
       "eventId": 210448,
@@ -3511,7 +3511,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:40:37Z",
+      "updatedAt": "2026-11-24T20:50:39Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -3534,7 +3534,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:40:37Z",
+      "updatedAt": "2026-11-24T20:50:39Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -3555,7 +3555,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:40:37Z",
+      "updatedAt": "2026-11-24T20:50:39Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3579,7 +3579,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:40:37Z",
+      "updatedAt": "2026-11-24T20:50:39Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3599,7 +3599,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:40:37Z",
+      "updatedAt": "2026-11-24T20:50:39Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3618,9 +3618,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-24T20:40:37Z",
-      "minute": 40,
+      "period": "halftime",
+      "updatedAt": "2026-11-24T20:50:39Z",
+      "minute": 45,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3638,9 +3638,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-24T20:40:37Z",
-      "minute": 38,
+      "period": "halftime",
+      "updatedAt": "2026-11-24T20:50:39Z",
+      "minute": 45,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -3656,11 +3656,11 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-24T20:40:37Z",
+      "period": "halftime",
+      "updatedAt": "2026-11-24T20:50:39Z",
       "homeScore": 1,
       "awayScore": 0,
-      "minute": 40,
+      "minute": 45,
       "actualScorers": [],
       "scorersVerified": false,
       "goalIncidents": 0
@@ -3674,9 +3674,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-24T20:40:37Z",
-      "minute": 37,
+      "period": "halftime",
+      "updatedAt": "2026-11-24T20:50:39Z",
+      "minute": 45,
       "homeScore": 0,
       "awayScore": 0,
       "actualScorers": [],
@@ -3692,9 +3692,9 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-24T20:40:37Z",
-      "minute": 38,
+      "period": "halftime",
+      "updatedAt": "2026-11-24T20:50:39Z",
+      "minute": 45,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3712,11 +3712,11 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-24T20:40:37Z",
+      "period": "halftime",
+      "updatedAt": "2026-11-24T20:50:39Z",
       "homeScore": 2,
       "awayScore": 0,
-      "minute": 40,
+      "minute": 45,
       "actualScorers": [
         "D. Raum"
       ],
@@ -3732,14 +3732,16 @@
       "status": "live",
       "live": true,
       "completed": false,
-      "period": "1st_half",
-      "updatedAt": "2026-11-24T20:40:37Z",
-      "minute": 40,
+      "period": "halftime",
+      "updatedAt": "2026-11-24T20:50:39Z",
+      "minute": 45,
       "homeScore": 0,
-      "awayScore": 0,
-      "actualScorers": [],
+      "awayScore": 1,
+      "actualScorers": [
+        "C. Hernández"
+      ],
       "scorersVerified": true,
-      "goalIncidents": 0
+      "goalIncidents": 1
     },
     {
       "eventId": 601099,
@@ -3751,7 +3753,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:40:37Z"
+      "updatedAt": "2026-11-24T20:50:39Z"
     },
     {
       "eventId": 601156,
@@ -3763,7 +3765,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:40:37Z"
+      "updatedAt": "2026-11-24T20:50:39Z"
     },
     {
       "eventId": 601039,
@@ -3775,7 +3777,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:40:37Z"
+      "updatedAt": "2026-11-24T20:50:39Z"
     },
     {
       "eventId": 601041,
@@ -3787,7 +3789,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:40:37Z"
+      "updatedAt": "2026-11-24T20:50:39Z"
     },
     {
       "eventId": 601058,
@@ -3799,7 +3801,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:40:37Z"
+      "updatedAt": "2026-11-24T20:50:39Z"
     },
     {
       "eventId": 601059,
@@ -3811,7 +3813,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:40:37Z"
+      "updatedAt": "2026-11-24T20:50:39Z"
     },
     {
       "eventId": 601088,
@@ -3823,7 +3825,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:40:37Z"
+      "updatedAt": "2026-11-24T20:50:39Z"
     },
     {
       "eventId": 601094,
@@ -3835,7 +3837,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:40:37Z"
+      "updatedAt": "2026-11-24T20:50:39Z"
     },
     {
       "eventId": 601132,
@@ -3847,7 +3849,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:40:37Z"
+      "updatedAt": "2026-11-24T20:50:39Z"
     }
   ]
 }
