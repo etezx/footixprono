@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-24T20:00:33Z",
+  "generatedAt": "2026-11-24T20:10:34Z",
   "events": [
     {
       "eventId": 210448,
@@ -3511,7 +3511,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:00:33Z",
+      "updatedAt": "2026-11-24T20:10:34Z",
       "minute": null,
       "homeScore": 4,
       "awayScore": 0,
@@ -3534,7 +3534,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:00:33Z",
+      "updatedAt": "2026-11-24T20:10:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 1,
@@ -3555,7 +3555,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:00:33Z",
+      "updatedAt": "2026-11-24T20:10:34Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 3,
@@ -3579,7 +3579,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:00:33Z",
+      "updatedAt": "2026-11-24T20:10:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3599,7 +3599,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T20:00:33Z",
+      "updatedAt": "2026-11-24T20:10:34Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3614,88 +3614,130 @@
       "leagueId": 7,
       "home": "Real Madrid",
       "away": "PSV Eindhoven",
-      "kickoff": "2026-11-24T20:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-11-24T20:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-24T20:10:34Z",
+      "minute": 10,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601035,
       "leagueId": 7,
       "home": "Manchester City",
       "away": "SSC Napoli",
-      "kickoff": "2026-11-24T20:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-11-24T20:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-24T20:10:34Z",
+      "minute": 8,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601049,
       "leagueId": 7,
       "home": "Arsenal",
       "away": "Borussia Dortmund",
-      "kickoff": "2026-11-24T20:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-11-24T20:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z",
-      "homeScore": 0,
-      "awayScore": 0
+      "period": "1st_half",
+      "updatedAt": "2026-11-24T20:10:34Z",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minute": 10,
+      "actualScorers": [],
+      "scorersVerified": false,
+      "goalIncidents": 0
     },
     {
       "eventId": 601106,
       "leagueId": 7,
       "home": "Como",
       "away": "AEK Athens",
-      "kickoff": "2026-11-24T20:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-11-24T20:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-24T20:10:34Z",
+      "minute": 7,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601128,
       "leagueId": 7,
       "home": "Feyenoord",
       "away": "FC Porto",
-      "kickoff": "2026-11-24T20:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-11-24T20:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-24T20:10:34Z",
+      "minute": 8,
+      "homeScore": 0,
+      "awayScore": 1,
+      "actualScorers": [
+        "O. Targhalline"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 1
     },
     {
       "eventId": 601151,
       "leagueId": 7,
       "home": "RB Leipzig",
       "away": "RC Lens",
-      "kickoff": "2026-11-24T20:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-11-24T20:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z",
-      "homeScore": 0,
-      "awayScore": 0
+      "period": "1st_half",
+      "updatedAt": "2026-11-24T20:10:34Z",
+      "homeScore": 2,
+      "awayScore": 0,
+      "minute": 10,
+      "actualScorers": [
+        "D. Raum"
+      ],
+      "scorersVerified": false,
+      "goalIncidents": 1
     },
     {
       "eventId": 601155,
       "leagueId": 7,
       "home": "ŠK Slovan Bratislava",
       "away": "Real Betis",
-      "kickoff": "2026-11-24T20:00:00+00:00",
-      "status": "notstarted",
-      "live": false,
+      "kickoff": "2026-11-24T20:00:00Z",
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-24T20:10:34Z",
+      "minute": 10,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 601099,
@@ -3707,7 +3749,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "updatedAt": "2026-11-24T20:10:34Z"
     },
     {
       "eventId": 601156,
@@ -3719,7 +3761,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "updatedAt": "2026-11-24T20:10:34Z"
     },
     {
       "eventId": 601039,
@@ -3731,7 +3773,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "updatedAt": "2026-11-24T20:10:34Z"
     },
     {
       "eventId": 601041,
@@ -3743,7 +3785,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "updatedAt": "2026-11-24T20:10:34Z"
     },
     {
       "eventId": 601058,
@@ -3755,7 +3797,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "updatedAt": "2026-11-24T20:10:34Z"
     },
     {
       "eventId": 601059,
@@ -3767,7 +3809,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "updatedAt": "2026-11-24T20:10:34Z"
     },
     {
       "eventId": 601088,
@@ -3779,7 +3821,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "updatedAt": "2026-11-24T20:10:34Z"
     },
     {
       "eventId": 601094,
@@ -3791,7 +3833,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "updatedAt": "2026-11-24T20:10:34Z"
     },
     {
       "eventId": 601132,
@@ -3803,7 +3845,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T20:00:33Z"
+      "updatedAt": "2026-11-24T20:10:34Z"
     }
   ]
 }
