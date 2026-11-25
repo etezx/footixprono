@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-25T21:30:32Z",
+  "generatedAt": "2026-11-25T21:40:43Z",
   "events": [
     {
       "eventId": 210448,
@@ -3579,7 +3579,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3599,7 +3599,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3619,7 +3619,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "minute": null,
       "homeScore": 5,
       "awayScore": 1,
@@ -3643,7 +3643,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "minute": null,
       "homeScore": 2,
       "awayScore": 2,
@@ -3666,7 +3666,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null,
@@ -3687,7 +3687,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3707,7 +3707,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -3727,7 +3727,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "homeScore": 3,
       "awayScore": 1,
       "minute": null,
@@ -3749,7 +3749,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 2,
@@ -3769,7 +3769,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 4,
@@ -3792,7 +3792,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -3812,10 +3812,10 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-25T21:30:32Z",
+      "updatedAt": "2026-11-25T21:40:43Z",
       "homeScore": 2,
       "awayScore": 0,
-      "minute": 72,
+      "minute": 82,
       "actualScorers": [
         "J. Álvarez",
         "A. Sørloth"
@@ -3833,15 +3833,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-25T21:30:32Z",
-      "minute": 71,
-      "homeScore": 1,
+      "updatedAt": "2026-11-25T21:40:43Z",
+      "minute": 81,
+      "homeScore": 2,
       "awayScore": 0,
       "actualScorers": [
+        "L. Martínez",
         "P. Sučić"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 601058,
@@ -3853,15 +3854,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-25T21:30:32Z",
-      "minute": 69,
+      "updatedAt": "2026-11-25T21:40:43Z",
+      "minute": 79,
       "homeScore": 0,
-      "awayScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "F. Wirtz",
         "A. Isak"
       ],
       "scorersVerified": true,
-      "goalIncidents": 1
+      "goalIncidents": 2
     },
     {
       "eventId": 601059,
@@ -3873,17 +3875,18 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-25T21:30:32Z",
-      "minute": 71,
+      "updatedAt": "2026-11-25T21:40:43Z",
+      "minute": 81,
       "homeScore": 2,
-      "awayScore": 1,
+      "awayScore": 2,
       "actualScorers": [
+        "D. Malen",
         "O. Dembélé",
         "I. Zabarnyi",
         "M. Hermoso"
       ],
       "scorersVerified": true,
-      "goalIncidents": 3
+      "goalIncidents": 4
     },
     {
       "eventId": 601088,
@@ -3895,16 +3898,16 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-25T21:30:32Z",
-      "minute": 71,
-      "homeScore": 1,
+      "updatedAt": "2026-11-25T21:40:43Z",
+      "minute": 81,
+      "homeScore": 2,
       "awayScore": 2,
       "actualScorers": [
-        "B. Fernandes",
-        "L. J. Suárez"
+        "L. J. Suárez",
+        "B. Fernandes"
       ],
-      "scorersVerified": false,
-      "goalIncidents": 2
+      "scorersVerified": true,
+      "goalIncidents": 4
     },
     {
       "eventId": 601094,
@@ -3916,8 +3919,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-25T21:30:32Z",
-      "minute": 73,
+      "updatedAt": "2026-11-25T21:40:43Z",
+      "minute": 82,
       "homeScore": 2,
       "awayScore": 1,
       "actualScorers": [
@@ -3938,8 +3941,8 @@
       "live": true,
       "completed": false,
       "period": "2nd_half",
-      "updatedAt": "2026-11-25T21:30:32Z",
-      "minute": 70,
+      "updatedAt": "2026-11-25T21:40:43Z",
+      "minute": 80,
       "homeScore": 0,
       "awayScore": 1,
       "actualScorers": [
@@ -3958,7 +3961,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-25T21:30:32Z"
+      "updatedAt": "2026-11-25T21:40:43Z"
     }
   ]
 }
