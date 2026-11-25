@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-24T22:00:45Z",
+  "generatedAt": "2026-11-25T17:00:35Z",
   "events": [
     {
       "eventId": 210448,
@@ -3579,7 +3579,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T22:00:45Z",
+      "updatedAt": "2026-11-25T17:00:35Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3599,7 +3599,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T22:00:45Z",
+      "updatedAt": "2026-11-25T17:00:35Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3610,59 +3610,16 @@
       "goalIncidents": 1
     },
     {
-      "eventId": 601035,
-      "leagueId": 7,
-      "home": "Manchester City",
-      "away": "SSC Napoli",
-      "kickoff": "2026-11-24T20:00:00+00:00",
-      "status": "finished",
-      "live": false,
-      "completed": true,
-      "period": "FT",
-      "updatedAt": "2026-11-24T22:00:45Z",
-      "minute": null,
-      "homeScore": 2,
-      "awayScore": 2,
-      "actualScorers": [
-        "R. Cherki",
-        "N. Lang",
-        "A. Bouaddi",
-        "R. Højlund"
-      ],
-      "scorersVerified": true,
-      "goalIncidents": 4
-    },
-    {
-      "eventId": 601155,
-      "leagueId": 7,
-      "home": "ŠK Slovan Bratislava",
-      "away": "Real Betis",
-      "kickoff": "2026-11-24T20:00:00+00:00",
-      "status": "finished",
-      "live": false,
-      "completed": true,
-      "period": "FT",
-      "updatedAt": "2026-11-24T22:00:45Z",
-      "minute": null,
-      "homeScore": 0,
-      "awayScore": 2,
-      "actualScorers": [
-        "C. Hernández"
-      ],
-      "scorersVerified": true,
-      "goalIncidents": 2
-    },
-    {
       "eventId": 601026,
       "leagueId": 7,
       "home": "Real Madrid",
       "away": "PSV Eindhoven",
-      "kickoff": "2026-11-24T20:00:00Z",
+      "kickoff": "2026-11-24T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T22:00:45Z",
+      "updatedAt": "2026-11-25T17:00:35Z",
       "minute": null,
       "homeScore": 5,
       "awayScore": 1,
@@ -3677,16 +3634,39 @@
       "goalIncidents": 6
     },
     {
-      "eventId": 601049,
+      "eventId": 601035,
       "leagueId": 7,
-      "home": "Arsenal",
-      "away": "Borussia Dortmund",
-      "kickoff": "2026-11-24T20:00:00Z",
+      "home": "Manchester City",
+      "away": "SSC Napoli",
+      "kickoff": "2026-11-24T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T22:00:45Z",
+      "updatedAt": "2026-11-25T17:00:35Z",
+      "minute": null,
+      "homeScore": 2,
+      "awayScore": 2,
+      "actualScorers": [
+        "R. Cherki",
+        "N. Lang",
+        "A. Bouaddi",
+        "R. Højlund"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 4
+    },
+    {
+      "eventId": 601049,
+      "leagueId": 7,
+      "home": "Arsenal",
+      "away": "Borussia Dortmund",
+      "kickoff": "2026-11-24T20:00:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-25T17:00:35Z",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null,
@@ -3702,12 +3682,12 @@
       "leagueId": 7,
       "home": "Como",
       "away": "AEK Athens",
-      "kickoff": "2026-11-24T20:00:00Z",
+      "kickoff": "2026-11-24T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T22:00:45Z",
+      "updatedAt": "2026-11-25T17:00:35Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3722,12 +3702,12 @@
       "leagueId": 7,
       "home": "Feyenoord",
       "away": "FC Porto",
-      "kickoff": "2026-11-24T20:00:00Z",
+      "kickoff": "2026-11-24T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T22:00:45Z",
+      "updatedAt": "2026-11-25T17:00:35Z",
       "minute": null,
       "homeScore": 0,
       "awayScore": 1,
@@ -3742,12 +3722,12 @@
       "leagueId": 7,
       "home": "RB Leipzig",
       "away": "RC Lens",
-      "kickoff": "2026-11-24T20:00:00Z",
+      "kickoff": "2026-11-24T20:00:00+00:00",
       "status": "finished",
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-24T22:00:45Z",
+      "updatedAt": "2026-11-25T17:00:35Z",
       "homeScore": 3,
       "awayScore": 1,
       "minute": null,
@@ -3760,6 +3740,26 @@
       "goalIncidents": 4
     },
     {
+      "eventId": 601155,
+      "leagueId": 7,
+      "home": "ŠK Slovan Bratislava",
+      "away": "Real Betis",
+      "kickoff": "2026-11-24T20:00:00+00:00",
+      "status": "finished",
+      "live": false,
+      "completed": true,
+      "period": "FT",
+      "updatedAt": "2026-11-25T17:00:35Z",
+      "minute": null,
+      "homeScore": 0,
+      "awayScore": 2,
+      "actualScorers": [
+        "C. Hernández"
+      ],
+      "scorersVerified": true,
+      "goalIncidents": 2
+    },
+    {
       "eventId": 601099,
       "leagueId": 7,
       "home": "Sabah FK",
@@ -3769,7 +3769,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T22:00:45Z"
+      "updatedAt": "2026-11-25T17:00:35Z"
     },
     {
       "eventId": 601156,
@@ -3781,7 +3781,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T22:00:45Z"
+      "updatedAt": "2026-11-25T17:00:35Z"
     },
     {
       "eventId": 601039,
@@ -3793,7 +3793,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T22:00:45Z"
+      "updatedAt": "2026-11-25T17:00:35Z"
     },
     {
       "eventId": 601041,
@@ -3805,7 +3805,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T22:00:45Z"
+      "updatedAt": "2026-11-25T17:00:35Z"
     },
     {
       "eventId": 601058,
@@ -3817,7 +3817,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T22:00:45Z"
+      "updatedAt": "2026-11-25T17:00:35Z"
     },
     {
       "eventId": 601059,
@@ -3829,7 +3829,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T22:00:45Z"
+      "updatedAt": "2026-11-25T17:00:35Z"
     },
     {
       "eventId": 601088,
@@ -3841,7 +3841,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T22:00:45Z"
+      "updatedAt": "2026-11-25T17:00:35Z"
     },
     {
       "eventId": 601094,
@@ -3853,7 +3853,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T22:00:45Z"
+      "updatedAt": "2026-11-25T17:00:35Z"
     },
     {
       "eventId": 601132,
@@ -3865,7 +3865,19 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-24T22:00:45Z"
+      "updatedAt": "2026-11-25T17:00:35Z"
+    },
+    {
+      "eventId": 210543,
+      "leagueId": 6,
+      "home": "Stade Brestois",
+      "away": "Paris FC",
+      "kickoff": "2026-11-27T19:45:00+00:00",
+      "status": "notstarted",
+      "live": false,
+      "completed": false,
+      "period": "",
+      "updatedAt": "2026-11-25T17:00:35Z"
     }
   ]
 }
