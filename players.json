@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T16:16:44.503131+00:00",
+  "updated_at": "2026-11-25T15:58:34.132940+00:00",
   "source": "ESPN rosters · milieux et attaquants",
   "clubs": {
     "OLYMPIQUE DE MARSEILLE": [
@@ -164,6 +164,7 @@
       "Florian Thauvin",
       "Franjo Ivanovic",
       "Junior Kadile",
+      "Leopold Joursky",
       "Mezian Soares",
       "Michaël Cuisance",
       "Michal Skoras",
@@ -336,5 +337,5 @@
     ]
   },
   "clubs_updated": 18,
-  "players_fetched": 296
+  "players_fetched": 297
 }
