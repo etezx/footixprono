@@ -2276,7 +2276,7 @@
           "eventId": 210536,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:30:36Z"
+          "lastLiveUpdate": "2026-11-27T20:40:36Z"
         }
       ],
       [
@@ -2291,7 +2291,7 @@
           "eventId": 210537,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:30:36Z"
+          "lastLiveUpdate": "2026-11-27T20:40:36Z"
         }
       ],
       [
@@ -2306,9 +2306,9 @@
           "eventId": 210543,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-27T20:30:36Z",
-          "minute": 44,
-          "period": "1st_half",
+          "lastLiveUpdate": "2026-11-27T20:40:36Z",
+          "minute": 45,
+          "period": "halftime",
           "homeScore": 1,
           "awayScore": 0,
           "actualScorers": [
@@ -2329,7 +2329,7 @@
           "eventId": 210538,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:30:36Z"
+          "lastLiveUpdate": "2026-11-27T20:40:36Z"
         }
       ],
       [
@@ -2355,7 +2355,7 @@
           "eventId": 210541,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:30:36Z"
+          "lastLiveUpdate": "2026-11-27T20:40:36Z"
         }
       ],
       [
@@ -2370,7 +2370,7 @@
           "eventId": 210540,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:30:36Z"
+          "lastLiveUpdate": "2026-11-27T20:40:36Z"
         }
       ],
       [
@@ -2385,7 +2385,7 @@
           "eventId": 210542,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:30:36Z"
+          "lastLiveUpdate": "2026-11-27T20:40:36Z"
         }
       ],
       [
@@ -2397,7 +2397,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-11-27T20:30:36Z"
+          "lastLiveUpdate": "2026-11-27T20:40:36Z"
         }
       ]
     ]
