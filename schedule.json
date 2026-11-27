@@ -2271,8 +2271,12 @@
           "date": "2026-11-28",
           "time": "17:15",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210536,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-27T19:00:32Z"
         }
       ],
       [
@@ -2282,8 +2286,12 @@
           "date": "2026-11-29",
           "time": "15:00",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210537,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-27T19:00:32Z"
         }
       ],
       [
@@ -2298,7 +2306,7 @@
           "eventId": 210543,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-25T22:00:32Z"
+          "lastLiveUpdate": "2026-11-27T19:00:32Z"
         }
       ],
       [
@@ -2308,8 +2316,12 @@
           "date": "2026-11-28",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210538,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-27T19:00:32Z"
         }
       ],
       [
@@ -2330,8 +2342,12 @@
           "date": "2026-11-29",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210541,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-27T19:00:32Z"
         }
       ],
       [
@@ -2341,8 +2357,12 @@
           "date": "2026-11-28",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210540,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-27T19:00:32Z"
         }
       ],
       [
@@ -2352,13 +2372,25 @@
           "date": "2026-11-28",
           "time": "20:45",
           "official": true,
-          "source": "ESPN public scoreboard",
-          "completed": false
+          "source": "bsd",
+          "completed": false,
+          "eventId": 210542,
+          "status": "notstarted",
+          "live": false,
+          "lastLiveUpdate": "2026-11-27T19:00:32Z"
         }
       ],
       [
         "TOULOUSE FC",
-        "STADE RENNAIS FC"
+        "STADE RENNAIS FC",
+        {
+          "source": "bsd",
+          "eventId": 210544,
+          "status": "notstarted",
+          "live": false,
+          "completed": false,
+          "lastLiveUpdate": "2026-11-27T19:00:32Z"
+        }
       ]
     ]
   },
