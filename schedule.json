@@ -2276,7 +2276,7 @@
           "eventId": 210536,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:00:31Z"
+          "lastLiveUpdate": "2026-11-27T20:10:33Z"
         }
       ],
       [
@@ -2291,7 +2291,7 @@
           "eventId": 210537,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:00:31Z"
+          "lastLiveUpdate": "2026-11-27T20:10:33Z"
         }
       ],
       [
@@ -2306,12 +2306,14 @@
           "eventId": 210543,
           "status": "live",
           "live": true,
-          "lastLiveUpdate": "2026-11-27T20:00:31Z",
-          "minute": 15,
+          "lastLiveUpdate": "2026-11-27T20:10:33Z",
+          "minute": 24,
           "period": "1st_half",
-          "homeScore": 0,
+          "homeScore": 1,
           "awayScore": 0,
-          "actualScorers": [],
+          "actualScorers": [
+            "L. Zogbé"
+          ],
           "scorersVerified": true
         }
       ],
@@ -2327,7 +2329,7 @@
           "eventId": 210538,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:00:31Z"
+          "lastLiveUpdate": "2026-11-27T20:10:33Z"
         }
       ],
       [
@@ -2353,7 +2355,7 @@
           "eventId": 210541,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:00:31Z"
+          "lastLiveUpdate": "2026-11-27T20:10:33Z"
         }
       ],
       [
@@ -2368,7 +2370,7 @@
           "eventId": 210540,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:00:31Z"
+          "lastLiveUpdate": "2026-11-27T20:10:33Z"
         }
       ],
       [
@@ -2383,7 +2385,7 @@
           "eventId": 210542,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-27T20:00:31Z"
+          "lastLiveUpdate": "2026-11-27T20:10:33Z"
         }
       ],
       [
@@ -2395,7 +2397,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-11-27T20:00:31Z"
+          "lastLiveUpdate": "2026-11-27T20:10:33Z"
         }
       ]
     ]
