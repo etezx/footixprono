@@ -41,12 +41,12 @@
         {
           "position": 2,
           "club": "Paris FC",
-          "p": 11,
+          "p": 12,
           "w": 7,
           "d": 2,
-          "l": 2,
+          "l": 3,
           "gf": 21,
-          "ga": 10,
+          "ga": 11,
           "pts": 23,
           "group": "",
           "zone": {
@@ -57,13 +57,13 @@
         },
         {
           "position": 3,
-          "club": "LOSC Lille",
-          "p": 11,
+          "club": "Stade Brestois",
+          "p": 12,
           "w": 6,
           "d": 3,
-          "l": 2,
-          "gf": 14,
-          "ga": 8,
+          "l": 3,
+          "gf": 20,
+          "ga": 12,
           "pts": 21,
           "group": "",
           "zone": {
@@ -74,6 +74,23 @@
         },
         {
           "position": 4,
+          "club": "LOSC Lille",
+          "p": 11,
+          "w": 6,
+          "d": 3,
+          "l": 2,
+          "gf": 14,
+          "ga": 8,
+          "pts": 21,
+          "group": "",
+          "zone": {
+            "key": "clq",
+            "label": "Champions League Qualification",
+            "type": "qualification"
+          }
+        },
+        {
+          "position": 5,
           "club": "Olympique Lyonnais",
           "p": 11,
           "w": 6,
@@ -84,23 +101,6 @@
           "pts": 20,
           "group": "",
           "zone": {
-            "key": "clq",
-            "label": "Champions League Qualification",
-            "type": "qualification"
-          }
-        },
-        {
-          "position": 5,
-          "club": "Olympique de Marseille",
-          "p": 11,
-          "w": 6,
-          "d": 0,
-          "l": 5,
-          "gf": 24,
-          "ga": 17,
-          "pts": 18,
-          "group": "",
-          "zone": {
             "key": "el",
             "label": "Europa League",
             "type": "qualification"
@@ -108,13 +108,13 @@
         },
         {
           "position": 6,
-          "club": "Stade Brestois",
+          "club": "Olympique de Marseille",
           "p": 11,
-          "w": 5,
-          "d": 3,
-          "l": 3,
-          "gf": 19,
-          "ga": 12,
+          "w": 6,
+          "d": 0,
+          "l": 5,
+          "gf": 24,
+          "ga": 17,
           "pts": 18,
           "group": "",
           "zone": {
@@ -913,6 +913,6 @@
       ]
     }
   },
-  "generatedAt": "2026-11-27T21:40:30Z",
+  "generatedAt": "2026-11-28T15:30:30Z",
   "source": "BSD"
 }
