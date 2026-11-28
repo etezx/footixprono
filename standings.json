@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T18:58:21.718574+00:00",
+  "updated_at": "2026-11-28T01:58:48.733790+00:00",
   "source": "ESPN public soccer feed",
   "teams": [
     {
@@ -17,13 +17,25 @@
     {
       "club": "Paris FC",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
-      "p": 11,
+      "p": 12,
       "w": 7,
       "d": 2,
-      "l": 2,
+      "l": 3,
       "gf": 21,
-      "ga": 10,
+      "ga": 11,
       "pts": 23,
+      "last5": []
+    },
+    {
+      "club": "Brest",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+      "p": 12,
+      "w": 6,
+      "d": 3,
+      "l": 3,
+      "gf": 20,
+      "ga": 12,
+      "pts": 21,
       "last5": []
     },
     {
@@ -59,18 +71,6 @@
       "l": 5,
       "gf": 24,
       "ga": 17,
-      "pts": 18,
-      "last5": []
-    },
-    {
-      "club": "Brest",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
-      "p": 11,
-      "w": 5,
-      "d": 3,
-      "l": 3,
-      "gf": 19,
-      "ga": 12,
       "pts": 18,
       "last5": []
     },
