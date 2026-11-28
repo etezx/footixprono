@@ -2274,9 +2274,15 @@
           "source": "bsd",
           "completed": false,
           "eventId": 210536,
-          "status": "notstarted",
-          "live": false,
-          "lastLiveUpdate": "2026-11-28T16:10:33Z"
+          "status": "live",
+          "live": true,
+          "lastLiveUpdate": "2026-11-28T16:20:31Z",
+          "minute": 3,
+          "period": "1st_half",
+          "homeScore": 0,
+          "awayScore": 0,
+          "actualScorers": [],
+          "scorersVerified": true
         }
       ],
       [
@@ -2291,7 +2297,7 @@
           "eventId": 210537,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-28T16:10:33Z"
+          "lastLiveUpdate": "2026-11-28T16:20:31Z"
         }
       ],
       [
@@ -2306,7 +2312,7 @@
           "eventId": 210543,
           "status": "finished",
           "live": false,
-          "lastLiveUpdate": "2026-11-28T16:10:33Z",
+          "lastLiveUpdate": "2026-11-28T16:20:31Z",
           "period": "FT",
           "homeScore": 1,
           "awayScore": 0,
@@ -2328,7 +2334,7 @@
           "eventId": 210538,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-28T16:10:33Z"
+          "lastLiveUpdate": "2026-11-28T16:20:31Z"
         }
       ],
       [
@@ -2354,7 +2360,7 @@
           "eventId": 210541,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-28T16:10:33Z"
+          "lastLiveUpdate": "2026-11-28T16:20:31Z"
         }
       ],
       [
@@ -2369,7 +2375,7 @@
           "eventId": 210540,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-28T16:10:33Z"
+          "lastLiveUpdate": "2026-11-28T16:20:31Z"
         }
       ],
       [
@@ -2384,7 +2390,7 @@
           "eventId": 210542,
           "status": "notstarted",
           "live": false,
-          "lastLiveUpdate": "2026-11-28T16:10:33Z"
+          "lastLiveUpdate": "2026-11-28T16:20:31Z"
         }
       ],
       [
@@ -2396,7 +2402,7 @@
           "status": "notstarted",
           "live": false,
           "completed": false,
-          "lastLiveUpdate": "2026-11-28T16:10:33Z"
+          "lastLiveUpdate": "2026-11-28T16:20:31Z"
         }
       ]
     ]

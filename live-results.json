@@ -1,6 +1,6 @@
 {
   "source": "BSD",
-  "generatedAt": "2026-11-28T16:10:33Z",
+  "generatedAt": "2026-11-28T16:20:31Z",
   "events": [
     {
       "eventId": 210448,
@@ -3961,7 +3961,7 @@
       "live": false,
       "completed": true,
       "period": "FT",
-      "updatedAt": "2026-11-28T16:10:33Z",
+      "updatedAt": "2026-11-28T16:20:31Z",
       "minute": null,
       "homeScore": 1,
       "awayScore": 0,
@@ -3977,11 +3977,17 @@
       "home": "Angers",
       "away": "RC Lens",
       "kickoff": "2026-11-28T16:15:00Z",
-      "status": "notstarted",
-      "live": false,
+      "status": "live",
+      "live": true,
       "completed": false,
-      "period": "",
-      "updatedAt": "2026-11-28T16:10:33Z"
+      "period": "1st_half",
+      "updatedAt": "2026-11-28T16:20:31Z",
+      "minute": 3,
+      "homeScore": 0,
+      "awayScore": 0,
+      "actualScorers": [],
+      "scorersVerified": true,
+      "goalIncidents": 0
     },
     {
       "eventId": 210538,
@@ -3993,7 +3999,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-28T16:10:33Z"
+      "updatedAt": "2026-11-28T16:20:31Z"
     },
     {
       "eventId": 210539,
@@ -4005,7 +4011,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-28T16:10:33Z"
+      "updatedAt": "2026-11-28T16:20:31Z"
     },
     {
       "eventId": 210540,
@@ -4017,7 +4023,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-28T16:10:33Z"
+      "updatedAt": "2026-11-28T16:20:31Z"
     },
     {
       "eventId": 210542,
@@ -4029,7 +4035,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-28T16:10:33Z"
+      "updatedAt": "2026-11-28T16:20:31Z"
     },
     {
       "eventId": 210537,
@@ -4041,7 +4047,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-28T16:10:33Z"
+      "updatedAt": "2026-11-28T16:20:31Z"
     },
     {
       "eventId": 210544,
@@ -4053,7 +4059,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-28T16:10:33Z"
+      "updatedAt": "2026-11-28T16:20:31Z"
     },
     {
       "eventId": 210541,
@@ -4065,7 +4071,7 @@
       "live": false,
       "completed": false,
       "period": "",
-      "updatedAt": "2026-11-28T16:10:33Z"
+      "updatedAt": "2026-11-28T16:20:31Z"
     }
   ]
 }
